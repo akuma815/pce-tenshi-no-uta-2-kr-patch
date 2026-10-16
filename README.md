@@ -24,6 +24,8 @@ PC Engine Super CD-ROM² **천사의 시 II ~타천사의 선택~** 한글 번�
 
 | 구분 | SHA-256 |
 | --- | --- |
+| 원본 단일 BIN | `d16d29eb80b1b74a2ec929924349256b50b8f9f5c9a3fa37b6fcc08b059b22c5` |
+| 원본 System Card 3.0 (J), 헤더 없음 | `e11527b3b96ce112a037138988ca72fd117a6b0779c2480d9e03eaebece3d9ce` |
 | 패치 파일 `SystemCard3_KR.xdelta` | `842dcd04af66661c523ee7119ea4cf6e521c574c212d67ae0748122420ca64e5` |
 | 패치 파일 `SystemCard3_KR_from_v0.3.xdelta` | `e40c7a3c36d33c9ddc17730c9156fd98bc49bfde7e97c56e1bb2bd731807f05d` |
 | 패치 파일 `Tenshi_no_Uta_II_KR_disc.xdelta` | `209df59789ec3d4499346180858c4d77a2706fc59ef172d58cc9b1f4c8168d62` |
