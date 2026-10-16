@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "source_commit": "be481896a0eeddd9f3f16327a8870fd06c3319de",
+  "fresh_github_clone": true,
+  "manifest_verified_files": 1146,
+  "tracked_source_tree_clean_after_build": true,
+  "environment": {
+    "python": "3.12.10",
+    "pillow": "12.3.0",
+    "dotnet_sdk": "8.0.422"
+  },
+  "provided_private_inputs": [
+    "original single BIN",
+    "original CUE",
+    "original Japanese Super System Card 3.0 BIOS",
+    "original Redump Track 02"
+  ],
+  "result": {
+    "status": "PASS",
+    "evidence_class": "Source rebuild with byte-identical disc/CUE/system-card outputs; no new runtime test",
+    "disc_bytes": 523184384,
+    "disc_sha256": "85d71ed783164a2d305179153f701f193c51d09943066bc4cee94b4bab6e8838",
+    "cue_sha256": "468a563775b1705d6876692e683fb2407a3c1eca8e40bf3029a1d725c53b809f",
+    "card_bytes": 262144,
+    "card_sha256": "5632f388ae2f0fce9e435134ee89b825172e9b2a08bae5f7b5856a9807f21274",
+    "bootstrap_restored_from_original_bios": true,
+    "redump_track02_verified": true,
+    "redump_track02_sha256": "5098df4d14314e4948c50364628a7306a47434abdbc7d67f4e8261defc7f661c",
+    "redump_track02_bytes": 22466304
+  }
+}

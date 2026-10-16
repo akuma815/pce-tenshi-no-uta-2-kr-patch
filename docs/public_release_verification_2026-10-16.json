@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "release": {
+    "tag": "v1.0",
+    "asset": "Tenshi2_KR_v1.0_20261014.zip",
+    "sha256": "6b6afac020338584fdb8ced76bff3a0e609418874145bc54ff3683bea0a48fa3",
+    "applied_public_patches_match_local_b64": true
+  },
+  "applied_outputs": {
+    "public_disc.bin": "85d71ed783164a2d305179153f701f193c51d09943066bc4cee94b4bab6e8838",
+    "public_card.pce": "5632f388ae2f0fce9e435134ee89b825172e9b2a08bae5f7b5856a9807f21274",
+    "public_redump_track02.bin": "5098df4d14314e4948c50364628a7306a47434abdbc7d67f4e8261defc7f661c"
+  }
+}
