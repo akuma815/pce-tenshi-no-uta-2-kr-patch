@@ -6,6 +6,8 @@ PC Engine Super CD-ROM² **천사의 시 II ~타천사의 선택~** 한글 번�
 
 개발용: [v1.0(b64) 소스 재빌드 안내](docs/REBUILD_B64_2026-10-16.md). 보유한 원본과 도구로 공식 디스크·시스템 카드·Redump Track 02를 재현한다.
 
+2026-10-16 로컬 게임 폴더는 사용자 요청으로 삭제했다. [정리·복원 인계](docs/PCE_CLEANUP_2026-10-16.md)에 보존 자료와 복원 방법을 기록했다.
+
 <!-- game-preview:start -->
 <p align="center">
   <img src="img/preview.png" alt="천사의 시 II ~타천사의 선택~ — 한글 타이틀 · v1.0" width="512">

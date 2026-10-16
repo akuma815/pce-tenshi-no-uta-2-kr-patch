@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "completed_at": "2026-10-16T19:52:32.5466569+09:00",
+  "removed_path": "Games/Tenshi no Uta II - Datenshi no Sentaku (Japan)",
+  "files": 13541,
+  "bytes": 6751560687,
+  "game_folder_absent": true,
+  "other_game_folders_unchanged": true,
+  "junctions_unlinked_without_traversal": 1,
+  "external_dependency_root_preserved": true,
+  "original_media_inside_target_removed": true,
+  "H_originals_mods_saves_not_modified": true,
+  "private_archive_name": "Tenshi2_PCE_authoring_records_20261016.zip",
+  "private_archive_sha256": "41db4c24da4f39ed68c5e5da02de5d6dfef2c356d60e7c45a6f9f42eb0f05d1e",
+  "source_commit": "742fd1aad9e85c6784827cd335d1a3f4aff2550a",
+  "authoring_backup_verification": {
+    "status": "PASS",
+    "git_commit": "742fd1aad9e85c6784827cd335d1a3f4aff2550a",
+    "verified_git_inputs": 1146,
+    "archive": "Tenshi2_PCE_authoring_records_20261016.zip",
+    "archive_bytes": 457757259,
+    "archive_sha256": "41db4c24da4f39ed68c5e5da02de5d6dfef2c356d60e7c45a6f9f42eb0f05d1e",
+    "project_records": 4581,
+    "historical_delta_records": 30,
+    "verified_payloads": 4611,
+    "archive_crc_verified": true,
+    "every_payload_sha256_verified": true,
+    "every_delta_roundtrip_verified": true,
+    "excluded_files": 8960,
+    "target_files_no_reparse_traversal": 13541,
+    "target_bytes_no_reparse_traversal": 6751560687
+  },
+  "actual_restore_test": {
+    "status": "PASS",
+    "restored_files_verified": 4611,
+    "historical_outputs_verified": 30,
+    "restored_all_project_records": true,
+    "all_sizes_and_sha256_match": true
+  },
+  "restore_test_temporary_outputs_removed": true
+}
