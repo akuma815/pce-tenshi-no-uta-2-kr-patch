@@ -32,7 +32,7 @@ from build_btrack_b7_hook_build import Asm
 
 ASSIGN = ROOT / "translation" / "btrack_slot_assignment.json"
 BALLOON = ROOT / "translation" / "btrack_b30_card_balloon.json"
-FONT16 = r"G:\Downloads\Korean Traslate Project\Font\Galmuri14.ttf"   # 원 픽셀 크기 15px (14 로 렌더하면 획이 빠짐)
+FONT16 = str(ROOT / "assets" / "fonts" / "Galmuri14.ttf")   # 원 픽셀 크기 15px
 FONT16_PX = 15
 
 N_IDX = 3640                       # 12x12 슬롯 수 (0x30000 + 3640*18 = 0x3FFF0)

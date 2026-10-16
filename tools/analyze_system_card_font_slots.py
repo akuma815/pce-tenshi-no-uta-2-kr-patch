@@ -8,7 +8,7 @@ import json
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-BIOS = Path(r"H:\BizHawk\Firmware\PCECD_3.0-(J).pce")
+BIOS = ROOT / "probes" / "SystemCard3_original_noheader.pce"
 TSV = ROOT / "translation" / "script_sheet.tsv"
 CHAR_MAP = ROOT / "translation" / "char_map.json"
 OUT = ROOT / "translation" / "system_card_font_slot_audit.json"

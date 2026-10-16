@@ -32,3 +32,15 @@ __pycache__/
 *.utoc
 *.uasset
 *.uexp
+
+# Build outputs and private source injection
+/probes/
+*.exe
+*.dll
+*.pdb
+/tools/huc6280_disasm_verifier/bin/
+/tools/huc6280_disasm_verifier/obj/
+/release/app/build/
+/release/app/dist/
+
+/Tenshi_no_Uta_II-*.cue

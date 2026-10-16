@@ -5,7 +5,5 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
-  <ItemGroup>
-    <Compile Include="..\..\BizHawk-master\src\BizHawk.Emulation.Cores\CPUs\HuC6280\Disassembler.cs" Link="BizHawk.HuC6280.Disassembler.cs" />
-  </ItemGroup>
+  <!-- The MIT-licensed C# disassembler under vendor/ is included by the SDK. -->
 </Project>

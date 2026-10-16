@@ -1,0 +1,39 @@
+{
+  "source_commit_before_repair": "d0777d8f2ddc22f60c482a16f4a11a29c3e628a0",
+  "source_bin": {
+    "bytes": 523184384,
+    "sha256": "d16d29eb80b1b74a2ec929924349256b50b8f9f5c9a3fa37b6fcc08b059b22c5"
+  },
+  "source_cue_sha256": "c491342ea8cbf2b6e829316aaad0af3f790ec58288de9bf880927cdcc7c9cc6b",
+  "source_bios": {
+    "bytes": 262144,
+    "sha256": "e11527b3b96ce112a037138988ca72fd117a6b0779c2480d9e03eaebece3d9ce"
+  },
+  "bootstrap": {
+    "patch": "assets/bootstrap/SystemCard3_full_v6_from_original.xdelta",
+    "patch_bytes": 12323,
+    "patch_sha256": "7a8dabcd2a66f6efc486763d5a0ff91330d001adfc9f542bace21f662eaaf90f",
+    "target_sha256": "30a4a8bd7ed7ca517e7d8555c8afd8304ff02238a751f9c777bda36413ffc33b"
+  },
+  "font": {
+    "path": "assets/fonts/Galmuri14.ttf",
+    "sha256": "d3818c0f2898a3b2d79ccd04ec1e4de5e8940aa26abee261f73e315a44ce8df9"
+  },
+  "expected_b64": {
+    "disc_sha256": "85d71ed783164a2d305179153f701f193c51d09943066bc4cee94b4bab6e8838",
+    "card_sha256": "5632f388ae2f0fce9e435134ee89b825172e9b2a08bae5f7b5856a9807f21274",
+    "cue_sha256": "468a563775b1705d6876692e683fb2407a3c1eca8e40bf3029a1d725c53b809f"
+  },
+  "redump_track02": {
+    "bytes": 22466304,
+    "sha256": "1e69de05aaf1171e4a3347a146d5967c796e312ca0c53cebb267c5ffe0684034",
+    "expected_output_sha1": "d80d35170802964f09831b17f35e4ff69d989581",
+    "expected_output_sha256": "5098df4d14314e4948c50364628a7306a47434abdbc7d67f4e8261defc7f661c"
+  },
+  "published_release": {
+    "tag": "v1.0",
+    "asset": "Tenshi2_KR_v1.0_20261014.zip",
+    "sha256": "6b6afac020338584fdb8ced76bff3a0e609418874145bc54ff3683bea0a48fa3",
+    "applied_public_patches_match_local_b64": true
+  }
+}
