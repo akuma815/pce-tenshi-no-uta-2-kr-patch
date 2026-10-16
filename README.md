@@ -4,6 +4,14 @@ PC Engine Super CD-ROM² **천사의 시 II ~타천사의 선택~** 한글 번�
 
 > **정식 배포 v1.0**
 
+<!-- game-preview:start -->
+<p align="center">
+  <img src="img/preview.png" alt="천사의 시 II ~타천사의 선택~ — 한글 타이틀 · v1.0" width="512">
+</p>
+
+**한글 타이틀 · v1.0** — release_Tenshi2_KR_v1.0_20261014 pce_fast 캡처
+<!-- game-preview:end -->
+
 ## 다운로드 및 적용 방법
 
 1. 아래 체크섬 또는 상세 안내와 일치하는 원본을 준비합니다.

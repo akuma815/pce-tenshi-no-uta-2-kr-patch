@@ -1,0 +1,14 @@
+{
+  "src": "assets/screenshots/pce-tenshi-no-uta-2-kr-patch.png",
+  "caption": "한글 타이틀 · v1.0",
+  "kind": "runtime",
+  "width": 256,
+  "height": 232,
+  "source": "Games/Tenshi no Uta II - Datenshi no Sentaku (Japan)/qa/release_Tenshi2_KR_v1.0_20261014/smoke/single_pcefast_0031.png",
+  "sourceSHA256": "cf345f38aca3f587da400ab989dca5c016593102f63be85f5007a7dafecb08eb",
+  "assetSHA256": "cf345f38aca3f587da400ab989dca5c016593102f63be85f5007a7dafecb08eb",
+  "pixelSHA256": "6eb45a7d8f39dba3b413c26c2bcb9e41faff56beb5233f4d9dfad8b57dea40ab",
+  "sourceNote": "release_Tenshi2_KR_v1.0_20261014 pce_fast 캡처",
+  "readmeAsset": "img/preview.png",
+  "displayNote": "release_Tenshi2_KR_v1.0_20261014 pce_fast 캡처"
+}
