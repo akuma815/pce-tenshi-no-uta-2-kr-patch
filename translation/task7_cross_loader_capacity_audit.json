@@ -1,0 +1,4138 @@
+{
+  "format": "TASK7-CROSS-LOADER-CAPACITY-AUDIT",
+  "version": 1,
+  "task": 7,
+  "status": "PASS",
+  "policy": {
+    "nominal_capacity": "unused whole banks in one loader's 96-sector runtime window",
+    "collision_safe_capacity": "nominal banks whose physical sectors overlap no other live primary/overlay loader range",
+    "build_rule": "only collision_safe_free_bank_capacity_bytes may justify an internal disc write"
+  },
+  "generated_from": {
+    "slot_topology_sha256": "2E364A8540BBDA629AABA497D80AA69A9A911457E3691E767801D09228459FF3",
+    "overlay_topology_sha256": "8AB8A8FA60EEE13032421F990525666928E41CAA9280C16D40526D7C0DDEEBFB",
+    "overflow_supply_plan_sha256": "D6F247BA765D943BC5FF9F8EDBBA3C3A0AE8F725F778B5C80ECC69B4F1CF982A"
+  },
+  "summary": {
+    "audited_loader_modules": 85,
+    "modules_with_nominal_tail": 48,
+    "modules_with_collision_safe_tail": 13,
+    "nominal_capacity_bytes": 1499136,
+    "collision_safe_capacity_bytes": 385024,
+    "invalidated_capacity_bytes": 1114112,
+    "corrected_branch_counts": {
+      "A_COLLISION_SAFE_MODULE_INTERNAL": 11,
+      "A_SOURCE_HOLE_MATERIALIZED": 31,
+      "C_SCENE_LOAD_SIDECAR": 43
+    }
+  },
+  "representative_rejection": {
+    "module_id": "loader.primary.g27.lba2754",
+    "reason": "its nominal banks 22..23 overlap live overlay loader sectors and are not writable package space"
+  },
+  "loader_modules": [
+    {
+      "module_id": "loader.overlay.g00.lba290",
+      "owner": "overlay",
+      "physical_grid": 0,
+      "lba": 290,
+      "load_sectors": 96,
+      "logical_entries": [
+        0
+      ],
+      "glyph_supply_bytes_18": 11210,
+      "source_hole_bytes": 7083,
+      "previous_branch": "C_SCENE_LOAD_SIDECAR",
+      "nominal_free_bank_capacity_bytes": 0,
+      "collision_safe_free_bank_capacity_bytes": 0,
+      "invalidated_capacity_bytes": 0,
+      "corrected_branch": "C_SCENE_LOAD_SIDECAR",
+      "dependency": "TASK7_SIDECAR_RAM_REACHABILITY",
+      "tail_banks": []
+    },
+    {
+      "module_id": "loader.overlay.g01.lba386",
+      "owner": "overlay",
+      "physical_grid": 1,
+      "lba": 386,
+      "load_sectors": 96,
+      "logical_entries": [
+        1
+      ],
+      "glyph_supply_bytes_18": 11079,
+      "source_hole_bytes": 6957,
+      "previous_branch": "C_SCENE_LOAD_SIDECAR",
+      "nominal_free_bank_capacity_bytes": 0,
+      "collision_safe_free_bank_capacity_bytes": 0,
+      "invalidated_capacity_bytes": 0,
+      "corrected_branch": "C_SCENE_LOAD_SIDECAR",
+      "dependency": "TASK7_SIDECAR_RAM_REACHABILITY",
+      "tail_banks": []
+    },
+    {
+      "module_id": "loader.overlay.g02.lba482",
+      "owner": "overlay",
+      "physical_grid": 2,
+      "lba": 482,
+      "load_sectors": 96,
+      "logical_entries": [
+        2
+      ],
+      "glyph_supply_bytes_18": 12686,
+      "source_hole_bytes": 12385,
+      "previous_branch": "C_SCENE_LOAD_SIDECAR",
+      "nominal_free_bank_capacity_bytes": 0,
+      "collision_safe_free_bank_capacity_bytes": 0,
+      "invalidated_capacity_bytes": 0,
+      "corrected_branch": "C_SCENE_LOAD_SIDECAR",
+      "dependency": "TASK7_SIDECAR_RAM_REACHABILITY",
+      "tail_banks": []
+    },
+    {
+      "module_id": "loader.overlay.g03.lba578",
+      "owner": "overlay",
+      "physical_grid": 3,
+      "lba": 578,
+      "load_sectors": 78,
+      "logical_entries": [
+        4
+      ],
+      "glyph_supply_bytes_18": 13162,
+      "source_hole_bytes": 13438,
+      "previous_branch": "A_MODULE_INTERNAL",
+      "nominal_free_bank_capacity_bytes": 32768,
+      "collision_safe_free_bank_capacity_bytes": 0,
+      "invalidated_capacity_bytes": 32768,
+      "corrected_branch": "A_SOURCE_HOLE_MATERIALIZED",
+      "dependency": "TASK8_SOURCE_HOLE_EXPECTED_WRITE",
+      "tail_banks": [
+        {
+          "relative_bank": 20,
+          "relative_sector_start": 80,
+          "absolute_lba_start": 658,
+          "absolute_lba_end_exclusive": 662,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.primary.g05.lba642",
+              "owner": "primary",
+              "lba": 642,
+              "load_sectors": 71
+            }
+          ]
+        },
+        {
+          "relative_bank": 21,
+          "relative_sector_start": 84,
+          "absolute_lba_start": 662,
+          "absolute_lba_end_exclusive": 666,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.primary.g05.lba642",
+              "owner": "primary",
+              "lba": 642,
+              "load_sectors": 71
+            }
+          ]
+        },
+        {
+          "relative_bank": 22,
+          "relative_sector_start": 88,
+          "absolute_lba_start": 666,
+          "absolute_lba_end_exclusive": 670,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.primary.g05.lba642",
+              "owner": "primary",
+              "lba": 642,
+              "load_sectors": 71
+            }
+          ]
+        },
+        {
+          "relative_bank": 23,
+          "relative_sector_start": 92,
+          "absolute_lba_start": 670,
+          "absolute_lba_end_exclusive": 674,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.primary.g05.lba642",
+              "owner": "primary",
+              "lba": 642,
+              "load_sectors": 71
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "module_id": "loader.overlay.g04.lba674",
+      "owner": "overlay",
+      "physical_grid": 4,
+      "lba": 674,
+      "load_sectors": 96,
+      "logical_entries": [
+        5
+      ],
+      "glyph_supply_bytes_18": 13026,
+      "source_hole_bytes": 14546,
+      "previous_branch": "A_SOURCE_HOLE_MATERIALIZED",
+      "nominal_free_bank_capacity_bytes": 0,
+      "collision_safe_free_bank_capacity_bytes": 0,
+      "invalidated_capacity_bytes": 0,
+      "corrected_branch": "A_SOURCE_HOLE_MATERIALIZED",
+      "dependency": "TASK8_SOURCE_HOLE_EXPECTED_WRITE",
+      "tail_banks": []
+    },
+    {
+      "module_id": "loader.overlay.g05.lba770",
+      "owner": "overlay",
+      "physical_grid": 5,
+      "lba": 770,
+      "load_sectors": 96,
+      "logical_entries": [
+        6
+      ],
+      "glyph_supply_bytes_18": 13048,
+      "source_hole_bytes": 13573,
+      "previous_branch": "A_SOURCE_HOLE_MATERIALIZED",
+      "nominal_free_bank_capacity_bytes": 0,
+      "collision_safe_free_bank_capacity_bytes": 0,
+      "invalidated_capacity_bytes": 0,
+      "corrected_branch": "A_SOURCE_HOLE_MATERIALIZED",
+      "dependency": "TASK8_SOURCE_HOLE_EXPECTED_WRITE",
+      "tail_banks": []
+    },
+    {
+      "module_id": "loader.overlay.g06.lba866",
+      "owner": "overlay",
+      "physical_grid": 6,
+      "lba": 866,
+      "load_sectors": 96,
+      "logical_entries": [
+        7
+      ],
+      "glyph_supply_bytes_18": 12877,
+      "source_hole_bytes": 12568,
+      "previous_branch": "C_SCENE_LOAD_SIDECAR",
+      "nominal_free_bank_capacity_bytes": 0,
+      "collision_safe_free_bank_capacity_bytes": 0,
+      "invalidated_capacity_bytes": 0,
+      "corrected_branch": "C_SCENE_LOAD_SIDECAR",
+      "dependency": "TASK7_SIDECAR_RAM_REACHABILITY",
+      "tail_banks": []
+    },
+    {
+      "module_id": "loader.overlay.g07.lba962",
+      "owner": "overlay",
+      "physical_grid": 7,
+      "lba": 962,
+      "load_sectors": 96,
+      "logical_entries": [
+        8
+      ],
+      "glyph_supply_bytes_18": 13581,
+      "source_hole_bytes": 13019,
+      "previous_branch": "C_SCENE_LOAD_SIDECAR",
+      "nominal_free_bank_capacity_bytes": 0,
+      "collision_safe_free_bank_capacity_bytes": 0,
+      "invalidated_capacity_bytes": 0,
+      "corrected_branch": "C_SCENE_LOAD_SIDECAR",
+      "dependency": "TASK7_SIDECAR_RAM_REACHABILITY",
+      "tail_banks": []
+    },
+    {
+      "module_id": "loader.overlay.g08.lba1058",
+      "owner": "overlay",
+      "physical_grid": 8,
+      "lba": 1058,
+      "load_sectors": 83,
+      "logical_entries": [
+        9
+      ],
+      "glyph_supply_bytes_18": 13537,
+      "source_hole_bytes": 15160,
+      "previous_branch": "A_MODULE_INTERNAL",
+      "nominal_free_bank_capacity_bytes": 24576,
+      "collision_safe_free_bank_capacity_bytes": 0,
+      "invalidated_capacity_bytes": 24576,
+      "corrected_branch": "A_SOURCE_HOLE_MATERIALIZED",
+      "dependency": "TASK8_SOURCE_HOLE_EXPECTED_WRITE",
+      "tail_banks": [
+        {
+          "relative_bank": 21,
+          "relative_sector_start": 84,
+          "absolute_lba_start": 1142,
+          "absolute_lba_end_exclusive": 1146,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.primary.g10.lba1122",
+              "owner": "primary",
+              "lba": 1122,
+              "load_sectors": 92
+            }
+          ]
+        },
+        {
+          "relative_bank": 22,
+          "relative_sector_start": 88,
+          "absolute_lba_start": 1146,
+          "absolute_lba_end_exclusive": 1150,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.primary.g10.lba1122",
+              "owner": "primary",
+              "lba": 1122,
+              "load_sectors": 92
+            }
+          ]
+        },
+        {
+          "relative_bank": 23,
+          "relative_sector_start": 92,
+          "absolute_lba_start": 1150,
+          "absolute_lba_end_exclusive": 1154,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.primary.g10.lba1122",
+              "owner": "primary",
+              "lba": 1122,
+              "load_sectors": 92
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "module_id": "loader.overlay.g09.lba1154",
+      "owner": "overlay",
+      "physical_grid": 9,
+      "lba": 1154,
+      "load_sectors": 96,
+      "logical_entries": [
+        10
+      ],
+      "glyph_supply_bytes_18": 12663,
+      "source_hole_bytes": 12452,
+      "previous_branch": "C_SCENE_LOAD_SIDECAR",
+      "nominal_free_bank_capacity_bytes": 0,
+      "collision_safe_free_bank_capacity_bytes": 0,
+      "invalidated_capacity_bytes": 0,
+      "corrected_branch": "C_SCENE_LOAD_SIDECAR",
+      "dependency": "TASK7_SIDECAR_RAM_REACHABILITY",
+      "tail_banks": []
+    },
+    {
+      "module_id": "loader.overlay.g10.lba1250",
+      "owner": "overlay",
+      "physical_grid": 10,
+      "lba": 1250,
+      "load_sectors": 96,
+      "logical_entries": [
+        11
+      ],
+      "glyph_supply_bytes_18": 12930,
+      "source_hole_bytes": 11603,
+      "previous_branch": "C_SCENE_LOAD_SIDECAR",
+      "nominal_free_bank_capacity_bytes": 0,
+      "collision_safe_free_bank_capacity_bytes": 0,
+      "invalidated_capacity_bytes": 0,
+      "corrected_branch": "C_SCENE_LOAD_SIDECAR",
+      "dependency": "TASK7_SIDECAR_RAM_REACHABILITY",
+      "tail_banks": []
+    },
+    {
+      "module_id": "loader.overlay.g11.lba1346",
+      "owner": "overlay",
+      "physical_grid": 11,
+      "lba": 1346,
+      "load_sectors": 96,
+      "logical_entries": [
+        12
+      ],
+      "glyph_supply_bytes_18": 12978,
+      "source_hole_bytes": 11717,
+      "previous_branch": "C_SCENE_LOAD_SIDECAR",
+      "nominal_free_bank_capacity_bytes": 0,
+      "collision_safe_free_bank_capacity_bytes": 0,
+      "invalidated_capacity_bytes": 0,
+      "corrected_branch": "C_SCENE_LOAD_SIDECAR",
+      "dependency": "TASK7_SIDECAR_RAM_REACHABILITY",
+      "tail_banks": []
+    },
+    {
+      "module_id": "loader.overlay.g12.lba1442",
+      "owner": "overlay",
+      "physical_grid": 12,
+      "lba": 1442,
+      "load_sectors": 96,
+      "logical_entries": [
+        13
+      ],
+      "glyph_supply_bytes_18": 13210,
+      "source_hole_bytes": 16795,
+      "previous_branch": "A_SOURCE_HOLE_MATERIALIZED",
+      "nominal_free_bank_capacity_bytes": 0,
+      "collision_safe_free_bank_capacity_bytes": 0,
+      "invalidated_capacity_bytes": 0,
+      "corrected_branch": "A_SOURCE_HOLE_MATERIALIZED",
+      "dependency": "TASK8_SOURCE_HOLE_EXPECTED_WRITE",
+      "tail_banks": []
+    },
+    {
+      "module_id": "loader.overlay.g13.lba1538",
+      "owner": "overlay",
+      "physical_grid": 13,
+      "lba": 1538,
+      "load_sectors": 73,
+      "logical_entries": [
+        14
+      ],
+      "glyph_supply_bytes_18": 12264,
+      "source_hole_bytes": 12793,
+      "previous_branch": "A_MODULE_INTERNAL",
+      "nominal_free_bank_capacity_bytes": 40960,
+      "collision_safe_free_bank_capacity_bytes": 0,
+      "invalidated_capacity_bytes": 40960,
+      "corrected_branch": "A_SOURCE_HOLE_MATERIALIZED",
+      "dependency": "TASK8_SOURCE_HOLE_EXPECTED_WRITE",
+      "tail_banks": [
+        {
+          "relative_bank": 19,
+          "relative_sector_start": 76,
+          "absolute_lba_start": 1614,
+          "absolute_lba_end_exclusive": 1618,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.primary.g15.lba1602",
+              "owner": "primary",
+              "lba": 1602,
+              "load_sectors": 95
+            }
+          ]
+        },
+        {
+          "relative_bank": 20,
+          "relative_sector_start": 80,
+          "absolute_lba_start": 1618,
+          "absolute_lba_end_exclusive": 1622,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.primary.g15.lba1602",
+              "owner": "primary",
+              "lba": 1602,
+              "load_sectors": 95
+            }
+          ]
+        },
+        {
+          "relative_bank": 21,
+          "relative_sector_start": 84,
+          "absolute_lba_start": 1622,
+          "absolute_lba_end_exclusive": 1626,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.primary.g15.lba1602",
+              "owner": "primary",
+              "lba": 1602,
+              "load_sectors": 95
+            }
+          ]
+        },
+        {
+          "relative_bank": 22,
+          "relative_sector_start": 88,
+          "absolute_lba_start": 1626,
+          "absolute_lba_end_exclusive": 1630,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.primary.g15.lba1602",
+              "owner": "primary",
+              "lba": 1602,
+              "load_sectors": 95
+            }
+          ]
+        },
+        {
+          "relative_bank": 23,
+          "relative_sector_start": 92,
+          "absolute_lba_start": 1630,
+          "absolute_lba_end_exclusive": 1634,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.primary.g15.lba1602",
+              "owner": "primary",
+              "lba": 1602,
+              "load_sectors": 95
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "module_id": "loader.overlay.g14.lba1634",
+      "owner": "overlay",
+      "physical_grid": 14,
+      "lba": 1634,
+      "load_sectors": 96,
+      "logical_entries": [
+        15
+      ],
+      "glyph_supply_bytes_18": 13640,
+      "source_hole_bytes": 13826,
+      "previous_branch": "A_SOURCE_HOLE_MATERIALIZED",
+      "nominal_free_bank_capacity_bytes": 0,
+      "collision_safe_free_bank_capacity_bytes": 0,
+      "invalidated_capacity_bytes": 0,
+      "corrected_branch": "A_SOURCE_HOLE_MATERIALIZED",
+      "dependency": "TASK8_SOURCE_HOLE_EXPECTED_WRITE",
+      "tail_banks": []
+    },
+    {
+      "module_id": "loader.overlay.g15.lba1730",
+      "owner": "overlay",
+      "physical_grid": 15,
+      "lba": 1730,
+      "load_sectors": 92,
+      "logical_entries": [
+        16,
+        53
+      ],
+      "glyph_supply_bytes_18": 13229,
+      "source_hole_bytes": 12074,
+      "previous_branch": "A_SOURCE_HOLE_MATERIALIZED",
+      "nominal_free_bank_capacity_bytes": 8192,
+      "collision_safe_free_bank_capacity_bytes": 8192,
+      "invalidated_capacity_bytes": 0,
+      "corrected_branch": "A_SOURCE_HOLE_MATERIALIZED",
+      "dependency": "TASK8_SOURCE_HOLE_EXPECTED_WRITE",
+      "tail_banks": [
+        {
+          "relative_bank": 23,
+          "relative_sector_start": 92,
+          "absolute_lba_start": 1822,
+          "absolute_lba_end_exclusive": 1826,
+          "collision_free": true,
+          "collisions": []
+        }
+      ]
+    },
+    {
+      "module_id": "loader.overlay.g16.lba1826",
+      "owner": "overlay",
+      "physical_grid": 16,
+      "lba": 1826,
+      "load_sectors": 96,
+      "logical_entries": [
+        17
+      ],
+      "glyph_supply_bytes_18": 13523,
+      "source_hole_bytes": 14713,
+      "previous_branch": "A_SOURCE_HOLE_MATERIALIZED",
+      "nominal_free_bank_capacity_bytes": 0,
+      "collision_safe_free_bank_capacity_bytes": 0,
+      "invalidated_capacity_bytes": 0,
+      "corrected_branch": "A_SOURCE_HOLE_MATERIALIZED",
+      "dependency": "TASK8_SOURCE_HOLE_EXPECTED_WRITE",
+      "tail_banks": []
+    },
+    {
+      "module_id": "loader.overlay.g17.lba1922",
+      "owner": "overlay",
+      "physical_grid": 17,
+      "lba": 1922,
+      "load_sectors": 96,
+      "logical_entries": [
+        18
+      ],
+      "glyph_supply_bytes_18": 12327,
+      "source_hole_bytes": 10854,
+      "previous_branch": "C_SCENE_LOAD_SIDECAR",
+      "nominal_free_bank_capacity_bytes": 0,
+      "collision_safe_free_bank_capacity_bytes": 0,
+      "invalidated_capacity_bytes": 0,
+      "corrected_branch": "C_SCENE_LOAD_SIDECAR",
+      "dependency": "TASK7_SIDECAR_RAM_REACHABILITY",
+      "tail_banks": []
+    },
+    {
+      "module_id": "loader.overlay.g18.lba2018",
+      "owner": "overlay",
+      "physical_grid": 18,
+      "lba": 2018,
+      "load_sectors": 82,
+      "logical_entries": [
+        19
+      ],
+      "glyph_supply_bytes_18": 12625,
+      "source_hole_bytes": 13920,
+      "previous_branch": "A_MODULE_INTERNAL",
+      "nominal_free_bank_capacity_bytes": 24576,
+      "collision_safe_free_bank_capacity_bytes": 24576,
+      "invalidated_capacity_bytes": 0,
+      "corrected_branch": "A_COLLISION_SAFE_MODULE_INTERNAL",
+      "dependency": null,
+      "tail_banks": [
+        {
+          "relative_bank": 21,
+          "relative_sector_start": 84,
+          "absolute_lba_start": 2102,
+          "absolute_lba_end_exclusive": 2106,
+          "collision_free": true,
+          "collisions": []
+        },
+        {
+          "relative_bank": 22,
+          "relative_sector_start": 88,
+          "absolute_lba_start": 2106,
+          "absolute_lba_end_exclusive": 2110,
+          "collision_free": true,
+          "collisions": []
+        },
+        {
+          "relative_bank": 23,
+          "relative_sector_start": 92,
+          "absolute_lba_start": 2110,
+          "absolute_lba_end_exclusive": 2114,
+          "collision_free": true,
+          "collisions": []
+        }
+      ]
+    },
+    {
+      "module_id": "loader.overlay.g19.lba2114",
+      "owner": "overlay",
+      "physical_grid": 19,
+      "lba": 2114,
+      "load_sectors": 75,
+      "logical_entries": [
+        20
+      ],
+      "glyph_supply_bytes_18": 12654,
+      "source_hole_bytes": 8992,
+      "previous_branch": "A_MODULE_INTERNAL",
+      "nominal_free_bank_capacity_bytes": 40960,
+      "collision_safe_free_bank_capacity_bytes": 40960,
+      "invalidated_capacity_bytes": 0,
+      "corrected_branch": "A_COLLISION_SAFE_MODULE_INTERNAL",
+      "dependency": null,
+      "tail_banks": [
+        {
+          "relative_bank": 19,
+          "relative_sector_start": 76,
+          "absolute_lba_start": 2190,
+          "absolute_lba_end_exclusive": 2194,
+          "collision_free": true,
+          "collisions": []
+        },
+        {
+          "relative_bank": 20,
+          "relative_sector_start": 80,
+          "absolute_lba_start": 2194,
+          "absolute_lba_end_exclusive": 2198,
+          "collision_free": true,
+          "collisions": []
+        },
+        {
+          "relative_bank": 21,
+          "relative_sector_start": 84,
+          "absolute_lba_start": 2198,
+          "absolute_lba_end_exclusive": 2202,
+          "collision_free": true,
+          "collisions": []
+        },
+        {
+          "relative_bank": 22,
+          "relative_sector_start": 88,
+          "absolute_lba_start": 2202,
+          "absolute_lba_end_exclusive": 2206,
+          "collision_free": true,
+          "collisions": []
+        },
+        {
+          "relative_bank": 23,
+          "relative_sector_start": 92,
+          "absolute_lba_start": 2206,
+          "absolute_lba_end_exclusive": 2210,
+          "collision_free": true,
+          "collisions": []
+        }
+      ]
+    },
+    {
+      "module_id": "loader.overlay.g20.lba2210",
+      "owner": "overlay",
+      "physical_grid": 20,
+      "lba": 2210,
+      "load_sectors": 76,
+      "logical_entries": [
+        21
+      ],
+      "glyph_supply_bytes_18": 12307,
+      "source_hole_bytes": 12480,
+      "previous_branch": "A_MODULE_INTERNAL",
+      "nominal_free_bank_capacity_bytes": 40960,
+      "collision_safe_free_bank_capacity_bytes": 40960,
+      "invalidated_capacity_bytes": 0,
+      "corrected_branch": "A_COLLISION_SAFE_MODULE_INTERNAL",
+      "dependency": null,
+      "tail_banks": [
+        {
+          "relative_bank": 19,
+          "relative_sector_start": 76,
+          "absolute_lba_start": 2286,
+          "absolute_lba_end_exclusive": 2290,
+          "collision_free": true,
+          "collisions": []
+        },
+        {
+          "relative_bank": 20,
+          "relative_sector_start": 80,
+          "absolute_lba_start": 2290,
+          "absolute_lba_end_exclusive": 2294,
+          "collision_free": true,
+          "collisions": []
+        },
+        {
+          "relative_bank": 21,
+          "relative_sector_start": 84,
+          "absolute_lba_start": 2294,
+          "absolute_lba_end_exclusive": 2298,
+          "collision_free": true,
+          "collisions": []
+        },
+        {
+          "relative_bank": 22,
+          "relative_sector_start": 88,
+          "absolute_lba_start": 2298,
+          "absolute_lba_end_exclusive": 2302,
+          "collision_free": true,
+          "collisions": []
+        },
+        {
+          "relative_bank": 23,
+          "relative_sector_start": 92,
+          "absolute_lba_start": 2302,
+          "absolute_lba_end_exclusive": 2306,
+          "collision_free": true,
+          "collisions": []
+        }
+      ]
+    },
+    {
+      "module_id": "loader.overlay.g21.lba2306",
+      "owner": "overlay",
+      "physical_grid": 21,
+      "lba": 2306,
+      "load_sectors": 96,
+      "logical_entries": [
+        22
+      ],
+      "glyph_supply_bytes_18": 13218,
+      "source_hole_bytes": 11740,
+      "previous_branch": "C_SCENE_LOAD_SIDECAR",
+      "nominal_free_bank_capacity_bytes": 0,
+      "collision_safe_free_bank_capacity_bytes": 0,
+      "invalidated_capacity_bytes": 0,
+      "corrected_branch": "C_SCENE_LOAD_SIDECAR",
+      "dependency": "TASK7_SIDECAR_RAM_REACHABILITY",
+      "tail_banks": []
+    },
+    {
+      "module_id": "loader.overlay.g22.lba2402",
+      "owner": "overlay",
+      "physical_grid": 22,
+      "lba": 2402,
+      "load_sectors": 96,
+      "logical_entries": [
+        23
+      ],
+      "glyph_supply_bytes_18": 11613,
+      "source_hole_bytes": 11216,
+      "previous_branch": "C_SCENE_LOAD_SIDECAR",
+      "nominal_free_bank_capacity_bytes": 0,
+      "collision_safe_free_bank_capacity_bytes": 0,
+      "invalidated_capacity_bytes": 0,
+      "corrected_branch": "C_SCENE_LOAD_SIDECAR",
+      "dependency": "TASK7_SIDECAR_RAM_REACHABILITY",
+      "tail_banks": []
+    },
+    {
+      "module_id": "loader.overlay.g23.lba2498",
+      "owner": "overlay",
+      "physical_grid": 23,
+      "lba": 2498,
+      "load_sectors": 71,
+      "logical_entries": [
+        24
+      ],
+      "glyph_supply_bytes_18": 12837,
+      "source_hole_bytes": 11399,
+      "previous_branch": "A_MODULE_INTERNAL",
+      "nominal_free_bank_capacity_bytes": 49152,
+      "collision_safe_free_bank_capacity_bytes": 49152,
+      "invalidated_capacity_bytes": 0,
+      "corrected_branch": "A_COLLISION_SAFE_MODULE_INTERNAL",
+      "dependency": null,
+      "tail_banks": [
+        {
+          "relative_bank": 18,
+          "relative_sector_start": 72,
+          "absolute_lba_start": 2570,
+          "absolute_lba_end_exclusive": 2574,
+          "collision_free": true,
+          "collisions": []
+        },
+        {
+          "relative_bank": 19,
+          "relative_sector_start": 76,
+          "absolute_lba_start": 2574,
+          "absolute_lba_end_exclusive": 2578,
+          "collision_free": true,
+          "collisions": []
+        },
+        {
+          "relative_bank": 20,
+          "relative_sector_start": 80,
+          "absolute_lba_start": 2578,
+          "absolute_lba_end_exclusive": 2582,
+          "collision_free": true,
+          "collisions": []
+        },
+        {
+          "relative_bank": 21,
+          "relative_sector_start": 84,
+          "absolute_lba_start": 2582,
+          "absolute_lba_end_exclusive": 2586,
+          "collision_free": true,
+          "collisions": []
+        },
+        {
+          "relative_bank": 22,
+          "relative_sector_start": 88,
+          "absolute_lba_start": 2586,
+          "absolute_lba_end_exclusive": 2590,
+          "collision_free": true,
+          "collisions": []
+        },
+        {
+          "relative_bank": 23,
+          "relative_sector_start": 92,
+          "absolute_lba_start": 2590,
+          "absolute_lba_end_exclusive": 2594,
+          "collision_free": true,
+          "collisions": []
+        }
+      ]
+    },
+    {
+      "module_id": "loader.overlay.g24.lba2594",
+      "owner": "overlay",
+      "physical_grid": 24,
+      "lba": 2594,
+      "load_sectors": 71,
+      "logical_entries": [
+        25
+      ],
+      "glyph_supply_bytes_18": 12065,
+      "source_hole_bytes": 9061,
+      "previous_branch": "A_MODULE_INTERNAL",
+      "nominal_free_bank_capacity_bytes": 49152,
+      "collision_safe_free_bank_capacity_bytes": 0,
+      "invalidated_capacity_bytes": 49152,
+      "corrected_branch": "C_SCENE_LOAD_SIDECAR",
+      "dependency": "TASK7_SIDECAR_RAM_REACHABILITY",
+      "tail_banks": [
+        {
+          "relative_bank": 18,
+          "relative_sector_start": 72,
+          "absolute_lba_start": 2666,
+          "absolute_lba_end_exclusive": 2670,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.primary.g26.lba2658",
+              "owner": "primary",
+              "lba": 2658,
+              "load_sectors": 69
+            }
+          ]
+        },
+        {
+          "relative_bank": 19,
+          "relative_sector_start": 76,
+          "absolute_lba_start": 2670,
+          "absolute_lba_end_exclusive": 2674,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.primary.g26.lba2658",
+              "owner": "primary",
+              "lba": 2658,
+              "load_sectors": 69
+            }
+          ]
+        },
+        {
+          "relative_bank": 20,
+          "relative_sector_start": 80,
+          "absolute_lba_start": 2674,
+          "absolute_lba_end_exclusive": 2678,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.primary.g26.lba2658",
+              "owner": "primary",
+              "lba": 2658,
+              "load_sectors": 69
+            }
+          ]
+        },
+        {
+          "relative_bank": 21,
+          "relative_sector_start": 84,
+          "absolute_lba_start": 2678,
+          "absolute_lba_end_exclusive": 2682,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.primary.g26.lba2658",
+              "owner": "primary",
+              "lba": 2658,
+              "load_sectors": 69
+            }
+          ]
+        },
+        {
+          "relative_bank": 22,
+          "relative_sector_start": 88,
+          "absolute_lba_start": 2682,
+          "absolute_lba_end_exclusive": 2686,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.primary.g26.lba2658",
+              "owner": "primary",
+              "lba": 2658,
+              "load_sectors": 69
+            }
+          ]
+        },
+        {
+          "relative_bank": 23,
+          "relative_sector_start": 92,
+          "absolute_lba_start": 2686,
+          "absolute_lba_end_exclusive": 2690,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.primary.g26.lba2658",
+              "owner": "primary",
+              "lba": 2658,
+              "load_sectors": 69
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "module_id": "loader.overlay.g25.lba2690",
+      "owner": "overlay",
+      "physical_grid": 25,
+      "lba": 2690,
+      "load_sectors": 96,
+      "logical_entries": [
+        26
+      ],
+      "glyph_supply_bytes_18": 12631,
+      "source_hole_bytes": 11658,
+      "previous_branch": "C_SCENE_LOAD_SIDECAR",
+      "nominal_free_bank_capacity_bytes": 0,
+      "collision_safe_free_bank_capacity_bytes": 0,
+      "invalidated_capacity_bytes": 0,
+      "corrected_branch": "C_SCENE_LOAD_SIDECAR",
+      "dependency": "TASK7_SIDECAR_RAM_REACHABILITY",
+      "tail_banks": []
+    },
+    {
+      "module_id": "loader.overlay.g26.lba2786",
+      "owner": "overlay",
+      "physical_grid": 26,
+      "lba": 2786,
+      "load_sectors": 69,
+      "logical_entries": [
+        3
+      ],
+      "glyph_supply_bytes_18": 11036,
+      "source_hole_bytes": 8330,
+      "previous_branch": "A_MODULE_INTERNAL",
+      "nominal_free_bank_capacity_bytes": 49152,
+      "collision_safe_free_bank_capacity_bytes": 0,
+      "invalidated_capacity_bytes": 49152,
+      "corrected_branch": "C_SCENE_LOAD_SIDECAR",
+      "dependency": "TASK7_SIDECAR_RAM_REACHABILITY",
+      "tail_banks": [
+        {
+          "relative_bank": 18,
+          "relative_sector_start": 72,
+          "absolute_lba_start": 2858,
+          "absolute_lba_end_exclusive": 2862,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.primary.g28.lba2850",
+              "owner": "primary",
+              "lba": 2850,
+              "load_sectors": 94
+            }
+          ]
+        },
+        {
+          "relative_bank": 19,
+          "relative_sector_start": 76,
+          "absolute_lba_start": 2862,
+          "absolute_lba_end_exclusive": 2866,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.primary.g28.lba2850",
+              "owner": "primary",
+              "lba": 2850,
+              "load_sectors": 94
+            }
+          ]
+        },
+        {
+          "relative_bank": 20,
+          "relative_sector_start": 80,
+          "absolute_lba_start": 2866,
+          "absolute_lba_end_exclusive": 2870,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.primary.g28.lba2850",
+              "owner": "primary",
+              "lba": 2850,
+              "load_sectors": 94
+            }
+          ]
+        },
+        {
+          "relative_bank": 21,
+          "relative_sector_start": 84,
+          "absolute_lba_start": 2870,
+          "absolute_lba_end_exclusive": 2874,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.primary.g28.lba2850",
+              "owner": "primary",
+              "lba": 2850,
+              "load_sectors": 94
+            }
+          ]
+        },
+        {
+          "relative_bank": 22,
+          "relative_sector_start": 88,
+          "absolute_lba_start": 2874,
+          "absolute_lba_end_exclusive": 2878,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.primary.g28.lba2850",
+              "owner": "primary",
+              "lba": 2850,
+              "load_sectors": 94
+            }
+          ]
+        },
+        {
+          "relative_bank": 23,
+          "relative_sector_start": 92,
+          "absolute_lba_start": 2878,
+          "absolute_lba_end_exclusive": 2882,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.primary.g28.lba2850",
+              "owner": "primary",
+              "lba": 2850,
+              "load_sectors": 94
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "module_id": "loader.overlay.g27.lba2882",
+      "owner": "overlay",
+      "physical_grid": 27,
+      "lba": 2882,
+      "load_sectors": 96,
+      "logical_entries": [
+        27
+      ],
+      "glyph_supply_bytes_18": 11537,
+      "source_hole_bytes": 13458,
+      "previous_branch": "A_SOURCE_HOLE_MATERIALIZED",
+      "nominal_free_bank_capacity_bytes": 0,
+      "collision_safe_free_bank_capacity_bytes": 0,
+      "invalidated_capacity_bytes": 0,
+      "corrected_branch": "A_SOURCE_HOLE_MATERIALIZED",
+      "dependency": "TASK8_SOURCE_HOLE_EXPECTED_WRITE",
+      "tail_banks": []
+    },
+    {
+      "module_id": "loader.overlay.g28.lba2978",
+      "owner": "overlay",
+      "physical_grid": 28,
+      "lba": 2978,
+      "load_sectors": 94,
+      "logical_entries": [
+        28
+      ],
+      "glyph_supply_bytes_18": 10920,
+      "source_hole_bytes": 11987,
+      "previous_branch": "A_SOURCE_HOLE_MATERIALIZED",
+      "nominal_free_bank_capacity_bytes": 0,
+      "collision_safe_free_bank_capacity_bytes": 0,
+      "invalidated_capacity_bytes": 0,
+      "corrected_branch": "A_SOURCE_HOLE_MATERIALIZED",
+      "dependency": "TASK8_SOURCE_HOLE_EXPECTED_WRITE",
+      "tail_banks": []
+    },
+    {
+      "module_id": "loader.overlay.g29.lba3074",
+      "owner": "overlay",
+      "physical_grid": 29,
+      "lba": 3074,
+      "load_sectors": 96,
+      "logical_entries": [
+        29
+      ],
+      "glyph_supply_bytes_18": 11198,
+      "source_hole_bytes": 15272,
+      "previous_branch": "A_SOURCE_HOLE_MATERIALIZED",
+      "nominal_free_bank_capacity_bytes": 0,
+      "collision_safe_free_bank_capacity_bytes": 0,
+      "invalidated_capacity_bytes": 0,
+      "corrected_branch": "A_SOURCE_HOLE_MATERIALIZED",
+      "dependency": "TASK8_SOURCE_HOLE_EXPECTED_WRITE",
+      "tail_banks": []
+    },
+    {
+      "module_id": "loader.overlay.g30.lba3170",
+      "owner": "overlay",
+      "physical_grid": 30,
+      "lba": 3170,
+      "load_sectors": 96,
+      "logical_entries": [
+        30
+      ],
+      "glyph_supply_bytes_18": 10940,
+      "source_hole_bytes": 9218,
+      "previous_branch": "C_SCENE_LOAD_SIDECAR",
+      "nominal_free_bank_capacity_bytes": 0,
+      "collision_safe_free_bank_capacity_bytes": 0,
+      "invalidated_capacity_bytes": 0,
+      "corrected_branch": "C_SCENE_LOAD_SIDECAR",
+      "dependency": "TASK7_SIDECAR_RAM_REACHABILITY",
+      "tail_banks": []
+    },
+    {
+      "module_id": "loader.overlay.g31.lba3266",
+      "owner": "overlay",
+      "physical_grid": 31,
+      "lba": 3266,
+      "load_sectors": 96,
+      "logical_entries": [
+        31
+      ],
+      "glyph_supply_bytes_18": 11869,
+      "source_hole_bytes": 13549,
+      "previous_branch": "A_SOURCE_HOLE_MATERIALIZED",
+      "nominal_free_bank_capacity_bytes": 0,
+      "collision_safe_free_bank_capacity_bytes": 0,
+      "invalidated_capacity_bytes": 0,
+      "corrected_branch": "A_SOURCE_HOLE_MATERIALIZED",
+      "dependency": "TASK8_SOURCE_HOLE_EXPECTED_WRITE",
+      "tail_banks": []
+    },
+    {
+      "module_id": "loader.overlay.g32.lba3362",
+      "owner": "overlay",
+      "physical_grid": 32,
+      "lba": 3362,
+      "load_sectors": 96,
+      "logical_entries": [
+        32
+      ],
+      "glyph_supply_bytes_18": 11959,
+      "source_hole_bytes": 19379,
+      "previous_branch": "A_SOURCE_HOLE_MATERIALIZED",
+      "nominal_free_bank_capacity_bytes": 0,
+      "collision_safe_free_bank_capacity_bytes": 0,
+      "invalidated_capacity_bytes": 0,
+      "corrected_branch": "A_SOURCE_HOLE_MATERIALIZED",
+      "dependency": "TASK8_SOURCE_HOLE_EXPECTED_WRITE",
+      "tail_banks": []
+    },
+    {
+      "module_id": "loader.overlay.g33.lba3458",
+      "owner": "overlay",
+      "physical_grid": 33,
+      "lba": 3458,
+      "load_sectors": 96,
+      "logical_entries": [
+        33
+      ],
+      "glyph_supply_bytes_18": 10842,
+      "source_hole_bytes": 11888,
+      "previous_branch": "A_SOURCE_HOLE_MATERIALIZED",
+      "nominal_free_bank_capacity_bytes": 0,
+      "collision_safe_free_bank_capacity_bytes": 0,
+      "invalidated_capacity_bytes": 0,
+      "corrected_branch": "A_SOURCE_HOLE_MATERIALIZED",
+      "dependency": "TASK8_SOURCE_HOLE_EXPECTED_WRITE",
+      "tail_banks": []
+    },
+    {
+      "module_id": "loader.overlay.g34.lba3554",
+      "owner": "overlay",
+      "physical_grid": 34,
+      "lba": 3554,
+      "load_sectors": 84,
+      "logical_entries": [
+        34
+      ],
+      "glyph_supply_bytes_18": 10877,
+      "source_hole_bytes": 8066,
+      "previous_branch": "A_MODULE_INTERNAL",
+      "nominal_free_bank_capacity_bytes": 24576,
+      "collision_safe_free_bank_capacity_bytes": 0,
+      "invalidated_capacity_bytes": 24576,
+      "corrected_branch": "C_SCENE_LOAD_SIDECAR",
+      "dependency": "TASK7_SIDECAR_RAM_REACHABILITY",
+      "tail_banks": [
+        {
+          "relative_bank": 21,
+          "relative_sector_start": 84,
+          "absolute_lba_start": 3638,
+          "absolute_lba_end_exclusive": 3642,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.primary.g36.lba3618",
+              "owner": "primary",
+              "lba": 3618,
+              "load_sectors": 90
+            }
+          ]
+        },
+        {
+          "relative_bank": 22,
+          "relative_sector_start": 88,
+          "absolute_lba_start": 3642,
+          "absolute_lba_end_exclusive": 3646,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.primary.g36.lba3618",
+              "owner": "primary",
+              "lba": 3618,
+              "load_sectors": 90
+            }
+          ]
+        },
+        {
+          "relative_bank": 23,
+          "relative_sector_start": 92,
+          "absolute_lba_start": 3646,
+          "absolute_lba_end_exclusive": 3650,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.primary.g36.lba3618",
+              "owner": "primary",
+              "lba": 3618,
+              "load_sectors": 90
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "module_id": "loader.overlay.g35.lba3650",
+      "owner": "overlay",
+      "physical_grid": 35,
+      "lba": 3650,
+      "load_sectors": 84,
+      "logical_entries": [
+        35
+      ],
+      "glyph_supply_bytes_18": 11300,
+      "source_hole_bytes": 8480,
+      "previous_branch": "A_MODULE_INTERNAL",
+      "nominal_free_bank_capacity_bytes": 24576,
+      "collision_safe_free_bank_capacity_bytes": 0,
+      "invalidated_capacity_bytes": 24576,
+      "corrected_branch": "C_SCENE_LOAD_SIDECAR",
+      "dependency": "TASK7_SIDECAR_RAM_REACHABILITY",
+      "tail_banks": [
+        {
+          "relative_bank": 21,
+          "relative_sector_start": 84,
+          "absolute_lba_start": 3734,
+          "absolute_lba_end_exclusive": 3738,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.primary.g37.lba3714",
+              "owner": "primary",
+              "lba": 3714,
+              "load_sectors": 78
+            }
+          ]
+        },
+        {
+          "relative_bank": 22,
+          "relative_sector_start": 88,
+          "absolute_lba_start": 3738,
+          "absolute_lba_end_exclusive": 3742,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.primary.g37.lba3714",
+              "owner": "primary",
+              "lba": 3714,
+              "load_sectors": 78
+            }
+          ]
+        },
+        {
+          "relative_bank": 23,
+          "relative_sector_start": 92,
+          "absolute_lba_start": 3742,
+          "absolute_lba_end_exclusive": 3746,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.primary.g37.lba3714",
+              "owner": "primary",
+              "lba": 3714,
+              "load_sectors": 78
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "module_id": "loader.overlay.g36.lba3746",
+      "owner": "overlay",
+      "physical_grid": 36,
+      "lba": 3746,
+      "load_sectors": 96,
+      "logical_entries": [
+        36
+      ],
+      "glyph_supply_bytes_18": 11579,
+      "source_hole_bytes": 14960,
+      "previous_branch": "A_SOURCE_HOLE_MATERIALIZED",
+      "nominal_free_bank_capacity_bytes": 0,
+      "collision_safe_free_bank_capacity_bytes": 0,
+      "invalidated_capacity_bytes": 0,
+      "corrected_branch": "A_SOURCE_HOLE_MATERIALIZED",
+      "dependency": "TASK8_SOURCE_HOLE_EXPECTED_WRITE",
+      "tail_banks": []
+    },
+    {
+      "module_id": "loader.overlay.g37.lba3842",
+      "owner": "overlay",
+      "physical_grid": 37,
+      "lba": 3842,
+      "load_sectors": 96,
+      "logical_entries": [
+        37
+      ],
+      "glyph_supply_bytes_18": 11412,
+      "source_hole_bytes": 14299,
+      "previous_branch": "A_SOURCE_HOLE_MATERIALIZED",
+      "nominal_free_bank_capacity_bytes": 0,
+      "collision_safe_free_bank_capacity_bytes": 0,
+      "invalidated_capacity_bytes": 0,
+      "corrected_branch": "A_SOURCE_HOLE_MATERIALIZED",
+      "dependency": "TASK8_SOURCE_HOLE_EXPECTED_WRITE",
+      "tail_banks": []
+    },
+    {
+      "module_id": "loader.overlay.g38.lba3938",
+      "owner": "overlay",
+      "physical_grid": 38,
+      "lba": 3938,
+      "load_sectors": 96,
+      "logical_entries": [
+        38
+      ],
+      "glyph_supply_bytes_18": 10855,
+      "source_hole_bytes": 8522,
+      "previous_branch": "C_SCENE_LOAD_SIDECAR",
+      "nominal_free_bank_capacity_bytes": 0,
+      "collision_safe_free_bank_capacity_bytes": 0,
+      "invalidated_capacity_bytes": 0,
+      "corrected_branch": "C_SCENE_LOAD_SIDECAR",
+      "dependency": "TASK7_SIDECAR_RAM_REACHABILITY",
+      "tail_banks": []
+    },
+    {
+      "module_id": "loader.overlay.g39.lba4034",
+      "owner": "overlay",
+      "physical_grid": 39,
+      "lba": 4034,
+      "load_sectors": 75,
+      "logical_entries": [
+        39
+      ],
+      "glyph_supply_bytes_18": 11024,
+      "source_hole_bytes": 10097,
+      "previous_branch": "A_MODULE_INTERNAL",
+      "nominal_free_bank_capacity_bytes": 40960,
+      "collision_safe_free_bank_capacity_bytes": 0,
+      "invalidated_capacity_bytes": 40960,
+      "corrected_branch": "C_SCENE_LOAD_SIDECAR",
+      "dependency": "TASK7_SIDECAR_RAM_REACHABILITY",
+      "tail_banks": [
+        {
+          "relative_bank": 19,
+          "relative_sector_start": 76,
+          "absolute_lba_start": 4110,
+          "absolute_lba_end_exclusive": 4114,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.primary.g41.lba4098",
+              "owner": "primary",
+              "lba": 4098,
+              "load_sectors": 90
+            }
+          ]
+        },
+        {
+          "relative_bank": 20,
+          "relative_sector_start": 80,
+          "absolute_lba_start": 4114,
+          "absolute_lba_end_exclusive": 4118,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.primary.g41.lba4098",
+              "owner": "primary",
+              "lba": 4098,
+              "load_sectors": 90
+            }
+          ]
+        },
+        {
+          "relative_bank": 21,
+          "relative_sector_start": 84,
+          "absolute_lba_start": 4118,
+          "absolute_lba_end_exclusive": 4122,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.primary.g41.lba4098",
+              "owner": "primary",
+              "lba": 4098,
+              "load_sectors": 90
+            }
+          ]
+        },
+        {
+          "relative_bank": 22,
+          "relative_sector_start": 88,
+          "absolute_lba_start": 4122,
+          "absolute_lba_end_exclusive": 4126,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.primary.g41.lba4098",
+              "owner": "primary",
+              "lba": 4098,
+              "load_sectors": 90
+            }
+          ]
+        },
+        {
+          "relative_bank": 23,
+          "relative_sector_start": 92,
+          "absolute_lba_start": 4126,
+          "absolute_lba_end_exclusive": 4130,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.primary.g41.lba4098",
+              "owner": "primary",
+              "lba": 4098,
+              "load_sectors": 90
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "module_id": "loader.overlay.g40.lba4130",
+      "owner": "overlay",
+      "physical_grid": 40,
+      "lba": 4130,
+      "load_sectors": 96,
+      "logical_entries": [
+        40
+      ],
+      "glyph_supply_bytes_18": 11709,
+      "source_hole_bytes": 14135,
+      "previous_branch": "A_SOURCE_HOLE_MATERIALIZED",
+      "nominal_free_bank_capacity_bytes": 0,
+      "collision_safe_free_bank_capacity_bytes": 0,
+      "invalidated_capacity_bytes": 0,
+      "corrected_branch": "A_SOURCE_HOLE_MATERIALIZED",
+      "dependency": "TASK8_SOURCE_HOLE_EXPECTED_WRITE",
+      "tail_banks": []
+    },
+    {
+      "module_id": "loader.overlay.g41.lba4226",
+      "owner": "overlay",
+      "physical_grid": 41,
+      "lba": 4226,
+      "load_sectors": 96,
+      "logical_entries": [
+        41
+      ],
+      "glyph_supply_bytes_18": 11706,
+      "source_hole_bytes": 13777,
+      "previous_branch": "A_SOURCE_HOLE_MATERIALIZED",
+      "nominal_free_bank_capacity_bytes": 0,
+      "collision_safe_free_bank_capacity_bytes": 0,
+      "invalidated_capacity_bytes": 0,
+      "corrected_branch": "A_SOURCE_HOLE_MATERIALIZED",
+      "dependency": "TASK8_SOURCE_HOLE_EXPECTED_WRITE",
+      "tail_banks": []
+    },
+    {
+      "module_id": "loader.overlay.g42.lba4322",
+      "owner": "overlay",
+      "physical_grid": 42,
+      "lba": 4322,
+      "load_sectors": 96,
+      "logical_entries": [
+        42
+      ],
+      "glyph_supply_bytes_18": 10901,
+      "source_hole_bytes": 11902,
+      "previous_branch": "A_SOURCE_HOLE_MATERIALIZED",
+      "nominal_free_bank_capacity_bytes": 0,
+      "collision_safe_free_bank_capacity_bytes": 0,
+      "invalidated_capacity_bytes": 0,
+      "corrected_branch": "A_SOURCE_HOLE_MATERIALIZED",
+      "dependency": "TASK8_SOURCE_HOLE_EXPECTED_WRITE",
+      "tail_banks": []
+    },
+    {
+      "module_id": "loader.overlay.g43.lba4418",
+      "owner": "overlay",
+      "physical_grid": 43,
+      "lba": 4418,
+      "load_sectors": 80,
+      "logical_entries": [
+        43
+      ],
+      "glyph_supply_bytes_18": 10845,
+      "source_hole_bytes": 11583,
+      "previous_branch": "A_MODULE_INTERNAL",
+      "nominal_free_bank_capacity_bytes": 32768,
+      "collision_safe_free_bank_capacity_bytes": 32768,
+      "invalidated_capacity_bytes": 0,
+      "corrected_branch": "A_COLLISION_SAFE_MODULE_INTERNAL",
+      "dependency": null,
+      "tail_banks": [
+        {
+          "relative_bank": 20,
+          "relative_sector_start": 80,
+          "absolute_lba_start": 4498,
+          "absolute_lba_end_exclusive": 4502,
+          "collision_free": true,
+          "collisions": []
+        },
+        {
+          "relative_bank": 21,
+          "relative_sector_start": 84,
+          "absolute_lba_start": 4502,
+          "absolute_lba_end_exclusive": 4506,
+          "collision_free": true,
+          "collisions": []
+        },
+        {
+          "relative_bank": 22,
+          "relative_sector_start": 88,
+          "absolute_lba_start": 4506,
+          "absolute_lba_end_exclusive": 4510,
+          "collision_free": true,
+          "collisions": []
+        },
+        {
+          "relative_bank": 23,
+          "relative_sector_start": 92,
+          "absolute_lba_start": 4510,
+          "absolute_lba_end_exclusive": 4514,
+          "collision_free": true,
+          "collisions": []
+        }
+      ]
+    },
+    {
+      "module_id": "loader.overlay.g44.lba4514",
+      "owner": "overlay",
+      "physical_grid": 44,
+      "lba": 4514,
+      "load_sectors": 82,
+      "logical_entries": [
+        44
+      ],
+      "glyph_supply_bytes_18": 11193,
+      "source_hole_bytes": 11729,
+      "previous_branch": "A_MODULE_INTERNAL",
+      "nominal_free_bank_capacity_bytes": 24576,
+      "collision_safe_free_bank_capacity_bytes": 24576,
+      "invalidated_capacity_bytes": 0,
+      "corrected_branch": "A_COLLISION_SAFE_MODULE_INTERNAL",
+      "dependency": null,
+      "tail_banks": [
+        {
+          "relative_bank": 21,
+          "relative_sector_start": 84,
+          "absolute_lba_start": 4598,
+          "absolute_lba_end_exclusive": 4602,
+          "collision_free": true,
+          "collisions": []
+        },
+        {
+          "relative_bank": 22,
+          "relative_sector_start": 88,
+          "absolute_lba_start": 4602,
+          "absolute_lba_end_exclusive": 4606,
+          "collision_free": true,
+          "collisions": []
+        },
+        {
+          "relative_bank": 23,
+          "relative_sector_start": 92,
+          "absolute_lba_start": 4606,
+          "absolute_lba_end_exclusive": 4610,
+          "collision_free": true,
+          "collisions": []
+        }
+      ]
+    },
+    {
+      "module_id": "loader.overlay.g45.lba4610",
+      "owner": "overlay",
+      "physical_grid": 45,
+      "lba": 4610,
+      "load_sectors": 81,
+      "logical_entries": [
+        45
+      ],
+      "glyph_supply_bytes_18": 10831,
+      "source_hole_bytes": 11824,
+      "previous_branch": "A_MODULE_INTERNAL",
+      "nominal_free_bank_capacity_bytes": 24576,
+      "collision_safe_free_bank_capacity_bytes": 24576,
+      "invalidated_capacity_bytes": 0,
+      "corrected_branch": "A_COLLISION_SAFE_MODULE_INTERNAL",
+      "dependency": null,
+      "tail_banks": [
+        {
+          "relative_bank": 21,
+          "relative_sector_start": 84,
+          "absolute_lba_start": 4694,
+          "absolute_lba_end_exclusive": 4698,
+          "collision_free": true,
+          "collisions": []
+        },
+        {
+          "relative_bank": 22,
+          "relative_sector_start": 88,
+          "absolute_lba_start": 4698,
+          "absolute_lba_end_exclusive": 4702,
+          "collision_free": true,
+          "collisions": []
+        },
+        {
+          "relative_bank": 23,
+          "relative_sector_start": 92,
+          "absolute_lba_start": 4702,
+          "absolute_lba_end_exclusive": 4706,
+          "collision_free": true,
+          "collisions": []
+        }
+      ]
+    },
+    {
+      "module_id": "loader.overlay.g46.lba4706",
+      "owner": "overlay",
+      "physical_grid": 46,
+      "lba": 4706,
+      "load_sectors": 81,
+      "logical_entries": [
+        46
+      ],
+      "glyph_supply_bytes_18": 11912,
+      "source_hole_bytes": 13744,
+      "previous_branch": "A_MODULE_INTERNAL",
+      "nominal_free_bank_capacity_bytes": 24576,
+      "collision_safe_free_bank_capacity_bytes": 24576,
+      "invalidated_capacity_bytes": 0,
+      "corrected_branch": "A_COLLISION_SAFE_MODULE_INTERNAL",
+      "dependency": null,
+      "tail_banks": [
+        {
+          "relative_bank": 21,
+          "relative_sector_start": 84,
+          "absolute_lba_start": 4790,
+          "absolute_lba_end_exclusive": 4794,
+          "collision_free": true,
+          "collisions": []
+        },
+        {
+          "relative_bank": 22,
+          "relative_sector_start": 88,
+          "absolute_lba_start": 4794,
+          "absolute_lba_end_exclusive": 4798,
+          "collision_free": true,
+          "collisions": []
+        },
+        {
+          "relative_bank": 23,
+          "relative_sector_start": 92,
+          "absolute_lba_start": 4798,
+          "absolute_lba_end_exclusive": 4802,
+          "collision_free": true,
+          "collisions": []
+        }
+      ]
+    },
+    {
+      "module_id": "loader.overlay.g47.lba4802",
+      "owner": "overlay",
+      "physical_grid": 47,
+      "lba": 4802,
+      "load_sectors": 90,
+      "logical_entries": [
+        47
+      ],
+      "glyph_supply_bytes_18": 11002,
+      "source_hole_bytes": 11919,
+      "previous_branch": "A_SOURCE_HOLE_MATERIALIZED",
+      "nominal_free_bank_capacity_bytes": 8192,
+      "collision_safe_free_bank_capacity_bytes": 8192,
+      "invalidated_capacity_bytes": 0,
+      "corrected_branch": "A_SOURCE_HOLE_MATERIALIZED",
+      "dependency": "TASK8_SOURCE_HOLE_EXPECTED_WRITE",
+      "tail_banks": [
+        {
+          "relative_bank": 23,
+          "relative_sector_start": 92,
+          "absolute_lba_start": 4894,
+          "absolute_lba_end_exclusive": 4898,
+          "collision_free": true,
+          "collisions": []
+        }
+      ]
+    },
+    {
+      "module_id": "loader.overlay.g48.lba4898",
+      "owner": "overlay",
+      "physical_grid": 48,
+      "lba": 4898,
+      "load_sectors": 76,
+      "logical_entries": [
+        48
+      ],
+      "glyph_supply_bytes_18": 11409,
+      "source_hole_bytes": 12731,
+      "previous_branch": "A_MODULE_INTERNAL",
+      "nominal_free_bank_capacity_bytes": 40960,
+      "collision_safe_free_bank_capacity_bytes": 40960,
+      "invalidated_capacity_bytes": 0,
+      "corrected_branch": "A_COLLISION_SAFE_MODULE_INTERNAL",
+      "dependency": null,
+      "tail_banks": [
+        {
+          "relative_bank": 19,
+          "relative_sector_start": 76,
+          "absolute_lba_start": 4974,
+          "absolute_lba_end_exclusive": 4978,
+          "collision_free": true,
+          "collisions": []
+        },
+        {
+          "relative_bank": 20,
+          "relative_sector_start": 80,
+          "absolute_lba_start": 4978,
+          "absolute_lba_end_exclusive": 4982,
+          "collision_free": true,
+          "collisions": []
+        },
+        {
+          "relative_bank": 21,
+          "relative_sector_start": 84,
+          "absolute_lba_start": 4982,
+          "absolute_lba_end_exclusive": 4986,
+          "collision_free": true,
+          "collisions": []
+        },
+        {
+          "relative_bank": 22,
+          "relative_sector_start": 88,
+          "absolute_lba_start": 4986,
+          "absolute_lba_end_exclusive": 4990,
+          "collision_free": true,
+          "collisions": []
+        },
+        {
+          "relative_bank": 23,
+          "relative_sector_start": 92,
+          "absolute_lba_start": 4990,
+          "absolute_lba_end_exclusive": 4994,
+          "collision_free": true,
+          "collisions": []
+        }
+      ]
+    },
+    {
+      "module_id": "loader.overlay.g49.lba4994",
+      "owner": "overlay",
+      "physical_grid": 49,
+      "lba": 4994,
+      "load_sectors": 76,
+      "logical_entries": [
+        49
+      ],
+      "glyph_supply_bytes_18": 11895,
+      "source_hole_bytes": 13264,
+      "previous_branch": "A_MODULE_INTERNAL",
+      "nominal_free_bank_capacity_bytes": 40960,
+      "collision_safe_free_bank_capacity_bytes": 40960,
+      "invalidated_capacity_bytes": 0,
+      "corrected_branch": "A_COLLISION_SAFE_MODULE_INTERNAL",
+      "dependency": null,
+      "tail_banks": [
+        {
+          "relative_bank": 19,
+          "relative_sector_start": 76,
+          "absolute_lba_start": 5070,
+          "absolute_lba_end_exclusive": 5074,
+          "collision_free": true,
+          "collisions": []
+        },
+        {
+          "relative_bank": 20,
+          "relative_sector_start": 80,
+          "absolute_lba_start": 5074,
+          "absolute_lba_end_exclusive": 5078,
+          "collision_free": true,
+          "collisions": []
+        },
+        {
+          "relative_bank": 21,
+          "relative_sector_start": 84,
+          "absolute_lba_start": 5078,
+          "absolute_lba_end_exclusive": 5082,
+          "collision_free": true,
+          "collisions": []
+        },
+        {
+          "relative_bank": 22,
+          "relative_sector_start": 88,
+          "absolute_lba_start": 5082,
+          "absolute_lba_end_exclusive": 5086,
+          "collision_free": true,
+          "collisions": []
+        },
+        {
+          "relative_bank": 23,
+          "relative_sector_start": 92,
+          "absolute_lba_start": 5086,
+          "absolute_lba_end_exclusive": 5090,
+          "collision_free": true,
+          "collisions": []
+        }
+      ]
+    },
+    {
+      "module_id": "loader.overlay.g50.lba5090",
+      "owner": "overlay",
+      "physical_grid": 50,
+      "lba": 5090,
+      "load_sectors": 84,
+      "logical_entries": [
+        50
+      ],
+      "glyph_supply_bytes_18": 12111,
+      "source_hole_bytes": 13319,
+      "previous_branch": "A_MODULE_INTERNAL",
+      "nominal_free_bank_capacity_bytes": 24576,
+      "collision_safe_free_bank_capacity_bytes": 24576,
+      "invalidated_capacity_bytes": 0,
+      "corrected_branch": "A_COLLISION_SAFE_MODULE_INTERNAL",
+      "dependency": null,
+      "tail_banks": [
+        {
+          "relative_bank": 21,
+          "relative_sector_start": 84,
+          "absolute_lba_start": 5174,
+          "absolute_lba_end_exclusive": 5178,
+          "collision_free": true,
+          "collisions": []
+        },
+        {
+          "relative_bank": 22,
+          "relative_sector_start": 88,
+          "absolute_lba_start": 5178,
+          "absolute_lba_end_exclusive": 5182,
+          "collision_free": true,
+          "collisions": []
+        },
+        {
+          "relative_bank": 23,
+          "relative_sector_start": 92,
+          "absolute_lba_start": 5182,
+          "absolute_lba_end_exclusive": 5186,
+          "collision_free": true,
+          "collisions": []
+        }
+      ]
+    },
+    {
+      "module_id": "loader.overlay.g51.lba5186",
+      "owner": "overlay",
+      "physical_grid": 51,
+      "lba": 5186,
+      "load_sectors": 96,
+      "logical_entries": [
+        51
+      ],
+      "glyph_supply_bytes_18": 11101,
+      "source_hole_bytes": 13193,
+      "previous_branch": "A_SOURCE_HOLE_MATERIALIZED",
+      "nominal_free_bank_capacity_bytes": 0,
+      "collision_safe_free_bank_capacity_bytes": 0,
+      "invalidated_capacity_bytes": 0,
+      "corrected_branch": "A_SOURCE_HOLE_MATERIALIZED",
+      "dependency": "TASK8_SOURCE_HOLE_EXPECTED_WRITE",
+      "tail_banks": []
+    },
+    {
+      "module_id": "loader.overlay.g52.lba5282",
+      "owner": "overlay",
+      "physical_grid": 52,
+      "lba": 5282,
+      "load_sectors": 96,
+      "logical_entries": [
+        52
+      ],
+      "glyph_supply_bytes_18": 11060,
+      "source_hole_bytes": 12429,
+      "previous_branch": "A_SOURCE_HOLE_MATERIALIZED",
+      "nominal_free_bank_capacity_bytes": 0,
+      "collision_safe_free_bank_capacity_bytes": 0,
+      "invalidated_capacity_bytes": 0,
+      "corrected_branch": "A_SOURCE_HOLE_MATERIALIZED",
+      "dependency": "TASK8_SOURCE_HOLE_EXPECTED_WRITE",
+      "tail_banks": []
+    },
+    {
+      "module_id": "loader.overlay.g53.lba5378",
+      "owner": "overlay",
+      "physical_grid": 53,
+      "lba": 5378,
+      "load_sectors": 96,
+      "logical_entries": [
+        54
+      ],
+      "glyph_supply_bytes_18": 11433,
+      "source_hole_bytes": 12583,
+      "previous_branch": "A_SOURCE_HOLE_MATERIALIZED",
+      "nominal_free_bank_capacity_bytes": 0,
+      "collision_safe_free_bank_capacity_bytes": 0,
+      "invalidated_capacity_bytes": 0,
+      "corrected_branch": "A_SOURCE_HOLE_MATERIALIZED",
+      "dependency": "TASK8_SOURCE_HOLE_EXPECTED_WRITE",
+      "tail_banks": []
+    },
+    {
+      "module_id": "loader.primary.g00.lba162",
+      "owner": "primary",
+      "physical_grid": 0,
+      "lba": 162,
+      "load_sectors": 96,
+      "logical_entries": [
+        0,
+        1
+      ],
+      "glyph_supply_bytes_18": 366,
+      "source_hole_bytes": null,
+      "previous_branch": "C_SCENE_LOAD_SIDECAR",
+      "nominal_free_bank_capacity_bytes": 0,
+      "collision_safe_free_bank_capacity_bytes": 0,
+      "invalidated_capacity_bytes": 0,
+      "corrected_branch": "C_SCENE_LOAD_SIDECAR",
+      "dependency": "TASK7_SIDECAR_RAM_REACHABILITY",
+      "tail_banks": []
+    },
+    {
+      "module_id": "loader.primary.g02.lba354",
+      "owner": "primary",
+      "physical_grid": 2,
+      "lba": 354,
+      "load_sectors": 75,
+      "logical_entries": [
+        2,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26
+      ],
+      "glyph_supply_bytes_18": 10567,
+      "source_hole_bytes": 6566,
+      "previous_branch": "A_MODULE_INTERNAL",
+      "nominal_free_bank_capacity_bytes": 40960,
+      "collision_safe_free_bank_capacity_bytes": 0,
+      "invalidated_capacity_bytes": 40960,
+      "corrected_branch": "C_SCENE_LOAD_SIDECAR",
+      "dependency": "TASK7_SIDECAR_RAM_REACHABILITY",
+      "tail_banks": [
+        {
+          "relative_bank": 19,
+          "relative_sector_start": 76,
+          "absolute_lba_start": 430,
+          "absolute_lba_end_exclusive": 434,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g01.lba386",
+              "owner": "overlay",
+              "lba": 386,
+              "load_sectors": 96
+            }
+          ]
+        },
+        {
+          "relative_bank": 20,
+          "relative_sector_start": 80,
+          "absolute_lba_start": 434,
+          "absolute_lba_end_exclusive": 438,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g01.lba386",
+              "owner": "overlay",
+              "lba": 386,
+              "load_sectors": 96
+            }
+          ]
+        },
+        {
+          "relative_bank": 21,
+          "relative_sector_start": 84,
+          "absolute_lba_start": 438,
+          "absolute_lba_end_exclusive": 442,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g01.lba386",
+              "owner": "overlay",
+              "lba": 386,
+              "load_sectors": 96
+            }
+          ]
+        },
+        {
+          "relative_bank": 22,
+          "relative_sector_start": 88,
+          "absolute_lba_start": 442,
+          "absolute_lba_end_exclusive": 446,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g01.lba386",
+              "owner": "overlay",
+              "lba": 386,
+              "load_sectors": 96
+            }
+          ]
+        },
+        {
+          "relative_bank": 23,
+          "relative_sector_start": 92,
+          "absolute_lba_start": 446,
+          "absolute_lba_end_exclusive": 450,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g01.lba386",
+              "owner": "overlay",
+              "lba": 386,
+              "load_sectors": 96
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "module_id": "loader.primary.g03.lba450",
+      "owner": "primary",
+      "physical_grid": 3,
+      "lba": 450,
+      "load_sectors": 78,
+      "logical_entries": [
+        4
+      ],
+      "glyph_supply_bytes_18": 3664,
+      "source_hole_bytes": null,
+      "previous_branch": "A_MODULE_INTERNAL",
+      "nominal_free_bank_capacity_bytes": 32768,
+      "collision_safe_free_bank_capacity_bytes": 0,
+      "invalidated_capacity_bytes": 32768,
+      "corrected_branch": "C_SCENE_LOAD_SIDECAR",
+      "dependency": "TASK7_SIDECAR_RAM_REACHABILITY",
+      "tail_banks": [
+        {
+          "relative_bank": 20,
+          "relative_sector_start": 80,
+          "absolute_lba_start": 530,
+          "absolute_lba_end_exclusive": 534,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g02.lba482",
+              "owner": "overlay",
+              "lba": 482,
+              "load_sectors": 96
+            }
+          ]
+        },
+        {
+          "relative_bank": 21,
+          "relative_sector_start": 84,
+          "absolute_lba_start": 534,
+          "absolute_lba_end_exclusive": 538,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g02.lba482",
+              "owner": "overlay",
+              "lba": 482,
+              "load_sectors": 96
+            }
+          ]
+        },
+        {
+          "relative_bank": 22,
+          "relative_sector_start": 88,
+          "absolute_lba_start": 538,
+          "absolute_lba_end_exclusive": 542,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g02.lba482",
+              "owner": "overlay",
+              "lba": 482,
+              "load_sectors": 96
+            }
+          ]
+        },
+        {
+          "relative_bank": 23,
+          "relative_sector_start": 92,
+          "absolute_lba_start": 542,
+          "absolute_lba_end_exclusive": 546,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g02.lba482",
+              "owner": "overlay",
+              "lba": 482,
+              "load_sectors": 96
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "module_id": "loader.primary.g04.lba546",
+      "owner": "primary",
+      "physical_grid": 4,
+      "lba": 546,
+      "load_sectors": 84,
+      "logical_entries": [
+        5
+      ],
+      "glyph_supply_bytes_18": 11346,
+      "source_hole_bytes": 14046,
+      "previous_branch": "A_MODULE_INTERNAL",
+      "nominal_free_bank_capacity_bytes": 24576,
+      "collision_safe_free_bank_capacity_bytes": 0,
+      "invalidated_capacity_bytes": 24576,
+      "corrected_branch": "A_SOURCE_HOLE_MATERIALIZED",
+      "dependency": "TASK8_SOURCE_HOLE_EXPECTED_WRITE",
+      "tail_banks": [
+        {
+          "relative_bank": 21,
+          "relative_sector_start": 84,
+          "absolute_lba_start": 630,
+          "absolute_lba_end_exclusive": 634,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g03.lba578",
+              "owner": "overlay",
+              "lba": 578,
+              "load_sectors": 78
+            }
+          ]
+        },
+        {
+          "relative_bank": 22,
+          "relative_sector_start": 88,
+          "absolute_lba_start": 634,
+          "absolute_lba_end_exclusive": 638,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g03.lba578",
+              "owner": "overlay",
+              "lba": 578,
+              "load_sectors": 78
+            }
+          ]
+        },
+        {
+          "relative_bank": 23,
+          "relative_sector_start": 92,
+          "absolute_lba_start": 638,
+          "absolute_lba_end_exclusive": 642,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g03.lba578",
+              "owner": "overlay",
+              "lba": 578,
+              "load_sectors": 78
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "module_id": "loader.primary.g05.lba642",
+      "owner": "primary",
+      "physical_grid": 5,
+      "lba": 642,
+      "load_sectors": 71,
+      "logical_entries": [
+        6
+      ],
+      "glyph_supply_bytes_18": 4205,
+      "source_hole_bytes": 92,
+      "previous_branch": "A_MODULE_INTERNAL",
+      "nominal_free_bank_capacity_bytes": 49152,
+      "collision_safe_free_bank_capacity_bytes": 0,
+      "invalidated_capacity_bytes": 49152,
+      "corrected_branch": "C_SCENE_LOAD_SIDECAR",
+      "dependency": "TASK7_SIDECAR_RAM_REACHABILITY",
+      "tail_banks": [
+        {
+          "relative_bank": 18,
+          "relative_sector_start": 72,
+          "absolute_lba_start": 714,
+          "absolute_lba_end_exclusive": 718,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g04.lba674",
+              "owner": "overlay",
+              "lba": 674,
+              "load_sectors": 96
+            }
+          ]
+        },
+        {
+          "relative_bank": 19,
+          "relative_sector_start": 76,
+          "absolute_lba_start": 718,
+          "absolute_lba_end_exclusive": 722,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g04.lba674",
+              "owner": "overlay",
+              "lba": 674,
+              "load_sectors": 96
+            }
+          ]
+        },
+        {
+          "relative_bank": 20,
+          "relative_sector_start": 80,
+          "absolute_lba_start": 722,
+          "absolute_lba_end_exclusive": 726,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g04.lba674",
+              "owner": "overlay",
+              "lba": 674,
+              "load_sectors": 96
+            }
+          ]
+        },
+        {
+          "relative_bank": 21,
+          "relative_sector_start": 84,
+          "absolute_lba_start": 726,
+          "absolute_lba_end_exclusive": 730,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g04.lba674",
+              "owner": "overlay",
+              "lba": 674,
+              "load_sectors": 96
+            }
+          ]
+        },
+        {
+          "relative_bank": 22,
+          "relative_sector_start": 88,
+          "absolute_lba_start": 730,
+          "absolute_lba_end_exclusive": 734,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g04.lba674",
+              "owner": "overlay",
+              "lba": 674,
+              "load_sectors": 96
+            }
+          ]
+        },
+        {
+          "relative_bank": 23,
+          "relative_sector_start": 92,
+          "absolute_lba_start": 734,
+          "absolute_lba_end_exclusive": 738,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g04.lba674",
+              "owner": "overlay",
+              "lba": 674,
+              "load_sectors": 96
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "module_id": "loader.primary.g06.lba738",
+      "owner": "primary",
+      "physical_grid": 6,
+      "lba": 738,
+      "load_sectors": 74,
+      "logical_entries": [
+        7
+      ],
+      "glyph_supply_bytes_18": 10567,
+      "source_hole_bytes": 6566,
+      "previous_branch": "A_MODULE_INTERNAL",
+      "nominal_free_bank_capacity_bytes": 40960,
+      "collision_safe_free_bank_capacity_bytes": 0,
+      "invalidated_capacity_bytes": 40960,
+      "corrected_branch": "C_SCENE_LOAD_SIDECAR",
+      "dependency": "TASK7_SIDECAR_RAM_REACHABILITY",
+      "tail_banks": [
+        {
+          "relative_bank": 19,
+          "relative_sector_start": 76,
+          "absolute_lba_start": 814,
+          "absolute_lba_end_exclusive": 818,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g05.lba770",
+              "owner": "overlay",
+              "lba": 770,
+              "load_sectors": 96
+            }
+          ]
+        },
+        {
+          "relative_bank": 20,
+          "relative_sector_start": 80,
+          "absolute_lba_start": 818,
+          "absolute_lba_end_exclusive": 822,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g05.lba770",
+              "owner": "overlay",
+              "lba": 770,
+              "load_sectors": 96
+            }
+          ]
+        },
+        {
+          "relative_bank": 21,
+          "relative_sector_start": 84,
+          "absolute_lba_start": 822,
+          "absolute_lba_end_exclusive": 826,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g05.lba770",
+              "owner": "overlay",
+              "lba": 770,
+              "load_sectors": 96
+            }
+          ]
+        },
+        {
+          "relative_bank": 22,
+          "relative_sector_start": 88,
+          "absolute_lba_start": 826,
+          "absolute_lba_end_exclusive": 830,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g05.lba770",
+              "owner": "overlay",
+              "lba": 770,
+              "load_sectors": 96
+            }
+          ]
+        },
+        {
+          "relative_bank": 23,
+          "relative_sector_start": 92,
+          "absolute_lba_start": 830,
+          "absolute_lba_end_exclusive": 834,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g05.lba770",
+              "owner": "overlay",
+              "lba": 770,
+              "load_sectors": 96
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "module_id": "loader.primary.g07.lba834",
+      "owner": "primary",
+      "physical_grid": 7,
+      "lba": 834,
+      "load_sectors": 72,
+      "logical_entries": [
+        8
+      ],
+      "glyph_supply_bytes_18": 11211,
+      "source_hole_bytes": 8876,
+      "previous_branch": "A_MODULE_INTERNAL",
+      "nominal_free_bank_capacity_bytes": 49152,
+      "collision_safe_free_bank_capacity_bytes": 0,
+      "invalidated_capacity_bytes": 49152,
+      "corrected_branch": "C_SCENE_LOAD_SIDECAR",
+      "dependency": "TASK7_SIDECAR_RAM_REACHABILITY",
+      "tail_banks": [
+        {
+          "relative_bank": 18,
+          "relative_sector_start": 72,
+          "absolute_lba_start": 906,
+          "absolute_lba_end_exclusive": 910,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g06.lba866",
+              "owner": "overlay",
+              "lba": 866,
+              "load_sectors": 96
+            }
+          ]
+        },
+        {
+          "relative_bank": 19,
+          "relative_sector_start": 76,
+          "absolute_lba_start": 910,
+          "absolute_lba_end_exclusive": 914,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g06.lba866",
+              "owner": "overlay",
+              "lba": 866,
+              "load_sectors": 96
+            }
+          ]
+        },
+        {
+          "relative_bank": 20,
+          "relative_sector_start": 80,
+          "absolute_lba_start": 914,
+          "absolute_lba_end_exclusive": 918,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g06.lba866",
+              "owner": "overlay",
+              "lba": 866,
+              "load_sectors": 96
+            }
+          ]
+        },
+        {
+          "relative_bank": 21,
+          "relative_sector_start": 84,
+          "absolute_lba_start": 918,
+          "absolute_lba_end_exclusive": 922,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g06.lba866",
+              "owner": "overlay",
+              "lba": 866,
+              "load_sectors": 96
+            }
+          ]
+        },
+        {
+          "relative_bank": 22,
+          "relative_sector_start": 88,
+          "absolute_lba_start": 922,
+          "absolute_lba_end_exclusive": 926,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g06.lba866",
+              "owner": "overlay",
+              "lba": 866,
+              "load_sectors": 96
+            }
+          ]
+        },
+        {
+          "relative_bank": 23,
+          "relative_sector_start": 92,
+          "absolute_lba_start": 926,
+          "absolute_lba_end_exclusive": 930,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g06.lba866",
+              "owner": "overlay",
+              "lba": 866,
+              "load_sectors": 96
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "module_id": "loader.primary.g08.lba930",
+      "owner": "primary",
+      "physical_grid": 8,
+      "lba": 930,
+      "load_sectors": 83,
+      "logical_entries": [
+        9
+      ],
+      "glyph_supply_bytes_18": 10558,
+      "source_hole_bytes": 6566,
+      "previous_branch": "A_MODULE_INTERNAL",
+      "nominal_free_bank_capacity_bytes": 24576,
+      "collision_safe_free_bank_capacity_bytes": 0,
+      "invalidated_capacity_bytes": 24576,
+      "corrected_branch": "C_SCENE_LOAD_SIDECAR",
+      "dependency": "TASK7_SIDECAR_RAM_REACHABILITY",
+      "tail_banks": [
+        {
+          "relative_bank": 21,
+          "relative_sector_start": 84,
+          "absolute_lba_start": 1014,
+          "absolute_lba_end_exclusive": 1018,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g07.lba962",
+              "owner": "overlay",
+              "lba": 962,
+              "load_sectors": 96
+            }
+          ]
+        },
+        {
+          "relative_bank": 22,
+          "relative_sector_start": 88,
+          "absolute_lba_start": 1018,
+          "absolute_lba_end_exclusive": 1022,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g07.lba962",
+              "owner": "overlay",
+              "lba": 962,
+              "load_sectors": 96
+            }
+          ]
+        },
+        {
+          "relative_bank": 23,
+          "relative_sector_start": 92,
+          "absolute_lba_start": 1022,
+          "absolute_lba_end_exclusive": 1026,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g07.lba962",
+              "owner": "overlay",
+              "lba": 962,
+              "load_sectors": 96
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "module_id": "loader.primary.g09.lba1026",
+      "owner": "primary",
+      "physical_grid": 9,
+      "lba": 1026,
+      "load_sectors": 76,
+      "logical_entries": [
+        10
+      ],
+      "glyph_supply_bytes_18": 10753,
+      "source_hole_bytes": 14083,
+      "previous_branch": "A_MODULE_INTERNAL",
+      "nominal_free_bank_capacity_bytes": 40960,
+      "collision_safe_free_bank_capacity_bytes": 0,
+      "invalidated_capacity_bytes": 40960,
+      "corrected_branch": "A_SOURCE_HOLE_MATERIALIZED",
+      "dependency": "TASK8_SOURCE_HOLE_EXPECTED_WRITE",
+      "tail_banks": [
+        {
+          "relative_bank": 19,
+          "relative_sector_start": 76,
+          "absolute_lba_start": 1102,
+          "absolute_lba_end_exclusive": 1106,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g08.lba1058",
+              "owner": "overlay",
+              "lba": 1058,
+              "load_sectors": 83
+            }
+          ]
+        },
+        {
+          "relative_bank": 20,
+          "relative_sector_start": 80,
+          "absolute_lba_start": 1106,
+          "absolute_lba_end_exclusive": 1110,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g08.lba1058",
+              "owner": "overlay",
+              "lba": 1058,
+              "load_sectors": 83
+            }
+          ]
+        },
+        {
+          "relative_bank": 21,
+          "relative_sector_start": 84,
+          "absolute_lba_start": 1110,
+          "absolute_lba_end_exclusive": 1114,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g08.lba1058",
+              "owner": "overlay",
+              "lba": 1058,
+              "load_sectors": 83
+            }
+          ]
+        },
+        {
+          "relative_bank": 22,
+          "relative_sector_start": 88,
+          "absolute_lba_start": 1114,
+          "absolute_lba_end_exclusive": 1118,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g08.lba1058",
+              "owner": "overlay",
+              "lba": 1058,
+              "load_sectors": 83
+            }
+          ]
+        },
+        {
+          "relative_bank": 23,
+          "relative_sector_start": 92,
+          "absolute_lba_start": 1118,
+          "absolute_lba_end_exclusive": 1122,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g08.lba1058",
+              "owner": "overlay",
+              "lba": 1058,
+              "load_sectors": 83
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "module_id": "loader.primary.g10.lba1122",
+      "owner": "primary",
+      "physical_grid": 10,
+      "lba": 1122,
+      "load_sectors": 92,
+      "logical_entries": [
+        11
+      ],
+      "glyph_supply_bytes_18": 9896,
+      "source_hole_bytes": 5262,
+      "previous_branch": "A_SOURCE_HOLE_MATERIALIZED",
+      "nominal_free_bank_capacity_bytes": 8192,
+      "collision_safe_free_bank_capacity_bytes": 0,
+      "invalidated_capacity_bytes": 8192,
+      "corrected_branch": "C_SCENE_LOAD_SIDECAR",
+      "dependency": "TASK7_SIDECAR_RAM_REACHABILITY",
+      "tail_banks": [
+        {
+          "relative_bank": 23,
+          "relative_sector_start": 92,
+          "absolute_lba_start": 1214,
+          "absolute_lba_end_exclusive": 1218,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g09.lba1154",
+              "owner": "overlay",
+              "lba": 1154,
+              "load_sectors": 96
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "module_id": "loader.primary.g11.lba1218",
+      "owner": "primary",
+      "physical_grid": 11,
+      "lba": 1218,
+      "load_sectors": 78,
+      "logical_entries": [
+        12
+      ],
+      "glyph_supply_bytes_18": 10579,
+      "source_hole_bytes": 6566,
+      "previous_branch": "A_MODULE_INTERNAL",
+      "nominal_free_bank_capacity_bytes": 32768,
+      "collision_safe_free_bank_capacity_bytes": 0,
+      "invalidated_capacity_bytes": 32768,
+      "corrected_branch": "C_SCENE_LOAD_SIDECAR",
+      "dependency": "TASK7_SIDECAR_RAM_REACHABILITY",
+      "tail_banks": [
+        {
+          "relative_bank": 20,
+          "relative_sector_start": 80,
+          "absolute_lba_start": 1298,
+          "absolute_lba_end_exclusive": 1302,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g10.lba1250",
+              "owner": "overlay",
+              "lba": 1250,
+              "load_sectors": 96
+            }
+          ]
+        },
+        {
+          "relative_bank": 21,
+          "relative_sector_start": 84,
+          "absolute_lba_start": 1302,
+          "absolute_lba_end_exclusive": 1306,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g10.lba1250",
+              "owner": "overlay",
+              "lba": 1250,
+              "load_sectors": 96
+            }
+          ]
+        },
+        {
+          "relative_bank": 22,
+          "relative_sector_start": 88,
+          "absolute_lba_start": 1306,
+          "absolute_lba_end_exclusive": 1310,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g10.lba1250",
+              "owner": "overlay",
+              "lba": 1250,
+              "load_sectors": 96
+            }
+          ]
+        },
+        {
+          "relative_bank": 23,
+          "relative_sector_start": 92,
+          "absolute_lba_start": 1310,
+          "absolute_lba_end_exclusive": 1314,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g10.lba1250",
+              "owner": "overlay",
+              "lba": 1250,
+              "load_sectors": 96
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "module_id": "loader.primary.g12.lba1314",
+      "owner": "primary",
+      "physical_grid": 12,
+      "lba": 1314,
+      "load_sectors": 73,
+      "logical_entries": [
+        13
+      ],
+      "glyph_supply_bytes_18": 10584,
+      "source_hole_bytes": 8146,
+      "previous_branch": "A_MODULE_INTERNAL",
+      "nominal_free_bank_capacity_bytes": 40960,
+      "collision_safe_free_bank_capacity_bytes": 0,
+      "invalidated_capacity_bytes": 40960,
+      "corrected_branch": "C_SCENE_LOAD_SIDECAR",
+      "dependency": "TASK7_SIDECAR_RAM_REACHABILITY",
+      "tail_banks": [
+        {
+          "relative_bank": 19,
+          "relative_sector_start": 76,
+          "absolute_lba_start": 1390,
+          "absolute_lba_end_exclusive": 1394,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g11.lba1346",
+              "owner": "overlay",
+              "lba": 1346,
+              "load_sectors": 96
+            }
+          ]
+        },
+        {
+          "relative_bank": 20,
+          "relative_sector_start": 80,
+          "absolute_lba_start": 1394,
+          "absolute_lba_end_exclusive": 1398,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g11.lba1346",
+              "owner": "overlay",
+              "lba": 1346,
+              "load_sectors": 96
+            }
+          ]
+        },
+        {
+          "relative_bank": 21,
+          "relative_sector_start": 84,
+          "absolute_lba_start": 1398,
+          "absolute_lba_end_exclusive": 1402,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g11.lba1346",
+              "owner": "overlay",
+              "lba": 1346,
+              "load_sectors": 96
+            }
+          ]
+        },
+        {
+          "relative_bank": 22,
+          "relative_sector_start": 88,
+          "absolute_lba_start": 1402,
+          "absolute_lba_end_exclusive": 1406,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g11.lba1346",
+              "owner": "overlay",
+              "lba": 1346,
+              "load_sectors": 96
+            }
+          ]
+        },
+        {
+          "relative_bank": 23,
+          "relative_sector_start": 92,
+          "absolute_lba_start": 1406,
+          "absolute_lba_end_exclusive": 1410,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g11.lba1346",
+              "owner": "overlay",
+              "lba": 1346,
+              "load_sectors": 96
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "module_id": "loader.primary.g13.lba1410",
+      "owner": "primary",
+      "physical_grid": 13,
+      "lba": 1410,
+      "load_sectors": 73,
+      "logical_entries": [
+        14
+      ],
+      "glyph_supply_bytes_18": 10567,
+      "source_hole_bytes": 6566,
+      "previous_branch": "A_MODULE_INTERNAL",
+      "nominal_free_bank_capacity_bytes": 40960,
+      "collision_safe_free_bank_capacity_bytes": 0,
+      "invalidated_capacity_bytes": 40960,
+      "corrected_branch": "C_SCENE_LOAD_SIDECAR",
+      "dependency": "TASK7_SIDECAR_RAM_REACHABILITY",
+      "tail_banks": [
+        {
+          "relative_bank": 19,
+          "relative_sector_start": 76,
+          "absolute_lba_start": 1486,
+          "absolute_lba_end_exclusive": 1490,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g12.lba1442",
+              "owner": "overlay",
+              "lba": 1442,
+              "load_sectors": 96
+            }
+          ]
+        },
+        {
+          "relative_bank": 20,
+          "relative_sector_start": 80,
+          "absolute_lba_start": 1490,
+          "absolute_lba_end_exclusive": 1494,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g12.lba1442",
+              "owner": "overlay",
+              "lba": 1442,
+              "load_sectors": 96
+            }
+          ]
+        },
+        {
+          "relative_bank": 21,
+          "relative_sector_start": 84,
+          "absolute_lba_start": 1494,
+          "absolute_lba_end_exclusive": 1498,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g12.lba1442",
+              "owner": "overlay",
+              "lba": 1442,
+              "load_sectors": 96
+            }
+          ]
+        },
+        {
+          "relative_bank": 22,
+          "relative_sector_start": 88,
+          "absolute_lba_start": 1498,
+          "absolute_lba_end_exclusive": 1502,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g12.lba1442",
+              "owner": "overlay",
+              "lba": 1442,
+              "load_sectors": 96
+            }
+          ]
+        },
+        {
+          "relative_bank": 23,
+          "relative_sector_start": 92,
+          "absolute_lba_start": 1502,
+          "absolute_lba_end_exclusive": 1506,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g12.lba1442",
+              "owner": "overlay",
+              "lba": 1442,
+              "load_sectors": 96
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "module_id": "loader.primary.g14.lba1506",
+      "owner": "primary",
+      "physical_grid": 14,
+      "lba": 1506,
+      "load_sectors": 73,
+      "logical_entries": [
+        15
+      ],
+      "glyph_supply_bytes_18": 10567,
+      "source_hole_bytes": 13132,
+      "previous_branch": "A_MODULE_INTERNAL",
+      "nominal_free_bank_capacity_bytes": 40960,
+      "collision_safe_free_bank_capacity_bytes": 0,
+      "invalidated_capacity_bytes": 40960,
+      "corrected_branch": "A_SOURCE_HOLE_MATERIALIZED",
+      "dependency": "TASK8_SOURCE_HOLE_EXPECTED_WRITE",
+      "tail_banks": [
+        {
+          "relative_bank": 19,
+          "relative_sector_start": 76,
+          "absolute_lba_start": 1582,
+          "absolute_lba_end_exclusive": 1586,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g13.lba1538",
+              "owner": "overlay",
+              "lba": 1538,
+              "load_sectors": 73
+            }
+          ]
+        },
+        {
+          "relative_bank": 20,
+          "relative_sector_start": 80,
+          "absolute_lba_start": 1586,
+          "absolute_lba_end_exclusive": 1590,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g13.lba1538",
+              "owner": "overlay",
+              "lba": 1538,
+              "load_sectors": 73
+            }
+          ]
+        },
+        {
+          "relative_bank": 21,
+          "relative_sector_start": 84,
+          "absolute_lba_start": 1590,
+          "absolute_lba_end_exclusive": 1594,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g13.lba1538",
+              "owner": "overlay",
+              "lba": 1538,
+              "load_sectors": 73
+            }
+          ]
+        },
+        {
+          "relative_bank": 22,
+          "relative_sector_start": 88,
+          "absolute_lba_start": 1594,
+          "absolute_lba_end_exclusive": 1598,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g13.lba1538",
+              "owner": "overlay",
+              "lba": 1538,
+              "load_sectors": 73
+            }
+          ]
+        },
+        {
+          "relative_bank": 23,
+          "relative_sector_start": 92,
+          "absolute_lba_start": 1598,
+          "absolute_lba_end_exclusive": 1602,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g13.lba1538",
+              "owner": "overlay",
+              "lba": 1538,
+              "load_sectors": 73
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "module_id": "loader.primary.g15.lba1602",
+      "owner": "primary",
+      "physical_grid": 15,
+      "lba": 1602,
+      "load_sectors": 95,
+      "logical_entries": [
+        16,
+        53
+      ],
+      "glyph_supply_bytes_18": 13387,
+      "source_hole_bytes": 11793,
+      "previous_branch": "C_SCENE_LOAD_SIDECAR",
+      "nominal_free_bank_capacity_bytes": 0,
+      "collision_safe_free_bank_capacity_bytes": 0,
+      "invalidated_capacity_bytes": 0,
+      "corrected_branch": "C_SCENE_LOAD_SIDECAR",
+      "dependency": "TASK7_SIDECAR_RAM_REACHABILITY",
+      "tail_banks": []
+    },
+    {
+      "module_id": "loader.primary.g26.lba2658",
+      "owner": "primary",
+      "physical_grid": 26,
+      "lba": 2658,
+      "load_sectors": 69,
+      "logical_entries": [
+        3
+      ],
+      "glyph_supply_bytes_18": 208,
+      "source_hole_bytes": null,
+      "previous_branch": "A_MODULE_INTERNAL",
+      "nominal_free_bank_capacity_bytes": 49152,
+      "collision_safe_free_bank_capacity_bytes": 0,
+      "invalidated_capacity_bytes": 49152,
+      "corrected_branch": "C_SCENE_LOAD_SIDECAR",
+      "dependency": "TASK7_SIDECAR_RAM_REACHABILITY",
+      "tail_banks": [
+        {
+          "relative_bank": 18,
+          "relative_sector_start": 72,
+          "absolute_lba_start": 2730,
+          "absolute_lba_end_exclusive": 2734,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g25.lba2690",
+              "owner": "overlay",
+              "lba": 2690,
+              "load_sectors": 96
+            }
+          ]
+        },
+        {
+          "relative_bank": 19,
+          "relative_sector_start": 76,
+          "absolute_lba_start": 2734,
+          "absolute_lba_end_exclusive": 2738,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g25.lba2690",
+              "owner": "overlay",
+              "lba": 2690,
+              "load_sectors": 96
+            }
+          ]
+        },
+        {
+          "relative_bank": 20,
+          "relative_sector_start": 80,
+          "absolute_lba_start": 2738,
+          "absolute_lba_end_exclusive": 2742,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g25.lba2690",
+              "owner": "overlay",
+              "lba": 2690,
+              "load_sectors": 96
+            }
+          ]
+        },
+        {
+          "relative_bank": 21,
+          "relative_sector_start": 84,
+          "absolute_lba_start": 2742,
+          "absolute_lba_end_exclusive": 2746,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g25.lba2690",
+              "owner": "overlay",
+              "lba": 2690,
+              "load_sectors": 96
+            }
+          ]
+        },
+        {
+          "relative_bank": 22,
+          "relative_sector_start": 88,
+          "absolute_lba_start": 2746,
+          "absolute_lba_end_exclusive": 2750,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g25.lba2690",
+              "owner": "overlay",
+              "lba": 2690,
+              "load_sectors": 96
+            }
+          ]
+        },
+        {
+          "relative_bank": 23,
+          "relative_sector_start": 92,
+          "absolute_lba_start": 2750,
+          "absolute_lba_end_exclusive": 2754,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g25.lba2690",
+              "owner": "overlay",
+              "lba": 2690,
+              "load_sectors": 96
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "module_id": "loader.primary.g27.lba2754",
+      "owner": "primary",
+      "physical_grid": 27,
+      "lba": 2754,
+      "load_sectors": 85,
+      "logical_entries": [
+        27,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52
+      ],
+      "glyph_supply_bytes_18": 11036,
+      "source_hole_bytes": 13720,
+      "previous_branch": "A_MODULE_INTERNAL",
+      "nominal_free_bank_capacity_bytes": 16384,
+      "collision_safe_free_bank_capacity_bytes": 0,
+      "invalidated_capacity_bytes": 16384,
+      "corrected_branch": "A_SOURCE_HOLE_MATERIALIZED",
+      "dependency": "TASK8_SOURCE_HOLE_EXPECTED_WRITE",
+      "tail_banks": [
+        {
+          "relative_bank": 22,
+          "relative_sector_start": 88,
+          "absolute_lba_start": 2842,
+          "absolute_lba_end_exclusive": 2846,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g26.lba2786",
+              "owner": "overlay",
+              "lba": 2786,
+              "load_sectors": 69
+            }
+          ]
+        },
+        {
+          "relative_bank": 23,
+          "relative_sector_start": 92,
+          "absolute_lba_start": 2846,
+          "absolute_lba_end_exclusive": 2850,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g26.lba2786",
+              "owner": "overlay",
+              "lba": 2786,
+              "load_sectors": 69
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "module_id": "loader.primary.g28.lba2850",
+      "owner": "primary",
+      "physical_grid": 28,
+      "lba": 2850,
+      "load_sectors": 94,
+      "logical_entries": [
+        28
+      ],
+      "glyph_supply_bytes_18": 11553,
+      "source_hole_bytes": 10094,
+      "previous_branch": "C_SCENE_LOAD_SIDECAR",
+      "nominal_free_bank_capacity_bytes": 0,
+      "collision_safe_free_bank_capacity_bytes": 0,
+      "invalidated_capacity_bytes": 0,
+      "corrected_branch": "C_SCENE_LOAD_SIDECAR",
+      "dependency": "TASK7_SIDECAR_RAM_REACHABILITY",
+      "tail_banks": []
+    },
+    {
+      "module_id": "loader.primary.g29.lba2946",
+      "owner": "primary",
+      "physical_grid": 29,
+      "lba": 2946,
+      "load_sectors": 81,
+      "logical_entries": [
+        29
+      ],
+      "glyph_supply_bytes_18": 3711,
+      "source_hole_bytes": 9,
+      "previous_branch": "A_MODULE_INTERNAL",
+      "nominal_free_bank_capacity_bytes": 24576,
+      "collision_safe_free_bank_capacity_bytes": 0,
+      "invalidated_capacity_bytes": 24576,
+      "corrected_branch": "C_SCENE_LOAD_SIDECAR",
+      "dependency": "TASK7_SIDECAR_RAM_REACHABILITY",
+      "tail_banks": [
+        {
+          "relative_bank": 21,
+          "relative_sector_start": 84,
+          "absolute_lba_start": 3030,
+          "absolute_lba_end_exclusive": 3034,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g28.lba2978",
+              "owner": "overlay",
+              "lba": 2978,
+              "load_sectors": 94
+            }
+          ]
+        },
+        {
+          "relative_bank": 22,
+          "relative_sector_start": 88,
+          "absolute_lba_start": 3034,
+          "absolute_lba_end_exclusive": 3038,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g28.lba2978",
+              "owner": "overlay",
+              "lba": 2978,
+              "load_sectors": 94
+            }
+          ]
+        },
+        {
+          "relative_bank": 23,
+          "relative_sector_start": 92,
+          "absolute_lba_start": 3038,
+          "absolute_lba_end_exclusive": 3042,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g28.lba2978",
+              "owner": "overlay",
+              "lba": 2978,
+              "load_sectors": 94
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "module_id": "loader.primary.g30.lba3042",
+      "owner": "primary",
+      "physical_grid": 30,
+      "lba": 3042,
+      "load_sectors": 83,
+      "logical_entries": [
+        30
+      ],
+      "glyph_supply_bytes_18": 8975,
+      "source_hole_bytes": 3852,
+      "previous_branch": "A_MODULE_INTERNAL",
+      "nominal_free_bank_capacity_bytes": 24576,
+      "collision_safe_free_bank_capacity_bytes": 0,
+      "invalidated_capacity_bytes": 24576,
+      "corrected_branch": "C_SCENE_LOAD_SIDECAR",
+      "dependency": "TASK7_SIDECAR_RAM_REACHABILITY",
+      "tail_banks": [
+        {
+          "relative_bank": 21,
+          "relative_sector_start": 84,
+          "absolute_lba_start": 3126,
+          "absolute_lba_end_exclusive": 3130,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g29.lba3074",
+              "owner": "overlay",
+              "lba": 3074,
+              "load_sectors": 96
+            }
+          ]
+        },
+        {
+          "relative_bank": 22,
+          "relative_sector_start": 88,
+          "absolute_lba_start": 3130,
+          "absolute_lba_end_exclusive": 3134,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g29.lba3074",
+              "owner": "overlay",
+              "lba": 3074,
+              "load_sectors": 96
+            }
+          ]
+        },
+        {
+          "relative_bank": 23,
+          "relative_sector_start": 92,
+          "absolute_lba_start": 3134,
+          "absolute_lba_end_exclusive": 3138,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g29.lba3074",
+              "owner": "overlay",
+              "lba": 3074,
+              "load_sectors": 96
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "module_id": "loader.primary.g31.lba3138",
+      "owner": "primary",
+      "physical_grid": 31,
+      "lba": 3138,
+      "load_sectors": 90,
+      "logical_entries": [
+        31
+      ],
+      "glyph_supply_bytes_18": 10936,
+      "source_hole_bytes": 12979,
+      "previous_branch": "A_SOURCE_HOLE_MATERIALIZED",
+      "nominal_free_bank_capacity_bytes": 8192,
+      "collision_safe_free_bank_capacity_bytes": 0,
+      "invalidated_capacity_bytes": 8192,
+      "corrected_branch": "A_SOURCE_HOLE_MATERIALIZED",
+      "dependency": "TASK8_SOURCE_HOLE_EXPECTED_WRITE",
+      "tail_banks": [
+        {
+          "relative_bank": 23,
+          "relative_sector_start": 92,
+          "absolute_lba_start": 3230,
+          "absolute_lba_end_exclusive": 3234,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g30.lba3170",
+              "owner": "overlay",
+              "lba": 3170,
+              "load_sectors": 96
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "module_id": "loader.primary.g32.lba3234",
+      "owner": "primary",
+      "physical_grid": 32,
+      "lba": 3234,
+      "load_sectors": 75,
+      "logical_entries": [
+        32
+      ],
+      "glyph_supply_bytes_18": 10451,
+      "source_hole_bytes": 6575,
+      "previous_branch": "A_MODULE_INTERNAL",
+      "nominal_free_bank_capacity_bytes": 40960,
+      "collision_safe_free_bank_capacity_bytes": 0,
+      "invalidated_capacity_bytes": 40960,
+      "corrected_branch": "C_SCENE_LOAD_SIDECAR",
+      "dependency": "TASK7_SIDECAR_RAM_REACHABILITY",
+      "tail_banks": [
+        {
+          "relative_bank": 19,
+          "relative_sector_start": 76,
+          "absolute_lba_start": 3310,
+          "absolute_lba_end_exclusive": 3314,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g31.lba3266",
+              "owner": "overlay",
+              "lba": 3266,
+              "load_sectors": 96
+            }
+          ]
+        },
+        {
+          "relative_bank": 20,
+          "relative_sector_start": 80,
+          "absolute_lba_start": 3314,
+          "absolute_lba_end_exclusive": 3318,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g31.lba3266",
+              "owner": "overlay",
+              "lba": 3266,
+              "load_sectors": 96
+            }
+          ]
+        },
+        {
+          "relative_bank": 21,
+          "relative_sector_start": 84,
+          "absolute_lba_start": 3318,
+          "absolute_lba_end_exclusive": 3322,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g31.lba3266",
+              "owner": "overlay",
+              "lba": 3266,
+              "load_sectors": 96
+            }
+          ]
+        },
+        {
+          "relative_bank": 22,
+          "relative_sector_start": 88,
+          "absolute_lba_start": 3322,
+          "absolute_lba_end_exclusive": 3326,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g31.lba3266",
+              "owner": "overlay",
+              "lba": 3266,
+              "load_sectors": 96
+            }
+          ]
+        },
+        {
+          "relative_bank": 23,
+          "relative_sector_start": 92,
+          "absolute_lba_start": 3326,
+          "absolute_lba_end_exclusive": 3330,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g31.lba3266",
+              "owner": "overlay",
+              "lba": 3266,
+              "load_sectors": 96
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "module_id": "loader.primary.g33.lba3330",
+      "owner": "primary",
+      "physical_grid": 33,
+      "lba": 3330,
+      "load_sectors": 83,
+      "logical_entries": [
+        33
+      ],
+      "glyph_supply_bytes_18": 6517,
+      "source_hole_bytes": 953,
+      "previous_branch": "A_MODULE_INTERNAL",
+      "nominal_free_bank_capacity_bytes": 24576,
+      "collision_safe_free_bank_capacity_bytes": 0,
+      "invalidated_capacity_bytes": 24576,
+      "corrected_branch": "C_SCENE_LOAD_SIDECAR",
+      "dependency": "TASK7_SIDECAR_RAM_REACHABILITY",
+      "tail_banks": [
+        {
+          "relative_bank": 21,
+          "relative_sector_start": 84,
+          "absolute_lba_start": 3414,
+          "absolute_lba_end_exclusive": 3418,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g32.lba3362",
+              "owner": "overlay",
+              "lba": 3362,
+              "load_sectors": 96
+            }
+          ]
+        },
+        {
+          "relative_bank": 22,
+          "relative_sector_start": 88,
+          "absolute_lba_start": 3418,
+          "absolute_lba_end_exclusive": 3422,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g32.lba3362",
+              "owner": "overlay",
+              "lba": 3362,
+              "load_sectors": 96
+            }
+          ]
+        },
+        {
+          "relative_bank": 23,
+          "relative_sector_start": 92,
+          "absolute_lba_start": 3422,
+          "absolute_lba_end_exclusive": 3426,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g32.lba3362",
+              "owner": "overlay",
+              "lba": 3362,
+              "load_sectors": 96
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "module_id": "loader.primary.g34.lba3426",
+      "owner": "primary",
+      "physical_grid": 34,
+      "lba": 3426,
+      "load_sectors": 84,
+      "logical_entries": [
+        34
+      ],
+      "glyph_supply_bytes_18": 10532,
+      "source_hole_bytes": 12552,
+      "previous_branch": "A_MODULE_INTERNAL",
+      "nominal_free_bank_capacity_bytes": 24576,
+      "collision_safe_free_bank_capacity_bytes": 0,
+      "invalidated_capacity_bytes": 24576,
+      "corrected_branch": "A_SOURCE_HOLE_MATERIALIZED",
+      "dependency": "TASK8_SOURCE_HOLE_EXPECTED_WRITE",
+      "tail_banks": [
+        {
+          "relative_bank": 21,
+          "relative_sector_start": 84,
+          "absolute_lba_start": 3510,
+          "absolute_lba_end_exclusive": 3514,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g33.lba3458",
+              "owner": "overlay",
+              "lba": 3458,
+              "load_sectors": 96
+            }
+          ]
+        },
+        {
+          "relative_bank": 22,
+          "relative_sector_start": 88,
+          "absolute_lba_start": 3514,
+          "absolute_lba_end_exclusive": 3518,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g33.lba3458",
+              "owner": "overlay",
+              "lba": 3458,
+              "load_sectors": 96
+            }
+          ]
+        },
+        {
+          "relative_bank": 23,
+          "relative_sector_start": 92,
+          "absolute_lba_start": 3518,
+          "absolute_lba_end_exclusive": 3522,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g33.lba3458",
+              "owner": "overlay",
+              "lba": 3458,
+              "load_sectors": 96
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "module_id": "loader.primary.g35.lba3522",
+      "owner": "primary",
+      "physical_grid": 35,
+      "lba": 3522,
+      "load_sectors": 84,
+      "logical_entries": [
+        35
+      ],
+      "glyph_supply_bytes_18": 10877,
+      "source_hole_bytes": 7072,
+      "previous_branch": "A_MODULE_INTERNAL",
+      "nominal_free_bank_capacity_bytes": 24576,
+      "collision_safe_free_bank_capacity_bytes": 0,
+      "invalidated_capacity_bytes": 24576,
+      "corrected_branch": "C_SCENE_LOAD_SIDECAR",
+      "dependency": "TASK7_SIDECAR_RAM_REACHABILITY",
+      "tail_banks": [
+        {
+          "relative_bank": 21,
+          "relative_sector_start": 84,
+          "absolute_lba_start": 3606,
+          "absolute_lba_end_exclusive": 3610,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g34.lba3554",
+              "owner": "overlay",
+              "lba": 3554,
+              "load_sectors": 84
+            }
+          ]
+        },
+        {
+          "relative_bank": 22,
+          "relative_sector_start": 88,
+          "absolute_lba_start": 3610,
+          "absolute_lba_end_exclusive": 3614,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g34.lba3554",
+              "owner": "overlay",
+              "lba": 3554,
+              "load_sectors": 84
+            }
+          ]
+        },
+        {
+          "relative_bank": 23,
+          "relative_sector_start": 92,
+          "absolute_lba_start": 3614,
+          "absolute_lba_end_exclusive": 3618,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g34.lba3554",
+              "owner": "overlay",
+              "lba": 3554,
+              "load_sectors": 84
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "module_id": "loader.primary.g36.lba3618",
+      "owner": "primary",
+      "physical_grid": 36,
+      "lba": 3618,
+      "load_sectors": 90,
+      "logical_entries": [
+        36
+      ],
+      "glyph_supply_bytes_18": 11300,
+      "source_hole_bytes": 7212,
+      "previous_branch": "A_SOURCE_HOLE_MATERIALIZED",
+      "nominal_free_bank_capacity_bytes": 8192,
+      "collision_safe_free_bank_capacity_bytes": 0,
+      "invalidated_capacity_bytes": 8192,
+      "corrected_branch": "C_SCENE_LOAD_SIDECAR",
+      "dependency": "TASK7_SIDECAR_RAM_REACHABILITY",
+      "tail_banks": [
+        {
+          "relative_bank": 23,
+          "relative_sector_start": 92,
+          "absolute_lba_start": 3710,
+          "absolute_lba_end_exclusive": 3714,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g35.lba3650",
+              "owner": "overlay",
+              "lba": 3650,
+              "load_sectors": 84
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "module_id": "loader.primary.g37.lba3714",
+      "owner": "primary",
+      "physical_grid": 37,
+      "lba": 3714,
+      "load_sectors": 78,
+      "logical_entries": [
+        37
+      ],
+      "glyph_supply_bytes_18": 3695,
+      "source_hole_bytes": 9,
+      "previous_branch": "A_MODULE_INTERNAL",
+      "nominal_free_bank_capacity_bytes": 32768,
+      "collision_safe_free_bank_capacity_bytes": 0,
+      "invalidated_capacity_bytes": 32768,
+      "corrected_branch": "C_SCENE_LOAD_SIDECAR",
+      "dependency": "TASK7_SIDECAR_RAM_REACHABILITY",
+      "tail_banks": [
+        {
+          "relative_bank": 20,
+          "relative_sector_start": 80,
+          "absolute_lba_start": 3794,
+          "absolute_lba_end_exclusive": 3798,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g36.lba3746",
+              "owner": "overlay",
+              "lba": 3746,
+              "load_sectors": 96
+            }
+          ]
+        },
+        {
+          "relative_bank": 21,
+          "relative_sector_start": 84,
+          "absolute_lba_start": 3798,
+          "absolute_lba_end_exclusive": 3802,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g36.lba3746",
+              "owner": "overlay",
+              "lba": 3746,
+              "load_sectors": 96
+            }
+          ]
+        },
+        {
+          "relative_bank": 22,
+          "relative_sector_start": 88,
+          "absolute_lba_start": 3802,
+          "absolute_lba_end_exclusive": 3806,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g36.lba3746",
+              "owner": "overlay",
+              "lba": 3746,
+              "load_sectors": 96
+            }
+          ]
+        },
+        {
+          "relative_bank": 23,
+          "relative_sector_start": 92,
+          "absolute_lba_start": 3806,
+          "absolute_lba_end_exclusive": 3810,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g36.lba3746",
+              "owner": "overlay",
+              "lba": 3746,
+              "load_sectors": 96
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "module_id": "loader.primary.g38.lba3810",
+      "owner": "primary",
+      "physical_grid": 38,
+      "lba": 3810,
+      "load_sectors": 77,
+      "logical_entries": [
+        38
+      ],
+      "glyph_supply_bytes_18": 3673,
+      "source_hole_bytes": null,
+      "previous_branch": "A_MODULE_INTERNAL",
+      "nominal_free_bank_capacity_bytes": 32768,
+      "collision_safe_free_bank_capacity_bytes": 0,
+      "invalidated_capacity_bytes": 32768,
+      "corrected_branch": "C_SCENE_LOAD_SIDECAR",
+      "dependency": "TASK7_SIDECAR_RAM_REACHABILITY",
+      "tail_banks": [
+        {
+          "relative_bank": 20,
+          "relative_sector_start": 80,
+          "absolute_lba_start": 3890,
+          "absolute_lba_end_exclusive": 3894,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g37.lba3842",
+              "owner": "overlay",
+              "lba": 3842,
+              "load_sectors": 96
+            }
+          ]
+        },
+        {
+          "relative_bank": 21,
+          "relative_sector_start": 84,
+          "absolute_lba_start": 3894,
+          "absolute_lba_end_exclusive": 3898,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g37.lba3842",
+              "owner": "overlay",
+              "lba": 3842,
+              "load_sectors": 96
+            }
+          ]
+        },
+        {
+          "relative_bank": 22,
+          "relative_sector_start": 88,
+          "absolute_lba_start": 3898,
+          "absolute_lba_end_exclusive": 3902,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g37.lba3842",
+              "owner": "overlay",
+              "lba": 3842,
+              "load_sectors": 96
+            }
+          ]
+        },
+        {
+          "relative_bank": 23,
+          "relative_sector_start": 92,
+          "absolute_lba_start": 3902,
+          "absolute_lba_end_exclusive": 3906,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g37.lba3842",
+              "owner": "overlay",
+              "lba": 3842,
+              "load_sectors": 96
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "module_id": "loader.primary.g39.lba3906",
+      "owner": "primary",
+      "physical_grid": 39,
+      "lba": 3906,
+      "load_sectors": 75,
+      "logical_entries": [
+        39
+      ],
+      "glyph_supply_bytes_18": 10471,
+      "source_hole_bytes": 10408,
+      "previous_branch": "A_MODULE_INTERNAL",
+      "nominal_free_bank_capacity_bytes": 40960,
+      "collision_safe_free_bank_capacity_bytes": 0,
+      "invalidated_capacity_bytes": 40960,
+      "corrected_branch": "C_SCENE_LOAD_SIDECAR",
+      "dependency": "TASK7_SIDECAR_RAM_REACHABILITY",
+      "tail_banks": [
+        {
+          "relative_bank": 19,
+          "relative_sector_start": 76,
+          "absolute_lba_start": 3982,
+          "absolute_lba_end_exclusive": 3986,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g38.lba3938",
+              "owner": "overlay",
+              "lba": 3938,
+              "load_sectors": 96
+            }
+          ]
+        },
+        {
+          "relative_bank": 20,
+          "relative_sector_start": 80,
+          "absolute_lba_start": 3986,
+          "absolute_lba_end_exclusive": 3990,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g38.lba3938",
+              "owner": "overlay",
+              "lba": 3938,
+              "load_sectors": 96
+            }
+          ]
+        },
+        {
+          "relative_bank": 21,
+          "relative_sector_start": 84,
+          "absolute_lba_start": 3990,
+          "absolute_lba_end_exclusive": 3994,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g38.lba3938",
+              "owner": "overlay",
+              "lba": 3938,
+              "load_sectors": 96
+            }
+          ]
+        },
+        {
+          "relative_bank": 22,
+          "relative_sector_start": 88,
+          "absolute_lba_start": 3994,
+          "absolute_lba_end_exclusive": 3998,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g38.lba3938",
+              "owner": "overlay",
+              "lba": 3938,
+              "load_sectors": 96
+            }
+          ]
+        },
+        {
+          "relative_bank": 23,
+          "relative_sector_start": 92,
+          "absolute_lba_start": 3998,
+          "absolute_lba_end_exclusive": 4002,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g38.lba3938",
+              "owner": "overlay",
+              "lba": 3938,
+              "load_sectors": 96
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "module_id": "loader.primary.g40.lba4002",
+      "owner": "primary",
+      "physical_grid": 40,
+      "lba": 4002,
+      "load_sectors": 95,
+      "logical_entries": [
+        40
+      ],
+      "glyph_supply_bytes_18": 11024,
+      "source_hole_bytes": 16663,
+      "previous_branch": "A_SOURCE_HOLE_MATERIALIZED",
+      "nominal_free_bank_capacity_bytes": 0,
+      "collision_safe_free_bank_capacity_bytes": 0,
+      "invalidated_capacity_bytes": 0,
+      "corrected_branch": "A_SOURCE_HOLE_MATERIALIZED",
+      "dependency": "TASK8_SOURCE_HOLE_EXPECTED_WRITE",
+      "tail_banks": []
+    },
+    {
+      "module_id": "loader.primary.g41.lba4098",
+      "owner": "primary",
+      "physical_grid": 41,
+      "lba": 4098,
+      "load_sectors": 90,
+      "logical_entries": [
+        41
+      ],
+      "glyph_supply_bytes_18": 11709,
+      "source_hole_bytes": 9160,
+      "previous_branch": "A_SOURCE_HOLE_MATERIALIZED",
+      "nominal_free_bank_capacity_bytes": 8192,
+      "collision_safe_free_bank_capacity_bytes": 0,
+      "invalidated_capacity_bytes": 8192,
+      "corrected_branch": "C_SCENE_LOAD_SIDECAR",
+      "dependency": "TASK7_SIDECAR_RAM_REACHABILITY",
+      "tail_banks": [
+        {
+          "relative_bank": 23,
+          "relative_sector_start": 92,
+          "absolute_lba_start": 4190,
+          "absolute_lba_end_exclusive": 4194,
+          "collision_free": false,
+          "collisions": [
+            {
+              "module_id": "loader.overlay.g40.lba4130",
+              "owner": "overlay",
+              "lba": 4130,
+              "load_sectors": 96
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

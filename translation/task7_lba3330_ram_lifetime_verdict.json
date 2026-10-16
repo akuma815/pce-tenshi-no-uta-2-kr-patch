@@ -1,0 +1,415 @@
+{
+  "format": "TASK7-LBA3330-RAM-LIFETIME-VERDICT",
+  "version": 1,
+  "task": 7,
+  "status": "TRACE_INCOMPLETE_TARGET_WINDOW_NOT_OBSERVED",
+  "module_id": "loader.primary.g33.lba3330",
+  "target_lba": 3330,
+  "target_count": 83,
+  "required_contiguous_bytes": 5564,
+  "trace": "translation/task7_lba3330_ram_lifetime_trace.tsv",
+  "trace_sha256": "A87DC45FE2AAEBDA27AD60C4FD1EBB5B64A769292DB7415667BBAA9649CC1BE2",
+  "layout_sha256": "3210E898F1CFAC81F481033B1FD2F565CDBED34B3407260CA9CBA7CE023D28F9",
+  "state": "INACTIVE_AT_EXIT",
+  "window_frames": 0,
+  "target_metadata_matches": true,
+  "target_load_observed": false,
+  "window_start_observed": false,
+  "window_end_next_load_observed": false,
+  "all_untouched_runs": [
+    {
+      "region": "WORK_RAM",
+      "physical_bank": 248,
+      "start_offset": 0,
+      "length": 8192
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 128,
+      "start_offset": 0,
+      "length": 8192
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 129,
+      "start_offset": 0,
+      "length": 8192
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 130,
+      "start_offset": 0,
+      "length": 8192
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 131,
+      "start_offset": 0,
+      "length": 8192
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 132,
+      "start_offset": 0,
+      "length": 8192
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 133,
+      "start_offset": 0,
+      "length": 8192
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 134,
+      "start_offset": 0,
+      "length": 8192
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 135,
+      "start_offset": 0,
+      "length": 8192
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 104,
+      "start_offset": 0,
+      "length": 8192
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 105,
+      "start_offset": 0,
+      "length": 8192
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 106,
+      "start_offset": 0,
+      "length": 8192
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 107,
+      "start_offset": 0,
+      "length": 8192
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 108,
+      "start_offset": 0,
+      "length": 8192
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 109,
+      "start_offset": 0,
+      "length": 8192
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 110,
+      "start_offset": 0,
+      "length": 8192
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 111,
+      "start_offset": 0,
+      "length": 8192
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 112,
+      "start_offset": 0,
+      "length": 8192
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 113,
+      "start_offset": 0,
+      "length": 8192
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 114,
+      "start_offset": 0,
+      "length": 8192
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 115,
+      "start_offset": 0,
+      "length": 8192
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 116,
+      "start_offset": 0,
+      "length": 8192
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 117,
+      "start_offset": 0,
+      "length": 8192
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 118,
+      "start_offset": 0,
+      "length": 8192
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 119,
+      "start_offset": 0,
+      "length": 8192
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 120,
+      "start_offset": 0,
+      "length": 8192
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 121,
+      "start_offset": 0,
+      "length": 8192
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 122,
+      "start_offset": 0,
+      "length": 8192
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 123,
+      "start_offset": 0,
+      "length": 8192
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 124,
+      "start_offset": 0,
+      "length": 8192
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 125,
+      "start_offset": 0,
+      "length": 8192
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 126,
+      "start_offset": 0,
+      "length": 8192
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 127,
+      "start_offset": 0,
+      "length": 8192
+    }
+  ],
+  "work_ram_policy": "EVIDENCE_ONLY_NOT_A_CANDIDATE",
+  "ranked_candidates": [
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 104,
+      "start_offset": 0,
+      "length": 8192
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 105,
+      "start_offset": 0,
+      "length": 8192
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 106,
+      "start_offset": 0,
+      "length": 8192
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 107,
+      "start_offset": 0,
+      "length": 8192
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 108,
+      "start_offset": 0,
+      "length": 8192
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 109,
+      "start_offset": 0,
+      "length": 8192
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 110,
+      "start_offset": 0,
+      "length": 8192
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 111,
+      "start_offset": 0,
+      "length": 8192
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 112,
+      "start_offset": 0,
+      "length": 8192
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 113,
+      "start_offset": 0,
+      "length": 8192
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 114,
+      "start_offset": 0,
+      "length": 8192
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 115,
+      "start_offset": 0,
+      "length": 8192
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 116,
+      "start_offset": 0,
+      "length": 8192
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 117,
+      "start_offset": 0,
+      "length": 8192
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 118,
+      "start_offset": 0,
+      "length": 8192
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 119,
+      "start_offset": 0,
+      "length": 8192
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 120,
+      "start_offset": 0,
+      "length": 8192
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 121,
+      "start_offset": 0,
+      "length": 8192
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 122,
+      "start_offset": 0,
+      "length": 8192
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 123,
+      "start_offset": 0,
+      "length": 8192
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 124,
+      "start_offset": 0,
+      "length": 8192
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 125,
+      "start_offset": 0,
+      "length": 8192
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 126,
+      "start_offset": 0,
+      "length": 8192
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 127,
+      "start_offset": 0,
+      "length": 8192
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 128,
+      "start_offset": 0,
+      "length": 8192
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 129,
+      "start_offset": 0,
+      "length": 8192
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 130,
+      "start_offset": 0,
+      "length": 8192
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 131,
+      "start_offset": 0,
+      "length": 8192
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 132,
+      "start_offset": 0,
+      "length": 8192
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 133,
+      "start_offset": 0,
+      "length": 8192
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 134,
+      "start_offset": 0,
+      "length": 8192
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 135,
+      "start_offset": 0,
+      "length": 8192
+    }
+  ],
+  "approval_boundary": "An untouched run is only a candidate. Approval requires a later PoC to load the planned three-sector shard, consume Hangul glyphs, preserve Memo and battle behavior, and demonstrate safe invalidation at scene exit."
+}

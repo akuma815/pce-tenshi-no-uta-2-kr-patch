@@ -1,0 +1,52 @@
+{
+  "format": "TASK5-CUSTOM-TEXT-ONLY-PROBE",
+  "version": 1,
+  "task": 5,
+  "status": "STATIC_PASS_RUNTIME_PENDING",
+  "hypothesis": "Memo reconsumes the stored EF58-EF5F dialogue through a renderer that does not support the field-local custom encoding",
+  "controlled_variables": [
+    "same original BIN",
+    "same 16-byte EF58..EF5F dialogue replacement"
+  ],
+  "removed_variables": [
+    "JSR C737 field hook",
+    "C737 hook code",
+    "C800-C8FF glyph page"
+  ],
+  "expected_visual_side_effect": "the substituted field dialogue will not show the intended Hangul because no custom glyph hook is present",
+  "runtime_decision": {
+    "memo_hangs": "confirms the custom dialogue bytes, not hook/pool residency, are sufficient to trigger the Memo failure",
+    "memo_responsive": "rejects the text-only hypothesis and returns focus to custom-path side effects"
+  },
+  "expected_writes": [
+    {
+      "id": "second-dialogue-eight-custom-codes-only",
+      "iso_offset": "0x10BA04",
+      "physical_bin_offset": "0x897DF4",
+      "length": 16,
+      "expected_hex": "8E789378568F6F9788465532CCAAB2C4",
+      "replacement_hex": "EF58EF59EF5AEF5BEF5CEF5DEF5EEF5F",
+      "reason": "isolate whether Memo reconsumption of EF58..EF5F is sufficient for the hang"
+    }
+  ],
+  "diff_audit": {
+    "declared_span_count": 1,
+    "actual_changed_bytes": 16,
+    "actual_changed_ranges": [
+      {
+        "physical_start": "0x897DF4",
+        "physical_end_exclusive": "0x897E04",
+        "changed_bytes": 16
+      }
+    ],
+    "undeclared_changes": 0,
+    "file_size_preserved": true
+  },
+  "output": {
+    "bin": "Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_task5_custom_text_only_probe.bin",
+    "bin_size": 523184384,
+    "bin_sha256": "09B1D482064F601B4D74DDE55F034896549EAA003167257F4C340A3569C60262",
+    "cue": "Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_task5_custom_text_only_probe.cue",
+    "cue_sha256": "ED68584C173D38E43972BEA3177728998935EF7741CB6E777AE446DE68E63A81"
+  }
+}

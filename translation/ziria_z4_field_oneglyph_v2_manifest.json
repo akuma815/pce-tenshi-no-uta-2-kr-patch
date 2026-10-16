@@ -1,0 +1,242 @@
+{
+  "format": "ZIRIA-Z4-FIELD-ONEGLYPH",
+  "version": 2,
+  "status": "RUNTIME_FAIL_FIELD_GRAPHICS_CORRUPTION",
+  "source_bin_sha256": "D16D29EB80B1B74A2EC929924349256B50B8F9F5C9A3FA37B6FCC08B059B22C5",
+  "font": {
+    "path": "font/Galmuri8x8.ttf",
+    "sha256": "97BA3DCC2CD5E5B2927E4E6BA9558A48A2A194A852C420DF160654D66BBF2A05",
+    "glyph": "가"
+  },
+  "custom_code": "EF41",
+  "hook": {
+    "path": "translation/task3_field_getfnt_hook.bin",
+    "sha256": "677BC25A04CF7C3FFA035F5D20EF362987F9DED29847E4A04D388D65EB6362DB",
+    "runtime_address": "0x9187",
+    "physical_banks": [
+      "0x81",
+      "0x82",
+      "0x83"
+    ],
+    "glyph_runtime_address": "0xC737",
+    "glyph_physical_bank": "0x84",
+    "code_bytes": 43,
+    "glyph_bytes": 32,
+    "fallback": "JMP $E060 original BIOS EX_GETFNT",
+    "mpr_changes": 0,
+    "work_ram_bytes": 0,
+    "execution_policy": "banks 0x81..0x83 executable fragments only; bank 0x84 data only"
+  },
+  "registry": "module_relink/z4_field_oneglyph_v2_segmented_execbanks/extension_registry.json",
+  "linked_modules": [
+    {
+      "id": "field.main_engine",
+      "input": "module_relink/track02/semantic_modules/field.main_engine_lba0258_s20.bin",
+      "input_sha256": "8C0573AEB900A5897402205908E02E501CC608C8EC8F2DB5F3ADA3A9E2D8A230",
+      "output": "module_relink/z4_field_oneglyph_v2_segmented_execbanks/linked_modules/field.main_engine_lba0258_s20.bin",
+      "output_sha256": "8CE833768D722193B49B2D5143D3874F8408877214FCBF6FE31EF33541B6219C",
+      "changed_bytes": 75,
+      "changed_ranges": [
+        {
+          "start": "0x250B",
+          "end_exclusive": "0x2518",
+          "changed_bytes": 13
+        },
+        {
+          "start": "0x251F",
+          "end_exclusive": "0x2520",
+          "changed_bytes": 1
+        },
+        {
+          "start": "0x2521",
+          "end_exclusive": "0x2522",
+          "changed_bytes": 1
+        },
+        {
+          "start": "0x2523",
+          "end_exclusive": "0x2524",
+          "changed_bytes": 1
+        },
+        {
+          "start": "0x5187",
+          "end_exclusive": "0x5193",
+          "changed_bytes": 12
+        },
+        {
+          "start": "0x567F",
+          "end_exclusive": "0x5681",
+          "changed_bytes": 2
+        },
+        {
+          "start": "0x79D5",
+          "end_exclusive": "0x79E2",
+          "changed_bytes": 13
+        },
+        {
+          "start": "0x8737",
+          "end_exclusive": "0x8757",
+          "changed_bytes": 32
+        }
+      ],
+      "writes": [
+        {
+          "id": "field-main-getfnt-call",
+          "module_offset": "0x567E",
+          "length": 3,
+          "expected_hex": "2060E0",
+          "replacement_hex": "208791"
+        },
+        {
+          "id": "field-hook-gate-9187",
+          "module_offset": "0x5187",
+          "length": 12,
+          "expected_hex": "000000000000000000000000",
+          "replacement_hex": "A5F9C9EFD0034CD5B94C24F1"
+        },
+        {
+          "id": "field-hook-copy-B9D5",
+          "module_offset": "0x79D5",
+          "length": 13,
+          "expected_hex": "00000000000000000000000000",
+          "replacement_hex": "A01FB937C791FA8810F84C0B65"
+        },
+        {
+          "id": "field-hook-pointer-650B",
+          "module_offset": "0x250B",
+          "length": 13,
+          "expected_hex": "00000000000000000000000000",
+          "replacement_hex": "18A5FA691885FA9002E6FB8007"
+        },
+        {
+          "id": "field-hook-epilogue-651F",
+          "module_offset": "0x251F",
+          "length": 5,
+          "expected_hex": "0000000000",
+          "replacement_hex": "A900A20060"
+        },
+        {
+          "id": "field-main-local-glyph-data",
+          "module_offset": "0x8737",
+          "length": 32,
+          "expected_hex": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF",
+          "replacement_hex": "000000003C80048004C004800880308000800080000000000000000000000000"
+        }
+      ]
+    },
+    {
+      "id": "scene.field_start",
+      "input": "module_relink/track02/semantic_modules/scene.field_start_lba0482_s96.bin",
+      "input_sha256": "C065773C86FEC790D96CD3F52FEF804BFD426C8270A0BAD8ED0313977BBA5BB6",
+      "output": "module_relink/z4_field_oneglyph_v2_segmented_execbanks/linked_modules/scene.field_start_lba0482_s96.bin",
+      "output_sha256": "D64950776B130BDC5473DF8716D9625D29F3D57F8C70522BDECA142318C89B2C",
+      "changed_bytes": 2,
+      "changed_ranges": [
+        {
+          "start": "0x1A9F2",
+          "end_exclusive": "0x1A9F4",
+          "changed_bytes": 2
+        }
+      ],
+      "writes": [
+        {
+          "id": "field-start-text-probe",
+          "module_offset": "0x1A9F2",
+          "length": 2,
+          "expected_hex": "6F2D",
+          "replacement_hex": "EF41"
+        }
+      ]
+    }
+  ],
+  "track02": {
+    "input": "module_relink/track02/Track02_data.identity.iso",
+    "input_sha256": "7566073A2AA1F48E7B39ED2B34277D9935FADE8A3FAD7DCC72C21276E2632AF9",
+    "output": "module_relink/z4_field_oneglyph_v2_segmented_execbanks/Track02_data.z4.iso",
+    "output_sha256": "73168AC9574AD831C5B28BCB6E5BB3DDF0BDF76109790F9A0EB6C17317468A2A",
+    "changed_bytes": 77,
+    "changed_ranges": [
+      {
+        "start": "0x8350B",
+        "end_exclusive": "0x83518",
+        "changed_bytes": 13
+      },
+      {
+        "start": "0x8351F",
+        "end_exclusive": "0x83520",
+        "changed_bytes": 1
+      },
+      {
+        "start": "0x83521",
+        "end_exclusive": "0x83522",
+        "changed_bytes": 1
+      },
+      {
+        "start": "0x83523",
+        "end_exclusive": "0x83524",
+        "changed_bytes": 1
+      },
+      {
+        "start": "0x86187",
+        "end_exclusive": "0x86193",
+        "changed_bytes": 12
+      },
+      {
+        "start": "0x8667F",
+        "end_exclusive": "0x86681",
+        "changed_bytes": 2
+      },
+      {
+        "start": "0x889D5",
+        "end_exclusive": "0x889E2",
+        "changed_bytes": 13
+      },
+      {
+        "start": "0x89737",
+        "end_exclusive": "0x89757",
+        "changed_bytes": 32
+      },
+      {
+        "start": "0x10B9F2",
+        "end_exclusive": "0x10B9F4",
+        "changed_bytes": 2
+      }
+    ],
+    "sector_count_preserved": true,
+    "loader_tables_changed": false
+  },
+  "output": {
+    "bin": "module_relink/z4_field_oneglyph_v2_segmented_execbanks/output/Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_ziria_z4_field_oneglyph_v2_segmented_execbanks.bin",
+    "bin_size": 523184384,
+    "bin_sha256": "B68543AF15D30DAD7B0F4171EC3337EA71ADC17968DE983785A3D20321CF75CD",
+    "cue": "module_relink/z4_field_oneglyph_v2_segmented_execbanks/output/Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_ziria_z4_field_oneglyph_v2_segmented_execbanks.cue",
+    "cue_sha256": "E249001642E28A08430A0EA12453587B899C762D02FC83E40682D00F4895C3BF"
+  },
+  "diff_audit": {
+    "actual_changed_bytes": 77,
+    "changed_modules": [
+      "field.main_engine",
+      "scene.field_start"
+    ],
+    "undeclared_changes": 0,
+    "audio_changed_bytes": 0,
+    "cue_track_layout_changed": false
+  },
+  "runtime": {
+    "status": "FAIL",
+    "observed_at": "2026-07-18",
+    "results": {
+      "field_character_graphics": "FAIL_CORRUPTED",
+      "memo_entry_and_return": "PASS",
+      "first_battle_attack_and_field_return": "PASS",
+      "tower_entry_after_battle": "PASS"
+    },
+    "cause": "The apparent zero runs at 9187 and adjacent fragments were live renderer glyph/data records, not free code caves. Repeated fill bytes are not allocation proof.",
+    "required_checks": [
+      "first custom position renders 가",
+      "later original Japanese glyphs use BIOS fallback",
+      "Memo enter/return remains normal (regression gate for removing MPR6 execution)",
+      "first battle attack and field return remain normal",
+      "tower entry after battle remains normal"
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "format": "TASK4-HOOK-REACHABILITY-PROBE-RUNTIME",
+  "version": 1,
+  "status": "NOT_REACHED",
+  "date": "2026-07-17",
+  "probe_call_iso": "0x45855",
+  "expected_if_reached": "All ordinary double-byte field glyphs become Galmuri8x8 가.",
+  "observed": "The first three dialogue pages remained Japanese and progressed normally.",
+  "conclusion": "ISO 0x45855 / inferred runtime $8855 is not the live first-field GETFNT path.",
+  "screenshots": [
+    "C:/Users/akuma/AppData/Local/Temp/codex-clipboard-9dbde3db-6b96-4bf3-85a2-a56ae45a3dd9.png",
+    "C:/Users/akuma/AppData/Local/Temp/codex-clipboard-ec8c63c6-b2f5-4bde-bab3-5635cbdd4397.png",
+    "C:/Users/akuma/AppData/Local/Temp/codex-clipboard-26b92c72-8a47-4d17-839b-e0825a21c2c8.png"
+  ],
+  "root_cause": "cd_read_trace LBA 258 was already Track02-relative; subtracting 128 selected the wrong LBA130 module.",
+  "corrected_target": {
+    "module_iso": "0x81000",
+    "call_iso": "0x8667E",
+    "runtime_call": "0x967E",
+    "evidence": "translation/task4_live_field_module_correction.json"
+  }
+}

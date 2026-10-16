@@ -1,0 +1,133 @@
+{
+  "format": "TASK4-FIELD-HOOK-POC",
+  "version": 2,
+  "task": 4,
+  "status": "RUNTIME_PASS",
+  "supersedes": "Task 4 v1 runtime FAIL caused by the disproved ISO 0x45855 callsite",
+  "mapping_correction": "cd_read_trace LBA 258 is already Track02-relative; live module starts at ISO 0x81000",
+  "scope": "renderer.field_main first-dialogue path only",
+  "firmware_policy": {
+    "requirement": "Explicitly select the original unmodified System Card 3.0(J); modified firmware is prohibited",
+    "path": "H:/BizHawk/Firmware/PCECD_3.0-(J).pce",
+    "expected_sha256": "E11527B3B96CE112A037138988CA72FD117A6B0779C2480D9E03EAEBECE3D9CE",
+    "bizhawk_config": "translation/task4_field_hook_poc_bizhawk_config.ini",
+    "bizhawk_config_sha256": "3A29B9748AF9277D1B907D5D7FBFC6FA077D3B42F264B268C4276EB94682D088"
+  },
+  "font": {
+    "path": "font/Galmuri8x8.ttf",
+    "sha256": "97BA3DCC2CD5E5B2927E4E6BA9558A48A2A194A852C420DF160654D66BBF2A05",
+    "glyph": "가",
+    "custom_code": "EF41",
+    "render_profile": {
+      "font_size_argument": 16,
+      "native_ink_bbox": [
+        0,
+        0,
+        8,
+        8
+      ],
+      "native_ink_size": [
+        8,
+        8
+      ],
+      "pce_cell": [
+        12,
+        12
+      ],
+      "paste_xy": [
+        2,
+        2
+      ],
+      "output_canvas": [
+        16,
+        16
+      ],
+      "bit_order": "two bytes per row, MSB first"
+    },
+    "expanded_32_hex": "000000003C80048004C004800880308000800080000000000000000000000000"
+  },
+  "input": {
+    "bin": "Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP.bin",
+    "bin_size": 523184384,
+    "bin_sha256": "D16D29EB80B1B74A2EC929924349256B50B8F9F5C9A3FA37B6FCC08B059B22C5",
+    "cue": "Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP.cue",
+    "cue_sha256": "C491342EA8CBF2B6E829316AAAD0AF3F790EC58288DE9BF880927CDCC7C9CC6B"
+  },
+  "expected_writes": [
+    {
+      "id": "field-getfnt-call",
+      "iso_offset": "0x8667E",
+      "physical_bin_offset": "0x812A6E",
+      "length": 3,
+      "expected_hex": "2060E0",
+      "replacement_hex": "2037C7",
+      "reason": "replace JSR EX_GETFNT with JSR field-local hook"
+    },
+    {
+      "id": "field-getfnt-hook-and-glyph",
+      "iso_offset": "0x89737",
+      "physical_bin_offset": "0x815B27",
+      "length": 77,
+      "expected_hex": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF",
+      "replacement_hex": "A5F9C9EFD024A5F8C941D01EA000B964C791FAC8C020D0F618A5FA691885FA9002E6FBA900A200A0FF604C60E0000000003C80048004C004800880308000800080000000000000000000000000",
+      "reason": "install hook code and one 32-byte expanded glyph"
+    },
+    {
+      "id": "first-dialogue-custom-code",
+      "iso_offset": "0x10B9F2",
+      "physical_bin_offset": "0x897DE2",
+      "length": 2,
+      "expected_hex": "6F2D",
+      "replacement_hex": "EF41",
+      "reason": "replace only the first original two-byte character with the sole approved custom code"
+    }
+  ],
+  "diff_audit": {
+    "declared_span_count": 3,
+    "actual_changed_bytes": 80,
+    "actual_changed_ranges": [
+      {
+        "physical_start": "0x812A6F",
+        "physical_end_exclusive": "0x812A71",
+        "changed_bytes": 2
+      },
+      {
+        "physical_start": "0x815B27",
+        "physical_end_exclusive": "0x815B4F",
+        "changed_bytes": 40
+      },
+      {
+        "physical_start": "0x815B50",
+        "physical_end_exclusive": "0x815B74",
+        "changed_bytes": 36
+      },
+      {
+        "physical_start": "0x897DE2",
+        "physical_end_exclusive": "0x897DE4",
+        "changed_bytes": 2
+      }
+    ],
+    "undeclared_changes": 0,
+    "file_size_preserved": true
+  },
+  "output": {
+    "bin": "Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_task4_field_hook_poc_v2.bin",
+    "bin_size": 523184384,
+    "bin_sha256": "4DA30EA2002BC1CAA7E1207FFFA0C2A2B45893D600433494E2A2DF2EA664189B",
+    "cue": "Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_task4_field_hook_poc_v2.cue",
+    "cue_sha256": "91414F6CB25A703E267FEB293314D2D2ADD973BEC274697A69844FD1B8706AA3"
+  },
+  "runtime": {
+    "status": "PASS",
+    "method": "Fresh EmuHawk launch without Lua using original System Card 3.0(J)",
+    "pass_criteria": [
+      "System Card, title and field graphics remain normal",
+      "Only the first substituted character displays 가",
+      "The later original 出 remains Japanese 出",
+      "The next page clears and proceeds normally"
+    ],
+    "date": "2026-07-17",
+    "evidence": "translation/task4_field_hook_poc_v2_runtime.json",
+    "result": "EF41 displayed Galmuri8x8 가; the later original 出 remained Japanese; graphics and page transition were normal"
+  }
+}

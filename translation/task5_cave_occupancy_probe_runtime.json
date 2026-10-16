@@ -1,0 +1,19 @@
+{
+  "format": "TASK5-CAVE-OCCUPANCY-PROBE-RUNTIME",
+  "version": 1,
+  "task": 5,
+  "date": "2026-07-17",
+  "status": "PASS",
+  "decision": "C737_OCCUPANCY_SAFE_REDIRECT_EXECUTION_CAUSAL",
+  "baseline": {
+    "cue": "Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_task5_cave_occupancy_probe.cue"
+  },
+  "evidence": {
+    "user_observation": "정상 출력 돼",
+    "screenshot": null,
+    "trace": null
+  },
+  "observation": "Memo remains responsive when only C737 contains the inert three-byte marker and the live call remains the original JSR E060.",
+  "conclusion": "C737 cave occupancy is safe. The failed transparent probe requires execution of the redirected route; its only semantic timing difference is an extra JMP via E060.",
+  "next": "Redirect through C737 but jump directly to F124 so the probe executes the same one-JSR/one-JMP sequence as the original"
+}

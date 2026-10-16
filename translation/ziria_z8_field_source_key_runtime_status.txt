@@ -1,0 +1,14 @@
+status=running
+frame=5880
+records=852
+scene_stream_records=783
+start_hits=9
+unique_start_hits=8
+out_of_scene_records=4487
+cd_records=5
+active_lba=2882
+active_count=96
+active_mode=06
+scene_identity_source=observed_mode06_cd_read
+lookup_count=236
+pc=55CE

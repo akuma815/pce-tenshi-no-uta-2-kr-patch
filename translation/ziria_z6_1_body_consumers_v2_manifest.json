@@ -1,0 +1,213 @@
+{
+  "format": "ZIRIA-Z6.1-BODY-CONSUMERS",
+  "version": 2,
+  "status": "RUNTIME_PASS",
+  "baseline": {
+    "id": "Z6 family integration v1",
+    "manifest": "translation/ziria_z6_family_integration_v1_manifest.json",
+    "status": "RUNTIME_PASS",
+    "bin_sha256": "D598B992BA0118641639BD811772CF17BF309C1B4D090C50E21E295DE28DF18E",
+    "track02_sha256": "ADC6E878EECB6CCECA2D3CDE92A32782B40743882E8CEC994138CD310254AD41"
+  },
+  "correction": {
+    "v1_result": "PARTIAL_PASS_WRONG_TOWER_BODY_TARGET",
+    "rejected_target": "0x5BA1B7",
+    "runtime_observed_record": "0x5BA0EA",
+    "corrected_body_offset": "0x5BA0F5",
+    "evidence": [
+      "runtime screenshot: speaker name begins with ga but body remains original",
+      "master_text.csv record iso:05BA0EA",
+      "raw bytes place #1 at 0x5BA0F3 and body at 0x5BA0F5"
+    ]
+  },
+  "font": {
+    "path": "font/Galmuri8x8.ttf",
+    "sha256": "97BA3DCC2CD5E5B2927E4E6BA9558A48A2A194A852C420DF160654D66BBF2A05",
+    "glyph": "가"
+  },
+  "custom_code": "8754",
+  "writes": [
+    {
+      "id": "memo-field-dialogue-body-first-code",
+      "track02_offset": "0x11FA1F",
+      "length": 2,
+      "expected_hex": "9595",
+      "replacement_hex": "8754"
+    },
+    {
+      "id": "tower-post-entry-first-dialogue-body-code",
+      "track02_offset": "0x5BA0F5",
+      "length": 2,
+      "expected_hex": "4768",
+      "replacement_hex": "8754"
+    }
+  ],
+  "linked_modules": {
+    "scene.field_start": {
+      "output": "module_relink/z6_1_body_consumers_v2_shared_slot/linked_modules/scene.field_start_lba0482_s96.bin",
+      "sha256": "FA1C1BDF34E915386E1C4E22B8E6B9EEA74EC0276B643D1566EC18213A5D6880"
+    },
+    "scene.tower_first": {
+      "output": "module_relink/z6_1_body_consumers_v2_shared_slot/linked_modules/scene.tower_first_lba2882_s96.bin",
+      "sha256": "AADF9C435E3BDC67B30C929521BA05DEF17194704911C978863758FBA430F9BA"
+    }
+  },
+  "track02": {
+    "output": "module_relink/z6_1_body_consumers_v2_shared_slot/Track02_data.z6_1_v2.iso",
+    "sha256": "434A5EB5B222E5F1A5BFF850D3AA15F059EFA9D73D0DC5517B9C35C447836E5B",
+    "incremental_changed_bytes": 4,
+    "incremental_changed_ranges": [
+      {
+        "start": "0x11FA1F",
+        "end_exclusive": "0x11FA21",
+        "changed_bytes": 2
+      },
+      {
+        "start": "0x5BA0F5",
+        "end_exclusive": "0x5BA0F7",
+        "changed_bytes": 2
+      }
+    ],
+    "total_z4_z5_z6_z6_1_changed_bytes": 46,
+    "total_ranges": [
+      {
+        "start": "0x86174",
+        "end_exclusive": "0x86175",
+        "changed_bytes": 1
+      },
+      {
+        "start": "0x86176",
+        "end_exclusive": "0x86187",
+        "changed_bytes": 17
+      },
+      {
+        "start": "0x86194",
+        "end_exclusive": "0x86197",
+        "changed_bytes": 3
+      },
+      {
+        "start": "0x86198",
+        "end_exclusive": "0x86199",
+        "changed_bytes": 1
+      },
+      {
+        "start": "0x8619A",
+        "end_exclusive": "0x8619D",
+        "changed_bytes": 3
+      },
+      {
+        "start": "0x8619E",
+        "end_exclusive": "0x8619F",
+        "changed_bytes": 1
+      },
+      {
+        "start": "0x861A0",
+        "end_exclusive": "0x861A1",
+        "changed_bytes": 1
+      },
+      {
+        "start": "0x861A2",
+        "end_exclusive": "0x861A3",
+        "changed_bytes": 1
+      },
+      {
+        "start": "0x861A4",
+        "end_exclusive": "0x861A5",
+        "changed_bytes": 1
+      },
+      {
+        "start": "0x861A6",
+        "end_exclusive": "0x861A8",
+        "changed_bytes": 2
+      },
+      {
+        "start": "0x8A6A5",
+        "end_exclusive": "0x8A6A6",
+        "changed_bytes": 1
+      },
+      {
+        "start": "0x10B9F2",
+        "end_exclusive": "0x10B9F4",
+        "changed_bytes": 2
+      },
+      {
+        "start": "0x11FA17",
+        "end_exclusive": "0x11FA19",
+        "changed_bytes": 2
+      },
+      {
+        "start": "0x11FA1F",
+        "end_exclusive": "0x11FA21",
+        "changed_bytes": 2
+      },
+      {
+        "start": "0x5BA0EC",
+        "end_exclusive": "0x5BA0EE",
+        "changed_bytes": 2
+      },
+      {
+        "start": "0x5BA0F5",
+        "end_exclusive": "0x5BA0F7",
+        "changed_bytes": 2
+      },
+      {
+        "start": "0x5BA1AF",
+        "end_exclusive": "0x5BA1B1",
+        "changed_bytes": 2
+      },
+      {
+        "start": "0x5BDA17",
+        "end_exclusive": "0x5BDA19",
+        "changed_bytes": 2
+      }
+    ],
+    "sector_count_preserved": true
+  },
+  "output": {
+    "bin": "module_relink/z6_1_body_consumers_v2_shared_slot/output/Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_ziria_z6_1_body_consumers_v2_shared_slot.bin",
+    "bin_size": 523184384,
+    "bin_sha256": "5F76640EC67713BFBF42F42D9B3C4E468DB537D5A3923FD27C87F6BF861C7C46",
+    "cue": "module_relink/z6_1_body_consumers_v2_shared_slot/output/Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_ziria_z6_1_body_consumers_v2_shared_slot.cue",
+    "cue_sha256": "EB8D57AEF6161DFAFA61D8A166E42D8ED49601EB962DC02F461FDD1F170BBCAB"
+  },
+  "diff_audit": {
+    "incremental_scene_source_changed_bytes": 4,
+    "v1_wrong_target_bytes_inherited": 0,
+    "speaker_name_changed_bytes": 0,
+    "control_code_changed_bytes": 0,
+    "code_changed_bytes": 0,
+    "glyph_record_changed_bytes": 0,
+    "battle_module_changed_bytes": 0,
+    "mpr_changes": 0,
+    "work_ram_bytes": 0,
+    "loader_table_changes": 0,
+    "audio_changed_bytes": 0,
+    "cue_track_layout_changed": false
+  },
+  "runtime": {
+    "status": "PASS",
+    "known_pass_from_v1": [
+      "first-field Memo body ga and normal return",
+      "battle and post-battle field return",
+      "tower entry",
+      "portrait and character graphics"
+    ],
+    "required_checks": [
+      "first post-entry tower dialogue body begins with ga",
+      "remaining body text, page state, and event progression remain normal",
+      "no black screen, invalid field transition, freeze, or EXEC BRK loop"
+    ],
+    "observed_results": {
+      "first_post_entry_tower_dialogue_speaker_name_ga": "PASS",
+      "first_post_entry_tower_dialogue_body_ga": "PASS",
+      "remaining_body_text": "PASS",
+      "page_and_event_progression": "PASS",
+      "memo_body_ga_and_return": "PASS",
+      "battle_field_return_and_tower_entry": "PASS",
+      "graphics_regression": "PASS",
+      "black_screen_or_freeze": "NONE"
+    },
+    "verified_date": "2026-07-24",
+    "evidence": "user runtime screenshot and confirmation"
+  }
+}

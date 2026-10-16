@@ -1,0 +1,244 @@
+{
+  "format": "ZIRIA-Z5-BATTLE-ONEGLYPH",
+  "version": 1,
+  "status": "RUNTIME_PASS",
+  "baseline": {
+    "id": "Z4 v3",
+    "manifest": "translation/ziria_z4_field_oneglyph_v3_manifest.json",
+    "status": "RUNTIME_PASS"
+  },
+  "runtime_trace_finding": {
+    "getfnt_call": "0x967E MPR4=$82",
+    "stream_reader": "$4036 -> $42AB/$42BA",
+    "battle_text_range": "MPR6=$84 physical $108ADA-$109F67",
+    "scene_battle_first_reads": 0
+  },
+  "font": {
+    "path": "font/Galmuri8x8.ttf",
+    "sha256": "97BA3DCC2CD5E5B2927E4E6BA9558A48A2A194A852C420DF160654D66BBF2A05",
+    "glyph": "가"
+  },
+  "custom_code": "8755",
+  "field_module": {
+    "input": "module_relink/z4_field_oneglyph_v3_builtin_slot/linked_modules/field.main_engine_lba0258_s20.bin",
+    "input_sha256": "D4092D87DFDBDDCE611B6CDD12676B86A386C1AAA4B2F1F4A9D029693CD7F1E2",
+    "output": "module_relink/z5_battle_oneglyph_v1_builtin_slot/linked_modules/field.main_engine_lba0258_s20.bin",
+    "output_sha256": "FC32675A85A4FEE3BC5D893D47AABCB9AE448AB6340BEA5E019AAFC8642BFFFC",
+    "z5_changed_bytes": 14,
+    "z5_changed_ranges": [
+      {
+        "start": "0x5194",
+        "end_exclusive": "0x5197",
+        "changed_bytes": 3
+      },
+      {
+        "start": "0x5198",
+        "end_exclusive": "0x5199",
+        "changed_bytes": 1
+      },
+      {
+        "start": "0x519A",
+        "end_exclusive": "0x519D",
+        "changed_bytes": 3
+      },
+      {
+        "start": "0x519E",
+        "end_exclusive": "0x519F",
+        "changed_bytes": 1
+      },
+      {
+        "start": "0x51A0",
+        "end_exclusive": "0x51A1",
+        "changed_bytes": 1
+      },
+      {
+        "start": "0x51A2",
+        "end_exclusive": "0x51A3",
+        "changed_bytes": 1
+      },
+      {
+        "start": "0x51A4",
+        "end_exclusive": "0x51A5",
+        "changed_bytes": 1
+      },
+      {
+        "start": "0x51A6",
+        "end_exclusive": "0x51A8",
+        "changed_bytes": 2
+      },
+      {
+        "start": "0x96A5",
+        "end_exclusive": "0x96A6",
+        "changed_bytes": 1
+      }
+    ],
+    "writes": [
+      {
+        "id": "battle-local-glyph-8755",
+        "module_offset": "0x5192",
+        "length": 32,
+        "expected_hex": "00003FC0198019801980198019801980198019803FC000000000000000000000",
+        "replacement_hex": "000000003C80048004C004800880308000800080000000000000000000000000"
+      },
+      {
+        "id": "battle-attack-message-oneglyph",
+        "module_offset": "0x96A5",
+        "length": 2,
+        "expected_hex": "8D55",
+        "replacement_hex": "8755"
+      }
+    ]
+  },
+  "track02": {
+    "output": "module_relink/z5_battle_oneglyph_v1_builtin_slot/Track02_data.z5.iso",
+    "output_sha256": "042663D35A2F4E2C7236D5741AAB68E5893191E525EE405A1A8EAFA1D925B5C3",
+    "z5_changed_bytes": 14,
+    "z5_changed_ranges": [
+      {
+        "start": "0x86194",
+        "end_exclusive": "0x86197",
+        "changed_bytes": 3
+      },
+      {
+        "start": "0x86198",
+        "end_exclusive": "0x86199",
+        "changed_bytes": 1
+      },
+      {
+        "start": "0x8619A",
+        "end_exclusive": "0x8619D",
+        "changed_bytes": 3
+      },
+      {
+        "start": "0x8619E",
+        "end_exclusive": "0x8619F",
+        "changed_bytes": 1
+      },
+      {
+        "start": "0x861A0",
+        "end_exclusive": "0x861A1",
+        "changed_bytes": 1
+      },
+      {
+        "start": "0x861A2",
+        "end_exclusive": "0x861A3",
+        "changed_bytes": 1
+      },
+      {
+        "start": "0x861A4",
+        "end_exclusive": "0x861A5",
+        "changed_bytes": 1
+      },
+      {
+        "start": "0x861A6",
+        "end_exclusive": "0x861A8",
+        "changed_bytes": 2
+      },
+      {
+        "start": "0x8A6A5",
+        "end_exclusive": "0x8A6A6",
+        "changed_bytes": 1
+      }
+    ],
+    "total_z4_z5_changed_bytes": 34,
+    "total_z4_z5_changed_ranges": [
+      {
+        "start": "0x86174",
+        "end_exclusive": "0x86175",
+        "changed_bytes": 1
+      },
+      {
+        "start": "0x86176",
+        "end_exclusive": "0x86187",
+        "changed_bytes": 17
+      },
+      {
+        "start": "0x86194",
+        "end_exclusive": "0x86197",
+        "changed_bytes": 3
+      },
+      {
+        "start": "0x86198",
+        "end_exclusive": "0x86199",
+        "changed_bytes": 1
+      },
+      {
+        "start": "0x8619A",
+        "end_exclusive": "0x8619D",
+        "changed_bytes": 3
+      },
+      {
+        "start": "0x8619E",
+        "end_exclusive": "0x8619F",
+        "changed_bytes": 1
+      },
+      {
+        "start": "0x861A0",
+        "end_exclusive": "0x861A1",
+        "changed_bytes": 1
+      },
+      {
+        "start": "0x861A2",
+        "end_exclusive": "0x861A3",
+        "changed_bytes": 1
+      },
+      {
+        "start": "0x861A4",
+        "end_exclusive": "0x861A5",
+        "changed_bytes": 1
+      },
+      {
+        "start": "0x861A6",
+        "end_exclusive": "0x861A8",
+        "changed_bytes": 2
+      },
+      {
+        "start": "0x8A6A5",
+        "end_exclusive": "0x8A6A6",
+        "changed_bytes": 1
+      },
+      {
+        "start": "0x10B9F2",
+        "end_exclusive": "0x10B9F4",
+        "changed_bytes": 2
+      }
+    ],
+    "sector_count_preserved": true
+  },
+  "output": {
+    "bin": "module_relink/z5_battle_oneglyph_v1_builtin_slot/output/Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_ziria_z5_battle_oneglyph_v1_builtin_slot.bin",
+    "bin_size": 523184384,
+    "bin_sha256": "7E133A82ECA649535534C9FF3D563BA801DDBBB6625014542A430901E3C0932A",
+    "cue": "module_relink/z5_battle_oneglyph_v1_builtin_slot/output/Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_ziria_z5_battle_oneglyph_v1_builtin_slot.cue",
+    "cue_sha256": "7E6A8E05E8EFC346C1EF46CCA93BCCFA316EA44B681FF5EB7F36C8419F8C843D"
+  },
+  "diff_audit": {
+    "scene_battle_first_changed_bytes": 0,
+    "code_changed_bytes": 0,
+    "mpr_changes": 0,
+    "work_ram_bytes": 0,
+    "loader_table_changes": 0,
+    "audio_changed_bytes": 0,
+    "cue_track_layout_changed": false
+  },
+  "runtime": {
+    "status": "PASS",
+    "observed_at": "2026-07-19",
+    "results": {
+      "field_z4_custom_glyph": "PASS",
+      "field_character_graphics": "PASS",
+      "memo_entry_and_return": "PASS",
+      "battle_attack_custom_glyph": "PASS",
+      "battle_attack_and_field_return": "PASS",
+      "tower_entry_after_battle": "PASS"
+    },
+    "required_checks": [
+      "field Z4 custom glyph still renders 가",
+      "Memo enters and returns normally",
+      "first battle attack message contains one 가 glyph",
+      "attack resolves and returns to the field",
+      "tower entry after battle remains normal",
+      "field character graphics remain normal"
+    ]
+  }
+}

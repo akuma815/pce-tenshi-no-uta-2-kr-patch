@@ -1,0 +1,48 @@
+{
+  "format": "TASK7-5230-CAVE-ONLY-CONTROL",
+  "version": 1,
+  "task": 7,
+  "status": "RUNTIME_PASS",
+  "hypothesis": "battle corruption is caused by overwriting 5230 itself rather than executing the redirected path",
+  "control_flow": "original JSR E060 is retained; 5230 is never called by the patch",
+  "runtime_decision": {
+    "battle_fails": "5230 is live/overwritten during battle and must be permanently revoked as a cave",
+    "battle_passes": "5230 bytes are not independently causal; redirected execution through 5230 is causal"
+  },
+  "expected_writes": [
+    {
+      "id": "unreachable-5230-marker",
+      "iso_offset": "0x82230",
+      "physical_bin_offset": "0x80E620",
+      "length": 3,
+      "expected_hex": "000000",
+      "replacement_hex": "4C24F1",
+      "reason": "isolate cave occupancy from redirected execution"
+    }
+  ],
+  "diff_audit": {
+    "declared_span_count": 1,
+    "actual_changed_bytes": 3,
+    "actual_changed_ranges": [
+      {
+        "physical_start": "0x80E620",
+        "physical_end_exclusive": "0x80E623",
+        "changed_bytes": 3
+      }
+    ],
+    "undeclared_changes": 0,
+    "file_size_preserved": true
+  },
+  "output": {
+    "bin": "Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_task7_5230_cave_only_control.bin",
+    "bin_size": 523184384,
+    "bin_sha256": "BCA8D497AB0196B9F7F8C848CE9CC7CEBDC8AB354C77CE7805A495DDE833950D",
+    "cue": "Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_task7_5230_cave_only_control.cue",
+    "cue_sha256": "AC689628F8B01974605368371EB1F79C596AF1BDED1FF0982A72628C309A552A"
+  },
+  "runtime": {
+    "status": "PASS",
+    "observation": "With the original E060 call retained and only the unreachable three-byte 5230 marker present, battle Attack resolved and returned to the correct field.",
+    "decision": "5230 disk occupancy is not independently causal; execution through logical 5230 is the failed condition."
+  }
+}

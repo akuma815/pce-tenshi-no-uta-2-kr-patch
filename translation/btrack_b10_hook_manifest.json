@@ -1,0 +1,38 @@
+{
+ "format": "BTRACK-B10-HOOK-BUILD",
+ "runtime_status": "PENDING",
+ "base": "b9 (build_btrack_b9_hook_build, card base = full_v2)",
+ "menu_stage": {
+  "patches": 513,
+  "patched_bytes": 52198,
+  "stats": {
+   "target_rows": 5146,
+   "arena_windows": 41,
+   "arena_runs": 66,
+   "arena_rows": 3696,
+   "run_rejected_stray_ptr": 0,
+   "run_no_table": 55,
+   "arena_overflow_rows": 0,
+   "extra_tables_rewritten": 1,
+   "inplace_patched": 1021,
+   "kept_original_nofit": 139,
+   "kept_original_jp_or_encode": 0,
+   "skipped_same_or_empty": 267,
+   "override_used": 2,
+   "donor_tail_bytes": 16,
+   "stray_u16_noted": 198,
+   "supplement_patched": 3,
+   "unindexed_battle_patched": 45,
+   "unindexed_seg_patched": 2,
+   "unindexed_name_patched": 35,
+   "wrapped_twin_patched": 25,
+   "supplement_reloc_queued": 2,
+   "dedupe_inplace_freed": 83,
+   "dedupe_saved_bytes": 52,
+   "nofit_relocated": 25,
+   "placement_fallback": 1
+  },
+  "review": "번역 출처 = Z8 entry index (Switch판 최종 번역 계열). overrides 의 짧춤 초안은 인간 검토 필수."
+ },
+ "b9_stage_manifest": "btrack_b10_b9stage_manifest.json"
+}

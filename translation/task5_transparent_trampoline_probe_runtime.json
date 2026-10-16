@@ -1,0 +1,20 @@
+{
+  "format": "TASK5-TRANSPARENT-TRAMPOLINE-PROBE-RUNTIME",
+  "version": 1,
+  "task": 5,
+  "date": "2026-07-17",
+  "status": "FAIL",
+  "decision": "FALLBACK_REGISTER_FLAG_CLOBBER_HYPOTHESIS_REJECTED",
+  "baseline": {
+    "cue": "Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_task5_transparent_trampoline_probe.cue",
+    "bin_sha256": "33EF6333DAD4EC482E85FC03FE3EE47B8338CCD3D6B877735260F0C077624B5D"
+  },
+  "evidence": {
+    "user_observation": "동일하게 멈춰",
+    "screenshot": null,
+    "trace": null
+  },
+  "observation": "The original Japanese path still hangs at Memo when C737 contains only JMP E060 and no instruction changes A, X, Y, P, stack, zero-page parameters, or glyph output.",
+  "conclusion": "The fallback dispatcher's A/P clobber is not causal. The remaining variables are cave occupancy itself versus execution of the redirected call and its one added JMP.",
+  "next": "Leave the original JSR E060 call untouched and write only the inert three-byte C737 marker"
+}

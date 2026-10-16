@@ -1,0 +1,140 @@
+id	family	raw_len	need_len	original	translation	reason
+iso:004A4E9	menu_memo_system	6	7	火の玉	화염구	NOFIT
+iso:004A4EF	menu_memo_system	4	7	つらら	고드름	NOFIT
+iso:004A4F8	menu_memo_system	6	7	カマイタチ	칼바람	NOFIT
+iso:004A517	menu_memo_system	6	7	毒ガス	독가스	NOFIT
+iso:004A51D	menu_memo_system	7	9	しびれガス	마비 가스	NOFIT
+iso:004A760	menu_memo_system	3	5	おく	놓기	NOFIT
+iso:006A429	visual_event_portrait	16	17	土砂崩れで進めない。	산사태로못간다.	NOFIT
+iso:006E429	visual_event_portrait	16	17	土砂崩れで進めない。	산사태로못간다.	NOFIT
+iso:0070429	visual_event_portrait	16	17	土砂崩れで進めない。	산사태로못간다.	NOFIT
+iso:00A7F02	menu_memo_system	10	11	改造プルトー	개조플루토	NOFIT
+iso:00D7F02	menu_memo_system	10	11	改造プルトー	개조플루토	NOFIT
+iso:0107F02	menu_memo_system	10	11	改造プルトー	개조플루토	NOFIT
+iso:0137F02	menu_memo_system	10	11	改造プルトー	개조플루토	NOFIT
+iso:0167F02	menu_memo_system	10	11	改造プルトー	개조플루토	NOFIT
+iso:0197F02	menu_memo_system	10	11	改造プルトー	개조플루토	NOFIT
+iso:01C7F02	menu_memo_system	10	11	改造プルトー	개조플루토	NOFIT
+iso:01F7F02	menu_memo_system	10	11	改造プルトー	개조플루토	NOFIT
+iso:0227F02	menu_memo_system	10	11	改造プルトー	개조플루토	NOFIT
+iso:0257F02	menu_memo_system	10	11	改造プルトー	개조플루토	NOFIT
+iso:0287F02	menu_memo_system	10	11	改造プルトー	개조플루토	NOFIT
+iso:02B7F02	menu_memo_system	10	11	改造プルトー	개조플루토	NOFIT
+iso:02E7F02	menu_memo_system	10	11	改造プルトー	개조플루토	NOFIT
+iso:0317F02	menu_memo_system	10	11	改造プルトー	개조플루토	NOFIT
+iso:032C83C	dialogue_event	19	23	神酒リレイトを手に入れた！	신주 릴레이트를 얻었다!	NOFIT
+iso:032CEA9	dialogue_event	25	26	持ち物が一杯です\n何か捨てますか？	소지품가득\n뭔가버릴까요?	NOFIT
+iso:032CECC	dialogue_event	20	31	拾ったものを箱の中に戻しますか	주운물건을상자에돌려놓을까요?	NOFIT
+iso:032CEE5	dialogue_event	16	23	アイテムを箱の中に戻した	아이템을상자에돌려놨다	NOFIT
+iso:032CF06	dialogue_event	16	23	アイテムを箱の中に戻した	아이템을상자에돌려놨다	NOFIT
+iso:032CF2B	dialogue_event	25	28	持ち物が一杯です\n何か捨てて下さい	소지품 가득\n무언가버려주세요	NOFIT
+iso:0347F02	menu_memo_system	10	11	改造プルトー	개조플루토	NOFIT
+iso:0377F02	menu_memo_system	10	11	改造プルトー	개조플루토	NOFIT
+iso:03A7F02	menu_memo_system	10	11	改造プルトー	개조플루토	NOFIT
+iso:03D7F02	menu_memo_system	10	11	改造プルトー	개조플루토	NOFIT
+iso:0407F02	menu_memo_system	10	11	改造プルトー	개조플루토	NOFIT
+iso:0437F02	menu_memo_system	10	11	改造プルトー	개조플루토	NOFIT
+iso:0467F02	menu_memo_system	10	11	改造プルトー	개조플루토	NOFIT
+iso:0497F02	menu_memo_system	10	11	改造プルトー	개조플루토	NOFIT
+iso:04C7F02	menu_memo_system	10	11	改造プルトー	개조플루토	NOFIT
+iso:04F7F02	menu_memo_system	10	11	改造プルトー	개조플루토	NOFIT
+iso:0527F02	menu_memo_system	10	11	改造プルトー	개조플루토	NOFIT
+iso:0557F02	menu_memo_system	10	11	改造プルトー	개조플루토	NOFIT
+iso:0587F02	menu_memo_system	10	11	改造プルトー	개조플루토	NOFIT
+iso:05B3EC0	dialogue_event	8	9	呪われた鎧	저주갑옷	NOFIT
+iso:05E3EC0	dialogue_event	8	9	呪われた鎧	저주갑옷	NOFIT
+iso:0617F02	menu_memo_system	10	11	改造プルトー	개조플루토	NOFIT
+iso:0647F02	menu_memo_system	10	11	改造プルトー	개조플루토	NOFIT
+iso:0673EC0	dialogue_event	8	9	呪われた鎧	저주갑옷	NOFIT
+iso:06A3EC0	dialogue_event	8	9	呪われた鎧	저주갑옷	NOFIT
+iso:06D3EC0	dialogue_event	8	9	呪われた鎧	저주갑옷	NOFIT
+iso:0703EC0	dialogue_event	8	9	呪われた鎧	저주갑옷	NOFIT
+iso:0737F02	menu_memo_system	10	11	改造プルトー	개조플루토	NOFIT
+iso:0763EC0	dialogue_event	8	9	呪われた鎧	저주갑옷	NOFIT
+iso:0797F02	menu_memo_system	10	11	改造プルトー	개조플루토	NOFIT
+iso:07C3EC0	dialogue_event	8	9	呪われた鎧	저주갑옷	NOFIT
+iso:07F3EC0	dialogue_event	8	9	呪われた鎧	저주갑옷	NOFIT
+iso:0827F02	menu_memo_system	10	11	改造プルトー	개조플루토	NOFIT
+iso:0853EC0	dialogue_event	8	9	呪われた鎧	저주갑옷	NOFIT
+iso:0883EC0	dialogue_event	8	9	呪われた鎧	저주갑옷	NOFIT
+iso:08B3EC0	dialogue_event	8	9	呪われた鎧	저주갑옷	NOFIT
+iso:08E7F02	menu_memo_system	10	11	改造プルトー	개조플루토	NOFIT
+iso:0913EC0	dialogue_event	8	9	呪われた鎧	저주갑옷	NOFIT
+iso:0929EFD	dialogue_event	10	13	扉が開いた！	문이열렸다!	NOFIT
+iso:0929F0C	dialogue_event	10	13	扉が開いた！	문이열렸다!	NOFIT
+iso:0929F1B	dialogue_event	10	13	扉が開いた！	문이열렸다!	NOFIT
+iso:0929F2A	dialogue_event	10	13	扉が開いた！	문이열렸다!	NOFIT
+iso:0929FF9	dialogue_event	19	23	神酒リレイトを手に入れた！	신주 릴레이트를 얻었다!	NOFIT
+iso:092A135	dialogue_event	16	19	ライヒ草を手に入れた！	라이히풀을 얻었다!	NOFIT
+iso:092A22E	dialogue_event	25	26	持ち物が一杯です\n何か捨てますか？	소지품가득\n뭔가버릴까요?	NOFIT
+iso:092A251	dialogue_event	20	31	拾ったものを箱の中に戻しますか	주운물건을상자에돌려놓을까요?	NOFIT
+iso:092A26A	dialogue_event	16	23	アイテムを箱の中に戻した	아이템을상자에돌려놨다	NOFIT
+iso:092A28B	dialogue_event	16	23	アイテムを箱の中に戻した	아이템을상자에돌려놨다	NOFIT
+iso:092C045	dialogue_event	8	9	呪われた鎧	저주갑옷	NOFIT
+iso:092DEFD	dialogue_event	10	13	扉が開いた！	문이열렸다!	NOFIT
+iso:092DF0C	dialogue_event	10	13	扉が開いた！	문이열렸다!	NOFIT
+iso:092DF1B	dialogue_event	10	13	扉が開いた！	문이열렸다!	NOFIT
+iso:092DF2A	dialogue_event	10	13	扉が開いた！	문이열렸다!	NOFIT
+iso:092DFF9	dialogue_event	19	23	神酒リレイトを手に入れた！	신주 릴레이트를 얻었다!	NOFIT
+iso:092E135	dialogue_event	16	19	ライヒ草を手に入れた！	라이히풀을 얻었다!	NOFIT
+iso:092E22E	dialogue_event	25	26	持ち物が一杯です\n何か捨てますか？	소지품가득\n뭔가버릴까요?	NOFIT
+iso:092E251	dialogue_event	20	31	拾ったものを箱の中に戻しますか	주운물건을상자에돌려놓을까요?	NOFIT
+iso:092E26A	dialogue_event	16	23	アイテムを箱の中に戻した	아이템을상자에돌려놨다	NOFIT
+iso:092E28B	dialogue_event	16	23	アイテムを箱の中に戻した	아이템을상자에돌려놨다	NOFIT
+iso:092FEFD	dialogue_event	10	13	扉が開いた！	문이열렸다!	NOFIT
+iso:092FF0C	dialogue_event	10	13	扉が開いた！	문이열렸다!	NOFIT
+iso:092FF1B	dialogue_event	10	13	扉が開いた！	문이열렸다!	NOFIT
+iso:092FF2A	dialogue_event	10	13	扉が開いた！	문이열렸다!	NOFIT
+iso:092FFF9	dialogue_event	19	23	神酒リレイトを手に入れた！	신주 릴레이트를 얻었다!	NOFIT
+iso:0930135	dialogue_event	16	19	ライヒ草を手に入れた！	라이히풀을 얻었다!	NOFIT
+iso:093022E	dialogue_event	25	26	持ち物が一杯です\n何か捨てますか？	소지품가득\n뭔가버릴까요?	NOFIT
+iso:0930251	dialogue_event	20	31	拾ったものを箱の中に戻しますか	주운물건을상자에돌려놓을까요?	NOFIT
+iso:093026A	dialogue_event	16	23	アイテムを箱の中に戻した	아이템을상자에돌려놨다	NOFIT
+iso:093028B	dialogue_event	16	23	アイテムを箱の中に戻した	아이템을상자에돌려놨다	NOFIT
+iso:0943EC0	dialogue_event	8	9	呪われた鎧	저주갑옷	NOFIT
+iso:0973EC0	dialogue_event	8	9	呪われた鎧	저주갑옷	NOFIT
+iso:09A3EC0	dialogue_event	8	9	呪われた鎧	저주갑옷	NOFIT
+iso:09D7F02	menu_memo_system	10	11	改造プルトー	개조플루토	NOFIT
+iso:09E9FB7	dialogue_event	17	23	神酒リレイトを見つけた！	신주릴레이트를 찾았다!	NOFIT
+iso:09E9FE7	dialogue_event	14	17	マトックを使いますか？	곡괭이를 쓸까요?	NOFIT
+iso:09EA039	dialogue_event	15	23	マトックが岩を砕いた！	곡괭이가바위를부쉈다!	NOFIT
+iso:09EA054	dialogue_event	14	17	マトックを使いますか？	곡괭이를 쓸까요?	NOFIT
+iso:09EA0A6	dialogue_event	15	23	マトックが岩を砕いた！	곡괭이가바위를부쉈다!	NOFIT
+iso:09EA0C1	dialogue_event	14	17	マトックを使いますか？	곡괭이를 쓸까요?	NOFIT
+iso:09EA113	dialogue_event	15	23	マトックが岩を砕いた！	곡괭이가바위를부쉈다!	NOFIT
+iso:09EA660	dialogue_event	10	13	扉が開いた！	문이열렸다!	NOFIT
+iso:09EA66C	dialogue_event	18	22	泉が湧いています\n飲みますか	샘물이 솟는다\n마실까?	NOFIT
+iso:09EA6A2	dialogue_event	10	13	扉が開いた！	문이열렸다!	NOFIT
+iso:09EA6C3	dialogue_event	25	26	持ち物が一杯です\n何か捨てますか？	소지품가득\n뭔가버릴까요?	NOFIT
+iso:09EA6E6	dialogue_event	20	31	拾ったものを箱の中に戻しますか	주운물건을상자에돌려놓을까요?	NOFIT
+iso:09EA6FF	dialogue_event	16	23	アイテムを箱の中に戻した	아이템을상자에돌려놨다	NOFIT
+iso:09EA720	dialogue_event	16	23	アイテムを箱の中に戻した	아이템을상자에돌려놨다	NOFIT
+iso:09EA745	dialogue_event	25	28	持ち物が一杯です\n何か捨てて下さい	소지품 가득\n무언가버려주세요	NOFIT
+iso:09EC045	dialogue_event	8	9	呪われた鎧	저주갑옷	NOFIT
+iso:09EDFB7	dialogue_event	17	23	神酒リレイトを見つけた！	신주릴레이트를 찾았다!	NOFIT
+iso:09EDFE7	dialogue_event	14	17	マトックを使いますか？	곡괭이를 쓸까요?	NOFIT
+iso:09EE039	dialogue_event	15	23	マトックが岩を砕いた！	곡괭이가바위를부쉈다!	NOFIT
+iso:09EE054	dialogue_event	14	17	マトックを使いますか？	곡괭이를 쓸까요?	NOFIT
+iso:09EE0A6	dialogue_event	15	23	マトックが岩を砕いた！	곡괭이가바위를부쉈다!	NOFIT
+iso:09EE0C1	dialogue_event	14	17	マトックを使いますか？	곡괭이를 쓸까요?	NOFIT
+iso:09EE113	dialogue_event	15	23	マトックが岩を砕いた！	곡괭이가바위를부쉈다!	NOFIT
+iso:09EE660	dialogue_event	10	13	扉が開いた！	문이열렸다!	NOFIT
+iso:09EE66C	dialogue_event	18	22	泉が湧いています\n飲みますか	샘물이 솟는다\n마실까?	NOFIT
+iso:09EE6A2	dialogue_event	10	13	扉が開いた！	문이열렸다!	NOFIT
+iso:09EE6C3	dialogue_event	25	26	持ち物が一杯です\n何か捨てますか？	소지품가득\n뭔가버릴까요?	NOFIT
+iso:09EE6E6	dialogue_event	20	31	拾ったものを箱の中に戻しますか	주운물건을상자에돌려놓을까요?	NOFIT
+iso:09EE6FF	dialogue_event	16	23	アイテムを箱の中に戻した	아이템을상자에돌려놨다	NOFIT
+iso:09EE720	dialogue_event	16	23	アイテムを箱の中に戻した	아이템을상자에돌려놨다	NOFIT
+iso:09EE745	dialogue_event	25	28	持ち物が一杯です\n何か捨てて下さい	소지품 가득\n무언가버려주세요	NOFIT
+iso:09EFFB7	dialogue_event	17	23	神酒リレイトを見つけた！	신주릴레이트를 찾았다!	NOFIT
+iso:09EFFE7	dialogue_event	14	17	マトックを使いますか？	곡괭이를 쓸까요?	NOFIT
+iso:0A03EC0	dialogue_event	8	9	呪われた鎧	저주갑옷	NOFIT
+iso:0A33EC0	dialogue_event	8	9	呪われた鎧	저주갑옷	NOFIT
+iso:0A63EC0	dialogue_event	8	9	呪われた鎧	저주갑옷	NOFIT
+iso:0A93EC0	dialogue_event	8	9	呪われた鎧	저주갑옷	NOFIT
+iso:0A9B13F	menu_memo_system	5	7	リアーナ	리아나	NOFIT
+iso:0A9B14A	menu_memo_system	4	5	シオン	시온	NOFIT
+iso:0A9B16B	menu_memo_system	5	7	ティアラ	티아라	NOFIT
+iso:0A9B176	menu_memo_system	4	5	アレフ	알렙	NOFIT
+iso:0C890D1	menu_memo_system	4	6	{~}ヌエ	{~}누에	NOFIT
+iso:10BA4F5	menu_memo_system	3	5	メモ	메모	NOFIT

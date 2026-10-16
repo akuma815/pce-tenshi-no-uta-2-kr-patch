@@ -1,0 +1,30 @@
+{
+  "format": "TASK7-BIOS-CAVE-OCCUPANCY-CONTROL",
+  "version": 1,
+  "status": "RUNTIME_FAIL",
+  "controlled_variables": [
+    "original game",
+    "original E060 JMP F124",
+    "FEC4 never called by the patch"
+  ],
+  "single_change": {
+    "file_offset": "0x1EC4",
+    "runtime": "0xFEC4",
+    "expected_hex": "FFFFFF",
+    "replacement_hex": "4C24F1"
+  },
+  "runtime_decision": {
+    "boot_breaks": "FEC4 is live data/checksummed; reject the BIOS cave",
+    "boot_passes": "FEC4 occupancy is safe; failure requires executing the dispatcher or its size"
+  },
+  "runtime": {
+    "status": "FAIL",
+    "observation": "With an explicit PCECD+Bios user override and the original game/E060 path, changing only FEC4 from FF FF FF to JMP F124 reproduced the corrupted initial display.",
+    "decision": "FEC4 is not an occupiable code cave. BIOS-resident hook architecture rejected."
+  },
+  "output": {
+    "file": "PCECD_3.0-J.task7_bios_cave_occupancy_control.pce",
+    "size": 262144,
+    "sha256": "0E33191F57BDD735C44FD8E6858800BDDCCA1EF1FFF60D8F49A0F45A412E4218"
+  }
+}

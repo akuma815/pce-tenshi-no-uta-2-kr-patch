@@ -1,0 +1,154 @@
+kind	category	subcategory	id	original	full_translation	in_game
+다름	card	card_minigame_text	iso:0BDB8FB	　あなたは確かに強いわ。\nほんとに	넌 확실히 강해.\n정말로	넌　확실히　강해。<0D>정말로
+다름	card	card_minigame_text	iso:0BDB9BF	　いいこと、首を洗って\n待ってなさい！	알겠어, 각오하고\n기다려!	알겠어、　각오하고<0D>기다려！
+다름	card	card_minigame_text	iso:0BDB865	　いいわ、私がみっちり\n鍛えなおしてあげるから\nちゃんとくるのよ！	좋아, 내가 철저히\n다시 단련해 줄 테니\n꼭 와야 해!	좋아、　내가　철저히<0D>다시　단련해　줄　테니<0D>꼭　와야　해！
+다름	card	card_minigame_text	iso:0BDB96E	　悔しいけど、あなたが\nカードマスターだと認め\nるわ	분하지만 네가\n카드마스터로 인정할\n게	분하지만　네가<0D>카드마스터라고<0D>인정할게
+다름	card	card_minigame_text	iso:0BDB7BA	今度はもうちょっと\n強くなってきてね。	다음엔 좀 더\n강해져서 와.	다음엔　좀　더<0D>강해져서　와。
+다름	command	battle_effect_commands	iso:004A5B1	{#1}魔法	{#1}마법	<23><31>마법
+다름	command	menu_and_shop_commands	iso:004A74D	{#1}{~}{~}前頁{~}{~}次頁	{#1}{~}{~}이전{~}{~}다음	<23><31>  이전  다음
+다름	command	menu_and_shop_commands	iso:004A731	{#1}道具	{#1}도구	<23><31>도구
+다름	command	menu_and_shop_commands	iso:004A650	{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{%s}\nレベル\n{0E}経験値\n{0E}ＨＰ\nＭＰ\nＡＰ{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}右\nＡＣ{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}左\n素早さ　{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}頭\n賢さ{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}体\n運　{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}他	{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{%s}\n레벨\n{0E}경험치\n{0E}HP\nMP\nAP{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}우\nAC{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}좌\n민첩　{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}두\n지능{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}체\n운　{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}타	              {%s}<0D>레벨<0D><0E>경험치<0D><0E>ＨＰ<0D>ＭＰ<0D>ＡＰ                우<0D>ＡＣ                좌<0D>민첩               두<0D>지능                체<0D>운　                타
+다름	dialogue	asset_confirmed_event_text	iso:10E3B8E	\p＜協力＞	\p<협력>	<0C>＜협력＞
+다름	dialogue	asset_confirmed_event_text	iso:10E3984	\p＜声の出演＞	\p<성우출연>	<0C>＜성우출연＞
+다름	dialogue	asset_confirmed_event_text	iso:10E3C78	\pＡＮＤ	\p그리고	<0C>그리고
+다름	dialogue	asset_confirmed_event_text	iso:008AC2B	{#1}各種設定\n{~}{%s}メッセージ速度\n{~}{%s}戦闘速度\n{~}{%s}オートバトル	{#1}각종 설정\n{~}{%s}메시지 속도\n{~}{%s}전투 속도\n{~}{%s}자동 전투	<23><31>각종설정<0D> {%s}메시지　속도<0D> {%s}전투　속도<0D> {%s}자동 전투
+다름	dialogue	asset_confirmed_event_text	iso:008AF2D	{#1}戦う\n設定\n逃げる	{#1}전투\n설정\n도주	<23><31>전투<0D>설정<0D>도주
+다름	dialogue	asset_confirmed_event_text	iso:008AF3D	{#5}{%s}\n{#1}攻撃{~}{~}魔法\n防御{~}{~}道具	{#5}{%s}\n{#1}공격{~}{~}마법\n방어{~}{~}도구	<23><35>{%s}<0D><23><31>공격  마법<0D>방어  도구
+다름	dialogue	asset_confirmed_event_text	iso:008A83B	{%s}があらわれた！\nまだこちらに気付いていない\p	{%s}가 나타났다\n아직 눈치 못 챘다\p	{%s}[조사]나타났다<0D>아직 눈치　못　챘다<0C>
+다름	dialogue	asset_confirmed_event_text	iso:008A7D8	{%s}があらわれた！\p	{%s}가 나타났다\p	{%s}[조사]나타났다<0C>
+다름	dialogue	asset_confirmed_event_text	iso:008A82A	{%s}が突然襲ってきた！\p	{%s}가 갑자기 덮쳤다!\p	{%s}[조사]갑자기 덮쳤다！<0C>
+다름	dialogue	asset_confirmed_event_text	iso:004A230	{%s}は{%s}の呪文を唱えた！\p	{%s}는 {%s}의 마법을 외쳤다\p	{%s}[조사]{%s}의　마법을외쳤다<0C>
+다름	dialogue	asset_confirmed_event_text	iso:004A243	{%s}を使った\p	{%s}를 썼다\p	{%s}[조사]썼다<0C>
+다름	dialogue	event_dialogue_or_command	iso:00A1011	タあタおタごタぜタとタひタ次の目的のこと	タあタおタごタぜタとタひタ次の目的のこと	서<29>서<31>서<3B>서<43>서<4F>서<59>서다음목표
+다름	dialogue	event_dialogue_or_command	iso:032C6EA	何も入っていない。	아무것도 없다.	아무것도　없다．
+다름	dialogue	external_dialogue_asset	iso:10E3B80	{0B}井手匡泰	{0B}정수광태	<0B>정수광태
+다름	dialogue	external_dialogue_asset	iso:10E3BC6	{0B}加藤清文	{0B}가등청문	<0B>가등청문
+다름	dialogue	external_dialogue_asset	iso:10E3C42	{0B}古市利雄	{0B}고시리웅	<0B>고시리웅
+다름	dialogue	external_dialogue_asset	iso:10E3BF4	{0B}宮内信子	{0B}궁내신자	<0B>궁내신자
+다름	dialogue	external_dialogue_asset	iso:10E3BAA	{0B}小川史生	{0B}소천사생	<0B>소천사생
+다름	dialogue	external_dialogue_asset	iso:10E3B9C	{0B}小林俊一	{0B}소림준일	<0B>소림준일
+다름	dialogue	external_dialogue_asset	iso:10E3B4A	{0B}森　賢一	{0B}삼현일	<0B>삼현일
+다름	dialogue	external_dialogue_asset	iso:10E3BE6	{0B}牧　由尚	{0B}목유상	<0B>목유상
+다름	dialogue	external_dialogue_asset	iso:10E3CF6	{0B}福島　孝	{0B}복도효	<0B>복도효
+다름	dialogue	external_dialogue_asset	iso:10E3CCC	{0B}福島和行	{0B}복도화행	<0B>복도화행
+다름	dialogue	external_dialogue_asset	iso:10E3CBE	{0B}福島次郎	{0B}복도차랑	<0B>복도차랑
+다름	dialogue	external_dialogue_asset	iso:10E3CDA	{0B}福島雄二	{0B}복도웅이	<0B>복도웅이
+다름	dialogue	external_dialogue_asset	iso:10E3D1A	{0B}菊池栄二	{0B}국지영이	<0B>국지영이
+다름	dialogue	external_dialogue_asset	iso:10E3BB8	{0B}西　健一	{0B}서건일	<0B>서건일
+다름	dialogue	external_dialogue_asset	iso:10E3CE8	{0B}阿部好延	{0B}아부호연	<0B>아부호연
+다름	dialogue	external_dialogue_asset	iso:10E3A9F	伊倉一寿（二役）	이창일수(2역)	이창일수（２역）
+다름	dialogue	external_dialogue_asset	iso:10E3ADD	梁田清之（二役）	양전청지(2역)	양전청지（２역）
+다름	dialogue	external_dialogue_asset	iso:10E3617	鈴木ＢＯＷ正芳	영목BOW정방	영목ＢＯＷ정방
+다름	dialogue	external_dialogue_asset	iso:10E3B13	（二役）	(2역)	（２역）
+다름	dialogue	external_dialogue_asset	iso:10E3D57	（Ｃ）ＮＯＢＵＴＥＲＵ　ＹＵＵＫＩ	(C)NOBUTERU YUUKI	（Ｃ）ＮＯＢＵＴＥＲＵＹＵＵＫＩ
+다름	dialogue	external_dialogue_asset	iso:10E3CA1	＜ゼネラルプロデュース＞	<총괄프로듀스>	＜총괄프로듀스＞
+다름	dialogue	external_dialogue_asset	iso:10E3B59	＜ビデオ編集＞	<영상편집>	＜영상편집＞
+다름	dialogue	external_dialogue_asset	iso:10E3D05	＜プロデュース＞	<프로듀스>	＜프로듀스＞
+다름	dialogue	external_dialogue_asset	iso:10E3B21	＜効果音制作＞	<효과음제작>	＜효과음제작＞
+다름	dialogue	external_dialogue_asset	iso:10E3164	Ａ・ディレクター	A·디렉터	Ａ<A5>디렉터
+다름	event	asset_confirmed_short_event_text	iso:008AF68	{#1}オートバトル	{#1}자동전투	<23><31>자동전투
+다름	event	asset_confirmed_short_event_text	iso:05BFA00	聞けるかもな・・・	들을지도...	들을지도．．．
+다름	menu_data	weapon_names	iso:0089D24	魔水晶の杖	마수정봉	  라그나레크　굴
+다름	slot_graphics_window	graphics_or_embedded_text	iso:006A429	土砂崩れで進めない。	산사태로 못 간다.	산사태로못간다．
+다름	system	system_menu_battle	iso:004A26A	{%s}は全快した！	{%s}는 완쾌했다!	이　가벼워졌다<81>
+다름	system	system_menu_battle	iso:004A25E	効果がなかった！	효과가 없었다	{%s}일행은　몸
+다름	visual_event	visual_scene_or_overlay	iso:1015C21	この画面が表示されます。	이 화면이 표시됩니다.	이화면이표시됩니다．
+다름	visual_event	visual_scene_or_overlay	iso:1015D47	に不正なデータがあります。	에잘못된데이터가있습니다.	에잘못된데이터가있습니다．
+다름	visual_event	visual_scene_or_overlay	iso:1015E45	ディスクの容量が足りません。	디스크 용량이 부족합니다.	디스크용량이부족합니다．
+다름	visual_event	visual_scene_or_overlay	iso:10164A7	デバイスドライバが登録されていません。	장치드라이버가 등록되지 않았습니다.	장치드라이버가등록되지않았습니다．
+다름	visual_event	visual_scene_or_overlay	iso:1016101	パラメータが足りません。	매개변수가 부족합니다.	매개변수가부족합니다．
+다름	visual_event	visual_scene_or_overlay	iso:1016420	パラメータの指定に誤りがあります。	매개변수지정에 오류가 있습니다.	매개변수지정에오류가있습니다．
+다름	visual_event	visual_scene_or_overlay	iso:1015D62	ファイルが見つかりません。	파일을찾을 수 없습니다.	파일을찾을수없습니다．
+다름	visual_event	visual_scene_or_overlay	iso:1015D1C	ファイルの作成に失敗しました。	파일 생성에 실패했습니다.	파일생성에실패했습니다．
+다름	visual_event	visual_scene_or_overlay	iso:10161DF	ファイル名を指定して下さい。	파일명을 지정하세요.	파일명을지정하세요．
+다름	visual_event	visual_scene_or_overlay	iso:10164CE	メモリが足りません。	메모리가부족합니다.	메모리가부족합니다．
+다름	visual_event	visual_scene_or_overlay	iso:1015EDA	ラベル名を指定して下さい。	라벨명을 지정하세요.	라벨명을지정하세요．
+다름	visual_event	visual_scene_or_overlay	iso:101624B	レコードサイズを指定して下さい。	레코드 크기를 지정하세요.	레코드크기를지정하세요．
+다름	visual_event	visual_scene_or_overlay	iso:10162F0	分割するサイズの指定が適当ではありません。	분할 크기 지정이 올바르지 않습니다.	분할크기지정이올바르지않습니다．
+다름	visual_event	visual_scene_or_overlay	iso:10163AD	指定したファイルが見つかりません。	지정한파일을 찾을 수 없습니다.	지정한파일을찾을수없습니다．
+다름	visual_event	visual_scene_or_overlay	iso:1015DC7	書き込むべきデータ領域が小さすぎるか、存在しません。	쓸 데이터 영역이 너무 작거나 없습니다.	쓸데이터영역이너무작거나없습니다．
+줄임	card	card_minigame_text	iso:0BDA31E	　このゲームは、持ちカードを\n出し、同色のカードと合わせて\n取ることで、自分の持ち点とし\nその合計得点を競うものです。	이 게임은 가진 카드를\n내서 같은 색 카드와 맞춰\n가져오면 자기 점수가 되며\n합계 점수를 겨룹니다.	이　게임은　가진　카드를<0D>내서　같은　색　카드와　맞춰<0D>가져오면　자기　점수가　되며<0D>합계　점수를　겨룹니다
+줄임	card	card_minigame_text	iso:0BDB8C7	　この私を本気にさせる\nなんて、ほんとに頼もし\nいわ	이나를진심으로만들다니\n너 정말 믿음직하\n구나	나를　진심으로　만들다니<0D>정말　믿음직하구나
+줄임	card	card_minigame_text	iso:0BDB9A1	　でも、次は絶対負けな\nいわよ	하지만다음엔절대안 질\n거야	다음엔　절대<0D>안　질　거야
+줄임	card	card_minigame_text	iso:0BDB839	　でもカードマスターに\nなるにはまだ未熟だわ	그래도 카드마스터가\n되려면 아직 멀었어	카드마스터가　되려면<0D>아직　멀었어
+줄임	card	card_minigame_text	iso:0BDB957	　ふふっ、久々の完敗ね	후훗,오랜만의 완패네	후훗　오랜만의　완패네
+줄임	card	card_minigame_text	iso:0BDB8A7	　へぇー、なかなかやる\nじゃない	오, 제법 하네\n그렇지	오、　제법　하는데
+줄임	card	card_minigame_text	iso:0BDA392	　また、取ったカードの組合せ\nによって役ができることもあり\n高得点をねらうこともできます	또 가져온 카드 조합에\n따라 역이 생기기도 하며\n고득점을노릴 수도 있습니다	또　가져온　카드의　조합에<0D>따라　족보가　완성되어<0D>고득점을　노릴　수　있습니다
+줄임	command	battle_effect_commands	iso:004A4EF	つらら	고드름	빙
+줄임	command	battle_effect_commands	iso:004A4F8	カマイタチ	칼바람	칼바
+줄임	command	menu_and_shop_commands	iso:004A7E5	{%d}．マップ名は８文字{~}{~}Ｌ００　{~}時間００：００	{%d}.맵 이름은 8자{~}{~}L00　{~}시간00:00	이트
+줄임	command	menu_and_shop_commands	iso:004A81C	{%s}は{%d}Ｇになります\nよろしいですか？	{%s}는{%d}G입니다\n괜찮습니까?	{%s}{%d}Ｇ<0D>괜찮습니까？
+줄임	command	menu_and_shop_commands	iso:008AD22	{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{%s}\n{#1}レベル\n{0E}経験値\n{0E}ＨＰ\nＭＰ\nＡＰ{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}右\nＡＣ{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}左\n素早さ　{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}頭\n賢さ{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}体\n運　{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}他	{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{%s}\n{#1}레벨\n{0E}경험치\n{0E}HP\nMP\nAP{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}우\nAC{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}좌\n민첩　{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}두\n지능{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}체\n운　{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}타	              {%s}<0D>레벨<0D><0E>경험치<0D><0E>ＨＰ<0D>ＭＰ<0D>ＡＰ                우<0D>ＡＣ                좌<0D>민첩                두<0D>지능                체<0D>운 　               타
+줄임	command	menu_and_shop_commands	iso:004A760	おく	놓기	놓
+줄임	command	menu_and_shop_commands	iso:004A7D9	メモ詳細	메모상세	라이히
+줄임	command	menu_and_shop_commands	iso:004A7E0	ロード	로드	놈
+줄임	command	menu_and_shop_commands	iso:004A810	買う\n売る	구매\n팔기	루시르
+줄임	dialogue	asset_confirmed_event_text	iso:008A807	\n{%d}の経験値と\n{%d}ギミルを手に入れた	\n{%d}경험치와\n{%d}기밀을 얻었다	{%d}경험치와<0D>{%d}기밀획득
+줄임	dialogue	asset_confirmed_event_text	iso:008A747	\n{%s}を手に入れた	\n{%s}를 얻었다	득
+줄임	dialogue	asset_confirmed_event_text	iso:008A75E	{%s}のレベルが{%d}になった！{0B}\nＨＰの最大が{%d}増えた\nＭＰの最大が{%d}増えた\nＡＰが{%d}あがった\nＡＣが{%d}あがった\n素早さが{%d}あがった\n賢さが{%d}あがった\n運が{%d}あがった{%s}{%s}{%s}{%s}{%s}{%s}	{%s}레벨이{%d}이 됐다!{0B}\nHP최대치가{%d}늘었다\nMP최대치가{%d}늘었다\nAP가{%d}상승\nAC가{%d}상승\n민첩이{%d}상승\n지능이{%d}상승\n운이{%d}상승{%s}{%s}{%s}{%s}{%s}{%s}	{%s}레벨{%d}달성！<0B><0D>ＨＰ최대{%d}상승<0D>ＭＰ최대{%d}상승<0D>ＡＰ가{%d}상승<0D>ＡＣ가{%d}상승<0D>민첩이{%d}상승<0D>지능이{%d}상승<0D>운이{%d}상승{%s}{%s}{%s}{%s}{%s}{%s}
+줄임	dialogue	asset_confirmed_event_text	iso:004A839	{%s}は{%d}Ｇで引き取ります\nよろしいですか？	{%s}를{%d}G에 팔겠습니까?	{%s}[조사]{%d}Ｇ에　팔겠습니까？
+줄임	dialogue	event_dialogue_or_command	iso:008A7E4	{%s}は逃げ出した	{%s}는 도망쳤다	{%s}[조사]도망쳤다
+줄임	dialogue	event_dialogue_or_command	iso:09EA039	マトックが岩を砕いた！	괭이가 바위를 부쉈다	괭이로　부쉈다
+줄임	dialogue	event_dialogue_or_command	iso:00A1043	古代技術のこと	고대기술정보	고대기술
+줄임	dialogue	event_dialogue_or_command	iso:00A104F	天上界のこと	천상계정보	천상계
+줄임	dialogue	event_dialogue_or_command	iso:032CECC	拾ったものを箱の中に戻しますか	주운 물건을 상자에 돌려 놓을까요?	주운걸　넣을까？
+줄임	dialogue	event_dialogue_or_command	iso:008AFBF	最初から	처음부터	새게임
+줄임	dialogue	event_dialogue_or_command	iso:09EA66C	泉が湧いています\n飲みますか	샘물이 솟는다\n마실까?	샘이　있다<0D>마실까？
+줄임	dialogue	event_dialogue_or_command	iso:09E9FB7	神酒リレイトを見つけた！	신주릴레이트를 찾았다!	신주릴레이트발견
+줄임	event	asset_confirmed_short_event_text	iso:008A822	を覚えた	습득했다	습득
+줄임	event	asset_confirmed_short_event_text	iso:008A033	エウリカの種	유리카씨앗	유리씨
+줄임	event	asset_confirmed_short_event_text	iso:05B3FD3	フォルネウス	포르네우스	포르네
+줄임	event	asset_confirmed_short_event_text	iso:008A051	マノノン	마노논	마논
+줄임	event	asset_confirmed_short_event_text	iso:05B4105	メロウズ	멜로우즈	멜로
+줄임	event	asset_confirmed_short_event_text	iso:008A03B	幻パンツ	환상팬티	흰팬티
+줄임	menu_data	accessory_and_key_item_names	iso:008A007	仙草アルニム	선초 알니름	알니름초
+줄임	menu_data	character_and_magic_names	iso:0A9B176	アレフ	알레프	알
+줄임	menu_data	headgear_names	iso:0049D93	アスランの兜	아슬란투구	아슬란
+줄임	menu_data	location_names	iso:037BB3E	{~}{~}双子の街ストーム	쌍둥이　도시　스톰	  쌍둥이스톰
+줄임	menu_data	location_names	iso:037BBB7	{~}{~}双子の街セルーム	쌍둥이　도시　세룸	  쌍둥이세룸
+줄임	menu_data	monster_names	iso:00A3E6D	スケアクロウ	스케어크로우	허수아비
+줄임	menu_data	monster_names	iso:00A3D44	フライスケイル	플라이스케일	날비늘
+줄임	menu_data	weapon_names	iso:0089D10	魔剣ルシエド	마검루시에드	스트　폐성
+줄임	system	system_menu_battle	iso:004A49E	{%s}が現れた！	{%s}가 출현!	  방고아　탑
+줄임	system	system_menu_battle	iso:004A307	{%s}たちの体が軽くなった！	{%s}일행은 몸이 가벼워졌다!	크　항
+줄임	system	system_menu_battle	iso:004A4DA	{%s}のレベルがあがった！	{%s}의 레벨이 올랐다	솔라스
+줄임	system	system_menu_battle	iso:004A34B	{%s}の体はマヒした！	{%s}는 마비됐다!	성
+줄임	system	system_menu_battle	iso:004A33A	{%s}の体は毒におかされた！	{%s}는 중독됐다!	레크　굴
+줄임	system	system_menu_battle	iso:004A2B1	{%s}の攻撃力が半分になった！	{%s} 공격력 절반	  해신　신전
+줄임	system	system_menu_battle	iso:004A29C	{%s}の攻撃力が２倍になった！	{%s}공격력2배!	<40>광산
+줄임	system	system_menu_battle	iso:004A3B8	{%s}の攻撃！	{%s}의 공격	것도　없었다
+줄임	system	system_menu_battle	iso:004A3D1	{%s}の連続攻撃！	{%s}의 연속 공격!	켈즈　아지트
+줄임	system	system_menu_battle	iso:004A2C6	{%s}の防御力が{%d}あがった！	{%s}방어력{%d}상승!	하락！
+줄임	system	system_menu_battle	iso:004A2D9	{%s}の防御力が{%d}さがった！	{%s}방어력{%d}하락!	 파도소리　오자리아
+줄임	system	system_menu_battle	iso:004A276	{%s}のＨＰが{%d}回復した！	{%s}의HP가{%d}회복!	<49>
+줄임	system	system_menu_battle	iso:004A318	{%s}のＨＰを{%d}奪った！	{%s}의HP{%d}흡수!	�  루시에드　마랑굴
+줄임	system	system_menu_battle	iso:004A289	{%s}のＭＰが{%d}回復した！	{%s}의MP가{%d}회복!	　마르딘　굴
+줄임	system	system_menu_battle	iso:004A329	{%s}のＭＰを{%d}奪った！	{%s}의MP{%d}흡수!	비스트　폐성
+줄임	system	system_menu_battle	iso:004A474	{%s}は{%d}のダメージ！	{%s}는 {%d} 피해!	  코크　성
+줄임	system	system_menu_battle	iso:004A43D	{%s}はダークフォースを放つ！	{%s}가 다크포스를 쏜다	반야장광
+줄임	system	system_menu_battle	iso:004A405	{%s}は仲間を呼んだ！	{%s}가 동료를 불렀다	무　숲
+줄임	system	system_menu_battle	iso:004A483	{%s}は倒れた！	{%s}가 쓰러짐!	몬촌
+줄임	system	system_menu_battle	iso:004A2F9	{%s}は元気になった！	{%s}는 기운 회복!	촌　시라
+줄임	system	system_menu_battle	iso:004A459	{%s}は再生回復した	{%s}는 재생했다	하사
+줄임	system	system_menu_battle	iso:004A44F	{%s}は分裂した	{%s}는 분열했다	러
+줄임	system	system_menu_battle	iso:004A3EE	{%s}は力をためている！	{%s}가 힘을 모은다!	　성
+줄임	system	system_menu_battle	iso:004A414	{%s}は召喚呪文を唱えた！	{%s}가 소환 마법을 외쳤다!	탑
+줄임	system	system_menu_battle	iso:004A38C	{%s}は呪われた！	{%s}는 저주됐다	！
+줄임	system	system_menu_battle	iso:004A397	{%s}は呪文を封じられた！	{%s}는 마법 봉인!	중！
+줄임	system	system_menu_battle	iso:004A37E	{%s}は幻につつまれた！	{%s}는 환상에 싸였다!	다！
+줄임	system	system_menu_battle	iso:004A2EC	{%s}は正常に戻った	{%s}는 정상 회복	　쿠린
+줄임	system	system_menu_battle	iso:004A427	{%s}は死神の子守歌を歌った！	{%s}가 사신의 자장가를 불렀다	자툰헤임
+줄임	system	system_menu_battle	iso:004A372	{%s}は混乱した！	{%s}는 혼란!	복
+줄임	system	system_menu_battle	iso:004A366	{%s}は眠っている！	{%s}는 자는 중!	<49>
+줄임	system	system_menu_battle	iso:004A358	{%s}は眠りに落ちた！	{%s}는 잠들었다!	<FA>다
+줄임	system	system_menu_battle	iso:004A3DF	{%s}は突っ込んできた！	{%s}가 돌진했다!	도시　코스트
+줄임	system	system_menu_battle	iso:004A467	{%s}は逃げ出した！	{%s}가 도망쳤다	   펜잔스촌
+줄임	system	system_menu_battle	iso:004A24E	{%s}を捨てた	{%s}를 버렸다	{%s}버림
+줄임	system	system_menu_battle	iso:004A865	{%s}を捨ててもよろしいですか？	{%s}를 버려도 됩니까?	{%s}[조사]버려도　됩니까？
+줄임	system	system_menu_battle	iso:004A3FC	{%s}攻撃！	{%s} 공격	탑
+줄임	system	system_menu_battle	iso:004A48D	からぶり！	빗나갔다!	니도사촌
+줄임	system	system_menu_battle	iso:004A4C5	全ての呪文が効力を失った！	모든 마법 효과가 사라졌다	나했다
+줄임	system	system_menu_battle	iso:0049D88	聖女の髪飾り	성녀머리장식	성녀장식
+줄임	system	system_menu_battle	iso:0049E73	虚空のつぼ	허공항아리	허공병
+줄임	system	system_menu_battle	iso:004A494	逃げられない！	도망칠 수 없다!	   적청탑
+줄임	system	system_menu_battle	iso:0049D5C	銀の髪飾り	은머리장식	은장식

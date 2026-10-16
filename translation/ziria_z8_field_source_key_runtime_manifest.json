@@ -1,0 +1,108 @@
+{
+  "format": "ZIRIA-Z8-FIELD-SOURCE-KEY-RUNTIME",
+  "version": 1,
+  "task": "Z8-v4-field-source-key-runtime-gate",
+  "status": "RUNTIME_SOURCE_KEY_PASS_DENOMINATOR_OPEN",
+  "mutation_scope": "analysis outputs only; no CUE/BIN/ISO mutation",
+  "inputs": {
+    "probe_manifest": {
+      "path": "translation/ziria_z8_field_source_key_probe_manifest.json",
+      "sha256": "42A0A0C84E6EE5C8CDEFF3BDFF5F1448D4A953C56C8FF23BA519B8AC18E64EB6"
+    },
+    "runtime_trace": {
+      "path": "translation/ziria_z8_field_source_key_runtime_trace.tsv",
+      "sha256": "273E9C1702E4DACE12D7F41852B40927DC86A0191CACC716EFF391F06692ABEB"
+    },
+    "lookup": {
+      "path": "translation/ziria_z8_field_source_key_lookup.tsv",
+      "sha256": "DCA31F0210872C6F2EAB3214E69910C9B4298229F8E60CF3C2A25EB59E6EB5F9"
+    }
+  },
+  "runtime_status_snapshot": {
+    "status": "running",
+    "frame": "5880",
+    "records": "852",
+    "scene_stream_records": "783",
+    "start_hits": "9",
+    "unique_start_hits": "8",
+    "out_of_scene_records": "4487",
+    "cd_records": "5",
+    "active_lba": "2882",
+    "active_count": "96",
+    "active_mode": "06",
+    "scene_identity_source": "observed_mode06_cd_read",
+    "lookup_count": "236",
+    "pc": "55CE"
+  },
+  "trace": {
+    "rows": 852,
+    "event_counts": {
+      "CD_READ": 5,
+      "START_HIT": 9,
+      "STREAM_NONSTART": 774,
+      "STREAM_OUTSIDE_FIELD_SCENE": 64
+    },
+    "field_scene_stream_rows": 783,
+    "start_hits": 9,
+    "unique_start_hit_ids": [
+      "iso:010B9E7",
+      "iso:010BA3B",
+      "iso:010BA86",
+      "iso:010BAA4",
+      "iso:010BAD2",
+      "iso:010BAF7",
+      "iso:011F03B",
+      "iso:011FA12"
+    ],
+    "unique_start_hit_count": 8,
+    "source_key_formula_mismatches": 0,
+    "lookup_mismatches": 0,
+    "scene_identity_mismatches": 0,
+    "cd_transitions": [
+      {
+        "frame": 1420,
+        "lba": 482,
+        "count": 96,
+        "mode": "06",
+        "scene_identity_source": "manual_field_visible_assumption"
+      },
+      {
+        "frame": 2845,
+        "lba": 290,
+        "count": 96,
+        "mode": "06",
+        "scene_identity_source": "observed_mode06_cd_read"
+      },
+      {
+        "frame": 4188,
+        "lba": 2882,
+        "count": 96,
+        "mode": "06",
+        "scene_identity_source": "observed_mode06_cd_read"
+      }
+    ]
+  },
+  "runtime_gate": {
+    "status": "PASS",
+    "user_route_observation": "first dialogue -> Memo enter/return -> first battle/field return -> tower entry completed",
+    "proved": [
+      "all eight offline exact-start IDs were observed in a fresh runtime capture",
+      "all START_HIT rows round-trip through the canonical MPR source-key formula",
+      "all START_HIT rows match the 236-row lookup ID and ISO offset",
+      "field-scene identity was refreshed by an observed mode-06 CD read",
+      "later mode-06 loads changed scene identity without emulator failure"
+    ],
+    "not_proved": [
+      "complete runtime consumption coverage for all 236 catalogue records",
+      "static event-bytecode reference denominator for the remaining 228 records",
+      "redirect/index storage format or hook ABI"
+    ]
+  },
+  "redirect_index": {
+    "status": "NOT_BUILT",
+    "reason": "text reference denominator remains open"
+  },
+  "outputs": {
+    "report": "Z8_4_field_source_key_runtime_result.md"
+  }
+}

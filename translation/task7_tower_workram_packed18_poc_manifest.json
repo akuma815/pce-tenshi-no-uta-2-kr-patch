@@ -1,0 +1,153 @@
+{
+  "format": "TASK7-TOWER-WORKRAM-PACKED18-POC",
+  "version": 1,
+  "task": 7,
+  "status": "RUNTIME_PASS",
+  "approved_predecessor": {
+    "path": "translation/task7_tower_workram_trampoline_poc_manifest.json",
+    "sha256": "8B0A7FA7CC74EE17B1CC841D65BF12B0EE60C3897EDE6C293194866A78EA4EB7"
+  },
+  "architecture": {
+    "loader": "5230",
+    "hook_source_data": "C737",
+    "fixed_work_ram_hook": "2B0F..2B8D",
+    "packed_glyph_data": "C800..C88F",
+    "later_call": "JSR 2B0F",
+    "fallback": "JMP F124",
+    "mpr_changes": 0
+  },
+  "loader": {
+    "bytes": 24,
+    "hex": "4808A90F8D7F96A92B8D80967337C70F2B7F0028684C0F2B",
+    "copy_opcode": "TII C737,2B0F,007F"
+  },
+  "hook": {
+    "runtime_address": "0x2B0F",
+    "bytes": 127,
+    "hex": "4808A5F9C9EFD060A5F838E958C908B05785FC0A0A0A65FC0A85F8A9C885F92868A206207C2B20852B207C2B85FC29F020852BA5FC290F0A0A0A0A85FD207C2B85FC4A4A4A4A05FD20852BA5FC290F0A0A0A0A20852BCAD0CAA900A20820852BCAD0FAA900A0FF6028684C24F1B2F8E6F8D002E6F96092FAE6FAD002E6FB60",
+    "labels": {
+      "custom_restore": "0x2B2E",
+      "pair_loop": "0x2B32",
+      "zero_loop": "0x2B6C",
+      "fallback": "0x2B77",
+      "read_src": "0x2B7C",
+      "read_done": "0x2B84",
+      "write_dst": "0x2B85",
+      "write_done": "0x2B8D"
+    }
+  },
+  "map": {
+    "path": "translation/task7_tower_workram_packed18_glyph_map.json",
+    "sha256": "854B575728755B4115232E521C1D4A69C276A6A1D7E1EE740926F9FD47E55923",
+    "text": "준비는다됐나페이"
+  },
+  "expected_writes": [
+    {
+      "id": "field-getfnt-first-call-loader",
+      "iso_offset": "0x8667E",
+      "physical_bin_offset": "0x812A6E",
+      "length": 3,
+      "expected_hex": "2060E0",
+      "replacement_hex": "203052",
+      "reason": "enter the one-shot loader"
+    },
+    {
+      "id": "tower-safe-workram-loader",
+      "iso_offset": "0x82230",
+      "physical_bin_offset": "0x80E620",
+      "length": 24,
+      "expected_hex": "000000000000000000000000000000000000000000000000",
+      "replacement_hex": "4808A90F8D7F96A92B8D80967337C70F2B7F0028684C0F2B",
+      "reason": "copy the packed hook to 2B0F and rewrite the live call"
+    },
+    {
+      "id": "tower-safe-packed18-hook-source",
+      "iso_offset": "0x89737",
+      "physical_bin_offset": "0x815B27",
+      "length": 127,
+      "expected_hex": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF",
+      "replacement_hex": "4808A5F9C9EFD060A5F838E958C908B05785FC0A0A0A65FC0A85F8A9C885F92868A206207C2B20852B207C2B85FC29F020852BA5FC290F0A0A0A0A85FD207C2B85FC4A4A4A4A05FD20852BA5FC290F0A0A0A0A20852BCAD0CAA900A20820852BCAD0FAA900A0FF6028684C24F1B2F8E6F8D002E6F96092FAE6FAD002E6FB60",
+      "reason": "non-executed hook source image"
+    },
+    {
+      "id": "field-packed18-data-c800",
+      "iso_offset": "0x89800",
+      "physical_bin_offset": "0x815BF0",
+      "length": 144,
+      "expected_hex": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF",
+      "replacement_hex": "0000003F80A03180003F80402003F80000000000002482483C82482483C80080080000000000001001001F80003FC0001001F80000000000003E820820C2082083E80080080000000000003A82283B81283E809009036800000000000020820820820C2083E80080080000000000003EC14C17C14C14C3EC00C00C000000000000188248248248248188008008000000",
+      "reason": "eight packed Galmuri glyphs"
+    },
+    {
+      "id": "second-dialogue-eight-custom-codes",
+      "iso_offset": "0x10BA04",
+      "physical_bin_offset": "0x897DF4",
+      "length": 16,
+      "expected_hex": "8E789378568F6F9788465532CCAAB2C4",
+      "replacement_hex": "EF58EF59EF5AEF5BEF5CEF5DEF5EEF5F",
+      "reason": "ordered Korean display probe"
+    }
+  ],
+  "diff_audit": {
+    "declared_span_count": 5,
+    "actual_changed_bytes": 311,
+    "actual_changed_ranges": [
+      {
+        "physical_start": "0x80E620",
+        "physical_end_exclusive": "0x80E632",
+        "changed_bytes": 18
+      },
+      {
+        "physical_start": "0x80E633",
+        "physical_end_exclusive": "0x80E638",
+        "changed_bytes": 5
+      },
+      {
+        "physical_start": "0x812A6F",
+        "physical_end_exclusive": "0x812A71",
+        "changed_bytes": 2
+      },
+      {
+        "physical_start": "0x815B27",
+        "physical_end_exclusive": "0x815B8D",
+        "changed_bytes": 102
+      },
+      {
+        "physical_start": "0x815B8E",
+        "physical_end_exclusive": "0x815BA6",
+        "changed_bytes": 24
+      },
+      {
+        "physical_start": "0x815BF0",
+        "physical_end_exclusive": "0x815C80",
+        "changed_bytes": 144
+      },
+      {
+        "physical_start": "0x897DF4",
+        "physical_end_exclusive": "0x897E04",
+        "changed_bytes": 16
+      }
+    ],
+    "undeclared_changes": 0,
+    "file_size_preserved": true
+  },
+  "output": {
+    "bin": "Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_task7_tower_workram_packed18_poc.bin",
+    "bin_size": 523184384,
+    "bin_sha256": "603DA3DC3B8CA5F952F46CADB57F7A63784561D01BEB2E28C4D901DBE8765E65",
+    "cue": "Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_task7_tower_workram_packed18_poc.cue",
+    "cue_sha256": "91DF2D7354FFC564EDD0FC61F18CA27269BB51F153D008DF59DDB834A11E34F6"
+  },
+  "runtime": {
+    "status": "PASS",
+    "confirmed_by_user": "2026-07-18",
+    "observation": "Eight Korean glyphs, Japanese fallback, Memo, battle Attack and tower progression past the former freeze point all completed normally.",
+    "pass_criteria": [
+      "eight Korean glyphs",
+      "Japanese fallback",
+      "Memo",
+      "battle Attack",
+      "tower progression past former freeze"
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "format": "RUNTIME-VALIDATION-EVIDENCE",
+  "build_sha256": "827bce3769d20a5e996c4022a809f98918ce0c4f610c421f7499e9faf23c9f69",
+  "emulator": "H:\\BizHawk\\EmuHawk.exe",
+  "result": "boot, title, gameplay, and first dialogue reached normally",
+  "first_dialogue": {
+    "text": "フェイト： よう、シオン",
+    "tsv_source_iso_offset": "0x010B9E8",
+    "legacy_region": "slot03",
+    "mapped_area_grid": 3,
+    "mapped_area_load_end": "0x0108000",
+    "physical_grid_end": "0x0111000",
+    "redirect_present": false,
+    "source_bytes_unchanged": true,
+    "classification": "live scene/system-loader text outside the $54A5 mapped-area load range"
+  },
+  "debugger": {
+    "pc": "0x53AF",
+    "mpr2_to_mpr6": ["0x80", "0x81", "0x82", "0x83", "0x84"]
+  }
+}

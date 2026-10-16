@@ -1,0 +1,71 @@
+{
+  "format": "ZIRIA-Z8-FIELD-EVENT-BYTECODE",
+  "version": 1,
+  "task": "Z8.5-static-event-reference-denominator",
+  "status": "STATIC_DENOMINATOR_PASS_BOUNDARY_REPAIR_REQUIRED",
+  "mutation_scope": "analysis outputs only; no CUE/BIN/ISO mutation",
+  "inputs": {
+    "track02_iso": {
+      "path": "extracted_bin/Track02_data.iso",
+      "sha256": "7566073A2AA1F48E7B39ED2B34277D9935FADE8A3FAD7DCC72C21276E2632AF9"
+    },
+    "master_text": {
+      "path": "translation/full_extraction/master_text.csv",
+      "sha256": "36AAE2700FB26239A29BBCC3770EFC203BF494997A72DD0C85B8F6026E560AC0"
+    },
+    "input_catalog": {
+      "path": "module_relink/z8_field_dialogue_refs/field_dialogue_reference_catalog.csv",
+      "sha256": "E125E6D78050DDEC644551D0B49C9F5D0BD4E0236D4A9CD9836005610406C8C0"
+    },
+    "runtime_manifest": {
+      "path": "translation/ziria_z8_field_source_key_runtime_manifest.json",
+      "sha256": "F7ABA6B1DAD050175BC14D7BE92D3081D5F72F1C5F5028A58256A5B89421FDC9"
+    }
+  },
+  "population": {
+    "input_rows": 236,
+    "structural_text_consumers": 235,
+    "reference_kinds": {
+      "INLINE_OPCODE_03": 10,
+      "INLINE_OPCODE_02": 217,
+      "INLINE_OPCODE_14": 1,
+      "FALSE_POSITIVE_KANA_TABLE": 1,
+      "MEMO_POINTER_TABLE": 7
+    },
+    "boundary_status": {
+      "EXACT": 232,
+      "MASTER_PREFIX_UNDERREAD": 2,
+      "EXCLUDE": 1,
+      "MASTER_PREFIX_OVERREAD": 1
+    },
+    "redirect_eligible_exact_rows": 232,
+    "boundary_repairs_required": 3,
+    "excluded_false_positives": 1
+  },
+  "model": {
+    "inline": "opcode 02/03/14 immediately owns a NUL-terminated text payload; there is no independent pointer to relocate",
+    "memo": "seven little-endian logical pointers at ISO 0x011F010..0x011F01D resolve in MPR6 bank 0x7F to C01E,C029,C031,C03B,C043,C04F,C059",
+    "source_key": "scene-relative 24-bit offset from the corrected payload start"
+  },
+  "anomalies": {
+    "prefix_underread_ids": [
+      "iso:010CAE1",
+      "iso:010D080"
+    ],
+    "prefix_overread_ids": [
+      "iso:011F011"
+    ],
+    "false_positive_ids": [
+      "iso:010F080"
+    ]
+  },
+  "redirect_index": {
+    "status": "NOT_BUILT",
+    "reason": "the structural denominator is closed, but three master rows need boundary repair and the false positive must be removed before translation encoding/index construction"
+  },
+  "outputs": {
+    "catalog": "module_relink/z8_field_event_refs/field_event_reference_catalog.csv",
+    "catalog_sha256": "91FF33281B3A0CF021BF96D99777C3CB5B5A6F6D1FA8790F56D3843A24589978",
+    "report": "docs/active/Z8_5_field_event_bytecode_result.md"
+  }
+}

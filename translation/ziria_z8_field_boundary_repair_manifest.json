@@ -1,0 +1,70 @@
+{
+  "format": "ZIRIA-Z8-FIELD-BOUNDARY-REPAIR",
+  "version": 1,
+  "task": "Z8.6-boundary-repair-and-source-key-index",
+  "status": "BOUNDARY_REPAIR_PASS_SOURCE_INDEX_CLOSED",
+  "mutation_scope": "repair overlay and canonical index only; master_text.csv and CUE/BIN/ISO remain unmodified",
+  "inputs": {
+    "track02_iso": {
+      "path": "extracted_bin/Track02_data.iso",
+      "sha256": "7566073A2AA1F48E7B39ED2B34277D9935FADE8A3FAD7DCC72C21276E2632AF9"
+    },
+    "master_text": {
+      "path": "translation/full_extraction/master_text.csv",
+      "sha256": "36AAE2700FB26239A29BBCC3770EFC203BF494997A72DD0C85B8F6026E560AC0",
+      "policy": "immutable baseline"
+    },
+    "event_catalog": {
+      "path": "module_relink/z8_field_event_refs/field_event_reference_catalog.csv",
+      "sha256": "91FF33281B3A0CF021BF96D99777C3CB5B5A6F6D1FA8790F56D3843A24589978"
+    }
+  },
+  "population": {
+    "event_catalog_rows": 236,
+    "corrected_text_consumers": 235,
+    "exact_rows": 232,
+    "repaired_rows": 3,
+    "excluded_false_positives": 1,
+    "unique_corrected_ids": 235,
+    "unique_source_keys": 235
+  },
+  "repairs": [
+    {
+      "legacy_id": "iso:010CAE1",
+      "corrected_id": "iso:010CABD",
+      "action": "PREFIX_UNDERREAD_REPLACED",
+      "corrected_iso_offset": "0x010CABD"
+    },
+    {
+      "legacy_id": "iso:010D080",
+      "corrected_id": "iso:010D036",
+      "action": "PREFIX_UNDERREAD_REPLACED",
+      "corrected_iso_offset": "0x010D036"
+    },
+    {
+      "legacy_id": "iso:011F011",
+      "corrected_id": "iso:011F01E",
+      "action": "POINTER_PREFIX_OVERREAD_REPLACED",
+      "corrected_iso_offset": "0x011F01E"
+    },
+    {
+      "legacy_id": "iso:010F080",
+      "corrected_id": "",
+      "action": "EXCLUDED_FALSE_POSITIVE",
+      "corrected_iso_offset": ""
+    }
+  ],
+  "source_key": {
+    "base_iso_offset": "0x00F1000",
+    "formula": "corrected payload ISO offset - scene base",
+    "serialization": "unsigned 24-bit little-endian"
+  },
+  "outputs": {
+    "repair_overlay": "translation/ziria_z8_field_boundary_repairs.csv",
+    "repair_overlay_sha256": "B95F56116315F8BDC621884092DB67D2211035BED306D1395AE216D2BE90DD01",
+    "source_key_index": "translation/ziria_z8_field_source_key_index.tsv",
+    "source_key_index_sha256": "A690E2E8F11E09032FD757C26916F828C5F03778FDE4A25A841F55D0C48D3869",
+    "report": "docs/active/Z8_6_field_boundary_repair_result.md"
+  },
+  "next_gate": "choose one renderer family and prove its loader-owned redirect/index byte format against all 235 corrected consumers"
+}

@@ -1,0 +1,43 @@
+{
+  "format": "TASK7-WORK-RAM-LIFETIME-VERDICT",
+  "version": 1,
+  "task": 7,
+  "status": "CANDIDATE_FOUND_NEUTRAL_POC_REQUIRED",
+  "trace": "translation/task7_work_ram_tower_trace.tsv",
+  "trace_sha256": "A6FE8171C6177684BC24F5BC571F282C3E9859A966702BFFDF173CF916AA6573",
+  "window_frames": 2552,
+  "target_load_observed": true,
+  "window_start_observed": true,
+  "overlay_cd_read_events": 2,
+  "minimum_contiguous_bytes": 160,
+  "excluded_work_ram": {
+    "offsets": "0x0000..0x01FF",
+    "reason": "direct page and stack"
+  },
+  "ranked_candidates": [
+    {
+      "region": "WORK_RAM",
+      "physical_bank": 248,
+      "start_offset": 4417,
+      "logical_start": 12609,
+      "length": 714,
+      "observed_access": "none after first field load"
+    },
+    {
+      "region": "WORK_RAM",
+      "physical_bank": 248,
+      "start_offset": 2831,
+      "logical_start": 11023,
+      "length": 384,
+      "observed_access": "none after first field load"
+    }
+  ],
+  "approval_boundary": "An untouched span is only a candidate. Approval requires an initialization loader and a neutral JMP F124 trampoline PoC to pass boot, dialogue, Memo, battle Attack and correct field return.",
+  "events": [
+    "INIT\tframe=0\tmode=WORK_RAM_LONG\ttarget_lba=482\ttarget_count=96",
+    "TARGET_CD_READ\tframe=1026\tlba=482\tcount=96\tdest_bank=68\tmode=06\treturn_pc=66FF\tmpr=FF,F8,80,81,82,83,84,00",
+    "WINDOW_START\tframe=1091\treturn_pc=66FF\tmpr=FF,F8,80,81,82,83,84,00",
+    "CD_READ\tframe=1897\tlba=290\tcount=96\tdest_bank=68\tmode=06\tmpr=FF,F8,80,81,82,83,84,00",
+    "CD_READ\tframe=2322\tlba=2882\tcount=96\tdest_bank=68\tmode=06\tmpr=FF,F8,80,81,82,83,84,00"
+  ]
+}

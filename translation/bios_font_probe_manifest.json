@@ -1,0 +1,19 @@
+{
+  "format": "BIOS-FONT-ONE-STRING-PROBE",
+  "purpose": "Isolate System Card glyph replacement from broad script-sheet false positives.",
+  "runtime_status": "FAILED",
+  "do_not_use": true,
+  "failure": "The same System Card startup corruption occurs with only one game string changed, proving that the paired custom BIOS is corrupt independently of broad game text replacement.",
+  "not_isolated_by_this_probe": "This probe still used the 896-slot custom BIOS, so it rejects broad game-string replacement as the cause but does not reject the 16x16 glyph offset formula.",
+  "suspected_cause": "The 896-slot selection ignored System Card-owned startup/font usage and overwrote slots needed before the game dialogue path.",
+  "next_gate": "Use the original game and SystemCard3_one_glyph_probe.pce, which changes only the verified 出 slot at BIOS offset 0x1D720.",
+  "requires_bios": "G:\\Downloads\\Tenshi no Uta II - Datenshi no Sentaku (Japan)\\SystemCard3_KoreanFont_diagnostic.pce",
+  "source_offset": 1096168,
+  "source_capacity_bytes": 72,
+  "replacement_bytes_including_nul": 73,
+  "kept_translation": "#5페이트：\\n#1여어、 시온\\n#5시온：\\n#1준비는 다 됐나, 페이트\\n#5페이트：\\n#1",
+  "original_game_sha256": "d16d29eb80b1b74a2ec929924349256b50b8f9f5c9a3fa37b6fcc08b059b22c5",
+  "probe_game_sha256": "caa91d68df0bfe50d1c6e3c4e6d52f5a829f7cb6be020705820c677e899b73ac",
+  "output_bin": "G:\\Downloads\\Tenshi no Uta II - Datenshi no Sentaku (Japan)\\Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_biosfont_probe.bin",
+  "output_cue": "G:\\Downloads\\Tenshi no Uta II - Datenshi no Sentaku (Japan)\\Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_biosfont_probe.cue"
+}

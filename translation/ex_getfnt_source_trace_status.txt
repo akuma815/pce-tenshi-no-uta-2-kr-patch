@@ -1,0 +1,14 @@
+status=running
+frame=9960
+system=PCE
+rom_name=Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP
+rom_hash=8A46049B33CE82F0610D68C056C7CE6C
+pc=C979
+mpr2=80
+mpr3=81
+mpr4=82
+mpr5=83
+mpr6=01
+controller_keys=B1,B2,Down,Left,Right,Run,Select,Up
+cd_reads=0
+getfnt_records=0

@@ -1,0 +1,217 @@
+{
+  "format": "ZIRIA-Z1-LOADER-GRAPH",
+  "version": 1,
+  "source_bin_sha256": "D16D29EB80B1B74A2EC929924349256B50B8F9F5C9A3FA37B6FCC08B059B22C5",
+  "nodes": [
+    {
+      "id": "boot.kernel",
+      "kind": "executable_engine",
+      "family": "boot",
+      "lba": 2
+    },
+    {
+      "id": "boot.resource_a",
+      "kind": "resource_bundle",
+      "family": "boot",
+      "lba": 34
+    },
+    {
+      "id": "opening.engine",
+      "kind": "executable_engine",
+      "family": "opening",
+      "lba": 98
+    },
+    {
+      "id": "opening.resource",
+      "kind": "resource_bundle",
+      "family": "opening",
+      "lba": 118
+    },
+    {
+      "id": "system.bundle",
+      "kind": "resource_bundle",
+      "family": "system",
+      "lba": 226
+    },
+    {
+      "id": "field.main_engine",
+      "kind": "executable_engine",
+      "family": "field",
+      "lba": 258
+    },
+    {
+      "id": "field.resource",
+      "kind": "resource_bundle",
+      "family": "field",
+      "lba": 278
+    },
+    {
+      "id": "scene.field_start",
+      "kind": "scene_package",
+      "family": "field",
+      "lba": 482
+    },
+    {
+      "id": "scene.battle_first",
+      "kind": "scene_package",
+      "family": "battle",
+      "lba": 290
+    },
+    {
+      "id": "scene.tower_first",
+      "kind": "scene_package",
+      "family": "tower/dungeon",
+      "lba": 2882
+    },
+    {
+      "id": "subrenderer.memo",
+      "kind": "subrenderer",
+      "family": "menu/Memo",
+      "lba": null
+    },
+    {
+      "id": "subrenderer.portrait",
+      "kind": "subrenderer",
+      "family": "portrait/event",
+      "lba": null
+    }
+  ],
+  "edges": [
+    {
+      "from": "boot.kernel",
+      "to": "opening.engine",
+      "type": "observed_cd_load"
+    },
+    {
+      "from": "opening.engine",
+      "to": "field.main_engine",
+      "type": "observed_cd_load"
+    },
+    {
+      "from": "field.main_engine",
+      "to": "scene.field_start",
+      "type": "directory_load",
+      "logical_entry": 2
+    },
+    {
+      "from": "scene.field_start",
+      "to": "subrenderer.memo",
+      "type": "resident_call_no_cd_read"
+    },
+    {
+      "from": "subrenderer.memo",
+      "to": "scene.field_start",
+      "type": "resident_return_no_cd_read"
+    },
+    {
+      "from": "scene.field_start",
+      "to": "subrenderer.portrait",
+      "type": "resident_call_no_cd_read"
+    },
+    {
+      "from": "subrenderer.portrait",
+      "to": "scene.field_start",
+      "type": "resident_return_no_cd_read"
+    },
+    {
+      "from": "scene.field_start",
+      "to": "scene.battle_first",
+      "type": "directory_load",
+      "logical_entry": 0
+    },
+    {
+      "from": "scene.battle_first",
+      "to": "scene.field_start",
+      "type": "observed_return_route",
+      "logical_entry": 2
+    },
+    {
+      "from": "scene.battle_first",
+      "to": "scene.tower_first",
+      "type": "observed_tower_route",
+      "logical_entry": 27
+    }
+  ],
+  "observed_load_sequences": [
+    {
+      "source": "task7_lba482_full_scene_trace.tsv",
+      "loads": [
+        {
+          "lba": 2,
+          "sector_count": 16
+        },
+        {
+          "lba": 34,
+          "sector_count": 12
+        },
+        {
+          "lba": 98,
+          "sector_count": 20
+        },
+        {
+          "lba": 118,
+          "sector_count": 6
+        },
+        {
+          "lba": 226,
+          "sector_count": 28
+        },
+        {
+          "lba": 258,
+          "sector_count": 20
+        },
+        {
+          "lba": 278,
+          "sector_count": 12
+        },
+        {
+          "lba": 482,
+          "sector_count": 96
+        },
+        {
+          "lba": 290,
+          "sector_count": 96
+        },
+        {
+          "lba": 2882,
+          "sector_count": 96
+        }
+      ]
+    },
+    {
+      "source": "task7_work_ram_long_trace.tsv",
+      "loads": [
+        {
+          "lba": 482,
+          "sector_count": 96
+        },
+        {
+          "lba": 290,
+          "sector_count": 96
+        },
+        {
+          "lba": 482,
+          "sector_count": 96
+        }
+      ]
+    },
+    {
+      "source": "task7_work_ram_tower_trace.tsv",
+      "loads": [
+        {
+          "lba": 482,
+          "sector_count": 96
+        },
+        {
+          "lba": 290,
+          "sector_count": 96
+        },
+        {
+          "lba": 2882,
+          "sector_count": 96
+        }
+      ]
+    }
+  ],
+  "ownership_rule": "scene packages loaded to 0x68-0x7F replace the entire 192 KiB Super RAM window; no persistent hook, glyph cache, or state may be placed there across transitions"
+}

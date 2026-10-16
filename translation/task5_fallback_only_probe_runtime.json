@@ -1,0 +1,20 @@
+{
+  "format": "TASK5-FALLBACK-ONLY-PROBE-RUNTIME",
+  "version": 1,
+  "task": 5,
+  "date": "2026-07-17",
+  "status": "FAIL",
+  "decision": "CUSTOM_BRANCH_NOT_REQUIRED_FOR_MEMO_HANG",
+  "baseline": {
+    "cue": "Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_task5_fallback_only_probe.cue",
+    "bin_sha256": "06C165962CAD28D45E019A4F29BAF818768773FAAA0EF179EE24B66060F9733A"
+  },
+  "evidence": {
+    "user_observation": "동일하게 멈추네",
+    "screenshot": null,
+    "trace": null
+  },
+  "observation": "With original Japanese dialogue, no custom glyph page, and no custom-branch match, selecting Memo still makes EmuHawk unresponsive.",
+  "conclusion": "The custom codes, glyph pool, and custom copy branch are not required. The remaining patch-side variables are the redirected call and the fallback dispatcher's instructions executed before JMP E060.",
+  "next": "Replace the 55-byte dispatcher with a three-byte JMP E060 transparent trampoline to preserve A and P as well as all documented inputs"
+}

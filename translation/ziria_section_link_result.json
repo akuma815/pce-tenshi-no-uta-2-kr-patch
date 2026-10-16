@@ -1,0 +1,134 @@
+{
+  "format": "ZIRIA-Z3-SECTION-LINK-RESULT",
+  "version": 1,
+  "status": "PASS_IDENTITY_SECTIONS_AND_FAIL_CLOSED_EXTENSION_GATE",
+  "source_bin_sha256": "D16D29EB80B1B74A2EC929924349256B50B8F9F5C9A3FA37B6FCC08B059B22C5",
+  "reference_architecture": {
+    "project": "suppertails66/tenmatools/tenma",
+    "adopted_principles": [
+      "patch independently extracted module binaries",
+      "link modules through a consolidated intermediate layout",
+      "split finalized units back into loader-owned binaries",
+      "perform disc insertion only after module link succeeds"
+    ]
+  },
+  "section_kinds": [
+    "original",
+    "extension_code",
+    "text",
+    "glyph",
+    "relocation"
+  ],
+  "specs": [
+    "module_relink/specs/boot.kernel.json",
+    "module_relink/specs/boot.resource_a.json",
+    "module_relink/specs/opening.engine.json",
+    "module_relink/specs/opening.resource.json",
+    "module_relink/specs/system.bundle.json",
+    "module_relink/specs/field.main_engine.json",
+    "module_relink/specs/field.resource.json",
+    "module_relink/specs/scene.field_start.json",
+    "module_relink/specs/scene.battle_first.json",
+    "module_relink/specs/scene.tower_first.json",
+    "module_relink/specs/subrenderer.memo.json",
+    "module_relink/specs/subrenderer.portrait.json"
+  ],
+  "linked_modules": [
+    {
+      "module_id": "boot.kernel",
+      "input": "module_relink/track02/semantic_modules/boot.kernel_lba0002_s16.bin",
+      "output": "module_relink/linked_identity/boot.kernel_lba0002_s16.bin",
+      "size": 32768,
+      "sha256": "4BB13D78A8CEEF61D416D0AB088B93F66A6E686780BDE04AFCA6E0586E68E57F",
+      "nonzero_extension_sections": 0
+    },
+    {
+      "module_id": "boot.resource_a",
+      "input": "module_relink/track02/semantic_modules/boot.resource_a_lba0034_s12.bin",
+      "output": "module_relink/linked_identity/boot.resource_a_lba0034_s12.bin",
+      "size": 24576,
+      "sha256": "A9EF4DAD3E4B331D2875FF3B71BC5227CB1E5DC2D112EBE890E71C6E5F6C45D0",
+      "nonzero_extension_sections": 0
+    },
+    {
+      "module_id": "opening.engine",
+      "input": "module_relink/track02/semantic_modules/opening.engine_lba0098_s20.bin",
+      "output": "module_relink/linked_identity/opening.engine_lba0098_s20.bin",
+      "size": 40960,
+      "sha256": "9DED1694C987CB0295A0C931E2A3BDFBE12EC7AC14BF90A08A7735A4EDCDDEDA",
+      "nonzero_extension_sections": 0
+    },
+    {
+      "module_id": "opening.resource",
+      "input": "module_relink/track02/semantic_modules/opening.resource_lba0118_s06.bin",
+      "output": "module_relink/linked_identity/opening.resource_lba0118_s06.bin",
+      "size": 12288,
+      "sha256": "54C4EDC9E038EADB7B1B29CD931F317CE8B22D6418F67C77DD68228AB1A6589B",
+      "nonzero_extension_sections": 0
+    },
+    {
+      "module_id": "system.bundle",
+      "input": "module_relink/track02/semantic_modules/system.bundle_lba0226_s28.bin",
+      "output": "module_relink/linked_identity/system.bundle_lba0226_s28.bin",
+      "size": 57344,
+      "sha256": "7BBD31865867A53E6AC62D9CE9F52C46B0EB5A1D11532D2119C3AE0BE42E3B85",
+      "nonzero_extension_sections": 0
+    },
+    {
+      "module_id": "field.main_engine",
+      "input": "module_relink/track02/semantic_modules/field.main_engine_lba0258_s20.bin",
+      "output": "module_relink/linked_identity/field.main_engine_lba0258_s20.bin",
+      "size": 40960,
+      "sha256": "8C0573AEB900A5897402205908E02E501CC608C8EC8F2DB5F3ADA3A9E2D8A230",
+      "nonzero_extension_sections": 0
+    },
+    {
+      "module_id": "field.resource",
+      "input": "module_relink/track02/semantic_modules/field.resource_lba0278_s12.bin",
+      "output": "module_relink/linked_identity/field.resource_lba0278_s12.bin",
+      "size": 24576,
+      "sha256": "D806E2B87CAADAECB2142730BC592E4D0D43F27FF2659986D9F8812498BA3FF7",
+      "nonzero_extension_sections": 0
+    },
+    {
+      "module_id": "scene.field_start",
+      "input": "module_relink/track02/semantic_modules/scene.field_start_lba0482_s96.bin",
+      "output": "module_relink/linked_identity/scene.field_start_lba0482_s96.bin",
+      "size": 196608,
+      "sha256": "C065773C86FEC790D96CD3F52FEF804BFD426C8270A0BAD8ED0313977BBA5BB6",
+      "nonzero_extension_sections": 0
+    },
+    {
+      "module_id": "scene.battle_first",
+      "input": "module_relink/track02/semantic_modules/scene.battle_first_lba0290_s96.bin",
+      "output": "module_relink/linked_identity/scene.battle_first_lba0290_s96.bin",
+      "size": 196608,
+      "sha256": "C320A8D2226D52C604D8E228F981D719D863DFD3E1D001E1D4C362961ECD1AE0",
+      "nonzero_extension_sections": 0
+    },
+    {
+      "module_id": "scene.tower_first",
+      "input": "module_relink/track02/semantic_modules/scene.tower_first_lba2882_s96.bin",
+      "output": "module_relink/linked_identity/scene.tower_first_lba2882_s96.bin",
+      "size": 196608,
+      "sha256": "AB414926C530BEC99B9C59CB421725E768012E4C98E93D2D4B8779F4D1AB04ED",
+      "nonzero_extension_sections": 0
+    }
+  ],
+  "virtual_subrenderers": [
+    "subrenderer.memo",
+    "subrenderer.portrait"
+  ],
+  "extension_registry": "module_relink/extension_registry.json",
+  "approved_extension_count": 0,
+  "identity_guarantees": {
+    "all_original_sections_immutable": true,
+    "all_extension_sections_zero_length": true,
+    "linked_outputs_match_identity_inputs": true,
+    "unregistered_extension_fails": true,
+    "work_ram_execution_fails_contract": true,
+    "implicit_fill_space_fails_contract": true,
+    "cross_family_persistence_fails_contract": true,
+    "disc_image_modified": false
+  }
+}

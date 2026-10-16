@@ -1,0 +1,218 @@
+{
+  "format": "ZIRIA-Z6-FAMILY-INTEGRATION",
+  "version": 1,
+  "status": "RUNTIME_PASS",
+  "baseline": {
+    "id": "Z5 battle one-glyph v1",
+    "manifest": "translation/ziria_z5_battle_oneglyph_v1_manifest.json",
+    "status": "RUNTIME_PASS",
+    "bin_sha256": "7E133A82ECA649535534C9FF3D563BA801DDBBB6625014542A430901E3C0932A"
+  },
+  "trace_evidence": {
+    "transition_trace": "translation/ziria_z6_family_transition_trace.tsv",
+    "source_trace": "translation/ziria_z6_stream_source_trace.tsv",
+    "shared_getfnt": "$967E with MPR4=$82",
+    "field_scene": "LBA482, MPR $68-$7F",
+    "tower_scene": "LBA2882, MPR $68-$7F"
+  },
+  "font": {
+    "path": "font/Galmuri8x8.ttf",
+    "sha256": "97BA3DCC2CD5E5B2927E4E6BA9558A48A2A194A852C420DF160654D66BBF2A05",
+    "glyph": "가"
+  },
+  "custom_code": "8754",
+  "writes": [
+    {
+      "id": "memo-field-speaker-name-shio",
+      "track02_offset": "0x11FA17",
+      "length": 2,
+      "expected_hex": "BCB5",
+      "replacement_hex": "8754"
+    },
+    {
+      "id": "tower-dialogue-speaker-name-fe",
+      "track02_offset": "0x5BA0EC",
+      "length": 2,
+      "expected_hex": "CCAA",
+      "replacement_hex": "8754"
+    },
+    {
+      "id": "portrait-event-speaker-name-shio",
+      "track02_offset": "0x5BA1AF",
+      "length": 2,
+      "expected_hex": "BCB5",
+      "replacement_hex": "8754"
+    },
+    {
+      "id": "memo-tower-copy-speaker-name-shio",
+      "track02_offset": "0x5BDA17",
+      "length": 2,
+      "expected_hex": "BCB5",
+      "replacement_hex": "8754"
+    }
+  ],
+  "linked_modules": {
+    "scene.field_start": {
+      "output": "module_relink/z6_family_integration_v1_shared_slot/linked_modules/scene.field_start_lba0482_s96.bin",
+      "sha256": "AF872BF90F6AD09B4BD8A994829DD4ABFFF319E7BD842ED60BDCB9B6AC6E6A87"
+    },
+    "scene.tower_first": {
+      "output": "module_relink/z6_family_integration_v1_shared_slot/linked_modules/scene.tower_first_lba2882_s96.bin",
+      "sha256": "AD38942FC83BC80C4E147D0BEA7BC4E43AC96993D49009DB55411CFD4F64125D"
+    }
+  },
+  "track02": {
+    "output": "module_relink/z6_family_integration_v1_shared_slot/Track02_data.z6.iso",
+    "sha256": "ADC6E878EECB6CCECA2D3CDE92A32782B40743882E8CEC994138CD310254AD41",
+    "z6_changed_bytes": 8,
+    "z6_changed_ranges": [
+      {
+        "start": "0x11FA17",
+        "end_exclusive": "0x11FA19",
+        "changed_bytes": 2
+      },
+      {
+        "start": "0x5BA0EC",
+        "end_exclusive": "0x5BA0EE",
+        "changed_bytes": 2
+      },
+      {
+        "start": "0x5BA1AF",
+        "end_exclusive": "0x5BA1B1",
+        "changed_bytes": 2
+      },
+      {
+        "start": "0x5BDA17",
+        "end_exclusive": "0x5BDA19",
+        "changed_bytes": 2
+      }
+    ],
+    "total_z4_z5_z6_changed_bytes": 42,
+    "total_ranges": [
+      {
+        "start": "0x86174",
+        "end_exclusive": "0x86175",
+        "changed_bytes": 1
+      },
+      {
+        "start": "0x86176",
+        "end_exclusive": "0x86187",
+        "changed_bytes": 17
+      },
+      {
+        "start": "0x86194",
+        "end_exclusive": "0x86197",
+        "changed_bytes": 3
+      },
+      {
+        "start": "0x86198",
+        "end_exclusive": "0x86199",
+        "changed_bytes": 1
+      },
+      {
+        "start": "0x8619A",
+        "end_exclusive": "0x8619D",
+        "changed_bytes": 3
+      },
+      {
+        "start": "0x8619E",
+        "end_exclusive": "0x8619F",
+        "changed_bytes": 1
+      },
+      {
+        "start": "0x861A0",
+        "end_exclusive": "0x861A1",
+        "changed_bytes": 1
+      },
+      {
+        "start": "0x861A2",
+        "end_exclusive": "0x861A3",
+        "changed_bytes": 1
+      },
+      {
+        "start": "0x861A4",
+        "end_exclusive": "0x861A5",
+        "changed_bytes": 1
+      },
+      {
+        "start": "0x861A6",
+        "end_exclusive": "0x861A8",
+        "changed_bytes": 2
+      },
+      {
+        "start": "0x8A6A5",
+        "end_exclusive": "0x8A6A6",
+        "changed_bytes": 1
+      },
+      {
+        "start": "0x10B9F2",
+        "end_exclusive": "0x10B9F4",
+        "changed_bytes": 2
+      },
+      {
+        "start": "0x11FA17",
+        "end_exclusive": "0x11FA19",
+        "changed_bytes": 2
+      },
+      {
+        "start": "0x5BA0EC",
+        "end_exclusive": "0x5BA0EE",
+        "changed_bytes": 2
+      },
+      {
+        "start": "0x5BA1AF",
+        "end_exclusive": "0x5BA1B1",
+        "changed_bytes": 2
+      },
+      {
+        "start": "0x5BDA17",
+        "end_exclusive": "0x5BDA19",
+        "changed_bytes": 2
+      }
+    ],
+    "sector_count_preserved": true
+  },
+  "output": {
+    "bin": "module_relink/z6_family_integration_v1_shared_slot/output/Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_ziria_z6_family_integration_v1_shared_slot.bin",
+    "bin_size": 523184384,
+    "bin_sha256": "D598B992BA0118641639BD811772CF17BF309C1B4D090C50E21E295DE28DF18E",
+    "cue": "module_relink/z6_family_integration_v1_shared_slot/output/Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_ziria_z6_family_integration_v1_shared_slot.cue",
+    "cue_sha256": "FDCE99EBE1F276BEFA083B42CF809421828A67EF593ABAF054DFB0063ACA0CFE"
+  },
+  "diff_audit": {
+    "z6_scene_source_changed_bytes": 8,
+    "code_changed_bytes": 0,
+    "glyph_record_changed_bytes": 0,
+    "battle_module_changed_bytes": 0,
+    "mpr_changes": 0,
+    "work_ram_bytes": 0,
+    "loader_table_changes": 0,
+    "audio_changed_bytes": 0,
+    "cue_track_layout_changed": false
+  },
+  "runtime": {
+    "status": "PASS",
+    "observed_at": "2026-07-19",
+    "scope_note": "The four new Z6 substitutions are in speaker names, not in the first character of each dialogue body.",
+    "results": {
+      "first_field_dialogue_body_ga": "PASS",
+      "field_memo_speaker_name_ga": "PASS",
+      "tower_dialogue_speaker_name_ga": "PASS",
+      "portrait_event_speaker_name_ga": "PASS",
+      "tower_memo_speaker_name_ga": "PASS",
+      "family_transition_route": "PASS",
+      "memo_dialogue_body_first_character_custom_code": "NOT_CHECKED",
+      "tower_entry_dialogue_body_first_character_custom_code": "NOT_CHECKED"
+    },
+    "required_checks": [
+      "first field dialogue still renders the Z4 ga glyph",
+      "Memo in the first field has ga in the speaker name and returns normally",
+      "first battle attack ga glyph and field return remain normal",
+      "tower entry after battle remains normal",
+      "tower dialogue has ga in the speaker name",
+      "tower portrait/event has ga in the speaker name",
+      "Memo inside the tower has ga in the speaker name and returns normally",
+      "field characters and portrait graphics remain normal"
+    ]
+  }
+}

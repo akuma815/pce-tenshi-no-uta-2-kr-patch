@@ -1,0 +1,211 @@
+{
+  "format": "AREA-FETCH-HOOK-MODEL",
+  "version": 1,
+  "abi": {
+    "redirect": "01, flags|bank_index, logical_low, logical_high, 00",
+    "continuation": "02, bank_index, logical_low, logical_high",
+    "token_mode_flag": "0x80 in redirect bank byte",
+    "physical_bank": "[$22D0] + (bank_byte & 0x7F)",
+    "mapped_window": "MPR3 $6000..$7FFF",
+    "mpr_rule": "TMA #$08 before every mapped read; TAM #$08 restore on every path",
+    "state_rule": "state lives in verified module-local padding; $55/$56 are only borrowed during one call"
+  },
+  "stats": {
+    "redirects_executed": 2724,
+    "unique_streams": 1907,
+    "continuations_traversed_once_per_unique_stream": 98,
+    "tokens_expanded_once_per_unique_stream": 2580,
+    "maximum_expanded_stream_bytes": 1162
+  },
+  "grids": [
+    {
+      "physical_grid": 2,
+      "redirects": 67,
+      "unique_streams": 67,
+      "continuations_traversed": 0,
+      "tokens_expanded": 0
+    },
+    {
+      "physical_grid": 4,
+      "redirects": 148,
+      "unique_streams": 81,
+      "continuations_traversed": 0,
+      "tokens_expanded": 0
+    },
+    {
+      "physical_grid": 5,
+      "redirects": 6,
+      "unique_streams": 6,
+      "continuations_traversed": 0,
+      "tokens_expanded": 0
+    },
+    {
+      "physical_grid": 6,
+      "redirects": 67,
+      "unique_streams": 67,
+      "continuations_traversed": 0,
+      "tokens_expanded": 0
+    },
+    {
+      "physical_grid": 7,
+      "redirects": 112,
+      "unique_streams": 82,
+      "continuations_traversed": 0,
+      "tokens_expanded": 0
+    },
+    {
+      "physical_grid": 8,
+      "redirects": 67,
+      "unique_streams": 67,
+      "continuations_traversed": 0,
+      "tokens_expanded": 0
+    },
+    {
+      "physical_grid": 9,
+      "redirects": 152,
+      "unique_streams": 73,
+      "continuations_traversed": 0,
+      "tokens_expanded": 0
+    },
+    {
+      "physical_grid": 10,
+      "redirects": 108,
+      "unique_streams": 96,
+      "continuations_traversed": 0,
+      "tokens_expanded": 0
+    },
+    {
+      "physical_grid": 11,
+      "redirects": 67,
+      "unique_streams": 67,
+      "continuations_traversed": 0,
+      "tokens_expanded": 0
+    },
+    {
+      "physical_grid": 12,
+      "redirects": 79,
+      "unique_streams": 68,
+      "continuations_traversed": 0,
+      "tokens_expanded": 0
+    },
+    {
+      "physical_grid": 13,
+      "redirects": 67,
+      "unique_streams": 67,
+      "continuations_traversed": 0,
+      "tokens_expanded": 0
+    },
+    {
+      "physical_grid": 14,
+      "redirects": 134,
+      "unique_streams": 67,
+      "continuations_traversed": 0,
+      "tokens_expanded": 0
+    },
+    {
+      "physical_grid": 15,
+      "redirects": 267,
+      "unique_streams": 188,
+      "continuations_traversed": 61,
+      "tokens_expanded": 2580
+    },
+    {
+      "physical_grid": 27,
+      "redirects": 148,
+      "unique_streams": 81,
+      "continuations_traversed": 0,
+      "tokens_expanded": 0
+    },
+    {
+      "physical_grid": 28,
+      "redirects": 144,
+      "unique_streams": 101,
+      "continuations_traversed": 19,
+      "tokens_expanded": 0
+    },
+    {
+      "physical_grid": 29,
+      "redirects": 2,
+      "unique_streams": 2,
+      "continuations_traversed": 0,
+      "tokens_expanded": 0
+    },
+    {
+      "physical_grid": 30,
+      "redirects": 32,
+      "unique_streams": 32,
+      "continuations_traversed": 0,
+      "tokens_expanded": 0
+    },
+    {
+      "physical_grid": 31,
+      "redirects": 138,
+      "unique_streams": 86,
+      "continuations_traversed": 0,
+      "tokens_expanded": 0
+    },
+    {
+      "physical_grid": 32,
+      "redirects": 69,
+      "unique_streams": 69,
+      "continuations_traversed": 0,
+      "tokens_expanded": 0
+    },
+    {
+      "physical_grid": 33,
+      "redirects": 33,
+      "unique_streams": 16,
+      "continuations_traversed": 0,
+      "tokens_expanded": 0
+    },
+    {
+      "physical_grid": 34,
+      "redirects": 125,
+      "unique_streams": 72,
+      "continuations_traversed": 0,
+      "tokens_expanded": 0
+    },
+    {
+      "physical_grid": 35,
+      "redirects": 103,
+      "unique_streams": 87,
+      "continuations_traversed": 0,
+      "tokens_expanded": 0
+    },
+    {
+      "physical_grid": 36,
+      "redirects": 111,
+      "unique_streams": 92,
+      "continuations_traversed": 0,
+      "tokens_expanded": 0
+    },
+    {
+      "physical_grid": 37,
+      "redirects": 2,
+      "unique_streams": 2,
+      "continuations_traversed": 0,
+      "tokens_expanded": 0
+    },
+    {
+      "physical_grid": 39,
+      "redirects": 103,
+      "unique_streams": 70,
+      "continuations_traversed": 0,
+      "tokens_expanded": 0
+    },
+    {
+      "physical_grid": 40,
+      "redirects": 247,
+      "unique_streams": 96,
+      "continuations_traversed": 18,
+      "tokens_expanded": 0
+    },
+    {
+      "physical_grid": 41,
+      "redirects": 126,
+      "unique_streams": 105,
+      "continuations_traversed": 0,
+      "tokens_expanded": 0
+    }
+  ]
+}

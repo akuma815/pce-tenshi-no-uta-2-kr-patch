@@ -1,0 +1,27 @@
+{
+  "format": "TASK7-BIOS-LOCAL-GLYPH-PROBE",
+  "version": 1,
+  "status": "STATIC_PASS_RUNTIME_PENDING",
+  "hypothesis": "the fixed BIOS hook is reached, but C800 is not the expected glyph bank at runtime",
+  "expected_display": "준준준준준준준준",
+  "hook": {
+    "runtime_address": "0xFEC4",
+    "code_bytes": 127,
+    "hex": "4808A5F9C9EFD060A5F838E958C908B057A95085F8A9FF85F9EAEAEAEAEAEA2868A2062031FF203AFF2031FF85FC29F0203AFFA5FC290F0A0A0A0A85FD2031FF85FC4A4A4A4A05FD203AFFA5FC290F0A0A0A0A203AFFCAD0CAA900A208203AFFCAD0FAA900A0FF6028684C24F1B2F8E6F8D002E6F96092FAE6FAD002E6FB60"
+  },
+  "local_glyph": {
+    "character": "준",
+    "runtime_address": "0xFF50",
+    "bytes": 18,
+    "hex": "0000003F80A03180003F80402003F8000000"
+  },
+  "runtime_decision": {
+    "eight_local_glyphs": "BIOS hook is reached; replace fixed C800 source with a bank-aware data strategy",
+    "original_or_repeated_japanese": "custom classification is not reached at E060; trace actual GETFNT entry/value path"
+  },
+  "output": {
+    "file": "PCECD_3.0-J.task7_bios_local_glyph_probe.pce",
+    "sha256": "96C2BA79CDEC679A5CC9499E68C8A966F3B951401E1C6C1EB0999B03BEF6FE94",
+    "size": 262144
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "format": "FIELD-RESIDENT-HOOK-BANK-AUDIT",
+  "version": 1,
+  "observed_initial_mapping": "MPR2..MPR6 = 0x80..0x84",
+  "candidates": [
+    {
+      "module_bank_index": 3,
+      "physical_bank": "0x83",
+      "temporary_mpr": 5,
+      "logical_start": "0xA339",
+      "iso_start": "0x47339",
+      "fill": "0xFF",
+      "length": 7367,
+      "sha_guard": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+    },
+    {
+      "module_bank_index": 4,
+      "physical_bank": "0x84",
+      "temporary_mpr": 6,
+      "logical_start": "0xDAC0",
+      "iso_start": "0x4AAC0",
+      "fill": "0xFF",
+      "length": 1344,
+      "sha_guard": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+    }
+  ],
+  "selected_candidate": {
+    "module_bank_index": 3,
+    "physical_bank": "0x83",
+    "temporary_mpr": 5,
+    "logical_start": "0xA339",
+    "iso_start": "0x47339",
+    "fill": "0xFF",
+    "length": 7367,
+    "sha_guard": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+  },
+  "proposed_execution": {
+    "trampoline_location": "original fetch body 0x4111..0x4159",
+    "hook_physical_bank": "0x83",
+    "hook_logical_address_after_TAM_0x20": "0xA339",
+    "hook_code_window": "MPR5",
+    "translated_data_window": "MPR3",
+    "restore_rule": "save actual MPR5 with TMA #$20 and restore it on every return path"
+  },
+  "status": "static-candidate; requires loader-signature and bytecode control-flow verification before ISO mutation"
+}

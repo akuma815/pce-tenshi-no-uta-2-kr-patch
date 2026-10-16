@@ -1,0 +1,95 @@
+{
+  "format": "ZIRIA-Z8-FIELD-SOURCE-KEY-PROBE",
+  "version": 1,
+  "task": "Z8-v3-read-only-source-key-probe",
+  "status": "OFFLINE_REPLAY_PASS_RUNTIME_CAPTURE_PENDING",
+  "mutation_scope": "host logs only; no emulated memory/controller/state/disc writes",
+  "inputs": {
+    "reference_manifest": {
+      "path": "translation/ziria_z8_field_dialogue_reference_manifest.json",
+      "sha256": "18E994C1D2DD7FCE38294C201AC32E150B839BF7830A84DA5998DEC360DEA506"
+    },
+    "reference_catalog": {
+      "path": "module_relink/z8_field_dialogue_refs/field_dialogue_reference_catalog.csv",
+      "sha256": "E125E6D78050DDEC644551D0B49C9F5D0BD4E0236D4A9CD9836005610406C8C0"
+    },
+    "prior_runtime_trace": {
+      "path": "translation/ziria_z6_stream_source_trace.tsv",
+      "sha256": "2F3F8D76CA30F308626CDF2BDE6A08A79851856223EBE592700FF866D7BE6637"
+    },
+    "lua_probe": {
+      "path": "tools/trace_ziria_z8_field_source_keys.lua",
+      "sha256": "9B6876333FA64D5EA024EE59CEFF2F004AB88249A21E01BDCB9FDC348C4B97D0"
+    }
+  },
+  "lookup": {
+    "rows": 236,
+    "key_basis": "scene-relative offset formatted as canonical six-digit hex",
+    "key_width_bits": 24,
+    "unique": true,
+    "path": "translation/ziria_z8_field_source_key_lookup.tsv",
+    "sha256": "DCA31F0210872C6F2EAB3214E69910C9B4298229F8E60CF3C2A25EB59E6EB5F9"
+  },
+  "offline_replay": {
+    "scene_stream_rows": 828,
+    "key_mismatches": 0,
+    "iso_mismatches": 0,
+    "unique_exact_start_hits": 8,
+    "unique_containing_record_hits": 9,
+    "exact_start_ids": [
+      "iso:010B9E7",
+      "iso:010BA3B",
+      "iso:010BA86",
+      "iso:010BAA4",
+      "iso:010BAD2",
+      "iso:010BAF7",
+      "iso:011F03B",
+      "iso:011FA12"
+    ],
+    "containing_record_ids": [
+      "iso:010B9E7",
+      "iso:010BA3B",
+      "iso:010BA86",
+      "iso:010BAA4",
+      "iso:010BAD2",
+      "iso:010BAF7",
+      "iso:011F011",
+      "iso:011F03B",
+      "iso:011FA12"
+    ],
+    "path": "translation/ziria_z8_field_source_key_offline_replay.tsv",
+    "sha256": "AA3C4CCE555A4899A28100950733ED02B09907F1E320E78466EF614C32BE5327",
+    "status": "PASS"
+  },
+  "lua_static_audit": {
+    "forbidden_write_api_hits": [],
+    "required_exec_hooks": [
+      "0x4293",
+      "0x42DE",
+      "0x42AB",
+      "0x42BA",
+      "0xE009"
+    ],
+    "missing_hooks": [],
+    "initial_scene_identity": "manual_field_visible_assumption",
+    "identity_refresh": "next mode-06 CD read observed at BIOS entry 0xE009",
+    "writes": "host TSV/status files only"
+  },
+  "runtime_gate": {
+    "status": "PENDING",
+    "setup": "open Lua manually only after the first field is visible",
+    "pass": [
+      "runtime status remains running/closed without emulator crash",
+      "lookup_count=236",
+      "START_HIT records use catalogue IDs and canonical source keys",
+      "after any mode-06 load, scene_identity_source=observed_mode06_cd_read",
+      "no game-state or rendering regression while probe is attached"
+    ],
+    "not_proved_by_offline_replay": "complete 236-record consumer denominator, redirect storage, hook ABI, or loader-owned translation lifetime"
+  },
+  "outputs": {
+    "lookup": "translation/ziria_z8_field_source_key_lookup.tsv",
+    "offline_replay": "translation/ziria_z8_field_source_key_offline_replay.tsv",
+    "report": "Z8_3_field_source_key_probe.md"
+  }
+}

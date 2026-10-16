@@ -1,0 +1,41 @@
+{
+  "format": "TASK2-CUSTOM-CODE-RUNTIME",
+  "version": 1,
+  "status": "PASS",
+  "date": "2026-07-17",
+  "scope": "renderer.field_main parser boundary only",
+  "method": "Manual BizHawk visual boundary observation. The Lua trace method was abandoned because attaching it prevented progression past the BIOS screen.",
+  "probe": {
+    "pair_hex": "EF41",
+    "bin_sha256": "6212D7B1317E990649F99D5DAD5BABF11EC0CC7899DC9BFC39ABD7D108562669",
+    "master_row_id": "iso:010B9E7",
+    "original_body_hex": "6F2D8141BCB5DD",
+    "patched_body_hex": "EF418141BCB5DD",
+    "changed_bytes": 2
+  },
+  "screenshots": [
+    "C:/Users/akuma/AppData/Local/Temp/codex-clipboard-32ab6c51-7fbd-4829-95a2-5127b0e13ae6.png",
+    "C:/Users/akuma/AppData/Local/Temp/codex-clipboard-cee35f47-7bc0-4293-8259-620afcbb229e.png",
+    "C:/Users/akuma/AppData/Local/Temp/codex-clipboard-262cbce7-00ba-486c-aa26-6d85d1ed402b.png",
+    "C:/Users/akuma/AppData/Local/Temp/codex-clipboard-887bafb4-4c41-4980-943f-ddeb416503a3.png"
+  ],
+  "observations": {
+    "first_page": "The EF41 position is blank because no custom glyph hook exists. The unchanged following bytes 8141 BCB5 DD render as the expected punctuation and name at the correct positions.",
+    "second_page": "The next page clears and renders its original speaker and dialogue normally.",
+    "graphics": "Field graphics remain normal.",
+    "debugger_capture": {
+      "pc": "0x53AF",
+      "a": "0xAC",
+      "x": "0x00",
+      "y": "0x00",
+      "s": "0xF7",
+      "mpr2_to_mpr7": ["80", "81", "82", "83", "84", "00"]
+    }
+  },
+  "inference": "Only 6F2D was replaced by EF41. Because the following punctuation/name and the next-page transition remain aligned, renderer.field_main consumed EF41 as exactly one generic two-byte character unit without colliding with control flow.",
+  "limitations": [
+    "The debugger screenshot was captured at PC 0x53AF, not at the EX_GETFNT call, so F9/F8 were not directly photographed.",
+    "The blank position does not prove glyph rendering; Task 3 must supply the custom glyph hook.",
+    "This result does not approve menu, battle, card, name/item, or other renderer families."
+  ]
+}

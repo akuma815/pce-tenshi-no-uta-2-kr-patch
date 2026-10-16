@@ -1,0 +1,16 @@
+{
+  "format": "TASK5-5230-CODEBANK-TRAMPOLINE-PROBE-RUNTIME",
+  "version": 1,
+  "task": 5,
+  "date": "2026-07-17",
+  "status": "PASS",
+  "decision": "MPR2_CODEBANK_EXECUTION_SAFE",
+  "evidence": {
+    "user_observation": "메모 정상 진입 확인",
+    "screenshot": null,
+    "trace": null
+  },
+  "observation": "JSR 5230 followed by JMP F124 preserves original field output and Memo opens normally.",
+  "conclusion": "Redirected execution is safe in the MPR2 code bank. The Task 5 failure was caused by executing hook code from the MPR6 data bank, not by the call redirect, cave bytes, BIOS ABI, custom text, or glyph data.",
+  "next": "Install the EF58..EF5F dispatcher at 5230 while retaining C800 strictly as non-executable glyph data"
+}

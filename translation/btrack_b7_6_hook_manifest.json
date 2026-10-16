@@ -1,0 +1,134 @@
+{
+ "format": "BTRACK-B7-6-HOOK-BUILD",
+ "runtime_status": "PENDING",
+ "scenes": {
+  "482": {
+   "records": 235,
+   "text": {
+    "7B": 8191,
+    "7C": 8191,
+    "7D": 6175
+   },
+   "index_bytes": 1719,
+   "pool_base": 9178,
+   "mode": "uniform",
+   "text_banks": [
+    "7B",
+    "7C",
+    "7D"
+   ]
+  },
+  "290": {
+   "records": 84,
+   "text": {
+    "78": 8189,
+    "79": 4194,
+    "7A": 0
+   },
+   "index_bytes": 662,
+   "pool_base": 9192,
+   "mode": "uniform",
+   "text_banks": [
+    "78",
+    "79",
+    "7A"
+   ]
+  },
+  "2882": {
+   "records": 171,
+   "mode": "hybrid",
+   "pool_base": 9206,
+   "index_bytes": 1271,
+   "bins": {
+    "ram7F": {
+     "capacity": 8192,
+     "used": 8184,
+     "kind": "ram",
+     "bank": "7F"
+    },
+    "ram7E_hi": {
+     "capacity": 6113,
+     "used": 6113,
+     "kind": "ram",
+     "bank": "7E"
+    },
+    "ram7E_lo": {
+     "capacity": 649,
+     "used": 649,
+     "kind": "ram",
+     "bank": "7E"
+    },
+    "card_2AB40": {
+     "capacity": 5312,
+     "used": 5308,
+     "kind": "card",
+     "bank": "15"
+    },
+    "card_02CF9": {
+     "capacity": 3966,
+     "used": 3796,
+     "kind": "card",
+     "bank": "01"
+    },
+    "card_07A50": {
+     "capacity": 1456,
+     "used": 0,
+     "kind": "card",
+     "bank": "03"
+    },
+    "card_03C7A": {
+     "capacity": 902,
+     "used": 0,
+     "kind": "card",
+     "bank": "01"
+    },
+    "card_2FE43": {
+     "capacity": 445,
+     "used": 0,
+     "kind": "card",
+     "bank": "17"
+    },
+    "card_05F46": {
+     "capacity": 186,
+     "used": 0,
+     "kind": "card",
+     "bank": "02"
+    }
+   },
+   "text_total": 24050
+  }
+ },
+ "card": {
+  "out": "SystemCard3_btrack_b7_6.pce",
+  "written": [
+   {
+    "off": "03F054",
+    "bytes": 133,
+    "what": "scene table"
+   },
+   {
+    "off": "02AB40",
+    "bytes": 5308,
+    "what": "card_2AB40"
+   },
+   {
+    "off": "002CF9",
+    "bytes": 3796,
+    "what": "card_02CF9"
+   }
+  ],
+  "table_entries": 3
+ },
+ "window": {
+  "loader": 189,
+  "slice": 43,
+  "reader": 75,
+  "free": 94
+ },
+ "safety_evidence": {
+  "card_bins": "원본 FF-run ∧ CDL 9캡처 ROM 접근 0B (2026-08-23)",
+  "asset_map": "7566073A2AA1F48E"
+ },
+ "output_bin_sha256": "e0fcf7c3ec2af06e0072b238bd68f3f099a5669bdf98948efc4892d596b8221f",
+ "card_sha256": "05c0f244e52a055758ca60201a0db6bd0e95bc50e32000e2d72c1f4f79c192d0"
+}

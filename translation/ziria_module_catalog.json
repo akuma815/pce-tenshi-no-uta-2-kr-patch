@@ -1,0 +1,1191 @@
+{
+  "format": "ZIRIA-Z1-MODULE-CATALOG",
+  "version": 1,
+  "status": "OBSERVED_ROUTE_PASS_WITH_EXPLICIT_UNRESOLVED_SUBRENDERER_ENTRY_POINTS",
+  "source": {
+    "bin": "Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP.bin",
+    "sha256": "D16D29EB80B1B74A2EC929924349256B50B8F9F5C9A3FA37B6FCC08B059B22C5",
+    "disc_mutated": false,
+    "track02_data_offset_in_bin": 7914480
+  },
+  "loader": {
+    "owner_module": "field.main_engine",
+    "overlay_table": {
+      "track02_iso_offset": "0x83531",
+      "runtime_address": "0x6531",
+      "entry_count": 55,
+      "record_layout": [
+        "lba_hi",
+        "lba_mid",
+        "lba_lo",
+        "sector_count"
+      ]
+    },
+    "routine": {
+      "runtime_range": "0x66DA-0x671D",
+      "cd_read_callsite_runtime": "0x66FC",
+      "bios_cd_read_entry": "0xE009",
+      "return_pc": "0x66FF",
+      "destination_mode_for_scene_packages": "0x06",
+      "destination_bank_source": "RAM $22D0 (observed value 0x68)"
+    }
+  },
+  "directories": {
+    "primary": {
+      "track02_iso_offset": "0x424A5",
+      "entries": [
+        {
+          "logical_entry": 0,
+          "lba": 162,
+          "sector_count": 96,
+          "physical_grid": 0,
+          "raw_hex": "0000A260"
+        },
+        {
+          "logical_entry": 1,
+          "lba": 162,
+          "sector_count": 96,
+          "physical_grid": 0,
+          "raw_hex": "0000A260"
+        },
+        {
+          "logical_entry": 2,
+          "lba": 354,
+          "sector_count": 75,
+          "physical_grid": 2,
+          "raw_hex": "0001624B"
+        },
+        {
+          "logical_entry": 3,
+          "lba": 2658,
+          "sector_count": 69,
+          "physical_grid": 26,
+          "raw_hex": "000A6245"
+        },
+        {
+          "logical_entry": 4,
+          "lba": 450,
+          "sector_count": 78,
+          "physical_grid": 3,
+          "raw_hex": "0001C24E"
+        },
+        {
+          "logical_entry": 5,
+          "lba": 546,
+          "sector_count": 84,
+          "physical_grid": 4,
+          "raw_hex": "00022254"
+        },
+        {
+          "logical_entry": 6,
+          "lba": 642,
+          "sector_count": 71,
+          "physical_grid": 5,
+          "raw_hex": "00028247"
+        },
+        {
+          "logical_entry": 7,
+          "lba": 738,
+          "sector_count": 74,
+          "physical_grid": 6,
+          "raw_hex": "0002E24A"
+        },
+        {
+          "logical_entry": 8,
+          "lba": 834,
+          "sector_count": 72,
+          "physical_grid": 7,
+          "raw_hex": "00034248"
+        },
+        {
+          "logical_entry": 9,
+          "lba": 930,
+          "sector_count": 83,
+          "physical_grid": 8,
+          "raw_hex": "0003A253"
+        },
+        {
+          "logical_entry": 10,
+          "lba": 1026,
+          "sector_count": 76,
+          "physical_grid": 9,
+          "raw_hex": "0004024C"
+        },
+        {
+          "logical_entry": 11,
+          "lba": 1122,
+          "sector_count": 92,
+          "physical_grid": 10,
+          "raw_hex": "0004625C"
+        },
+        {
+          "logical_entry": 12,
+          "lba": 1218,
+          "sector_count": 78,
+          "physical_grid": 11,
+          "raw_hex": "0004C24E"
+        },
+        {
+          "logical_entry": 13,
+          "lba": 1314,
+          "sector_count": 73,
+          "physical_grid": 12,
+          "raw_hex": "00052249"
+        },
+        {
+          "logical_entry": 14,
+          "lba": 1410,
+          "sector_count": 73,
+          "physical_grid": 13,
+          "raw_hex": "00058249"
+        },
+        {
+          "logical_entry": 15,
+          "lba": 1506,
+          "sector_count": 73,
+          "physical_grid": 14,
+          "raw_hex": "0005E249"
+        },
+        {
+          "logical_entry": 16,
+          "lba": 1602,
+          "sector_count": 95,
+          "physical_grid": 15,
+          "raw_hex": "0006425F"
+        },
+        {
+          "logical_entry": 17,
+          "lba": 354,
+          "sector_count": 75,
+          "physical_grid": 2,
+          "raw_hex": "0001624B"
+        },
+        {
+          "logical_entry": 18,
+          "lba": 354,
+          "sector_count": 75,
+          "physical_grid": 2,
+          "raw_hex": "0001624B"
+        },
+        {
+          "logical_entry": 19,
+          "lba": 354,
+          "sector_count": 75,
+          "physical_grid": 2,
+          "raw_hex": "0001624B"
+        },
+        {
+          "logical_entry": 20,
+          "lba": 354,
+          "sector_count": 75,
+          "physical_grid": 2,
+          "raw_hex": "0001624B"
+        },
+        {
+          "logical_entry": 21,
+          "lba": 354,
+          "sector_count": 75,
+          "physical_grid": 2,
+          "raw_hex": "0001624B"
+        },
+        {
+          "logical_entry": 22,
+          "lba": 354,
+          "sector_count": 75,
+          "physical_grid": 2,
+          "raw_hex": "0001624B"
+        },
+        {
+          "logical_entry": 23,
+          "lba": 354,
+          "sector_count": 75,
+          "physical_grid": 2,
+          "raw_hex": "0001624B"
+        },
+        {
+          "logical_entry": 24,
+          "lba": 354,
+          "sector_count": 75,
+          "physical_grid": 2,
+          "raw_hex": "0001624B"
+        },
+        {
+          "logical_entry": 25,
+          "lba": 354,
+          "sector_count": 75,
+          "physical_grid": 2,
+          "raw_hex": "0001624B"
+        },
+        {
+          "logical_entry": 26,
+          "lba": 354,
+          "sector_count": 75,
+          "physical_grid": 2,
+          "raw_hex": "0001624B"
+        },
+        {
+          "logical_entry": 27,
+          "lba": 2754,
+          "sector_count": 85,
+          "physical_grid": 27,
+          "raw_hex": "000AC255"
+        },
+        {
+          "logical_entry": 28,
+          "lba": 2850,
+          "sector_count": 94,
+          "physical_grid": 28,
+          "raw_hex": "000B225E"
+        },
+        {
+          "logical_entry": 29,
+          "lba": 2946,
+          "sector_count": 81,
+          "physical_grid": 29,
+          "raw_hex": "000B8251"
+        },
+        {
+          "logical_entry": 30,
+          "lba": 3042,
+          "sector_count": 83,
+          "physical_grid": 30,
+          "raw_hex": "000BE253"
+        },
+        {
+          "logical_entry": 31,
+          "lba": 3138,
+          "sector_count": 90,
+          "physical_grid": 31,
+          "raw_hex": "000C425A"
+        },
+        {
+          "logical_entry": 32,
+          "lba": 3234,
+          "sector_count": 75,
+          "physical_grid": 32,
+          "raw_hex": "000CA24B"
+        },
+        {
+          "logical_entry": 33,
+          "lba": 3330,
+          "sector_count": 83,
+          "physical_grid": 33,
+          "raw_hex": "000D0253"
+        },
+        {
+          "logical_entry": 34,
+          "lba": 3426,
+          "sector_count": 84,
+          "physical_grid": 34,
+          "raw_hex": "000D6254"
+        },
+        {
+          "logical_entry": 35,
+          "lba": 3522,
+          "sector_count": 84,
+          "physical_grid": 35,
+          "raw_hex": "000DC254"
+        },
+        {
+          "logical_entry": 36,
+          "lba": 3618,
+          "sector_count": 90,
+          "physical_grid": 36,
+          "raw_hex": "000E225A"
+        },
+        {
+          "logical_entry": 37,
+          "lba": 3714,
+          "sector_count": 78,
+          "physical_grid": 37,
+          "raw_hex": "000E824E"
+        },
+        {
+          "logical_entry": 38,
+          "lba": 3810,
+          "sector_count": 77,
+          "physical_grid": 38,
+          "raw_hex": "000EE24D"
+        },
+        {
+          "logical_entry": 39,
+          "lba": 3906,
+          "sector_count": 75,
+          "physical_grid": 39,
+          "raw_hex": "000F424B"
+        },
+        {
+          "logical_entry": 40,
+          "lba": 4002,
+          "sector_count": 95,
+          "physical_grid": 40,
+          "raw_hex": "000FA25F"
+        },
+        {
+          "logical_entry": 41,
+          "lba": 4098,
+          "sector_count": 90,
+          "physical_grid": 41,
+          "raw_hex": "0010025A"
+        },
+        {
+          "logical_entry": 42,
+          "lba": 2754,
+          "sector_count": 85,
+          "physical_grid": 27,
+          "raw_hex": "000AC255"
+        },
+        {
+          "logical_entry": 43,
+          "lba": 2754,
+          "sector_count": 85,
+          "physical_grid": 27,
+          "raw_hex": "000AC255"
+        },
+        {
+          "logical_entry": 44,
+          "lba": 2754,
+          "sector_count": 85,
+          "physical_grid": 27,
+          "raw_hex": "000AC255"
+        },
+        {
+          "logical_entry": 45,
+          "lba": 2754,
+          "sector_count": 85,
+          "physical_grid": 27,
+          "raw_hex": "000AC255"
+        },
+        {
+          "logical_entry": 46,
+          "lba": 2754,
+          "sector_count": 85,
+          "physical_grid": 27,
+          "raw_hex": "000AC255"
+        },
+        {
+          "logical_entry": 47,
+          "lba": 2754,
+          "sector_count": 85,
+          "physical_grid": 27,
+          "raw_hex": "000AC255"
+        },
+        {
+          "logical_entry": 48,
+          "lba": 2754,
+          "sector_count": 85,
+          "physical_grid": 27,
+          "raw_hex": "000AC255"
+        },
+        {
+          "logical_entry": 49,
+          "lba": 2754,
+          "sector_count": 85,
+          "physical_grid": 27,
+          "raw_hex": "000AC255"
+        },
+        {
+          "logical_entry": 50,
+          "lba": 2754,
+          "sector_count": 85,
+          "physical_grid": 27,
+          "raw_hex": "000AC255"
+        },
+        {
+          "logical_entry": 51,
+          "lba": 2754,
+          "sector_count": 85,
+          "physical_grid": 27,
+          "raw_hex": "000AC255"
+        },
+        {
+          "logical_entry": 52,
+          "lba": 2754,
+          "sector_count": 85,
+          "physical_grid": 27,
+          "raw_hex": "000AC255"
+        },
+        {
+          "logical_entry": 53,
+          "lba": 1602,
+          "sector_count": 95,
+          "physical_grid": 15,
+          "raw_hex": "0006425F"
+        },
+        {
+          "logical_entry": 54,
+          "lba": 6018,
+          "sector_count": 32,
+          "physical_grid": 61,
+          "raw_hex": "00178220"
+        }
+      ]
+    },
+    "overlay": {
+      "track02_iso_offset": "0x83531",
+      "entries": [
+        {
+          "logical_entry": 0,
+          "lba": 290,
+          "sector_count": 96,
+          "physical_grid": 0,
+          "raw_hex": "00012260"
+        },
+        {
+          "logical_entry": 1,
+          "lba": 386,
+          "sector_count": 96,
+          "physical_grid": 1,
+          "raw_hex": "00018260"
+        },
+        {
+          "logical_entry": 2,
+          "lba": 482,
+          "sector_count": 96,
+          "physical_grid": 2,
+          "raw_hex": "0001E260"
+        },
+        {
+          "logical_entry": 3,
+          "lba": 2786,
+          "sector_count": 69,
+          "physical_grid": 26,
+          "raw_hex": "000AE245"
+        },
+        {
+          "logical_entry": 4,
+          "lba": 578,
+          "sector_count": 78,
+          "physical_grid": 3,
+          "raw_hex": "0002424E"
+        },
+        {
+          "logical_entry": 5,
+          "lba": 674,
+          "sector_count": 96,
+          "physical_grid": 4,
+          "raw_hex": "0002A260"
+        },
+        {
+          "logical_entry": 6,
+          "lba": 770,
+          "sector_count": 96,
+          "physical_grid": 5,
+          "raw_hex": "00030260"
+        },
+        {
+          "logical_entry": 7,
+          "lba": 866,
+          "sector_count": 96,
+          "physical_grid": 6,
+          "raw_hex": "00036260"
+        },
+        {
+          "logical_entry": 8,
+          "lba": 962,
+          "sector_count": 96,
+          "physical_grid": 7,
+          "raw_hex": "0003C260"
+        },
+        {
+          "logical_entry": 9,
+          "lba": 1058,
+          "sector_count": 83,
+          "physical_grid": 8,
+          "raw_hex": "00042253"
+        },
+        {
+          "logical_entry": 10,
+          "lba": 1154,
+          "sector_count": 96,
+          "physical_grid": 9,
+          "raw_hex": "00048260"
+        },
+        {
+          "logical_entry": 11,
+          "lba": 1250,
+          "sector_count": 96,
+          "physical_grid": 10,
+          "raw_hex": "0004E260"
+        },
+        {
+          "logical_entry": 12,
+          "lba": 1346,
+          "sector_count": 96,
+          "physical_grid": 11,
+          "raw_hex": "00054260"
+        },
+        {
+          "logical_entry": 13,
+          "lba": 1442,
+          "sector_count": 96,
+          "physical_grid": 12,
+          "raw_hex": "0005A260"
+        },
+        {
+          "logical_entry": 14,
+          "lba": 1538,
+          "sector_count": 73,
+          "physical_grid": 13,
+          "raw_hex": "00060249"
+        },
+        {
+          "logical_entry": 15,
+          "lba": 1634,
+          "sector_count": 96,
+          "physical_grid": 14,
+          "raw_hex": "00066260"
+        },
+        {
+          "logical_entry": 16,
+          "lba": 1730,
+          "sector_count": 92,
+          "physical_grid": 15,
+          "raw_hex": "0006C25C"
+        },
+        {
+          "logical_entry": 17,
+          "lba": 1826,
+          "sector_count": 96,
+          "physical_grid": 16,
+          "raw_hex": "00072260"
+        },
+        {
+          "logical_entry": 18,
+          "lba": 1922,
+          "sector_count": 96,
+          "physical_grid": 17,
+          "raw_hex": "00078260"
+        },
+        {
+          "logical_entry": 19,
+          "lba": 2018,
+          "sector_count": 82,
+          "physical_grid": 18,
+          "raw_hex": "0007E252"
+        },
+        {
+          "logical_entry": 20,
+          "lba": 2114,
+          "sector_count": 75,
+          "physical_grid": 19,
+          "raw_hex": "0008424B"
+        },
+        {
+          "logical_entry": 21,
+          "lba": 2210,
+          "sector_count": 76,
+          "physical_grid": 20,
+          "raw_hex": "0008A24C"
+        },
+        {
+          "logical_entry": 22,
+          "lba": 2306,
+          "sector_count": 96,
+          "physical_grid": 21,
+          "raw_hex": "00090260"
+        },
+        {
+          "logical_entry": 23,
+          "lba": 2402,
+          "sector_count": 96,
+          "physical_grid": 22,
+          "raw_hex": "00096260"
+        },
+        {
+          "logical_entry": 24,
+          "lba": 2498,
+          "sector_count": 71,
+          "physical_grid": 23,
+          "raw_hex": "0009C247"
+        },
+        {
+          "logical_entry": 25,
+          "lba": 2594,
+          "sector_count": 71,
+          "physical_grid": 24,
+          "raw_hex": "000A2247"
+        },
+        {
+          "logical_entry": 26,
+          "lba": 2690,
+          "sector_count": 96,
+          "physical_grid": 25,
+          "raw_hex": "000A8260"
+        },
+        {
+          "logical_entry": 27,
+          "lba": 2882,
+          "sector_count": 96,
+          "physical_grid": 27,
+          "raw_hex": "000B4260"
+        },
+        {
+          "logical_entry": 28,
+          "lba": 2978,
+          "sector_count": 94,
+          "physical_grid": 28,
+          "raw_hex": "000BA25E"
+        },
+        {
+          "logical_entry": 29,
+          "lba": 3074,
+          "sector_count": 96,
+          "physical_grid": 29,
+          "raw_hex": "000C0260"
+        },
+        {
+          "logical_entry": 30,
+          "lba": 3170,
+          "sector_count": 96,
+          "physical_grid": 30,
+          "raw_hex": "000C6260"
+        },
+        {
+          "logical_entry": 31,
+          "lba": 3266,
+          "sector_count": 96,
+          "physical_grid": 31,
+          "raw_hex": "000CC260"
+        },
+        {
+          "logical_entry": 32,
+          "lba": 3362,
+          "sector_count": 96,
+          "physical_grid": 32,
+          "raw_hex": "000D2260"
+        },
+        {
+          "logical_entry": 33,
+          "lba": 3458,
+          "sector_count": 96,
+          "physical_grid": 33,
+          "raw_hex": "000D8260"
+        },
+        {
+          "logical_entry": 34,
+          "lba": 3554,
+          "sector_count": 84,
+          "physical_grid": 34,
+          "raw_hex": "000DE254"
+        },
+        {
+          "logical_entry": 35,
+          "lba": 3650,
+          "sector_count": 84,
+          "physical_grid": 35,
+          "raw_hex": "000E4254"
+        },
+        {
+          "logical_entry": 36,
+          "lba": 3746,
+          "sector_count": 96,
+          "physical_grid": 36,
+          "raw_hex": "000EA260"
+        },
+        {
+          "logical_entry": 37,
+          "lba": 3842,
+          "sector_count": 96,
+          "physical_grid": 37,
+          "raw_hex": "000F0260"
+        },
+        {
+          "logical_entry": 38,
+          "lba": 3938,
+          "sector_count": 96,
+          "physical_grid": 38,
+          "raw_hex": "000F6260"
+        },
+        {
+          "logical_entry": 39,
+          "lba": 4034,
+          "sector_count": 75,
+          "physical_grid": 39,
+          "raw_hex": "000FC24B"
+        },
+        {
+          "logical_entry": 40,
+          "lba": 4130,
+          "sector_count": 96,
+          "physical_grid": 40,
+          "raw_hex": "00102260"
+        },
+        {
+          "logical_entry": 41,
+          "lba": 4226,
+          "sector_count": 96,
+          "physical_grid": 41,
+          "raw_hex": "00108260"
+        },
+        {
+          "logical_entry": 42,
+          "lba": 4322,
+          "sector_count": 96,
+          "physical_grid": 42,
+          "raw_hex": "0010E260"
+        },
+        {
+          "logical_entry": 43,
+          "lba": 4418,
+          "sector_count": 80,
+          "physical_grid": 43,
+          "raw_hex": "00114250"
+        },
+        {
+          "logical_entry": 44,
+          "lba": 4514,
+          "sector_count": 82,
+          "physical_grid": 44,
+          "raw_hex": "0011A252"
+        },
+        {
+          "logical_entry": 45,
+          "lba": 4610,
+          "sector_count": 81,
+          "physical_grid": 45,
+          "raw_hex": "00120251"
+        },
+        {
+          "logical_entry": 46,
+          "lba": 4706,
+          "sector_count": 81,
+          "physical_grid": 46,
+          "raw_hex": "00126251"
+        },
+        {
+          "logical_entry": 47,
+          "lba": 4802,
+          "sector_count": 90,
+          "physical_grid": 47,
+          "raw_hex": "0012C25A"
+        },
+        {
+          "logical_entry": 48,
+          "lba": 4898,
+          "sector_count": 76,
+          "physical_grid": 48,
+          "raw_hex": "0013224C"
+        },
+        {
+          "logical_entry": 49,
+          "lba": 4994,
+          "sector_count": 76,
+          "physical_grid": 49,
+          "raw_hex": "0013824C"
+        },
+        {
+          "logical_entry": 50,
+          "lba": 5090,
+          "sector_count": 84,
+          "physical_grid": 50,
+          "raw_hex": "0013E254"
+        },
+        {
+          "logical_entry": 51,
+          "lba": 5186,
+          "sector_count": 96,
+          "physical_grid": 51,
+          "raw_hex": "00144260"
+        },
+        {
+          "logical_entry": 52,
+          "lba": 5282,
+          "sector_count": 96,
+          "physical_grid": 52,
+          "raw_hex": "0014A260"
+        },
+        {
+          "logical_entry": 53,
+          "lba": 1730,
+          "sector_count": 92,
+          "physical_grid": 15,
+          "raw_hex": "0006C25C"
+        },
+        {
+          "logical_entry": 54,
+          "lba": 5378,
+          "sector_count": 96,
+          "physical_grid": 53,
+          "raw_hex": "00150260"
+        }
+      ]
+    }
+  },
+  "modules": [
+    {
+      "id": "boot.kernel",
+      "module_kind": "executable_engine",
+      "family": "boot",
+      "purpose": "System Card boot/opening program",
+      "confidence": "runtime-high",
+      "lba": 2,
+      "sector_count": 16,
+      "destination_bank": "0x00",
+      "cd_read_mode": "0x01",
+      "physical_bank_interval": "0x80-0x83",
+      "runtime_range": "0x4000-0xBFFF",
+      "entry_point": "0x600B",
+      "entry_point_status": "header-jump-observed",
+      "evidence": [
+        "startup CD_READ trace",
+        "first instruction is JMP $600B"
+      ],
+      "primary_directory_entries": [],
+      "overlay_directory_entries": [],
+      "track02_iso_range": "0x1000-0x8FFF"
+    },
+    {
+      "id": "boot.resource_a",
+      "module_kind": "resource_bundle",
+      "family": "boot",
+      "purpose": "boot resource bundle",
+      "confidence": "runtime-high",
+      "lba": 34,
+      "sector_count": 12,
+      "destination_bank": "0x00",
+      "cd_read_mode": "0xFF",
+      "physical_bank_interval": null,
+      "runtime_range": null,
+      "entry_point": null,
+      "entry_point_status": "unknown",
+      "evidence": [
+        "startup CD_READ trace"
+      ],
+      "primary_directory_entries": [],
+      "overlay_directory_entries": [],
+      "track02_iso_range": "0x11000-0x16FFF"
+    },
+    {
+      "id": "opening.engine",
+      "module_kind": "executable_engine",
+      "family": "opening",
+      "purpose": "opening/title program",
+      "confidence": "runtime-high",
+      "lba": 98,
+      "sector_count": 20,
+      "destination_bank": "0x00",
+      "cd_read_mode": "0x01",
+      "physical_bank_interval": null,
+      "runtime_range": null,
+      "entry_point": "0x5000",
+      "entry_point_status": "header-jump-observed",
+      "evidence": [
+        "startup CD_READ trace",
+        "first instruction is JMP $5000"
+      ],
+      "primary_directory_entries": [],
+      "overlay_directory_entries": [],
+      "track02_iso_range": "0x31000-0x3AFFF"
+    },
+    {
+      "id": "opening.resource",
+      "module_kind": "resource_bundle",
+      "family": "opening",
+      "purpose": "opening resource bundle",
+      "confidence": "runtime-high",
+      "lba": 118,
+      "sector_count": 6,
+      "destination_bank": "0x00",
+      "cd_read_mode": "0x01",
+      "physical_bank_interval": null,
+      "runtime_range": null,
+      "entry_point": null,
+      "entry_point_status": "unknown",
+      "evidence": [
+        "startup CD_READ trace"
+      ],
+      "primary_directory_entries": [],
+      "overlay_directory_entries": [],
+      "track02_iso_range": "0x3B000-0x3DFFF"
+    },
+    {
+      "id": "system.bundle",
+      "module_kind": "resource_bundle",
+      "family": "system",
+      "purpose": "system/common bundle loaded before field engine",
+      "confidence": "runtime-high",
+      "lba": 226,
+      "sector_count": 28,
+      "destination_bank": "0x00",
+      "cd_read_mode": "0xFF",
+      "physical_bank_interval": null,
+      "runtime_range": null,
+      "entry_point": null,
+      "entry_point_status": "unknown",
+      "evidence": [
+        "startup CD_READ trace"
+      ],
+      "primary_directory_entries": [],
+      "overlay_directory_entries": [],
+      "track02_iso_range": "0x71000-0x7EFFF"
+    },
+    {
+      "id": "field.main_engine",
+      "module_kind": "executable_engine",
+      "family": "field",
+      "purpose": "field engine; owns overlay directory, loader routine, field GETFNT callsite",
+      "confidence": "static+runtime-high",
+      "lba": 258,
+      "sector_count": 20,
+      "destination_bank": "0x00",
+      "cd_read_mode": "0x01",
+      "physical_bank_interval": "0x80-0x84",
+      "runtime_range": "0x4000-0xDFFF",
+      "entry_point": "jump-table at 0x4000",
+      "entry_point_status": "jump-table-observed",
+      "evidence": [
+        "CD_READ runtime trace",
+        "GETFNT renderer catalogue",
+        "overlay table at runtime $6531"
+      ],
+      "primary_directory_entries": [],
+      "overlay_directory_entries": [],
+      "track02_iso_range": "0x81000-0x8AFFF"
+    },
+    {
+      "id": "field.resource",
+      "module_kind": "resource_bundle",
+      "family": "field",
+      "purpose": "field engine companion resource",
+      "confidence": "runtime-high/layout-inferred",
+      "lba": 278,
+      "sector_count": 12,
+      "destination_bank": "0x00",
+      "cd_read_mode": "0x01",
+      "physical_bank_interval": "0x85-0x87 (inferred from following MPR snapshot)",
+      "runtime_range": null,
+      "entry_point": null,
+      "entry_point_status": "unknown",
+      "evidence": [
+        "CD_READ runtime trace",
+        "MPR2-4=85,86,87 after load"
+      ],
+      "primary_directory_entries": [],
+      "overlay_directory_entries": [],
+      "track02_iso_range": "0x8B000-0x90FFF"
+    },
+    {
+      "id": "scene.field_start",
+      "module_kind": "scene_package",
+      "family": "field",
+      "purpose": "starting field scene package; includes portrait-visible data in bank 0x6C",
+      "confidence": "runtime-high",
+      "lba": 482,
+      "sector_count": 96,
+      "destination_bank": "0x68",
+      "cd_read_mode": "0x06",
+      "physical_bank_interval": "0x68-0x7F",
+      "runtime_range": null,
+      "entry_point": null,
+      "entry_point_status": "data/package; no executable entry asserted",
+      "evidence": [
+        "full-scene and long-run traces",
+        "bank 0x6C overwrite removed portrait"
+      ],
+      "primary_directory_entries": [],
+      "overlay_directory_entries": [
+        2
+      ],
+      "track02_iso_range": "0xF1000-0x120FFF"
+    },
+    {
+      "id": "scene.battle_first",
+      "module_kind": "scene_package",
+      "family": "battle",
+      "purpose": "package loaded on first battle transition",
+      "confidence": "runtime-route-high/semantic-medium",
+      "lba": 290,
+      "sector_count": 96,
+      "destination_bank": "0x68",
+      "cd_read_mode": "0x06",
+      "physical_bank_interval": "0x68-0x7F",
+      "runtime_range": null,
+      "entry_point": null,
+      "entry_point_status": "data/package; no executable entry asserted",
+      "evidence": [
+        "field→LBA290 transition in multiple traces",
+        "user battle validation route"
+      ],
+      "primary_directory_entries": [],
+      "overlay_directory_entries": [
+        0
+      ],
+      "track02_iso_range": "0x91000-0xC0FFF"
+    },
+    {
+      "id": "scene.tower_first",
+      "module_kind": "scene_package",
+      "family": "tower/dungeon",
+      "purpose": "first tower/dungeon scene package",
+      "confidence": "runtime-route-high/semantic-high",
+      "lba": 2882,
+      "sector_count": 96,
+      "destination_bank": "0x68",
+      "cd_read_mode": "0x06",
+      "physical_bank_interval": "0x68-0x7F",
+      "runtime_range": null,
+      "entry_point": null,
+      "entry_point_status": "data/package; no executable entry asserted",
+      "evidence": [
+        "battle→LBA2882 transition in tower trace",
+        "user tower validation route"
+      ],
+      "primary_directory_entries": [],
+      "overlay_directory_entries": [
+        27
+      ],
+      "track02_iso_range": "0x5A1000-0x5D0FFF"
+    },
+    {
+      "id": "subrenderer.memo",
+      "module_kind": "subrenderer",
+      "family": "menu/Memo",
+      "purpose": "Memo renderer entered without an intervening CD_READ; resident owner not yet split",
+      "confidence": "runtime-negative-load-high",
+      "lba": null,
+      "sector_count": null,
+      "destination_bank": null,
+      "cd_read_mode": null,
+      "physical_bank_interval": null,
+      "runtime_range": null,
+      "entry_point": null,
+      "entry_point_status": "runtime PC not yet captured",
+      "evidence": [
+        "no CD_READ between field scene load and Memo entry"
+      ]
+    },
+    {
+      "id": "subrenderer.portrait",
+      "module_kind": "subrenderer",
+      "family": "portrait/event",
+      "purpose": "portrait renderer; visible asset state depends on LBA482 bank 0x6C",
+      "confidence": "runtime-high",
+      "lba": null,
+      "sector_count": null,
+      "destination_bank": null,
+      "cd_read_mode": null,
+      "physical_bank_interval": null,
+      "runtime_range": null,
+      "entry_point": null,
+      "entry_point_status": "runtime PC not yet captured",
+      "evidence": [
+        "portrait control trace has no LBA3330 read",
+        "bank 0x6C overwrite removes portrait"
+      ]
+    }
+  ],
+  "runtime_unique_cd_reads": [
+    {
+      "lba": 2,
+      "sector_count": 16,
+      "destination_bank": "0x00",
+      "mode": "0x01",
+      "observation_count": 1,
+      "trace_sources": [
+        "task7_lba482_full_scene_trace.tsv"
+      ]
+    },
+    {
+      "lba": 34,
+      "sector_count": 12,
+      "destination_bank": "0x00",
+      "mode": "0xFF",
+      "observation_count": 1,
+      "trace_sources": [
+        "task7_lba482_full_scene_trace.tsv"
+      ]
+    },
+    {
+      "lba": 98,
+      "sector_count": 20,
+      "destination_bank": "0x00",
+      "mode": "0x01",
+      "observation_count": 1,
+      "trace_sources": [
+        "task7_lba482_full_scene_trace.tsv"
+      ]
+    },
+    {
+      "lba": 118,
+      "sector_count": 6,
+      "destination_bank": "0x00",
+      "mode": "0x01",
+      "observation_count": 1,
+      "trace_sources": [
+        "task7_lba482_full_scene_trace.tsv"
+      ]
+    },
+    {
+      "lba": 226,
+      "sector_count": 28,
+      "destination_bank": "0x00",
+      "mode": "0xFF",
+      "observation_count": 1,
+      "trace_sources": [
+        "task7_lba482_full_scene_trace.tsv"
+      ]
+    },
+    {
+      "lba": 258,
+      "sector_count": 20,
+      "destination_bank": "0x00",
+      "mode": "0x01",
+      "observation_count": 1,
+      "trace_sources": [
+        "task7_lba482_full_scene_trace.tsv"
+      ]
+    },
+    {
+      "lba": 278,
+      "sector_count": 12,
+      "destination_bank": "0x00",
+      "mode": "0x01",
+      "observation_count": 1,
+      "trace_sources": [
+        "task7_lba482_full_scene_trace.tsv"
+      ]
+    },
+    {
+      "lba": 290,
+      "sector_count": 96,
+      "destination_bank": "0x68",
+      "mode": "0x06",
+      "observation_count": 3,
+      "trace_sources": [
+        "task7_lba482_full_scene_trace.tsv",
+        "task7_work_ram_long_trace.tsv",
+        "task7_work_ram_tower_trace.tsv"
+      ]
+    },
+    {
+      "lba": 482,
+      "sector_count": 96,
+      "destination_bank": "0x68",
+      "mode": "0x06",
+      "observation_count": 5,
+      "trace_sources": [
+        "task7_lba482_full_scene_trace.tsv",
+        "task7_work_ram_long_trace.tsv",
+        "task7_work_ram_tower_trace.tsv"
+      ]
+    },
+    {
+      "lba": 2882,
+      "sector_count": 96,
+      "destination_bank": "0x68",
+      "mode": "0x06",
+      "observation_count": 2,
+      "trace_sources": [
+        "task7_lba482_full_scene_trace.tsv",
+        "task7_work_ram_tower_trace.tsv"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Memo runtime entry PC and exact resident owner",
+    "portrait runtime entry PC; asset dependency on LBA482 bank 0x6C is proven",
+    "96-sector packages are treated as scene packages, not executable modules, until a code entry is observed",
+    "LBA3330 portrait-owner hypothesis is rejected because the targeted trace never read it"
+  ]
+}

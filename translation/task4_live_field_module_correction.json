@@ -1,0 +1,63 @@
+{
+  "format": "TASK4-LIVE-FIELD-MODULE-CORRECTION",
+  "version": 1,
+  "status": "PASS_READY_TO_REDESIGN_TASK3",
+  "cause": "cd_read_trace LBA values were already Track02-relative; Task 1 incorrectly subtracted a 128-sector bias",
+  "disproved": {
+    "module_iso": "0x41000",
+    "call_iso": "0x45855",
+    "runtime_result": "unconditional reachability probe left all Japanese unchanged"
+  },
+  "live_module": {
+    "trace_frame": 1237,
+    "track02_lba": 258,
+    "iso_start": "0x81000",
+    "iso_end_exclusive": "0x8B000",
+    "sectors": 20,
+    "runtime_base": "0x4000",
+    "physical_banks": "0x80..0x84"
+  },
+  "live_call": {
+    "iso_offset": "0x8667E",
+    "runtime_address": "0x967E",
+    "expected_hex": "2060E0",
+    "context_sha256": "FF236B310B5F5B2BDF3DFEFA8C2C07CBFA87A4B97AA0F1451891C971B2BBFD76"
+  },
+  "cave_candidates": [
+    {
+      "iso_start": "0x89737",
+      "iso_end_exclusive": "0x89900",
+      "bytes": 457,
+      "runtime_start": "0xC737",
+      "raw_refs_into_first_80": [
+        "0x81329",
+        "0x8455B",
+        "0x84A10",
+        "0x8663C",
+        "0x867DD",
+        "0x890F5",
+        "0x89309",
+        "0x89476"
+      ],
+      "control_refs_into_first_80": []
+    }
+  ],
+  "selected_cave": {
+    "iso_start": "0x89737",
+    "iso_end_exclusive": "0x89900",
+    "bytes": 457,
+    "runtime_start": "0xC737",
+    "raw_refs_into_first_80": [
+      "0x81329",
+      "0x8455B",
+      "0x84A10",
+      "0x8663C",
+      "0x867DD",
+      "0x890F5",
+      "0x89309",
+      "0x89476"
+    ],
+    "control_refs_into_first_80": []
+  },
+  "cave_decision": "No original JSR/JMP targets the first 80 bytes. Unaligned raw-word overlaps are recorded and must be reviewed before a final hook build."
+}

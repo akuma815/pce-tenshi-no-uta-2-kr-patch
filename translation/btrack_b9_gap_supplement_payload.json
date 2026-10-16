@@ -1,0 +1,1828 @@
+{
+ "manifest": {
+  "format": "BTRACK-B9-GAP-SUPPLEMENT",
+  "records": 155,
+  "scenes": {
+   "674": 6,
+   "866": 6,
+   "1922": 5,
+   "2114": 10,
+   "2402": 18,
+   "2690": 3,
+   "2882": 4,
+   "3554": 3,
+   "4226": 3,
+   "290": 2,
+   "386": 1,
+   "482": 5,
+   "578": 13,
+   "962": 3,
+   "1058": 1,
+   "1154": 5,
+   "1250": 3,
+   "1346": 2,
+   "1442": 3,
+   "1538": 5,
+   "1634": 1,
+   "1730": 7,
+   "1826": 5,
+   "2018": 1,
+   "2210": 4,
+   "2306": 1,
+   "2498": 2,
+   "2594": 2,
+   "3266": 2,
+   "3362": 2,
+   "3458": 2,
+   "3650": 9,
+   "3746": 9,
+   "4418": 1,
+   "4610": 2,
+   "4994": 2,
+   "5378": 2
+  },
+  "line_over_24": 0,
+  "review": "draft 행은 릴리스 전 인간 검토 필수 (2026-08-28 초벌 — 용어는 기존 번역 준수: 지아/기밀/여행 일지가/풍도사촌/바엘)"
+ },
+ "scenes": {
+  "674": [
+   {
+    "id": "iso:016BA83",
+    "master_id": "iso:016BA83",
+    "b3_status": "GAP_SUPPLEMENT_DRAFT",
+    "source_key_u24le": "83AA01",
+    "original_raw_length": 109,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "{#5}라미암：\\n{#1}・・・나는 다크교 최고사제 라미암\\p・・・！？\\p너는、 지아・・・\\p{#5}페이트：\\n{#1}지아、 이 사람은？\\p{#5}지아：\\n{#1}・・・",
+    "encoded_hex": "233588B289608A6C81460D233181458145814588B488A6814088A08967898D81408AA288B188CE8975814088B289608A6C0C814581458145814981480C899288A68141814088A188AD8145814581450C233588FB889F88DD81460D233188A188AD81418140889F814088CE899788B981480C233588A188AD81460D233181458145814500",
+    "encoded_length": 132
+   },
+   {
+    "id": "iso:016BF26",
+    "master_id": "iso:016BF26",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "26AF01",
+    "original_raw_length": 15,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "{#1}쿨쿨…",
+    "encoded_hex": "23318EA38EA3816300",
+    "encoded_length": 9
+   },
+   {
+    "id": "iso:016C1D4",
+    "master_id": "iso:016C1D4",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "D4B101",
+    "original_raw_length": 7,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "고마워〜 또 와〜",
+    "encoded_hex": "88B188B88A89816081408A8E81408978816000",
+    "encoded_length": 19
+   },
+   {
+    "id": "iso:016CB7D",
+    "master_id": "iso:016CB7D",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "7DBB01",
+    "original_raw_length": 13,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "쿨쿨…",
+    "encoded_hex": "8EA38EA3816300",
+    "encoded_length": 7
+   },
+   {
+    "id": "iso:016CEC1",
+    "master_id": "iso:016CEC1",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "C1BE01",
+    "original_raw_length": 21,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "＊서커스장건설 예정지＊",
+    "encoded_hex": "819688C28BCE88EF897B895A8B7981408AE0894B88A1819600",
+    "encoded_length": 25
+   },
+   {
+    "id": "iso:016CF03",
+    "master_id": "iso:016CF03",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "03BF01",
+    "original_raw_length": 17,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "{~}{~}한편 그 무렵…",
+    "encoded_hex": "7E7E88DC8AFB814088BB8140894992BA816300",
+    "encoded_length": 19
+   }
+  ],
+  "866": [
+   {
+    "id": "iso:01CD28C",
+    "master_id": "iso:01CD28C",
+    "b3_status": "GAP_SUPPLEMENT_DRAFT",
+    "source_key_u24le": "8CC201",
+    "original_raw_length": 28,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "{#5}페이트：\\n{#1}・・・시온\\p・・・",
+    "encoded_hex": "233588FB889F88DD81460D233181458145814588D189A00C81458145814500",
+    "encoded_length": 31
+   },
+   {
+    "id": "iso:01CC1AF",
+    "master_id": "iso:01CC1AF",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "AFB101",
+    "original_raw_length": 5,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "새근새근",
+    "encoded_hex": "8AA78B628AA78B6200",
+    "encoded_length": 9
+   },
+   {
+    "id": "iso:01CC670",
+    "master_id": "iso:01CC670",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "70B601",
+    "original_raw_length": 22,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "흑… 마을이…",
+    "encoded_hex": "8C848163814088B888AA889F816300",
+    "encoded_length": 15
+   },
+   {
+    "id": "iso:01CC958",
+    "master_id": "iso:01CC958",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "58B901",
+    "original_raw_length": 13,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "쿨쿨…",
+    "encoded_hex": "8EA38EA3816300",
+    "encoded_length": 7
+   },
+   {
+    "id": "iso:01CCC0C",
+    "master_id": "iso:01CCC0C",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "0CBC01",
+    "original_raw_length": 9,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "쿨…",
+    "encoded_hex": "8EA3816300",
+    "encoded_length": 5
+   },
+   {
+    "id": "iso:01CCC71",
+    "master_id": "iso:01CCC71",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "71BC01",
+    "original_raw_length": 13,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "쿨쿨…",
+    "encoded_hex": "8EA38EA3816300",
+    "encoded_length": 7
+   }
+  ],
+  "1922": [
+   {
+    "id": "iso:03DAF29",
+    "master_id": "iso:03DAF29",
+    "b3_status": "GAP_SUPPLEMENT_DRAFT",
+    "source_key_u24le": "299F01",
+    "original_raw_length": 62,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "일지는 여행의 바로미터 〜여행 일지가〜",
+    "encoded_hex": "894E88A188A6814088E0897D88AE8140896D88C1896089EA8140816088E0897D8140894E88A188A9816000",
+    "encoded_length": 43
+   },
+   {
+    "id": "iso:03DEF29",
+    "master_id": "iso:03DEF29",
+    "b3_status": "GAP_SUPPLEMENT_DRAFT",
+    "source_key_u24le": "29DF01",
+    "original_raw_length": 62,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "일지는 여행의 바로미터 〜여행 일지가〜",
+    "encoded_hex": "894E88A188A6814088E0897D88AE8140896D88C1896089EA8140816088E0897D8140894E88A188A9816000",
+    "encoded_length": 43
+   },
+   {
+    "id": "iso:03E0F29",
+    "master_id": "iso:03E0F29",
+    "b3_status": "GAP_SUPPLEMENT_DRAFT",
+    "source_key_u24le": "29FF01",
+    "original_raw_length": 62,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "일지는 여행의 바로미터 〜여행 일지가〜",
+    "encoded_hex": "894E88A188A6814088E0897D88AE8140896D88C1896089EA8140816088E0897D8140894E88A188A9816000",
+    "encoded_length": 43
+   },
+   {
+    "id": "iso:03DB5F2",
+    "master_id": "iso:03DB5F2",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "F2A501",
+    "original_raw_length": 10,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "꼬꼬꼬・・・",
+    "encoded_hex": "8DBF8DBF8DBF81458145814500",
+    "encoded_length": 13
+   },
+   {
+    "id": "iso:03DB6C7",
+    "master_id": "iso:03DB6C7",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "C7A601",
+    "original_raw_length": 15,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "오늘도비네・・・",
+    "encoded_hex": "88DE8A7888BD89C588EB81458145814500",
+    "encoded_length": 17
+   }
+  ],
+  "2114": [
+   {
+    "id": "iso:043B381",
+    "master_id": "iso:043B381",
+    "b3_status": "GAP_SUPPLEMENT_DRAFT",
+    "source_key_u24le": "81A301",
+    "original_raw_length": 73,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "손님！ 안 보고 가면 분명 후회할 거야！\\p오늘은 비 오니까 대서비스！ 단돈、\\n100기밀！",
+    "encoded_hex": "8A53899481498140895D8140894D88B1814088A988ED814089B189E981408A908BD48983814088F288D881490C88DE8A7888B9814089C5814088DE88BC89408140894488C289C588EF81498140895B8B9A81410D8250824F824F88BA89F9814900",
+    "encoded_length": 97
+   },
+   {
+    "id": "iso:043B40D",
+    "master_id": "iso:043B40D",
+    "b3_status": "GAP_SUPPLEMENT_DRAFT",
+    "source_key_u24le": "0DA401",
+    "original_raw_length": 77,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "손님！ 안 보고 가면 꼭꼭 후회할 거야！\\p손님한테만 대서비스！ 단돈 단돈、 50기밀！",
+    "encoded_hex": "8A53899481498140895D8140894D88B1814088A988ED81408E9B8E9B81408A908BD48983814088F288D881490C8A53899488DC8B4488E88140894488C289C588EF81498140895B8B9A8140895B8B9A814181408254824F88BA89F9814900",
+    "encoded_length": 94
+   },
+   {
+    "id": "iso:043B88A",
+    "master_id": "iso:043B88A",
+    "b3_status": "GAP_SUPPLEMENT_MASTER_VERIFIED",
+    "source_key_u24le": "8AA801",
+    "original_raw_length": 59,
+    "reference_kind": "GAP_SUPPLEMENT_CONTINUATION",
+    "ko_repaginated": "그럼 약속대로 배를 띄우죠\\p배는 거리 밖에 준비했습니다 무사한 항해를\\n빕니다",
+    "encoded_hex": "88BB89A881408BD18A48894488C1814089E788D481408F4C88F48BE70C89E788A6814088F288B781408C7388A881408C4889C58991896288BC88A08140894988CE88DC81408A9F88CF88D40D928288BC88A000",
+    "encoded_length": 83
+   },
+   {
+    "id": "iso:043B2D9",
+    "master_id": "iso:043B2D9",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "D9A201",
+    "original_raw_length": 25,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "장사 도구에 손대면 안 돼요!",
+    "encoded_hex": "897B88CE814088BD894788A881408A53894488ED8140895D81408C6D88C6814900",
+    "encoded_length": 33
+   },
+   {
+    "id": "iso:043B4D2",
+    "master_id": "iso:043B4D2",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "D2A401",
+    "original_raw_length": 17,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "그럼 잘 보세요",
+    "encoded_hex": "88BB89A881408ABA8140894D894C88C600",
+    "encoded_length": 17
+   },
+   {
+    "id": "iso:043BB75",
+    "master_id": "iso:043BB75",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "75AB01",
+    "original_raw_length": 13,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "빈털터리는 안 받아",
+    "encoded_hex": "90918F9A89EA88B788A68140895D81408BD788AD00",
+    "encoded_length": 21
+   },
+   {
+    "id": "iso:043BB84",
+    "master_id": "iso:043BB84",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "84AB01",
+    "original_raw_length": 6,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "푹 쉬어",
+    "encoded_hex": "8F7981408AE188B000",
+    "encoded_length": 9
+   },
+   {
+    "id": "iso:043C1D2",
+    "master_id": "iso:043C1D2",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "D2B101",
+    "original_raw_length": 19,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "쿨쿨・・・",
+    "encoded_hex": "8EA38EA381458145814500",
+    "encoded_length": 11
+   },
+   {
+    "id": "iso:043C315",
+    "master_id": "iso:043C315",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "15B301",
+    "original_raw_length": 5,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "새근새근",
+    "encoded_hex": "8AA78B628AA78B6200",
+    "encoded_length": 9
+   },
+   {
+    "id": "iso:043C356",
+    "master_id": "iso:043C356",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "56B301",
+    "original_raw_length": 4,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "아웅",
+    "encoded_hex": "88AD8F4E00",
+    "encoded_length": 5
+   }
+  ],
+  "2402": [
+   {
+    "id": "iso:04CA864",
+    "master_id": "iso:04CA864",
+    "b3_status": "GAP_SUPPLEMENT_DRAFT",
+    "source_key_u24le": "649801",
+    "original_raw_length": 15,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "90기밀\\p돈 없어",
+    "encoded_hex": "8258824F88BA89F90C8B9A8140895788B000",
+    "encoded_length": 18
+   },
+   {
+    "id": "iso:04CE864",
+    "master_id": "iso:04CE864",
+    "b3_status": "GAP_SUPPLEMENT_DRAFT",
+    "source_key_u24le": "64D801",
+    "original_raw_length": 15,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "90기밀\\p돈 없어",
+    "encoded_hex": "8258824F88BA89F90C8B9A8140895788B000",
+    "encoded_length": 18
+   },
+   {
+    "id": "iso:04D0864",
+    "master_id": "iso:04D0864",
+    "b3_status": "GAP_SUPPLEMENT_DRAFT",
+    "source_key_u24le": "64F801",
+    "original_raw_length": 15,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "90기밀\\p돈 없어",
+    "encoded_hex": "8258824F88BA89F90C8B9A8140895788B000",
+    "encoded_length": 18
+   },
+   {
+    "id": "iso:04CAC20",
+    "master_id": "iso:04CAC20",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "209C01",
+    "original_raw_length": 13,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "쿨쿨・・・",
+    "encoded_hex": "8EA38EA381458145814500",
+    "encoded_length": 11
+   },
+   {
+    "id": "iso:04CAC84",
+    "master_id": "iso:04CAC84",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "849C01",
+    "original_raw_length": 18,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "후후・・・후후후・・・",
+    "encoded_hex": "8A908A908145814581458A908A908A9081458145814500",
+    "encoded_length": 23
+   },
+   {
+    "id": "iso:04CACD3",
+    "master_id": "iso:04CACD3",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "D39C01",
+    "original_raw_length": 13,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "쿨쿨・・・",
+    "encoded_hex": "8EA38EA381458145814500",
+    "encoded_length": 11
+   },
+   {
+    "id": "iso:04CAD6E",
+    "master_id": "iso:04CAD6E",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "6E9D01",
+    "original_raw_length": 11,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "새근새근・・・",
+    "encoded_hex": "8AA78B628AA78B6281458145814500",
+    "encoded_length": 15
+   },
+   {
+    "id": "iso:04CAE39",
+    "master_id": "iso:04CAE39",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "399E01",
+    "original_raw_length": 4,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "드렁",
+    "encoded_hex": "8990905A00",
+    "encoded_length": 5
+   },
+   {
+    "id": "iso:04CEC20",
+    "master_id": "iso:04CEC20",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "20DC01",
+    "original_raw_length": 13,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "쿨쿨・・・",
+    "encoded_hex": "8EA38EA381458145814500",
+    "encoded_length": 11
+   },
+   {
+    "id": "iso:04CEC84",
+    "master_id": "iso:04CEC84",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "84DC01",
+    "original_raw_length": 18,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "후후・・・후후후・・・",
+    "encoded_hex": "8A908A908145814581458A908A908A9081458145814500",
+    "encoded_length": 23
+   },
+   {
+    "id": "iso:04CECD3",
+    "master_id": "iso:04CECD3",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "D3DC01",
+    "original_raw_length": 13,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "쿨쿨・・・",
+    "encoded_hex": "8EA38EA381458145814500",
+    "encoded_length": 11
+   },
+   {
+    "id": "iso:04CED6E",
+    "master_id": "iso:04CED6E",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "6EDD01",
+    "original_raw_length": 11,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "새근새근・・・",
+    "encoded_hex": "8AA78B628AA78B6281458145814500",
+    "encoded_length": 15
+   },
+   {
+    "id": "iso:04CEE39",
+    "master_id": "iso:04CEE39",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "39DE01",
+    "original_raw_length": 4,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "드렁",
+    "encoded_hex": "8990905A00",
+    "encoded_length": 5
+   },
+   {
+    "id": "iso:04D0C20",
+    "master_id": "iso:04D0C20",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "20FC01",
+    "original_raw_length": 13,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "쿨쿨・・・",
+    "encoded_hex": "8EA38EA381458145814500",
+    "encoded_length": 11
+   },
+   {
+    "id": "iso:04D0C84",
+    "master_id": "iso:04D0C84",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "84FC01",
+    "original_raw_length": 18,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "후후・・・후후후・・・",
+    "encoded_hex": "8A908A908145814581458A908A908A9081458145814500",
+    "encoded_length": 23
+   },
+   {
+    "id": "iso:04D0CD3",
+    "master_id": "iso:04D0CD3",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "D3FC01",
+    "original_raw_length": 13,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "쿨쿨・・・",
+    "encoded_hex": "8EA38EA381458145814500",
+    "encoded_length": 11
+   },
+   {
+    "id": "iso:04D0D6E",
+    "master_id": "iso:04D0D6E",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "6EFD01",
+    "original_raw_length": 11,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "새근새근・・・",
+    "encoded_hex": "8AA78B628AA78B6281458145814500",
+    "encoded_length": 15
+   },
+   {
+    "id": "iso:04D0E39",
+    "master_id": "iso:04D0E39",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "39FE01",
+    "original_raw_length": 4,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "드렁",
+    "encoded_hex": "8990905A00",
+    "encoded_length": 5
+   }
+  ],
+  "2690": [
+   {
+    "id": "iso:055B5F1",
+    "master_id": "iso:055B5F1",
+    "b3_status": "GAP_SUPPLEMENT_DRAFT",
+    "source_key_u24le": "F1A501",
+    "original_raw_length": 59,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "여기는 풍도사의 마을 〜여행 일지가〜",
+    "encoded_hex": "88E088BA88A681408BD288BD88CE88AE814088B888AA8140816088E0897D8140894E88A188A9816000",
+    "encoded_length": 41
+   },
+   {
+    "id": "iso:055B775",
+    "master_id": "iso:055B775",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "75A701",
+    "original_raw_length": 11,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "기록 끝!",
+    "encoded_hex": "88BA8A5E81408D42814900",
+    "encoded_length": 11
+   },
+   {
+    "id": "iso:055B814",
+    "master_id": "iso:055B814",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "14A801",
+    "original_raw_length": 10,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "그럼 푹 쉬세요",
+    "encoded_hex": "88BB89A881408F7981408AE1894C88C600",
+    "encoded_length": 17
+   }
+  ],
+  "2882": [
+   {
+    "id": "iso:05BA126",
+    "master_id": "iso:05BA126",
+    "b3_status": "GAP_SUPPLEMENT_DRAFT",
+    "source_key_u24le": "269101",
+    "original_raw_length": 39,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "{#5}시온：\\n{#1}・・・！！\\p페이트！ 지진이다！！",
+    "encoded_hex": "233588D189A081460D2331814581458145814981490C88FB889F88DD8149814088A189C7889F88A08149814900",
+    "encoded_length": 45
+   },
+   {
+    "id": "iso:05BB4A0",
+    "master_id": "iso:05BB4A0",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "A0A401",
+    "original_raw_length": 12,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "라이히풀을 찾았다",
+    "encoded_hex": "88B2889F89818D6988AA81408A5D8A6088A000",
+    "encoded_length": 19
+   },
+   {
+    "id": "iso:05BB807",
+    "master_id": "iso:05BB807",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "07A801",
+    "original_raw_length": 12,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "라이히풀을 찾았다",
+    "encoded_hex": "88B2889F89818D6988AA81408A5D8A6088A000",
+    "encoded_length": 19
+   },
+   {
+    "id": "iso:05BB8A7",
+    "master_id": "iso:05BB8A7",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "A7A801",
+    "original_raw_length": 12,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "라이히풀을 찾았다",
+    "encoded_hex": "88B2889F89818D6988AA81408A5D8A6088A000",
+    "encoded_length": 19
+   }
+  ],
+  "3554": [
+   {
+    "id": "iso:070A0D9",
+    "master_id": "iso:070A0D9",
+    "b3_status": "GAP_SUPPLEMENT_DRAFT",
+    "source_key_u24le": "D99001",
+    "original_raw_length": 55,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "{#5}리아나：\\n{#1}・・・뭐지・・・무언가의 힘이・・・\\p{#5}페이트：\\n{#1}！？",
+    "encoded_hex": "233588B788AD88B481460D233181458145814589D688A181458145814589498A8F88A988AE814089D0889F8145814581450C233588FB889F88DD81460D23318149814800",
+    "encoded_length": 68
+   },
+   {
+    "id": "iso:070E0D9",
+    "master_id": "iso:070E0D9",
+    "b3_status": "GAP_SUPPLEMENT_DRAFT",
+    "source_key_u24le": "D9D001",
+    "original_raw_length": 55,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "{#5}리아나：\\n{#1}・・・뭐지・・・무언가의 힘이・・・\\p{#5}페이트：\\n{#1}！？",
+    "encoded_hex": "233588B788AD88B481460D233181458145814589D688A181458145814589498A8F88A988AE814089D0889F8145814581450C233588FB889F88DD81460D23318149814800",
+    "encoded_length": 68
+   },
+   {
+    "id": "iso:07100D9",
+    "master_id": "iso:07100D9",
+    "b3_status": "GAP_SUPPLEMENT_DRAFT",
+    "source_key_u24le": "D9F001",
+    "original_raw_length": 55,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "{#5}리아나：\\n{#1}・・・뭐지・・・무언가의 힘이・・・\\p{#5}페이트：\\n{#1}！？",
+    "encoded_hex": "233588B788AD88B481460D233181458145814589D688A181458145814589498A8F88A988AE814089D0889F8145814581450C233588FB889F88DD81460D23318149814800",
+    "encoded_length": 68
+   }
+  ],
+  "4226": [
+   {
+    "id": "iso:085A7BA",
+    "master_id": "iso:085A7BA",
+    "b3_status": "GAP_SUPPLEMENT_DRAFT",
+    "source_key_u24le": "BA9701",
+    "original_raw_length": 62,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "＊경고 경고・・・\\p＊식별 코드 불명\\p＊이 앞의 침입을 금한다",
+    "encoded_hex": "81968AE388B181408AE388B18145814581450C81968AA08D4381408AC0899081408A7489E90C8196889F81408BE488AE81408AC989C088AA814089AC88DC88A000",
+    "encoded_length": 65
+   },
+   {
+    "id": "iso:085A801",
+    "master_id": "iso:085A801",
+    "b3_status": "GAP_SUPPLEMENT_DRAFT",
+    "source_key_u24le": "019801",
+    "original_raw_length": 55,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "＊가드 시스템「바엘」 기동\\p＊지금부터 침입자를 배제한다",
+    "encoded_hex": "819688A98990814088D188EF8DBE8175896D8B598176814088BA89770C819688A189AC894F89EA81408AC989C088DB88D4814089E7897588DC88A000",
+    "encoded_length": 60
+   },
+   {
+    "id": "iso:085B1C3",
+    "master_id": "iso:085B1C3",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "C3A101",
+    "original_raw_length": 7,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "아스타로트",
+    "encoded_hex": "88AD88EF89F888C188DD00",
+    "encoded_length": 11
+   }
+  ],
+  "290": [
+   {
+    "id": "iso:00AB6B2",
+    "master_id": "iso:00AB6B2",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "B2A601",
+    "original_raw_length": 16,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "남 트란디스 광산",
+    "encoded_hex": "89CF814088DD89C88A5088EF81408BD38AB600",
+    "encoded_length": 19
+   },
+   {
+    "id": "iso:00AB6C4",
+    "master_id": "iso:00AB6C4",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "C4A601",
+    "original_raw_length": 9,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "남 비스트",
+    "encoded_hex": "89CF814089C588EF88DD00",
+    "encoded_length": 11
+   }
+  ],
+  "386": [
+   {
+    "id": "iso:00DB2A7",
+    "master_id": "iso:00DB2A7",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "A7A201",
+    "original_raw_length": 14,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "북 해신의 신전",
+    "encoded_hex": "8A9C814088CF88E588AE814088E5895600",
+    "encoded_length": 17
+   }
+  ],
+  "482": [
+   {
+    "id": "iso:010D28C",
+    "master_id": "iso:010D28C",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "8CC201",
+    "original_raw_length": 18,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "노인도 맛있었지",
+    "encoded_hex": "8A8688EC88BD81408D5988BF88FA88A100",
+    "encoded_length": 17
+   },
+   {
+    "id": "iso:010D2A2",
+    "master_id": "iso:010D2A2",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "A2C201",
+    "original_raw_length": 14,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "크르르르르…",
+    "encoded_hex": "8967897E897E897E897E816300",
+    "encoded_length": 13
+   },
+   {
+    "id": "iso:010D2CD",
+    "master_id": "iso:010D2CD",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "CDC201",
+    "original_raw_length": 20,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "인간 사냥은 그만둘 수 없지",
+    "encoded_hex": "88EC8985814088CE8C5C88B9814088BB88E88C9D814088F78140895788A100",
+    "encoded_length": 31
+   },
+   {
+    "id": "iso:010D2E9",
+    "master_id": "iso:010D2E9",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "E9C201",
+    "original_raw_length": 18,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "노파도 맛있었지",
+    "encoded_hex": "8A8689DE88BD81408D5988BF88FA88A100",
+    "encoded_length": 17
+   },
+   {
+    "id": "iso:010D2FF",
+    "master_id": "iso:010D2FF",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "FFC201",
+    "original_raw_length": 18,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "부탁이다. 한입만 물게 해줘",
+    "encoded_hex": "894F8B45889F88A08144814088DC89C088E88140895088C7814088CF8AD500",
+    "encoded_length": 31
+   }
+  ],
+  "578": [
+   {
+    "id": "iso:013A64A",
+    "master_id": "iso:013A64A",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "4A9601",
+    "original_raw_length": 18,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "영주『마이크H』저택",
+    "encoded_hex": "8A4088F0817788B8889F89678267817889588D4900",
+    "encoded_length": 21
+   },
+   {
+    "id": "iso:013AB13",
+    "master_id": "iso:013AB13",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "139B01",
+    "original_raw_length": 13,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "쿨쿨…",
+    "encoded_hex": "8EA38EA3816300",
+    "encoded_length": 7
+   },
+   {
+    "id": "iso:013B3F7",
+    "master_id": "iso:013B3F7",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "F7A301",
+    "original_raw_length": 7,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "…",
+    "encoded_hex": "816300",
+    "encoded_length": 3
+   },
+   {
+    "id": "iso:013B4C2",
+    "master_id": "iso:013B4C2",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "C2A401",
+    "original_raw_length": 7,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "…",
+    "encoded_hex": "816300",
+    "encoded_length": 3
+   },
+   {
+    "id": "iso:013BB47",
+    "master_id": "iso:013BB47",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "47AB01",
+    "original_raw_length": 16,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "북쪽으로가면 우림다크다",
+    "encoded_hex": "8A9C897388E988C188A988ED814088F48BF688A0896788A000",
+    "encoded_length": 25
+   },
+   {
+    "id": "iso:013C077",
+    "master_id": "iso:013C077",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "77B001",
+    "original_raw_length": 6,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "멍멍",
+    "encoded_hex": "8E498E4900",
+    "encoded_length": 5
+   },
+   {
+    "id": "iso:013C081",
+    "master_id": "iso:013C081",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "81B001",
+    "original_raw_length": 6,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "아우우",
+    "encoded_hex": "88AD88F488F400",
+    "encoded_length": 7
+   },
+   {
+    "id": "iso:013C659",
+    "master_id": "iso:013C659",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "59B601",
+    "original_raw_length": 7,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "깽깽",
+    "encoded_hex": "8FA78FA700",
+    "encoded_length": 5
+   },
+   {
+    "id": "iso:013C664",
+    "master_id": "iso:013C664",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "64B601",
+    "original_raw_length": 6,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "낑낑",
+    "encoded_hex": "9148914800",
+    "encoded_length": 5
+   },
+   {
+    "id": "iso:013E64A",
+    "master_id": "iso:013E64A",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "4AD601",
+    "original_raw_length": 18,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "영주『마이크H』저택",
+    "encoded_hex": "8A4088F0817788B8889F89678267817889588D4900",
+    "encoded_length": 21
+   },
+   {
+    "id": "iso:013EB13",
+    "master_id": "iso:013EB13",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "13DB01",
+    "original_raw_length": 13,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "쿨쿨…",
+    "encoded_hex": "8EA38EA3816300",
+    "encoded_length": 7
+   },
+   {
+    "id": "iso:014064A",
+    "master_id": "iso:014064A",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "4AF601",
+    "original_raw_length": 18,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "영주『마이크H』저택",
+    "encoded_hex": "8A4088F0817788B8889F89678267817889588D4900",
+    "encoded_length": 21
+   },
+   {
+    "id": "iso:0140B13",
+    "master_id": "iso:0140B13",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "13FB01",
+    "original_raw_length": 13,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "쿨쿨…",
+    "encoded_hex": "8EA38EA3816300",
+    "encoded_length": 7
+   }
+  ],
+  "962": [
+   {
+    "id": "iso:01FB14E",
+    "master_id": "iso:01FB14E",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "4EA101",
+    "original_raw_length": 17,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "추워… 너무나",
+    "encoded_hex": "8C548A89816381408992894988B400",
+    "encoded_length": 15
+   },
+   {
+    "id": "iso:01FB2C5",
+    "master_id": "iso:01FB2C5",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "C5A201",
+    "original_raw_length": 15,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "드르렁~ 음냐, 음냐",
+    "encoded_hex": "8990897E905A8160814089868ACF8143814089868ACF00",
+    "encoded_length": 23
+   },
+   {
+    "id": "iso:01FBFAB",
+    "master_id": "iso:01FBFAB",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "ABAF01",
+    "original_raw_length": 16,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "그럼 푹 쉬세요…",
+    "encoded_hex": "88BB89A881408F7981408AE1894C88C6816300",
+    "encoded_length": 19
+   }
+  ],
+  "1058": [
+   {
+    "id": "iso:022BE15",
+    "master_id": "iso:022BE15",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "15AE01",
+    "original_raw_length": 6,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "농담이야",
+    "encoded_hex": "90CB8CE8889F88D800",
+    "encoded_length": 9
+   }
+  ],
+  "1154": [
+   {
+    "id": "iso:025C88D",
+    "master_id": "iso:025C88D",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "8DB801",
+    "original_raw_length": 13,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "쿨쿨…",
+    "encoded_hex": "8EA38EA3816300",
+    "encoded_length": 7
+   },
+   {
+    "id": "iso:025C89C",
+    "master_id": "iso:025C89C",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "9CB801",
+    "original_raw_length": 13,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "쿨쿨…",
+    "encoded_hex": "8EA38EA3816300",
+    "encoded_length": 7
+   },
+   {
+    "id": "iso:025C8AB",
+    "master_id": "iso:025C8AB",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "ABB801",
+    "original_raw_length": 13,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "쿨쿨…",
+    "encoded_hex": "8EA38EA3816300",
+    "encoded_length": 7
+   },
+   {
+    "id": "iso:025C8BA",
+    "master_id": "iso:025C8BA",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "BAB801",
+    "original_raw_length": 13,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "쿨쿨…",
+    "encoded_hex": "8EA38EA3816300",
+    "encoded_length": 7
+   },
+   {
+    "id": "iso:025C8C9",
+    "master_id": "iso:025C8C9",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "C9B801",
+    "original_raw_length": 13,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "쿨쿨…",
+    "encoded_hex": "8EA38EA3816300",
+    "encoded_length": 7
+   }
+  ],
+  "1250": [
+   {
+    "id": "iso:028BC7F",
+    "master_id": "iso:028BC7F",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "7FAC01",
+    "original_raw_length": 13,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "침대는 2층이야",
+    "encoded_hex": "8AC9894488A6814082518CE7889F88D800",
+    "encoded_length": 17
+   },
+   {
+    "id": "iso:028C47B",
+    "master_id": "iso:028C47B",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "7BB401",
+    "original_raw_length": 13,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "침대는 2층이야",
+    "encoded_hex": "8AC9894488A6814082518CE7889F88D800",
+    "encoded_length": 17
+   },
+   {
+    "id": "iso:028C8AC",
+    "master_id": "iso:028C8AC",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "ACB801",
+    "original_raw_length": 12,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "＊고장난 시계다",
+    "encoded_hex": "819688B1897B8A44814088D1895488A000",
+    "encoded_length": 17
+   }
+  ],
+  "1346": [
+   {
+    "id": "iso:02BC19A",
+    "master_id": "iso:02BC19A",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "9AB101",
+    "original_raw_length": 5,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "새근새근",
+    "encoded_hex": "8AA78B628AA78B6200",
+    "encoded_length": 9
+   },
+   {
+    "id": "iso:02BC1A5",
+    "master_id": "iso:02BC1A5",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "A5B101",
+    "original_raw_length": 5,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "새근새근",
+    "encoded_hex": "8AA78B628AA78B6200",
+    "encoded_length": 9
+   }
+  ],
+  "1442": [
+   {
+    "id": "iso:02EACF2",
+    "master_id": "iso:02EACF2",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "F29C01",
+    "original_raw_length": 22,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "{#5}……졸려{#1}",
+    "encoded_hex": "2335816381639099896E233100",
+    "encoded_length": 13
+   },
+   {
+    "id": "iso:02EECF2",
+    "master_id": "iso:02EECF2",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "F2DC01",
+    "original_raw_length": 22,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "{#5}……졸려{#1}",
+    "encoded_hex": "2335816381639099896E233100",
+    "encoded_length": 13
+   },
+   {
+    "id": "iso:02F0CF2",
+    "master_id": "iso:02F0CF2",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "F2FC01",
+    "original_raw_length": 22,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "{#5}……졸려{#1}",
+    "encoded_hex": "2335816381639099896E233100",
+    "encoded_length": 13
+   }
+  ],
+  "1538": [
+   {
+    "id": "iso:031AE81",
+    "master_id": "iso:031AE81",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "819E01",
+    "original_raw_length": 12,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "리아는・・・?",
+    "encoded_hex": "88B788AD88A6814581458145814800",
+    "encoded_length": 15
+   },
+   {
+    "id": "iso:031B546",
+    "master_id": "iso:031B546",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "46A501",
+    "original_raw_length": 17,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "꼬끼오오오!!",
+    "encoded_hex": "8DBF8C4B88DE88DE88DE8149814900",
+    "encoded_length": 15
+   },
+   {
+    "id": "iso:031B559",
+    "master_id": "iso:031B559",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "59A501",
+    "original_raw_length": 15,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "꼬꼬댁꼬꼬!",
+    "encoded_hex": "8DBF8DBF8FFB8DBF8DBF814900",
+    "encoded_length": 13
+   },
+   {
+    "id": "iso:031EE81",
+    "master_id": "iso:031EE81",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "81DE01",
+    "original_raw_length": 12,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "리아는・・・?",
+    "encoded_hex": "88B788AD88A6814581458145814800",
+    "encoded_length": 15
+   },
+   {
+    "id": "iso:0320E81",
+    "master_id": "iso:0320E81",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "81FE01",
+    "original_raw_length": 12,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "리아는・・・?",
+    "encoded_hex": "88B788AD88A6814581458145814800",
+    "encoded_length": 15
+   }
+  ],
+  "1634": [
+   {
+    "id": "iso:034B63B",
+    "master_id": "iso:034B63B",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "3BA601",
+    "original_raw_length": 10,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "새근~새근~새근~",
+    "encoded_hex": "8AA78B6281608AA78B6281608AA78B62816000",
+    "encoded_length": 19
+   }
+  ],
+  "1730": [
+   {
+    "id": "iso:037C5EC",
+    "master_id": "iso:037C5EC",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "ECB501",
+    "original_raw_length": 19,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "{#5}음・・・잠이덜 깼군{#1}",
+    "encoded_hex": "233589868145814581458AB0889F90B2814093E58964233100",
+    "encoded_length": 25
+   },
+   {
+    "id": "iso:037C6EA",
+    "master_id": "iso:037C6EA",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "EAB601",
+    "original_raw_length": 19,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "{#5}음・・・잠이덜 깼군{#1}",
+    "encoded_hex": "233589868145814581458AB0889F90B2814093E58964233100",
+    "encoded_length": 25
+   },
+   {
+    "id": "iso:037C892",
+    "master_id": "iso:037C892",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "92B801",
+    "original_raw_length": 19,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "{#5}음・・・잠이덜 깼군{#1}",
+    "encoded_hex": "233589868145814581458AB0889F90B2814093E58964233100",
+    "encoded_length": 25
+   },
+   {
+    "id": "iso:037C983",
+    "master_id": "iso:037C983",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "83B901",
+    "original_raw_length": 19,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "{#5}음・・・잠이덜 깼군{#1}",
+    "encoded_hex": "233589868145814581458AB0889F90B2814093E58964233100",
+    "encoded_length": 25
+   },
+   {
+    "id": "iso:037D0C5",
+    "master_id": "iso:037D0C5",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "C5C001",
+    "original_raw_length": 35,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "쿨쿨・・・ 쿨쿨・・・",
+    "encoded_hex": "8EA38EA381458145814581408EA38EA381458145814500",
+    "encoded_length": 23
+   },
+   {
+    "id": "iso:037D633",
+    "master_id": "iso:037D633",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "33C601",
+    "original_raw_length": 21,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "쿨・・・ 새근・・・",
+    "encoded_hex": "8EA381458145814581408AA78B6281458145814500",
+    "encoded_length": 21
+   },
+   {
+    "id": "iso:037D68B",
+    "master_id": "iso:037D68B",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "8BC601",
+    "original_raw_length": 17,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "새근・・・새근・・・",
+    "encoded_hex": "8AA78B628145814581458AA78B6281458145814500",
+    "encoded_length": 21
+   }
+  ],
+  "1826": [
+   {
+    "id": "iso:03ABA19",
+    "master_id": "iso:03ABA19",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "19AA01",
+    "original_raw_length": 3,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "휙",
+    "encoded_hex": "93E300",
+    "encoded_length": 3
+   },
+   {
+    "id": "iso:03AC3E4",
+    "master_id": "iso:03AC3E4",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "E4B301",
+    "original_raw_length": 12,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "그럼 잘 부탁하네",
+    "encoded_hex": "88BB89A881408ABA8140894F8B4588AF88EB00",
+    "encoded_length": 19
+   },
+   {
+    "id": "iso:03AD729",
+    "master_id": "iso:03AD729",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "29C701",
+    "original_raw_length": 12,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "・・・심술쟁이",
+    "encoded_hex": "8145814581458A5C8A598FB1889F00",
+    "encoded_length": 15
+   },
+   {
+    "id": "iso:03AD739",
+    "master_id": "iso:03AD739",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "39C701",
+    "original_raw_length": 17,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "쿨쿨・・・",
+    "encoded_hex": "8EA38EA381458145814500",
+    "encoded_length": 11
+   },
+   {
+    "id": "iso:03AD7F3",
+    "master_id": "iso:03AD7F3",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "F3C701",
+    "original_raw_length": 5,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "새근새근",
+    "encoded_hex": "8AA78B628AA78B6200",
+    "encoded_length": 9
+   }
+  ],
+  "2018": [
+   {
+    "id": "iso:040B465",
+    "master_id": "iso:040B465",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "65A401",
+    "original_raw_length": 20,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "축축하고 궂은 날씨야・・・",
+    "encoded_hex": "8F7A8F7A88AF88B1814093E688B981408A6A8A4D88D881458145814500",
+    "encoded_length": 29
+   }
+  ],
+  "2210": [
+   {
+    "id": "iso:046B182",
+    "master_id": "iso:046B182",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "82A101",
+    "original_raw_length": 7,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "고맙습니다！ 또 오세요！",
+    "encoded_hex": "88B18D61896288BC88A0814981408A8E814088DE894C88C6814900",
+    "encoded_length": 27
+   },
+   {
+    "id": "iso:046B19C",
+    "master_id": "iso:046B19C",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "9CA101",
+    "original_raw_length": 7,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "고맙습니다！ 또 오세요！",
+    "encoded_hex": "88B18D61896288BC88A0814981408A8E814088DE894C88C6814900",
+    "encoded_length": 27
+   },
+   {
+    "id": "iso:046B973",
+    "master_id": "iso:046B973",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "73A901",
+    "original_raw_length": 13,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "・・・・・・",
+    "encoded_hex": "81458145814581458145814500",
+    "encoded_length": 13
+   },
+   {
+    "id": "iso:046BA19",
+    "master_id": "iso:046BA19",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "19AA01",
+    "original_raw_length": 16,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "・・・세상은넓구나",
+    "encoded_hex": "814581458145894C894688B98EE0894788B400",
+    "encoded_length": 19
+   }
+  ],
+  "2306": [
+   {
+    "id": "iso:049BF8D",
+    "master_id": "iso:049BF8D",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "8DAF01",
+    "original_raw_length": 10,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "그럼 푹 쉬세요",
+    "encoded_hex": "88BB89A881408F7981408AE1894C88C600",
+    "encoded_length": 17
+   }
+  ],
+  "2498": [
+   {
+    "id": "iso:04FB9F9",
+    "master_id": "iso:04FB9F9",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "F9A901",
+    "original_raw_length": 19,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "쿨・・・ 쿨・・・",
+    "encoded_hex": "8EA381458145814581408EA381458145814500",
+    "encoded_length": 19
+   },
+   {
+    "id": "iso:04FBE09",
+    "master_id": "iso:04FBE09",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "09AE01",
+    "original_raw_length": 21,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "드르렁・・・고오・・・",
+    "encoded_hex": "8990897E905A81458145814588B188DE81458145814500",
+    "encoded_length": 23
+   }
+  ],
+  "2594": [
+   {
+    "id": "iso:052BBEA",
+    "master_id": "iso:052BBEA",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "EAAB01",
+    "original_raw_length": 9,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "깨갱깨갱!",
+    "encoded_hex": "8DB293E88DB293E8814900",
+    "encoded_length": 11
+   },
+   {
+    "id": "iso:052BBF7",
+    "master_id": "iso:052BBF7",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "F7AB01",
+    "original_raw_length": 11,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "깽깽!",
+    "encoded_hex": "8FA78FA7814900",
+    "encoded_length": 7
+   }
+  ],
+  "3266": [
+   {
+    "id": "iso:067B176",
+    "master_id": "iso:067B176",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "76A101",
+    "original_raw_length": 7,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "…",
+    "encoded_hex": "816300",
+    "encoded_length": 3
+   },
+   {
+    "id": "iso:067FA00",
+    "master_id": "iso:067FA00",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "00EA01",
+    "original_raw_length": 14,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "들을지도・・・",
+    "encoded_hex": "88D288AA88A188BD81458145814500",
+    "encoded_length": 15
+   }
+  ],
+  "3362": [
+   {
+    "id": "iso:06AB032",
+    "master_id": "iso:06AB032",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "32A001",
+    "original_raw_length": 19,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "・・・아, 안녕・・・",
+    "encoded_hex": "81458145814588AD81438140895D8DE981458145814500",
+    "encoded_length": 23
+   },
+   {
+    "id": "iso:06AB0DD",
+    "master_id": "iso:06AB0DD",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "DDA001",
+    "original_raw_length": 15,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "아아아아아아!!!",
+    "encoded_hex": "88AD88AD88AD88AD88AD88AD81498149814900",
+    "encoded_length": 19
+   }
+  ],
+  "3458": [
+   {
+    "id": "iso:06DA03E",
+    "master_id": "iso:06DA03E",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "3E9001",
+    "original_raw_length": 13,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "그르르르・・・",
+    "encoded_hex": "88BB897E897E897E81458145814500",
+    "encoded_length": 15
+   },
+   {
+    "id": "iso:06DA062",
+    "master_id": "iso:06DA062",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "629001",
+    "original_raw_length": 13,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "그르르르・・・",
+    "encoded_hex": "88BB897E897E897E81458145814500",
+    "encoded_length": 15
+   }
+  ],
+  "3650": [
+   {
+    "id": "iso:073A1F0",
+    "master_id": "iso:073A1F0",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "F09101",
+    "original_raw_length": 7,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "붉은 상",
+    "encoded_hex": "8F6588B98140894600",
+    "encoded_length": 9
+   },
+   {
+    "id": "iso:073A202",
+    "master_id": "iso:073A202",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "029201",
+    "original_raw_length": 7,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "푸른 상",
+    "encoded_hex": "8E428ADA8140894600",
+    "encoded_length": 9
+   },
+   {
+    "id": "iso:073A20B",
+    "master_id": "iso:073A20B",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "0B9201",
+    "original_raw_length": 9,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "노란상이다",
+    "encoded_hex": "8A8689C88946889F88A000",
+    "encoded_length": 11
+   },
+   {
+    "id": "iso:073E1F0",
+    "master_id": "iso:073E1F0",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "F0D101",
+    "original_raw_length": 7,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "붉은 상",
+    "encoded_hex": "8F6588B98140894600",
+    "encoded_length": 9
+   },
+   {
+    "id": "iso:073E202",
+    "master_id": "iso:073E202",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "02D201",
+    "original_raw_length": 7,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "푸른 상",
+    "encoded_hex": "8E428ADA8140894600",
+    "encoded_length": 9
+   },
+   {
+    "id": "iso:073E20B",
+    "master_id": "iso:073E20B",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "0BD201",
+    "original_raw_length": 9,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "노란상이다",
+    "encoded_hex": "8A8689C88946889F88A000",
+    "encoded_length": 11
+   },
+   {
+    "id": "iso:07401F0",
+    "master_id": "iso:07401F0",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "F0F101",
+    "original_raw_length": 7,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "붉은 상",
+    "encoded_hex": "8F6588B98140894600",
+    "encoded_length": 9
+   },
+   {
+    "id": "iso:0740202",
+    "master_id": "iso:0740202",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "02F201",
+    "original_raw_length": 7,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "푸른 상",
+    "encoded_hex": "8E428ADA8140894600",
+    "encoded_length": 9
+   },
+   {
+    "id": "iso:074020B",
+    "master_id": "iso:074020B",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "0BF201",
+    "original_raw_length": 9,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "노란상이다",
+    "encoded_hex": "8A8689C88946889F88A000",
+    "encoded_length": 11
+   }
+  ],
+  "3746": [
+   {
+    "id": "iso:076B815",
+    "master_id": "iso:076B815",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "15A801",
+    "original_raw_length": 11,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "흑마노를 뺐다",
+    "encoded_hex": "8C8488B88A8688D48140917D88A000",
+    "encoded_length": 15
+   },
+   {
+    "id": "iso:076BA6E",
+    "master_id": "iso:076BA6E",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "6EAA01",
+    "original_raw_length": 13,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "흑마노를 들어 올리겠습니까",
+    "encoded_hex": "8C8488B88A8688D4814088D288B081408B7388B788FC896288BC894000",
+    "encoded_length": 29
+   },
+   {
+    "id": "iso:076BA8A",
+    "master_id": "iso:076BA8A",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "8AAA01",
+    "original_raw_length": 11,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "흑마노를 들어 올렸다",
+    "encoded_hex": "8C8488B88A8688D4814088D288B081408B738B6888A000",
+    "encoded_length": 23
+   },
+   {
+    "id": "iso:076BB74",
+    "master_id": "iso:076BB74",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "74AB01",
+    "original_raw_length": 11,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "흑마노를 뺐다",
+    "encoded_hex": "8C8488B88A8688D48140917D88A000",
+    "encoded_length": 15
+   },
+   {
+    "id": "iso:076BDAA",
+    "master_id": "iso:076BDAA",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "AAAD01",
+    "original_raw_length": 13,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "흑마노를 들어 올리겠습니까",
+    "encoded_hex": "8C8488B88A8688D4814088D288B081408B7388B788FC896288BC894000",
+    "encoded_length": 29
+   },
+   {
+    "id": "iso:076BDC2",
+    "master_id": "iso:076BDC2",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "C2AD01",
+    "original_raw_length": 11,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "흑마노를 들어 올렸다",
+    "encoded_hex": "8C8488B88A8688D4814088D288B081408B738B6888A000",
+    "encoded_length": 23
+   },
+   {
+    "id": "iso:076BEDF",
+    "master_id": "iso:076BEDF",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "DFAE01",
+    "original_raw_length": 11,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "흑마노를 뺐다",
+    "encoded_hex": "8C8488B88A8688D48140917D88A000",
+    "encoded_length": 15
+   },
+   {
+    "id": "iso:076C0E1",
+    "master_id": "iso:076C0E1",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "E1B001",
+    "original_raw_length": 13,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "흑마노를 들어 올리겠습니까",
+    "encoded_hex": "8C8488B88A8688D4814088D288B081408B7388B788FC896288BC894000",
+    "encoded_length": 29
+   },
+   {
+    "id": "iso:076C0F9",
+    "master_id": "iso:076C0F9",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "F9B001",
+    "original_raw_length": 11,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "흑마노를 들어 올렸다",
+    "encoded_hex": "8C8488B88A8688D4814088D288B081408B738B6888A000",
+    "encoded_length": 23
+   }
+  ],
+  "4418": [
+   {
+    "id": "iso:08BFA00",
+    "master_id": "iso:08BFA00",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "00EA01",
+    "original_raw_length": 14,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "들을지도・・・",
+    "encoded_hex": "88D288AA88A188BD81458145814500",
+    "encoded_length": 15
+   }
+  ],
+  "4610": [
+   {
+    "id": "iso:0919DC1",
+    "master_id": "iso:0919DC1",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "C18D01",
+    "original_raw_length": 14,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "・・・트・・・",
+    "encoded_hex": "81458145814588DD81458145814500",
+    "encoded_length": 15
+   },
+   {
+    "id": "iso:0919DDA",
+    "master_id": "iso:0919DDA",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "DA8D01",
+    "original_raw_length": 11,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "페이트・・・",
+    "encoded_hex": "88FB889F88DD81458145814500",
+    "encoded_length": 13
+   }
+  ],
+  "4994": [
+   {
+    "id": "iso:09DABCE",
+    "master_id": "iso:09DABCE",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "CE9B01",
+    "original_raw_length": 12,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "라이히풀을 찾았다",
+    "encoded_hex": "88B2889F89818D6988AA81408A5D8A6088A000",
+    "encoded_length": 19
+   },
+   {
+    "id": "iso:09DAC8E",
+    "master_id": "iso:09DAC8E",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "8E9C01",
+    "original_raw_length": 7,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "…",
+    "encoded_hex": "816300",
+    "encoded_length": 3
+   }
+  ],
+  "5378": [
+   {
+    "id": "iso:0A9B106",
+    "master_id": "iso:0A9B106",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "06A101",
+    "original_raw_length": 14,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "{~}{~}{~}{~}{~}한달 후",
+    "encoded_hex": "7E7E7E7E7E88DC8BCC81408A9000",
+    "encoded_length": 14
+   },
+   {
+    "id": "iso:0A9B134",
+    "master_id": "iso:0A9B134",
+    "b3_status": "GAP_SUPPLEMENT_INDEX",
+    "source_key_u24le": "34A101",
+    "original_raw_length": 5,
+    "reference_kind": "GAP_SUPPLEMENT_OPCODE02",
+    "ko_repaginated": "페이트",
+    "encoded_hex": "88FB889F88DD00",
+    "encoded_length": 7
+   }
+  ]
+ }
+}

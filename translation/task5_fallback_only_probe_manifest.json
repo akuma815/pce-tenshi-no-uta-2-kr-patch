@@ -1,0 +1,71 @@
+{
+  "format": "TASK5-FALLBACK-ONLY-PROBE",
+  "version": 1,
+  "task": 5,
+  "status": "RUNTIME_FAIL",
+  "hypothesis": "the delayed Memo corruption requires execution of the custom glyph branch rather than hook installation or call redirection alone",
+  "present_variables": [
+    "JSR C737 call redirection",
+    "exact 55-byte Task 5 dispatcher",
+    "original Japanese dialogue"
+  ],
+  "absent_variables": [
+    "EF58..EF5F dialogue replacement",
+    "C800..C8FF glyph page",
+    "custom branch execution on the tested dialogue"
+  ],
+  "runtime_decision": {
+    "memo_responsive": "hook installation/fallback is safe; custom branch execution is required for the failure",
+    "memo_hangs": "custom branch is not required; investigate call redirection or C737 code occupancy"
+  },
+  "expected_writes": [
+    {
+      "id": "field-getfnt-call",
+      "iso_offset": "0x8667E",
+      "physical_bin_offset": "0x812A6E",
+      "length": 3,
+      "expected_hex": "2060E0",
+      "replacement_hex": "2037C7",
+      "reason": "route the live field call through the installed hook"
+    },
+    {
+      "id": "fallback-hook-only",
+      "iso_offset": "0x89737",
+      "physical_bin_offset": "0x815B27",
+      "length": 55,
+      "expected_hex": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF",
+      "replacement_hex": "A5F9C9EFD02EA5F838E958C908B0250A0A0A0A0AAAA000BD00C891FAE8C8C020D0F518A5FA691885FA9002E6FBA900A200A0FF604C60E0",
+      "reason": "install the exact original Task 5 hook without custom text or glyph data"
+    }
+  ],
+  "diff_audit": {
+    "declared_span_count": 2,
+    "actual_changed_bytes": 56,
+    "actual_changed_ranges": [
+      {
+        "physical_start": "0x812A6F",
+        "physical_end_exclusive": "0x812A71",
+        "changed_bytes": 2
+      },
+      {
+        "physical_start": "0x815B27",
+        "physical_end_exclusive": "0x815B59",
+        "changed_bytes": 50
+      },
+      {
+        "physical_start": "0x815B5A",
+        "physical_end_exclusive": "0x815B5E",
+        "changed_bytes": 4
+      }
+    ],
+    "undeclared_changes": 0,
+    "file_size_preserved": true
+  },
+  "output": {
+    "bin": "Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_task5_fallback_only_probe.bin",
+    "bin_size": 523184384,
+    "bin_sha256": "06C165962CAD28D45E019A4F29BAF818768773FAAA0EF179EE24B66060F9733A",
+    "cue": "Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_task5_fallback_only_probe.cue",
+    "cue_sha256": "A95978B93D44034AA652BCD61F57078521ECEF64F43D2AC49E672B276C838898"
+  }
+}

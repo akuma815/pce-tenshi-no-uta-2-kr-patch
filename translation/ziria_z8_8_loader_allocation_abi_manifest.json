@@ -1,0 +1,173 @@
+{
+  "format": "ZIRIA-Z8.8-LOADER-ALLOCATION-ABI",
+  "version": 1,
+  "task": "Z8.8-loader-owned-allocation-and-reader-ABI",
+  "status": "ABI_PASS_UNCHANGED_WIRE_ALLOCATION_FAIL",
+  "mutation_scope": "analysis-only; no CUE/BIN/ISO or emulated-state writes",
+  "inputs": {
+    "source_index": {
+      "path": "translation/ziria_z8_field_source_key_index.tsv",
+      "sha256": "A690E2E8F11E09032FD757C26916F828C5F03778FDE4A25A841F55D0C48D3869"
+    },
+    "wire_manifest": {
+      "path": "translation/ziria_z8_field_redirect_format_manifest.json",
+      "sha256": "85E8356E9934B37C17D43E29D77FC75B3FB0A5E38633C868CEA09E26A3D64C57"
+    },
+    "wire_spec": {
+      "path": "module_relink/z8_field_redirect_format/field_dialogue_format.json",
+      "sha256": "EBB07CEEE44D2C0A74F3BD08E461BD3104EC54F11BCF5205DCC60DCEE85246B4"
+    },
+    "loader_reference": {
+      "path": "module_relink/z8_field_dialogue_refs/loader_reference.json",
+      "sha256": "F2DDD758A9DADD0F951F66F41E9FE8A03B810276AB353846F2F8AFBF82D0F5B2"
+    },
+    "linker_layout": {
+      "path": "module_relink/linker_layout.json",
+      "sha256": "C399EB3DBA11587A81C9AA85CBAE55BAFCF05D5FF07A6650BB15CE0856D7B2E3"
+    },
+    "extension_registry": {
+      "path": "module_relink/extension_registry.json",
+      "sha256": "DD7FD9C15B5E0B516933B2558D110EE91F625392BA1C15032DAE72D223562790"
+    },
+    "engine": {
+      "path": "module_relink/track02/semantic_modules/field.main_engine_lba0258_s20.bin",
+      "sha256": "8C0573AEB900A5897402205908E02E501CC608C8EC8F2DB5F3ADA3A9E2D8A230"
+    },
+    "track02_iso": {
+      "path": "extracted_bin/Track02_data.iso",
+      "sha256": "7566073A2AA1F48E7B39ED2B34277D9935FADE8A3FAD7DCC72C21276E2632AF9"
+    }
+  },
+  "loader_owned_storage": {
+    "scene": {
+      "lba": 482,
+      "sectors": 96,
+      "bytes": 196608,
+      "banks": "0x68-0x7F"
+    },
+    "resident_bank_owners": [
+      {
+        "owner": "scene.field_start",
+        "banks": "0x68-0x7F",
+        "count": 24,
+        "lifetime": "current scene; replaced atomically by battle/tower scene load"
+      },
+      {
+        "owner": "field.main_engine",
+        "banks": "0x80-0x84",
+        "count": 5,
+        "lifetime": "field-family resident"
+      },
+      {
+        "owner": "field.resource",
+        "banks": "0x85-0x87",
+        "count": 3,
+        "lifetime": "field-family resident"
+      }
+    ],
+    "covered_bank_count": 32,
+    "covered_interval": "0x68-0x87",
+    "free_persistent_bank_count": 0,
+    "approved_extension_allocations": 0,
+    "prohibited": [
+      "auto_sidecar",
+      "fill_run",
+      "implicit_gap",
+      "shared_scene_bank",
+      "work_ram"
+    ],
+    "source_reclaim": {
+      "ranges": 235,
+      "merged_runs": 229,
+      "bytes": 14816,
+      "largest_run_bytes": 344,
+      "asset_bytes": 26852,
+      "gross_margin_bytes": -12036,
+      "ranges_path": "module_relink/z8_8_loader_allocation_abi/source_reclaim_ranges.tsv"
+    },
+    "unchanged_wire_asset_fit": {
+      "index": {
+        "bytes": 2852,
+        "requires_contiguous": true,
+        "largest_reclaim_run_bytes": 344,
+        "fits_unchanged_wire": false
+      },
+      "text": {
+        "bytes": 14640,
+        "requires_contiguous": true,
+        "largest_reclaim_run_bytes": 344,
+        "fits_unchanged_wire": false
+      },
+      "glyphs_packed18": {
+        "bytes": 9360,
+        "requires_contiguous": true,
+        "largest_reclaim_run_bytes": 344,
+        "fits_unchanged_wire": false
+      }
+    },
+    "unchanged_wire_all_assets_fit": false,
+    "decision": "FAIL: aggregate reclaim bytes do not create the contiguous index/text/glyph blobs required by Z8.7"
+  },
+  "reader_abi": {
+    "entry": "0x4036 -> JMP 0x4284",
+    "dispatch_order": [
+      {
+        "condition": "RAM $55 != 0",
+        "reader": "ptr54",
+        "cursor": "$54/$55",
+        "runtime": "0x42BA"
+      },
+      {
+        "condition": "RAM $53 != 0",
+        "reader": "ptr52",
+        "cursor": "$52/$53",
+        "runtime": "0x42AB"
+      },
+      {
+        "condition": "RAM $2E69 != 0",
+        "reader": "overlay",
+        "cursor": "$4B/$4C",
+        "runtime": "0x42D2/0x42DE"
+      },
+      {
+        "condition": "otherwise",
+        "reader": "main",
+        "cursor": "$4B/$4C",
+        "runtime": "0x4293"
+      }
+    ],
+    "return_contract": {
+      "value": "next stream byte in A and RAM $2D80",
+      "x": "preserved by all four reader paths",
+      "y": "preserved by all four reader paths",
+      "flags": "N/Z reflect final LDA $2D80; other arithmetic flags are not an ABI promise",
+      "mpr": "main saves/restores MPR2-4; overlay saves/restores MPR6; ptr52/ptr54 do not remap"
+    },
+    "continuation": {
+      "main": "increment $4B/$4C",
+      "overlay": "increment $4B/$4C while MPR6 maps $22D0 + $2E69",
+      "ptr52": "increment $52/$53; NUL is returned normally",
+      "ptr54": "increment $54/$55; NUL clears $54/$55 and immediately fetches from main $4B/$4C"
+    },
+    "reader_engine_offset": "0x0284-0x02EF",
+    "reader_sha256": "28E1548CC20637BFB0FB4520FB0B5C995E85C3BF135D912D8329494DA11C4615",
+    "direct_jsr_4036_count_in_engine": 80,
+    "status": "STATIC_ABI_PASS"
+  },
+  "gate": {
+    "abi": "PASS",
+    "loader_owned_allocation_for_unchanged_z8_7_wire": "FAIL",
+    "disc_build": "BLOCKED",
+    "reason": "no approved persistent bank and no reclaim run can hold any required contiguous wire blob"
+  },
+  "next_gate": {
+    "id": "Z8.9",
+    "goal": "redesign storage representation for fragmented scene-owned ranges or reduce runtime assets before any disc mutation",
+    "requirements": [
+      "preserve the proven $4036 reader ABI",
+      "do not depend on cross-family persistence in banks 0x68-0x7F",
+      "replace Z8.7 contiguous target semantics only through a versioned wire format",
+      "prove every fragment and lookup access before generating CUE/BIN/ISO"
+    ]
+  }
+}

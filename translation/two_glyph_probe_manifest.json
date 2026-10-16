@@ -1,0 +1,83 @@
+{
+ "format": "SYSTEM-CARD-MODE1-TWO-GLYPH-GATE",
+ "runtime_status": "FAIL_2026_07_17_SUPERSEDED_BY_RETEST_PASS_2026_08_22",
+ "purpose": "Distinguish unsafe high-index BIOS storage from multi-glyph/text-path failure.",
+ "input": {
+  "original_bin_sha256": "d16d29eb80b1b74a2ec929924349256b50b8f9f5c9a3fa37b6fcc08b059b22c5",
+  "original_bios_sha1": "79f5ff55dd10187c7fd7b8daab0b3ffbd1f56a2c",
+  "master_row_id": "iso:010B9E7",
+  "source_iso_offset": 1096167
+ },
+ "mapping": {
+  "여": {
+   "sjis": "8F6F",
+   "glyph_index": 1722,
+   "bios_offset": 227604
+  },
+  "어": {
+   "sjis": "8F6D",
+   "glyph_index": 1720,
+   "bios_offset": 227568
+  }
+ },
+ "game_write": {
+  "iso_offset": 1096178,
+  "capacity": 7,
+  "expected_hex": "6F2D8141BCB5DD",
+  "replacement_hex": "8F6F8F6D202020",
+  "visible_text": "여어"
+ },
+ "safety": {
+  "font_mode": 1,
+  "glyph_bytes": 18,
+  "bios_expected_writes": 2,
+  "bios_diff_bytes": 35,
+  "game_expected_writes": 1,
+  "game_diff_bytes": 7,
+  "speaker_runs_changed": 0,
+  "control_bytes_changed": 0
+ },
+ "diff_ranges": {
+  "bios": [
+   [
+    227568,
+    227586
+   ],
+   [
+    227604,
+    227605
+   ],
+   [
+    227606,
+    227622
+   ]
+  ],
+  "game_physical": [
+   [
+    9010658,
+    9010665
+   ]
+  ]
+ },
+ "outputs": {
+  "bios": "G:\\Downloads\\Tenshi no Uta II - Datenshi no Sentaku (Japan)\\SystemCard3_KoreanFont_two_glyph_probe.pce",
+  "bios_sha256": "e0463c210400f483cf29b41649f14900321978c95d8d119b4fc31cd1b8ec4a6f",
+  "bin": "G:\\Downloads\\Tenshi no Uta II - Datenshi no Sentaku (Japan)\\Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_two_glyph_probe.bin",
+  "bin_sha256": "45f5e13f450fc19799a02b726946cff2a570fa9840ef96404bf617895ab82a42",
+  "cue": "G:\\Downloads\\Tenshi no Uta II - Datenshi no Sentaku (Japan)\\Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_two_glyph_probe.cue",
+  "bizhawk_config": "G:\\Downloads\\Tenshi no Uta II - Datenshi no Sentaku (Japan)\\translation\\two_glyph_probe_bizhawk_config.ini"
+ },
+ "pass_criteria": "Startup/game graphics remain normal and the first dialogue body displays 여어.",
+ "fail_criteria": "Startup/global graphics corrupt, or the first dialogue does not display the two mapped glyphs.",
+ "next_if_pass": "Expand only within a runtime-proven contiguous ordinary-kanji slot window.",
+ "next_if_fail": "Keep only index 1722 and test index 1720 independently; do not expand BIOS slot replacement.",
+ "runtime_observation": "System Card startup/global graphics corrupted identically.",
+ "runtime_conclusion": "The two-glyph BIOS differs from the passed baseline at both index 1722 glyph content and the new index 1720 slot; exact-baseline E2E is required to isolate BIOS from game text.",
+ "replacement_probe": "G:\\Downloads\\Tenshi no Uta II - Datenshi no Sentaku (Japan)\\Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_one_glyph_e2e_probe.cue",
+ "runtime_retest_2026_08_22": {
+  "environment": "project BizHawk 2.11.2, translation/bios_retest_2026-08-22/cfg_experiment1_play.ini, original game BIN (sha256 d16d29eb...)",
+  "result": "PASS",
+  "observation": "부트·타이틀·인트로 정상. 첫 대사에서 出 위치가 여로 렌더(사용자 스크린샷: 支度は여来たのかフェイト). 첫 전투와 필드 복귀까지 이상 없음.",
+  "conclusion": "2026-07-17의 시작화면 손상 FAIL은 재현되지 않음. 구 테스트 환경(H:\\BizHawk) 오염으로 판정. slot 1720/1722 동시 교체는 인게임까지 안전."
+ }
+}

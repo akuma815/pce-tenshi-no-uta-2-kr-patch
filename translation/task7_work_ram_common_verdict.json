@@ -1,0 +1,45 @@
+{
+  "format": "TASK7-WORK-RAM-COMMON-LIFETIME-VERDICT",
+  "version": 1,
+  "task": 7,
+  "status": "COMMON_CANDIDATE_FOUND_NEUTRAL_TOWER_POC_REQUIRED",
+  "inputs": [
+    {
+      "path": "translation/task7_work_ram_lifetime_verdict.json",
+      "sha256": "1E9F32AA8DFBADFA6CF265E279AFC3DC8851A2D61AAB030D490BDE09533B62C7",
+      "window_frames": 3122,
+      "events": [
+        "INIT\tframe=0\tmode=WORK_RAM_LONG\ttarget_lba=482\ttarget_count=96",
+        "TARGET_CD_READ\tframe=1010\tlba=482\tcount=96\tdest_bank=68\tmode=06\treturn_pc=66FF\tmpr=FF,F8,80,81,82,83,84,00",
+        "WINDOW_START\tframe=1075\treturn_pc=66FF\tmpr=FF,F8,80,81,82,83,84,00",
+        "CD_READ\tframe=2302\tlba=290\tcount=96\tdest_bank=68\tmode=06\tmpr=FF,F8,80,81,82,83,84,00",
+        "CD_READ\tframe=4049\tlba=482\tcount=96\tdest_bank=68\tmode=06\tmpr=FF,F8,80,81,82,83,84,00"
+      ]
+    },
+    {
+      "path": "translation/task7_work_ram_tower_verdict.json",
+      "sha256": "5531D785311567994B0139643B9F666FB233CD2BEF21E89374C9946B7549D682",
+      "window_frames": 2552,
+      "events": [
+        "INIT\tframe=0\tmode=WORK_RAM_LONG\ttarget_lba=482\ttarget_count=96",
+        "TARGET_CD_READ\tframe=1026\tlba=482\tcount=96\tdest_bank=68\tmode=06\treturn_pc=66FF\tmpr=FF,F8,80,81,82,83,84,00",
+        "WINDOW_START\tframe=1091\treturn_pc=66FF\tmpr=FF,F8,80,81,82,83,84,00",
+        "CD_READ\tframe=1897\tlba=290\tcount=96\tdest_bank=68\tmode=06\tmpr=FF,F8,80,81,82,83,84,00",
+        "CD_READ\tframe=2322\tlba=2882\tcount=96\tdest_bank=68\tmode=06\tmpr=FF,F8,80,81,82,83,84,00"
+      ]
+    }
+  ],
+  "ranked_candidates": [
+    {
+      "physical_bank": "F8",
+      "logical_start": "2B0F",
+      "logical_end": "2C8E",
+      "length": 384
+    }
+  ],
+  "rejected_previous_address": {
+    "logical_start": "2AFF",
+    "reason": "The tower trace's untouched run starts at 2B0F, so at least one address in 2AFF..2B0E was accessed and overlaps the former hook image."
+  },
+  "approval_boundary": "The common span permits only a new neutral trampoline run through the tower scene. Packed-18 relocation remains pending."
+}

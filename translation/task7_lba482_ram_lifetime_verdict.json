@@ -1,0 +1,1978 @@
+{
+  "format": "TASK7-LBA482-RAM-LIFETIME-VERDICT",
+  "version": 1,
+  "task": 7,
+  "status": "CANDIDATE_FOUND_ACTUAL_LOAD_POC_REQUIRED",
+  "module_id": "loader.overlay.g02.lba482",
+  "required_contiguous_bytes": 306,
+  "trace": "translation/task7_lba482_ram_lifetime_trace.tsv",
+  "trace_sha256": "16A1BA316CD98E8993C6C006913FB0D2FE2E5481C1077BF5915F2D22E3ADE53B",
+  "plan_sha256": "D6F247BA765D943BC5FF9F8EDBBA3C3A0AE8F725F778B5C80ECC69B4F1CF982A",
+  "state": "INACTIVE_AT_EXIT",
+  "window_frames": 0,
+  "target_load_observed": true,
+  "window_start_observed": true,
+  "window_end_next_load_observed": true,
+  "all_untouched_runs": [
+    {
+      "region": "WORK_RAM",
+      "physical_bank": 248,
+      "start_offset": 256,
+      "length": 217
+    },
+    {
+      "region": "WORK_RAM",
+      "physical_bank": 248,
+      "start_offset": 530,
+      "length": 21
+    },
+    {
+      "region": "WORK_RAM",
+      "physical_bank": 248,
+      "start_offset": 637,
+      "length": 30
+    },
+    {
+      "region": "WORK_RAM",
+      "physical_bank": 248,
+      "start_offset": 677,
+      "length": 21
+    },
+    {
+      "region": "WORK_RAM",
+      "physical_bank": 248,
+      "start_offset": 702,
+      "length": 18
+    },
+    {
+      "region": "WORK_RAM",
+      "physical_bank": 248,
+      "start_offset": 726,
+      "length": 42
+    },
+    {
+      "region": "WORK_RAM",
+      "physical_bank": 248,
+      "start_offset": 2350,
+      "length": 34
+    },
+    {
+      "region": "WORK_RAM",
+      "physical_bank": 248,
+      "start_offset": 2566,
+      "length": 21
+    },
+    {
+      "region": "WORK_RAM",
+      "physical_bank": 248,
+      "start_offset": 2807,
+      "length": 408
+    },
+    {
+      "region": "WORK_RAM",
+      "physical_bank": 248,
+      "start_offset": 3298,
+      "length": 47
+    },
+    {
+      "region": "WORK_RAM",
+      "physical_bank": 248,
+      "start_offset": 3406,
+      "length": 47
+    },
+    {
+      "region": "WORK_RAM",
+      "physical_bank": 248,
+      "start_offset": 3474,
+      "length": 36
+    },
+    {
+      "region": "WORK_RAM",
+      "physical_bank": 248,
+      "start_offset": 3635,
+      "length": 37
+    },
+    {
+      "region": "WORK_RAM",
+      "physical_bank": 248,
+      "start_offset": 4072,
+      "length": 92
+    },
+    {
+      "region": "WORK_RAM",
+      "physical_bank": 248,
+      "start_offset": 4268,
+      "length": 62
+    },
+    {
+      "region": "WORK_RAM",
+      "physical_bank": 248,
+      "start_offset": 4346,
+      "length": 30
+    },
+    {
+      "region": "WORK_RAM",
+      "physical_bank": 248,
+      "start_offset": 4417,
+      "length": 32
+    },
+    {
+      "region": "WORK_RAM",
+      "physical_bank": 248,
+      "start_offset": 4454,
+      "length": 409
+    },
+    {
+      "region": "WORK_RAM",
+      "physical_bank": 248,
+      "start_offset": 4864,
+      "length": 267
+    },
+    {
+      "region": "WORK_RAM",
+      "physical_bank": 248,
+      "start_offset": 6606,
+      "length": 50
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 128,
+      "start_offset": 0,
+      "length": 33
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 128,
+      "start_offset": 144,
+      "length": 36
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 128,
+      "start_offset": 228,
+      "length": 27
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 128,
+      "start_offset": 261,
+      "length": 193
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 128,
+      "start_offset": 495,
+      "length": 41
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 128,
+      "start_offset": 683,
+      "length": 69
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 128,
+      "start_offset": 863,
+      "length": 235
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 128,
+      "start_offset": 1654,
+      "length": 106
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 128,
+      "start_offset": 1868,
+      "length": 18
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 128,
+      "start_offset": 1931,
+      "length": 65
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 128,
+      "start_offset": 2057,
+      "length": 92
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 128,
+      "start_offset": 2152,
+      "length": 39
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 128,
+      "start_offset": 2322,
+      "length": 159
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 128,
+      "start_offset": 2541,
+      "length": 40
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 128,
+      "start_offset": 2584,
+      "length": 1212
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 128,
+      "start_offset": 3826,
+      "length": 175
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 128,
+      "start_offset": 4230,
+      "length": 100
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 128,
+      "start_offset": 4359,
+      "length": 33
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 128,
+      "start_offset": 4407,
+      "length": 25
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 128,
+      "start_offset": 4457,
+      "length": 199
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 128,
+      "start_offset": 4784,
+      "length": 148
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 128,
+      "start_offset": 4965,
+      "length": 25
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 128,
+      "start_offset": 5051,
+      "length": 31
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 128,
+      "start_offset": 5097,
+      "length": 79
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 128,
+      "start_offset": 5251,
+      "length": 85
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 128,
+      "start_offset": 5413,
+      "length": 30
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 128,
+      "start_offset": 5460,
+      "length": 25
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 128,
+      "start_offset": 5677,
+      "length": 37
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 128,
+      "start_offset": 5772,
+      "length": 57
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 128,
+      "start_offset": 5836,
+      "length": 38
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 128,
+      "start_offset": 5934,
+      "length": 32
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 128,
+      "start_offset": 6109,
+      "length": 116
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 128,
+      "start_offset": 6915,
+      "length": 47
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 128,
+      "start_offset": 7177,
+      "length": 96
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 128,
+      "start_offset": 7281,
+      "length": 73
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 129,
+      "start_offset": 110,
+      "length": 133
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 129,
+      "start_offset": 466,
+      "length": 133
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 129,
+      "start_offset": 902,
+      "length": 140
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 129,
+      "start_offset": 1046,
+      "length": 257
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 129,
+      "start_offset": 1333,
+      "length": 220
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 129,
+      "start_offset": 1557,
+      "length": 77
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 129,
+      "start_offset": 1635,
+      "length": 76
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 129,
+      "start_offset": 2483,
+      "length": 887
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 129,
+      "start_offset": 3460,
+      "length": 18
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 129,
+      "start_offset": 3564,
+      "length": 24
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 129,
+      "start_offset": 3631,
+      "length": 23
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 129,
+      "start_offset": 4562,
+      "length": 47
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 129,
+      "start_offset": 4648,
+      "length": 45
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 129,
+      "start_offset": 5083,
+      "length": 30
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 129,
+      "start_offset": 5225,
+      "length": 22
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 129,
+      "start_offset": 5296,
+      "length": 47
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 129,
+      "start_offset": 5704,
+      "length": 22
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 129,
+      "start_offset": 5731,
+      "length": 22
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 129,
+      "start_offset": 6097,
+      "length": 99
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 129,
+      "start_offset": 6214,
+      "length": 39
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 129,
+      "start_offset": 6744,
+      "length": 67
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 129,
+      "start_offset": 6813,
+      "length": 55
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 129,
+      "start_offset": 7079,
+      "length": 127
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 129,
+      "start_offset": 7613,
+      "length": 148
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 129,
+      "start_offset": 7854,
+      "length": 167
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 129,
+      "start_offset": 8023,
+      "length": 48
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 129,
+      "start_offset": 8138,
+      "length": 48
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 130,
+      "start_offset": 0,
+      "length": 21
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 130,
+      "start_offset": 83,
+      "length": 24
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 130,
+      "start_offset": 109,
+      "length": 20
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 130,
+      "start_offset": 152,
+      "length": 19
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 130,
+      "start_offset": 254,
+      "length": 33
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 130,
+      "start_offset": 391,
+      "length": 65
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 130,
+      "start_offset": 554,
+      "length": 35
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 130,
+      "start_offset": 631,
+      "length": 28
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 130,
+      "start_offset": 728,
+      "length": 37
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 130,
+      "start_offset": 768,
+      "length": 22
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 130,
+      "start_offset": 938,
+      "length": 44
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 130,
+      "start_offset": 1032,
+      "length": 38
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 130,
+      "start_offset": 1375,
+      "length": 132
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 130,
+      "start_offset": 1584,
+      "length": 84
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 130,
+      "start_offset": 1707,
+      "length": 59
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 130,
+      "start_offset": 1837,
+      "length": 667
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 130,
+      "start_offset": 2612,
+      "length": 509
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 130,
+      "start_offset": 3157,
+      "length": 71
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 130,
+      "start_offset": 3353,
+      "length": 82
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 130,
+      "start_offset": 3567,
+      "length": 18
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 130,
+      "start_offset": 3667,
+      "length": 110
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 130,
+      "start_offset": 3794,
+      "length": 90
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 130,
+      "start_offset": 3961,
+      "length": 19
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 130,
+      "start_offset": 4234,
+      "length": 24
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 130,
+      "start_offset": 4288,
+      "length": 27
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 130,
+      "start_offset": 4316,
+      "length": 46
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 130,
+      "start_offset": 4444,
+      "length": 20
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 130,
+      "start_offset": 4466,
+      "length": 64
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 130,
+      "start_offset": 4643,
+      "length": 31
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 130,
+      "start_offset": 4947,
+      "length": 39
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 130,
+      "start_offset": 5119,
+      "length": 553
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 130,
+      "start_offset": 5762,
+      "length": 22
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 130,
+      "start_offset": 6292,
+      "length": 199
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 130,
+      "start_offset": 6590,
+      "length": 416
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 130,
+      "start_offset": 7048,
+      "length": 670
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 130,
+      "start_offset": 7722,
+      "length": 470
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 131,
+      "start_offset": 0,
+      "length": 5998
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 131,
+      "start_offset": 6013,
+      "length": 100
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 131,
+      "start_offset": 6119,
+      "length": 28
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 131,
+      "start_offset": 6148,
+      "length": 683
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 131,
+      "start_offset": 6852,
+      "length": 36
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 131,
+      "start_offset": 6889,
+      "length": 33
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 131,
+      "start_offset": 6951,
+      "length": 18
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 131,
+      "start_offset": 6982,
+      "length": 468
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 131,
+      "start_offset": 7502,
+      "length": 690
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 132,
+      "start_offset": 0,
+      "length": 2048
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 132,
+      "start_offset": 2192,
+      "length": 220
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 132,
+      "start_offset": 2414,
+      "length": 62
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 132,
+      "start_offset": 2478,
+      "length": 189
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 132,
+      "start_offset": 2668,
+      "length": 5524
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 133,
+      "start_offset": 4096,
+      "length": 242
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 133,
+      "start_offset": 4616,
+      "length": 868
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 133,
+      "start_offset": 5555,
+      "length": 73
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 133,
+      "start_offset": 5636,
+      "length": 21
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 133,
+      "start_offset": 5713,
+      "length": 42
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 133,
+      "start_offset": 5821,
+      "length": 32
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 133,
+      "start_offset": 6843,
+      "length": 85
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 133,
+      "start_offset": 6994,
+      "length": 32
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 133,
+      "start_offset": 7058,
+      "length": 192
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 133,
+      "start_offset": 7314,
+      "length": 128
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 133,
+      "start_offset": 7474,
+      "length": 64
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 133,
+      "start_offset": 7687,
+      "length": 189
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 133,
+      "start_offset": 7908,
+      "length": 284
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 134,
+      "start_offset": 0,
+      "length": 18
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 134,
+      "start_offset": 21,
+      "length": 3318
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 134,
+      "start_offset": 3343,
+      "length": 1031
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 134,
+      "start_offset": 4386,
+      "length": 355
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 134,
+      "start_offset": 4751,
+      "length": 44
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 134,
+      "start_offset": 4801,
+      "length": 59
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 134,
+      "start_offset": 4992,
+      "length": 667
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 134,
+      "start_offset": 5662,
+      "length": 65
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 134,
+      "start_offset": 5733,
+      "length": 2459
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 135,
+      "start_offset": 0,
+      "length": 1214
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 135,
+      "start_offset": 1257,
+      "length": 30
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 135,
+      "start_offset": 1320,
+      "length": 3955
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 135,
+      "start_offset": 5295,
+      "length": 244
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 135,
+      "start_offset": 5544,
+      "length": 64
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 135,
+      "start_offset": 5618,
+      "length": 184
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 135,
+      "start_offset": 5869,
+      "length": 46
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 135,
+      "start_offset": 6167,
+      "length": 105
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 135,
+      "start_offset": 6665,
+      "length": 1527
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 104,
+      "start_offset": 924,
+      "length": 994
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 104,
+      "start_offset": 2853,
+      "length": 5339
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 105,
+      "start_offset": 0,
+      "length": 2212
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 107,
+      "start_offset": 7581,
+      "length": 611
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 108,
+      "start_offset": 0,
+      "length": 8192
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 109,
+      "start_offset": 0,
+      "length": 8192
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 110,
+      "start_offset": 0,
+      "length": 8192
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 111,
+      "start_offset": 0,
+      "length": 8192
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 112,
+      "start_offset": 1536,
+      "length": 6656
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 113,
+      "start_offset": 35,
+      "length": 3830
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 113,
+      "start_offset": 3889,
+      "length": 588
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 113,
+      "start_offset": 4483,
+      "length": 2076
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 113,
+      "start_offset": 6581,
+      "length": 788
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 113,
+      "start_offset": 7373,
+      "length": 819
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 114,
+      "start_offset": 0,
+      "length": 1949
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 114,
+      "start_offset": 1969,
+      "length": 394
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 114,
+      "start_offset": 2365,
+      "length": 1385
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 114,
+      "start_offset": 3752,
+      "length": 62
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 114,
+      "start_offset": 3816,
+      "length": 196
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 114,
+      "start_offset": 4020,
+      "length": 248
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 114,
+      "start_offset": 4276,
+      "length": 754
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 114,
+      "start_offset": 5032,
+      "length": 62
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 114,
+      "start_offset": 5096,
+      "length": 3096
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 115,
+      "start_offset": 0,
+      "length": 8192
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 116,
+      "start_offset": 26,
+      "length": 280
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 116,
+      "start_offset": 332,
+      "length": 18
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 116,
+      "start_offset": 368,
+      "length": 288
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 116,
+      "start_offset": 1042,
+      "length": 386
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 116,
+      "start_offset": 2100,
+      "length": 414
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 116,
+      "start_offset": 2515,
+      "length": 520
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 116,
+      "start_offset": 3181,
+      "length": 61
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 116,
+      "start_offset": 3295,
+      "length": 346
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 116,
+      "start_offset": 3654,
+      "length": 101
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 116,
+      "start_offset": 3776,
+      "length": 24
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 116,
+      "start_offset": 3812,
+      "length": 114
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 116,
+      "start_offset": 3959,
+      "length": 24
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 116,
+      "start_offset": 3996,
+      "length": 158
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 116,
+      "start_offset": 4167,
+      "length": 158
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 116,
+      "start_offset": 4358,
+      "length": 82
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 116,
+      "start_offset": 4453,
+      "length": 171
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 116,
+      "start_offset": 4700,
+      "length": 1920
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 116,
+      "start_offset": 7294,
+      "length": 216
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 116,
+      "start_offset": 7520,
+      "length": 70
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 116,
+      "start_offset": 7596,
+      "length": 31
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 116,
+      "start_offset": 7628,
+      "length": 564
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 117,
+      "start_offset": 0,
+      "length": 923
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 117,
+      "start_offset": 928,
+      "length": 570
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 117,
+      "start_offset": 1504,
+      "length": 60
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 117,
+      "start_offset": 1565,
+      "length": 117
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 117,
+      "start_offset": 2953,
+      "length": 5239
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 118,
+      "start_offset": 0,
+      "length": 8192
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 119,
+      "start_offset": 52,
+      "length": 21
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 119,
+      "start_offset": 74,
+      "length": 183
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 119,
+      "start_offset": 324,
+      "length": 38
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 119,
+      "start_offset": 419,
+      "length": 39
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 119,
+      "start_offset": 468,
+      "length": 26
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 119,
+      "start_offset": 712,
+      "length": 48
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 119,
+      "start_offset": 1064,
+      "length": 56
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 119,
+      "start_offset": 1168,
+      "length": 72
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 119,
+      "start_offset": 1288,
+      "length": 56
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 119,
+      "start_offset": 1368,
+      "length": 32
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 119,
+      "start_offset": 1640,
+      "length": 24
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 119,
+      "start_offset": 1696,
+      "length": 32
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 119,
+      "start_offset": 1760,
+      "length": 48
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 119,
+      "start_offset": 1824,
+      "length": 272
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 119,
+      "start_offset": 2136,
+      "length": 24
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 119,
+      "start_offset": 2208,
+      "length": 160
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 119,
+      "start_offset": 2392,
+      "length": 24
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 119,
+      "start_offset": 3298,
+      "length": 4894
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 120,
+      "start_offset": 0,
+      "length": 1410
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 120,
+      "start_offset": 1536,
+      "length": 128
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 120,
+      "start_offset": 1790,
+      "length": 100
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 120,
+      "start_offset": 2048,
+      "length": 96
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 120,
+      "start_offset": 2301,
+      "length": 957
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 120,
+      "start_offset": 3324,
+      "length": 107
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 120,
+      "start_offset": 3570,
+      "length": 144
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 120,
+      "start_offset": 3801,
+      "length": 34
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 120,
+      "start_offset": 3836,
+      "length": 262
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 120,
+      "start_offset": 4304,
+      "length": 48
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 120,
+      "start_offset": 4558,
+      "length": 52
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 120,
+      "start_offset": 4710,
+      "length": 154
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 120,
+      "start_offset": 4957,
+      "length": 981
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 120,
+      "start_offset": 6144,
+      "length": 80
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 120,
+      "start_offset": 6460,
+      "length": 20
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 120,
+      "start_offset": 6644,
+      "length": 531
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 120,
+      "start_offset": 7344,
+      "length": 80
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 120,
+      "start_offset": 7600,
+      "length": 80
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 120,
+      "start_offset": 7844,
+      "length": 348
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 121,
+      "start_offset": 0,
+      "length": 2347
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 121,
+      "start_offset": 2398,
+      "length": 5794
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 122,
+      "start_offset": 0,
+      "length": 8192
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 123,
+      "start_offset": 0,
+      "length": 8192
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 124,
+      "start_offset": 0,
+      "length": 8192
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 125,
+      "start_offset": 0,
+      "length": 8192
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 126,
+      "start_offset": 0,
+      "length": 8192
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 127,
+      "start_offset": 0,
+      "length": 8192
+    }
+  ],
+  "work_ram_policy": "EVIDENCE_ONLY_NOT_A_CANDIDATE",
+  "ranked_candidates": [
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 108,
+      "start_offset": 0,
+      "length": 8192
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 109,
+      "start_offset": 0,
+      "length": 8192
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 110,
+      "start_offset": 0,
+      "length": 8192
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 111,
+      "start_offset": 0,
+      "length": 8192
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 115,
+      "start_offset": 0,
+      "length": 8192
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 118,
+      "start_offset": 0,
+      "length": 8192
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 122,
+      "start_offset": 0,
+      "length": 8192
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 123,
+      "start_offset": 0,
+      "length": 8192
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 124,
+      "start_offset": 0,
+      "length": 8192
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 125,
+      "start_offset": 0,
+      "length": 8192
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 126,
+      "start_offset": 0,
+      "length": 8192
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 127,
+      "start_offset": 0,
+      "length": 8192
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 112,
+      "start_offset": 1536,
+      "length": 6656
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 121,
+      "start_offset": 2398,
+      "length": 5794
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 104,
+      "start_offset": 2853,
+      "length": 5339
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 117,
+      "start_offset": 2953,
+      "length": 5239
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 119,
+      "start_offset": 3298,
+      "length": 4894
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 113,
+      "start_offset": 35,
+      "length": 3830
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 114,
+      "start_offset": 5096,
+      "length": 3096
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 121,
+      "start_offset": 0,
+      "length": 2347
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 105,
+      "start_offset": 0,
+      "length": 2212
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 113,
+      "start_offset": 4483,
+      "length": 2076
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 114,
+      "start_offset": 0,
+      "length": 1949
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 116,
+      "start_offset": 4700,
+      "length": 1920
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 120,
+      "start_offset": 0,
+      "length": 1410
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 114,
+      "start_offset": 2365,
+      "length": 1385
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 104,
+      "start_offset": 924,
+      "length": 994
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 120,
+      "start_offset": 4957,
+      "length": 981
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 120,
+      "start_offset": 2301,
+      "length": 957
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 117,
+      "start_offset": 0,
+      "length": 923
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 113,
+      "start_offset": 7373,
+      "length": 819
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 113,
+      "start_offset": 6581,
+      "length": 788
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 114,
+      "start_offset": 4276,
+      "length": 754
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 107,
+      "start_offset": 7581,
+      "length": 611
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 113,
+      "start_offset": 3889,
+      "length": 588
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 117,
+      "start_offset": 928,
+      "length": 570
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 116,
+      "start_offset": 7628,
+      "length": 564
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 120,
+      "start_offset": 6644,
+      "length": 531
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 116,
+      "start_offset": 2515,
+      "length": 520
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 116,
+      "start_offset": 2100,
+      "length": 414
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 114,
+      "start_offset": 1969,
+      "length": 394
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 116,
+      "start_offset": 1042,
+      "length": 386
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 120,
+      "start_offset": 7844,
+      "length": 348
+    },
+    {
+      "region": "SUPER_RAM",
+      "physical_bank": 116,
+      "start_offset": 3295,
+      "length": 346
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 131,
+      "start_offset": 0,
+      "length": 5998
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 132,
+      "start_offset": 2668,
+      "length": 5524
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 135,
+      "start_offset": 1320,
+      "length": 3955
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 134,
+      "start_offset": 21,
+      "length": 3318
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 134,
+      "start_offset": 5733,
+      "length": 2459
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 132,
+      "start_offset": 0,
+      "length": 2048
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 135,
+      "start_offset": 6665,
+      "length": 1527
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 135,
+      "start_offset": 0,
+      "length": 1214
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 128,
+      "start_offset": 2584,
+      "length": 1212
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 134,
+      "start_offset": 3343,
+      "length": 1031
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 129,
+      "start_offset": 2483,
+      "length": 887
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 133,
+      "start_offset": 4616,
+      "length": 868
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 131,
+      "start_offset": 7502,
+      "length": 690
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 131,
+      "start_offset": 6148,
+      "length": 683
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 130,
+      "start_offset": 7048,
+      "length": 670
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 130,
+      "start_offset": 1837,
+      "length": 667
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 134,
+      "start_offset": 4992,
+      "length": 667
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 130,
+      "start_offset": 5119,
+      "length": 553
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 130,
+      "start_offset": 2612,
+      "length": 509
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 130,
+      "start_offset": 7722,
+      "length": 470
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 131,
+      "start_offset": 6982,
+      "length": 468
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 130,
+      "start_offset": 6590,
+      "length": 416
+    },
+    {
+      "region": "CD_RAM",
+      "physical_bank": 134,
+      "start_offset": 4386,
+      "length": 355
+    }
+  ],
+  "approval_boundary": "An untouched trace run is only a candidate. Approval requires a later PoC to load the LBA 9185 shard during scene load, consume glyphs from the selected region, preserve Memo and dialogue, and demonstrate invalidation on scene exit."
+}

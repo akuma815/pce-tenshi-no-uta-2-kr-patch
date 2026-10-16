@@ -1,0 +1,54 @@
+{
+ "disc_scope": "engine callsite 3B + FF window hook + approved pool 14 sectors; scene extents untouched",
+ "effective_changed_bytes": 27579,
+ "format": "ZIRIA-Z8-9D-A2-CANARY",
+ "hook": {
+  "callsite_cpu": "0x66fc",
+  "execution_context": "loader call window only (MPR6=$84 observed), non-resident",
+  "hook_bytes": 155,
+  "hook_cpu": "0xc737",
+  "hook_hex": "A5FFC906D016A5FCD012A5FDC901D00CA5FEC9E2D006A5F8C960F0034C09E02009E00848DA5AA5F848A5F948A5FA48A5FB48A5FC48A5FD48A5FE48A5FF48A200BDC3C785FCBDC4C785FDBDC5C785FEBDC6C785F8BDC7C785FA64F964FBA90685FFDA2009E0FA8A186905AAE00FD0D16885FF6885FE6885FD6885FC6885FB6885FA6885F96885F87AFA682860001568087A001570047E001574026D",
+  "passthrough": "non-field loads tail-call JMP $E009 with identical stack frame",
+  "state_preservation": "P/A/X/Y and zp $F8-$FF restored to post-original-load values",
+  "table_cpu": "0xc7c3"
+ },
+ "output_bin_sha256": "3CD8637BBC4C225C40C8A796C3A2CA102640B43D94CACF2E8BC69C61E4DDD3B0",
+ "purpose": "loader hook + destination-bank canary; diagnostic only",
+ "reads": [
+  {
+   "count": 8,
+   "dest_bank": "0x7a",
+   "lba": 5480
+  },
+  {
+   "count": 4,
+   "dest_bank": "0x7e",
+   "lba": 5488
+  },
+  {
+   "count": 2,
+   "dest_bank": "0x6d",
+   "lba": 5492
+  }
+ ],
+ "runtime_gate": [
+  "필드 로드가 눈에 띄는 지연 없이 완료",
+  "첫 대사, NPC, Memo, 건물 출입, 전투 복귀, 탑, 초상화 모두 원본과 동일",
+  "화면 깨짐, EXEC BRK, 멈춤, 오디오 이상 0건"
+ ],
+ "trap_pool": {
+  "lba": 5480,
+  "original_content_sha256": "475AE9A1BF3744E70AB9B39F54A19EF532A263CD8E4C31787384C98E4B35763D",
+  "pattern": "00 E7",
+  "sectors": 14,
+  "site_evidence": "unreferenced by both 55-entry tables and all runtime traces; untouched by the shipped Korean patch; past track3-pregap candidate (9178) rejected after BizHawk ReadLBA_2048 exception"
+ },
+ "version": 1,
+ "runtime_status": "PASS",
+ "runtime_result_2026_08_22": {
+  "environment": "project BizHawk 2.11.2, 원본 System Card 3.00(J), cfg_a2canary_play.ini",
+  "result": "PASS",
+  "observation": "사용자 회귀 플레이: 첫 대사~Memo~전투~필드 복귀~탑~초상화 전 경로 원본과 동일. 화면 깨짐·멈춤·오디오 이상 0건.",
+  "conclusion": "LBA 5480..5494 풀 14섹터와 RAM 목적지(bank $7A-$7B 16KB, $7E 8KB, $6D 앞 4KB)는 회귀 경로 전체에서 덮어쓰기 안전. wire v2 실데이터 배치 승인."
+ }
+}

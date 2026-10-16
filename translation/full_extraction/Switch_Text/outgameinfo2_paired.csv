@@ -1,0 +1,87 @@
+﻿key,offset,en,ko
+Str000,46,Tenshinouta COLLECTION,천사의 시 컬렉션
+Str001,84,Select a game,게임 선택
+Str002,113,Released 10/25/1991,1991/10/25 발매
+Str003,148,Tenshinouta,천사의 시
+Str004,175,Released 3/26/1993,1993/3/26 발매
+Str005,209,Tenshinouta2,천사의 시 2
+Str006,237,Scroll,스크롤
+Str007,259,Select,선택
+Str008,281,Back,뒤로
+Str009,301,Reverse Cover,커버 뒷면 보기
+Str010,330,Cancel,취소
+Str011,352,Turn Page,페이지 넘기기
+Str012,377,Pause/Quit,일시정지/종료
+Str013,403,Play/Pause,재생/일시정지
+Str014,429,Quit,종료
+Str015,449,Hide Guide,가이드 숨기기
+Str016,475,Change,변경
+Str017,497,Reset,리셋
+Str018,518,Select data to load,불러올 데이터를 선택하십시오
+Str019,553,Select data to save,저장할 데이터를 선택하십시오
+Str020,588,Override.,덮어씁니다.
+Str021,613,Yes,예
+Str022,632,No,아니요
+Str023,650,Would you like to resume with this data?,이 데이터로 계속하시겠습니까?
+Str024,706,"Warning
+The game will resume from the last suspended save point.
+Please note that this may render the in-game save data unusable.","경고
+마지막 중단 지점에서 재개합니다.
+게임 내 저장 데이터 사용이 불가할 수 있습니다."
+Str025,853,Manual,매뉴얼
+Str026,875,Audio,오디오
+Str027,896,Cutscenes,컷신
+Str028,921,Play,재생
+Str029,941,Controls,조작법
+Str030,965,Ⅰ button,Ⅰ 버튼
+Str031,998,Ⅱ button,Ⅱ 버튼
+Str032,1031,Run button,달리기 버튼
+Str033,1057,Select  button,셀렉트 버튼
+Str034,1087,Directional  button (Up),방향키 (위)
+Str035,1127,Directional  button (Down),방향키 (아래)
+Str036,1169,Directional button (Left/Right),방향키 (좌/우)
+Str037,1216,Select / Confirm commands,명령 선택 / 결정
+Str038,1257,"Select / Cancel commands
+Menu display","명령 선택 / 취소
+메뉴 표시"
+Str039,1311,Game start,게임 시작
+Str040,1337,Command display,명령 표시
+Str041,1368,Move character and cursor up,캐릭터 및 커서를 위로 이동
+Str042,1412,Move character and cursor down,캐릭터 및 커서를 아래로 이동
+Str043,1458,"Move character and cursor
+to the left and right","캐릭터 및 커서를
+좌우로 이동"
+Str044,1522,Select / Confirm commands,명령 선택 / 결정
+Str045,1563,"Select / Cancel commands
+Menu display","명령 선택 / 취소
+메뉴 표시"
+Str046,1617,Game start,게임 시작
+Str047,1643,Command display,명령 표시
+Str048,1674,Move character and cursor up,캐릭터 및 커서를 위로 이동
+Str049,1718,Move character and cursor down,캐릭터 및 커서를 아래로 이동
+Str050,1764,"Move character and cursor
+to the left and right",캐릭터 및 커서를 좌우로 이동
+Str051,1828,"<white>These are the default control settings.</>
+<white>Writing in color indicates </><Red>the controls of the original version</>
+<white> (see manual).</>","<white>기본 조작 설정입니다.</>
+<white>색상 표시는 </><Red>원작 버전의 조작법</>
+<white>을 나타냅니다(매뉴얼 참조).</>"
+Str052,2002,Display Controls in Game,게임 내 조작법 표시
+Str053,2042,Key Config,키 설정
+Str054,2068,Unused,사용 안 함
+Str055,2090,On,켬
+Str056,2108,Off,끔
+Str070,2322,Original (4:3),원본 (4:3)
+Str071,2352,Dot-by-dot,1:1 매칭
+Str072,2378,Fullscreen,전체 화면
+Str073,2404,Menu,메뉴
+Str074,2424,Save,저장
+Str075,2444,Load,불러오기
+Str076,2464,Config,설정
+Str077,2486,Screen Settings,화면 설정
+Str078,2517,Controls,조작법
+Str079,2541,Return to Title Screen,타이틀 화면으로 돌아가기
+Str080,2579,Rewind,되감기
+Str081,2601,巻き戻しますか？,되감으시겠습니까?
+Str082,2634,Return to Title Screen,타이틀 화면으로 돌아가기
+Str084,2687,English Subtitles,영어 자막

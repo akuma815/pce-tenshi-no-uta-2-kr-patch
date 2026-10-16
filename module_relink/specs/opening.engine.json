@@ -1,0 +1,71 @@
+{
+  "format": "ZIRIA-MODULE-SECTION-SPEC",
+  "version": 1,
+  "module_id": "opening.engine",
+  "module_kind": "executable_engine",
+  "family": "opening",
+  "disc": {
+    "lba": 98,
+    "sector_count": 20
+  },
+  "runtime": {
+    "physical_bank_interval": null,
+    "runtime_range": null,
+    "entry_point": "0x5000",
+    "lifetime": "owning_family_only"
+  },
+  "host_candidates": [],
+  "extension_blocked_reason": null,
+  "sections": [
+    {
+      "name": "original",
+      "kind": "original",
+      "size": 40960,
+      "source": "module_relink/track02/semantic_modules/opening.engine_lba0098_s20.bin",
+      "placement": "fixed_identity",
+      "mutable": false
+    },
+    {
+      "name": "extension_code",
+      "kind": "extension_code",
+      "size": 0,
+      "source": null,
+      "placement": "unallocated",
+      "mutable": true,
+      "nonzero_gate": "approved disc allocation + owning-loader registration"
+    },
+    {
+      "name": "text",
+      "kind": "text",
+      "size": 0,
+      "source": null,
+      "placement": "unallocated",
+      "mutable": true,
+      "nonzero_gate": "approved disc allocation + owning-loader registration"
+    },
+    {
+      "name": "glyph",
+      "kind": "glyph",
+      "size": 0,
+      "source": null,
+      "placement": "unallocated",
+      "mutable": true,
+      "nonzero_gate": "approved disc allocation + owning-loader registration"
+    },
+    {
+      "name": "relocation",
+      "kind": "relocation",
+      "size": 0,
+      "source": null,
+      "placement": "unallocated",
+      "mutable": true,
+      "nonzero_gate": "approved disc allocation + owning-loader registration"
+    }
+  ],
+  "link_policy": {
+    "assembler": "WLA-HuC6280 compatible section object or equivalent byte section",
+    "identity_mode": "emit original section byte-for-byte",
+    "extension_mode": "requires extension_registry approved allocation",
+    "cross_family_reference": "prohibited"
+  }
+}

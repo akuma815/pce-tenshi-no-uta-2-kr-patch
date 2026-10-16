@@ -1,0 +1,95 @@
+﻿original	translation	raw_len	need_len	over_bytes	copies_total	copies_unpatched	class	reasons	short_ko(사람 기입)
+アイテムを箱の中に戻した	아이템을상자에돌려놨다	16	23	7	122	122	event_dialogue_or_command	NOFIT	상자에넣었다
+改造プルトー	개조플루토	10	11	1	68	34	monster_names	NOFIT	개조플루
+拾ったものを箱の中に戻しますか	주운물건을상자에돌려놓을까요?	20	30	10	61	61	event_dialogue_or_command	NOFIT	주운걸 넣을까?
+持ち物が一杯です\n何か捨てますか？	소지품가득\n뭔가버릴까요?	25	25	0	61	61	event_dialogue_or_command	NOFIT	"소지품 가득\n버릴까요?"
+扉が開いた！	문이열렸다!	10	12	2	55	55	event_dialogue_or_command	NOFIT	문열림!
+持ち物が一杯です\n何か捨てて下さい	소지품 가득\n무언가버려주세요	25	29	4	48	48	event_dialogue_or_command	NOFIT	"소지품가득\n뭔가버려줘요"
+アコライト	아콜라이트	6	11	5	42	42	asset_confirmed_short_event_text	NOFIT_IN_SKIPPED_WINDOW	아콜
+アブラサクス	아브라삭스	8	11	3	42	42	asset_confirmed_short_event_text	NOFIT_IN_SKIPPED_WINDOW	아브라
+エフィアルテス	에피알테스	8	11	3	42	42	asset_confirmed_short_event_text	NOFIT_IN_SKIPPED_WINDOW	에피알
+オウガオウル	오거 아울	8	10	2	42	42	asset_confirmed_short_event_text	ARENA_OVERFLOW|NOFIT_IN_SKIPPED_WINDOW	오거울
+カトブレパス	카토블레파스	9	13	4	42	42	asset_confirmed_short_event_text	ARENA_OVERFLOW|NOFIT_IN_SKIPPED_WINDOW	카토브레
+カフー	카후	4	5	1	42	42	asset_confirmed_short_event_text	NOFIT_IN_SKIPPED_WINDOW	카
+ケット・シー	캐트시	8	7	-1	42	0	asset_confirmed_short_event_text	ARENA_OVERFLOW	캐트시
+コカトリス	코카트리스	6	11	5	42	42	asset_confirmed_short_event_text	NOFIT_IN_SKIPPED_WINDOW	코카
+ゴモリー	고모리	6	7	1	42	42	asset_confirmed_short_event_text	NOFIT_IN_SKIPPED_WINDOW	고모
+シェイドルビー	셰이드 루비	10	12	2	42	42	asset_confirmed_short_event_text	ARENA_OVERFLOW|NOFIT_IN_SKIPPED_WINDOW	셰이드루
+シグルト	시구르트	6	9	3	42	42	asset_confirmed_short_event_text	NOFIT_IN_SKIPPED_WINDOW	시구
+シトリー	시트리	5	7	2	42	42	asset_confirmed_short_event_text	NOFIT_IN_SKIPPED_WINDOW	시트
+ストラス	스트라스	5	9	4	42	42	asset_confirmed_short_event_text	ARENA_OVERFLOW|NOFIT_IN_SKIPPED_WINDOW	스트
+ストーカー	스토커	6	7	1	42	42	asset_confirmed_short_event_text	NOFIT_IN_SKIPPED_WINDOW	스토
+ストーンカ	스톤카	6	7	1	42	42	asset_confirmed_short_event_text	NOFIT_IN_SKIPPED_WINDOW	스톤
+スフィンクス	스핑크스	7	9	2	42	42	asset_confirmed_short_event_text	ARENA_OVERFLOW|NOFIT_IN_SKIPPED_WINDOW	스핑크
+スラッグ	슬러그	6	7	1	42	42	asset_confirmed_short_event_text	NOFIT_IN_SKIPPED_WINDOW	슬러
+ソーサルハット	소서러 햇	8	10	2	42	42	asset_confirmed_short_event_text	ARENA_OVERFLOW|NOFIT_IN_SKIPPED_WINDOW	마법햇
+タフタルタラト	타프타르타라트	8	15	7	42	42	asset_confirmed_short_event_text	ARENA_OVERFLOW|NOFIT_IN_SKIPPED_WINDOW	타프탈
+ダエーワ	다에바	6	7	1	42	0	asset_confirmed_short_event_text	NOFIT_IN_SKIPPED_WINDOW	다에
+ネクロタートル	네크로 터틀	8	12	4	42	42	asset_confirmed_short_event_text	NOFIT_IN_SKIPPED_WINDOW	네크거
+ネクロマンサー	네크로맨서	8	11	3	42	42	asset_confirmed_short_event_text	NOFIT_IN_SKIPPED_WINDOW	사령술
+ハイダー	하이더	6	7	1	42	42	asset_confirmed_short_event_text	NOFIT_IN_SKIPPED_WINDOW	하이
+ファフネル	파프너	6	7	1	42	42	asset_confirmed_short_event_text	NOFIT_IN_SKIPPED_WINDOW	파프
+ファラオ	파라오	5	7	2	42	42	asset_confirmed_short_event_text	NOFIT_IN_SKIPPED_WINDOW	파라
+フォルネウス	포르네우스	7	11	4	42	42	asset_confirmed_short_event_text	ARENA_OVERFLOW|NOFIT_IN_SKIPPED_WINDOW	포르네
+フラウキャット	프라우 캣	8	10	2	42	42	asset_confirmed_short_event_text	NOFIT_IN_SKIPPED_WINDOW	프라우
+ブラッドサッカー	블러드 서커	11	12	1	42	0	asset_confirmed_short_event_text	ARENA_OVERFLOW	피빨이
+ブリステッキ	브리스테키	8	11	3	42	42	asset_confirmed_short_event_text	NOFIT_IN_SKIPPED_WINDOW	브리스
+マラコーダ	마라코다	7	9	2	42	42	asset_confirmed_short_event_text	NOFIT_IN_SKIPPED_WINDOW	마라코
+ムシュフシュ	무슈후슈	7	9	2	42	42	asset_confirmed_short_event_text	NOFIT_IN_SKIPPED_WINDOW	무슈후
+メルトーシャワー	멜트 샤워	9	10	1	42	0	asset_confirmed_short_event_text	ARENA_OVERFLOW	멜트샤워
+メロウズ	멜로우즈	6	9	3	42	40	asset_confirmed_short_event_text	NOFIT	멜로
+レプラカーン	레프러콘	8	9	1	42	42	asset_confirmed_short_event_text	ARENA_OVERFLOW|NOFIT_IN_SKIPPED_WINDOW	레프러
+ロトマゴ	로토마고	6	9	3	42	42	asset_confirmed_short_event_text	ARENA_OVERFLOW|NOFIT_IN_SKIPPED_WINDOW	로토
+人形使い	인형술사	8	9	1	42	42	asset_confirmed_short_event_text	ARENA_OVERFLOW|NOFIT_IN_SKIPPED_WINDOW	인형사
+操り草	조종풀	6	7	1	42	42	asset_confirmed_short_event_text	NOFIT_IN_SKIPPED_WINDOW	조종
+水晶魔人	수정마인	9	9	0	42	0	asset_confirmed_short_event_text	ARENA_OVERFLOW	수정마인
+眠り男	수면남	6	7	1	42	42	asset_confirmed_short_event_text	NOFIT_IN_SKIPPED_WINDOW	잠든
+赤光魔人	적광마인	9	9	0	42	0	asset_confirmed_short_event_text	ARENA_OVERFLOW	적광마인
+魔人デーウ	마인 데우	9	10	1	42	0	asset_confirmed_short_event_text	ARENA_OVERFLOW	마인데우
+アスタロート	아스타로트	7	11	4	41	41	asset_confirmed_short_event_text	ARENA_OVERFLOW|NOFIT_IN_SKIPPED_WINDOW	아스타
+アガリアレプト	아가리아레프트	10	15	5	40	40	asset_confirmed_short_event_text	NOFIT_IN_SKIPPED_WINDOW	아가리아
+エキドナ	에키드나	6	9	3	40	40	asset_confirmed_short_event_text	NOFIT_IN_SKIPPED_WINDOW	에키
+サタナキア	사타나키아	6	11	5	40	40	asset_confirmed_short_event_text	NOFIT_IN_SKIPPED_WINDOW	사타
+サルガタナス	살가타나스	8	11	3	40	40	asset_confirmed_short_event_text	ARENA_OVERFLOW|NOFIT_IN_SKIPPED_WINDOW	살가타
+マリウス・デーモン	마리우스 데몬	12	14	2	40	40	asset_confirmed_short_event_text	NOFIT_IN_SKIPPED_WINDOW	마리우스마
+ライヒ草を手に入れた！	라이히풀을 얻었다!	16	19	3	40	40	event_dialogue_or_command	NOFIT	라이히풀획득!
+ラミアム・サタン	라미암 사탄	10	12	2	40	40	asset_confirmed_short_event_text	ARENA_OVERFLOW|NOFIT_IN_SKIPPED_WINDOW	라미암탄
+魔狼ルシエド	마랑루시에드	10	13	3	40	40	asset_confirmed_short_event_text	NOFIT	마랑루시
+アストラル	아스트랄	6	9	3	22	22	asset_confirmed_short_event_text	NOFIT_IN_SKIPPED_WINDOW	아스
+アモン	아몬	4	5	1	22	22	asset_confirmed_short_event_text	NOFIT_IN_SKIPPED_WINDOW	암
+ウィスプ	위스프	6	7	1	22	22	asset_confirmed_short_event_text	NOFIT_IN_SKIPPED_WINDOW	위스
+ガイスト	가이스트	6	9	3	22	22	asset_confirmed_short_event_text	NOFIT_IN_SKIPPED_WINDOW	가이
+グシオン	구시온	6	7	1	22	22	asset_confirmed_short_event_text	ARENA_OVERFLOW|NOFIT_IN_SKIPPED_WINDOW	구시
+ゲータナイト	게이터나이트	8	13	5	22	22	asset_confirmed_short_event_text	ARENA_OVERFLOW|NOFIT_IN_SKIPPED_WINDOW	게타나
+シザーフライ	시저 플라이	8	12	4	22	22	asset_confirmed_short_event_text	ARENA_OVERFLOW|NOFIT_IN_SKIPPED_WINDOW	가위새
+スネーカル	스네이컬	6	9	3	22	22	asset_confirmed_short_event_text	NOFIT_IN_SKIPPED_WINDOW	스네
+デスラット	데스 래트	7	10	3	22	22	asset_confirmed_short_event_text	NOFIT_IN_SKIPPED_WINDOW	데스쥐
+ネオス	네오스	4	7	3	22	0	asset_confirmed_short_event_text	NOFIT_IN_SKIPPED_WINDOW	네
+ハイリザード	하이 리자드	9	12	3	22	22	asset_confirmed_short_event_text	NOFIT_IN_SKIPPED_WINDOW	큰도마뱀
+パイレーツ	파이리츠	7	9	2	22	22	asset_confirmed_short_event_text	NOFIT_IN_SKIPPED_WINDOW	해적단
+ボロムス	보로무스	6	9	3	22	22	asset_confirmed_short_event_text	NOFIT_IN_SKIPPED_WINDOW	보로
+ワイト	와이트	4	7	3	22	22	asset_confirmed_short_event_text	ARENA_OVERFLOW|NOFIT_IN_SKIPPED_WINDOW	워
+ワースネーク	워 스네이크	7	12	5	22	22	asset_confirmed_short_event_text	NOFIT_IN_SKIPPED_WINDOW	전쟁뱀
+呪われた鎧	저주갑옷	8	9	1	22	22	event_dialogue_or_command	NOFIT	저주갑
+屍喰い	시체꾼	6	7	1	22	22	asset_confirmed_short_event_text	NOFIT_IN_SKIPPED_WINDOW	시체
+死人返り	망자귀환	8	9	1	22	22	asset_confirmed_short_event_text	NOFIT_IN_SKIPPED_WINDOW	망자귀
+海兵隊長	해병대장	9	9	0	22	0	asset_confirmed_short_event_text	ARENA_OVERFLOW	해병대장
+神酒リレイトを手に入れた！	신주 릴레이트를 얻었다!	19	24	5	19	19	event_dialogue_or_command	NOFIT	신주릴레이트획득!
+聞けるかもな・・・	들을지도...	14	12	-2	17	17	asset_confirmed_short_event_text	NOFIT	들을지도..
+マトックを使いますか？	곡괭이를 쓸까요?	14	17	3	16	16	event_dialogue_or_command	NOFIT	곡괭이사용?
+マトックが岩を砕いた！	곡괭이가바위를부쉈다!	15	22	7	15	15	event_dialogue_or_command	NOFIT	곡괭이로부쉈다
+神酒リレイトを見つけた！	신주릴레이트를 찾았다!	17	23	6	14	14	event_dialogue_or_command	NOFIT	신주릴레이트발견
+泉が湧いています\n飲みますか	샘물이 솟는다\n마실까?	18	22	4	13	13	event_dialogue_or_command	NOFIT	"샘이 있다\n마실까?"
+アレフ	알레프	4	7	3	5	1	character_and_magic_names	NOFIT	알
+シオン	시온	4	5	1	5	1	character_and_magic_names	NOFIT	시
+ティアラ	티아라	5	7	2	5	1	character_and_magic_names	NOFIT	티아
+リアーナ	리아나	5	7	2	5	1	character_and_magic_names	NOFIT	리아
+土砂崩れで進めない。	산사태로못간다.	16	16	0	4	4	graphics_or_embedded_text	NOFIT	산사태로못간다
+メモ	메모	3	5	2	3	1	menu_and_shop_commands	NOFIT	메
+{~}ヌエ	{~}누에	4	6	2	1	1	monster_names	NOFIT	{~}누
+おく	놓기	3	5	2	1	1	menu_and_shop_commands	NOFIT	놓
+しびれガス	마비 가스	7	10	3	1	1	battle_effect_commands	NOFIT	마비독
+つらら	고드름	4	7	3	1	1	battle_effect_commands	NOFIT	빙
+カマイタチ	칼바람	6	7	1	1	0	battle_effect_commands	NOFIT	칼바
+毒ガス	독가스	6	7	1	1	1	battle_effect_commands	NOFIT	독연
+火の玉	화염구	6	7	1	1	1	battle_effect_commands	NOFIT	화구

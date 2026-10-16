@@ -1,0 +1,45 @@
+{
+ "format": "BTRACK-B2-FULL-CARD",
+ "runtime_status": "PENDING",
+ "input": {
+  "original_bios_sha1": "79f5ff55dd10187c7fd7b8daab0b3ffbd1f56a2c",
+  "font_png_sha256": "07a9617723aa4edbfb18442db86419c3f2b48e4f7c6e2e33229305adca582aa1",
+  "korean_sources": {
+   "천사의시2_대사_번역.xlsx": 5172,
+   "천사의시2_크레딧_번역.xlsx": 284,
+   "visualscene2_paired.csv": 285,
+   "outgameinfo2_paired.csv": 71,
+   "btrack_b3_translation_map.tsv": 3863
+  }
+ },
+ "supply": {
+  "kanji_slots_total": 2965,
+  "card_ui_excluded": {
+   "1471": "削",
+   "1766": "除",
+   "2070": "全",
+   "2190": "体",
+   "1747": "初",
+   "920": "期",
+   "669": "化",
+   "1684": "終",
+   "3299": "了"
+  }
+ },
+ "demand": {
+  "unique_hangul": 1053,
+  "hangul_occurrences": 202814,
+  "non_hangul_chars": "・！、？　：〜」「『』とへぎくき＊にーのさは…まみがざｚこけＺ·じおげそも。ごタいすぁしずかオな★でぐねソネつぉゥぞばュをヌせッぜぬミべてぢウだィぃル※ぱあァたちェホツひアマやチニびレヲハャサっづえカラォイセ゛シどリ↓●ワクぶわゐ゜コステら"
+ },
+ "assignment_stats": {
+  "assigned": 1053,
+  "into_game_unused_kanji_slots": 1053,
+  "into_game_used_kanji_slots": 0,
+  "slots_remaining": 1903
+ },
+ "card_sha256": "3116224d3a7fa3882728efb78eee534e67c2a00f4d0cfe656382ef23d107bd44",
+ "runtime_gate": [
+  "부트·백업 관리 화면 원본과 동일 (자동)",
+  "원본 게임 전체 회귀 — 일본어 텍스트 중 배정된 한자만 한글로 보임 (혼재 허용)"
+ ]
+}

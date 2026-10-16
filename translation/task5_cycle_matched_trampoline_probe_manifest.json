@@ -1,0 +1,77 @@
+{
+  "format": "TASK5-CYCLE-MATCHED-TRAMPOLINE-PROBE",
+  "version": 1,
+  "task": 5,
+  "status": "RUNTIME_FAIL",
+  "hypothesis": "the failed transparent trampoline differs only because it adds a second four-cycle JMP before F124",
+  "control_flow": {
+    "original": "JSR E060; [E060] JMP F124",
+    "probe": "JSR C737; [C737] JMP F124",
+    "equivalence": "one JSR plus one absolute JMP, same caller return frame and same BIOS implementation entry"
+  },
+  "bios_evidence": {
+    "firmware": "PCECD_3.0-(J).pce",
+    "rom_offset_0x60_hex": "4C24F1",
+    "runtime_stub": "E060: JMP F124"
+  },
+  "present_variables": [
+    "call target changed from E060 to C737",
+    "C737 executes JMP F124"
+  ],
+  "absent_variables": [
+    "extra JMP E060",
+    "classification dispatcher",
+    "custom text",
+    "glyph page",
+    "custom branch"
+  ],
+  "runtime_decision": {
+    "memo_responsive": "the extra JMP through E060 is causal; cycle-matched fallback is required",
+    "memo_hangs": "instruction-count timing is rejected; redirected instruction fetch/location or call-target identity is causal"
+  },
+  "expected_writes": [
+    {
+      "id": "field-getfnt-call",
+      "iso_offset": "0x8667E",
+      "physical_bin_offset": "0x812A6E",
+      "length": 3,
+      "expected_hex": "2060E0",
+      "replacement_hex": "2037C7",
+      "reason": "redirect the live field call to the cycle-matched local trampoline"
+    },
+    {
+      "id": "cycle-matched-trampoline",
+      "iso_offset": "0x89737",
+      "physical_bin_offset": "0x815B27",
+      "length": 3,
+      "expected_hex": "FFFFFF",
+      "replacement_hex": "4C24F1",
+      "reason": "replace BIOS E060's JMP F124 with an equivalent local JMP F124"
+    }
+  ],
+  "diff_audit": {
+    "declared_span_count": 2,
+    "actual_changed_bytes": 5,
+    "actual_changed_ranges": [
+      {
+        "physical_start": "0x812A6F",
+        "physical_end_exclusive": "0x812A71",
+        "changed_bytes": 2
+      },
+      {
+        "physical_start": "0x815B27",
+        "physical_end_exclusive": "0x815B2A",
+        "changed_bytes": 3
+      }
+    ],
+    "undeclared_changes": 0,
+    "file_size_preserved": true
+  },
+  "output": {
+    "bin": "Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_task5_cycle_matched_trampoline_probe.bin",
+    "bin_size": 523184384,
+    "bin_sha256": "A20E416C48104707A4DFCB8CFA2794773F408EE8ADF422F3D25D40F219C59339",
+    "cue": "Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_task5_cycle_matched_trampoline_probe.cue",
+    "cue_sha256": "4F995FF07322F8A95500ABB2B674CE971C2123DBF4F4574EFF0BAFD4E8555367"
+  }
+}

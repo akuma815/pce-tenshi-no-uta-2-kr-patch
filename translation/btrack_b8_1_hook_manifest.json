@@ -1,0 +1,138 @@
+{
+ "format": "BTRACK-B8-HOOK-BUILD",
+ "runtime_status": "PENDING",
+ "changes_vs_b7_6": [
+  "loader v4 (zp-pointer table walk, no 5-scene limit)",
+  "ARMCHK -> 0xa880, INDEX_CAP -> 0x880",
+  "track extension +1024 sectors (V19-proven)",
+  "b8.1: scene 290 text banks -> $76/$7F (seg_290_town2 실측 — 구 $78/$79/$7A 는 둘째 마을 소비)"
+ ],
+ "scenes": {
+  "482": {
+   "records": 235,
+   "text": {
+    "7B": 8191,
+    "7C": 8191,
+    "7D": 6175
+   },
+   "index_bytes": 1719,
+   "pool_base": 9178,
+   "mode": "uniform",
+   "text_banks": [
+    "7B",
+    "7C",
+    "7D"
+   ]
+  },
+  "290": {
+   "records": 84,
+   "text": {
+    "76": 8189,
+    "7F": 4194
+   },
+   "index_bytes": 662,
+   "pool_base": 9192,
+   "mode": "uniform",
+   "text_banks": [
+    "76",
+    "7F"
+   ]
+  },
+  "2882": {
+   "records": 171,
+   "mode": "hybrid",
+   "pool_base": 9206,
+   "index_bytes": 1271,
+   "bins": {
+    "ram7F": {
+     "capacity": 8192,
+     "used": 8184,
+     "kind": "ram",
+     "bank": "7F"
+    },
+    "ram7E_hi": {
+     "capacity": 5857,
+     "used": 5857,
+     "kind": "ram",
+     "bank": "7E"
+    },
+    "ram7E_lo": {
+     "capacity": 905,
+     "used": 900,
+     "kind": "ram",
+     "bank": "7E"
+    },
+    "card_2AB40": {
+     "capacity": 5312,
+     "used": 5312,
+     "kind": "card",
+     "bank": "15"
+    },
+    "card_02CF9": {
+     "capacity": 3966,
+     "used": 3797,
+     "kind": "card",
+     "bank": "01"
+    },
+    "card_07A50": {
+     "capacity": 1456,
+     "used": 0,
+     "kind": "card",
+     "bank": "03"
+    },
+    "card_03C7A": {
+     "capacity": 902,
+     "used": 0,
+     "kind": "card",
+     "bank": "01"
+    },
+    "card_2FE43": {
+     "capacity": 445,
+     "used": 0,
+     "kind": "card",
+     "bank": "17"
+    },
+    "card_05F46": {
+     "capacity": 186,
+     "used": 0,
+     "kind": "card",
+     "bank": "02"
+    }
+   },
+   "text_total": 24050
+  }
+ },
+ "card": {
+  "out": "SystemCard3_btrack_b8_1.pce",
+  "written": [
+   {
+    "off": "03F054",
+    "bytes": 133,
+    "what": "scene table"
+   },
+   {
+    "off": "02AB40",
+    "bytes": 5312,
+    "what": "card_2AB40"
+   },
+   {
+    "off": "002CF9",
+    "bytes": 3797,
+    "what": "card_02CF9"
+   }
+  ]
+ },
+ "window": {
+  "loader": 212,
+  "slice": 43,
+  "reader": 75,
+  "free": 71
+ },
+ "extension": {
+  "insert_off": 33909744,
+  "sectors": 1024,
+  "new_data_frames": 13717
+ },
+ "output_bin_sha256": "f18705d04cbff5f3b12ebda6ff6a635ab06a5e6d7c9b80a1896f1b4330d37a9a",
+ "card_sha256": "9b7172b65eead625515d34ad8209dcc14cf971de7b2d219f12d13210d7a138c4"
+}

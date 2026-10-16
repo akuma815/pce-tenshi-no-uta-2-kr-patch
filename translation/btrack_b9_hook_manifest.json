@@ -1,0 +1,408 @@
+{
+ "format": "BTRACK-B9-HOOK-BUILD",
+ "runtime_status": "PENDING",
+ "changes_vs_b8_3": [
+  "card 768KB: 전역 유니크 텍스트 풀($20+) + 씬별 인덱스($41+) 카드 상주 (RAM 풀·디스크 풀 섹터 전면 폐지)",
+  "armchk_v3: 인덱스 base = (SCRATCH+5)<<8 파라미터화, SCRATCH_KH $AFFE→$C8FD (ROM 쓰기 불가 대응), 코드는 기본 카드 $1F:03FA00(논리 $7A00) 단일 사본",
+  "리더 v3m: armchk 호출을 MPR3=$1F 브래킷 JSR $7A00 으로",
+  "확장 뱅크 $40-$43 스킵 — Arcade Card RAM 창이 카드 ROM 을 가림 (b9 v1 행업/v2 무장실패의 진범, 진단 lua 물리 버스 실측)",
+  "54씬 테이블 (행 이미지 = FF + IBANK/IBASE, RUN 무동작)",
+  "로더 v4·트랙 확장 무변경"
+ ],
+ "scenes": {
+  "290": {
+   "records": 84,
+   "index_bank": "4D",
+   "index_off": "0500",
+   "index_bytes": 662
+  },
+  "386": {
+   "records": 77,
+   "index_bank": "4E",
+   "index_off": "0500",
+   "index_bytes": 613
+  },
+  "482": {
+   "records": 235,
+   "index_bank": "46",
+   "index_off": "0000",
+   "index_bytes": 1719
+  },
+  "578": {
+   "records": 200,
+   "index_bank": "49",
+   "index_off": "0000",
+   "index_bytes": 1474
+  },
+  "674": {
+   "records": 234,
+   "index_bank": "46",
+   "index_off": "0A00",
+   "index_bytes": 1712
+  },
+  "770": {
+   "records": 234,
+   "index_bank": "46",
+   "index_off": "1100",
+   "index_bytes": 1712
+  },
+  "866": {
+   "records": 180,
+   "index_bank": "4B",
+   "index_off": "1600",
+   "index_bytes": 1334
+  },
+  "962": {
+   "records": 192,
+   "index_bank": "49",
+   "index_off": "1600",
+   "index_bytes": 1418
+  },
+  "1058": {
+   "records": 203,
+   "index_bank": "48",
+   "index_off": "1000",
+   "index_bytes": 1495
+  },
+  "1154": {
+   "records": 181,
+   "index_bank": "4B",
+   "index_off": "0A00",
+   "index_bytes": 1341
+  },
+  "1250": {
+   "records": 185,
+   "index_bank": "4A",
+   "index_off": "0A00",
+   "index_bytes": 1369
+  },
+  "1346": {
+   "records": 177,
+   "index_bank": "4C",
+   "index_off": "0000",
+   "index_bytes": 1313
+  },
+  "1442": {
+   "records": 269,
+   "index_bank": "45",
+   "index_off": "1300",
+   "index_bytes": 1957
+  },
+  "1538": {
+   "records": 216,
+   "index_bank": "47",
+   "index_off": "1800",
+   "index_bytes": 1586
+  },
+  "1634": {
+   "records": 230,
+   "index_bank": "47",
+   "index_off": "0000",
+   "index_bytes": 1684
+  },
+  "1730": {
+   "records": 202,
+   "index_bank": "48",
+   "index_off": "1600",
+   "index_bytes": 1488
+  },
+  "1826": {
+   "records": 229,
+   "index_bank": "47",
+   "index_off": "0A00",
+   "index_bytes": 1677
+  },
+  "1922": {
+   "records": 185,
+   "index_bank": "4A",
+   "index_off": "1000",
+   "index_bytes": 1369
+  },
+  "2018": {
+   "records": 231,
+   "index_bank": "46",
+   "index_off": "1800",
+   "index_bytes": 1691
+  },
+  "2114": {
+   "records": 141,
+   "index_bank": "4E",
+   "index_off": "1900",
+   "index_bytes": 1061
+  },
+  "2210": {
+   "records": 182,
+   "index_bank": "4B",
+   "index_off": "0000",
+   "index_bytes": 1348
+  },
+  "2306": {
+   "records": 145,
+   "index_bank": "4E",
+   "index_off": "0F00",
+   "index_bytes": 1089
+  },
+  "2402": {
+   "records": 204,
+   "index_bank": "48",
+   "index_off": "0A00",
+   "index_bytes": 1502
+  },
+  "2498": {
+   "records": 146,
+   "index_bank": "4E",
+   "index_off": "0A00",
+   "index_bytes": 1096
+  },
+  "2594": {
+   "records": 120,
+   "index_bank": "4B",
+   "index_off": "1C00",
+   "index_bytes": 914
+  },
+  "2690": {
+   "records": 150,
+   "index_bank": "4D",
+   "index_off": "1900",
+   "index_bytes": 1124
+  },
+  "2786": {
+   "records": 108,
+   "index_bank": "4F",
+   "index_off": "1900",
+   "index_bytes": 830
+  },
+  "2882": {
+   "records": 172,
+   "index_bank": "45",
+   "index_off": "1B00",
+   "index_bytes": 1278
+  },
+  "2978": {
+   "records": 151,
+   "index_bank": "4D",
+   "index_off": "1400",
+   "index_bytes": 1131
+  },
+  "3074": {
+   "records": 193,
+   "index_bank": "49",
+   "index_off": "1000",
+   "index_bytes": 1425
+  },
+  "3170": {
+   "records": 138,
+   "index_bank": "4F",
+   "index_off": "0A00",
+   "index_bytes": 1040
+  },
+  "3266": {
+   "records": 184,
+   "index_bank": "4A",
+   "index_off": "1600",
+   "index_bytes": 1362
+  },
+  "3362": {
+   "records": 273,
+   "index_bank": "45",
+   "index_off": "0000",
+   "index_bytes": 1985
+  },
+  "3458": {
+   "records": 155,
+   "index_bank": "4D",
+   "index_off": "0A00",
+   "index_bytes": 1159
+  },
+  "3554": {
+   "records": 171,
+   "index_bank": "4C",
+   "index_off": "1000",
+   "index_bytes": 1271
+  },
+  "3650": {
+   "records": 195,
+   "index_bank": "49",
+   "index_off": "0A00",
+   "index_bytes": 1439
+  },
+  "3746": {
+   "records": 206,
+   "index_bank": "48",
+   "index_off": "0000",
+   "index_bytes": 1516
+  },
+  "3842": {
+   "records": 285,
+   "index_bank": "45",
+   "index_off": "0A00",
+   "index_bytes": 2069
+  },
+  "3938": {
+   "records": 156,
+   "index_bank": "4D",
+   "index_off": "0000",
+   "index_bytes": 1166
+  },
+  "4034": {
+   "records": 177,
+   "index_bank": "4C",
+   "index_off": "0A00",
+   "index_bytes": 1313
+  },
+  "4130": {
+   "records": 222,
+   "index_bank": "47",
+   "index_off": "1100",
+   "index_bytes": 1628
+  },
+  "4226": {
+   "records": 181,
+   "index_bank": "4B",
+   "index_off": "1000",
+   "index_bytes": 1341
+  },
+  "4322": {
+   "records": 136,
+   "index_bank": "4F",
+   "index_off": "0F00",
+   "index_bytes": 1026
+  },
+  "4418": {
+   "records": 144,
+   "index_bank": "4E",
+   "index_off": "1400",
+   "index_bytes": 1082
+  },
+  "4514": {
+   "records": 135,
+   "index_bank": "48",
+   "index_off": "1C00",
+   "index_bytes": 1019
+  },
+  "4610": {
+   "records": 128,
+   "index_bank": "4A",
+   "index_off": "1C00",
+   "index_bytes": 970
+  },
+  "4706": {
+   "records": 167,
+   "index_bank": "4C",
+   "index_off": "1500",
+   "index_bytes": 1243
+  },
+  "4802": {
+   "records": 139,
+   "index_bank": "4F",
+   "index_off": "0000",
+   "index_bytes": 1047
+  },
+  "4898": {
+   "records": 148,
+   "index_bank": "4E",
+   "index_off": "0000",
+   "index_bytes": 1110
+  },
+  "4994": {
+   "records": 152,
+   "index_bank": "4D",
+   "index_off": "0F00",
+   "index_bytes": 1138
+  },
+  "5090": {
+   "records": 162,
+   "index_bank": "4C",
+   "index_off": "1A00",
+   "index_bytes": 1208
+  },
+  "5186": {
+   "records": 187,
+   "index_bank": "4A",
+   "index_off": "0000",
+   "index_bytes": 1383
+  },
+  "5282": {
+   "records": 131,
+   "index_bank": "49",
+   "index_off": "1C00",
+   "index_bytes": 991
+  },
+  "5378": {
+   "records": 136,
+   "index_bank": "4F",
+   "index_off": "1400",
+   "index_bytes": 1026
+  }
+ },
+ "pool": {
+  "unique_records": 2759,
+  "text_bytes": 263906,
+  "text_banks": 33,
+  "text_bank_list": [
+   "20",
+   "21",
+   "22",
+   "23",
+   "24",
+   "25",
+   "26",
+   "27",
+   "28",
+   "29",
+   "2A",
+   "2B",
+   "2C",
+   "2D",
+   "2E",
+   "2F",
+   "30",
+   "31",
+   "32",
+   "33",
+   "34",
+   "35",
+   "36",
+   "37",
+   "38",
+   "39",
+   "3A",
+   "3B",
+   "3C",
+   "3D",
+   "3E",
+   "3F",
+   "44"
+  ],
+  "index_banks": 11,
+  "index_bank_list": [
+   "45",
+   "46",
+   "47",
+   "48",
+   "49",
+   "4A",
+   "4B",
+   "4C",
+   "4D",
+   "4E",
+   "4F"
+  ],
+  "arcade_shadow_skipped": "40-43",
+  "spare_banks": 16
+ },
+ "armchk_v3_bytes": 171,
+ "card": {
+  "out": "SystemCard3_btrack_b9.pce",
+  "size": 786432,
+  "written_regions": 89
+ },
+ "window": {
+  "loader": 212,
+  "slice": 43,
+  "reader": 86,
+  "free": 60
+ },
+ "output_bin_sha256": "a111fc7f26d5f1f890c68441057c9bd35d6e8ef55869920d50ba64f8512b1b4c",
+ "card_sha256": "8cfaeb6bfe0e72f9617549c8803b69c27d4dea93e1fb193085703d6503f95827"
+}

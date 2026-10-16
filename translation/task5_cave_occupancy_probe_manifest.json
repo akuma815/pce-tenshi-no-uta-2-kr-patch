@@ -1,0 +1,54 @@
+{
+  "format": "TASK5-CAVE-OCCUPANCY-PROBE",
+  "version": 1,
+  "task": 5,
+  "status": "RUNTIME_PASS",
+  "hypothesis": "writing the presumed-free C737 cave corrupts data or code consumed later by Memo even when the cave is never executed",
+  "present_variables": [
+    "C737 bytes changed from FF FF FF to JMP E060",
+    "original JSR E060 call",
+    "original Japanese dialogue"
+  ],
+  "absent_variables": [
+    "call redirection",
+    "C737 execution",
+    "classification dispatcher",
+    "custom text",
+    "glyph page"
+  ],
+  "runtime_decision": {
+    "memo_responsive": "C737 occupancy is safe; executing the redirected path or its added JMP timing causes the hang",
+    "memo_hangs": "C737 is not truly free across the later Memo lifecycle; relocate the hook and discard this cave"
+  },
+  "expected_writes": [
+    {
+      "id": "inert-c737-marker",
+      "iso_offset": "0x89737",
+      "physical_bin_offset": "0x815B27",
+      "length": 3,
+      "expected_hex": "FFFFFF",
+      "replacement_hex": "4C60E0",
+      "reason": "isolate cave occupancy while leaving the live renderer call completely original"
+    }
+  ],
+  "diff_audit": {
+    "declared_span_count": 1,
+    "actual_changed_bytes": 3,
+    "actual_changed_ranges": [
+      {
+        "physical_start": "0x815B27",
+        "physical_end_exclusive": "0x815B2A",
+        "changed_bytes": 3
+      }
+    ],
+    "undeclared_changes": 0,
+    "file_size_preserved": true
+  },
+  "output": {
+    "bin": "Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_task5_cave_occupancy_probe.bin",
+    "bin_size": 523184384,
+    "bin_sha256": "83F30BE486E005E3F5503D405131666799D590DAD3F48B4EAF54A8370D89058F",
+    "cue": "Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_task5_cave_occupancy_probe.cue",
+    "cue_sha256": "8EFC3238DE663492C1A32C2CB9988C39C38BDC8314299D8A2B0B6D44C28B0657"
+  }
+}

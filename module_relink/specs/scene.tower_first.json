@@ -1,0 +1,71 @@
+{
+  "format": "ZIRIA-MODULE-SECTION-SPEC",
+  "version": 1,
+  "module_id": "scene.tower_first",
+  "module_kind": "scene_package",
+  "family": "tower/dungeon",
+  "disc": {
+    "lba": 2882,
+    "sector_count": 96
+  },
+  "runtime": {
+    "physical_bank_interval": "0x68-0x7F",
+    "runtime_range": null,
+    "entry_point": null,
+    "lifetime": "owning_family_only"
+  },
+  "host_candidates": [],
+  "extension_blocked_reason": null,
+  "sections": [
+    {
+      "name": "original",
+      "kind": "original",
+      "size": 196608,
+      "source": "module_relink/track02/semantic_modules/scene.tower_first_lba2882_s96.bin",
+      "placement": "fixed_identity",
+      "mutable": false
+    },
+    {
+      "name": "extension_code",
+      "kind": "extension_code",
+      "size": 0,
+      "source": null,
+      "placement": "unallocated",
+      "mutable": true,
+      "nonzero_gate": "approved disc allocation + owning-loader registration"
+    },
+    {
+      "name": "text",
+      "kind": "text",
+      "size": 0,
+      "source": null,
+      "placement": "unallocated",
+      "mutable": true,
+      "nonzero_gate": "approved disc allocation + owning-loader registration"
+    },
+    {
+      "name": "glyph",
+      "kind": "glyph",
+      "size": 0,
+      "source": null,
+      "placement": "unallocated",
+      "mutable": true,
+      "nonzero_gate": "approved disc allocation + owning-loader registration"
+    },
+    {
+      "name": "relocation",
+      "kind": "relocation",
+      "size": 0,
+      "source": null,
+      "placement": "unallocated",
+      "mutable": true,
+      "nonzero_gate": "approved disc allocation + owning-loader registration"
+    }
+  ],
+  "link_policy": {
+    "assembler": "WLA-HuC6280 compatible section object or equivalent byte section",
+    "identity_mode": "emit original section byte-for-byte",
+    "extension_mode": "requires extension_registry approved allocation",
+    "cross_family_reference": "prohibited"
+  }
+}

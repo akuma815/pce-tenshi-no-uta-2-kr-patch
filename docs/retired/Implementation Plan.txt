@@ -1,0 +1,49 @@
+# Implementation Plan - Task 5: fetch hooking + Hangul font GETFNT hooking
+
+This document outlines the design and implementation plan for translating the PC Engine CD game "Tenshi no Uta II - Datenshi no Sentaku (Japan)" into Korean, specifically addressing **Task 5** of the roadmap: implementing the font rendering hook (`EX_GETFNT`), loading the custom Hangul font into resident RAM, and rebuilding the game image for emulator validation.
+
+## Proposed Changes
+
+We will introduce several custom tools to process the font and patch the game image, then rebuild the Mode 1 data track with recalculated EDC/ECC checksums.
+
+### 1. Hangul Font Generation (`tools/generate_font.py`)
+- We will parse `translation/script_sheet.tsv` and collect all **994 unique Hangul characters** used in the Korean translation.
+- We will render each Hangul character at size 11 using `font/Galmuri11-Condensed.ttf`.
+- Each character will be rendered onto a `16x16` monochrome bitmap canvas and centered horizontally (yielding a 6-pixel wide character centered in the 12-pixel column space with 3-pixel padding on each side).
+- The rendered glyphs will be packed into a binary format (32 bytes per glyph: 16 rows of 2 bytes, MSB-first, with the bottom 4 rows being all zero padding).
+- We will organize the glyphs into **5 font data banks** (8KB each, 256 character slots per bank).
+- We will assign each unique Hangul character a consecutive 2-byte Shift-JIS custom code starting at `0xEB20` (avoiding control bytes by keeping the low byte in the range `0x20` to `0xFF`).
+- The generated font data will be saved as `translation/font_data.bin` (40 KB).
+- A mapping table will be saved as `translation/char_map.json`.
+
+### 2. Boot Loader Modification (`tools/patch_iso.py`)
+- We will append the custom Hangul font data (`font_data.bin`) to the end of the data track (starting at sector 9178, which is inside the zero-padded postgap area).
+- We will patch the game's boot program in the CD-ROM ISO (LBA 2, memory `$4000` onwards) to load these 20 sectors from the CD into physical RAM banks `$83` to `$87` at boot time.
+- Physical RAM banks `$83` to `$87` are verified to be completely unused and unmapped by the original game, making them perfect resident storage for our Hangul font.
+- We will write a boot loading routine in the unused space of the boot sector (offset `0x1010` in file) and patch the main boot vector to jump to it before starting the game engine.
+
+### 3. GETFNT Hook Routine (`tools/patch_iso.py`)
+- We will implement a custom `EX_GETFNT` hook routine (~50 bytes) and copy it into the console's System Work RAM at `$22A0` (bank `$F8`, which is mapped to MPR1 in all programs) during boot initialization.
+- The hook routine will check if the character code in `$F8/$F9` is in our custom Hangul range (`0xEB` to `0xEF`).
+  - If it is Hangul, it maps the corresponding font bank (`$83` to `$87`) to MPR3, copies the 32-byte glyph to `($FA)`, restores the original bank of MPR3, and returns.
+  - If it is NOT Hangul, it jumps to `$E060` (the original BIOS `EX_GETFNT` call).
+- We will scan and patch all `EX_GETFNT` calls (`20 60 E0`) in the game ISO to call our hook at `$22A0` (`20 A0 22`).
+
+### 4. Text Translation Re-encoding (`tools/compile_translation.py`)
+- We will translate all text inside `extracted/Track02_data.iso` by replacing the original Japanese characters with their custom Hangul Shift-JIS codes.
+- To prevent breaking event pointers and logic, the original dialogue layout in the ISO will be kept structurally intact, and we will hook the script fetch address to redirect to the translated strings mapped in the free slots of the ISO.
+
+### 5. ISO Rebuilding & Patch Generation (`tools/rebuild_iso.py`)
+- We will modify `extracted/Track02_data.iso` (2048B/sector).
+- We will convert the patched `.iso` into a RAW `.bin` file (2352B/sector) and recalculate the EDC and ECC checksums for all modified sectors using `tools/cdrom_ecc.py`.
+- We will replace the modified raw sectors in the original `.img` file to create the patched disc image.
+- We will generate an `xdelta3` patch file comparing the original disc image with the translated one.
+
+## Verification Plan
+
+### Automated Tests
+- Run `python tools/generate_font.py` to verify font compilation and check that `translation/font_data.bin` is generated.
+- Run `python tools/patch_iso.py` to verify patching, assembly, and EDC/ECC checksum regeneration.
+
+### Manual Verification
+- We will ask the user to verify the generated `xdelta3` patch and run the patched `.cue`/`.bin` image in an emulator (Ootake or Mednafen) to verify that the boot sequence completes and Hangul characters are correctly rendered on the screen.

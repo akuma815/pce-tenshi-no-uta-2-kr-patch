@@ -1,0 +1,133 @@
+{
+  "format": "ZIRIA-MODULE-LINKER-LAYOUT",
+  "version": 1,
+  "address_model": "HuC6280 8 KiB physical banks; CPU address is valid only with the listed MPR mapping",
+  "immutable_source_sha256": "D16D29EB80B1B74A2EC929924349256B50B8F9F5C9A3FA37B6FCC08B059B22C5",
+  "modules": [
+    {
+      "id": "boot.kernel",
+      "kind": "executable_engine",
+      "family": "boot",
+      "lba": 2,
+      "sector_count": 16,
+      "physical_bank_interval": "0x80-0x83",
+      "runtime_range": "0x4000-0xBFFF",
+      "entry_point": "0x600B",
+      "identity_binary": "module_relink/track02/semantic_modules/boot.kernel_lba0002_s16.bin",
+      "z3_section_policy": "linkable_executable"
+    },
+    {
+      "id": "boot.resource_a",
+      "kind": "resource_bundle",
+      "family": "boot",
+      "lba": 34,
+      "sector_count": 12,
+      "physical_bank_interval": null,
+      "runtime_range": null,
+      "entry_point": null,
+      "identity_binary": "module_relink/track02/semantic_modules/boot.resource_a_lba0034_s12.bin",
+      "z3_section_policy": "opaque_resource_or_scene_package"
+    },
+    {
+      "id": "opening.engine",
+      "kind": "executable_engine",
+      "family": "opening",
+      "lba": 98,
+      "sector_count": 20,
+      "physical_bank_interval": null,
+      "runtime_range": null,
+      "entry_point": "0x5000",
+      "identity_binary": "module_relink/track02/semantic_modules/opening.engine_lba0098_s20.bin",
+      "z3_section_policy": "linkable_executable"
+    },
+    {
+      "id": "opening.resource",
+      "kind": "resource_bundle",
+      "family": "opening",
+      "lba": 118,
+      "sector_count": 6,
+      "physical_bank_interval": null,
+      "runtime_range": null,
+      "entry_point": null,
+      "identity_binary": "module_relink/track02/semantic_modules/opening.resource_lba0118_s06.bin",
+      "z3_section_policy": "opaque_resource_or_scene_package"
+    },
+    {
+      "id": "system.bundle",
+      "kind": "resource_bundle",
+      "family": "system",
+      "lba": 226,
+      "sector_count": 28,
+      "physical_bank_interval": null,
+      "runtime_range": null,
+      "entry_point": null,
+      "identity_binary": "module_relink/track02/semantic_modules/system.bundle_lba0226_s28.bin",
+      "z3_section_policy": "opaque_resource_or_scene_package"
+    },
+    {
+      "id": "field.main_engine",
+      "kind": "executable_engine",
+      "family": "field",
+      "lba": 258,
+      "sector_count": 20,
+      "physical_bank_interval": "0x80-0x84",
+      "runtime_range": "0x4000-0xDFFF",
+      "entry_point": "jump-table at 0x4000",
+      "identity_binary": "module_relink/track02/semantic_modules/field.main_engine_lba0258_s20.bin",
+      "z3_section_policy": "linkable_executable"
+    },
+    {
+      "id": "field.resource",
+      "kind": "resource_bundle",
+      "family": "field",
+      "lba": 278,
+      "sector_count": 12,
+      "physical_bank_interval": "0x85-0x87 (inferred from following MPR snapshot)",
+      "runtime_range": null,
+      "entry_point": null,
+      "identity_binary": "module_relink/track02/semantic_modules/field.resource_lba0278_s12.bin",
+      "z3_section_policy": "opaque_resource_or_scene_package"
+    },
+    {
+      "id": "scene.field_start",
+      "kind": "scene_package",
+      "family": "field",
+      "lba": 482,
+      "sector_count": 96,
+      "physical_bank_interval": "0x68-0x7F",
+      "runtime_range": null,
+      "entry_point": null,
+      "identity_binary": "module_relink/track02/semantic_modules/scene.field_start_lba0482_s96.bin",
+      "z3_section_policy": "opaque_resource_or_scene_package"
+    },
+    {
+      "id": "scene.battle_first",
+      "kind": "scene_package",
+      "family": "battle",
+      "lba": 290,
+      "sector_count": 96,
+      "physical_bank_interval": "0x68-0x7F",
+      "runtime_range": null,
+      "entry_point": null,
+      "identity_binary": "module_relink/track02/semantic_modules/scene.battle_first_lba0290_s96.bin",
+      "z3_section_policy": "opaque_resource_or_scene_package"
+    },
+    {
+      "id": "scene.tower_first",
+      "kind": "scene_package",
+      "family": "tower/dungeon",
+      "lba": 2882,
+      "sector_count": 96,
+      "physical_bank_interval": "0x68-0x7F",
+      "runtime_range": null,
+      "entry_point": null,
+      "identity_binary": "module_relink/track02/semantic_modules/scene.tower_first_lba2882_s96.bin",
+      "z3_section_policy": "opaque_resource_or_scene_package"
+    }
+  ],
+  "reserved_transition_window": {
+    "physical_banks": "0x68-0x7F",
+    "size_bytes": 196608,
+    "policy": "fully replaced by each scene load; no cross-family persistent section"
+  }
+}

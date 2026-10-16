@@ -1,0 +1,3032 @@
+{
+  "format": "ZIRIA-Z8-TEXT-CONTAINERS",
+  "version": 1,
+  "task": "Z8-v1",
+  "status": "STRUCTURE_PASS_RELOCATION_BLOCKED",
+  "scope": "all master_text rows; analysis containers only; no CUE/BIN mutation",
+  "inputs": {
+    "master_text": {
+      "path": "translation/full_extraction/master_text.csv",
+      "sha256": "36AAE2700FB26239A29BBCC3770EFC203BF494997A72DD0C85B8F6026E560AC0"
+    },
+    "track02_iso": {
+      "path": "extracted_bin/Track02_data.iso",
+      "sha256": "7566073A2AA1F48E7B39ED2B34277D9935FADE8A3FAD7DCC72C21276E2632AF9"
+    },
+    "z7_manifest": {
+      "path": "translation/ziria_z7_glyph_packages_manifest.json",
+      "sha256": "2318290A79E0B68F9F4199AED89E88F090A721EC5C6CBCCFD54D358B6297367C"
+    }
+  },
+  "population": {
+    "physical_rows": 18817,
+    "container_count": 103,
+    "stable_ids_unique": true,
+    "protected_raw_matches": 18817,
+    "nul_terminated_rows": 18817,
+    "duplicate_reference_rows": 14944
+  },
+  "encoding_audit": {
+    "protected_original_decode_rows": 18817,
+    "translation_encoded_rows": 18817,
+    "unmapped_characters": 0,
+    "token_sequence_mismatches": 0,
+    "cross_bank_strings": 0,
+    "encoding_alias_rows": 12,
+    "encoding_alias_occurrences": 24
+  },
+  "size_summary": {
+    "original_bytes": 857892,
+    "translated_bytes_before_dedup": 921459,
+    "generated_container_bytes": 606950,
+    "padding_bytes": 3237,
+    "fixed_length_candidates": 6018,
+    "relocation_required_by_length": 12799,
+    "largest_container_bytes": 17175
+  },
+  "release_blockers": {
+    "needs_review_rows": 17,
+    "same_as_original_rows": 507,
+    "translation_rows_with_japanese": 4644,
+    "reference_catalogue": "OPEN_BY_RENDERER_FAMILY",
+    "redirect_protocol": "UNDEFINED_FOR_ZIRIA_LOADER_OWNED_ARCHITECTURE",
+    "runtime_pointer_format": "UNDEFINED"
+  },
+  "decisions": {
+    "terminator": "00 confirmed and regenerated exactly once",
+    "tokens": "exact original/translation token sequence required",
+    "continuation": "no in-record continuation; legacy 01/02 protocol rejected",
+    "deduplication": "exact encoded bytes only, package-local",
+    "bank_crossing": "prohibited",
+    "runtime_link": "not attempted"
+  },
+  "outputs": {
+    "container_root": "module_relink/z8_text_containers/containers",
+    "entry_index": "translation/ziria_z8_text_entry_index.csv",
+    "summary": "translation/ziria_z8_text_container_summary.csv",
+    "control_spec": "translation/ziria_z8_control_code_spec.json",
+    "semantic_table_root": "module_relink/z8_text_containers/semantic_tables",
+    "report": "Z8_텍스트_컨테이너_v1.md"
+  },
+  "semantic_tables": [
+    {
+      "category": "battle",
+      "subcategory": "battle_message_or_data",
+      "rows": 28,
+      "path": "module_relink/z8_text_containers/semantic_tables/battle/battle_message_or_data.csv",
+      "sha256": "7A7D7E4DCEE4F357EADEA18B3B5FE6B812801AA7D0E632AD4C2720B80405DBEC"
+    },
+    {
+      "category": "boot",
+      "subcategory": "boot_or_bios_text",
+      "rows": 18,
+      "path": "module_relink/z8_text_containers/semantic_tables/boot/boot_or_bios_text.csv",
+      "sha256": "B6209B730DCA08B4576ACA5FE80615ABBB71889DF70D3311179E666BE504E2AF"
+    },
+    {
+      "category": "card",
+      "subcategory": "card_minigame_text",
+      "rows": 52,
+      "path": "module_relink/z8_text_containers/semantic_tables/card/card_minigame_text.csv",
+      "sha256": "BFF79EDA03617822CF0209D2AA6B32B666024D62F89A940CB20B93A048BA5F80"
+    },
+    {
+      "category": "command",
+      "subcategory": "battle_effect_commands",
+      "rows": 18,
+      "path": "module_relink/z8_text_containers/semantic_tables/command/battle_effect_commands.csv",
+      "sha256": "0DAD0C49E7AB0DD5E143E2505F16F8273817E2455A9EE27EDE2031DEE4A44994"
+    },
+    {
+      "category": "command",
+      "subcategory": "menu_and_shop_commands",
+      "rows": 38,
+      "path": "module_relink/z8_text_containers/semantic_tables/command/menu_and_shop_commands.csv",
+      "sha256": "029DA6768763F5FBA597D91E5CD24FBEC97D2221131635FA9553955426EBD1EC"
+    },
+    {
+      "category": "data_table",
+      "subcategory": "item_monster_name_candidate",
+      "rows": 2,
+      "path": "module_relink/z8_text_containers/semantic_tables/data_table/item_monster_name_candidate.csv",
+      "sha256": "20D40DA5DCE6C020379C54D2E9856DB7AF353CAA15847A3F3F295457497F6EC1"
+    },
+    {
+      "category": "dialogue",
+      "subcategory": "asset_confirmed_event_text",
+      "rows": 5258,
+      "path": "module_relink/z8_text_containers/semantic_tables/dialogue/asset_confirmed_event_text.csv",
+      "sha256": "5741875669EFD10179234CEDC90A6A36DF5D8911F9C07B8358D7CEF778D714D1"
+    },
+    {
+      "category": "dialogue",
+      "subcategory": "event_dialogue_or_command",
+      "rows": 5038,
+      "path": "module_relink/z8_text_containers/semantic_tables/dialogue/event_dialogue_or_command.csv",
+      "sha256": "0A1EF1F103B68472EAF7E7204A3573A03A5B942D722E906A36F38C3BC7549726"
+    },
+    {
+      "category": "dialogue",
+      "subcategory": "external_dialogue_asset",
+      "rows": 185,
+      "path": "module_relink/z8_text_containers/semantic_tables/dialogue/external_dialogue_asset.csv",
+      "sha256": "28AD157D6EFE3DF145EC77301B7B379FCDC69EDBE59A7CE3FC7311A1BFFF7A58"
+    },
+    {
+      "category": "event",
+      "subcategory": "asset_confirmed_short_event_text",
+      "rows": 4024,
+      "path": "module_relink/z8_text_containers/semantic_tables/event/asset_confirmed_short_event_text.csv",
+      "sha256": "0EA3611BE0A61BC6C5B11D3E64345F0175C8C3000A5E451D2A5A86E809F23843"
+    },
+    {
+      "category": "late_event",
+      "subcategory": "late_event_or_program",
+      "rows": 12,
+      "path": "module_relink/z8_text_containers/semantic_tables/late_event/late_event_or_program.csv",
+      "sha256": "F1636E8FC91D6884E76BC63542A7D461E6B953276B2023A55B1901D57EA4B015"
+    },
+    {
+      "category": "menu_data",
+      "subcategory": "accessory_and_key_item_names",
+      "rows": 75,
+      "path": "module_relink/z8_text_containers/semantic_tables/menu_data/accessory_and_key_item_names.csv",
+      "sha256": "EC9EDCF5A55CE16C59271D722907597D7C3D00A7DCBDF8D302D0457DAFD3056B"
+    },
+    {
+      "category": "menu_data",
+      "subcategory": "armour_names",
+      "rows": 42,
+      "path": "module_relink/z8_text_containers/semantic_tables/menu_data/armour_names.csv",
+      "sha256": "834FBBF73610DEB4C90609CE8F667EDB8ECA5CDD86CEB8EBF42A73E5F9CDABF4"
+    },
+    {
+      "category": "menu_data",
+      "subcategory": "boss_names",
+      "rows": 34,
+      "path": "module_relink/z8_text_containers/semantic_tables/menu_data/boss_names.csv",
+      "sha256": "F8CEE8F83D8DBF775F56D8FE048F108F663E388ED5C6E6742A2A2A71783322F9"
+    },
+    {
+      "category": "menu_data",
+      "subcategory": "character_and_magic_names",
+      "rows": 125,
+      "path": "module_relink/z8_text_containers/semantic_tables/menu_data/character_and_magic_names.csv",
+      "sha256": "A6D797FBFF52E8F845F5EBAAA19E361F119B8B4B2C770BF3D331B20005A11855"
+    },
+    {
+      "category": "menu_data",
+      "subcategory": "headgear_names",
+      "rows": 15,
+      "path": "module_relink/z8_text_containers/semantic_tables/menu_data/headgear_names.csv",
+      "sha256": "EEB075C50AA4224BB0A771D301A36ACDEE86375326BDF4059932284E85AF888A"
+    },
+    {
+      "category": "menu_data",
+      "subcategory": "location_names",
+      "rows": 99,
+      "path": "module_relink/z8_text_containers/semantic_tables/menu_data/location_names.csv",
+      "sha256": "36D46A3E602E047A6A5301E0A97CE3708AC0D8CCDF43296081E29831B62C3561"
+    },
+    {
+      "category": "menu_data",
+      "subcategory": "monster_names",
+      "rows": 3319,
+      "path": "module_relink/z8_text_containers/semantic_tables/menu_data/monster_names.csv",
+      "sha256": "13FF0B443DA291BA94A596C04731B5F44617FB06BF19CC1F030BD555BEBB29CC"
+    },
+    {
+      "category": "menu_data",
+      "subcategory": "shield_names",
+      "rows": 17,
+      "path": "module_relink/z8_text_containers/semantic_tables/menu_data/shield_names.csv",
+      "sha256": "AE68F69A906135BE3652BFC4C1789D24E55276FDC1D9DAF9626BDCF5322900F1"
+    },
+    {
+      "category": "menu_data",
+      "subcategory": "weapon_names",
+      "rows": 63,
+      "path": "module_relink/z8_text_containers/semantic_tables/menu_data/weapon_names.csv",
+      "sha256": "5C45824520FDA8A5975FE8B1D653EEB2613247E64C9025DF3DB1407E243399EF"
+    },
+    {
+      "category": "slot_graphics_window",
+      "subcategory": "graphics_or_embedded_text",
+      "rows": 3,
+      "path": "module_relink/z8_text_containers/semantic_tables/slot_graphics_window/graphics_or_embedded_text.csv",
+      "sha256": "517E0677932EBFFA243DF970EE436242756631C3A7F29F8BEEAC4D3636F939D9"
+    },
+    {
+      "category": "system",
+      "subcategory": "system_menu_battle",
+      "rows": 82,
+      "path": "module_relink/z8_text_containers/semantic_tables/system/system_menu_battle.csv",
+      "sha256": "F5D3682A7EB6E84DD3A0C42904CE93667D0DF41C66D599DEE22CBFD3DF760BBA"
+    },
+    {
+      "category": "unknown",
+      "subcategory": "unclassified_program_data",
+      "rows": 1,
+      "path": "module_relink/z8_text_containers/semantic_tables/unknown/unclassified_program_data.csv",
+      "sha256": "8DB90858E62922B90403B6A1FAF099170AD225C07F8AFBAB701865C73F3B95FC"
+    },
+    {
+      "category": "visual_event",
+      "subcategory": "visual_scene_or_overlay",
+      "rows": 253,
+      "path": "module_relink/z8_text_containers/semantic_tables/visual_event/visual_scene_or_overlay.csv",
+      "sha256": "E1E16CD95DB6C07887F1CBF99759DAFDC91069DC45687BB41C91D6A4FBECA222"
+    },
+    {
+      "category": "visual_scene",
+      "subcategory": "visual_scene_or_credits_asset",
+      "rows": 16,
+      "path": "module_relink/z8_text_containers/semantic_tables/visual_scene/visual_scene_or_credits_asset.csv",
+      "sha256": "51DB3D9B215FF99C873CA037846F2C1FD84D0A700F93E2D0B1CDB6F4496D071F"
+    }
+  ],
+  "containers": [
+    {
+      "package_id": "scene.slot00.dialogue_event",
+      "storage_module": "scene.slot00",
+      "family": "dialogue_event",
+      "row_count": 15,
+      "unique_encoded_strings": 13,
+      "deduplicated_rows": 2,
+      "container_bytes": 128,
+      "padding_bytes": 0,
+      "original_bytes": 140,
+      "translated_bytes_before_dedup": 140,
+      "fixed_length_candidates": 15,
+      "relocation_required_by_length": 0,
+      "needs_review_rows": 0,
+      "same_as_original_rows": 15,
+      "japanese_translation_rows": 15,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/scene.slot00.dialogue_event/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/scene.slot00.dialogue_event/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/scene.slot00.dialogue_event/container_profile.json"
+      },
+      "sha256": {
+        "entries": "6B893D085D2E2BBBEBF32FE09BCF7A64BAA781EDDEE0CC7C68D0DCE4CA953D28",
+        "strings": "181B8B7F52F93852E58C816716DE490318779FFFAA6956511DA85483EA88C50C",
+        "profile": "88D4AC0FD5695A8997EC22B6D299B46DBFCE63B104C7A2DFF6721D490FAD7427"
+      }
+    },
+    {
+      "package_id": "scene.slot00.visual_event_portrait",
+      "storage_module": "scene.slot00",
+      "family": "visual_event_portrait",
+      "row_count": 3,
+      "unique_encoded_strings": 1,
+      "deduplicated_rows": 2,
+      "container_bytes": 16,
+      "padding_bytes": 0,
+      "original_bytes": 48,
+      "translated_bytes_before_dedup": 48,
+      "fixed_length_candidates": 3,
+      "relocation_required_by_length": 0,
+      "needs_review_rows": 0,
+      "same_as_original_rows": 0,
+      "japanese_translation_rows": 0,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/scene.slot00.visual_event_portrait/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/scene.slot00.visual_event_portrait/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/scene.slot00.visual_event_portrait/container_profile.json"
+      },
+      "sha256": {
+        "entries": "517E0677932EBFFA243DF970EE436242756631C3A7F29F8BEEAC4D3636F939D9",
+        "strings": "8E137D0B19ECF6B28A12F71150E4A6808FB6A6CE19D11DB756DBC293125DFE4B",
+        "profile": "EE56634FB044047B779531D261446B37970BD6D3F47B6D5BE5586933DF7C7CB0"
+      }
+    },
+    {
+      "package_id": "scene.slot01.dialogue_event",
+      "storage_module": "scene.slot01",
+      "family": "dialogue_event",
+      "row_count": 172,
+      "unique_encoded_strings": 166,
+      "deduplicated_rows": 6,
+      "container_bytes": 10393,
+      "padding_bytes": 218,
+      "original_bytes": 10263,
+      "translated_bytes_before_dedup": 10683,
+      "fixed_length_candidates": 67,
+      "relocation_required_by_length": 105,
+      "needs_review_rows": 0,
+      "same_as_original_rows": 24,
+      "japanese_translation_rows": 83,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/scene.slot01.dialogue_event/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/scene.slot01.dialogue_event/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/scene.slot01.dialogue_event/container_profile.json"
+      },
+      "sha256": {
+        "entries": "399F623E8E67C6A306EB0E4DC1003858822B9F81A160F9FEB62DCAEFE05C6009",
+        "strings": "38BFBBB9CDF8BDA9ECE810EEF169E84387EA9CFE590F2779BEA4F605DD82868C",
+        "profile": "D95CD5E43A64328E3D9A7F02C9840834D837042763BA688260713E49EBC8B979"
+      }
+    },
+    {
+      "package_id": "scene.slot01.menu_memo_system",
+      "storage_module": "scene.slot01",
+      "family": "menu_memo_system",
+      "row_count": 317,
+      "unique_encoded_strings": 309,
+      "deduplicated_rows": 8,
+      "container_bytes": 3067,
+      "padding_bytes": 0,
+      "original_bytes": 2882,
+      "translated_bytes_before_dedup": 3125,
+      "fixed_length_candidates": 150,
+      "relocation_required_by_length": 167,
+      "needs_review_rows": 0,
+      "same_as_original_rows": 0,
+      "japanese_translation_rows": 0,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/scene.slot01.menu_memo_system/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/scene.slot01.menu_memo_system/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/scene.slot01.menu_memo_system/container_profile.json"
+      },
+      "sha256": {
+        "entries": "A37823F9F03AB35729609DE5064C1CBB2403AC6CE51DD23FCBE52B5C24484CBF",
+        "strings": "F67EEC85D3751F7B9905108342851F4E861FB149FD49876129737DD0931AB0AE",
+        "profile": "A07E0D60066518E1A067F7739AE267D01987869CED799D31CF0414FF21E2D8A1"
+      }
+    },
+    {
+      "package_id": "scene.slot02.dialogue_event",
+      "storage_module": "scene.slot02",
+      "family": "dialogue_event",
+      "row_count": 79,
+      "unique_encoded_strings": 78,
+      "deduplicated_rows": 1,
+      "container_bytes": 8215,
+      "padding_bytes": 4,
+      "original_bytes": 7878,
+      "translated_bytes_before_dedup": 8234,
+      "fixed_length_candidates": 17,
+      "relocation_required_by_length": 62,
+      "needs_review_rows": 0,
+      "same_as_original_rows": 1,
+      "japanese_translation_rows": 61,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/scene.slot02.dialogue_event/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/scene.slot02.dialogue_event/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/scene.slot02.dialogue_event/container_profile.json"
+      },
+      "sha256": {
+        "entries": "F0F8AE870A38877B35AEE456C78738C2CBE2D2467F5A9D87BFF92EB9C2734E7B",
+        "strings": "D36DD9219048C0652854BE8A57E718B36821C1876D9AA16C51CB3064B253A9AB",
+        "profile": "2EBC781CE55998047F8FC86070C6DDEC68DF1289EAE83288CE85C05E1DCFFAB9"
+      }
+    },
+    {
+      "package_id": "scene.slot02.menu_memo_system",
+      "storage_module": "scene.slot02",
+      "family": "menu_memo_system",
+      "row_count": 96,
+      "unique_encoded_strings": 94,
+      "deduplicated_rows": 2,
+      "container_bytes": 794,
+      "padding_bytes": 0,
+      "original_bytes": 766,
+      "translated_bytes_before_dedup": 816,
+      "fixed_length_candidates": 48,
+      "relocation_required_by_length": 48,
+      "needs_review_rows": 0,
+      "same_as_original_rows": 0,
+      "japanese_translation_rows": 0,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/scene.slot02.menu_memo_system/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/scene.slot02.menu_memo_system/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/scene.slot02.menu_memo_system/container_profile.json"
+      },
+      "sha256": {
+        "entries": "8D02C8BC01A6038D68839021E3D91EDC0417B5E68F4719B899DE34FDA8A504CE",
+        "strings": "AA7B408DC4D7845E87443F8BD6887F183B89BB6C2C87369803E1318B860DE6A2",
+        "profile": "F882179C5B357C1EC6B9E89EF9D1B8B04BBC4874883055C8BA31E193D21A148F"
+      }
+    },
+    {
+      "package_id": "scene.slot03.dialogue_event",
+      "storage_module": "scene.slot03",
+      "family": "dialogue_event",
+      "row_count": 174,
+      "unique_encoded_strings": 130,
+      "deduplicated_rows": 44,
+      "container_bytes": 6798,
+      "padding_bytes": 0,
+      "original_bytes": 7398,
+      "translated_bytes_before_dedup": 8223,
+      "fixed_length_candidates": 36,
+      "relocation_required_by_length": 138,
+      "needs_review_rows": 0,
+      "same_as_original_rows": 1,
+      "japanese_translation_rows": 1,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/scene.slot03.dialogue_event/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/scene.slot03.dialogue_event/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/scene.slot03.dialogue_event/container_profile.json"
+      },
+      "sha256": {
+        "entries": "F1396421097AB03D090592C6CD7B0F705CE72960A4D035F5D11E55CEE20E0CCC",
+        "strings": "A5B8DA8FFD83D72147D1835F6472FEB3EAF8BC26360D697667E9FBA479C5ECFF",
+        "profile": "090235026B44D2F70E1CF098FA9BA3CDA6C3CED91AC72EF210E8EB6BD4B22E5F"
+      }
+    },
+    {
+      "package_id": "scene.slot03.menu_memo_system",
+      "storage_module": "scene.slot03",
+      "family": "menu_memo_system",
+      "row_count": 96,
+      "unique_encoded_strings": 94,
+      "deduplicated_rows": 2,
+      "container_bytes": 794,
+      "padding_bytes": 0,
+      "original_bytes": 766,
+      "translated_bytes_before_dedup": 816,
+      "fixed_length_candidates": 48,
+      "relocation_required_by_length": 48,
+      "needs_review_rows": 0,
+      "same_as_original_rows": 0,
+      "japanese_translation_rows": 0,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/scene.slot03.menu_memo_system/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/scene.slot03.menu_memo_system/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/scene.slot03.menu_memo_system/container_profile.json"
+      },
+      "sha256": {
+        "entries": "7DB94FEBAE87487778D2300B56332CF5094483F06CCE2EE3FFED476CD7D7C1C2",
+        "strings": "AA7B408DC4D7845E87443F8BD6887F183B89BB6C2C87369803E1318B860DE6A2",
+        "profile": "B046CBBA5B41CCB7B9B99BBDBA5D71EB33F9E2DAE383D34AC436CFD0D4AC5A03"
+      }
+    },
+    {
+      "package_id": "scene.slot04.dialogue_event",
+      "storage_module": "scene.slot04",
+      "family": "dialogue_event",
+      "row_count": 281,
+      "unique_encoded_strings": 177,
+      "deduplicated_rows": 104,
+      "container_bytes": 14094,
+      "padding_bytes": 44,
+      "original_bytes": 22729,
+      "translated_bytes_before_dedup": 24218,
+      "fixed_length_candidates": 61,
+      "relocation_required_by_length": 220,
+      "needs_review_rows": 2,
+      "same_as_original_rows": 5,
+      "japanese_translation_rows": 127,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/scene.slot04.dialogue_event/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/scene.slot04.dialogue_event/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/scene.slot04.dialogue_event/container_profile.json"
+      },
+      "sha256": {
+        "entries": "527254262E9B90DC78FDC7F009C6C2B63B223C6E1E2106E152C0903F91F014A0",
+        "strings": "3A5DBB6580F7C980E27B5478CA9E13A0814201E8DFA17B082529671AFFF8D2E8",
+        "profile": "71B3BD728BE1F8CA0B163C20C79CF5BC2D9C7F5A85BBEC6640A654619B410D7C"
+      }
+    },
+    {
+      "package_id": "scene.slot04.menu_memo_system",
+      "storage_module": "scene.slot04",
+      "family": "menu_memo_system",
+      "row_count": 96,
+      "unique_encoded_strings": 94,
+      "deduplicated_rows": 2,
+      "container_bytes": 794,
+      "padding_bytes": 0,
+      "original_bytes": 766,
+      "translated_bytes_before_dedup": 816,
+      "fixed_length_candidates": 48,
+      "relocation_required_by_length": 48,
+      "needs_review_rows": 0,
+      "same_as_original_rows": 0,
+      "japanese_translation_rows": 0,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/scene.slot04.menu_memo_system/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/scene.slot04.menu_memo_system/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/scene.slot04.menu_memo_system/container_profile.json"
+      },
+      "sha256": {
+        "entries": "34839303E872611932A7D2530D065DB4267C7E3B856E2F417A1D2B9B94DACA7D",
+        "strings": "AA7B408DC4D7845E87443F8BD6887F183B89BB6C2C87369803E1318B860DE6A2",
+        "profile": "ABF98ECEF36650B4042371763DC6613CBE7ACD8544EBF8E7F5ACBDCAC94778DD"
+      }
+    },
+    {
+      "package_id": "scene.slot05.dialogue_event",
+      "storage_module": "scene.slot05",
+      "family": "dialogue_event",
+      "row_count": 178,
+      "unique_encoded_strings": 121,
+      "deduplicated_rows": 57,
+      "container_bytes": 7480,
+      "padding_bytes": 0,
+      "original_bytes": 10558,
+      "translated_bytes_before_dedup": 11314,
+      "fixed_length_candidates": 48,
+      "relocation_required_by_length": 130,
+      "needs_review_rows": 1,
+      "same_as_original_rows": 0,
+      "japanese_translation_rows": 6,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/scene.slot05.dialogue_event/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/scene.slot05.dialogue_event/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/scene.slot05.dialogue_event/container_profile.json"
+      },
+      "sha256": {
+        "entries": "05EA444ABF837A9F6AC067770CB048A726C37A793F1C834075679830FA220BCC",
+        "strings": "4F6C9DF9853C147FBA084057C3C2D5BC370ADB61C58FFC188996ADDC9F74CE1B",
+        "profile": "3F043F1EBC66193BE585BC55CCDEFF972208C6DE7EA09AC5F121966E6BE18F8E"
+      }
+    },
+    {
+      "package_id": "scene.slot05.menu_memo_system",
+      "storage_module": "scene.slot05",
+      "family": "menu_memo_system",
+      "row_count": 96,
+      "unique_encoded_strings": 94,
+      "deduplicated_rows": 2,
+      "container_bytes": 794,
+      "padding_bytes": 0,
+      "original_bytes": 766,
+      "translated_bytes_before_dedup": 816,
+      "fixed_length_candidates": 48,
+      "relocation_required_by_length": 48,
+      "needs_review_rows": 0,
+      "same_as_original_rows": 0,
+      "japanese_translation_rows": 0,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/scene.slot05.menu_memo_system/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/scene.slot05.menu_memo_system/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/scene.slot05.menu_memo_system/container_profile.json"
+      },
+      "sha256": {
+        "entries": "C4F0F1CBAF6CD4A41AAB237348CCD947CF504E5FA5EC2F81A9E5F011DC455A48",
+        "strings": "AA7B408DC4D7845E87443F8BD6887F183B89BB6C2C87369803E1318B860DE6A2",
+        "profile": "28A64061202908E56ACC1BBFC4D57E35827D89A5666A14695AE35D4812C99442"
+      }
+    },
+    {
+      "package_id": "scene.slot06.dialogue_event",
+      "storage_module": "scene.slot06",
+      "family": "dialogue_event",
+      "row_count": 187,
+      "unique_encoded_strings": 172,
+      "deduplicated_rows": 15,
+      "container_bytes": 13356,
+      "padding_bytes": 11,
+      "original_bytes": 12890,
+      "translated_bytes_before_dedup": 13876,
+      "fixed_length_candidates": 41,
+      "relocation_required_by_length": 146,
+      "needs_review_rows": 0,
+      "same_as_original_rows": 1,
+      "japanese_translation_rows": 61,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/scene.slot06.dialogue_event/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/scene.slot06.dialogue_event/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/scene.slot06.dialogue_event/container_profile.json"
+      },
+      "sha256": {
+        "entries": "D68DE81EA4066A8F6A69BAF352C2DAAEE479911307FE70F64F437D714BCE2B61",
+        "strings": "CB6C9A37ADA108062E5EFC339170CE2C00780D6BDAA1FD77003FA5CE7F023CCE",
+        "profile": "E0AD326D80DD85D99F7E0757B0EC9C1301E09BEF03E76A19E1A34A671D85F12C"
+      }
+    },
+    {
+      "package_id": "scene.slot06.menu_memo_system",
+      "storage_module": "scene.slot06",
+      "family": "menu_memo_system",
+      "row_count": 96,
+      "unique_encoded_strings": 94,
+      "deduplicated_rows": 2,
+      "container_bytes": 794,
+      "padding_bytes": 0,
+      "original_bytes": 766,
+      "translated_bytes_before_dedup": 816,
+      "fixed_length_candidates": 48,
+      "relocation_required_by_length": 48,
+      "needs_review_rows": 0,
+      "same_as_original_rows": 0,
+      "japanese_translation_rows": 0,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/scene.slot06.menu_memo_system/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/scene.slot06.menu_memo_system/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/scene.slot06.menu_memo_system/container_profile.json"
+      },
+      "sha256": {
+        "entries": "6EE726275C6523AA05623DC53167C1B209836373496A1C1AFEE8734E2F1AB156",
+        "strings": "AA7B408DC4D7845E87443F8BD6887F183B89BB6C2C87369803E1318B860DE6A2",
+        "profile": "3CE54E9BB61AF4FE633C7F7A52A39C7747C30657CEE86A4E9D9F8543F2D24F61"
+      }
+    },
+    {
+      "package_id": "scene.slot07.dialogue_event",
+      "storage_module": "scene.slot07",
+      "family": "dialogue_event",
+      "row_count": 236,
+      "unique_encoded_strings": 199,
+      "deduplicated_rows": 37,
+      "container_bytes": 16642,
+      "padding_bytes": 152,
+      "original_bytes": 17248,
+      "translated_bytes_before_dedup": 18611,
+      "fixed_length_candidates": 65,
+      "relocation_required_by_length": 171,
+      "needs_review_rows": 0,
+      "same_as_original_rows": 4,
+      "japanese_translation_rows": 64,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/scene.slot07.dialogue_event/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/scene.slot07.dialogue_event/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/scene.slot07.dialogue_event/container_profile.json"
+      },
+      "sha256": {
+        "entries": "724EE42483BED7CCC5C155FE54E01CDEE5216096BC38F6AD03261692543873C3",
+        "strings": "84F1B7FDA7A76FE791146DC1199101EBDA7562A574F3F46A443A8049C715751C",
+        "profile": "50F8EB9F2D6CAE548C7BDC1A7EC80B3D2244117165D12ED2D00686FA4573D396"
+      }
+    },
+    {
+      "package_id": "scene.slot07.menu_memo_system",
+      "storage_module": "scene.slot07",
+      "family": "menu_memo_system",
+      "row_count": 96,
+      "unique_encoded_strings": 94,
+      "deduplicated_rows": 2,
+      "container_bytes": 794,
+      "padding_bytes": 0,
+      "original_bytes": 766,
+      "translated_bytes_before_dedup": 816,
+      "fixed_length_candidates": 48,
+      "relocation_required_by_length": 48,
+      "needs_review_rows": 0,
+      "same_as_original_rows": 0,
+      "japanese_translation_rows": 0,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/scene.slot07.menu_memo_system/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/scene.slot07.menu_memo_system/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/scene.slot07.menu_memo_system/container_profile.json"
+      },
+      "sha256": {
+        "entries": "012B8E0C40411B36B3F9691DA935F0337D49D2B6489A1849A86B417254CC7AE0",
+        "strings": "AA7B408DC4D7845E87443F8BD6887F183B89BB6C2C87369803E1318B860DE6A2",
+        "profile": "A8FB497F691E042A1A3B3E6C43F8C56BE9412B4A1D9ECA93A6A181AAA7AA11D3"
+      }
+    },
+    {
+      "package_id": "scene.slot08.dialogue_event",
+      "storage_module": "scene.slot08",
+      "family": "dialogue_event",
+      "row_count": 181,
+      "unique_encoded_strings": 178,
+      "deduplicated_rows": 3,
+      "container_bytes": 15588,
+      "padding_bytes": 99,
+      "original_bytes": 14567,
+      "translated_bytes_before_dedup": 15623,
+      "fixed_length_candidates": 41,
+      "relocation_required_by_length": 140,
+      "needs_review_rows": 0,
+      "same_as_original_rows": 1,
+      "japanese_translation_rows": 62,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/scene.slot08.dialogue_event/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/scene.slot08.dialogue_event/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/scene.slot08.dialogue_event/container_profile.json"
+      },
+      "sha256": {
+        "entries": "7EAC3BE8FB2CDD70B40029BDD93621F67820ADE173CBD448A9F2C90B47EDC89C",
+        "strings": "20FB09A8CD3CBAF20CFCC2D12A8A702A500F464C1070E3F6D5B6FC4168461F5B",
+        "profile": "B77BD6A8C04A5B1DED30759F8AD1FEAAE436BCB936DC284525A7C4850B55B8BA"
+      }
+    },
+    {
+      "package_id": "scene.slot08.menu_memo_system",
+      "storage_module": "scene.slot08",
+      "family": "menu_memo_system",
+      "row_count": 96,
+      "unique_encoded_strings": 94,
+      "deduplicated_rows": 2,
+      "container_bytes": 794,
+      "padding_bytes": 0,
+      "original_bytes": 766,
+      "translated_bytes_before_dedup": 816,
+      "fixed_length_candidates": 48,
+      "relocation_required_by_length": 48,
+      "needs_review_rows": 0,
+      "same_as_original_rows": 0,
+      "japanese_translation_rows": 0,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/scene.slot08.menu_memo_system/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/scene.slot08.menu_memo_system/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/scene.slot08.menu_memo_system/container_profile.json"
+      },
+      "sha256": {
+        "entries": "EEA343E30EFA58F524BFD2706186B5B2B62A42F3D330C7F4E87807750180397A",
+        "strings": "AA7B408DC4D7845E87443F8BD6887F183B89BB6C2C87369803E1318B860DE6A2",
+        "profile": "2F4B2AC16E2B2CEB09A2E7307C56BDAA2F857C425DADB5DC06C1A133D7E5AEEE"
+      }
+    },
+    {
+      "package_id": "scene.slot09.dialogue_event",
+      "storage_module": "scene.slot09",
+      "family": "dialogue_event",
+      "row_count": 291,
+      "unique_encoded_strings": 201,
+      "deduplicated_rows": 90,
+      "container_bytes": 17175,
+      "padding_bytes": 397,
+      "original_bytes": 26097,
+      "translated_bytes_before_dedup": 27403,
+      "fixed_length_candidates": 76,
+      "relocation_required_by_length": 215,
+      "needs_review_rows": 0,
+      "same_as_original_rows": 3,
+      "japanese_translation_rows": 124,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/scene.slot09.dialogue_event/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/scene.slot09.dialogue_event/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/scene.slot09.dialogue_event/container_profile.json"
+      },
+      "sha256": {
+        "entries": "8ABF7933354B84CB234B2F655A68B972A5500064E4B6BB179C7E8A88DF682D75",
+        "strings": "BC3855728C16041595C513A28CAA464D58841ACED4751B644CF417FE47BD5F42",
+        "profile": "484135D7A42E5D26A006FC4D25FDF85DCFC86CC30534EFE3A3C906A6991B89EC"
+      }
+    },
+    {
+      "package_id": "scene.slot09.menu_memo_system",
+      "storage_module": "scene.slot09",
+      "family": "menu_memo_system",
+      "row_count": 96,
+      "unique_encoded_strings": 94,
+      "deduplicated_rows": 2,
+      "container_bytes": 794,
+      "padding_bytes": 0,
+      "original_bytes": 766,
+      "translated_bytes_before_dedup": 816,
+      "fixed_length_candidates": 48,
+      "relocation_required_by_length": 48,
+      "needs_review_rows": 0,
+      "same_as_original_rows": 0,
+      "japanese_translation_rows": 0,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/scene.slot09.menu_memo_system/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/scene.slot09.menu_memo_system/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/scene.slot09.menu_memo_system/container_profile.json"
+      },
+      "sha256": {
+        "entries": "D945148A77FCB6E6E6B3C6BA0E1421F7C95FE46F9C91B76EADCCDFC8B85CF7C2",
+        "strings": "AA7B408DC4D7845E87443F8BD6887F183B89BB6C2C87369803E1318B860DE6A2",
+        "profile": "254A884D46765E1A8A9AF866BD3CDA8DCBC93B9CBEA1B059D916110208E412B9"
+      }
+    },
+    {
+      "package_id": "scene.slot10.dialogue_event",
+      "storage_module": "scene.slot10",
+      "family": "dialogue_event",
+      "row_count": 125,
+      "unique_encoded_strings": 100,
+      "deduplicated_rows": 25,
+      "container_bytes": 5550,
+      "padding_bytes": 0,
+      "original_bytes": 6664,
+      "translated_bytes_before_dedup": 7010,
+      "fixed_length_candidates": 46,
+      "relocation_required_by_length": 79,
+      "needs_review_rows": 0,
+      "same_as_original_rows": 5,
+      "japanese_translation_rows": 8,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/scene.slot10.dialogue_event/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/scene.slot10.dialogue_event/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/scene.slot10.dialogue_event/container_profile.json"
+      },
+      "sha256": {
+        "entries": "FB792F327E78A0A98F482CEFB5BD00F748CB78B521A07939179464934106F078",
+        "strings": "4A376446103C5624BB3FE66769DFED2879542D0FA02A6CB6442624C458470A73",
+        "profile": "FB5642699D48024D8EEFF6EF88D3F22AA91F775224A2A88913A81F179724EF5B"
+      }
+    },
+    {
+      "package_id": "scene.slot10.menu_memo_system",
+      "storage_module": "scene.slot10",
+      "family": "menu_memo_system",
+      "row_count": 96,
+      "unique_encoded_strings": 94,
+      "deduplicated_rows": 2,
+      "container_bytes": 794,
+      "padding_bytes": 0,
+      "original_bytes": 766,
+      "translated_bytes_before_dedup": 816,
+      "fixed_length_candidates": 48,
+      "relocation_required_by_length": 48,
+      "needs_review_rows": 0,
+      "same_as_original_rows": 0,
+      "japanese_translation_rows": 0,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/scene.slot10.menu_memo_system/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/scene.slot10.menu_memo_system/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/scene.slot10.menu_memo_system/container_profile.json"
+      },
+      "sha256": {
+        "entries": "289637D396D93BC2631A937D455FFE59D8BA29EC77306D12E65D40B0C1E30D24",
+        "strings": "AA7B408DC4D7845E87443F8BD6887F183B89BB6C2C87369803E1318B860DE6A2",
+        "profile": "96042CCEAC8D951735F0C63356DC85AEC9FB9E253987CD24808BFC61C8547AB2"
+      }
+    },
+    {
+      "package_id": "scene.slot11.dialogue_event",
+      "storage_module": "scene.slot11",
+      "family": "dialogue_event",
+      "row_count": 182,
+      "unique_encoded_strings": 161,
+      "deduplicated_rows": 21,
+      "container_bytes": 12428,
+      "padding_bytes": 48,
+      "original_bytes": 11896,
+      "translated_bytes_before_dedup": 12819,
+      "fixed_length_candidates": 35,
+      "relocation_required_by_length": 147,
+      "needs_review_rows": 0,
+      "same_as_original_rows": 5,
+      "japanese_translation_rows": 65,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/scene.slot11.dialogue_event/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/scene.slot11.dialogue_event/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/scene.slot11.dialogue_event/container_profile.json"
+      },
+      "sha256": {
+        "entries": "ACC548218F752F53680A73587CF11EF77D84A629C2235E57E8427C68096B2046",
+        "strings": "F4C890B26EF4213AAA6AD402844BFB34AB571F806DA4C0508BAA6602C43F9A43",
+        "profile": "BC84DC3B6404106DA2E0CFAFCC113A2778128C0F8D89D557F855BE07E93C070F"
+      }
+    },
+    {
+      "package_id": "scene.slot11.menu_memo_system",
+      "storage_module": "scene.slot11",
+      "family": "menu_memo_system",
+      "row_count": 96,
+      "unique_encoded_strings": 94,
+      "deduplicated_rows": 2,
+      "container_bytes": 794,
+      "padding_bytes": 0,
+      "original_bytes": 766,
+      "translated_bytes_before_dedup": 816,
+      "fixed_length_candidates": 48,
+      "relocation_required_by_length": 48,
+      "needs_review_rows": 0,
+      "same_as_original_rows": 0,
+      "japanese_translation_rows": 0,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/scene.slot11.menu_memo_system/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/scene.slot11.menu_memo_system/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/scene.slot11.menu_memo_system/container_profile.json"
+      },
+      "sha256": {
+        "entries": "57DE8AEDF05465A473DAF42AAB547148CB6CC00F7D45A609157B1F312557885D",
+        "strings": "AA7B408DC4D7845E87443F8BD6887F183B89BB6C2C87369803E1318B860DE6A2",
+        "profile": "243637ECFFB5F8B40ED36E5208CE6CCC388B2BBDBCA9E28F9124514A3B4F6589"
+      }
+    },
+    {
+      "package_id": "scene.slot12.dialogue_event",
+      "storage_module": "scene.slot12",
+      "family": "dialogue_event",
+      "row_count": 195,
+      "unique_encoded_strings": 165,
+      "deduplicated_rows": 30,
+      "container_bytes": 14145,
+      "padding_bytes": 78,
+      "original_bytes": 15480,
+      "translated_bytes_before_dedup": 16355,
+      "fixed_length_candidates": 50,
+      "relocation_required_by_length": 145,
+      "needs_review_rows": 0,
+      "same_as_original_rows": 4,
+      "japanese_translation_rows": 76,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/scene.slot12.dialogue_event/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/scene.slot12.dialogue_event/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/scene.slot12.dialogue_event/container_profile.json"
+      },
+      "sha256": {
+        "entries": "7915D3144F9EEF476C2A0C9F1817759E661E6617D5050ACFC49C463DD141A69B",
+        "strings": "FF0B5500FAA3F2CF9E347DE5F924442DF41B1FDFECE5F5DB94956C1694E7EF91",
+        "profile": "D132C3EBD554DD386C024C90B2FBC0E892C9A316AC5F4BC19C121659221B6A61"
+      }
+    },
+    {
+      "package_id": "scene.slot12.menu_memo_system",
+      "storage_module": "scene.slot12",
+      "family": "menu_memo_system",
+      "row_count": 96,
+      "unique_encoded_strings": 94,
+      "deduplicated_rows": 2,
+      "container_bytes": 794,
+      "padding_bytes": 0,
+      "original_bytes": 766,
+      "translated_bytes_before_dedup": 816,
+      "fixed_length_candidates": 48,
+      "relocation_required_by_length": 48,
+      "needs_review_rows": 0,
+      "same_as_original_rows": 0,
+      "japanese_translation_rows": 0,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/scene.slot12.menu_memo_system/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/scene.slot12.menu_memo_system/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/scene.slot12.menu_memo_system/container_profile.json"
+      },
+      "sha256": {
+        "entries": "C1F1C257EAAEF5F843919880E6B3F49E4FB08C9B1D804C3BAE26CBAC7DBC270E",
+        "strings": "AA7B408DC4D7845E87443F8BD6887F183B89BB6C2C87369803E1318B860DE6A2",
+        "profile": "BB3E6577773E0C1222A7816D2094E00CF4D45CE94619F0578718DCD246B96A67"
+      }
+    },
+    {
+      "package_id": "scene.slot13.dialogue_event",
+      "storage_module": "scene.slot13",
+      "family": "dialogue_event",
+      "row_count": 273,
+      "unique_encoded_strings": 180,
+      "deduplicated_rows": 93,
+      "container_bytes": 15086,
+      "padding_bytes": 19,
+      "original_bytes": 19285,
+      "translated_bytes_before_dedup": 20423,
+      "fixed_length_candidates": 69,
+      "relocation_required_by_length": 204,
+      "needs_review_rows": 0,
+      "same_as_original_rows": 1,
+      "japanese_translation_rows": 64,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/scene.slot13.dialogue_event/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/scene.slot13.dialogue_event/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/scene.slot13.dialogue_event/container_profile.json"
+      },
+      "sha256": {
+        "entries": "534BE4B42688037A30A2113DA8FF5204463A95CB18F0B86471B37BEA85666011",
+        "strings": "CD7ED61A7395B8EC0037B5864D851A4C3E07FF9342553E45D07A10996F9879C2",
+        "profile": "CAAA488E8F3874840BCB4E5BB8D12C5D03B708A8E679CFA104175D0F04E1E646"
+      }
+    },
+    {
+      "package_id": "scene.slot13.menu_memo_system",
+      "storage_module": "scene.slot13",
+      "family": "menu_memo_system",
+      "row_count": 96,
+      "unique_encoded_strings": 94,
+      "deduplicated_rows": 2,
+      "container_bytes": 794,
+      "padding_bytes": 0,
+      "original_bytes": 766,
+      "translated_bytes_before_dedup": 816,
+      "fixed_length_candidates": 48,
+      "relocation_required_by_length": 48,
+      "needs_review_rows": 0,
+      "same_as_original_rows": 0,
+      "japanese_translation_rows": 0,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/scene.slot13.menu_memo_system/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/scene.slot13.menu_memo_system/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/scene.slot13.menu_memo_system/container_profile.json"
+      },
+      "sha256": {
+        "entries": "402C11B5850CC8D98F50B8DC2C2757C8BC0F801323E3E225BAE11B73D5A9115B",
+        "strings": "AA7B408DC4D7845E87443F8BD6887F183B89BB6C2C87369803E1318B860DE6A2",
+        "profile": "DD94C4204ED0A06DA15DA96044F790E93C085E138833B6DA0AE2F37941D0EE72"
+      }
+    },
+    {
+      "package_id": "scene.slot14.dialogue_event",
+      "storage_module": "scene.slot14",
+      "family": "dialogue_event",
+      "row_count": 290,
+      "unique_encoded_strings": 137,
+      "deduplicated_rows": 153,
+      "container_bytes": 11298,
+      "padding_bytes": 25,
+      "original_bytes": 21975,
+      "translated_bytes_before_dedup": 23370,
+      "fixed_length_candidates": 71,
+      "relocation_required_by_length": 219,
+      "needs_review_rows": 0,
+      "same_as_original_rows": 6,
+      "japanese_translation_rows": 126,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/scene.slot14.dialogue_event/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/scene.slot14.dialogue_event/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/scene.slot14.dialogue_event/container_profile.json"
+      },
+      "sha256": {
+        "entries": "F15646D09942D75A39C085AE3182B3B3491243AB7EB719CED1450137727FA1D8",
+        "strings": "6CFACCFE5CF5F23A2922E4B1B6F3F26DEBFFED85181A483D33AEF81924F9A78C",
+        "profile": "C4E0BCC7E9A5D6C96E9790DAC4E8DE89126A16925B3B94E24DF46E4B8891AD2A"
+      }
+    },
+    {
+      "package_id": "scene.slot14.menu_memo_system",
+      "storage_module": "scene.slot14",
+      "family": "menu_memo_system",
+      "row_count": 96,
+      "unique_encoded_strings": 94,
+      "deduplicated_rows": 2,
+      "container_bytes": 794,
+      "padding_bytes": 0,
+      "original_bytes": 766,
+      "translated_bytes_before_dedup": 816,
+      "fixed_length_candidates": 48,
+      "relocation_required_by_length": 48,
+      "needs_review_rows": 0,
+      "same_as_original_rows": 0,
+      "japanese_translation_rows": 0,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/scene.slot14.menu_memo_system/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/scene.slot14.menu_memo_system/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/scene.slot14.menu_memo_system/container_profile.json"
+      },
+      "sha256": {
+        "entries": "A6A40B24EEB88DA339B7846D48E55A820560AC2C4404C0E3DD8AD90CAD227DEF",
+        "strings": "AA7B408DC4D7845E87443F8BD6887F183B89BB6C2C87369803E1318B860DE6A2",
+        "profile": "667FC8324069A37F733D936CEE3C42A027A3A91226A0B89CF7BA18D2D705D643"
+      }
+    },
+    {
+      "package_id": "scene.slot15.dialogue_event",
+      "storage_module": "scene.slot15",
+      "family": "dialogue_event",
+      "row_count": 306,
+      "unique_encoded_strings": 197,
+      "deduplicated_rows": 109,
+      "container_bytes": 13276,
+      "padding_bytes": 86,
+      "original_bytes": 15686,
+      "translated_bytes_before_dedup": 18292,
+      "fixed_length_candidates": 27,
+      "relocation_required_by_length": 279,
+      "needs_review_rows": 0,
+      "same_as_original_rows": 1,
+      "japanese_translation_rows": 14,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/scene.slot15.dialogue_event/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/scene.slot15.dialogue_event/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/scene.slot15.dialogue_event/container_profile.json"
+      },
+      "sha256": {
+        "entries": "FC3E4F9B5837CC67D8BFF050CDD05EE975098369A74CB22594B49BD4B56956F0",
+        "strings": "8C4A61586209BDDB0C7FB4BFA9185154D0DFE2F5AEA3B56776C4F7C95C2B9CE2",
+        "profile": "3575A8E10B84E55A0315B13D883FD3F698C614161E2C668058BD35A83D4F5600"
+      }
+    },
+    {
+      "package_id": "scene.slot15.menu_memo_system",
+      "storage_module": "scene.slot15",
+      "family": "menu_memo_system",
+      "row_count": 184,
+      "unique_encoded_strings": 94,
+      "deduplicated_rows": 90,
+      "container_bytes": 794,
+      "padding_bytes": 0,
+      "original_bytes": 1442,
+      "translated_bytes_before_dedup": 1548,
+      "fixed_length_candidates": 91,
+      "relocation_required_by_length": 93,
+      "needs_review_rows": 0,
+      "same_as_original_rows": 0,
+      "japanese_translation_rows": 0,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/scene.slot15.menu_memo_system/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/scene.slot15.menu_memo_system/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/scene.slot15.menu_memo_system/container_profile.json"
+      },
+      "sha256": {
+        "entries": "10A98C044B7C2FA4CD626FE27E23EE93674F208CDC408E2EFE5294B8F928CAA9",
+        "strings": "ACC04831111242D8987C7FDE0751779FFEDFB666B55735D2D06E322FCFA2B582",
+        "profile": "1C8F1A161D788F29CD445E3D179397F5395DC29293934D9F3F787BAC74862548"
+      }
+    },
+    {
+      "package_id": "scene.slot16.dialogue_event",
+      "storage_module": "scene.slot16",
+      "family": "dialogue_event",
+      "row_count": 280,
+      "unique_encoded_strings": 177,
+      "deduplicated_rows": 103,
+      "container_bytes": 13681,
+      "padding_bytes": 36,
+      "original_bytes": 21476,
+      "translated_bytes_before_dedup": 22789,
+      "fixed_length_candidates": 64,
+      "relocation_required_by_length": 216,
+      "needs_review_rows": 0,
+      "same_as_original_rows": 5,
+      "japanese_translation_rows": 125,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/scene.slot16.dialogue_event/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/scene.slot16.dialogue_event/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/scene.slot16.dialogue_event/container_profile.json"
+      },
+      "sha256": {
+        "entries": "04536CD390459655CB5F5A75E000299B5B60033D2693F277FE6234D6217683A1",
+        "strings": "D51C4FB178CC3F640A49AAA6266E05569C2A8974B7F9F2483EA61255E1FF983E",
+        "profile": "CC73D6EE8EA62F88140725CE3F52E1081DC149D31E895888529CD7F386F5F00D"
+      }
+    },
+    {
+      "package_id": "scene.slot16.menu_memo_system",
+      "storage_module": "scene.slot16",
+      "family": "menu_memo_system",
+      "row_count": 98,
+      "unique_encoded_strings": 96,
+      "deduplicated_rows": 2,
+      "container_bytes": 828,
+      "padding_bytes": 0,
+      "original_bytes": 794,
+      "translated_bytes_before_dedup": 850,
+      "fixed_length_candidates": 48,
+      "relocation_required_by_length": 50,
+      "needs_review_rows": 0,
+      "same_as_original_rows": 0,
+      "japanese_translation_rows": 0,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/scene.slot16.menu_memo_system/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/scene.slot16.menu_memo_system/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/scene.slot16.menu_memo_system/container_profile.json"
+      },
+      "sha256": {
+        "entries": "B2159828312C5F1820E097B2389EC832E326FB90A69C71291514B09D21E6E92B",
+        "strings": "00F0120AE9FD947C41B1C0E976CE0B6A06A0048E6A51070274F4B0E5900C8B18",
+        "profile": "114ED578AC14A5DBF7616EFDDC309A97FDC6497E68814D3E056A2E7F3C16B9DF"
+      }
+    },
+    {
+      "package_id": "scene.slot17.dialogue_event",
+      "storage_module": "scene.slot17",
+      "family": "dialogue_event",
+      "row_count": 168,
+      "unique_encoded_strings": 136,
+      "deduplicated_rows": 32,
+      "container_bytes": 9146,
+      "padding_bytes": 68,
+      "original_bytes": 9982,
+      "translated_bytes_before_dedup": 11260,
+      "fixed_length_candidates": 36,
+      "relocation_required_by_length": 132,
+      "needs_review_rows": 1,
+      "same_as_original_rows": 0,
+      "japanese_translation_rows": 0,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/scene.slot17.dialogue_event/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/scene.slot17.dialogue_event/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/scene.slot17.dialogue_event/container_profile.json"
+      },
+      "sha256": {
+        "entries": "F608890EE29834BB9F51DC3381F2659B955585A681406F63D581403DCF8B9420",
+        "strings": "25C00B01F67F847816CE7ECAFBE7BA2FF2920FBBA17660D74F17AE667F4C0996",
+        "profile": "B6122C27D8594791EFD3DFA581DD102A838A002AF82F9662ECCBBE98562D880D"
+      }
+    },
+    {
+      "package_id": "scene.slot17.menu_memo_system",
+      "storage_module": "scene.slot17",
+      "family": "menu_memo_system",
+      "row_count": 96,
+      "unique_encoded_strings": 94,
+      "deduplicated_rows": 2,
+      "container_bytes": 794,
+      "padding_bytes": 0,
+      "original_bytes": 766,
+      "translated_bytes_before_dedup": 816,
+      "fixed_length_candidates": 48,
+      "relocation_required_by_length": 48,
+      "needs_review_rows": 0,
+      "same_as_original_rows": 0,
+      "japanese_translation_rows": 0,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/scene.slot17.menu_memo_system/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/scene.slot17.menu_memo_system/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/scene.slot17.menu_memo_system/container_profile.json"
+      },
+      "sha256": {
+        "entries": "747AC0AD6ED4BE7F47281008AF29DC403AE8ED1234F71D819D0254C01400FD7C",
+        "strings": "AA7B408DC4D7845E87443F8BD6887F183B89BB6C2C87369803E1318B860DE6A2",
+        "profile": "49BF891FC6B866FE9002892749C6053B8D7FC5BDD8810427626AB922B1876FC7"
+      }
+    },
+    {
+      "package_id": "scene.slot18.dialogue_event",
+      "storage_module": "scene.slot18",
+      "family": "dialogue_event",
+      "row_count": 157,
+      "unique_encoded_strings": 138,
+      "deduplicated_rows": 19,
+      "container_bytes": 11328,
+      "padding_bytes": 101,
+      "original_bytes": 11490,
+      "translated_bytes_before_dedup": 12628,
+      "fixed_length_candidates": 28,
+      "relocation_required_by_length": 129,
+      "needs_review_rows": 0,
+      "same_as_original_rows": 3,
+      "japanese_translation_rows": 64,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/scene.slot18.dialogue_event/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/scene.slot18.dialogue_event/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/scene.slot18.dialogue_event/container_profile.json"
+      },
+      "sha256": {
+        "entries": "A1EB540557F820757A57EE32EF459FE2E304CD9688B3EE391B99B0DE920A3456",
+        "strings": "CEB7B7EE445F5BC0E88626C7908A7F9418C890BF5788AF23D214CAE7AF951970",
+        "profile": "CDE5974F1F5B6374D0D4E13CE5BF3799CA5FBB9C93D87DEC6A8E81EFF1440463"
+      }
+    },
+    {
+      "package_id": "scene.slot18.menu_memo_system",
+      "storage_module": "scene.slot18",
+      "family": "menu_memo_system",
+      "row_count": 96,
+      "unique_encoded_strings": 94,
+      "deduplicated_rows": 2,
+      "container_bytes": 794,
+      "padding_bytes": 0,
+      "original_bytes": 766,
+      "translated_bytes_before_dedup": 816,
+      "fixed_length_candidates": 48,
+      "relocation_required_by_length": 48,
+      "needs_review_rows": 0,
+      "same_as_original_rows": 0,
+      "japanese_translation_rows": 0,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/scene.slot18.menu_memo_system/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/scene.slot18.menu_memo_system/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/scene.slot18.menu_memo_system/container_profile.json"
+      },
+      "sha256": {
+        "entries": "FAF8DEDEC0E17E905807B27015E41E0A19BECEBD35166A0C8FCE3FF8DFFF145E",
+        "strings": "AA7B408DC4D7845E87443F8BD6887F183B89BB6C2C87369803E1318B860DE6A2",
+        "profile": "8C64DC7D710729422107890A58807421DA20C885B27E401D4B44C96D12E511E5"
+      }
+    },
+    {
+      "package_id": "scene.slot19.dialogue_event",
+      "storage_module": "scene.slot19",
+      "family": "dialogue_event",
+      "row_count": 331,
+      "unique_encoded_strings": 161,
+      "deduplicated_rows": 170,
+      "container_bytes": 13331,
+      "padding_bytes": 6,
+      "original_bytes": 25865,
+      "translated_bytes_before_dedup": 28354,
+      "fixed_length_candidates": 52,
+      "relocation_required_by_length": 279,
+      "needs_review_rows": 0,
+      "same_as_original_rows": 3,
+      "japanese_translation_rows": 129,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/scene.slot19.dialogue_event/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/scene.slot19.dialogue_event/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/scene.slot19.dialogue_event/container_profile.json"
+      },
+      "sha256": {
+        "entries": "FB8A2296AE351B33D3028339B2BAC8E67F6B0833763226EE2BD18617221260F8",
+        "strings": "52F64A5A487A0C1238F71DE8B7127469FDDDE4E74A925F2DB098B00D53DD4FA5",
+        "profile": "AA02DFA8D5338D9A4557AAF3555F7CC55FDDD029B1A104F24872BF90899B24F5"
+      }
+    },
+    {
+      "package_id": "scene.slot19.menu_memo_system",
+      "storage_module": "scene.slot19",
+      "family": "menu_memo_system",
+      "row_count": 96,
+      "unique_encoded_strings": 94,
+      "deduplicated_rows": 2,
+      "container_bytes": 794,
+      "padding_bytes": 0,
+      "original_bytes": 766,
+      "translated_bytes_before_dedup": 816,
+      "fixed_length_candidates": 48,
+      "relocation_required_by_length": 48,
+      "needs_review_rows": 0,
+      "same_as_original_rows": 0,
+      "japanese_translation_rows": 0,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/scene.slot19.menu_memo_system/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/scene.slot19.menu_memo_system/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/scene.slot19.menu_memo_system/container_profile.json"
+      },
+      "sha256": {
+        "entries": "09BC1CA93DC8B44E9DF0A6CCB911FBFE8E616E0F675CCEAE5CBB8148D48DC784",
+        "strings": "AA7B408DC4D7845E87443F8BD6887F183B89BB6C2C87369803E1318B860DE6A2",
+        "profile": "0585456FC690A9D6515476470304883BBC072E9521519595E32FE32E1100B288"
+      }
+    },
+    {
+      "package_id": "scene.slot20.dialogue_event",
+      "storage_module": "scene.slot20",
+      "family": "dialogue_event",
+      "row_count": 151,
+      "unique_encoded_strings": 148,
+      "deduplicated_rows": 3,
+      "container_bytes": 11673,
+      "padding_bytes": 12,
+      "original_bytes": 11042,
+      "translated_bytes_before_dedup": 11767,
+      "fixed_length_candidates": 40,
+      "relocation_required_by_length": 111,
+      "needs_review_rows": 1,
+      "same_as_original_rows": 5,
+      "japanese_translation_rows": 65,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/scene.slot20.dialogue_event/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/scene.slot20.dialogue_event/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/scene.slot20.dialogue_event/container_profile.json"
+      },
+      "sha256": {
+        "entries": "0945EDE4D70BE63E7F652CDFC1582ED6E4D96AF10250FB8E65A4D9689009E955",
+        "strings": "9540B989CFACAFCC895F59667D94CE08872E30BDFAA34A8F96DC810A74E5D179",
+        "profile": "28647614CD61200037814EBD4D2323FE6764563CC6843D6DC26B5DCF7753FA13"
+      }
+    },
+    {
+      "package_id": "scene.slot20.menu_memo_system",
+      "storage_module": "scene.slot20",
+      "family": "menu_memo_system",
+      "row_count": 96,
+      "unique_encoded_strings": 94,
+      "deduplicated_rows": 2,
+      "container_bytes": 794,
+      "padding_bytes": 0,
+      "original_bytes": 766,
+      "translated_bytes_before_dedup": 816,
+      "fixed_length_candidates": 48,
+      "relocation_required_by_length": 48,
+      "needs_review_rows": 0,
+      "same_as_original_rows": 0,
+      "japanese_translation_rows": 0,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/scene.slot20.menu_memo_system/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/scene.slot20.menu_memo_system/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/scene.slot20.menu_memo_system/container_profile.json"
+      },
+      "sha256": {
+        "entries": "719B3AC3B3787F3EA16DAD145A6CE6724A85ABB023132FD232C03A36CF287E56",
+        "strings": "AA7B408DC4D7845E87443F8BD6887F183B89BB6C2C87369803E1318B860DE6A2",
+        "profile": "E15B2669CFB48A6245BB64844D3B877E84A7061399B19D2761D2DF54B6E51395"
+      }
+    },
+    {
+      "package_id": "scene.slot21.dialogue_event",
+      "storage_module": "scene.slot21",
+      "family": "dialogue_event",
+      "row_count": 203,
+      "unique_encoded_strings": 145,
+      "deduplicated_rows": 58,
+      "container_bytes": 12088,
+      "padding_bytes": 77,
+      "original_bytes": 14295,
+      "translated_bytes_before_dedup": 15780,
+      "fixed_length_candidates": 41,
+      "relocation_required_by_length": 162,
+      "needs_review_rows": 2,
+      "same_as_original_rows": 17,
+      "japanese_translation_rows": 77,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/scene.slot21.dialogue_event/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/scene.slot21.dialogue_event/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/scene.slot21.dialogue_event/container_profile.json"
+      },
+      "sha256": {
+        "entries": "CD8D9C8180BC46AFB5AC37A87AE395F79F8CF24D79F8336C5D8DE17F313E4B38",
+        "strings": "C8F14EBFF89A76137662D4645A3EBCCE4431B3C498537FA70BA826F6C35AF967",
+        "profile": "8A193DCDD1E9BE21B36E93ED430E4AA56BF1E9D9BC81A2389E9CEB3413CE5CDA"
+      }
+    },
+    {
+      "package_id": "scene.slot21.menu_memo_system",
+      "storage_module": "scene.slot21",
+      "family": "menu_memo_system",
+      "row_count": 96,
+      "unique_encoded_strings": 94,
+      "deduplicated_rows": 2,
+      "container_bytes": 794,
+      "padding_bytes": 0,
+      "original_bytes": 766,
+      "translated_bytes_before_dedup": 816,
+      "fixed_length_candidates": 48,
+      "relocation_required_by_length": 48,
+      "needs_review_rows": 0,
+      "same_as_original_rows": 0,
+      "japanese_translation_rows": 0,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/scene.slot21.menu_memo_system/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/scene.slot21.menu_memo_system/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/scene.slot21.menu_memo_system/container_profile.json"
+      },
+      "sha256": {
+        "entries": "89A8B27983739DA80512073D278D2A7FB700547BAE70D397900362312E71D53F",
+        "strings": "AA7B408DC4D7845E87443F8BD6887F183B89BB6C2C87369803E1318B860DE6A2",
+        "profile": "FF1805330F7F2C039730E6420B5D5C51385F15AABC3B297DBA909AD94774C0EC"
+      }
+    },
+    {
+      "package_id": "scene.slot22.dialogue_event",
+      "storage_module": "scene.slot22",
+      "family": "dialogue_event",
+      "row_count": 80,
+      "unique_encoded_strings": 72,
+      "deduplicated_rows": 8,
+      "container_bytes": 7145,
+      "padding_bytes": 0,
+      "original_bytes": 6253,
+      "translated_bytes_before_dedup": 7351,
+      "fixed_length_candidates": 4,
+      "relocation_required_by_length": 76,
+      "needs_review_rows": 0,
+      "same_as_original_rows": 0,
+      "japanese_translation_rows": 1,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/scene.slot22.dialogue_event/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/scene.slot22.dialogue_event/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/scene.slot22.dialogue_event/container_profile.json"
+      },
+      "sha256": {
+        "entries": "0B140B15EA29AD1350F668862B9B8C130E88B72970B54CA1DFCDF9D142856093",
+        "strings": "532A0AFA200B02BA7306AD7717F72E7D0C2E4BE533BD057CC75CECE9CBB94D03",
+        "profile": "9175899EF5B3724F1EACC975758C06AB4C55D3BFF7374A7CFB9A35106A18D8D4"
+      }
+    },
+    {
+      "package_id": "scene.slot22.menu_memo_system",
+      "storage_module": "scene.slot22",
+      "family": "menu_memo_system",
+      "row_count": 96,
+      "unique_encoded_strings": 94,
+      "deduplicated_rows": 2,
+      "container_bytes": 794,
+      "padding_bytes": 0,
+      "original_bytes": 766,
+      "translated_bytes_before_dedup": 816,
+      "fixed_length_candidates": 48,
+      "relocation_required_by_length": 48,
+      "needs_review_rows": 0,
+      "same_as_original_rows": 0,
+      "japanese_translation_rows": 0,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/scene.slot22.menu_memo_system/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/scene.slot22.menu_memo_system/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/scene.slot22.menu_memo_system/container_profile.json"
+      },
+      "sha256": {
+        "entries": "2AE3E38B5881C88DC8E37374AB28E8F7480678D4F3A7937FEAED4F269B0FC7F8",
+        "strings": "AA7B408DC4D7845E87443F8BD6887F183B89BB6C2C87369803E1318B860DE6A2",
+        "profile": "281525B3C6136EBC0E4005BDBFFDEDDF81A62A2C6CFAE6B334BE1A2BBE3E043E"
+      }
+    },
+    {
+      "package_id": "scene.slot23.dialogue_event",
+      "storage_module": "scene.slot23",
+      "family": "dialogue_event",
+      "row_count": 217,
+      "unique_encoded_strings": 116,
+      "deduplicated_rows": 101,
+      "container_bytes": 9887,
+      "padding_bytes": 36,
+      "original_bytes": 13049,
+      "translated_bytes_before_dedup": 14155,
+      "fixed_length_candidates": 51,
+      "relocation_required_by_length": 166,
+      "needs_review_rows": 3,
+      "same_as_original_rows": 1,
+      "japanese_translation_rows": 61,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/scene.slot23.dialogue_event/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/scene.slot23.dialogue_event/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/scene.slot23.dialogue_event/container_profile.json"
+      },
+      "sha256": {
+        "entries": "3417C7B16F61D53E263391D90264B067F68F68B08A2DFA7348F8448A37C8DDD3",
+        "strings": "02B8420FF26DC7EADE04411656CD929F205D2BA609AC0FF2CF71E51F2DBA0EA7",
+        "profile": "08DBF09F5052F795EFC584172FE3415A69FBCC7E4B9F498BB539AE1F2EAA673C"
+      }
+    },
+    {
+      "package_id": "scene.slot23.menu_memo_system",
+      "storage_module": "scene.slot23",
+      "family": "menu_memo_system",
+      "row_count": 96,
+      "unique_encoded_strings": 94,
+      "deduplicated_rows": 2,
+      "container_bytes": 794,
+      "padding_bytes": 0,
+      "original_bytes": 766,
+      "translated_bytes_before_dedup": 816,
+      "fixed_length_candidates": 48,
+      "relocation_required_by_length": 48,
+      "needs_review_rows": 0,
+      "same_as_original_rows": 0,
+      "japanese_translation_rows": 0,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/scene.slot23.menu_memo_system/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/scene.slot23.menu_memo_system/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/scene.slot23.menu_memo_system/container_profile.json"
+      },
+      "sha256": {
+        "entries": "E6FFF9D5E683E5EAEABC7F63662BF0C701A321A5817FBDC6C9391C3F5008625A",
+        "strings": "AA7B408DC4D7845E87443F8BD6887F183B89BB6C2C87369803E1318B860DE6A2",
+        "profile": "DB7C8F90007BBAC055B20F96C6FC90A2F1F7D43BCF328D330171B6E1EE0F1A1C"
+      }
+    },
+    {
+      "package_id": "scene.slot24.dialogue_event",
+      "storage_module": "scene.slot24",
+      "family": "dialogue_event",
+      "row_count": 217,
+      "unique_encoded_strings": 147,
+      "deduplicated_rows": 70,
+      "container_bytes": 13159,
+      "padding_bytes": 31,
+      "original_bytes": 20366,
+      "translated_bytes_before_dedup": 21638,
+      "fixed_length_candidates": 49,
+      "relocation_required_by_length": 168,
+      "needs_review_rows": 0,
+      "same_as_original_rows": 3,
+      "japanese_translation_rows": 123,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/scene.slot24.dialogue_event/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/scene.slot24.dialogue_event/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/scene.slot24.dialogue_event/container_profile.json"
+      },
+      "sha256": {
+        "entries": "0507560E8FC0C1421FFCB647667A90F57F707D023C50FF450066485B5C6709BD",
+        "strings": "75117F2BCCDFBB4730BDF36332C4FEDA435FE497E469356450888BBE5F2ED071",
+        "profile": "A119A07DE87555E47B6F287DD096157C1016799215D462300E97227DD3A67D69"
+      }
+    },
+    {
+      "package_id": "scene.slot24.menu_memo_system",
+      "storage_module": "scene.slot24",
+      "family": "menu_memo_system",
+      "row_count": 96,
+      "unique_encoded_strings": 94,
+      "deduplicated_rows": 2,
+      "container_bytes": 794,
+      "padding_bytes": 0,
+      "original_bytes": 766,
+      "translated_bytes_before_dedup": 816,
+      "fixed_length_candidates": 48,
+      "relocation_required_by_length": 48,
+      "needs_review_rows": 0,
+      "same_as_original_rows": 0,
+      "japanese_translation_rows": 0,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/scene.slot24.menu_memo_system/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/scene.slot24.menu_memo_system/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/scene.slot24.menu_memo_system/container_profile.json"
+      },
+      "sha256": {
+        "entries": "FCCD292909AE253B870B577B029173CA1099D5E6E9EBB73FCB18F431FF0EDCD5",
+        "strings": "AA7B408DC4D7845E87443F8BD6887F183B89BB6C2C87369803E1318B860DE6A2",
+        "profile": "F7C11349E6B265621835D244BA748F87F2DD486DDBE80AAAECAAFDE956CC92F8"
+      }
+    },
+    {
+      "package_id": "scene.slot25.dialogue_event",
+      "storage_module": "scene.slot25",
+      "family": "dialogue_event",
+      "row_count": 132,
+      "unique_encoded_strings": 129,
+      "deduplicated_rows": 3,
+      "container_bytes": 10953,
+      "padding_bytes": 31,
+      "original_bytes": 10382,
+      "translated_bytes_before_dedup": 10942,
+      "fixed_length_candidates": 36,
+      "relocation_required_by_length": 96,
+      "needs_review_rows": 0,
+      "same_as_original_rows": 10,
+      "japanese_translation_rows": 70,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/scene.slot25.dialogue_event/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/scene.slot25.dialogue_event/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/scene.slot25.dialogue_event/container_profile.json"
+      },
+      "sha256": {
+        "entries": "6E053438AFEC92CA6FEBBC67896B657947FA6D7CD93115ADC14CD603C8E37BC5",
+        "strings": "99067732F4C7F0D98D15699632A6C748EE2367714EBFA6738AA7EAC85D24D265",
+        "profile": "ACE97674EEB7A8DE71B805797857103189F54C2D25E87134B5E14E21E4E39E48"
+      }
+    },
+    {
+      "package_id": "scene.slot25.menu_memo_system",
+      "storage_module": "scene.slot25",
+      "family": "menu_memo_system",
+      "row_count": 96,
+      "unique_encoded_strings": 94,
+      "deduplicated_rows": 2,
+      "container_bytes": 794,
+      "padding_bytes": 0,
+      "original_bytes": 766,
+      "translated_bytes_before_dedup": 816,
+      "fixed_length_candidates": 48,
+      "relocation_required_by_length": 48,
+      "needs_review_rows": 0,
+      "same_as_original_rows": 0,
+      "japanese_translation_rows": 0,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/scene.slot25.menu_memo_system/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/scene.slot25.menu_memo_system/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/scene.slot25.menu_memo_system/container_profile.json"
+      },
+      "sha256": {
+        "entries": "E1A27744CA692E636C994D5081A6965B2B7F791BEC0D6E74CF10891FD2F1F0A1",
+        "strings": "AA7B408DC4D7845E87443F8BD6887F183B89BB6C2C87369803E1318B860DE6A2",
+        "profile": "DE6258E67938AF379982D2442400721E73B6B2BC37E5C4571E12A4F4C627EF77"
+      }
+    },
+    {
+      "package_id": "scene.slot26.dialogue_event",
+      "storage_module": "scene.slot26",
+      "family": "dialogue_event",
+      "row_count": 93,
+      "unique_encoded_strings": 74,
+      "deduplicated_rows": 19,
+      "container_bytes": 5479,
+      "padding_bytes": 0,
+      "original_bytes": 6343,
+      "translated_bytes_before_dedup": 7350,
+      "fixed_length_candidates": 15,
+      "relocation_required_by_length": 78,
+      "needs_review_rows": 0,
+      "same_as_original_rows": 8,
+      "japanese_translation_rows": 8,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/scene.slot26.dialogue_event/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/scene.slot26.dialogue_event/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/scene.slot26.dialogue_event/container_profile.json"
+      },
+      "sha256": {
+        "entries": "CC83D4D58D73543EDF1628F28208C4B149C4AC92FFE7E23A450C5296CE4C4120",
+        "strings": "E449D4BD44623E02A6295E238D0DC6B103389335157AA0E254120ECB15B04E05",
+        "profile": "0C51602989E5E91E502A7C3B5D54040187967E35680471779FDE4F1C2274CCEA"
+      }
+    },
+    {
+      "package_id": "scene.slot26.menu_memo_system",
+      "storage_module": "scene.slot26",
+      "family": "menu_memo_system",
+      "row_count": 96,
+      "unique_encoded_strings": 94,
+      "deduplicated_rows": 2,
+      "container_bytes": 794,
+      "padding_bytes": 0,
+      "original_bytes": 766,
+      "translated_bytes_before_dedup": 816,
+      "fixed_length_candidates": 48,
+      "relocation_required_by_length": 48,
+      "needs_review_rows": 0,
+      "same_as_original_rows": 0,
+      "japanese_translation_rows": 0,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/scene.slot26.menu_memo_system/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/scene.slot26.menu_memo_system/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/scene.slot26.menu_memo_system/container_profile.json"
+      },
+      "sha256": {
+        "entries": "E4357ED2BADE81D5F06C391598F0627F0F63D294F73AAE75556427F5ACE80FEB",
+        "strings": "AA7B408DC4D7845E87443F8BD6887F183B89BB6C2C87369803E1318B860DE6A2",
+        "profile": "E6176EA010519FA72A1779D5A6FA2600CCE5704527D679B69BBA41E35D0D8FB3"
+      }
+    },
+    {
+      "package_id": "scene.slot27.dialogue_event",
+      "storage_module": "scene.slot27",
+      "family": "dialogue_event",
+      "row_count": 179,
+      "unique_encoded_strings": 82,
+      "deduplicated_rows": 97,
+      "container_bytes": 8467,
+      "padding_bytes": 4,
+      "original_bytes": 16843,
+      "translated_bytes_before_dedup": 17678,
+      "fixed_length_candidates": 42,
+      "relocation_required_by_length": 137,
+      "needs_review_rows": 0,
+      "same_as_original_rows": 5,
+      "japanese_translation_rows": 125,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/scene.slot27.dialogue_event/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/scene.slot27.dialogue_event/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/scene.slot27.dialogue_event/container_profile.json"
+      },
+      "sha256": {
+        "entries": "D9A4924A5425DA2B3404E8BEDC581244C28841DC54CA6CEE5A50EF5CFF519131",
+        "strings": "1DDF5CD1C7AFCFBA09F33230679481721BE96E725E15B49F0EB1261C37E8CF27",
+        "profile": "BCE0AD3A60390F1CAE0E441CE825C0C2A3A1D0F4EFD225C3D2071C4E95C361AA"
+      }
+    },
+    {
+      "package_id": "scene.slot27.menu_memo_system",
+      "storage_module": "scene.slot27",
+      "family": "menu_memo_system",
+      "row_count": 96,
+      "unique_encoded_strings": 94,
+      "deduplicated_rows": 2,
+      "container_bytes": 794,
+      "padding_bytes": 0,
+      "original_bytes": 766,
+      "translated_bytes_before_dedup": 816,
+      "fixed_length_candidates": 48,
+      "relocation_required_by_length": 48,
+      "needs_review_rows": 0,
+      "same_as_original_rows": 0,
+      "japanese_translation_rows": 0,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/scene.slot27.menu_memo_system/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/scene.slot27.menu_memo_system/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/scene.slot27.menu_memo_system/container_profile.json"
+      },
+      "sha256": {
+        "entries": "1D9EF2D5ABAD7BB0094DBD332FAE72FC47DB2B80FF586B8F4E48D26B112EBF02",
+        "strings": "AA7B408DC4D7845E87443F8BD6887F183B89BB6C2C87369803E1318B860DE6A2",
+        "profile": "77CCEB26A0F76C33DE1D394553CFFD2BBC24227F4CF01C3A5A883FE4AC5761E8"
+      }
+    },
+    {
+      "package_id": "scene.slot28.dialogue_event",
+      "storage_module": "scene.slot28",
+      "family": "dialogue_event",
+      "row_count": 370,
+      "unique_encoded_strings": 216,
+      "deduplicated_rows": 154,
+      "container_bytes": 11896,
+      "padding_bytes": 116,
+      "original_bytes": 17706,
+      "translated_bytes_before_dedup": 18985,
+      "fixed_length_candidates": 98,
+      "relocation_required_by_length": 272,
+      "needs_review_rows": 0,
+      "same_as_original_rows": 11,
+      "japanese_translation_rows": 110,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/scene.slot28.dialogue_event/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/scene.slot28.dialogue_event/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/scene.slot28.dialogue_event/container_profile.json"
+      },
+      "sha256": {
+        "entries": "58023AF233E40D11D9420E1460150ED6415EBA79395ECF9B03564820D750A508",
+        "strings": "837833FE76019A72A6E58AB7D448A323C8EF016A91E0ADCA36A60C85014C6D29",
+        "profile": "D7BC5738D389ED7226D035ED961A07C4EC33C758591845B52A54636B266B40E7"
+      }
+    },
+    {
+      "package_id": "scene.slot29.dialogue_event",
+      "storage_module": "scene.slot29",
+      "family": "dialogue_event",
+      "row_count": 339,
+      "unique_encoded_strings": 203,
+      "deduplicated_rows": 136,
+      "container_bytes": 9684,
+      "padding_bytes": 74,
+      "original_bytes": 15072,
+      "translated_bytes_before_dedup": 15976,
+      "fixed_length_candidates": 95,
+      "relocation_required_by_length": 244,
+      "needs_review_rows": 0,
+      "same_as_original_rows": 3,
+      "japanese_translation_rows": 101,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/scene.slot29.dialogue_event/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/scene.slot29.dialogue_event/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/scene.slot29.dialogue_event/container_profile.json"
+      },
+      "sha256": {
+        "entries": "9E2E506E1EA0A2F32FF283ACE98AF8AE371FB3F47CA21EDF69918ADCE7125149",
+        "strings": "2C1DF8EE575CC31C8BACB97818A5DD004B2DBBB3F3607D88FF7072F3502011DD",
+        "profile": "5307518BAB06178B40FF440C8256BAF05F134F6FF7BE725E665852645566D164"
+      }
+    },
+    {
+      "package_id": "scene.slot30.dialogue_event",
+      "storage_module": "scene.slot30",
+      "family": "dialogue_event",
+      "row_count": 114,
+      "unique_encoded_strings": 48,
+      "deduplicated_rows": 66,
+      "container_bytes": 5132,
+      "padding_bytes": 0,
+      "original_bytes": 7753,
+      "translated_bytes_before_dedup": 8448,
+      "fixed_length_candidates": 20,
+      "relocation_required_by_length": 94,
+      "needs_review_rows": 0,
+      "same_as_original_rows": 0,
+      "japanese_translation_rows": 27,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/scene.slot30.dialogue_event/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/scene.slot30.dialogue_event/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/scene.slot30.dialogue_event/container_profile.json"
+      },
+      "sha256": {
+        "entries": "4AA91ABDDCF0DAD702E7CFB2ABBEF25F7449FA8AC911316CA64F91EB1E8C1127",
+        "strings": "CF96F5A0E5A9D7A27B2E925ECAC93BFDA8C764EDF5BC379B2886D99FC0DC46FC",
+        "profile": "2C7678A87E472290B39DB48B69FC89809292B828EF0EB691C7998445552518B5"
+      }
+    },
+    {
+      "package_id": "scene.slot30.menu_memo_system",
+      "storage_module": "scene.slot30",
+      "family": "menu_memo_system",
+      "row_count": 96,
+      "unique_encoded_strings": 94,
+      "deduplicated_rows": 2,
+      "container_bytes": 794,
+      "padding_bytes": 0,
+      "original_bytes": 766,
+      "translated_bytes_before_dedup": 816,
+      "fixed_length_candidates": 48,
+      "relocation_required_by_length": 48,
+      "needs_review_rows": 0,
+      "same_as_original_rows": 0,
+      "japanese_translation_rows": 0,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/scene.slot30.menu_memo_system/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/scene.slot30.menu_memo_system/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/scene.slot30.menu_memo_system/container_profile.json"
+      },
+      "sha256": {
+        "entries": "CB125D4F90F4F12CED952D96E91EC15E10C31E6EEAFE7DB66E439EA0EB491BC5",
+        "strings": "AA7B408DC4D7845E87443F8BD6887F183B89BB6C2C87369803E1318B860DE6A2",
+        "profile": "D42BD5C715E866F9818BFD5275986F09DE21FB5620E8F5B4E5BE4E3658C33823"
+      }
+    },
+    {
+      "package_id": "scene.slot31.dialogue_event",
+      "storage_module": "scene.slot31",
+      "family": "dialogue_event",
+      "row_count": 181,
+      "unique_encoded_strings": 87,
+      "deduplicated_rows": 94,
+      "container_bytes": 9011,
+      "padding_bytes": 125,
+      "original_bytes": 15881,
+      "translated_bytes_before_dedup": 16795,
+      "fixed_length_candidates": 40,
+      "relocation_required_by_length": 141,
+      "needs_review_rows": 0,
+      "same_as_original_rows": 2,
+      "japanese_translation_rows": 103,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/scene.slot31.dialogue_event/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/scene.slot31.dialogue_event/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/scene.slot31.dialogue_event/container_profile.json"
+      },
+      "sha256": {
+        "entries": "1BB67A290050427BA2C6ECD458EE3538E31784CA9BF2D6D49261B0CD789478EE",
+        "strings": "680D52D10B9366146A27BABBB98E2E05237D2AC9E1169729357B54CDA119F9EE",
+        "profile": "CD5D157739ED5928FAB9639BFFBB41DCB37F9BFDF371C2DA0C5E28F58995FCF9"
+      }
+    },
+    {
+      "package_id": "scene.slot31.menu_memo_system",
+      "storage_module": "scene.slot31",
+      "family": "menu_memo_system",
+      "row_count": 96,
+      "unique_encoded_strings": 94,
+      "deduplicated_rows": 2,
+      "container_bytes": 794,
+      "padding_bytes": 0,
+      "original_bytes": 766,
+      "translated_bytes_before_dedup": 816,
+      "fixed_length_candidates": 48,
+      "relocation_required_by_length": 48,
+      "needs_review_rows": 0,
+      "same_as_original_rows": 0,
+      "japanese_translation_rows": 0,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/scene.slot31.menu_memo_system/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/scene.slot31.menu_memo_system/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/scene.slot31.menu_memo_system/container_profile.json"
+      },
+      "sha256": {
+        "entries": "70FEEE2116F01B354FC907632325E0943EF99485036F5B05A50F78E64B6AAD07",
+        "strings": "AA7B408DC4D7845E87443F8BD6887F183B89BB6C2C87369803E1318B860DE6A2",
+        "profile": "6ED0113865FC35D23F26A8331D648D6AE8AB85348256AA6119E21307A29AFA84"
+      }
+    },
+    {
+      "package_id": "scene.slot32.dialogue_event",
+      "storage_module": "scene.slot32",
+      "family": "dialogue_event",
+      "row_count": 441,
+      "unique_encoded_strings": 226,
+      "deduplicated_rows": 215,
+      "container_bytes": 11817,
+      "padding_bytes": 8,
+      "original_bytes": 24789,
+      "translated_bytes_before_dedup": 26182,
+      "fixed_length_candidates": 120,
+      "relocation_required_by_length": 321,
+      "needs_review_rows": 0,
+      "same_as_original_rows": 3,
+      "japanese_translation_rows": 161,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/scene.slot32.dialogue_event/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/scene.slot32.dialogue_event/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/scene.slot32.dialogue_event/container_profile.json"
+      },
+      "sha256": {
+        "entries": "312618BE33AE2A30F9438BE9787B11B23FF24DBE89A7935C0260CF5D2D0799E0",
+        "strings": "35B1067E7EEAC577BDD90A561A978B2EE1AC85BD3BB2EA9C920CF99923C4ECF9",
+        "profile": "F31DAAC61749C6F44366F3B1C471EC54639A0024E05BCD4FB7F6DFC23986CD80"
+      }
+    },
+    {
+      "package_id": "scene.slot33.dialogue_event",
+      "storage_module": "scene.slot33",
+      "family": "dialogue_event",
+      "row_count": 340,
+      "unique_encoded_strings": 153,
+      "deduplicated_rows": 187,
+      "container_bytes": 4673,
+      "padding_bytes": 0,
+      "original_bytes": 10367,
+      "translated_bytes_before_dedup": 11798,
+      "fixed_length_candidates": 89,
+      "relocation_required_by_length": 251,
+      "needs_review_rows": 0,
+      "same_as_original_rows": 0,
+      "japanese_translation_rows": 0,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/scene.slot33.dialogue_event/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/scene.slot33.dialogue_event/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/scene.slot33.dialogue_event/container_profile.json"
+      },
+      "sha256": {
+        "entries": "501D9EDEE4D5D9EC4F679C9BBAD951C1C5BE49C14442CB939A949C93A979BAEA",
+        "strings": "7E088C852E62462A8AF6419A88D9303F8159F80C0C53CC28C02CB6F19284CB96",
+        "profile": "CBF44DF203AD75A65A1BB85F6DD382A7311ABA1A1618E455C44CDCCFEBE33206"
+      }
+    },
+    {
+      "package_id": "scene.slot34.dialogue_event",
+      "storage_module": "scene.slot34",
+      "family": "dialogue_event",
+      "row_count": 468,
+      "unique_encoded_strings": 205,
+      "deduplicated_rows": 263,
+      "container_bytes": 9500,
+      "padding_bytes": 0,
+      "original_bytes": 29062,
+      "translated_bytes_before_dedup": 30558,
+      "fixed_length_candidates": 125,
+      "relocation_required_by_length": 343,
+      "needs_review_rows": 0,
+      "same_as_original_rows": 4,
+      "japanese_translation_rows": 215,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/scene.slot34.dialogue_event/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/scene.slot34.dialogue_event/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/scene.slot34.dialogue_event/container_profile.json"
+      },
+      "sha256": {
+        "entries": "F7269E455346792332A80144FA166B720E9E88CBDA6644F815A2F72D151AEBE1",
+        "strings": "7A7416A41AF94EEEE4C4ECFFFCB570797CD78BE34D3FA68EA520F348DA3BC1D5",
+        "profile": "91C0C2A9BF0EA4DF58E42ACCB8FE7262ABBE365F2CF4570AF75C11D30D75BF83"
+      }
+    },
+    {
+      "package_id": "scene.slot35.dialogue_event",
+      "storage_module": "scene.slot35",
+      "family": "dialogue_event",
+      "row_count": 353,
+      "unique_encoded_strings": 192,
+      "deduplicated_rows": 161,
+      "container_bytes": 9219,
+      "padding_bytes": 8,
+      "original_bytes": 10835,
+      "translated_bytes_before_dedup": 11843,
+      "fixed_length_candidates": 88,
+      "relocation_required_by_length": 265,
+      "needs_review_rows": 0,
+      "same_as_original_rows": 1,
+      "japanese_translation_rows": 61,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/scene.slot35.dialogue_event/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/scene.slot35.dialogue_event/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/scene.slot35.dialogue_event/container_profile.json"
+      },
+      "sha256": {
+        "entries": "C90AB6D85DB0275A6D8B0DC1367D831EAC6FD6B720CA20AE045863C2A41D8C42",
+        "strings": "103EA555B7DE1A4ADD5E477AE9E8C637D41CED9D8D46C30425CF45636B356B7A",
+        "profile": "95B64DDF31310443BA52560BC551C12F9B80C73D448BF386B5AC101FA90E2B56"
+      }
+    },
+    {
+      "package_id": "scene.slot36.dialogue_event",
+      "storage_module": "scene.slot36",
+      "family": "dialogue_event",
+      "row_count": 205,
+      "unique_encoded_strings": 95,
+      "deduplicated_rows": 110,
+      "container_bytes": 8448,
+      "padding_bytes": 6,
+      "original_bytes": 10055,
+      "translated_bytes_before_dedup": 10942,
+      "fixed_length_candidates": 30,
+      "relocation_required_by_length": 175,
+      "needs_review_rows": 0,
+      "same_as_original_rows": 1,
+      "japanese_translation_rows": 61,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/scene.slot36.dialogue_event/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/scene.slot36.dialogue_event/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/scene.slot36.dialogue_event/container_profile.json"
+      },
+      "sha256": {
+        "entries": "B2D948CFB5EAD3027001A76B90A4B0EA63A947336D10D0E9A4BEBC3473721695",
+        "strings": "293B0D19086FD84DB792D9B1F59B9430026329BC572E3F6B256402119ED16F85",
+        "profile": "694B33DAC0AD89436DF61BDF6E556B1C80D386433D0CFF85FFB687B7977A039B"
+      }
+    },
+    {
+      "package_id": "scene.slot36.menu_memo_system",
+      "storage_module": "scene.slot36",
+      "family": "menu_memo_system",
+      "row_count": 96,
+      "unique_encoded_strings": 94,
+      "deduplicated_rows": 2,
+      "container_bytes": 794,
+      "padding_bytes": 0,
+      "original_bytes": 766,
+      "translated_bytes_before_dedup": 816,
+      "fixed_length_candidates": 48,
+      "relocation_required_by_length": 48,
+      "needs_review_rows": 0,
+      "same_as_original_rows": 0,
+      "japanese_translation_rows": 0,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/scene.slot36.menu_memo_system/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/scene.slot36.menu_memo_system/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/scene.slot36.menu_memo_system/container_profile.json"
+      },
+      "sha256": {
+        "entries": "795C3600EE68156C239581F38CDBB59D6CCAB8C87E196D2B82929FE5B2E309F6",
+        "strings": "AA7B408DC4D7845E87443F8BD6887F183B89BB6C2C87369803E1318B860DE6A2",
+        "profile": "2611C37CA838A4C91484BE3A08E07FCFBE86D11427CD90302E6622A592BE70A0"
+      }
+    },
+    {
+      "package_id": "scene.slot37.dialogue_event",
+      "storage_module": "scene.slot37",
+      "family": "dialogue_event",
+      "row_count": 402,
+      "unique_encoded_strings": 222,
+      "deduplicated_rows": 180,
+      "container_bytes": 12030,
+      "padding_bytes": 144,
+      "original_bytes": 18916,
+      "translated_bytes_before_dedup": 20719,
+      "fixed_length_candidates": 91,
+      "relocation_required_by_length": 311,
+      "needs_review_rows": 0,
+      "same_as_original_rows": 2,
+      "japanese_translation_rows": 100,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/scene.slot37.dialogue_event/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/scene.slot37.dialogue_event/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/scene.slot37.dialogue_event/container_profile.json"
+      },
+      "sha256": {
+        "entries": "536D390659AF15845D40E72D6C35423CBD83C5D43BF71D809A13F7F14774C0F7",
+        "strings": "86E917110198566977C5765899B2FEF526224674C5BA76ED5A93D1FF879A8A25",
+        "profile": "89D6656A099529A779D68355C1F1E2CA84967AAC0EECF61993F789A84C6C0C41"
+      }
+    },
+    {
+      "package_id": "scene.slot38.dialogue_event",
+      "storage_module": "scene.slot38",
+      "family": "dialogue_event",
+      "row_count": 188,
+      "unique_encoded_strings": 36,
+      "deduplicated_rows": 152,
+      "container_bytes": 1519,
+      "padding_bytes": 0,
+      "original_bytes": 4872,
+      "translated_bytes_before_dedup": 6063,
+      "fixed_length_candidates": 20,
+      "relocation_required_by_length": 168,
+      "needs_review_rows": 0,
+      "same_as_original_rows": 2,
+      "japanese_translation_rows": 2,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/scene.slot38.dialogue_event/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/scene.slot38.dialogue_event/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/scene.slot38.dialogue_event/container_profile.json"
+      },
+      "sha256": {
+        "entries": "D5494538AACE2ED35B5DC41FF6D3ECD24E0F8DBE48A19285C752BF7009A3355F",
+        "strings": "1784BC140B51D610886CE75CBEDFAD4217233080FD5D55E169D619AF4288BECE",
+        "profile": "64AE66CC46E908528FF8F9645DB8F6D3541C2F01F3F479AE74EEA939A25E713E"
+      }
+    },
+    {
+      "package_id": "scene.slot38.menu_memo_system",
+      "storage_module": "scene.slot38",
+      "family": "menu_memo_system",
+      "row_count": 96,
+      "unique_encoded_strings": 94,
+      "deduplicated_rows": 2,
+      "container_bytes": 794,
+      "padding_bytes": 0,
+      "original_bytes": 766,
+      "translated_bytes_before_dedup": 816,
+      "fixed_length_candidates": 48,
+      "relocation_required_by_length": 48,
+      "needs_review_rows": 0,
+      "same_as_original_rows": 0,
+      "japanese_translation_rows": 0,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/scene.slot38.menu_memo_system/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/scene.slot38.menu_memo_system/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/scene.slot38.menu_memo_system/container_profile.json"
+      },
+      "sha256": {
+        "entries": "955E22A08B89178F21F3846FA84063502E9F67D697E4D7BE5878A1A4E4F4A104",
+        "strings": "AA7B408DC4D7845E87443F8BD6887F183B89BB6C2C87369803E1318B860DE6A2",
+        "profile": "0550FC31C90204E548ED6215313632E1BA445ACD267CF27089E0553E572282A5"
+      }
+    },
+    {
+      "package_id": "scene.slot39.dialogue_event",
+      "storage_module": "scene.slot39",
+      "family": "dialogue_event",
+      "row_count": 375,
+      "unique_encoded_strings": 196,
+      "deduplicated_rows": 179,
+      "container_bytes": 9591,
+      "padding_bytes": 12,
+      "original_bytes": 15875,
+      "translated_bytes_before_dedup": 16987,
+      "fixed_length_candidates": 99,
+      "relocation_required_by_length": 276,
+      "needs_review_rows": 0,
+      "same_as_original_rows": 1,
+      "japanese_translation_rows": 94,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/scene.slot39.dialogue_event/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/scene.slot39.dialogue_event/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/scene.slot39.dialogue_event/container_profile.json"
+      },
+      "sha256": {
+        "entries": "DC103B2413C08638737DD242FF4F722424CBE21058633B970745C16E1E4D01B0",
+        "strings": "1B187B5F8FB41B770834CFE90D3F423E57DB9634EA53B6D6456E414BEA0157CF",
+        "profile": "D92BC5F906FB1161E2F20178457E1FECA08494DC3E53390FA533E1A1CB3B900B"
+      }
+    },
+    {
+      "package_id": "scene.slot40.dialogue_event",
+      "storage_module": "scene.slot40",
+      "family": "dialogue_event",
+      "row_count": 431,
+      "unique_encoded_strings": 202,
+      "deduplicated_rows": 229,
+      "container_bytes": 10081,
+      "padding_bytes": 8,
+      "original_bytes": 20341,
+      "translated_bytes_before_dedup": 21846,
+      "fixed_length_candidates": 102,
+      "relocation_required_by_length": 329,
+      "needs_review_rows": 0,
+      "same_as_original_rows": 4,
+      "japanese_translation_rows": 124,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/scene.slot40.dialogue_event/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/scene.slot40.dialogue_event/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/scene.slot40.dialogue_event/container_profile.json"
+      },
+      "sha256": {
+        "entries": "AAFF85E0716EF1AF827BD33BD64535646BE7CF4DD2040E1290934B4D1133888A",
+        "strings": "660D93F1490945CCB639BD4464F6C43238F0FB934B1E2793A1D5C623009DF451",
+        "profile": "9FCFFEA2A49E867D0C506AD26E9F72C5E7CE0B8B2CB889F981F77BF1C5B6EB1E"
+      }
+    },
+    {
+      "package_id": "scene.slot41.dialogue_event",
+      "storage_module": "scene.slot41",
+      "family": "dialogue_event",
+      "row_count": 229,
+      "unique_encoded_strings": 109,
+      "deduplicated_rows": 120,
+      "container_bytes": 11052,
+      "padding_bytes": 288,
+      "original_bytes": 15872,
+      "translated_bytes_before_dedup": 17596,
+      "fixed_length_candidates": 36,
+      "relocation_required_by_length": 193,
+      "needs_review_rows": 0,
+      "same_as_original_rows": 7,
+      "japanese_translation_rows": 70,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/scene.slot41.dialogue_event/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/scene.slot41.dialogue_event/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/scene.slot41.dialogue_event/container_profile.json"
+      },
+      "sha256": {
+        "entries": "7F69BA026572F4EBA2D7D2EFBBE9EE4266176062A93A346484B2D61641E5292F",
+        "strings": "EEE26025F8AC5535884472ADB3101890A5229A73101FEC33D6C4602557A75D69",
+        "profile": "443B5956E73DC7A1A031DEAC8CED3C7F6984D43A06D682566B26EB507AB10BA1"
+      }
+    },
+    {
+      "package_id": "scene.slot41.menu_memo_system",
+      "storage_module": "scene.slot41",
+      "family": "menu_memo_system",
+      "row_count": 96,
+      "unique_encoded_strings": 94,
+      "deduplicated_rows": 2,
+      "container_bytes": 794,
+      "padding_bytes": 0,
+      "original_bytes": 766,
+      "translated_bytes_before_dedup": 816,
+      "fixed_length_candidates": 48,
+      "relocation_required_by_length": 48,
+      "needs_review_rows": 0,
+      "same_as_original_rows": 0,
+      "japanese_translation_rows": 0,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/scene.slot41.menu_memo_system/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/scene.slot41.menu_memo_system/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/scene.slot41.menu_memo_system/container_profile.json"
+      },
+      "sha256": {
+        "entries": "1E84E00A758BE7460FC1C0CFAA90E401C13A24D2246666FA13C4D75B7E241D4A",
+        "strings": "AA7B408DC4D7845E87443F8BD6887F183B89BB6C2C87369803E1318B860DE6A2",
+        "profile": "9AE2A5CF0A61D827A178C936523F20BB1BE1D2886C07B61A91D82AA6D59C7ACD"
+      }
+    },
+    {
+      "package_id": "scene.slot42.dialogue_event",
+      "storage_module": "scene.slot42",
+      "family": "dialogue_event",
+      "row_count": 369,
+      "unique_encoded_strings": 228,
+      "deduplicated_rows": 141,
+      "container_bytes": 12229,
+      "padding_bytes": 188,
+      "original_bytes": 17218,
+      "translated_bytes_before_dedup": 18550,
+      "fixed_length_candidates": 95,
+      "relocation_required_by_length": 274,
+      "needs_review_rows": 0,
+      "same_as_original_rows": 4,
+      "japanese_translation_rows": 102,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/scene.slot42.dialogue_event/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/scene.slot42.dialogue_event/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/scene.slot42.dialogue_event/container_profile.json"
+      },
+      "sha256": {
+        "entries": "3905B0201FA6C4862583407782CBD6F13404C3A41874BF856210019CFD8F854E",
+        "strings": "0EEB3C13678926A04385D53E0B1D0960C069AA1EF0E4E401E10FA95B100A08D9",
+        "profile": "F7422EEDE371E92174493CA001E50F70485C60C38915EAA18F946C2554F0A7DD"
+      }
+    },
+    {
+      "package_id": "scene.slot43.dialogue_event",
+      "storage_module": "scene.slot43",
+      "family": "dialogue_event",
+      "row_count": 324,
+      "unique_encoded_strings": 199,
+      "deduplicated_rows": 125,
+      "container_bytes": 9691,
+      "padding_bytes": 27,
+      "original_bytes": 14948,
+      "translated_bytes_before_dedup": 15897,
+      "fixed_length_candidates": 89,
+      "relocation_required_by_length": 235,
+      "needs_review_rows": 0,
+      "same_as_original_rows": 3,
+      "japanese_translation_rows": 101,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/scene.slot43.dialogue_event/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/scene.slot43.dialogue_event/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/scene.slot43.dialogue_event/container_profile.json"
+      },
+      "sha256": {
+        "entries": "4D448FC3AAD3666192C7933599CA6C33D98C0DA27A137E6E3F004AE90ED74F73",
+        "strings": "B46867AA1A59907E6654CC75AD4BA62D58662B8D47964C567EF8AE9FF3E611EF",
+        "profile": "54E57D1A3535A792F7F498EDEFEBA87494EB477608B46DE4FE418FCF6D8072B1"
+      }
+    },
+    {
+      "package_id": "scene.slot44.dialogue_event",
+      "storage_module": "scene.slot44",
+      "family": "dialogue_event",
+      "row_count": 330,
+      "unique_encoded_strings": 194,
+      "deduplicated_rows": 136,
+      "container_bytes": 9161,
+      "padding_bytes": 78,
+      "original_bytes": 14590,
+      "translated_bytes_before_dedup": 15499,
+      "fixed_length_candidates": 89,
+      "relocation_required_by_length": 241,
+      "needs_review_rows": 0,
+      "same_as_original_rows": 1,
+      "japanese_translation_rows": 99,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/scene.slot44.dialogue_event/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/scene.slot44.dialogue_event/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/scene.slot44.dialogue_event/container_profile.json"
+      },
+      "sha256": {
+        "entries": "C99BB0A9F9E55B33810ACF08DD581659154C4E97661604B261D61371B78B5C77",
+        "strings": "E762EAFAC2A37EA0DF6D2E6FD7151869A37AE776FD6A5DD990ED6CDAD6F7D9D3",
+        "profile": "6AC36533D0D0D5B6698C1607B3FEACB16DA0C55A00340825340B43FAFE2CA3B3"
+      }
+    },
+    {
+      "package_id": "scene.slot45.dialogue_event",
+      "storage_module": "scene.slot45",
+      "family": "dialogue_event",
+      "row_count": 140,
+      "unique_encoded_strings": 91,
+      "deduplicated_rows": 49,
+      "container_bytes": 8583,
+      "padding_bytes": 99,
+      "original_bytes": 13312,
+      "translated_bytes_before_dedup": 14009,
+      "fixed_length_candidates": 31,
+      "relocation_required_by_length": 109,
+      "needs_review_rows": 0,
+      "same_as_original_rows": 4,
+      "japanese_translation_rows": 102,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/scene.slot45.dialogue_event/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/scene.slot45.dialogue_event/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/scene.slot45.dialogue_event/container_profile.json"
+      },
+      "sha256": {
+        "entries": "051D302264073C3BEF8EBE86717E59561FE1A515BBCEFCA0B47C292778C31014",
+        "strings": "D380E8D11BAA9758A8871E73EF1BF84056E3690A4063DF4EC90AA62377497D13",
+        "profile": "08DB36DC859E9562C4E9216B21A25491DC8407CA99B0BEAEB325DA24C78B21BE"
+      }
+    },
+    {
+      "package_id": "scene.slot45.menu_memo_system",
+      "storage_module": "scene.slot45",
+      "family": "menu_memo_system",
+      "row_count": 96,
+      "unique_encoded_strings": 94,
+      "deduplicated_rows": 2,
+      "container_bytes": 794,
+      "padding_bytes": 0,
+      "original_bytes": 766,
+      "translated_bytes_before_dedup": 816,
+      "fixed_length_candidates": 48,
+      "relocation_required_by_length": 48,
+      "needs_review_rows": 0,
+      "same_as_original_rows": 0,
+      "japanese_translation_rows": 0,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/scene.slot45.menu_memo_system/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/scene.slot45.menu_memo_system/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/scene.slot45.menu_memo_system/container_profile.json"
+      },
+      "sha256": {
+        "entries": "1CF5548CD48E0C3304237467AB82E4FE8AAD64E47967D32E0B0EACFD96EE1B4E",
+        "strings": "AA7B408DC4D7845E87443F8BD6887F183B89BB6C2C87369803E1318B860DE6A2",
+        "profile": "00E3FC299A13F457C6D447EDCBB9E15E22E729D16CC84A938CB592E4CFB059EF"
+      }
+    },
+    {
+      "package_id": "scene.slot46.dialogue_event",
+      "storage_module": "scene.slot46",
+      "family": "dialogue_event",
+      "row_count": 318,
+      "unique_encoded_strings": 200,
+      "deduplicated_rows": 118,
+      "container_bytes": 9590,
+      "padding_bytes": 2,
+      "original_bytes": 14799,
+      "translated_bytes_before_dedup": 15677,
+      "fixed_length_candidates": 93,
+      "relocation_required_by_length": 225,
+      "needs_review_rows": 0,
+      "same_as_original_rows": 3,
+      "japanese_translation_rows": 101,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/scene.slot46.dialogue_event/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/scene.slot46.dialogue_event/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/scene.slot46.dialogue_event/container_profile.json"
+      },
+      "sha256": {
+        "entries": "90DAC0D4A6F510B795F8F40336DFFB0B0EC7D1E9B1E7CC7841A6227CFE5C1BCA",
+        "strings": "076EBC8C7D023162CD6B35AF906B8E52645497591906FADE89DDF916B548DBC5",
+        "profile": "E177C62E6574EEC79C4268459489BBBCAE7E530D8C904C17C524CFFEB54E45BB"
+      }
+    },
+    {
+      "package_id": "scene.slot47.dialogue_event",
+      "storage_module": "scene.slot47",
+      "family": "dialogue_event",
+      "row_count": 551,
+      "unique_encoded_strings": 228,
+      "deduplicated_rows": 323,
+      "container_bytes": 12519,
+      "padding_bytes": 61,
+      "original_bytes": 20212,
+      "translated_bytes_before_dedup": 22020,
+      "fixed_length_candidates": 139,
+      "relocation_required_by_length": 412,
+      "needs_review_rows": 0,
+      "same_as_original_rows": 1,
+      "japanese_translation_rows": 105,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/scene.slot47.dialogue_event/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/scene.slot47.dialogue_event/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/scene.slot47.dialogue_event/container_profile.json"
+      },
+      "sha256": {
+        "entries": "5ED8FC6A88FA37135F0C0BFC4B0E003C189555975542EE98BB287634AFB9646A",
+        "strings": "DBD38963887FC4C0276C57B8EA0D16489C109C8F96F90827A5C08EE590E1EFF4",
+        "profile": "E0348A3071272D009D69D4C93AD7B0FB85E841ED563DA7F26EFAB350F9F48A85"
+      }
+    },
+    {
+      "package_id": "scene.slot48.dialogue_event",
+      "storage_module": "scene.slot48",
+      "family": "dialogue_event",
+      "row_count": 342,
+      "unique_encoded_strings": 208,
+      "deduplicated_rows": 134,
+      "container_bytes": 9578,
+      "padding_bytes": 39,
+      "original_bytes": 15058,
+      "translated_bytes_before_dedup": 15937,
+      "fixed_length_candidates": 107,
+      "relocation_required_by_length": 235,
+      "needs_review_rows": 0,
+      "same_as_original_rows": 9,
+      "japanese_translation_rows": 107,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/scene.slot48.dialogue_event/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/scene.slot48.dialogue_event/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/scene.slot48.dialogue_event/container_profile.json"
+      },
+      "sha256": {
+        "entries": "66F53CC9ADA13A3995B016E71FB94BBBEA72D86CBC629858075243024B8079A0",
+        "strings": "31C04A9FB1E0B57C28F4B2A1A30668D3DCA416C294EEA4E6EFC868C1115C91F7",
+        "profile": "8ACFF94259FE93F9718E94F9C1D321087976E80D7690E87680BD80A476CB5182"
+      }
+    },
+    {
+      "package_id": "scene.slot49.dialogue_event",
+      "storage_module": "scene.slot49",
+      "family": "dialogue_event",
+      "row_count": 340,
+      "unique_encoded_strings": 218,
+      "deduplicated_rows": 122,
+      "container_bytes": 10809,
+      "padding_bytes": 5,
+      "original_bytes": 15968,
+      "translated_bytes_before_dedup": 16955,
+      "fixed_length_candidates": 100,
+      "relocation_required_by_length": 240,
+      "needs_review_rows": 0,
+      "same_as_original_rows": 4,
+      "japanese_translation_rows": 103,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/scene.slot49.dialogue_event/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/scene.slot49.dialogue_event/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/scene.slot49.dialogue_event/container_profile.json"
+      },
+      "sha256": {
+        "entries": "C20A8984CD954E87B89994EBF91A0527A0B7BBFD4201CAEA3628397F7B556033",
+        "strings": "7C7F6F5B0FF8B1E9B1304F8E12FF22B517898C60D21E665846B77E2D45DBDFB5",
+        "profile": "48CA87A06D196916529C57C1A836A8EA890CD0C465D878B4FBF9806CBFA678DC"
+      }
+    },
+    {
+      "package_id": "scene.slot50.dialogue_event",
+      "storage_module": "scene.slot50",
+      "family": "dialogue_event",
+      "row_count": 157,
+      "unique_encoded_strings": 109,
+      "deduplicated_rows": 48,
+      "container_bytes": 10489,
+      "padding_bytes": 116,
+      "original_bytes": 15043,
+      "translated_bytes_before_dedup": 15937,
+      "fixed_length_candidates": 31,
+      "relocation_required_by_length": 126,
+      "needs_review_rows": 1,
+      "same_as_original_rows": 2,
+      "japanese_translation_rows": 100,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/scene.slot50.dialogue_event/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/scene.slot50.dialogue_event/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/scene.slot50.dialogue_event/container_profile.json"
+      },
+      "sha256": {
+        "entries": "C0DE4012B264064E3CF18D8B7AB4917C94A19C5B35BC92AEA3B449C014D72074",
+        "strings": "5793EF556AB2D3287564E9B2972BBED0B7D44DE1046B6561EA179A5A366379B4",
+        "profile": "C504371C51A35E2B8072987F8263187518CD9DA58943034C45B953B765DF299C"
+      }
+    },
+    {
+      "package_id": "scene.slot50.menu_memo_system",
+      "storage_module": "scene.slot50",
+      "family": "menu_memo_system",
+      "row_count": 96,
+      "unique_encoded_strings": 94,
+      "deduplicated_rows": 2,
+      "container_bytes": 794,
+      "padding_bytes": 0,
+      "original_bytes": 766,
+      "translated_bytes_before_dedup": 816,
+      "fixed_length_candidates": 48,
+      "relocation_required_by_length": 48,
+      "needs_review_rows": 0,
+      "same_as_original_rows": 0,
+      "japanese_translation_rows": 0,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/scene.slot50.menu_memo_system/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/scene.slot50.menu_memo_system/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/scene.slot50.menu_memo_system/container_profile.json"
+      },
+      "sha256": {
+        "entries": "5D478BD41905F85F4F85374237EC3C3970270E19D8D78202F509A5899F35505A",
+        "strings": "AA7B408DC4D7845E87443F8BD6887F183B89BB6C2C87369803E1318B860DE6A2",
+        "profile": "26E05C80ED935DC72FBC4CFE755DA661968F02C28C82DFCF4943A0C9317CDF32"
+      }
+    },
+    {
+      "package_id": "scene.slot51.dialogue_event",
+      "storage_module": "scene.slot51",
+      "family": "dialogue_event",
+      "row_count": 598,
+      "unique_encoded_strings": 260,
+      "deduplicated_rows": 338,
+      "container_bytes": 13061,
+      "padding_bytes": 74,
+      "original_bytes": 20921,
+      "translated_bytes_before_dedup": 23147,
+      "fixed_length_candidates": 144,
+      "relocation_required_by_length": 454,
+      "needs_review_rows": 0,
+      "same_as_original_rows": 8,
+      "japanese_translation_rows": 106,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/scene.slot51.dialogue_event/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/scene.slot51.dialogue_event/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/scene.slot51.dialogue_event/container_profile.json"
+      },
+      "sha256": {
+        "entries": "AA29808E23C09DF7FBBD9B7632C15979208F49890E4D17E802C6EF6C21EDBFF9",
+        "strings": "7B9EB4E3599A2C9D59DE4709B6D9BF929856659E2A6081AAE0034390CA3C67C6",
+        "profile": "045B199B867FDE8EAF7F9714B8BDFDD22C5937AAA502842AF563AEC0148B1B62"
+      }
+    },
+    {
+      "package_id": "scene.slot52.dialogue_event",
+      "storage_module": "scene.slot52",
+      "family": "dialogue_event",
+      "row_count": 380,
+      "unique_encoded_strings": 213,
+      "deduplicated_rows": 167,
+      "container_bytes": 10815,
+      "padding_bytes": 55,
+      "original_bytes": 16489,
+      "translated_bytes_before_dedup": 17738,
+      "fixed_length_candidates": 101,
+      "relocation_required_by_length": 279,
+      "needs_review_rows": 0,
+      "same_as_original_rows": 7,
+      "japanese_translation_rows": 105,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/scene.slot52.dialogue_event/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/scene.slot52.dialogue_event/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/scene.slot52.dialogue_event/container_profile.json"
+      },
+      "sha256": {
+        "entries": "5B65E0E8F6176A789660FB9C31DD9A526BBE58DAAF2730EB4FD6B9E010A676FF",
+        "strings": "8326BD2EF778B336C9E84033311981A8F07F6B61E30B3A97E482F3B09036DFA8",
+        "profile": "952FA20EB78A6ADAFDC6D3C8CC4BFDA75CDDB5330381931956FE97B099487FD9"
+      }
+    },
+    {
+      "package_id": "scene.slot53.dialogue_event",
+      "storage_module": "scene.slot53",
+      "family": "dialogue_event",
+      "row_count": 322,
+      "unique_encoded_strings": 194,
+      "deduplicated_rows": 128,
+      "container_bytes": 10297,
+      "padding_bytes": 113,
+      "original_bytes": 15405,
+      "translated_bytes_before_dedup": 16403,
+      "fixed_length_candidates": 95,
+      "relocation_required_by_length": 227,
+      "needs_review_rows": 0,
+      "same_as_original_rows": 6,
+      "japanese_translation_rows": 104,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/scene.slot53.dialogue_event/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/scene.slot53.dialogue_event/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/scene.slot53.dialogue_event/container_profile.json"
+      },
+      "sha256": {
+        "entries": "112CAA213C65C0A285A3D10D755C201828D791F0B8B4EAD9EE14E5BD090B569D",
+        "strings": "836BF2CDAAFA08A82F907AE60EBFD03EF11B404CEC5E83F5A20385F448CF00C0",
+        "profile": "DD1D023635C9494992F849435C7EC3BECAA1937A3EA05B35215F7A60D0FCB684"
+      }
+    },
+    {
+      "package_id": "scene.slot54.dialogue_event",
+      "storage_module": "scene.slot54",
+      "family": "dialogue_event",
+      "row_count": 326,
+      "unique_encoded_strings": 208,
+      "deduplicated_rows": 118,
+      "container_bytes": 11384,
+      "padding_bytes": 8,
+      "original_bytes": 16377,
+      "translated_bytes_before_dedup": 17528,
+      "fixed_length_candidates": 90,
+      "relocation_required_by_length": 236,
+      "needs_review_rows": 0,
+      "same_as_original_rows": 3,
+      "japanese_translation_rows": 101,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/scene.slot54.dialogue_event/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/scene.slot54.dialogue_event/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/scene.slot54.dialogue_event/container_profile.json"
+      },
+      "sha256": {
+        "entries": "4BD04E390BFF93AFD7659FBAF35CCD37E1CBF3FCEDE68DB8AB930E30E9186364",
+        "strings": "AADF0381F42A013B6AC4B9BCD873619ED4FA507A7E69534959E4BDDB450F767A",
+        "profile": "9D1D51B9CEA6F38AF8D1341A5058F27F1FCC4F84774F3220400D6F0621E4F439"
+      }
+    },
+    {
+      "package_id": "scene.slot54.menu_memo_system",
+      "storage_module": "scene.slot54",
+      "family": "menu_memo_system",
+      "row_count": 7,
+      "unique_encoded_strings": 7,
+      "deduplicated_rows": 0,
+      "container_bytes": 41,
+      "padding_bytes": 0,
+      "original_bytes": 35,
+      "translated_bytes_before_dedup": 41,
+      "fixed_length_candidates": 3,
+      "relocation_required_by_length": 4,
+      "needs_review_rows": 0,
+      "same_as_original_rows": 0,
+      "japanese_translation_rows": 0,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/scene.slot54.menu_memo_system/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/scene.slot54.menu_memo_system/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/scene.slot54.menu_memo_system/container_profile.json"
+      },
+      "sha256": {
+        "entries": "93A1F50590FD280FD4429024EBEE9AC3EA31864050441058C465502194F31D51",
+        "strings": "2BB0CE648DB3948093D078D9CA634D4662F68495B71D222ECD8F3467B23557AB",
+        "profile": "D8F5E32180522627D6882EDB16DC5B4DA2C6E9DFF81428D18C588E90CC297080"
+      }
+    },
+    {
+      "package_id": "shared.battle.battle",
+      "storage_module": "shared.battle",
+      "family": "battle",
+      "row_count": 28,
+      "unique_encoded_strings": 21,
+      "deduplicated_rows": 7,
+      "container_bytes": 270,
+      "padding_bytes": 0,
+      "original_bytes": 359,
+      "translated_bytes_before_dedup": 359,
+      "fixed_length_candidates": 28,
+      "relocation_required_by_length": 0,
+      "needs_review_rows": 1,
+      "same_as_original_rows": 26,
+      "japanese_translation_rows": 26,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/shared.battle.battle/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/shared.battle.battle/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/shared.battle.battle/container_profile.json"
+      },
+      "sha256": {
+        "entries": "7A7D7E4DCEE4F357EADEA18B3B5FE6B812801AA7D0E632AD4C2720B80405DBEC",
+        "strings": "D29B5FC7D76C2931F08887757356DB1BA119E3BDC53FC1B6A4D7AADA5765C8C9",
+        "profile": "2CE25A17C92D0D34748E98FAF1E41625F9AEC337B4552B30374BDAF85BCA2179"
+      }
+    },
+    {
+      "package_id": "shared.battle.menu_memo_system",
+      "storage_module": "shared.battle",
+      "family": "menu_memo_system",
+      "row_count": 1,
+      "unique_encoded_strings": 1,
+      "deduplicated_rows": 0,
+      "container_bytes": 6,
+      "padding_bytes": 0,
+      "original_bytes": 4,
+      "translated_bytes_before_dedup": 6,
+      "fixed_length_candidates": 0,
+      "relocation_required_by_length": 1,
+      "needs_review_rows": 1,
+      "same_as_original_rows": 0,
+      "japanese_translation_rows": 0,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/shared.battle.menu_memo_system/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/shared.battle.menu_memo_system/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/shared.battle.menu_memo_system/container_profile.json"
+      },
+      "sha256": {
+        "entries": "85B9BF04027B1D98DD08A5F5F0FEC6587C885CC650A7ABA7E58316A06BDF71C2",
+        "strings": "78C196F2A6D74F123A3358545C7E117C65B2E254F83BF6D46503202EF18F3B83",
+        "profile": "A02F08A033827F9EEF25F990E5BB2788B742CE9DA8436A755C7E0F067BA0104E"
+      }
+    },
+    {
+      "package_id": "shared.boot.boot_opening",
+      "storage_module": "shared.boot",
+      "family": "boot_opening",
+      "row_count": 18,
+      "unique_encoded_strings": 17,
+      "deduplicated_rows": 1,
+      "container_bytes": 125,
+      "padding_bytes": 0,
+      "original_bytes": 165,
+      "translated_bytes_before_dedup": 130,
+      "fixed_length_candidates": 18,
+      "relocation_required_by_length": 0,
+      "needs_review_rows": 0,
+      "same_as_original_rows": 5,
+      "japanese_translation_rows": 5,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/shared.boot.boot_opening/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/shared.boot.boot_opening/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/shared.boot.boot_opening/container_profile.json"
+      },
+      "sha256": {
+        "entries": "B6209B730DCA08B4576ACA5FE80615ABBB71889DF70D3311179E666BE504E2AF",
+        "strings": "B673B70DB1552BE8B2114FA501046B09238CE2EEE41A2A940F205B452CA5F32E",
+        "profile": "23E2667DBC9E09E3FE0B978C2926C3B568474AC65B955E43E9D7DAE7610D8F87"
+      }
+    },
+    {
+      "package_id": "shared.card.card",
+      "storage_module": "shared.card",
+      "family": "card",
+      "row_count": 52,
+      "unique_encoded_strings": 40,
+      "deduplicated_rows": 12,
+      "container_bytes": 799,
+      "padding_bytes": 0,
+      "original_bytes": 1090,
+      "translated_bytes_before_dedup": 895,
+      "fixed_length_candidates": 52,
+      "relocation_required_by_length": 0,
+      "needs_review_rows": 0,
+      "same_as_original_rows": 34,
+      "japanese_translation_rows": 34,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/shared.card.card/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/shared.card.card/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/shared.card.card/container_profile.json"
+      },
+      "sha256": {
+        "entries": "BFF79EDA03617822CF0209D2AA6B32B666024D62F89A940CB20B93A048BA5F80",
+        "strings": "C9317C1C4FB8BDA5DFD6B6969D5B0B0887F29769F1EE3C1F89DD469256933B46",
+        "profile": "5B9B64412E383F00FE6E425CCCCE70AE6D7DFC437595E12BE19D197917A8D26D"
+      }
+    },
+    {
+      "package_id": "shared.late.dialogue_event",
+      "storage_module": "shared.late",
+      "family": "dialogue_event",
+      "row_count": 12,
+      "unique_encoded_strings": 12,
+      "deduplicated_rows": 0,
+      "container_bytes": 144,
+      "padding_bytes": 0,
+      "original_bytes": 144,
+      "translated_bytes_before_dedup": 144,
+      "fixed_length_candidates": 12,
+      "relocation_required_by_length": 0,
+      "needs_review_rows": 1,
+      "same_as_original_rows": 12,
+      "japanese_translation_rows": 12,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/shared.late.dialogue_event/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/shared.late.dialogue_event/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/shared.late.dialogue_event/container_profile.json"
+      },
+      "sha256": {
+        "entries": "F1636E8FC91D6884E76BC63542A7D461E6B953276B2023A55B1901D57EA4B015",
+        "strings": "3142AF37C9C2895A910CB9758426EB7CE84ED05FFB5CED0006D6EB187DE7FC4B",
+        "profile": "BBC0B5570EED26240A6FB7C4B257D0146CAFEBF35E778BCF2A262A3D81C49340"
+      }
+    },
+    {
+      "package_id": "shared.misc.menu_memo_system",
+      "storage_module": "shared.misc",
+      "family": "menu_memo_system",
+      "row_count": 1,
+      "unique_encoded_strings": 1,
+      "deduplicated_rows": 0,
+      "container_bytes": 22,
+      "padding_bytes": 0,
+      "original_bytes": 22,
+      "translated_bytes_before_dedup": 22,
+      "fixed_length_candidates": 1,
+      "relocation_required_by_length": 0,
+      "needs_review_rows": 0,
+      "same_as_original_rows": 1,
+      "japanese_translation_rows": 1,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/shared.misc.menu_memo_system/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/shared.misc.menu_memo_system/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/shared.misc.menu_memo_system/container_profile.json"
+      },
+      "sha256": {
+        "entries": "8DB90858E62922B90403B6A1FAF099170AD225C07F8AFBAB701865C73F3B95FC",
+        "strings": "9EAE7FA0A974B131E666FFAE3E47A6F4381A2E61A8B7CE7436BC45542F394686",
+        "profile": "5B05A1C5CBCCEB9F3BA240678A52A985237A69A534B79A7420AD58BD97D70104"
+      }
+    },
+    {
+      "package_id": "shared.system.dialogue_event",
+      "storage_module": "shared.system",
+      "family": "dialogue_event",
+      "row_count": 3,
+      "unique_encoded_strings": 3,
+      "deduplicated_rows": 0,
+      "container_bytes": 61,
+      "padding_bytes": 0,
+      "original_bytes": 55,
+      "translated_bytes_before_dedup": 61,
+      "fixed_length_candidates": 0,
+      "relocation_required_by_length": 3,
+      "needs_review_rows": 0,
+      "same_as_original_rows": 0,
+      "japanese_translation_rows": 0,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/shared.system.dialogue_event/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/shared.system.dialogue_event/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/shared.system.dialogue_event/container_profile.json"
+      },
+      "sha256": {
+        "entries": "DF74A76EA923F1932C4D4304E5984A3FDA0092936C036F347EDF688966109C8A",
+        "strings": "B9480C0745DD98C378E0747DCBB2B75060114591CB49C8D40AB9C54316285C60",
+        "profile": "C203EAB3376A8AB5566DE08387400677A71CAA997DFB33EE9AB26BF3B5A534DF"
+      }
+    },
+    {
+      "package_id": "shared.system.menu_memo_system",
+      "storage_module": "shared.system",
+      "family": "menu_memo_system",
+      "row_count": 329,
+      "unique_encoded_strings": 319,
+      "deduplicated_rows": 10,
+      "container_bytes": 3549,
+      "padding_bytes": 0,
+      "original_bytes": 3373,
+      "translated_bytes_before_dedup": 3610,
+      "fixed_length_candidates": 163,
+      "relocation_required_by_length": 166,
+      "needs_review_rows": 1,
+      "same_as_original_rows": 19,
+      "japanese_translation_rows": 19,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/shared.system.menu_memo_system/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/shared.system.menu_memo_system/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/shared.system.menu_memo_system/container_profile.json"
+      },
+      "sha256": {
+        "entries": "D5D240048A54E79A59CDD99142C16CA4224CB82D137B56F4D4A57DE389EBD674",
+        "strings": "134CE93405CFCF397817F4E4EDAE56FC05F29178538CF995D759806D81A0FB6E",
+        "profile": "B62D9C9FC89D82387E2435E1BC251D219414A7E2CBE30EE8233FDEAF13F90986"
+      }
+    },
+    {
+      "package_id": "shared.table.menu_memo_system",
+      "storage_module": "shared.table",
+      "family": "menu_memo_system",
+      "row_count": 2,
+      "unique_encoded_strings": 2,
+      "deduplicated_rows": 0,
+      "container_bytes": 30,
+      "padding_bytes": 0,
+      "original_bytes": 30,
+      "translated_bytes_before_dedup": 30,
+      "fixed_length_candidates": 2,
+      "relocation_required_by_length": 0,
+      "needs_review_rows": 0,
+      "same_as_original_rows": 2,
+      "japanese_translation_rows": 2,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/shared.table.menu_memo_system/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/shared.table.menu_memo_system/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/shared.table.menu_memo_system/container_profile.json"
+      },
+      "sha256": {
+        "entries": "20D40DA5DCE6C020379C54D2E9856DB7AF353CAA15847A3F3F295457497F6EC1",
+        "strings": "65B398ADAD01C37A2D9F8555D7DF6D36837A54CB025DAF6FEE1865546240FDD3",
+        "profile": "ED168F1BC065303D4A7F9A0E7E80522B7DE6476CDEA85C1D1B947CDD21449805"
+      }
+    },
+    {
+      "package_id": "shared.visual_event.dialogue_event",
+      "storage_module": "shared.visual_event",
+      "family": "dialogue_event",
+      "row_count": 196,
+      "unique_encoded_strings": 97,
+      "deduplicated_rows": 99,
+      "container_bytes": 1001,
+      "padding_bytes": 0,
+      "original_bytes": 2470,
+      "translated_bytes_before_dedup": 2016,
+      "fixed_length_candidates": 196,
+      "relocation_required_by_length": 0,
+      "needs_review_rows": 1,
+      "same_as_original_rows": 2,
+      "japanese_translation_rows": 2,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/shared.visual_event.dialogue_event/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/shared.visual_event.dialogue_event/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/shared.visual_event.dialogue_event/container_profile.json"
+      },
+      "sha256": {
+        "entries": "54F87D9C00F4C85740A6B0D6F8BB39E5B05131791F052D5B85BC5F00E5AE2332",
+        "strings": "112FCA9BAD545AE12405D83D9660E1735C5882BAEFE47587BEB81CEE521614DD",
+        "profile": "8C862430A20195D2BE3AED3C2B940327326D1AD0A5C165AF3693791E0018EF5D"
+      }
+    },
+    {
+      "package_id": "shared.visual_event.menu_memo_system",
+      "storage_module": "shared.visual_event",
+      "family": "menu_memo_system",
+      "row_count": 15,
+      "unique_encoded_strings": 8,
+      "deduplicated_rows": 7,
+      "container_bytes": 46,
+      "padding_bytes": 0,
+      "original_bytes": 117,
+      "translated_bytes_before_dedup": 87,
+      "fixed_length_candidates": 14,
+      "relocation_required_by_length": 1,
+      "needs_review_rows": 1,
+      "same_as_original_rows": 0,
+      "japanese_translation_rows": 0,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/shared.visual_event.menu_memo_system/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/shared.visual_event.menu_memo_system/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/shared.visual_event.menu_memo_system/container_profile.json"
+      },
+      "sha256": {
+        "entries": "6AE0AEC287F10B976124434C5915A6CEA97A86470BDFEC62446540EB404D1F28",
+        "strings": "166014867DD0082712274E72F9F5E1F9C7E8F878E2D8E4F74830559259048796",
+        "profile": "D56180CB6DD5ABC470BEC96C4F045D95674F8B047E7C0F54C1D250F321F48628"
+      }
+    },
+    {
+      "package_id": "shared.visual_event.visual_event_portrait",
+      "storage_module": "shared.visual_event",
+      "family": "visual_event_portrait",
+      "row_count": 269,
+      "unique_encoded_strings": 72,
+      "deduplicated_rows": 197,
+      "container_bytes": 1689,
+      "padding_bytes": 0,
+      "original_bytes": 5240,
+      "translated_bytes_before_dedup": 4870,
+      "fixed_length_candidates": 269,
+      "relocation_required_by_length": 0,
+      "needs_review_rows": 0,
+      "same_as_original_rows": 173,
+      "japanese_translation_rows": 173,
+      "paths": {
+        "entries": "module_relink/z8_text_containers/containers/shared.visual_event.visual_event_portrait/entries.csv",
+        "strings": "module_relink/z8_text_containers/containers/shared.visual_event.visual_event_portrait/strings.bin",
+        "profile": "module_relink/z8_text_containers/containers/shared.visual_event.visual_event_portrait/container_profile.json"
+      },
+      "sha256": {
+        "entries": "94B262DB6475F6FD6D31AE7267CB57E18563A5F606EC35746C73EADCCB7E6640",
+        "strings": "0AA68AE0C9188B16AC040DF92D6F716101112C1D3ECDC424083809102369FD8F",
+        "profile": "2CA1730BB1F8D9DF258DBD20D1FDC75F28FC0D3C5D789E3B6BEE7927A757075F"
+      }
+    }
+  ],
+  "next_gate": "Choose one renderer family and prove every source reference plus a loader-owned redirect/index representation before linking any container into a module."
+}

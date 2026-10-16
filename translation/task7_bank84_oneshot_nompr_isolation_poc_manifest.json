@@ -1,0 +1,150 @@
+{
+  "format": "TASK7-BANK84-ONESHOT-NOMPR-ISOLATION-POC",
+  "version": 1,
+  "task": 7,
+  "status": "STATIC_PASS_RUNTIME_PENDING",
+  "purpose": "isolate hook-side MPR6 remapping from the one-shot dispatcher",
+  "architecture": {
+    "sidecar": false,
+    "cd_wrapper": false,
+    "loader": "$5230 permanent gate + one-shot installer",
+    "hook_source": "bank84:$C737",
+    "hook_runtime": "$2B0F..$2B7E",
+    "glyph_source": "bank84:$C800",
+    "mpr6_policy": "installer maps/restores $84 for TII; hook performs no TMA/TAM",
+    "custom_dispatch": "first custom -> installer; later custom -> $2B0F",
+    "index_policy": "hook recomputes (F8-$58), fixing repeated-glyph regression",
+    "refresh_policy": "one TII for the first custom code only",
+    "glyph_mapping": "use caller's proven field MPR6=$84"
+  },
+  "loader": {
+    "bytes": 61,
+    "hex": "4808A5F9C9EFD00EA5F838E958C908B00528684C4B5228684C24F14808434048A98453407337C70F2B7000685340A90F8D4452A92B8D455228684C0F2B",
+    "labels": {
+      "custom_jump": "0x5243",
+      "fallback": "0x5246",
+      "installer": "0x524B"
+    }
+  },
+  "hook": {
+    "bytes": 112,
+    "hex": "4808A5F838E95885FC0A0A0A65FC0A85F8A9C885F92868A206206D2B20762B206D2B85FC29F020762BA5FC290F0A0A0A0A85FD206D2B85FC4A4A4A4A05FD20762BA5FC290F0A0A0A0A20762BCAD0CAA900A20820762BCAD0FAA900A0FF60B2F8E6F8D002E6F96092FAE6FAD002E6FB60",
+    "labels": {
+      "pair_loop": "0x2B28",
+      "zero_loop": "0x2B62",
+      "read_src": "0x2B6D",
+      "read_done": "0x2B75",
+      "write_dst": "0x2B76",
+      "write_done": "0x2B7E"
+    }
+  },
+  "map": {
+    "path": "translation/task7_bank84_oneshot_nompr_isolation_glyph_map.json",
+    "sha256": "8790A359BC75D7AB473CFDAC7500A6667E4ABD78BE30689DA7C0841189C50443"
+  },
+  "expected_writes": [
+    {
+      "id": "field-getfnt-custom-gate",
+      "iso_offset": "0x8667E",
+      "physical_bin_offset": "0x812A6E",
+      "length": 3,
+      "expected_hex": "2060E0",
+      "replacement_hex": "203052",
+      "reason": "permanent custom-code gate"
+    },
+    {
+      "id": "bank84-custom-loader",
+      "iso_offset": "0x82230",
+      "physical_bin_offset": "0x80E620",
+      "length": 61,
+      "expected_hex": "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "replacement_hex": "4808A5F9C9EFD00EA5F838E958C908B00528684C4B5228684C24F14808434048A98453407337C70F2B7000685340A90F8D4452A92B8D455228684C0F2B",
+      "reason": "copy compact hook only for custom codes"
+    },
+    {
+      "id": "bank84-compact-hook-source",
+      "iso_offset": "0x89737",
+      "physical_bin_offset": "0x815B27",
+      "length": 112,
+      "expected_hex": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF",
+      "replacement_hex": "4808A5F838E95885FC0A0A0A65FC0A85F8A9C885F92868A206206D2B20762B206D2B85FC29F020762BA5FC290F0A0A0A0A85FD206D2B85FC4A4A4A4A05FD20762BA5FC290F0A0A0A0A20762BCAD0CAA900A20820762BCAD0FAA900A0FF60B2F8E6F8D002E6F96092FAE6FAD002E6FB60",
+      "reason": "non-executed hook source"
+    },
+    {
+      "id": "bank84-local-packed-glyphs",
+      "iso_offset": "0x89800",
+      "physical_bin_offset": "0x815BF0",
+      "length": 144,
+      "expected_hex": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF",
+      "replacement_hex": "0000003F80A03180003F80402003F80000000000002482483C82482483C80080080000000000001001001F80003FC0001001F80000000000003E820820C2082083E80080080000000000003A82283B81283E809009036800000000000020820820820C2083E80080080000000000003EC14C17C14C14C3EC00C00C000000000000188248248248248188008008000000",
+      "reason": "proven local eight-glyph pool"
+    },
+    {
+      "id": "second-dialogue-eight-custom-codes",
+      "iso_offset": "0x10BA04",
+      "physical_bin_offset": "0x897DF4",
+      "length": 16,
+      "expected_hex": "8E789378568F6F9788465532CCAAB2C4",
+      "replacement_hex": "EF58EF59EF5AEF5BEF5CEF5DEF5EEF5F",
+      "reason": "ordered Korean display probe"
+    }
+  ],
+  "diff_audit": {
+    "declared_span_count": 5,
+    "actual_changed_bytes": 333,
+    "actual_changed_ranges": [
+      {
+        "physical_start": "0x80E620",
+        "physical_end_exclusive": "0x80E64A",
+        "changed_bytes": 42
+      },
+      {
+        "physical_start": "0x80E64B",
+        "physical_end_exclusive": "0x80E65D",
+        "changed_bytes": 18
+      },
+      {
+        "physical_start": "0x812A6F",
+        "physical_end_exclusive": "0x812A71",
+        "changed_bytes": 2
+      },
+      {
+        "physical_start": "0x815B27",
+        "physical_end_exclusive": "0x815B83",
+        "changed_bytes": 92
+      },
+      {
+        "physical_start": "0x815B84",
+        "physical_end_exclusive": "0x815B97",
+        "changed_bytes": 19
+      },
+      {
+        "physical_start": "0x815BF0",
+        "physical_end_exclusive": "0x815C80",
+        "changed_bytes": 144
+      },
+      {
+        "physical_start": "0x897DF4",
+        "physical_end_exclusive": "0x897E04",
+        "changed_bytes": 16
+      }
+    ],
+    "undeclared_changes": 0,
+    "file_size_preserved": true
+  },
+  "output": {
+    "bin": "Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_task7_bank84_oneshot_nompr_isolation_poc.bin",
+    "bin_size": 523184384,
+    "bin_sha256": "9F6C543CA5FD6C7AF8AD494F9094385F606E4C751D1B8BC9B09D444C9594A7C1",
+    "cue": "Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_task7_bank84_oneshot_nompr_isolation_poc.cue",
+    "cue_sha256": "41A8A7F837D36614D420DE9B9A7EE97C715B0F4A13AD3065BC0E5449D2570BEC"
+  },
+  "runtime": {
+    "status": "PENDING",
+    "pass_criteria": [
+      "eight distinct Korean glyphs",
+      "Memo",
+      "battle Attack and field return"
+    ]
+  }
+}

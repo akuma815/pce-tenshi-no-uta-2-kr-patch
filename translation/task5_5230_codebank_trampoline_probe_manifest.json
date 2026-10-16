@@ -1,0 +1,76 @@
+{
+  "format": "TASK5-5230-CODEBANK-TRAMPOLINE-PROBE",
+  "version": 1,
+  "task": 5,
+  "status": "STATIC_PASS_RUNTIME_PENDING",
+  "hypothesis": "redirect execution is safe when hook code resides in a real code bank rather than MPR6 data-bank padding",
+  "cave": {
+    "runtime": "0x5230..0x52AF",
+    "iso": "0x82230..0x822AF",
+    "bytes": 128,
+    "mpr": "MPR2=80",
+    "preceded_by": "RTS at 0x522F",
+    "next_code": "0x52B0",
+    "absolute_refs": 0,
+    "raw_word_overlaps": 0
+  },
+  "control_flow": {
+    "probe": "JSR 5230; 5230 JMP F124",
+    "failed_control": "JSR C800; C800 JMP F124"
+  },
+  "present_variables": [
+    "module-RAM trampoline execution",
+    "one JSR plus one JMP",
+    "original Japanese text"
+  ],
+  "changed_variable": "execution bank/address: MPR6 data bank C800 -> MPR2 code bank 5230",
+  "runtime_decision": {
+    "memo_responsive": "MPR6 data-bank execution caused the failure; relocate hook code to 5230 and keep C800 data-only",
+    "memo_hangs": "redirected RAM execution fails even in the established code bank; abandon callsite redirect architecture"
+  },
+  "expected_writes": [
+    {
+      "id": "field-getfnt-call-5230",
+      "iso_offset": "0x8667E",
+      "physical_bin_offset": "0x812A6E",
+      "length": 3,
+      "expected_hex": "2060E0",
+      "replacement_hex": "203052",
+      "reason": "redirect the live call to the MPR2 code-bank cave"
+    },
+    {
+      "id": "codebank-cycle-matched-trampoline",
+      "iso_offset": "0x82230",
+      "physical_bin_offset": "0x80E620",
+      "length": 3,
+      "expected_hex": "000000",
+      "replacement_hex": "4C24F1",
+      "reason": "execute JMP F124 from the proven 128-byte code cave after RTS"
+    }
+  ],
+  "diff_audit": {
+    "declared_span_count": 2,
+    "actual_changed_bytes": 5,
+    "actual_changed_ranges": [
+      {
+        "physical_start": "0x80E620",
+        "physical_end_exclusive": "0x80E623",
+        "changed_bytes": 3
+      },
+      {
+        "physical_start": "0x812A6F",
+        "physical_end_exclusive": "0x812A71",
+        "changed_bytes": 2
+      }
+    ],
+    "undeclared_changes": 0,
+    "file_size_preserved": true
+  },
+  "output": {
+    "bin": "Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_task5_5230_codebank_trampoline_probe.bin",
+    "bin_size": 523184384,
+    "bin_sha256": "2F5A8E5B11B0702D9616EE8F7EEFA912B6B9C9DD665668B99632AE08F2948781",
+    "cue": "Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_task5_5230_codebank_trampoline_probe.cue",
+    "cue_sha256": "869CE1AD1542FDA93FA7EA7E15BA102D2D46B3C69534DB1474C999C14E655143"
+  }
+}

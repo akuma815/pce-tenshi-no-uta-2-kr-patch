@@ -1,0 +1,35 @@
+{
+  "format": "ZIRIA-Z8-FIELD-LOADER-REFERENCE",
+  "version": 1,
+  "owner_module": "field.main_engine",
+  "storage_coordinate": {
+    "track02_iso_offset": "0x83539",
+    "table_base": "0x83531",
+    "logical_entry": 2,
+    "width_bytes": 4,
+    "endian": "LBA big-endian u24 plus u8 sector count",
+    "raw_hex": "0001E260"
+  },
+  "target_coordinate": {
+    "scene_module": "scene.field_start",
+    "lba": 482,
+    "sector_count": 96,
+    "track02_iso_start": "0x00F1000",
+    "track02_iso_end_exclusive": "0x0121000",
+    "bytes": 196608
+  },
+  "consumer": {
+    "routine_runtime_range": "0x66DA-0x671D",
+    "cd_read_callsite_runtime": "0x66FC",
+    "bios_entry": "0xE009",
+    "destination_mode": "0x06",
+    "destination_bank_source": "RAM $22D0 (observed value 0x68)",
+    "destination_physical_banks": "0x68..0x7F",
+    "lifetime": "replaced atomically by the next scene package load"
+  },
+  "denominator": {
+    "overlay_directory_entries": 55,
+    "matching_lba_count_entries": 1,
+    "status": "PASS_EXACTLY_ONE_LOADER_REFERENCE"
+  }
+}

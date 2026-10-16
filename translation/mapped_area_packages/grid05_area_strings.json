@@ -1,0 +1,50 @@
+{
+  "format": "KAP1",
+  "version": 1,
+  "physical_grid": 5,
+  "lba": 642,
+  "logical_entries": [
+    6
+  ],
+  "original_load_sectors": 71,
+  "package_area_offset": 145408,
+  "package_bytes": 218,
+  "needed_sectors": 72,
+  "unique_strings": 6,
+  "source_redirects": {
+    "014f017": {
+      "package_relative_offset": 204,
+      "area_relative_offset": 145612,
+      "length": 14
+    },
+    "014f02c": {
+      "package_relative_offset": 178,
+      "area_relative_offset": 145586,
+      "length": 26
+    },
+    "014f03d": {
+      "package_relative_offset": 71,
+      "area_relative_offset": 145479,
+      "length": 39
+    },
+    "014f059": {
+      "package_relative_offset": 110,
+      "area_relative_offset": 145518,
+      "length": 36
+    },
+    "014f073": {
+      "package_relative_offset": 32,
+      "area_relative_offset": 145440,
+      "length": 39
+    },
+    "014f0b4": {
+      "package_relative_offset": 146,
+      "area_relative_offset": 145554,
+      "length": 32
+    }
+  },
+  "source_live_range": [
+    1314816,
+    1460224
+  ]
+}

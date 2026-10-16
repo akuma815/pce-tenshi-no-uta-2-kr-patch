@@ -1,0 +1,27 @@
+{
+  "format": "BIOS-FONT-FIXED-LENGTH-DIAGNOSTIC",
+  "warning": "FAILED DIAGNOSTIC; DO NOT USE. The inferred BIOS glyph offsets corrupt the System Card startup display.",
+  "runtime_status": "FAILED",
+  "do_not_use": true,
+  "failure": "Severe green/purple tile corruption occurs before normal game rendering. A one-string game probe reproduces the identical corruption, isolating the failure to the 896-slot custom BIOS rather than broad game text replacement.",
+  "not_isolated_by_this_probe": "The one-string probe still paired the same 896-slot BIOS, so the 16x16 offset formula is not rejected by that result.",
+  "suspected_cause": "Slot selection protected only extracted game text and ignored System Card-owned startup/font usage, making the 896 selected slots unsafe.",
+  "next_gate": "Run the original game with SystemCard3_one_glyph_probe.pce. It changes only 出 at BIOS offset 0x1D720 to 가.",
+  "original_bios_sha1": "79f5ff55dd10187c7fd7b8daab0b3ffbd1f56a2c",
+  "patched_bios_sha256": "fb4494eebdb200fcf02dcef99fc051b5594e68fcc29021e246aff6102ea0df88",
+  "original_game_sha256": "d16d29eb80b1b74a2ec929924349256b50b8f9f5c9a3fa37b6fcc08b059b22c5",
+  "patched_game_sha256": "0dbaf60a2b746f3f6d432dd93070deaf173b5a2c54d44a0c33240d170453ee8f",
+  "glyphs_replaced": 896,
+  "bios_changed_bytes": 26949,
+  "translation_writes": 10155,
+  "truncated_entries": 9846,
+  "outputs": {
+    "bios": "G:\\Downloads\\Tenshi no Uta II - Datenshi no Sentaku (Japan)\\SystemCard3_KoreanFont_diagnostic.pce",
+    "bin": "G:\\Downloads\\Tenshi no Uta II - Datenshi no Sentaku (Japan)\\Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_biosfont_diagnostic.bin",
+    "cue": "G:\\Downloads\\Tenshi no Uta II - Datenshi no Sentaku (Japan)\\Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_biosfont_diagnostic.cue",
+    "char_map": "G:\\Downloads\\Tenshi no Uta II - Datenshi no Sentaku (Japan)\\translation\\system_card_char_map.json"
+  },
+  "invalid_due_to_broad_runtime_corruption": false,
+  "invalid_due_to_unsafe_multi_slot_selection": true,
+  "replacement_probe": "G:\\Downloads\\Tenshi no Uta II - Datenshi no Sentaku (Japan)\\Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_biosfont_probe.cue"
+}

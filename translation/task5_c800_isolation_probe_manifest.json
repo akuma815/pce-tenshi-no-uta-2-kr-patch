@@ -1,0 +1,95 @@
+{
+  "format": "TASK5-C800-ISOLATION-PROBE",
+  "version": 1,
+  "task": 5,
+  "status": "RUNTIME_FAIL",
+  "hypothesis": "non-FF glyph data in runtime C800-C8FF collides with state used when entering Memo",
+  "controlled_variables": [
+    "same original BIN",
+    "same JSR C737 callsite",
+    "same 55-byte Task 5 hook",
+    "same EF58..EF5F dialogue bytes"
+  ],
+  "single_changed_variable": "runtime C800-C8FF remains original FF instead of the 256-byte glyph page",
+  "expected_visual_side_effect": "the eight Korean glyph positions will be solid/garbage; glyph appearance is outside this probe's gate",
+  "runtime_decision": {
+    "memo_responsive": "supports C800-C8FF content collision as the crash cause",
+    "memo_hangs": "rejects the glyph-page-only hypothesis; inspect hook ABI/custom-path lifetime next"
+  },
+  "expected_writes": [
+    {
+      "id": "field-getfnt-call",
+      "iso_offset": "0x8667E",
+      "physical_bin_offset": "0x812A6E",
+      "length": 3,
+      "expected_hex": "2060E0",
+      "replacement_hex": "2037C7",
+      "reason": "keep the exact Task 5 live field hook call"
+    },
+    {
+      "id": "field-multiglyph-hook-only",
+      "iso_offset": "0x89737",
+      "physical_bin_offset": "0x815B27",
+      "length": 55,
+      "expected_hex": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF",
+      "replacement_hex": "A5F9C9EFD02EA5F838E958C908B0250A0A0A0A0AAAA000BD00C891FAE8C8C020D0F518A5FA691885FA9002E6FBA900A200A0FF604C60E0",
+      "reason": "keep the exact Task 5 dispatcher while leaving C800-C8FF original FF"
+    },
+    {
+      "id": "second-dialogue-eight-custom-codes",
+      "iso_offset": "0x10BA04",
+      "physical_bin_offset": "0x897DF4",
+      "length": 16,
+      "expected_hex": "8E789378568F6F9788465532CCAAB2C4",
+      "replacement_hex": "EF58EF59EF5AEF5BEF5CEF5DEF5EEF5F",
+      "reason": "keep all eight custom-path invocations unchanged"
+    }
+  ],
+  "protected_original_range": {
+    "iso_start": "0x89800",
+    "iso_end_exclusive": "0x89900",
+    "runtime": "0xC800..0xC8FF",
+    "expected_hex_value": "FF",
+    "verified_bytes": 256
+  },
+  "diff_audit": {
+    "declared_span_count": 3,
+    "actual_changed_bytes": 72,
+    "actual_changed_ranges": [
+      {
+        "physical_start": "0x812A6F",
+        "physical_end_exclusive": "0x812A71",
+        "changed_bytes": 2
+      },
+      {
+        "physical_start": "0x815B27",
+        "physical_end_exclusive": "0x815B59",
+        "changed_bytes": 50
+      },
+      {
+        "physical_start": "0x815B5A",
+        "physical_end_exclusive": "0x815B5E",
+        "changed_bytes": 4
+      },
+      {
+        "physical_start": "0x897DF4",
+        "physical_end_exclusive": "0x897E04",
+        "changed_bytes": 16
+      }
+    ],
+    "undeclared_changes": 0,
+    "file_size_preserved": true
+  },
+  "output": {
+    "bin": "Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_task5_c800_isolation_probe.bin",
+    "bin_size": 523184384,
+    "bin_sha256": "D42C321C202B828CD1700BFE8EDF162B2ABAA809B1A6422729E9DDD9A76B9038",
+    "cue": "Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_task5_c800_isolation_probe.cue",
+    "cue_sha256": "5BB8D99FE51D3560A0AE11AA519E9EEC8AEDDE7B17D3DCBF824EBFEB6ECC0FD6"
+  },
+  "runtime": {
+    "status": "FAIL",
+    "decision": "C800_GLYPH_PAGE_HYPOTHESIS_REJECTED",
+    "evidence": "translation/task5_c800_isolation_probe_runtime.json"
+  }
+}

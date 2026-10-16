@@ -1,0 +1,9 @@
+storage_module	rows	original_bytes	translated_bytes	fixed_fit_rows	relocation_rows	glyph_count	strategy
+shared.battle	29	363	365	28	1	10	needs_relocation_audit
+shared.boot	18	165	130	18	0	8	in_place_fixed
+shared.card	52	1090	895	52	0	130	in_place_fixed
+shared.late	12	144	144	12	0	0	in_place_fixed
+shared.misc	1	22	22	1	0	0	in_place_fixed
+shared.system	332	3428	3671	163	169	372	needs_relocation_audit
+shared.table	2	30	30	2	0	0	in_place_fixed
+shared.visual_event	480	7827	6973	479	1	288	needs_relocation_audit

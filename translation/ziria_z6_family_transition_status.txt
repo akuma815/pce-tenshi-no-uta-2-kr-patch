@@ -1,0 +1,10 @@
+status=running
+frame=10680
+records=1190
+getfnt_records=1031
+cd_records=2
+pc=53AF
+s=F7
+mpr=FF,F8,80,81,82,83,84,00
+rom_name=Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_ziria_z5_battle_oneglyph_v1_builtin_slot
+rom_hash=2F8B35255491C36BD6CD9F0DB4F0C9F2

@@ -1,0 +1,156 @@
+{
+  "format": "TASK7-PACKED18-EXPANDER-POC",
+  "version": 1,
+  "task": 7,
+  "status": "RUNTIME_PASS",
+  "decision_gate": "Prove the 18-byte estimate before selecting overflow supply branches",
+  "architecture": {
+    "hook_code": "MPR2:80 / 5230..52AF",
+    "packed_data": "MPR6:84 / C800..C88F",
+    "fallback": "JMP F124",
+    "mpr_changes": 0,
+    "data_execution": "prohibited",
+    "custom_scratch": [
+      "F8",
+      "F9",
+      "FC",
+      "FD"
+    ]
+  },
+  "input": {
+    "bin": "Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP.bin",
+    "bin_sha256": "D16D29EB80B1B74A2EC929924349256B50B8F9F5C9A3FA37B6FCC08B059B22C5",
+    "cue": "Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP.cue",
+    "cue_sha256": "C491342EA8CBF2B6E829316AAAD0AF3F790EC58288DE9BF880927CDCC7C9CC6B"
+  },
+  "firmware": {
+    "policy": "original unmodified System Card 3.0(J)",
+    "sha256": "E11527B3B96CE112A037138988CA72FD117A6B0779C2480D9E03EAEBECE3D9CE",
+    "bizhawk_config": "translation/task4_field_hook_poc_bizhawk_config.ini"
+  },
+  "map": {
+    "path": "translation/task7_packed18_glyph_map.json",
+    "sha256": "CEE4BBA6BBE35B234FFD198D0A795409093BD71A6A54D2D90FDB6805049C8978",
+    "text": "준비는다됐나페이"
+  },
+  "hook": {
+    "runtime_address": "0x5230",
+    "code_bytes": 128,
+    "cave_bytes": 128,
+    "hex": "A5F9C9EFD065A5F838E958C908B05C85F80A0A0A0A85FCA5F80A65FC85F8A9C885F9A206209E5220A752209E5285FC29F020A752A5FC290F0A0A0A0A85FD209E5285FC4A4A4A4A05FD20A752A5FC290F0A0A0A0A20A752CAD0CAA900A20820A752CAD0FAA900A200A0FF604C24F1B2F8E6F8D002E6F96092FAE6FAD002E6FB60",
+    "labels": {
+      "pair_loop": "0x5254",
+      "zero_loop": "0x528E",
+      "fallback": "0x529B",
+      "read_src": "0x529E",
+      "read_done": "0x52A6",
+      "write_dst": "0x52A7",
+      "write_done": "0x52AF"
+    }
+  },
+  "storage_comparison": {
+    "glyph_count": 8,
+    "expanded_bytes": 256,
+    "packed_bytes": 144,
+    "saved_bytes": 112,
+    "saved_percent": 43.75
+  },
+  "expected_writes": [
+    {
+      "id": "field-getfnt-call-task7",
+      "iso_offset": "0x8667E",
+      "physical_bin_offset": "0x812A6E",
+      "length": 3,
+      "expected_hex": "2060E0",
+      "replacement_hex": "203052",
+      "reason": "route the live field call to the packed expander"
+    },
+    {
+      "id": "field-packed18-expander-5230",
+      "iso_offset": "0x82230",
+      "physical_bin_offset": "0x80E620",
+      "length": 128,
+      "expected_hex": "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "replacement_hex": "A5F9C9EFD065A5F838E958C908B05C85F80A0A0A0A85FCA5F80A65FC85F8A9C885F9A206209E5220A752209E5285FC29F020A752A5FC290F0A0A0A0A85FD209E5285FC4A4A4A4A05FD20A752A5FC290F0A0A0A0A20A752CAD0CAA900A20820A752CAD0FAA900A200A0FF604C24F1B2F8E6F8D002E6F96092FAE6FAD002E6FB60",
+      "reason": "install the reviewed-opcode packed glyph expander in executable bank 80"
+    },
+    {
+      "id": "field-packed18-data-c800",
+      "iso_offset": "0x89800",
+      "physical_bin_offset": "0x815BF0",
+      "length": 144,
+      "expected_hex": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF",
+      "replacement_hex": "0000003F80A03180003F80402003F80000000000002482483C82482483C80080080000000000001001001F80003FC0001001F80000000000003E820820C2082083E80080080000000000003A82283B81283E809009036800000000000020820820820C2083E80080080000000000003EC14C17C14C14C3EC00C00C000000000000188248248248248188008008000000",
+      "reason": "install eight packed 18-byte glyphs as non-executable data"
+    },
+    {
+      "id": "second-dialogue-eight-custom-codes-task7",
+      "iso_offset": "0x10BA04",
+      "physical_bin_offset": "0x897DF4",
+      "length": 16,
+      "expected_hex": "8E789378568F6F9788465532CCAAB2C4",
+      "replacement_hex": "EF58EF59EF5AEF5BEF5CEF5DEF5EEF5F",
+      "reason": "reuse the Task 5 ordered eight-code display probe"
+    }
+  ],
+  "diff_audit": {
+    "declared_span_count": 4,
+    "actual_changed_bytes": 287,
+    "actual_changed_ranges": [
+      {
+        "physical_start": "0x80E620",
+        "physical_end_exclusive": "0x80E67B",
+        "changed_bytes": 91
+      },
+      {
+        "physical_start": "0x80E67C",
+        "physical_end_exclusive": "0x80E685",
+        "changed_bytes": 9
+      },
+      {
+        "physical_start": "0x80E686",
+        "physical_end_exclusive": "0x80E687",
+        "changed_bytes": 1
+      },
+      {
+        "physical_start": "0x80E688",
+        "physical_end_exclusive": "0x80E6A0",
+        "changed_bytes": 24
+      },
+      {
+        "physical_start": "0x812A6F",
+        "physical_end_exclusive": "0x812A71",
+        "changed_bytes": 2
+      },
+      {
+        "physical_start": "0x815BF0",
+        "physical_end_exclusive": "0x815C80",
+        "changed_bytes": 144
+      },
+      {
+        "physical_start": "0x897DF4",
+        "physical_end_exclusive": "0x897E04",
+        "changed_bytes": 16
+      }
+    ],
+    "undeclared_changes": 0,
+    "file_size_preserved": true
+  },
+  "output": {
+    "bin": "Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_task7_packed18_expander_poc.bin",
+    "bin_size": 523184384,
+    "bin_sha256": "753E1E3D2858A08DB123472CEDFAABD105CCF0C22AE4CF839525F29B86A1ECFB",
+    "cue": "Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_task7_packed18_expander_poc.cue",
+    "cue_sha256": "240F5B478124CC671F2DF8A8C6B0396ADD29E0BF4373ED3D592A65EA35B96CDC"
+  },
+  "runtime": {
+    "status": "PASS",
+    "evidence": "translation/task7_packed18_expander_poc_runtime.json",
+    "approved_scope": "first-field eight-glyph packed expansion, BIOS fallback continuity, and Memo entry",
+    "pass_criteria": [
+      "eight ordered Korean glyphs display",
+      "next Japanese page uses BIOS fallback",
+      "field menu and Memo open normally"
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "format": "FONT-BUILD-POLICY",
+  "version": 1,
+  "effective_date": "2026-07-17",
+  "status": "ACTIVE",
+  "font": {
+    "path": "font/Galmuri8x8.ttf",
+    "sha256": "97BA3DCC2CD5E5B2927E4E6BA9558A48A2A194A852C420DF160654D66BBF2A05",
+    "family_role": "sole Hangul source for all builds created after this policy"
+  },
+  "render_profile": {
+    "loader_size_argument": 16,
+    "native_ink_expected": "8x8",
+    "target_cell": "12x12 inside a 16x16/32-byte output",
+    "placement": "centre native ink in the 12x12 cell; an 8x8 glyph starts at x=2,y=2",
+    "bit_order": "two bytes per row, MSB first",
+    "background": 0
+  },
+  "historical_exception": "Older Galmuri11-based diagnostic builders and their locked outputs remain only for reproduction of past PASS/FAIL evidence. They are prohibited as inputs to new patch builds.",
+  "enforcement": [
+    "Every new builder must verify the font SHA-256 before rendering.",
+    "Missing glyphs or ink larger than 12x12 must fail the build.",
+    "Task 3 and later active builders must record the font path, hash, and render profile in their manifests."
+  ]
+}

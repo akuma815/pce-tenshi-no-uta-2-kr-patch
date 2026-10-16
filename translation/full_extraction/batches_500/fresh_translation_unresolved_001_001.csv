@@ -1,0 +1,40 @@
+﻿id,max,jp,context,category,last_output
+0,1,左,左,menu_and_shop_commands,왼쪽
+1,1,頭,頭,menu_and_shop_commands,머리
+2,1,他,他,menu_and_shop_commands,기타
+3,5,鍵穴虫の鍵,鍵穴虫の鍵,accessory_and_key_item_names,열쇠구멍벌레의열쇠
+4,4,黒めのう,黒めのう,accessory_and_key_item_names,검은고양이
+5,5,王への親書,王への親書,system_menu_battle,왕에게보내는편지
+6,6,⟦T0⟧⟦T1⟧⟦T2⟧謎の貨物船内,謎の貨物船内,location_names,⟦T0⟧⟦T1⟧⟦T2⟧미스터리화물선내
+7,7,⟦T0⟧は正常に戻った,は正常に戻った,system_menu_battle,⟦T0⟧는정상으로돌아왔다
+9,8,⟦T0⟧のＨＰを⟦T1⟧奪った！,のＨＰを奪った！,system_menu_battle,⟦T0⟧의HP를⟦T1⟧빼앗았다!
+10,8,⟦T0⟧のＭＰを⟦T1⟧奪った！,のＭＰを奪った！,system_menu_battle,⟦T0⟧의 MP를 빼앗았다!
+11,11,⟦T0⟧の体は毒におかされた！,の体は毒におかされた！,system_menu_battle,⟦T0⟧의 몸이 독에 걸렸다!
+12,8,⟦T0⟧の体はマヒした！,の体はマヒした！,system_menu_battle,⟦T0⟧의 몸이 마비했다!
+13,6,⟦T0⟧は混乱した！,は混乱した！,system_menu_battle,⟦T0⟧가 혼란에 빠졌다!
+14,9,⟦T0⟧は幻につつまれた！,は幻につつまれた！,system_menu_battle,⟦T0⟧가 환영에 싸였다!
+15,6,⟦T0⟧は呪われた！,は呪われた！,system_menu_battle,⟦T0⟧가 저주받았다!
+16,10,⟦T0⟧は呪文を封じられた！,は呪文を封じられた！,system_menu_battle,⟦T0⟧의 마법이 봉인되었다!
+17,10,⟦T0⟧の動きが鈍くなった！,の動きが鈍くなった！,system_menu_battle,⟦T0⟧의 움직임이 느려졌다!
+18,4,⟦T0⟧の攻撃！,の攻撃！,system_menu_battle,⟦T0⟧의 공격!
+19,7,⟦T0⟧の強烈な一撃！,の強烈な一撃！,system_menu_battle,⟦T0⟧의 강력한 일격!
+20,6,⟦T0⟧の連続攻撃！,の連続攻撃！,system_menu_battle,⟦T0⟧의 연격 공격!
+21,9,⟦T0⟧は力をためている！,は力をためている！,system_menu_battle,⟦T0⟧가 힘을 모으고 있다!
+22,8,⟦T0⟧は仲間を呼んだ！,は仲間を呼んだ！,system_menu_battle,⟦T0⟧가 동료를 불렀다!
+23,10,⟦T0⟧は召喚呪文を唱えた！,は召喚呪文を唱えた！,system_menu_battle,⟦T0⟧가 소환 마법을 외쳤다!
+24,12,⟦T0⟧は死神の子守歌を歌った！,は死神の子守歌を歌った！,system_menu_battle,⟦T0⟧가 사신 자장가를 불렀다!
+25,12,⟦T0⟧はダークフォースを放つ！,はダークフォースを放つ！,system_menu_battle,⟦T0⟧가 다크 포스를 발사한다!
+26,5,⟦T0⟧は分裂した,は分裂した,system_menu_battle,⟦T0⟧가 분열했다
+27,7,⟦T0⟧は再生回復した,は再生回復した,system_menu_battle,⟦T0⟧가 재생 회복했다
+28,5,⟦T0⟧は倒れた！,は倒れた！,system_menu_battle,⟦T0⟧가 쓰러졌다!
+29,5,⟦T0⟧が現れた！,が現れた！,system_menu_battle,⟦T0⟧가 나타났다!
+30,8,何も現れなかった,何も現れなかった,system_menu_battle,아무것도 나타나지 않았어
+31,2,吹雪,吹雪,battle_effect_commands,눈보라
+32,2,はい,はい\nいいえ,system_menu_battle,"예
+아니오"
+33,5,素早さ　⟦T0⟧⟦T1⟧⟦T2⟧⟦T3⟧⟦T4⟧⟦T5⟧⟦T6⟧⟦T7⟧⟦T8⟧⟦T9⟧⟦T10⟧⟦T11⟧⟦T12⟧頭,\nレベル\n経験値\nＨＰ\nＭＰ\nＡＰ右\nＡＣ左\n素早さ　頭\n賢さ体\n運　他,menu_and_shop_commands,민첩성<0xE3><0x80><0x80>⟦T0⟧⟦T1⟧⟦T2⟧⟦T3⟧⟦T4⟧⟦T5⟧⟦T6⟧⟦T7⟧⟦T8⟧⟦T9⟧⟦T10⟧⟦T11⟧⟦T12⟧머리
+34,3,運　⟦T0⟧⟦T1⟧⟦T2⟧⟦T3⟧⟦T4⟧⟦T5⟧⟦T6⟧⟦T7⟧⟦T8⟧⟦T9⟧⟦T10⟧⟦T11⟧⟦T12⟧⟦T13⟧⟦T14⟧⟦T15⟧他,\nレベル\n経験値\nＨＰ\nＭＰ\nＡＰ右\nＡＣ左\n素早さ　頭\n賢さ体\n運　他,menu_and_shop_commands,운<0xE3><0x80><0x80>⟦T0⟧⟦T1⟧⟦T2⟧⟦T3⟧⟦T4⟧⟦T5⟧⟦T6⟧⟦T7⟧⟦T8⟧⟦T9⟧⟦T10⟧⟦T11⟧⟦T12⟧⟦T13⟧⟦T14⟧⟦T15⟧다른
+35,4,⟦T0⟧⟦T1⟧⟦T2⟧前頁⟦T3⟧⟦T4⟧次頁,前頁次頁,menu_and_shop_commands,⟦T0⟧...이전페이지⟦T3⟧...다음페이지
+36,1,右,右,menu_and_shop_commands,오른쪽
+37,20,⟦T0⟧．マップ名は８文字⟦T1⟧⟦T2⟧Ｌ００　⟦T3⟧時間００：００,．マップ名は８文字Ｌ００　時間００：００,menu_and_shop_commands,⟦T0⟧.맵명은8글자⟦T1⟧...시간００:００
+38,10,土砂崩れで進めない。,土砂崩れで進めない。,graphics_or_embedded_text,토사구름 때문에 진행할 수 없어.

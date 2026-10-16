@@ -1,0 +1,4 @@
+﻿source,kind,rows,scope,notes
+Track02_data.iso,original_iso,18817,physical translation catalogue,verified plus broad null-terminated candidates
+forensic_candidates.csv,review_queue,308373,graphics/tail/unterminated SJIS candidates,must be classified before claiming exhaustive coverage
+external_asset_inventory.csv,external_assets,6284,dialogue/UI/game selector/credits/visual scene assets,modern collection-only strings remain external_unconfirmed

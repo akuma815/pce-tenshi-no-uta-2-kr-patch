@@ -1,0 +1,111 @@
+{
+  "format": "TASK7-FIXED-BIOS-CALLSITE-POC",
+  "version": 1,
+  "task": 7,
+  "status": "RUNTIME_FAIL",
+  "architecture": {
+    "boot_path": "original E060 JMP F124 unchanged",
+    "game_call": "JSR E060 -> JSR FEC4 at ISO 0x8667E only",
+    "hook": "fixed MPR7=00 at FEC4",
+    "fallback": "JMP F124",
+    "packed_data": "module-local C800 data only"
+  },
+  "rejected_predecessors": [
+    "MPR2 5230 hook: battle mapping regression",
+    "global E060 BIOS redirect: boot timing regression"
+  ],
+  "hook": {
+    "runtime_address": "0xFEC4",
+    "file_offset": "0x1EC4",
+    "code_bytes": 127,
+    "hex": "4808A5F9C9EFD060A5F838E958C908B05785FC0A0A0A65FC0A85F8A9C885F92868A2062031FF203AFF2031FF85FC29F0203AFFA5FC290F0A0A0A0A85FD2031FF85FC4A4A4A4A05FD203AFFA5FC290F0A0A0A0A203AFFCAD0CAA900A208203AFFCAD0FAA900A0FF6028684C24F1B2F8E6F8D002E6F96092FAE6FAD002E6FB60",
+    "labels": {
+      "custom_restore": "0xFEE3",
+      "pair_loop": "0xFEE7",
+      "zero_loop": "0xFF21",
+      "fallback": "0xFF2C",
+      "read_src": "0xFF31",
+      "read_done": "0xFF39",
+      "write_dst": "0xFF3A",
+      "write_done": "0xFF42"
+    }
+  },
+  "writes": {
+    "game_call": {
+      "iso_offset": "0x8667E",
+      "physical_bin_offset": "0x812A6E",
+      "expected_hex": "2060E0",
+      "replacement_hex": "20C4FE"
+    },
+    "game_text_and_data": [
+      {
+        "id": "field-packed18-data-c800",
+        "iso_offset": "0x89800",
+        "physical_bin_offset": "0x815BF0",
+        "length": 144,
+        "expected_hex": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF",
+        "replacement_hex": "0000003F80A03180003F80402003F80000000000002482483C82482483C80080080000000000001001001F80003FC0001001F80000000000003E820820C2082083E80080080000000000003A82283B81283E809009036800000000000020820820820C2083E80080080000000000003EC14C17C14C14C3EC00C00C000000000000188248248248248188008008000000",
+        "reason": "install eight non-executable packed glyphs"
+      },
+      {
+        "id": "second-dialogue-eight-custom-codes",
+        "iso_offset": "0x10BA04",
+        "physical_bin_offset": "0x897DF4",
+        "length": 16,
+        "expected_hex": "8E789378568F6F9788465532CCAAB2C4",
+        "replacement_hex": "EF58EF59EF5AEF5BEF5CEF5DEF5EEF5F",
+        "reason": "ordered eight-code Hangul display probe"
+      }
+    ],
+    "bios_hook": {
+      "file_offset": "0x1EC4",
+      "length": 127,
+      "e060_unchanged_hex": "4C24F1"
+    }
+  },
+  "diff_audit": {
+    "game_changed_bytes": 162,
+    "game_changed_ranges": [
+      {
+        "physical_start": "0x812A6F",
+        "physical_end_exclusive": "0x812A71",
+        "changed_bytes": 2
+      },
+      {
+        "physical_start": "0x815BF0",
+        "physical_end_exclusive": "0x815C80",
+        "changed_bytes": 144
+      },
+      {
+        "physical_start": "0x897DF4",
+        "physical_end_exclusive": "0x897E04",
+        "changed_bytes": 16
+      }
+    ],
+    "game_undeclared_changes": 0,
+    "game_size_preserved": true,
+    "bios_changed_bytes": 118,
+    "bios_size_preserved": true
+  },
+  "outputs": {
+    "bin": "Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_task7_fixed_bios_callsite_poc.bin",
+    "bin_sha256": "EC0A29728D4D93B516BE51A19DD4E293B5714A623ADDB993EEE1B7FE8EC8253A",
+    "cue": "Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_task7_fixed_bios_callsite_poc.cue",
+    "cue_sha256": "CE5D36F15D37995CB5837B1142754920B038DB5F2CAD48BD8A59BE09D05C84B0",
+    "bios": "PCECD_3.0-J.task7_fixed_bios_callsite_poc.pce",
+    "bios_sha256": "88C00EC14ABDCF7671FAC04AB335FD92BAEDBFB95217711E8465F20D835D777A"
+  },
+  "runtime": {
+    "status": "FAIL",
+    "observation": "The explicitly selected modified BIOS reproduced the corrupted initial display before the Hangul gate could be evaluated.",
+    "decision": "Rejected. The later 3-byte occupancy control proves FEC4 itself is not a safe cave.",
+    "pass_criteria": [
+      "normal boot",
+      "eight Korean glyphs",
+      "Japanese fallback",
+      "Memo",
+      "battle attack",
+      "correct field return"
+    ]
+  }
+}

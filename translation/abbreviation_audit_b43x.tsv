@@ -1,0 +1,35 @@
+kind	subcategory	copies	original	full_translation	in_game	ids
+줄임	accessory_and_key_item_names	1	仙草アルニム	선초 알니름	알니름초	iso:008A007
+줄임	asset_confirmed_event_text	1	{%s}のレベルが{%d}になった！{0B}\nＨＰの最大が{%d}増えた\nＭＰの最大が{%d}増えた\nＡＰが{%d}あがった\nＡＣが{%d}あがった\n素早さが{%d}あがった\n賢さが{%d}あがった\n運が{%d}あがった{%s}{%s}{%s}{%s}{%s}{%s}	{%s}레벨이{%d}이 됐다!{0B}\nHP최대치가{%d}늘었다\nMP최대치가{%d}늘었다\nAP가{%d}상승\nAC가{%d}상승\n민첩이{%d}상승\n지능이{%d}상승\n운이{%d}상승{%s}{%s}{%s}{%s}{%s}{%s}	{%s}레벨{%d}달성!{0B}\nHP최대{%d}상승\nMP최대{%d}상승\nAP가{%d}상승\nAC가{%d}상승\n민첩이{%d}상승\n지능이{%d}상승\n운이{%d}상승{%s}{%s}{%s}{%s}{%s}{%s}	iso:008A75E
+줄임	asset_confirmed_short_event_text	1	を覚えた	습득했다	습득	iso:008A822
+줄임	asset_confirmed_short_event_text	1	エウリカの種	유리카씨앗	유리씨	iso:008A033
+줄임	asset_confirmed_short_event_text	42	フォルネウス	포르네우스	포르네	iso:05B3FD3,iso:05B7FD3,iso:05E3FD3,iso:05E7FD3,iso:0673FD3
+줄임	asset_confirmed_short_event_text	1	マノノン	마노논	마논	iso:008A051
+줄임	asset_confirmed_short_event_text	40	メロウズ	멜로우즈	멜로	iso:05B4105,iso:05B8105,iso:05E4105,iso:05E8105,iso:0674105
+줄임	asset_confirmed_short_event_text	1	幻パンツ	환상팬티	흰팬티	iso:008A03B
+줄임	battle_effect_commands	1	つらら	고드름	빙	iso:004A4EF
+줄임	battle_effect_commands	1	カマイタチ	칼바람	칼바	iso:004A4F8
+줄임	character_and_magic_names	1	アレフ	알레프	알	iso:0A9B176
+줄임	event_dialogue_or_command	54	タあタおタごタぜタとタひタ次の目的のこと	タあタおタごタぜタとタひタ次の目的のこと	タあタおタごタぜタとタひタ다음목표	iso:00A1011,iso:00D1011,iso:011F011,iso:0131011,iso:017F011
+줄임	event_dialogue_or_command	6	マトックが岩を砕いた！	괭이가 바위를 부쉈다	괭이로　부쉈다	iso:09EA039,iso:09EA0A6,iso:09EA113,iso:09EE039,iso:09EE0A6
+줄임	event_dialogue_or_command	54	古代技術のこと	고대기술정보	고대기술	iso:00A1043,iso:00D1043,iso:011F043,iso:0131043,iso:017F043
+줄임	event_dialogue_or_command	54	天上界のこと	천상계정보	천상계	iso:00A104F,iso:00D104F,iso:011F04F,iso:013104F,iso:017F04F
+줄임	event_dialogue_or_command	6	拾ったものを箱の中に戻しますか	주운 물건을 상자에 돌려 놓을까요?	주운걸　넣을까?	iso:032CECC,iso:092A251,iso:092E251,iso:0930251,iso:09EA6E6
+줄임	event_dialogue_or_command	1	最初から	처음부터	새게임	iso:008AFBF
+줄임	event_dialogue_or_command	2	泉が湧いています\n飲みますか	샘물이 솟는다\n마실까?	샘이　있다\n마실까?	iso:09EA66C,iso:09EE66C
+줄임	event_dialogue_or_command	3	神酒リレイトを見つけた！	신주릴레이트를 찾았다!	신주릴레이트발견	iso:09E9FB7,iso:09EDFB7,iso:09EFFB7
+줄임	event_dialogue_or_command	1	聖女の髪飾り	성녀머리장식	성녀장식	iso:0089EC0
+줄임	event_dialogue_or_command	1	虚空のつぼ	허공항아리	허공병	iso:0089FAA
+줄임	event_dialogue_or_command	1	銀の髪飾り	은머리장식	은장식	iso:0089E90
+줄임	headgear_names	2	アスランの兜	아슬란투구	아슬란	iso:0049D93,iso:0089ECB
+줄임	location_names	1	{~}{~}双子の街ストーム	쌍둥이　도시　스톰	{~}{~}쌍둥이스톰	iso:037BB3E
+줄임	location_names	1	{~}{~}双子の街セルーム	쌍둥이　도시　세룸	{~}{~}쌍둥이세룸	iso:037BBB7
+줄임	menu_and_shop_commands	2	{%s}は{%d}Ｇになります\nよろしいですか？	{%s}는{%d}G입니다\n괜찮습니까?	{%s}{%d}G\n괜찮습니까?	iso:004A81C,iso:008AED2
+줄임	menu_and_shop_commands	1	{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{%s}\n{#1}レベル\n{0E}経験値\n{0E}ＨＰ\nＭＰ\nＡＰ{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}右\nＡＣ{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}左\n素早さ　{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}頭\n賢さ{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}体\n運　{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}他	{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{%s}\n{#1}레벨\n{0E}경험치\n{0E}HP\nMP\nAP{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}우\nAC{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}좌\n민첩　{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}두\n지능{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}체\n운　{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}타	{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{%s}\n레벨\n{0E}경험치\n{0E}HP\nMP\nAP{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}우\nAC{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}좌\n민첩{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}두\n지능{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}체\n운{~}　{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}{~}타	iso:008AD22
+줄임	menu_and_shop_commands	1	おく	놓기	놓	iso:004A760
+줄임	monster_names	35	スケアクロウ	스케어크로우	허수아비	iso:00A3E6D,iso:00D3E6D,iso:0103E6D,iso:0133E6D,iso:0163E6D
+줄임	monster_names	35	フライスケイル	플라이스케일	날비늘	iso:00A3D44,iso:00D3D44,iso:0103D44,iso:0133D44,iso:0163D44
+줄임	system_menu_battle	1	{%s}を捨てた	{%s}를 버렸다	{%s}버림	iso:004A24E
+줄임	system_menu_battle	1	聖女の髪飾り	성녀머리장식	성녀장식	iso:0049D88
+줄임	system_menu_battle	2	虚空のつぼ	허공항아리	허공병	iso:0049E73,iso:0049E7B
+줄임	system_menu_battle	1	銀の髪飾り	은머리장식	은장식	iso:0049D5C

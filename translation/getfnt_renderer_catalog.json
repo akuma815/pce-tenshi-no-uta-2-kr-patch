@@ -1,0 +1,355 @@
+{
+  "format": "GETFNT-RENDERER-CATALOG",
+  "version": 1,
+  "task": 1,
+  "status": "FIELD_TASK4_V2_RUNTIME_PASS_WITH_GLOBAL_UNKNOWNS",
+  "mutation_scope": "documentation only; game ISO/BIN, BIOS, and emulator source unchanged",
+  "baseline": {
+    "track02_iso": "extracted_bin/Track02_data.iso",
+    "track02_iso_sha256": "7566073A2AA1F48E7B39ED2B34277D9935FADE8A3FAD7DCC72C21276E2632AF9",
+    "system_card": "H:\\BizHawk\\Firmware\\PCECD_3.0-(J).pce",
+    "system_card_sha1": "79F5FF55DD10187C7FD7B8DAAB0B3FFBD1F56A2C",
+    "system_card_sha256": "E11527B3B96CE112A037138988CA72FD117A6B0779C2480D9E03EAEBECE3D9CE"
+  },
+  "denominator": {
+    "raw_pattern": "20 60 E0",
+    "raw_matches": 22,
+    "executable_calls_confirmed_static": 18,
+    "unconfirmed_raw_matches": 4,
+    "renderer_families_confirmed": 6
+  },
+  "abi": {
+    "entry": "0xE060 -> JMP 0xF124",
+    "inputs": {
+      "F8_F9": "SJIS trail/lead",
+      "FA_FB": "32-byte destination start",
+      "FF_bit0": "0=32-byte source, 1=18-byte packed 12x12 source",
+      "A_X_Y_P": "not live-in"
+    },
+    "owner": {
+      "sjis_validation_index_and_font_bank_mapping": "System Card 3.0(J) 0xF124",
+      "mode1_18_to_32_expansion": "System Card 3.0(J) 0xF2CC",
+      "game_renderer": "consumer only"
+    },
+    "success": {
+      "A": "0x00",
+      "X": "0x00",
+      "Y_mode0": "0x20",
+      "Y_mode1": "0xFF",
+      "FA_FB_mode0": "unchanged",
+      "FA_FB_mode1": "+24",
+      "F8_F9": "clobbered by compact-index/source-address calculation",
+      "FF": "preserved",
+      "P": "clobbered",
+      "S": "preserved across call",
+      "MPR": "temporarily changed and restored"
+    },
+    "failure": {
+      "A": "0x01",
+      "destination": "invalid/unspecified"
+    },
+    "bios_scratch": [
+      "0xEC",
+      "0xED",
+      "0xEE",
+      "0xFC",
+      "0x22B8..0x22BB",
+      "0x22BD"
+    ],
+    "supersedes": "구조분석.md section 12.3 claim that F8/F9 returns a glyph pointer and FA/FB always advances by 32"
+  },
+  "renderers": [
+    {
+      "renderer_id": "renderer.boot_opening",
+      "consumers": [
+        "boot",
+        "opening"
+      ],
+      "callsites": [
+        {
+          "iso_offset": "0x003891",
+          "track_lba": 7,
+          "sector_offset": "0x091",
+          "runtime_pc": "0x6891",
+          "runtime_pc_evidence": "IPL relocation/static"
+        }
+      ],
+      "mode": "dynamic from 0x2A82",
+      "context_sha1_prefix": "35462E04888A95D8",
+      "module": {
+        "track_lba": 2,
+        "load_sectors": 16,
+        "bytes": 32768,
+        "load_address": "0x4000",
+        "destination_physical_banks": "0x80..0x83",
+        "mpr": "IPL-relative 00..03; physical mapping runtime dump unknown"
+      },
+      "lifetime": "boot program load until replaced by the next system module",
+      "status": "confirmed_static"
+    },
+    {
+      "renderer_id": "renderer.standard_overlay",
+      "consumers": [
+        "boot_program_copy",
+        "event_scene_overlays"
+      ],
+      "mode": "dynamic from 0x2A82",
+      "runtime_pc": "0x6886 inferred if module is loaded at 0x4000; runtime observation unknown",
+      "context_sha1_prefix": "B9BF5653CEC0038A",
+      "copy_identity": "99-byte contexts are identical",
+      "callsites": [
+        {
+          "iso_offset": "0x032886",
+          "track_lba": 101,
+          "module_start_lba_inferred": 96
+        },
+        {
+          "iso_offset": "0xC06886",
+          "track_lba": 6157,
+          "module_start_lba_inferred": 6152
+        },
+        {
+          "iso_offset": "0xC76886",
+          "track_lba": 6381,
+          "module_start_lba_inferred": 6376
+        },
+        {
+          "iso_offset": "0xD6E886",
+          "track_lba": 6877,
+          "module_start_lba_inferred": 6872
+        },
+        {
+          "iso_offset": "0xDCE886",
+          "track_lba": 7069,
+          "module_start_lba_inferred": 7064
+        },
+        {
+          "iso_offset": "0xE2E886",
+          "track_lba": 7261,
+          "module_start_lba_inferred": 7256
+        },
+        {
+          "iso_offset": "0xE8E886",
+          "track_lba": 7453,
+          "module_start_lba_inferred": 7448
+        },
+        {
+          "iso_offset": "0xEEE886",
+          "track_lba": 7645,
+          "module_start_lba_inferred": 7640
+        },
+        {
+          "iso_offset": "0xF5E886",
+          "track_lba": 7869,
+          "module_start_lba_inferred": 7864
+        },
+        {
+          "iso_offset": "0xFBE886",
+          "track_lba": 8061,
+          "module_start_lba_inferred": 8056
+        },
+        {
+          "iso_offset": "0x101E886",
+          "track_lba": 8253,
+          "module_start_lba_inferred": 8248
+        },
+        {
+          "iso_offset": "0x107E886",
+          "track_lba": 8445,
+          "module_start_lba_inferred": 8440
+        },
+        {
+          "iso_offset": "0x10DE886",
+          "track_lba": 8637,
+          "module_start_lba_inferred": 8632
+        }
+      ],
+      "module": {
+        "load_sectors": "unknown",
+        "destination_physical_banks": "unknown",
+        "mpr": "unknown"
+      },
+      "lifetime": "independent per overlay copy; load until overlay replacement",
+      "status": "confirmed_static_copy_family_runtime_unknown"
+    },
+    {
+      "renderer_id": "renderer.disproved_lba130_candidate",
+      "consumers": [
+        "unknown; not the first field dialogue"
+      ],
+      "callsites": [
+        {
+          "iso_offset": "0x045855",
+          "track_lba": 139,
+          "sector_offset": "0x055",
+          "runtime_pc": "0x8855",
+          "runtime_pc_evidence": "module relocation plus successful mode-1 glyph substitution"
+        }
+      ],
+      "mode": "1 immediate: A9 01 85 FF 20 60 E0",
+      "context_sha1_prefix": "121C23BAD31D256A",
+      "glyph_destination": "0x3328..0x3347",
+      "downstream": "0x890A VDC transfer",
+      "special_case": "SJIS 0x8741 uses built-in 16-byte glyph at 0x843E and bypasses EX_GETFNT",
+      "module": {
+        "track_lba": 130,
+        "absolute_cd_lba": 258,
+        "data_track_bias": 128,
+        "iso_offset": "0x41000",
+        "load_sectors": 20,
+        "bytes": 40960,
+        "cd_read_frame": 1237,
+        "cd_read_destination_bank": "0x00 relative -> physical 0x80",
+        "cd_read_mode": "0x01",
+        "destination_physical_banks": "0x80..0x84",
+        "mpr": "MPR2..MPR6=80,81,82,83,84"
+      },
+      "lifetime": "from field-engine load until physical banks 0x80..0x84 are overwritten or MPR2..6 are remapped; confirmed alive through first dialogue",
+      "status": "DISPROVED_BY_TASK4_UNCONDITIONAL_REACHABILITY_PROBE",
+      "unknowns": [],
+      "runtime_result": "Patching ISO 0x45855 to an unconditional 가 hook left the first three pages byte-visually Japanese."
+    },
+    {
+      "renderer_id": "renderer.field_main",
+      "consumers": [
+        "field",
+        "town",
+        "ordinary_dialogue"
+      ],
+      "callsites": [
+        {
+          "iso_offset": "0x08667E",
+          "track_lba": 268,
+          "sector_offset": "0x67E",
+          "runtime_pc": "0x867E inferred",
+          "runtime_pc_evidence": "static module relocation only"
+        }
+      ],
+      "mode": "1 immediate",
+      "context_sha1_prefix": "A354106F0967C154",
+      "module": {
+        "track_lba": 258,
+        "iso_offset": "0x81000",
+        "load_sectors": 20,
+        "bytes": 40960,
+        "load_address": "0x4000",
+        "cd_read_frame": 1237,
+        "destination_physical_banks": "0x80..0x84",
+        "mpr": "MPR2..MPR6=80,81,82,83,84"
+      },
+      "lifetime": "loaded at frame 1237 for the first field scene; corrected one-glyph runtime PoC pending",
+      "status": "PASS_FIRST_IMPLEMENTATION_TARGET_TASK4_V2_RUNTIME",
+      "runtime_pc": "0x967E derived from Track02 LBA 258 load at 0x4000",
+      "runtime_pc_evidence": "frame 1237 CD read plus corrected Track02-relative LBA mapping; corrected PoC pending",
+      "correction_evidence": "translation/task4_live_field_module_correction.json"
+    },
+    {
+      "renderer_id": "renderer.card_primary",
+      "consumers": [
+        "card_minigame"
+      ],
+      "callsites": [
+        {
+          "iso_offset": "0xBD1CA6",
+          "track_lba": 6051,
+          "sector_offset": "0x4A6",
+          "runtime_pc": "unknown"
+        }
+      ],
+      "mode": "1 immediate",
+      "context_sha1_prefix": "1D0909BC6D2C19D4",
+      "glyph_destination": "0x231A",
+      "module": {
+        "load_lba": "unknown",
+        "load_sectors": "unknown",
+        "destination_physical_banks": "unknown",
+        "mpr": "unknown"
+      },
+      "lifetime": "unknown",
+      "status": "confirmed_static_runtime_unknown"
+    },
+    {
+      "renderer_id": "renderer.card_secondary",
+      "consumers": [
+        "card_minigame"
+      ],
+      "callsites": [
+        {
+          "iso_offset": "0xBD8A97",
+          "track_lba": 6065,
+          "sector_offset": "0x297",
+          "runtime_pc": "unknown"
+        }
+      ],
+      "mode": "1 immediate",
+      "context_sha1_prefix": "F418C1CE4CA2FFA5",
+      "glyph_destination": "0x332C",
+      "module": {
+        "load_lba": "unknown",
+        "load_sectors": "unknown",
+        "destination_physical_banks": "unknown",
+        "mpr": "unknown"
+      },
+      "lifetime": "unknown",
+      "status": "confirmed_static_runtime_unknown"
+    }
+  ],
+  "unconfirmed_raw_matches": [
+    {
+      "renderer_id": "renderer.unknown_raw_match_01",
+      "iso_offset": "0xCA59C6",
+      "track_lba": 6475,
+      "context_sha1_prefix": "31581A0DD2516930",
+      "reason": "no verified instruction boundary or runtime execution"
+    },
+    {
+      "renderer_id": "renderer.unknown_raw_match_02",
+      "iso_offset": "0xDA615A",
+      "track_lba": 6988,
+      "context_sha1_prefix": "BA66D8F530EE9D6A",
+      "reason": "no verified instruction boundary or runtime execution"
+    },
+    {
+      "renderer_id": "renderer.unknown_raw_match_03",
+      "iso_offset": "0xED3080",
+      "track_lba": 7590,
+      "context_sha1_prefix": "5053DC82BEA94006",
+      "reason": "no verified instruction boundary or runtime execution"
+    },
+    {
+      "renderer_id": "renderer.unknown_raw_match_04",
+      "iso_offset": "0x10A1CAA",
+      "track_lba": 8515,
+      "context_sha1_prefix": "CE4F816B477A7413",
+      "reason": "no verified instruction boundary or runtime execution"
+    }
+  ],
+  "first_implementation_selection": {
+    "renderer_id": "renderer.field_main",
+    "call_iso": "0x8667E",
+    "call_runtime": "0x967E",
+    "module_iso": "0x81000",
+    "reason": "Task 4 disproved the former LBA130 target and corrected cd_read_trace LBA258 as already Track02-relative.",
+    "next_gate": "Task 5 field multi-glyph PoC"
+  },
+  "evidence": [
+    "translation/cd_read_trace.tsv",
+    "translation/runtime_validation_first_dialogue.json",
+    "translation/system_card_one_glyph_probe_manifest.json",
+    "translation/exact_substitution_probe_manifest.json",
+    "translation/field_resident_hook_bank_audit.json",
+    "구조분석.md sections 9.1, 9.5, 10, and 13",
+    "walkthrough.md steps 17, 18, 31, 32, and 37",
+    "System Card 3.0(J) static code at 0xF124, 0xF1B9, and 0xF2CC"
+  ],
+  "corrections": [
+    {
+      "date": "2026-07-17",
+      "cause": "cd_read_trace LBA values were already Track02-relative; Task 1 incorrectly subtracted a 128-sector bias",
+      "old_call_iso": "0x045855",
+      "corrected_call_iso": "0x8667E",
+      "corrected_runtime_pc": "0x967E",
+      "evidence": "translation/task4_hook_reachability_probe_manifest.json plus user screenshots"
+    }
+  ]
+}

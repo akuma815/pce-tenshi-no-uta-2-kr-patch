@@ -1,0 +1,144 @@
+{
+  "format": "ZIRIA-Z4-FIELD-ONEGLYPH",
+  "version": 3,
+  "status": "RUNTIME_PASS",
+  "source_bin_sha256": "D16D29EB80B1B74A2EC929924349256B50B8F9F5C9A3FA37B6FCC08B059B22C5",
+  "font": {
+    "path": "font/Galmuri8x8.ttf",
+    "sha256": "97BA3DCC2CD5E5B2927E4E6BA9558A48A2A194A852C420DF160654D66BBF2A05",
+    "glyph": "가"
+  },
+  "custom_code": "8754",
+  "hook": {
+    "type": "original field-local 8754/8755 dispatcher",
+    "runtime_address": "0x966A",
+    "code_bytes_changed": 0,
+    "callsite_bytes_changed": 0,
+    "glyph_runtime_address": "0x9172",
+    "glyph_physical_bank": "0x82",
+    "glyph_bytes": 32,
+    "fallback": "unchanged JSR $E060 original BIOS EX_GETFNT",
+    "mpr_changes": 0,
+    "work_ram_bytes": 0,
+    "execution_policy": "no injected executable code; original renderer path only"
+  },
+  "registry": "module_relink/z4_field_oneglyph_v3_builtin_slot/extension_registry.json",
+  "linked_modules": [
+    {
+      "id": "field.main_engine",
+      "input": "module_relink/track02/semantic_modules/field.main_engine_lba0258_s20.bin",
+      "input_sha256": "8C0573AEB900A5897402205908E02E501CC608C8EC8F2DB5F3ADA3A9E2D8A230",
+      "output": "module_relink/z4_field_oneglyph_v3_builtin_slot/linked_modules/field.main_engine_lba0258_s20.bin",
+      "output_sha256": "D4092D87DFDBDDCE611B6CDD12676B86A386C1AAA4B2F1F4A9D029693CD7F1E2",
+      "changed_bytes": 18,
+      "changed_ranges": [
+        {
+          "start": "0x5174",
+          "end_exclusive": "0x5175",
+          "changed_bytes": 1
+        },
+        {
+          "start": "0x5176",
+          "end_exclusive": "0x5187",
+          "changed_bytes": 17
+        }
+      ],
+      "writes": [
+        {
+          "id": "field-main-builtin-glyph-8754",
+          "module_offset": "0x5172",
+          "length": 32,
+          "expected_hex": "00000F00060006000600060006000600060006000F0000000000000000000000",
+          "replacement_hex": "000000003C80048004C004800880308000800080000000000000000000000000"
+        }
+      ]
+    },
+    {
+      "id": "scene.field_start",
+      "input": "module_relink/track02/semantic_modules/scene.field_start_lba0482_s96.bin",
+      "input_sha256": "C065773C86FEC790D96CD3F52FEF804BFD426C8270A0BAD8ED0313977BBA5BB6",
+      "output": "module_relink/z4_field_oneglyph_v3_builtin_slot/linked_modules/scene.field_start_lba0482_s96.bin",
+      "output_sha256": "F8F29C50246B196E7939EC99A9B8A52EF26F3D6B16375315AD0A66B251FFC4AB",
+      "changed_bytes": 2,
+      "changed_ranges": [
+        {
+          "start": "0x1A9F2",
+          "end_exclusive": "0x1A9F4",
+          "changed_bytes": 2
+        }
+      ],
+      "writes": [
+        {
+          "id": "field-start-text-probe",
+          "module_offset": "0x1A9F2",
+          "length": 2,
+          "expected_hex": "6F2D",
+          "replacement_hex": "8754"
+        }
+      ]
+    }
+  ],
+  "track02": {
+    "input": "module_relink/track02/Track02_data.identity.iso",
+    "input_sha256": "7566073A2AA1F48E7B39ED2B34277D9935FADE8A3FAD7DCC72C21276E2632AF9",
+    "output": "module_relink/z4_field_oneglyph_v3_builtin_slot/Track02_data.z4.iso",
+    "output_sha256": "9478635F0B66CBB0BFC09F7C7AA7626210C7ACC1A4DD063C27292D3F7A4E1A24",
+    "changed_bytes": 20,
+    "changed_ranges": [
+      {
+        "start": "0x86174",
+        "end_exclusive": "0x86175",
+        "changed_bytes": 1
+      },
+      {
+        "start": "0x86176",
+        "end_exclusive": "0x86187",
+        "changed_bytes": 17
+      },
+      {
+        "start": "0x10B9F2",
+        "end_exclusive": "0x10B9F4",
+        "changed_bytes": 2
+      }
+    ],
+    "sector_count_preserved": true,
+    "loader_tables_changed": false
+  },
+  "output": {
+    "bin": "module_relink/z4_field_oneglyph_v3_builtin_slot/output/Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_ziria_z4_field_oneglyph_v3_builtin_slot.bin",
+    "bin_size": 523184384,
+    "bin_sha256": "B07AB872C21745822C2D46F10F53780F348342B0F1DD0089182D7F90E78C3067",
+    "cue": "module_relink/z4_field_oneglyph_v3_builtin_slot/output/Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_ziria_z4_field_oneglyph_v3_builtin_slot.cue",
+    "cue_sha256": "B5727B4D65CF246B8733ABC13EAB63A87BD309B167CA5AF38CB1C321FC8DE7D0"
+  },
+  "diff_audit": {
+    "actual_changed_bytes": 20,
+    "changed_modules": [
+      "field.main_engine",
+      "scene.field_start"
+    ],
+    "undeclared_changes": 0,
+    "audio_changed_bytes": 0,
+    "cue_track_layout_changed": false
+  },
+  "runtime": {
+    "status": "PASS",
+    "observed_at": "2026-07-19",
+    "results": {
+      "first_custom_glyph": "PASS",
+      "field_character_graphics": "PASS",
+      "memo_entry_and_return": "PASS",
+      "first_battle_attack_and_field_return": "PASS",
+      "tower_entry_after_battle": "PASS"
+    },
+    "approved_scope": "field family one-glyph proof using original 8754 local glyph slot",
+    "release_limit": "8754 is an existing field-local slot; expanding beyond the original 8754/8755 pair requires a separately owned field text/glyph section",
+    "required_checks": [
+      "first custom position renders 가",
+      "later original Japanese glyphs use BIOS fallback",
+      "Memo enter/return remains normal (regression gate for removing MPR6 execution)",
+      "first battle attack and field return remain normal",
+      "tower entry after battle remains normal"
+    ]
+  }
+}

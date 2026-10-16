@@ -1,0 +1,468 @@
+{
+ "format": "BTRACK-B1-50SLOT-PROBE",
+ "runtime_status": "PASS",
+ "purpose": "실존 한자 슬롯 50개 한글 교체 + 첫 대사 3런 동일 길이 SJIS 치환. PASS 시 B안(BIOS 폰트) 트랙 확정 근거.",
+ "input": {
+  "original_bios_sha1": "79f5ff55dd10187c7fd7b8daab0b3ffbd1f56a2c",
+  "original_bin_sha256": "d16d29eb80b1b74a2ec929924349256b50b8f9f5c9a3fa37b6fcc08b059b22c5"
+ },
+ "card": {
+  "path": "G:\\Downloads\\Korean Traslate Project\\Games\\Tenshi no Uta II - Datenshi no Sentaku (Japan)\\probes\\SystemCard3_btrack_b1_50slot.pce",
+  "sha256": "b6f32a85ec0f19fb31088c9d3404b172c8b3d9c85ae0d4bc8f0d2342e491b682",
+  "slots_replaced": 50,
+  "expected_diff_bytes": 883,
+  "writes": [
+   {
+    "hangul": "여",
+    "sjis": "889F",
+    "glyph_index": 453,
+    "rom_offset": 204762,
+    "original_hex": "0007fe0900907fe4924924927fe0900907fe",
+    "glyph_hex": "000000188248248278248278248248188008"
+   },
+   {
+    "hangul": "어",
+    "sjis": "88A0",
+    "glyph_index": 454,
+    "rom_offset": 204780,
+    "original_hex": "0000fee28a28afeaaaaaaaaaafee280280fe",
+    "glyph_hex": "000000188248248248278248248248188008"
+   },
+   {
+    "hangul": "준",
+    "sjis": "88A1",
+    "glyph_index": 455,
+    "rom_offset": 204798,
+    "original_hex": "01021027ef904904fe51091097e6105108fe",
+    "glyph_hex": "0000001e00000c01203f00801001001001e0"
+   },
+   {
+    "hangul": "비",
+    "sjis": "88A2",
+    "glyph_index": 456,
+    "rom_offset": 204816,
+    "original_hex": "f009fe904a74a54954954974904e0480480c",
+    "glyph_hex": "0000002482482482483c82482482483c8008"
+   },
+   {
+    "hangul": "는",
+    "sjis": "88A3",
+    "glyph_index": 457,
+    "rom_offset": 204834,
+    "original_hex": "040ffe4003f82082083f80a0324d181c8706",
+    "glyph_hex": "0001001001f00003f00001001001001f0000"
+   },
+   {
+    "hangul": "됐",
+    "sjis": "88A4",
+    "glyph_index": 458,
+    "rom_offset": 204852,
+    "original_hex": "7fc1487fe4aaa9424a43c0f010868807078e",
+    "glyph_hex": "0000003a82283b81283e80000500500a80a8"
+   },
+   {
+    "hangul": "나",
+    "sjis": "88A5",
+    "glyph_index": 459,
+    "rom_offset": 204870,
+    "original_hex": "210224244f7a22027e3d0650abe2102286c6",
+    "glyph_hex": "0000002102102102102102102102103d0010"
+   },
+   {
+    "hangul": "뭐",
+    "sjis": "88A6",
+    "glyph_index": 460,
+    "rom_offset": 204888,
+    "original_hex": "010228244f824fc48050097c9446445448fc",
+    "glyph_hex": "0000003e82282282283e83f80880b8088088"
+   },
+   {
+    "hangul": "가",
+    "sjis": "88A7",
+    "glyph_index": 461,
+    "rom_offset": 204906,
+    "original_hex": "020c7c2c4038e342fe31027c2102fe5108fe",
+    "glyph_hex": "0000003d0050050050090090110110210010"
+   },
+   {
+    "hangul": "이",
+    "sjis": "88A8",
+    "glyph_index": 462,
+    "rom_offset": 204924,
+    "original_hex": "110ffe1101e44943093fec423fc06009070e",
+    "glyph_hex": "000000188248248248248248248248188008"
+   },
+   {
+    "hangul": "아",
+    "sjis": "88A9",
+    "glyph_index": 463,
+    "rom_offset": 204942,
+    "original_hex": "110ffe110ffe1207fc52452453c6044047fc",
+    "glyph_hex": "000000190250250250250250250250190010"
+   },
+   {
+    "hangul": "지",
+    "sjis": "88AA",
+    "glyph_index": 464,
+    "rom_offset": 204960,
+    "original_hex": "13ce4827ef5227e61077eb5227e27e21021e",
+    "glyph_hex": "0000003e80880880881c8148148228228008"
+   },
+   {
+    "hangul": "리",
+    "sjis": "88AB",
+    "glyph_index": 465,
+    "rom_offset": 204978,
+    "original_hex": "000ffe1107fc5147fc110ffe1405245029fa",
+    "glyph_hex": "0000003c80480480483c82082082083c8008"
+   },
+   {
+    "hangul": "을",
+    "sjis": "88AC",
+    "glyph_index": 466,
+    "rom_offset": 204996,
+    "original_hex": "2fe2822fef802fe2903a46fea882bc30867e",
+    "glyph_hex": "0000000c01200c00003f01e00201e01001e0"
+   },
+   {
+    "hangul": "다",
+    "sjis": "88AD",
+    "glyph_index": 467,
+    "rom_offset": 205014,
+    "original_hex": "4fe2820fe8804fe0902a42fec884bc50847e",
+    "glyph_hex": "0000003d02102102102102102102103d0010"
+   },
+   {
+    "hangul": "마",
+    "sjis": "88AE",
+    "glyph_index": 468,
+    "rom_offset": 205032,
+    "original_hex": "20023c224fa42a42bc2a42a42bc48048287e",
+    "glyph_hex": "0000003d02502502502502502502503d0010"
+   },
+   {
+    "hangul": "트",
+    "sjis": "88AF",
+    "glyph_index": 469,
+    "rom_offset": 205050,
+    "original_hex": "110ffe1907f8088ffe2083f87fc120ffe020",
+    "glyph_hex": "0000001f01001001f01001f00000003f0000"
+   },
+   {
+    "hangul": "페",
+    "sjis": "88B0",
+    "glyph_index": 470,
+    "rom_offset": 205068,
+    "original_hex": "110ffe1100007fc0007fc4047fc400400800",
+    "glyph_hex": "0000003e81a81a81a81e81a81a81a83e8028"
+   },
+   {
+    "hangul": "도",
+    "sjis": "88B1",
+    "glyph_index": 471,
+    "rom_offset": 205086,
+    "original_hex": "7904a497ea10ffeaa4fcaa90f84018b82abc",
+    "glyph_hex": "0000001f01001001001f00400400403f0000"
+   },
+   {
+    "hangul": "은",
+    "sjis": "88B2",
+    "glyph_index": 472,
+    "rom_offset": 205104,
+    "original_hex": "2102102fefc42446447feb102102fe210210",
+    "glyph_hex": "0000000c01201200c03f00001001001001e0"
+   },
+   {
+    "hangul": "에",
+    "sjis": "88B3",
+    "glyph_index": 473,
+    "rom_offset": 205122,
+    "original_hex": "0007fe4004204204205fc420420420420bfe",
+    "glyph_hex": "0000001282a82a82a82e82a82a82a8128028"
+   },
+   {
+    "hangul": "그",
+    "sjis": "88B4",
+    "glyph_index": 474,
+    "rom_offset": 205140,
+    "original_hex": "208f94222fc08a4f94884fa4214f8e234204",
+    "glyph_hex": "0000001e00200200200200200600003f0000"
+   },
+   {
+    "hangul": "기",
+    "sjis": "88B5",
+    "glyph_index": 475,
+    "rom_offset": 205158,
+    "original_hex": "27c224224f2422823e322624a54248294762",
+    "glyph_hex": "0000003c8048048048088088108108208008"
+   },
+   {
+    "hangul": "사",
+    "sjis": "88B6",
+    "glyph_index": 476,
+    "rom_offset": 205176,
+    "original_hex": "040ffe8022003bc2a44a44a43ac0a012263e",
+    "glyph_hex": "000000090090090090090150150230230010"
+   },
+   {
+    "hangul": "고",
+    "sjis": "88B7",
+    "glyph_index": 477,
+    "rom_offset": 205194,
+    "original_hex": "00027c244fc44fc4c454497c9446445448fe",
+    "glyph_hex": "0000001e00200200200a00a00e00803f0000"
+   },
+   {
+    "hangul": "라",
+    "sjis": "88B8",
+    "glyph_index": 478,
+    "rom_offset": 205212,
+    "original_hex": "20820827efa0aa0aa0fa02202a03a0c6201e",
+    "glyph_hex": "0000003d00500500503d02102102103d0010"
+   },
+   {
+    "hangul": "니",
+    "sjis": "88B9",
+    "glyph_index": 479,
+    "rom_offset": 205230,
+    "original_hex": "308488b507944a27be4807be4224a27a24be",
+    "glyph_hex": "0000002082082082082082082082083e8008"
+   },
+   {
+    "hangul": "서",
+    "sjis": "88BA",
+    "glyph_index": 480,
+    "rom_offset": 205248,
+    "original_hex": "22042093e64240293afaa23ab2aabaa0220c",
+    "glyph_hex": "0000000880880880880b8148148228228008"
+   },
+   {
+    "hangul": "있",
+    "sjis": "88BB",
+    "glyph_index": 481,
+    "rom_offset": 205266,
+    "original_hex": "21047c9106fe428928fc623cb64a98a182e6",
+    "glyph_hex": "0000001882482482481880000500500a80a8"
+   },
+   {
+    "hangul": "하",
+    "sjis": "88BC",
+    "glyph_index": 482,
+    "rom_offset": 205284,
+    "original_hex": "78848890ea08f88a88fbeaa2fa2022ba2abe",
+    "glyph_hex": "0000001900103d0010190250250250190010"
+   },
+   {
+    "hangul": "물",
+    "sjis": "88BD",
+    "glyph_index": 483,
+    "rom_offset": 205302,
+    "original_hex": "014012ffe0107d24524547d400818ae1a066",
+    "glyph_hex": "0000001e01201e00003f01e00201e01001e0"
+   },
+   {
+    "hangul": "면",
+    "sjis": "88BE",
+    "glyph_index": 484,
+    "rom_offset": 205320,
+    "original_hex": "000ffe0a0ffe8a2ffe248150ffe0e0358c46",
+    "glyph_hex": "0000003c82782482783c80081001001001f8"
+   },
+   {
+    "hangul": "야",
+    "sjis": "88BF",
+    "glyph_index": 485,
+    "rom_offset": 205338,
+    "original_hex": "210228fc410237c200680b7c2c424424427c",
+    "glyph_hex": "000000190250250250250250250250190010"
+   },
+   {
+    "hangul": "의",
+    "sjis": "88C0",
+    "glyph_index": 486,
+    "rom_offset": 205356,
+    "original_hex": "4407fe4028800807fe0881082101900e079e",
+    "glyph_hex": "0000001c82282282282281c80083f8008008"
+   },
+   {
+    "hangul": "게",
+    "sjis": "88C1",
+    "glyph_index": 487,
+    "rom_offset": 205374,
+    "original_hex": "0207fe4205fc4504f87ae4f84a84f842281e",
+    "glyph_hex": "0000003a80a80a80a80e8128128128228028"
+   },
+   {
+    "hangul": "를",
+    "sjis": "88C2",
+    "glyph_index": 488,
+    "rom_offset": 205392,
+    "original_hex": "20827e242f1027e212324e24248228218666",
+    "glyph_hex": "0000001e00201e01002f01e00201e01001e0"
+   },
+   {
+    "hangul": "시",
+    "sjis": "88C3",
+    "glyph_index": 489,
+    "rom_offset": 205410,
+    "original_hex": "010010ffe9289289fef0097c94497cf4407c",
+    "glyph_hex": "000000088088088088088148148228228008"
+   },
+   {
+    "hangul": "로",
+    "sjis": "88C4",
+    "glyph_index": 490,
+    "rom_offset": 205428,
+    "original_hex": "040ffe8827fc1100e031c0407fc0e0358c46",
+    "glyph_hex": "0000001e00200201e01001e00800803f0000"
+   },
+   {
+    "hangul": "해",
+    "sjis": "88C5",
+    "glyph_index": 491,
+    "rom_offset": 205446,
+    "original_hex": "fbe8a2fbe8a2f5e9f28a2bfa9129f29129f6",
+    "glyph_hex": "0000001a80283e80281282b82a82a8128028"
+   },
+   {
+    "hangul": "들",
+    "sjis": "88C6",
+    "glyph_index": 492,
+    "rom_offset": 205464,
+    "original_hex": "510ffe54271027efa4aa4fa4224f98214262",
+    "glyph_hex": "0000001e01001e00003f01e00201e01001e0"
+   },
+   {
+    "hangul": "대",
+    "sjis": "88C7",
+    "glyph_index": 493,
+    "rom_offset": 205482,
+    "original_hex": "040040ffe0e0150248c467fc4044044047fc",
+    "glyph_hex": "0000003a82282282282282382282283a8028"
+   },
+   {
+    "hangul": "와",
+    "sjis": "88C8",
+    "glyph_index": 494,
+    "rom_offset": 205500,
+    "original_hex": "404484444424424404404408488714c22042",
+    "glyph_hex": "0000001902502502502501900900903f0010"
+   },
+   {
+    "hangul": "으",
+    "sjis": "88C9",
+    "glyph_index": 495,
+    "rom_offset": 205518,
+    "original_hex": "2002fc2144146fea142142fc214210220240",
+    "glyph_hex": "0000000c01201201200c00000000003f0000"
+   },
+   {
+    "hangul": "인",
+    "sjis": "88CA",
+    "glyph_index": 496,
+    "rom_offset": 205536,
+    "original_hex": "2102102fe404644a442442442442482082fe",
+    "glyph_hex": "0000001882482482481880081001001001f8"
+   },
+   {
+    "hangul": "보",
+    "sjis": "88CB",
+    "glyph_index": 497,
+    "rom_offset": 205554,
+    "original_hex": "2102fe220420652a542d83482482542642c2",
+    "glyph_hex": "0001201201201e01201e00800800803f0000"
+   },
+   {
+    "hangul": "계",
+    "sjis": "88CC",
+    "glyph_index": 498,
+    "rom_offset": 205572,
+    "original_hex": "2102fc2244fe67ca4427c20827e2482fe208",
+    "glyph_hex": "0000003a80a80a80e80a8168128128228028"
+   },
+   {
+    "hangul": "상",
+    "sjis": "88CD",
+    "glyph_index": 499,
+    "rom_offset": 205590,
+    "original_hex": "7fe4924924927fe4924927fe4924925127fe",
+    "glyph_hex": "0000000900900901501502300e01101100e0"
+   },
+   {
+    "hangul": "오",
+    "sjis": "88CE",
+    "glyph_index": 500,
+    "rom_offset": 205608,
+    "original_hex": "040ffe0407fc0443fc2407fe4420a411060e",
+    "glyph_hex": "0000000e01201201200e00400400403f0000"
+   },
+   {
+    "hangul": "요",
+    "sjis": "88CF",
+    "glyph_index": 501,
+    "rom_offset": 205626,
+    "original_hex": "1f0040ffe0e0358c460807fe1103100e071c",
+    "glyph_hex": "0000000c01201201200c00c00c00c03f0000"
+   },
+   {
+    "hangul": "한",
+    "sjis": "88D0",
+    "glyph_index": 502,
+    "rom_offset": 205644,
+    "original_hex": "0140127fe4107f05147f455454864a59ab56",
+    "glyph_hex": "0000001103d01902501900101001001001f0"
+   }
+  ]
+ },
+ "game": {
+  "bin": "G:\\Downloads\\Korean Traslate Project\\Games\\Tenshi no Uta II - Datenshi no Sentaku (Japan)\\Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_btrack_b1_probe.bin",
+  "bin_sha256": "d4b525f414002dd87635736d52ba36040537ce38cf8f0fed226f31907f4627fe",
+  "cue": "G:\\Downloads\\Korean Traslate Project\\Games\\Tenshi no Uta II - Datenshi no Sentaku (Japan)\\Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_btrack_b1_probe.cue",
+  "expected_writes": 3,
+  "expected_diff_bytes": 18,
+  "writes": [
+   {
+    "iso_offset": 1096178,
+    "physical_offset": 9010658,
+    "expected_hex": "6F2D8141BCB5DD",
+    "replace_at": 0,
+    "replace_hex": "889F88A0",
+    "hangul": "여어"
+   },
+   {
+    "iso_offset": 1096196,
+    "physical_offset": 9010676,
+    "expected_hex": "8E789378568F6F9788465532CCAAB2C4",
+    "replace_at": 0,
+    "replace_hex": "88A188A288A388A488A5",
+    "hangul": "준비는됐나"
+   },
+   {
+    "iso_offset": 1096224,
+    "physical_offset": 9010704,
+    "expected_hex": "5F81418E7893784A4D517A474A388148",
+    "replace_at": 3,
+    "replace_hex": "88A688A7",
+    "hangul": "뭐가"
+   }
+  ]
+ },
+ "runtime_gate": [
+  "카드 부트 화면 정상 (자동 캡처 대조)",
+  "부트 화면에서 카드 자체 UI(백업 관리) 진입 화면 정상 — 실험 2 겸용",
+  "첫 대사: 여어シオン / 준비는됐나のか… / え、뭐가… 표시",
+  "Memo 진입·복귀, 첫 전투, 필드 복귀, 탑 진입, 초상화 정상",
+  "화면 깨짐·EXEC BRK·멈춤·오디오 이상 0건"
+ ],
+ "automated_gates_2026_08_22": {
+  "static_verify": "PASS (verify_btrack_b1_probe.py: card 883B diff/50슬롯 정확 일치, game 17B diff/승인 18B, 승인 외 변경 0건)",
+  "boot_screen": "PASS — b1 카드 부트 화면이 원본 카드와 해시 동일 (R7a/R7b_boot)",
+  "card_backup_ui": "PASS — SELECT 진입 BACKUP RAM 화면(削除/全体の初期化/終了) 원본 카드와 해시 동일. 亜블록 50슬롯과 카드 UI 한자 비충돌 실증",
+  "card_ui_kanji_exclusion_list": "削除全体初期化終了 — 최종 슬롯 배정에서 회피 (하위 화면 추가 조사 필요)",
+  "evidence": "translation/bios_retest_2026-08-22/R7*.png"
+ },
+ "runtime_result_2026_08_22": {
+  "observed": "사용자 실플레이. 첫 대사 3런 전부 기대 표시와 일치: 여어シオン / 준비는됐나のかフェイト / へ、뭐가ってなんだっけ？(스크린샷 3장). Memo·전투·필드 복귀 경유, 탑 진입까지 정상.",
+  "conclusion": "실존 한자 슬롯 50개 교체 + 게임 스트림 동일 길이 SJIS 치환 + 카드 UI 안전까지 전부 런타임 실증. B안(BIOS 폰트) 채택 결정 근거 완성."
+ }
+}

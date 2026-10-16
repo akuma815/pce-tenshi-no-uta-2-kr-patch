@@ -1,0 +1,164 @@
+{
+  "format": "ZIRIA-Z8-CONTROL-CODE-SPEC",
+  "version": 1,
+  "scope": "all 18,817 master_text physical records; semantic runtime proof remains renderer-scoped",
+  "terminator": {
+    "bytes": "00",
+    "width": 1,
+    "terminates": true,
+    "policy": "regenerate exactly once at encoded string end",
+    "evidence": "all protected raw records terminate with 00 and match Track02_data.iso"
+  },
+  "tokens": [
+    {
+      "token": "{0B}",
+      "bytes": "0B",
+      "width": 1,
+      "meaning": "page-control variant; return-code 2 path",
+      "policy": "forbidden_move_preserve"
+    },
+    {
+      "token": "\\p",
+      "bytes": "0C",
+      "width": 1,
+      "meaning": "page control",
+      "policy": "preserve_order_and_count"
+    },
+    {
+      "token": "\\n",
+      "bytes": "0D",
+      "width": 1,
+      "meaning": "line break/window parameter update",
+      "policy": "preserve_order_and_count"
+    },
+    {
+      "token": "{0E}",
+      "bytes": "0E",
+      "width": 1,
+      "meaning": "row counter increment",
+      "policy": "forbidden_move_preserve"
+    },
+    {
+      "token": "{#x}",
+      "bytes": "23 xx",
+      "width": 2,
+      "meaning": "text colour/style state",
+      "policy": "preserve_exact_argument_order"
+    },
+    {
+      "token": "{%x}",
+      "bytes": "25 xx",
+      "width": 2,
+      "meaning": "dynamic variable/string insertion",
+      "policy": "preserve_exact_argument_order"
+    },
+    {
+      "token": "{~}",
+      "bytes": "7E",
+      "width": 1,
+      "meaning": "cursor advance",
+      "policy": "preserve_order_and_count"
+    }
+  ],
+  "translation_policy": {
+    "current_gate": "exact token sequence equality",
+    "movable_layout_tokens": [],
+    "reason": "No renderer has yet approved automatic line/page token movement for the full corpus."
+  },
+  "continuation_and_redirect": {
+    "original_in_record_continuation": "none",
+    "legacy_01_redirect_02_continuation": "REJECTED_WITH_RESIDENT_MEMORY_ARCHITECTURE",
+    "current_ziria_protocol": "UNDEFINED_PENDING_LOADER_OWNED_Z8_POC"
+  },
+  "encoding_aliases": [
+    {
+      "source": "·",
+      "source_codepoint": "U+00B7",
+      "display_equivalent": "・",
+      "encoded_bytes": "A5",
+      "reason": "native middle-dot glyph",
+      "master_text_mutated": false
+    }
+  ],
+  "family_profiles": {
+    "battle": {
+      "record_boundary": "00 terminator included in protected raw record",
+      "pointer_model": "physical record known; complete reference/pointer catalogue not proven",
+      "pointer_status": "REFERENCE_CATALOGUE_OPEN",
+      "continuation_model": "none inside extracted record",
+      "redirect_model": "UNSELECTED; legacy 01/02 resident-hook protocol prohibited",
+      "relocation_gate": "BLOCKED_UNTIL_LOADER_OWNED_REDIRECT_AND_REFERENCE_MODEL_PASS",
+      "evidence": "full extraction raw boundary plus renderer-family classification"
+    },
+    "boot_opening": {
+      "record_boundary": "00 terminator included in protected raw record",
+      "pointer_model": "physical record known; complete reference/pointer catalogue not proven",
+      "pointer_status": "REFERENCE_CATALOGUE_OPEN",
+      "continuation_model": "none inside extracted record",
+      "redirect_model": "UNSELECTED; legacy 01/02 resident-hook protocol prohibited",
+      "relocation_gate": "BLOCKED_UNTIL_LOADER_OWNED_REDIRECT_AND_REFERENCE_MODEL_PASS",
+      "evidence": "full extraction raw boundary plus renderer-family classification"
+    },
+    "card": {
+      "record_boundary": "00 terminator included in protected raw record",
+      "pointer_model": "physical record known; complete reference/pointer catalogue not proven",
+      "pointer_status": "REFERENCE_CATALOGUE_OPEN",
+      "continuation_model": "none inside extracted record",
+      "redirect_model": "UNSELECTED; legacy 01/02 resident-hook protocol prohibited",
+      "relocation_gate": "BLOCKED_UNTIL_LOADER_OWNED_REDIRECT_AND_REFERENCE_MODEL_PASS",
+      "evidence": "full extraction raw boundary plus renderer-family classification"
+    },
+    "dialogue_event": {
+      "record_boundary": "00 terminator included in protected raw record",
+      "pointer_model": "inline event bytecode stream; main $53/$54, auxiliary $55/$56, variable $57/$58",
+      "pointer_status": "PARTIAL_INLINE_MODEL_REFERENCE_CATALOGUE_OPEN",
+      "continuation_model": "none inside extracted record",
+      "redirect_model": "UNSELECTED; legacy 01/02 resident-hook protocol prohibited",
+      "relocation_gate": "BLOCKED_UNTIL_LOADER_OWNED_REDIRECT_AND_REFERENCE_MODEL_PASS",
+      "evidence": "field parser/fetch static analysis and runtime samples"
+    },
+    "menu_memo_system": {
+      "record_boundary": "00 terminator included in protected raw record",
+      "pointer_model": "physical record known; complete reference/pointer catalogue not proven",
+      "pointer_status": "REFERENCE_CATALOGUE_OPEN",
+      "continuation_model": "none inside extracted record",
+      "redirect_model": "UNSELECTED; legacy 01/02 resident-hook protocol prohibited",
+      "relocation_gate": "BLOCKED_UNTIL_LOADER_OWNED_REDIRECT_AND_REFERENCE_MODEL_PASS",
+      "evidence": "full extraction raw boundary plus renderer-family classification"
+    },
+    "visual_event_portrait": {
+      "record_boundary": "00 terminator included in protected raw record",
+      "pointer_model": "physical record known; complete reference/pointer catalogue not proven",
+      "pointer_status": "REFERENCE_CATALOGUE_OPEN",
+      "continuation_model": "none inside extracted record",
+      "redirect_model": "UNSELECTED; legacy 01/02 resident-hook protocol prohibited",
+      "relocation_gate": "BLOCKED_UNTIL_LOADER_OWNED_REDIRECT_AND_REFERENCE_MODEL_PASS",
+      "evidence": "full extraction raw boundary plus renderer-family classification"
+    }
+  },
+  "audit": {
+    "rows": 18817,
+    "raw_parse_errors": 0,
+    "raw_original_token_mismatches": 0,
+    "original_translation_token_mismatches": 0,
+    "token_counts": {
+      "\\n": 22093,
+      "\\p": 8180,
+      "{#+}": 4,
+      "{#1}": 7638,
+      "{#4}": 1,
+      "{#5}": 7616,
+      "{#J}": 1,
+      "{%0}": 2,
+      "{%A}": 7,
+      "{%F}": 3430,
+      "{%d}": 23,
+      "{%f}": 4323,
+      "{%s}": 75,
+      "{0B}": 57,
+      "{0E}": 17,
+      "{~}": 521
+    },
+    "cross_bank_strings": 0
+  }
+}

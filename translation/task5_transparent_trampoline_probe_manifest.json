@@ -1,0 +1,79 @@
+{
+  "format": "TASK5-TRANSPARENT-TRAMPOLINE-PROBE",
+  "version": 1,
+  "task": 5,
+  "status": "RUNTIME_FAIL",
+  "hypothesis": "the fallback-only dispatcher corrupts a live A or P input before jumping to BIOS EX_GETFNT",
+  "present_variables": [
+    "JSR C737 call redirection",
+    "C737 JMP E060 transparent trampoline",
+    "original Japanese dialogue"
+  ],
+  "absent_variables": [
+    "EF58..EF5F dialogue replacement",
+    "C800..C8FF glyph page",
+    "classification LDA/CMP instructions",
+    "custom glyph branch"
+  ],
+  "preservation_contract": [
+    "A",
+    "X",
+    "Y",
+    "P",
+    "S",
+    "F8",
+    "F9",
+    "FA",
+    "FB",
+    "FF"
+  ],
+  "runtime_decision": {
+    "memo_responsive": "the prior dispatcher prelude is causal; preserve A and P before classification and restore them on fallback",
+    "memo_hangs": "A/P clobber is rejected; call redirection, cave occupancy, or added JMP timing is causal"
+  },
+  "expected_writes": [
+    {
+      "id": "field-getfnt-call",
+      "iso_offset": "0x8667E",
+      "physical_bin_offset": "0x812A6E",
+      "length": 3,
+      "expected_hex": "2060E0",
+      "replacement_hex": "2037C7",
+      "reason": "route the live field call through the transparent trampoline"
+    },
+    {
+      "id": "transparent-trampoline",
+      "iso_offset": "0x89737",
+      "physical_bin_offset": "0x815B27",
+      "length": 3,
+      "expected_hex": "FFFFFF",
+      "replacement_hex": "4C60E0",
+      "reason": "jump directly to BIOS EX_GETFNT without changing registers, flags, stack, or RAM"
+    }
+  ],
+  "diff_audit": {
+    "declared_span_count": 2,
+    "actual_changed_bytes": 5,
+    "actual_changed_ranges": [
+      {
+        "physical_start": "0x812A6F",
+        "physical_end_exclusive": "0x812A71",
+        "changed_bytes": 2
+      },
+      {
+        "physical_start": "0x815B27",
+        "physical_end_exclusive": "0x815B2A",
+        "changed_bytes": 3
+      }
+    ],
+    "undeclared_changes": 0,
+    "file_size_preserved": true
+  },
+  "output": {
+    "bin": "Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_task5_transparent_trampoline_probe.bin",
+    "bin_size": 523184384,
+    "bin_sha256": "33EF6333DAD4EC482E85FC03FE3EE47B8338CCD3D6B877735260F0C077624B5D",
+    "cue": "Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_task5_transparent_trampoline_probe.cue",
+    "cue_sha256": "B949CBB6B40C5787E385B68FF6A36AFEBFAE265728837721CCC3D5B5909A3168"
+  }
+}

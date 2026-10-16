@@ -1,0 +1,46 @@
+{
+  "format": "ZIRIA-HITL-REQUEST",
+  "version": 1,
+  "request_id": "Z6-FAMILY-TRANSITION-TRACE-001",
+  "state": "COMPLETED",
+  "baseline": {
+    "build": "Z5 battle one-glyph v1",
+    "manifest": "translation/ziria_z5_battle_oneglyph_v1_manifest.json",
+    "bin_sha256": "7E133A82ECA649535534C9FF3D563BA801DDBBB6625014542A430901E3C0932A",
+    "environment": "BizHawk EmuHawk, original PCECD 3.0(J) firmware"
+  },
+  "hypothesis": "Memo and portrait/event are resident subrenderers whose actual GETFNT caller and state lifetime can be separated without assuming a new CD module.",
+  "setup": "Boot without Lua; after the first field is visible, manually load tools/trace_ziria_z6_family_transitions.lua.",
+  "route": [
+    "first dialogue",
+    "Memo entry and return",
+    "first battle attack",
+    "field return",
+    "tower entry after battle",
+    "portrait dialogue"
+  ],
+  "capture": [
+    "GETFNT caller PC and mapped physical bank",
+    "all CD_READ parameters",
+    "MPR0-7",
+    "stack pointer and 16-byte stack top",
+    "direct-page hash and parser state"
+  ],
+  "criteria": {
+    "pass": "All six routes complete and Memo/portrait ownership can be assigned from actual calls and state transitions.",
+    "fail": "A route regresses on the unchanged Z5 baseline or trace proves an assumed host is different.",
+    "unclear": "A renderer produces no observed event or the route ends before its lifetime boundary."
+  },
+  "evidence": {
+    "trace": "translation/ziria_z6_family_transition_trace.tsv",
+    "status": "translation/ziria_z6_family_transition_status.txt"
+  },
+  "result": {
+    "status": "PASS",
+    "getfnt_records": 1031,
+    "shared_renderer": "$967E with MPR4=$82",
+    "cd_reads": ["LBA290 battle package", "LBA2882 tower package"],
+    "finding": "Memo and portrait/event are not separate renderers; family ownership is separated at the scene-package stream source."
+  },
+  "next": "Resolve exact stream byte sources before the Z6 build."
+}

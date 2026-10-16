@@ -1,0 +1,22 @@
+{
+ "format": "BTRACK-B3-TRANSLATION-MAP",
+ "version": 2,
+ "switch_sources": {
+  "천사의시2_대사_번역.xlsx": 5177,
+  "천사의시2_크레딧_번역.xlsx": 285,
+  "visualscene2_paired.csv": 285
+ },
+ "records_processed": 3863,
+ "records_inherited": 14938,
+ "record_status": {
+  "OLD_FALLBACK": 441,
+  "SWITCH_WHOLE": 2850,
+  "SWITCH_RUN": 571,
+  "SWITCH_RUN_JOIN": 1
+ },
+ "switch_rows_used": 4513,
+ "switch_rows_total": 5747,
+ "review_rows": 442,
+ "missing_glyphs": {},
+ "tsv_sha256": "f78d957a23bf89cea8d4408f10b918ed20eb11ac7b7db6e1c58cd1eae5e2885e"
+}

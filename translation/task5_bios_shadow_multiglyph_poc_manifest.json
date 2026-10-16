@@ -1,0 +1,123 @@
+{
+  "format": "TASK5-BIOS-SHADOW-MULTIGLYPH-POC",
+  "version": 1,
+  "task": 5,
+  "status": "RUNTIME_FAIL",
+  "cause_model": "the original custom path reproduced visible return ABI but skipped hidden System Card side effects required by later field-to-Memo state",
+  "fix": "for EF58..EF5F, call E060 first with untouched inputs, restore the saved destination/index, overwrite 32 glyph bytes, then return the documented mode-1 success ABI",
+  "stack_contract": {
+    "pushes": [
+      "FA",
+      "FB",
+      "glyph source offset X"
+    ],
+    "pops": [
+      "glyph source offset X",
+      "FB",
+      "FA"
+    ],
+    "net_bytes": 0
+  },
+  "hook": {
+    "runtime_address": "0xC737",
+    "code_bytes": 72,
+    "bios_custom_call": "JSR E060",
+    "non_custom_fallback": "JMP E060",
+    "glyph_page": "0xC800..0xC8FF",
+    "mpr_changes": 0
+  },
+  "map": {
+    "codes": [
+      "EF58",
+      "EF59",
+      "EF5A",
+      "EF5B",
+      "EF5C",
+      "EF5D",
+      "EF5E",
+      "EF5F"
+    ],
+    "text": "준비는다됐나페이",
+    "font": "font/Galmuri8x8.ttf",
+    "font_sha256": "97BA3DCC2CD5E5B2927E4E6BA9558A48A2A194A852C420DF160654D66BBF2A05"
+  },
+  "expected_writes": [
+    {
+      "id": "field-getfnt-call",
+      "iso_offset": "0x8667E",
+      "physical_bin_offset": "0x812A6E",
+      "length": 3,
+      "expected_hex": "2060E0",
+      "replacement_hex": "2037C7",
+      "reason": "route the live field call to the BIOS-shadow hook"
+    },
+    {
+      "id": "bios-shadow-hook-map-pool",
+      "iso_offset": "0x89737",
+      "physical_bin_offset": "0x815B27",
+      "length": 457,
+      "expected_hex": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF",
+      "replacement_hex": "A5F9C9EFD03FA5F838E958C908B0360A0A0A0A0AAAA5FA48A5FB48DA2060E0FA6885FB6885FAA000BD00C891FAE8C8C020D0F518A5FA691885FA9002E6FBA900A200A0FF604C60E0FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000003F800A00318000003F80040020003F8000000000000000000000000000000000248024803C80248024803C800080008000000000000000000000000000000000100010001F8000003FC0000010001F80000000000000000000000000000000003E80208020C0208020803E8000800080000000000000000000000000000000003A8022803B8012803E800900090036800000000000000000000000000000000020802080208020C020803E8000800080000000000000000000000000000000003EC014C017C014C014C03EC000C000C00000000000000000000000000000000018802480248024802480188000800080000000000000000000000000",
+      "reason": "call original BIOS on custom codes before overwriting its destination with the local glyph"
+    },
+    {
+      "id": "second-dialogue-eight-custom-codes",
+      "iso_offset": "0x10BA04",
+      "physical_bin_offset": "0x897DF4",
+      "length": 16,
+      "expected_hex": "8E789378568F6F9788465532CCAAB2C4",
+      "replacement_hex": "EF58EF59EF5AEF5BEF5CEF5DEF5EEF5F",
+      "reason": "retain the Task 5 eight-glyph sample"
+    }
+  ],
+  "diff_audit": {
+    "declared_span_count": 3,
+    "actual_changed_bytes": 345,
+    "actual_changed_ranges": [
+      {
+        "physical_start": "0x812A6F",
+        "physical_end_exclusive": "0x812A71",
+        "changed_bytes": 2
+      },
+      {
+        "physical_start": "0x815B27",
+        "physical_end_exclusive": "0x815B6A",
+        "changed_bytes": 67
+      },
+      {
+        "physical_start": "0x815B6B",
+        "physical_end_exclusive": "0x815B6F",
+        "changed_bytes": 4
+      },
+      {
+        "physical_start": "0x815BF0",
+        "physical_end_exclusive": "0x815CF0",
+        "changed_bytes": 256
+      },
+      {
+        "physical_start": "0x897DF4",
+        "physical_end_exclusive": "0x897E04",
+        "changed_bytes": 16
+      }
+    ],
+    "undeclared_changes": 0,
+    "file_size_preserved": true
+  },
+  "output": {
+    "bin": "Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_task5_bios_shadow_multiglyph_poc.bin",
+    "bin_size": 523184384,
+    "bin_sha256": "9F28EAF4E9C860712617199999D26AD7B5D41ACF24418634360C9CAE61666BF0",
+    "cue": "Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_task5_bios_shadow_multiglyph_poc.cue",
+    "cue_sha256": "34352ED77668029BDCD887AD247B45356137E85D0C1AB6D390DBF2789D070EB6"
+  },
+  "runtime": {
+    "status": "FAIL",
+    "decision": "BIOS_SHADOW_SIDE_EFFECT_HYPOTHESIS_REJECTED",
+    "evidence": "translation/task5_bios_shadow_multiglyph_poc_runtime.json",
+    "pass_criteria": [
+      "eight Hangul glyphs display in order",
+      "first-field progression remains normal",
+      "Memo opens and remains responsive"
+    ]
+  }
+}

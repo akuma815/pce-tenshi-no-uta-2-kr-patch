@@ -1,0 +1,18 @@
+{
+  "format": "TASK5-C800-TRAMPOLINE-PROBE-RUNTIME",
+  "version": 1,
+  "task": 5,
+  "date": "2026-07-17",
+  "status": "FAIL",
+  "decision": "MPR6_DATABANK_TRAMPOLINE_EXECUTION_CAUSAL",
+  "evidence": {
+    "user_observation": "멈춤",
+    "trace": "H:/BizHawk/Tools/Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_task5_c800_isolation_probe.log",
+    "trace_sha256": "2637361FA98D3931395EE83A5D1B3502B95338AE368F4454858E1E86F1BA3959",
+    "trace_last_write": "2026-07-17T20:53:07+09:00",
+    "trace_lines": 10002
+  },
+  "observation": "Relocating the identical cycle-matched trampoline from C737 to C800 still causes the Memo hang.",
+  "conclusion": "The failure is not specific to C737. Both failed addresses are in MPR6 bank 84, whose large FF region was selected as data-bank padding rather than established executable space.",
+  "next": "Test the identical trampoline in the referenced code-bank cave at MPR2:5230"
+}

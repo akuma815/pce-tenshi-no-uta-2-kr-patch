@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "iso": "G:\\Downloads\\Tenshi no Uta II - Datenshi no Sentaku (Japan)\\extracted_bin\\Track02_data.iso",
+  "iso_size": 19103744,
+  "iso_sha256": "7566073a2aa1f48e7b39ed2b34277d9935fade8a3fad7dcc72c21276e2632af9",
+  "batch_size": 500,
+  "physical_translation_rows": 18817,
+  "batch_count": 38,
+  "status_counts": {
+    "needs_review": 17,
+    "verified": 5303,
+    "verified_asset_cluster": 7975,
+    "verified_asset_match": 224,
+    "verified_corrected_boundary": 5298
+  },
+  "category_counts": {
+    "battle": 28,
+    "boot": 18,
+    "card": 52,
+    "command": 56,
+    "data_table": 2,
+    "dialogue": 10481,
+    "event": 4024,
+    "late_event": 12,
+    "menu_data": 3789,
+    "slot_graphics_window": 3,
+    "system": 82,
+    "unknown": 1,
+    "visual_event": 253,
+    "visual_scene": 16
+  },
+  "forensic_candidate_rows": 308373,
+  "forensic_source_kind_counts": {
+    "iso": 299637,
+    "iso_unterminated_sjis": 8734,
+    "legacy_extractor_overlap": 2
+  },
+  "external_asset_rows": 6284,
+  "external_status_counts": {
+    "collection_only_out_of_scope": 205,
+    "external_unconfirmed": 345,
+    "matched_as_iso_substring": 2386,
+    "matched_to_iso_text": 3348
+  },
+  "legacy_verified_rows": 10603,
+  "legacy_verified_missing_from_rescan": [
+    "0x00866B2",
+    "0x00867F1"
+  ],
+  "legacy_verified_overlap_rows_accounted_in_forensic_queue": 2,
+  "completion_gate": {
+    "verified_rescan_gap_must_be_zero": false,
+    "needs_review_must_be_zero_for_no_omission_claim": false,
+    "forensic_candidates_must_be_classified": false,
+    "external_unconfirmed_must_be_scoped": false
+  }
+}

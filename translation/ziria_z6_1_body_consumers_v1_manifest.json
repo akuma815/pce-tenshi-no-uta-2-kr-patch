@@ -1,0 +1,207 @@
+{
+  "format": "ZIRIA-Z6.1-BODY-CONSUMERS",
+  "version": 1,
+  "status": "RUNTIME_PARTIAL_PASS_WRONG_TOWER_BODY_TARGET",
+  "baseline": {
+    "id": "Z6 family integration v1",
+    "manifest": "translation/ziria_z6_family_integration_v1_manifest.json",
+    "status": "RUNTIME_PASS",
+    "bin_sha256": "D598B992BA0118641639BD811772CF17BF309C1B4D090C50E21E295DE28DF18E",
+    "track02_sha256": "ADC6E878EECB6CCECA2D3CDE92A32782B40743882E8CEC994138CD310254AD41"
+  },
+  "purpose": [
+    "close the untested first-field Memo dialogue-body consumer",
+    "close the untested tower-entry dialogue-body consumer"
+  ],
+  "font": {
+    "path": "font/Galmuri8x8.ttf",
+    "sha256": "97BA3DCC2CD5E5B2927E4E6BA9558A48A2A194A852C420DF160654D66BBF2A05",
+    "glyph": "가"
+  },
+  "custom_code": "8754",
+  "writes": [
+    {
+      "id": "memo-field-dialogue-body-first-code",
+      "track02_offset": "0x11FA1F",
+      "length": 2,
+      "expected_hex": "9595",
+      "replacement_hex": "8754"
+    },
+    {
+      "id": "tower-entry-dialogue-body-first-code",
+      "track02_offset": "0x5BA1B7",
+      "length": 2,
+      "expected_hex": "8145",
+      "replacement_hex": "8754"
+    }
+  ],
+  "linked_modules": {
+    "scene.field_start": {
+      "output": "module_relink/z6_1_body_consumers_v1_shared_slot/linked_modules/scene.field_start_lba0482_s96.bin",
+      "sha256": "FA1C1BDF34E915386E1C4E22B8E6B9EEA74EC0276B643D1566EC18213A5D6880"
+    },
+    "scene.tower_first": {
+      "output": "module_relink/z6_1_body_consumers_v1_shared_slot/linked_modules/scene.tower_first_lba2882_s96.bin",
+      "sha256": "2E9D183938132C4543CFB3A0451621194488D407AC41F51EA237C0471311A878"
+    }
+  },
+  "track02": {
+    "output": "module_relink/z6_1_body_consumers_v1_shared_slot/Track02_data.z6_1.iso",
+    "sha256": "B3FC8200DF6B226A48D9DC7F07C38DA46B65F65C093346F5A82F41D62FA893C8",
+    "incremental_changed_bytes": 4,
+    "incremental_changed_ranges": [
+      {
+        "start": "0x11FA1F",
+        "end_exclusive": "0x11FA21",
+        "changed_bytes": 2
+      },
+      {
+        "start": "0x5BA1B7",
+        "end_exclusive": "0x5BA1B9",
+        "changed_bytes": 2
+      }
+    ],
+    "total_z4_z5_z6_z6_1_changed_bytes": 46,
+    "total_ranges": [
+      {
+        "start": "0x86174",
+        "end_exclusive": "0x86175",
+        "changed_bytes": 1
+      },
+      {
+        "start": "0x86176",
+        "end_exclusive": "0x86187",
+        "changed_bytes": 17
+      },
+      {
+        "start": "0x86194",
+        "end_exclusive": "0x86197",
+        "changed_bytes": 3
+      },
+      {
+        "start": "0x86198",
+        "end_exclusive": "0x86199",
+        "changed_bytes": 1
+      },
+      {
+        "start": "0x8619A",
+        "end_exclusive": "0x8619D",
+        "changed_bytes": 3
+      },
+      {
+        "start": "0x8619E",
+        "end_exclusive": "0x8619F",
+        "changed_bytes": 1
+      },
+      {
+        "start": "0x861A0",
+        "end_exclusive": "0x861A1",
+        "changed_bytes": 1
+      },
+      {
+        "start": "0x861A2",
+        "end_exclusive": "0x861A3",
+        "changed_bytes": 1
+      },
+      {
+        "start": "0x861A4",
+        "end_exclusive": "0x861A5",
+        "changed_bytes": 1
+      },
+      {
+        "start": "0x861A6",
+        "end_exclusive": "0x861A8",
+        "changed_bytes": 2
+      },
+      {
+        "start": "0x8A6A5",
+        "end_exclusive": "0x8A6A6",
+        "changed_bytes": 1
+      },
+      {
+        "start": "0x10B9F2",
+        "end_exclusive": "0x10B9F4",
+        "changed_bytes": 2
+      },
+      {
+        "start": "0x11FA17",
+        "end_exclusive": "0x11FA19",
+        "changed_bytes": 2
+      },
+      {
+        "start": "0x11FA1F",
+        "end_exclusive": "0x11FA21",
+        "changed_bytes": 2
+      },
+      {
+        "start": "0x5BA0EC",
+        "end_exclusive": "0x5BA0EE",
+        "changed_bytes": 2
+      },
+      {
+        "start": "0x5BA1AF",
+        "end_exclusive": "0x5BA1B1",
+        "changed_bytes": 2
+      },
+      {
+        "start": "0x5BA1B7",
+        "end_exclusive": "0x5BA1B9",
+        "changed_bytes": 2
+      },
+      {
+        "start": "0x5BDA17",
+        "end_exclusive": "0x5BDA19",
+        "changed_bytes": 2
+      }
+    ],
+    "sector_count_preserved": true
+  },
+  "output": {
+    "bin": "module_relink/z6_1_body_consumers_v1_shared_slot/output/Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_ziria_z6_1_body_consumers_v1_shared_slot.bin",
+    "bin_size": 523184384,
+    "bin_sha256": "5EAE6EF658CF8B41188478E29A30B37F85AC8D28AB81EFAC85F3FC5F48C57FB5",
+    "cue": "module_relink/z6_1_body_consumers_v1_shared_slot/output/Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_ziria_z6_1_body_consumers_v1_shared_slot.cue",
+    "cue_sha256": "DBAB007A956748D63EC1C7584C78EC419D6DEA86545F38AE9A644EC04BA8220D"
+  },
+  "diff_audit": {
+    "incremental_scene_source_changed_bytes": 4,
+    "speaker_name_changed_bytes": 0,
+    "control_code_changed_bytes": 0,
+    "code_changed_bytes": 0,
+    "glyph_record_changed_bytes": 0,
+    "battle_module_changed_bytes": 0,
+    "mpr_changes": 0,
+    "work_ram_bytes": 0,
+    "loader_table_changes": 0,
+    "audio_changed_bytes": 0,
+    "cue_track_layout_changed": false
+  },
+  "runtime": {
+    "status": "PARTIAL_PASS",
+    "observed_results": {
+      "first_field_dialogue_body_ga": "PASS",
+      "first_field_memo_body_ga": "PASS",
+      "memo_return": "PASS",
+      "first_battle_and_field_return": "PASS",
+      "post_battle_tower_entry": "PASS",
+      "portrait_and_character_graphics": "PASS",
+      "first_post_entry_tower_dialogue_speaker_name_ga": "PASS",
+      "first_post_entry_tower_dialogue_body_ga": "NOT_PATCHED_WRONG_TARGET"
+    },
+    "failure_analysis": {
+      "wrong_target": "0x5BA1B7",
+      "wrong_record": "later portrait/event dialogue at 0x5BA1AD",
+      "actual_runtime_record": "0x5BA0EA",
+      "actual_body_offset": "0x5BA0F5"
+    },
+    "required_checks": [
+      "first field dialogue body still renders ga",
+      "first-field Memo body begins with ga and Memo returns normally",
+      "first battle attack and field return remain normal",
+      "tower entry after battle remains normal",
+      "tower-entry dialogue body begins with ga",
+      "portrait and character graphics remain normal",
+      "no black screen, invalid field transition, freeze, or EXEC BRK loop"
+    ]
+  }
+}

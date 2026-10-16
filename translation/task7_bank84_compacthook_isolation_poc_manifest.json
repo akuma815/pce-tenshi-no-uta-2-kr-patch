@@ -1,0 +1,144 @@
+{
+  "format": "TASK7-BANK84-COMPACTHOOK-ISOLATION-POC",
+  "version": 1,
+  "task": 7,
+  "status": "RUNTIME_FAIL_REPEATED_GLYPH_AND_BATTLE_CORRUPTION",
+  "purpose": "isolate sidecar/CD routing from the custom-gated loader and compact Work RAM hook",
+  "architecture": {
+    "sidecar": false,
+    "cd_wrapper": false,
+    "loader": "0x5230 custom gate",
+    "hook_source": "bank84:$C737",
+    "hook_runtime": "$2B0F..$2B83",
+    "glyph_source": "bank84:$C800",
+    "mpr6_policy": "map $84 only inside custom hook and restore before return"
+  },
+  "loader": {
+    "bytes": 44,
+    "hex": "4808A5F9C9EFD01FA5F838E958C908B016434048A98453407337C70F2B750068534028684C0F2B28684C24F1",
+    "labels": {
+      "fallback": "0x5257"
+    }
+  },
+  "hook": {
+    "bytes": 117,
+    "hex": "480885FC0A0A0A65FC0A85F8A9C885F92868434048A9845340A20620722B207B2B20722B85FC29F0207B2BA5FC290F0A0A0A0A85FD20722B85FC4A4A4A4A05FD207B2BA5FC290F0A0A0A0A207B2BCAD0CAA900A208207B2BCAD0FA685340A900A0FF60B2F8E6F8D002E6F96092FAE6FAD002E6FB60",
+    "labels": {
+      "pair_loop": "0x2B2A",
+      "zero_loop": "0x2B64",
+      "read_src": "0x2B72",
+      "read_done": "0x2B7A",
+      "write_dst": "0x2B7B",
+      "write_done": "0x2B83"
+    }
+  },
+  "map": {
+    "path": "translation/task7_bank84_compacthook_isolation_glyph_map.json",
+    "sha256": "8790A359BC75D7AB473CFDAC7500A6667E4ABD78BE30689DA7C0841189C50443"
+  },
+  "expected_writes": [
+    {
+      "id": "field-getfnt-custom-gate",
+      "iso_offset": "0x8667E",
+      "physical_bin_offset": "0x812A6E",
+      "length": 3,
+      "expected_hex": "2060E0",
+      "replacement_hex": "203052",
+      "reason": "permanent custom-code gate"
+    },
+    {
+      "id": "bank84-custom-loader",
+      "iso_offset": "0x82230",
+      "physical_bin_offset": "0x80E620",
+      "length": 44,
+      "expected_hex": "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "replacement_hex": "4808A5F9C9EFD01FA5F838E958C908B016434048A98453407337C70F2B750068534028684C0F2B28684C24F1",
+      "reason": "copy compact hook only for custom codes"
+    },
+    {
+      "id": "bank84-compact-hook-source",
+      "iso_offset": "0x89737",
+      "physical_bin_offset": "0x815B27",
+      "length": 117,
+      "expected_hex": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF",
+      "replacement_hex": "480885FC0A0A0A65FC0A85F8A9C885F92868434048A9845340A20620722B207B2B20722B85FC29F0207B2BA5FC290F0A0A0A0A85FD20722B85FC4A4A4A4A05FD207B2BA5FC290F0A0A0A0A207B2BCAD0CAA900A208207B2BCAD0FA685340A900A0FF60B2F8E6F8D002E6F96092FAE6FAD002E6FB60",
+      "reason": "non-executed hook source"
+    },
+    {
+      "id": "bank84-local-packed-glyphs",
+      "iso_offset": "0x89800",
+      "physical_bin_offset": "0x815BF0",
+      "length": 144,
+      "expected_hex": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF",
+      "replacement_hex": "0000003F80A03180003F80402003F80000000000002482483C82482483C80080080000000000001001001F80003FC0001001F80000000000003E820820C2082083E80080080000000000003A82283B81283E809009036800000000000020820820820C2083E80080080000000000003EC14C17C14C14C3EC00C00C000000000000188248248248248188008008000000",
+      "reason": "proven local eight-glyph pool"
+    },
+    {
+      "id": "second-dialogue-eight-custom-codes",
+      "iso_offset": "0x10BA04",
+      "physical_bin_offset": "0x897DF4",
+      "length": 16,
+      "expected_hex": "8E789378568F6F9788465532CCAAB2C4",
+      "replacement_hex": "EF58EF59EF5AEF5BEF5CEF5DEF5EEF5F",
+      "reason": "ordered Korean display probe"
+    }
+  ],
+  "diff_audit": {
+    "declared_span_count": 5,
+    "actual_changed_bytes": 321,
+    "actual_changed_ranges": [
+      {
+        "physical_start": "0x80E620",
+        "physical_end_exclusive": "0x80E63E",
+        "changed_bytes": 30
+      },
+      {
+        "physical_start": "0x80E63F",
+        "physical_end_exclusive": "0x80E64C",
+        "changed_bytes": 13
+      },
+      {
+        "physical_start": "0x812A6F",
+        "physical_end_exclusive": "0x812A71",
+        "changed_bytes": 2
+      },
+      {
+        "physical_start": "0x815B27",
+        "physical_end_exclusive": "0x815B88",
+        "changed_bytes": 97
+      },
+      {
+        "physical_start": "0x815B89",
+        "physical_end_exclusive": "0x815B9C",
+        "changed_bytes": 19
+      },
+      {
+        "physical_start": "0x815BF0",
+        "physical_end_exclusive": "0x815C80",
+        "changed_bytes": 144
+      },
+      {
+        "physical_start": "0x897DF4",
+        "physical_end_exclusive": "0x897E04",
+        "changed_bytes": 16
+      }
+    ],
+    "undeclared_changes": 0,
+    "file_size_preserved": true
+  },
+  "output": {
+    "bin": "Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_task7_bank84_compacthook_isolation_poc.bin",
+    "bin_size": 523184384,
+    "bin_sha256": "0B44E7B05165ED3D82FB3CBEA7DEA82B2D668B7A4394D2F83CC3E41627FD7EA4",
+    "cue": "Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_task7_bank84_compacthook_isolation_poc.cue",
+    "cue_sha256": "65B856F0F7FE9E61BD0A02DB1F9456F3967623D8AF1A664E11C571A5FE7698AD"
+  },
+  "runtime": {
+    "status": "PENDING",
+    "pass_criteria": [
+      "Korean second dialogue",
+      "Memo",
+      "battle Attack and field return"
+    ]
+  }
+}

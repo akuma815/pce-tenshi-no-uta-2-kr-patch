@@ -1,0 +1,58 @@
+{
+  "format": "TASK5-DIRECT-BIOS-ENTRY-PROBE",
+  "version": 1,
+  "task": 5,
+  "status": "STATIC_PASS_RUNTIME_PENDING",
+  "hypothesis": "executing the redirected route through module RAM is causal, independent of register state and instruction-count matching",
+  "control_flow": {
+    "original": "JSR E060; E060 JMP F124",
+    "probe": "JSR F124",
+    "difference": "no C737 write or execution; same BIOS implementation and caller return frame, four cycles shorter"
+  },
+  "present_variables": [
+    "live call operand changes from E060 to F124"
+  ],
+  "absent_variables": [
+    "C737 occupancy",
+    "C737 execution",
+    "RAM trampoline",
+    "custom text",
+    "glyph page",
+    "custom branch"
+  ],
+  "runtime_decision": {
+    "memo_responsive": "module-RAM trampoline execution/location is causal; direct BIOS entry is safe",
+    "memo_hangs": "C737 is exonerated; changing the live call operand or any GETFNT call timing difference is sufficient"
+  },
+  "expected_writes": [
+    {
+      "id": "direct-bios-getfnt-entry",
+      "iso_offset": "0x8667E",
+      "physical_bin_offset": "0x812A6E",
+      "length": 3,
+      "expected_hex": "2060E0",
+      "replacement_hex": "2024F1",
+      "reason": "remove the C737 route while retaining a changed call target and the same F124 implementation"
+    }
+  ],
+  "diff_audit": {
+    "declared_span_count": 1,
+    "actual_changed_bytes": 2,
+    "actual_changed_ranges": [
+      {
+        "physical_start": "0x812A6F",
+        "physical_end_exclusive": "0x812A71",
+        "changed_bytes": 2
+      }
+    ],
+    "undeclared_changes": 0,
+    "file_size_preserved": true
+  },
+  "output": {
+    "bin": "Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_task5_direct_bios_entry_probe.bin",
+    "bin_size": 523184384,
+    "bin_sha256": "F05EB616136FA1A4D910BD2BD504B30ABAEBD035448BD932594A80E4A60B6155",
+    "cue": "Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_task5_direct_bios_entry_probe.cue",
+    "cue_sha256": "AC75ED530027C7628808A9D881B80C235DC47665971F8A45E8C8711C1E019A3D"
+  }
+}

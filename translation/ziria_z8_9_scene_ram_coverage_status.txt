@@ -1,0 +1,13 @@
+status=running
+frame=2145
+field_active=true
+field_generations=1
+read_events=7791
+write_events=0
+cd_records=0
+cold_bytes=194860
+scene_bytes=196608
+longest_cold_run=65536
+active_lba=482
+active_count=96
+scene_identity_source=manual_field_visible_assumption

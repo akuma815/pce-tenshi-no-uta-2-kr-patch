@@ -1,0 +1,74 @@
+{
+  "format": "TASK7-WORK-RAM-CANDIDATE-AUDIT",
+  "version": 1,
+  "task": 7,
+  "status": "POST_LOAD_NEUTRAL_POC_ELIGIBLE",
+  "candidate": {
+    "physical_bank": "F8",
+    "logical_start": "2AFF",
+    "logical_end": "2C8E",
+    "length": 400,
+    "post_load_observed_reads": 0,
+    "post_load_observed_writes": 0
+  },
+  "evidence": {
+    "lifetime_verdict": "translation/task7_work_ram_lifetime_verdict.json",
+    "lifetime_verdict_sha256": "1E9F32AA8DFBADFA6CF265E279AFC3DC8851A2D61AAB030D490BDE09533B62C7",
+    "window_frames": 3122,
+    "overlay_cd_read_events": 2,
+    "mpr1_values_at_cd_boundaries": [
+      "F8"
+    ],
+    "earlier_global_trace": "translation/work_ram_writes_fast.tsv",
+    "earlier_candidate_bytes_written": 379,
+    "earlier_candidate_bytes_not_written": 21,
+    "earlier_first_write_frames": [
+      121,
+      135,
+      502
+    ]
+  },
+  "known_range_collision_audit": [
+    {
+      "name": "direct_page",
+      "start": 8192,
+      "end": 8447,
+      "overlap": false
+    },
+    {
+      "name": "cpu_stack",
+      "start": 8448,
+      "end": 8703,
+      "overlap": false
+    },
+    {
+      "name": "bios_shared_variables",
+      "start": 8704,
+      "end": 8959,
+      "overlap": false
+    },
+    {
+      "name": "former_workram_hook_experiment",
+      "start": 15360,
+      "end": 15615,
+      "overlap": false
+    }
+  ],
+  "checks": {
+    "lifetime_trace_status_is_candidate": true,
+    "route_includes_overlay_reads": true,
+    "route_is_long_enough": true,
+    "candidate_does_not_overlap_known_reserved_ranges": true,
+    "candidate_fits_neutral_trampoline": true,
+    "candidate_fits_previous_packed18_hook": true,
+    "mpr1_observed_as_f8_at_all_cd_boundaries": true,
+    "candidate_was_touched_before_scene_window": true
+  },
+  "allocation_rule": "The candidate must be initialized only after the target scene load completes. It is not free or resident at boot.",
+  "approval_boundary": "Eligibility permits only a neutral JMP F124 trampoline PoC. Production hook or glyph storage remains prohibited until the full boot/dialogue/Memo/battle-Attack/field-return regression passes.",
+  "limitations": [
+    "Evidence covers one representative route, not the whole game.",
+    "The 400-byte span is sufficient for the 128-byte hook but not for the largest sidecar glyph shard.",
+    "Runtime no-access evidence is stronger than static byte-pattern scans, but cannot prove unplayed paths."
+  ]
+}

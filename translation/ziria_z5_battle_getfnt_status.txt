@@ -1,0 +1,9 @@
+status=closed
+frame=6283
+records=364
+pc=53AF
+mpr2=80
+mpr3=81
+mpr4=82
+mpr5=83
+mpr6=84

@@ -1,0 +1,1374 @@
+{
+ "assumptions": {
+  "glyph_bytes_per_char": 8,
+  "glyph_note": "모듈 내 family 합산(공유 core 중복 포함, 보수적 상한)",
+  "index_bytes_per_row": 10,
+  "usable_ratio_calibration": "slot02(482) 실측 26,809/36,864"
+ },
+ "disc_mutated": false,
+ "format": "ZIRIA-Z8-11-WHOLE-SURFACE-AUDIT",
+ "hazard_slots": [
+  4,
+  10,
+  27,
+  30,
+  32,
+  34,
+  35,
+  39
+ ],
+ "nonscene_record_regions": {
+  "battle": {
+   "battle": 28,
+   "menu_data": 1
+  },
+  "boot": {
+   "boot": 18
+  },
+  "card": {
+   "card": 52
+  },
+  "late": {
+   "late_event": 12
+  },
+  "slot00": {
+   "dialogue": 15,
+   "slot_graphics_window": 3
+  },
+  "slot01": {
+   "command": 20,
+   "dialogue": 49,
+   "event": 30,
+   "menu_data": 201
+  },
+  "slot05": {
+   "dialogue": 6
+  },
+  "slot10": {
+   "dialogue": 1
+  },
+  "slot15": {
+   "dialogue": 134,
+   "event": 7,
+   "menu_data": 88
+  },
+  "slot20": {
+   "dialogue": 4
+  },
+  "slot21": {
+   "dialogue": 12
+  },
+  "slot25": {
+   "dialogue": 4
+  },
+  "slot26": {
+   "dialogue": 2
+  },
+  "slot28": {
+   "dialogue": 8
+  },
+  "slot30": {
+   "dialogue": 27
+  },
+  "slot41": {
+   "dialogue": 6
+  },
+  "slot45": {
+   "dialogue": 3
+  },
+  "slot46": {
+   "dialogue": 2
+  },
+  "slot47": {
+   "dialogue": 107,
+   "event": 91
+  },
+  "slot48": {
+   "dialogue": 3
+  },
+  "slot51": {
+   "dialogue": 153,
+   "event": 91
+  },
+  "slot52": {
+   "dialogue": 1
+  },
+  "system": {
+   "command": 35,
+   "dialogue": 3,
+   "menu_data": 212,
+   "system": 82
+  },
+  "table": {
+   "data_table": 2
+  },
+  "visual_event": {
+   "command": 1,
+   "dialogue": 196,
+   "menu_data": 14,
+   "visual_event": 253,
+   "visual_scene": 16
+  }
+ },
+ "nonscene_surfaces": [
+  {
+   "families": [
+    "battle",
+    "menu_memo_system"
+   ],
+   "fixed_fit_rows": 28,
+   "glyph_count": 10,
+   "original_bytes": 363,
+   "relocation_rows": 1,
+   "rows": 29,
+   "storage_module": "shared.battle",
+   "strategy": "needs_relocation_audit",
+   "translated_bytes": 365
+  },
+  {
+   "families": [
+    "boot_opening"
+   ],
+   "fixed_fit_rows": 18,
+   "glyph_count": 8,
+   "original_bytes": 165,
+   "relocation_rows": 0,
+   "rows": 18,
+   "storage_module": "shared.boot",
+   "strategy": "in_place_fixed",
+   "translated_bytes": 130
+  },
+  {
+   "families": [
+    "card"
+   ],
+   "fixed_fit_rows": 52,
+   "glyph_count": 130,
+   "original_bytes": 1090,
+   "relocation_rows": 0,
+   "rows": 52,
+   "storage_module": "shared.card",
+   "strategy": "in_place_fixed",
+   "translated_bytes": 895
+  },
+  {
+   "families": [
+    "dialogue_event"
+   ],
+   "fixed_fit_rows": 12,
+   "glyph_count": 0,
+   "original_bytes": 144,
+   "relocation_rows": 0,
+   "rows": 12,
+   "storage_module": "shared.late",
+   "strategy": "in_place_fixed",
+   "translated_bytes": 144
+  },
+  {
+   "families": [
+    "menu_memo_system"
+   ],
+   "fixed_fit_rows": 1,
+   "glyph_count": 0,
+   "original_bytes": 22,
+   "relocation_rows": 0,
+   "rows": 1,
+   "storage_module": "shared.misc",
+   "strategy": "in_place_fixed",
+   "translated_bytes": 22
+  },
+  {
+   "families": [
+    "dialogue_event",
+    "menu_memo_system"
+   ],
+   "fixed_fit_rows": 163,
+   "glyph_count": 372,
+   "original_bytes": 3428,
+   "relocation_rows": 169,
+   "rows": 332,
+   "storage_module": "shared.system",
+   "strategy": "needs_relocation_audit",
+   "translated_bytes": 3671
+  },
+  {
+   "families": [
+    "menu_memo_system"
+   ],
+   "fixed_fit_rows": 2,
+   "glyph_count": 0,
+   "original_bytes": 30,
+   "relocation_rows": 0,
+   "rows": 2,
+   "storage_module": "shared.table",
+   "strategy": "in_place_fixed",
+   "translated_bytes": 30
+  },
+  {
+   "families": [
+    "dialogue_event",
+    "menu_memo_system",
+    "visual_event_portrait"
+   ],
+   "fixed_fit_rows": 479,
+   "glyph_count": 288,
+   "original_bytes": 7827,
+   "relocation_rows": 1,
+   "rows": 480,
+   "storage_module": "shared.visual_event",
+   "strategy": "needs_relocation_audit",
+   "translated_bytes": 6973
+  }
+ ],
+ "records_outside_exclusive_window_total": 5938,
+ "slot_matrix": [
+  {
+   "exclusive_bytes": 131072,
+   "glyph_bytes": 56,
+   "lba": 290,
+   "need_bytes": 488,
+   "note": "",
+   "reclaim_lower_bytes": 9995,
+   "records_in_window": 189,
+   "records_outside_window": 0,
+   "rows": 18,
+   "sectors": 96,
+   "slot": 0,
+   "translated_bytes": 188,
+   "verdict": "FIT_RECLAIM",
+   "window_segments": [
+    [
+     290,
+     354
+    ]
+   ]
+  },
+  {
+   "exclusive_bytes": 43008,
+   "glyph_bytes": 6464,
+   "lba": 386,
+   "need_bytes": 25226,
+   "note": "160 records outside exclusive window",
+   "reclaim_lower_bytes": 497,
+   "records_in_window": 15,
+   "records_outside_window": 160,
+   "rows": 489,
+   "sectors": 96,
+   "slot": 1,
+   "translated_bytes": 13808,
+   "verdict": "FIT_WINDOW",
+   "window_segments": [
+    [
+     429,
+     450
+    ]
+   ]
+  },
+  {
+   "exclusive_bytes": 36864,
+   "glyph_bytes": 4752,
+   "lba": 482,
+   "need_bytes": 15616,
+   "note": "163 records outside exclusive window",
+   "reclaim_lower_bytes": 7398,
+   "records_in_window": 174,
+   "records_outside_window": 163,
+   "rows": 175,
+   "sectors": 96,
+   "slot": 2,
+   "translated_bytes": 9050,
+   "verdict": "FIT_WINDOW",
+   "window_segments": [
+    [
+     528,
+     546
+    ]
+   ]
+  },
+  {
+   "exclusive_bytes": 22528,
+   "glyph_bytes": 4392,
+   "lba": 2786,
+   "need_bytes": 16195,
+   "note": "178 records outside exclusive window",
+   "reclaim_lower_bytes": 1342,
+   "records_in_window": 30,
+   "records_outside_window": 178,
+   "rows": 270,
+   "sectors": 69,
+   "slot": 3,
+   "translated_bytes": 9039,
+   "verdict": "FIT_WINDOW",
+   "window_segments": [
+    [
+     2839,
+     2850
+    ]
+   ]
+  },
+  {
+   "exclusive_bytes": 24576,
+   "glyph_bytes": 5552,
+   "lba": 578,
+   "need_bytes": 34420,
+   "note": "181 records outside exclusive window",
+   "reclaim_lower_bytes": 6755,
+   "records_in_window": 129,
+   "records_outside_window": 181,
+   "rows": 377,
+   "sectors": 78,
+   "slot": 4,
+   "translated_bytes": 25034,
+   "verdict": "OVER",
+   "window_segments": [
+    [
+     630,
+     642
+    ]
+   ]
+  },
+  {
+   "exclusive_bytes": 51200,
+   "glyph_bytes": 4632,
+   "lba": 674,
+   "need_bytes": 19566,
+   "note": "160 records outside exclusive window",
+   "reclaim_lower_bytes": 10465,
+   "records_in_window": 175,
+   "records_outside_window": 160,
+   "rows": 274,
+   "sectors": 96,
+   "slot": 5,
+   "translated_bytes": 12130,
+   "verdict": "FIT_WINDOW",
+   "window_segments": [
+    [
+     713,
+     738
+    ]
+   ]
+  },
+  {
+   "exclusive_bytes": 45056,
+   "glyph_bytes": 5536,
+   "lba": 770,
+   "need_bytes": 23122,
+   "note": "208 records outside exclusive window",
+   "reclaim_lower_bytes": 5509,
+   "records_in_window": 123,
+   "records_outside_window": 208,
+   "rows": 283,
+   "sectors": 96,
+   "slot": 6,
+   "translated_bytes": 14692,
+   "verdict": "FIT_WINDOW",
+   "window_segments": [
+    [
+     812,
+     834
+    ]
+   ]
+  },
+  {
+   "exclusive_bytes": 49152,
+   "glyph_bytes": 5560,
+   "lba": 866,
+   "need_bytes": 28371,
+   "note": "162 records outside exclusive window",
+   "reclaim_lower_bytes": 7115,
+   "records_in_window": 122,
+   "records_outside_window": 162,
+   "rows": 332,
+   "sectors": 96,
+   "slot": 7,
+   "translated_bytes": 19427,
+   "verdict": "FIT_WINDOW",
+   "window_segments": [
+    [
+     906,
+     930
+    ]
+   ]
+  },
+  {
+   "exclusive_bytes": 26624,
+   "glyph_bytes": 5744,
+   "lba": 962,
+   "need_bytes": 25017,
+   "note": "181 records outside exclusive window",
+   "reclaim_lower_bytes": 7152,
+   "records_in_window": 114,
+   "records_outside_window": 181,
+   "rows": 277,
+   "sectors": 96,
+   "slot": 8,
+   "translated_bytes": 16439,
+   "verdict": "TIGHT",
+   "window_segments": [
+    [
+     1013,
+     1026
+    ]
+   ]
+  },
+  {
+   "exclusive_bytes": 40960,
+   "glyph_bytes": 5720,
+   "lba": 1058,
+   "need_bytes": 37873,
+   "note": "160 records outside exclusive window",
+   "reclaim_lower_bytes": 10248,
+   "records_in_window": 142,
+   "records_outside_window": 160,
+   "rows": 387,
+   "sectors": 83,
+   "slot": 9,
+   "translated_bytes": 28219,
+   "verdict": "TIGHT",
+   "window_segments": [
+    [
+     1102,
+     1122
+    ]
+   ]
+  },
+  {
+   "exclusive_bytes": 8192,
+   "glyph_bytes": 4208,
+   "lba": 1154,
+   "need_bytes": 14308,
+   "note": "280 records outside exclusive window",
+   "reclaim_lower_bytes": 663,
+   "records_in_window": 7,
+   "records_outside_window": 280,
+   "rows": 221,
+   "sectors": 96,
+   "slot": 10,
+   "translated_bytes": 7826,
+   "verdict": "OVER",
+   "window_segments": [
+    [
+     1214,
+     1218
+    ]
+   ]
+  },
+  {
+   "exclusive_bytes": 36864,
+   "glyph_bytes": 5456,
+   "lba": 1250,
+   "need_bytes": 21935,
+   "note": "179 records outside exclusive window",
+   "reclaim_lower_bytes": 4409,
+   "records_in_window": 111,
+   "records_outside_window": 179,
+   "rows": 278,
+   "sectors": 96,
+   "slot": 11,
+   "translated_bytes": 13635,
+   "verdict": "FIT_WINDOW",
+   "window_segments": [
+    [
+     1296,
+     1314
+    ]
+   ]
+  },
+  {
+   "exclusive_bytes": 47104,
+   "glyph_bytes": 5512,
+   "lba": 1346,
+   "need_bytes": 25657,
+   "note": "160 records outside exclusive window",
+   "reclaim_lower_bytes": 6448,
+   "records_in_window": 119,
+   "records_outside_window": 160,
+   "rows": 291,
+   "sectors": 96,
+   "slot": 12,
+   "translated_bytes": 17171,
+   "verdict": "FIT_WINDOW",
+   "window_segments": [
+    [
+     1387,
+     1410
+    ]
+   ]
+  },
+  {
+   "exclusive_bytes": 47104,
+   "glyph_bytes": 5592,
+   "lba": 1442,
+   "need_bytes": 30585,
+   "note": "160 records outside exclusive window",
+   "reclaim_lower_bytes": 11904,
+   "records_in_window": 209,
+   "records_outside_window": 160,
+   "rows": 369,
+   "sectors": 96,
+   "slot": 13,
+   "translated_bytes": 21239,
+   "verdict": "FIT_WINDOW",
+   "window_segments": [
+    [
+     1483,
+     1506
+    ]
+   ]
+  },
+  {
+   "exclusive_bytes": 47104,
+   "glyph_bytes": 5240,
+   "lba": 1538,
+   "need_bytes": 33350,
+   "note": "160 records outside exclusive window",
+   "reclaim_lower_bytes": 7179,
+   "records_in_window": 159,
+   "records_outside_window": 160,
+   "rows": 386,
+   "sectors": 73,
+   "slot": 14,
+   "translated_bytes": 24186,
+   "verdict": "FIT_WINDOW",
+   "window_segments": [
+    [
+     1579,
+     1602
+    ]
+   ]
+  },
+  {
+   "exclusive_bytes": 67584,
+   "glyph_bytes": 5656,
+   "lba": 1634,
+   "need_bytes": 30460,
+   "note": "234 records outside exclusive window",
+   "reclaim_lower_bytes": 8522,
+   "records_in_window": 94,
+   "records_outside_window": 234,
+   "rows": 490,
+   "sectors": 96,
+   "slot": 15,
+   "translated_bytes": 19840,
+   "verdict": "FIT_WINDOW",
+   "window_segments": [
+    [
+     1697,
+     1730
+    ]
+   ]
+  },
+  {
+   "exclusive_bytes": 188416,
+   "glyph_bytes": 9544,
+   "lba": 1730,
+   "need_bytes": 56650,
+   "note": "",
+   "reclaim_lower_bytes": 14855,
+   "records_in_window": 311,
+   "records_outside_window": 0,
+   "rows": 700,
+   "sectors": 92,
+   "slot": 16,
+   "translated_bytes": 40042,
+   "verdict": "FIT_WINDOW",
+   "window_segments": [
+    [
+     1730,
+     1822
+    ]
+   ]
+  },
+  {
+   "exclusive_bytes": 196608,
+   "glyph_bytes": 4664,
+   "lba": 1826,
+   "need_bytes": 19444,
+   "note": "",
+   "reclaim_lower_bytes": 18163,
+   "records_in_window": 331,
+   "records_outside_window": 0,
+   "rows": 264,
+   "sectors": 96,
+   "slot": 17,
+   "translated_bytes": 12076,
+   "verdict": "FIT_WINDOW",
+   "window_segments": [
+    [
+     1826,
+     1922
+    ]
+   ]
+  },
+  {
+   "exclusive_bytes": 196608,
+   "glyph_bytes": 5232,
+   "lba": 1922,
+   "need_bytes": 21270,
+   "note": "",
+   "reclaim_lower_bytes": 13282,
+   "records_in_window": 283,
+   "records_outside_window": 0,
+   "rows": 253,
+   "sectors": 96,
+   "slot": 18,
+   "translated_bytes": 13444,
+   "verdict": "FIT_WINDOW",
+   "window_segments": [
+    [
+     1922,
+     2018
+    ]
+   ]
+  },
+  {
+   "exclusive_bytes": 167936,
+   "glyph_bytes": 5432,
+   "lba": 2018,
+   "need_bytes": 38936,
+   "note": "",
+   "reclaim_lower_bytes": 18190,
+   "records_in_window": 330,
+   "records_outside_window": 0,
+   "rows": 427,
+   "sectors": 82,
+   "slot": 19,
+   "translated_bytes": 29170,
+   "verdict": "FIT_WINDOW",
+   "window_segments": [
+    [
+     2018,
+     2100
+    ]
+   ]
+  },
+  {
+   "exclusive_bytes": 153600,
+   "glyph_bytes": 5360,
+   "lba": 2114,
+   "need_bytes": 20477,
+   "note": "",
+   "reclaim_lower_bytes": 11778,
+   "records_in_window": 243,
+   "records_outside_window": 0,
+   "rows": 247,
+   "sectors": 75,
+   "slot": 20,
+   "translated_bytes": 12583,
+   "verdict": "FIT_WINDOW",
+   "window_segments": [
+    [
+     2114,
+     2189
+    ]
+   ]
+  },
+  {
+   "exclusive_bytes": 155648,
+   "glyph_bytes": 5288,
+   "lba": 2210,
+   "need_bytes": 24938,
+   "note": "",
+   "reclaim_lower_bytes": 14969,
+   "records_in_window": 287,
+   "records_outside_window": 0,
+   "rows": 299,
+   "sectors": 76,
+   "slot": 21,
+   "translated_bytes": 16596,
+   "verdict": "FIT_WINDOW",
+   "window_segments": [
+    [
+     2210,
+     2286
+    ]
+   ]
+  },
+  {
+   "exclusive_bytes": 196608,
+   "glyph_bytes": 4712,
+   "lba": 2306,
+   "need_bytes": 14703,
+   "note": "",
+   "reclaim_lower_bytes": 14434,
+   "records_in_window": 243,
+   "records_outside_window": 0,
+   "rows": 176,
+   "sectors": 96,
+   "slot": 22,
+   "translated_bytes": 8167,
+   "verdict": "FIT_WINDOW",
+   "window_segments": [
+    [
+     2306,
+     2402
+    ]
+   ]
+  },
+  {
+   "exclusive_bytes": 196608,
+   "glyph_bytes": 4976,
+   "lba": 2402,
+   "need_bytes": 23141,
+   "note": "",
+   "reclaim_lower_bytes": 13815,
+   "records_in_window": 313,
+   "records_outside_window": 0,
+   "rows": 313,
+   "sectors": 96,
+   "slot": 23,
+   "translated_bytes": 14971,
+   "verdict": "FIT_WINDOW",
+   "window_segments": [
+    [
+     2402,
+     2498
+    ]
+   ]
+  },
+  {
+   "exclusive_bytes": 145408,
+   "glyph_bytes": 5488,
+   "lba": 2498,
+   "need_bytes": 31136,
+   "note": "",
+   "reclaim_lower_bytes": 13717,
+   "records_in_window": 246,
+   "records_outside_window": 0,
+   "rows": 313,
+   "sectors": 71,
+   "slot": 24,
+   "translated_bytes": 22454,
+   "verdict": "FIT_WINDOW",
+   "window_segments": [
+    [
+     2498,
+     2569
+    ]
+   ]
+  },
+  {
+   "exclusive_bytes": 131072,
+   "glyph_bytes": 5136,
+   "lba": 2594,
+   "need_bytes": 19238,
+   "note": "",
+   "reclaim_lower_bytes": 11120,
+   "records_in_window": 224,
+   "records_outside_window": 0,
+   "rows": 228,
+   "sectors": 71,
+   "slot": 25,
+   "translated_bytes": 11758,
+   "verdict": "FIT_WINDOW",
+   "window_segments": [
+    [
+     2594,
+     2658
+    ]
+   ]
+  },
+  {
+   "exclusive_bytes": 55296,
+   "glyph_bytes": 4008,
+   "lba": 2690,
+   "need_bytes": 14128,
+   "note": "67 records outside exclusive window",
+   "reclaim_lower_bytes": 7093,
+   "records_in_window": 187,
+   "records_outside_window": 67,
+   "rows": 189,
+   "sectors": 96,
+   "slot": 26,
+   "translated_bytes": 8166,
+   "verdict": "FIT_WINDOW",
+   "window_segments": [
+    [
+     2727,
+     2754
+    ]
+   ]
+  },
+  {
+   "exclusive_bytes": 4096,
+   "glyph_bytes": 4736,
+   "lba": 2882,
+   "need_bytes": 26044,
+   "note": "333 records outside exclusive window",
+   "reclaim_lower_bytes": 3779,
+   "records_in_window": 30,
+   "records_outside_window": 333,
+   "rows": 275,
+   "sectors": 96,
+   "slot": 27,
+   "translated_bytes": 18494,
+   "verdict": "OVER",
+   "window_segments": [
+    [
+     2944,
+     2946
+    ]
+   ]
+  },
+  {
+   "exclusive_bytes": 30720,
+   "glyph_bytes": 4112,
+   "lba": 2978,
+   "need_bytes": 26861,
+   "note": "185 records outside exclusive window",
+   "reclaim_lower_bytes": 13643,
+   "records_in_window": 153,
+   "records_outside_window": 185,
+   "rows": 370,
+   "sectors": 94,
+   "slot": 28,
+   "translated_bytes": 18985,
+   "verdict": "TIGHT",
+   "window_segments": [
+    [
+     3027,
+     3042
+    ]
+   ]
+  },
+  {
+   "exclusive_bytes": 26624,
+   "glyph_bytes": 3896,
+   "lba": 3074,
+   "need_bytes": 23326,
+   "note": "210 records outside exclusive window",
+   "reclaim_lower_bytes": 3579,
+   "records_in_window": 82,
+   "records_outside_window": 210,
+   "rows": 339,
+   "sectors": 96,
+   "slot": 29,
+   "translated_bytes": 15976,
+   "verdict": "TIGHT",
+   "window_segments": [
+    [
+     3125,
+     3138
+    ]
+   ]
+  },
+  {
+   "exclusive_bytes": 12288,
+   "glyph_bytes": 4072,
+   "lba": 3170,
+   "need_bytes": 15500,
+   "note": "193 records outside exclusive window",
+   "reclaim_lower_bytes": 1326,
+   "records_in_window": 42,
+   "records_outside_window": 193,
+   "rows": 210,
+   "sectors": 96,
+   "slot": 30,
+   "translated_bytes": 9264,
+   "verdict": "OVER",
+   "window_segments": [
+    [
+     3228,
+     3234
+    ]
+   ]
+  },
+  {
+   "exclusive_bytes": 43008,
+   "glyph_bytes": 4696,
+   "lba": 3266,
+   "need_bytes": 25141,
+   "note": "107 records outside exclusive window",
+   "reclaim_lower_bytes": 16561,
+   "records_in_window": 267,
+   "records_outside_window": 107,
+   "rows": 277,
+   "sectors": 96,
+   "slot": 31,
+   "translated_bytes": 17611,
+   "verdict": "FIT_WINDOW",
+   "window_segments": [
+    [
+     3309,
+     3330
+    ]
+   ]
+  },
+  {
+   "exclusive_bytes": 26624,
+   "glyph_bytes": 4232,
+   "lba": 3362,
+   "need_bytes": 34888,
+   "note": "337 records outside exclusive window",
+   "reclaim_lower_bytes": 7521,
+   "records_in_window": 125,
+   "records_outside_window": 337,
+   "rows": 441,
+   "sectors": 96,
+   "slot": 32,
+   "translated_bytes": 26182,
+   "verdict": "OVER",
+   "window_segments": [
+    [
+     3413,
+     3426
+    ]
+   ]
+  },
+  {
+   "exclusive_bytes": 24576,
+   "glyph_bytes": 3176,
+   "lba": 3458,
+   "need_bytes": 18438,
+   "note": "189 records outside exclusive window",
+   "reclaim_lower_bytes": 13425,
+   "records_in_window": 157,
+   "records_outside_window": 189,
+   "rows": 340,
+   "sectors": 96,
+   "slot": 33,
+   "translated_bytes": 11798,
+   "verdict": "TIGHT",
+   "window_segments": [
+    [
+     3510,
+     3522
+    ]
+   ]
+  },
+  {
+   "exclusive_bytes": 24576,
+   "glyph_bytes": 3872,
+   "lba": 3554,
+   "need_bytes": 39174,
+   "note": "285 records outside exclusive window",
+   "reclaim_lower_bytes": 1338,
+   "records_in_window": 68,
+   "records_outside_window": 285,
+   "rows": 468,
+   "sectors": 84,
+   "slot": 34,
+   "translated_bytes": 30558,
+   "verdict": "OVER",
+   "window_segments": [
+    [
+     3606,
+     3618
+    ]
+   ]
+  },
+  {
+   "exclusive_bytes": 12288,
+   "glyph_bytes": 3880,
+   "lba": 3650,
+   "need_bytes": 19317,
+   "note": "210 records outside exclusive window",
+   "reclaim_lower_bytes": 1747,
+   "records_in_window": 91,
+   "records_outside_window": 210,
+   "rows": 353,
+   "sectors": 84,
+   "slot": 35,
+   "translated_bytes": 11843,
+   "verdict": "OVER",
+   "window_segments": [
+    [
+     3708,
+     3714
+    ]
+   ]
+  },
+  {
+   "exclusive_bytes": 36864,
+   "glyph_bytes": 4864,
+   "lba": 3746,
+   "need_bytes": 19696,
+   "note": "142 records outside exclusive window",
+   "reclaim_lower_bytes": 17836,
+   "records_in_window": 260,
+   "records_outside_window": 142,
+   "rows": 301,
+   "sectors": 96,
+   "slot": 36,
+   "translated_bytes": 11758,
+   "verdict": "FIT_WINDOW",
+   "window_segments": [
+    [
+     3792,
+     3810
+    ]
+   ]
+  },
+  {
+   "exclusive_bytes": 38912,
+   "glyph_bytes": 4136,
+   "lba": 3842,
+   "need_bytes": 28939,
+   "note": "194 records outside exclusive window",
+   "reclaim_lower_bytes": 4906,
+   "records_in_window": 191,
+   "records_outside_window": 194,
+   "rows": 402,
+   "sectors": 96,
+   "slot": 37,
+   "translated_bytes": 20719,
+   "verdict": "TIGHT",
+   "window_segments": [
+    [
+     3887,
+     3906
+    ]
+   ]
+  },
+  {
+   "exclusive_bytes": 43008,
+   "glyph_bytes": 2832,
+   "lba": 3938,
+   "need_bytes": 12615,
+   "note": "174 records outside exclusive window",
+   "reclaim_lower_bytes": 3300,
+   "records_in_window": 167,
+   "records_outside_window": 174,
+   "rows": 284,
+   "sectors": 96,
+   "slot": 38,
+   "translated_bytes": 6879,
+   "verdict": "FIT_WINDOW",
+   "window_segments": [
+    [
+     3981,
+     4002
+    ]
+   ]
+  },
+  {
+   "exclusive_bytes": 2048,
+   "glyph_bytes": 3864,
+   "lba": 4034,
+   "need_bytes": 24665,
+   "note": "364 records outside exclusive window",
+   "reclaim_lower_bytes": 0,
+   "records_in_window": 0,
+   "records_outside_window": 364,
+   "rows": 375,
+   "sectors": 75,
+   "slot": 39,
+   "translated_bytes": 16987,
+   "verdict": "NO_WINDOW",
+   "window_segments": [
+    [
+     4097,
+     4098
+    ]
+   ]
+  },
+  {
+   "exclusive_bytes": 77824,
+   "glyph_bytes": 3928,
+   "lba": 4130,
+   "need_bytes": 30148,
+   "note": "222 records outside exclusive window",
+   "reclaim_lower_bytes": 5500,
+   "records_in_window": 97,
+   "records_outside_window": 222,
+   "rows": 431,
+   "sectors": 96,
+   "slot": 40,
+   "translated_bytes": 21846,
+   "verdict": "FIT_WINDOW",
+   "window_segments": [
+    [
+     4188,
+     4226
+    ]
+   ]
+  },
+  {
+   "exclusive_bytes": 196608,
+   "glyph_bytes": 5032,
+   "lba": 4226,
+   "need_bytes": 26758,
+   "note": "",
+   "reclaim_lower_bytes": 17218,
+   "records_in_window": 369,
+   "records_outside_window": 0,
+   "rows": 325,
+   "sectors": 96,
+   "slot": 41,
+   "translated_bytes": 18412,
+   "verdict": "FIT_WINDOW",
+   "window_segments": [
+    [
+     4226,
+     4322
+    ]
+   ]
+  },
+  {
+   "exclusive_bytes": 196608,
+   "glyph_bytes": 4176,
+   "lba": 4322,
+   "need_bytes": 26480,
+   "note": "",
+   "reclaim_lower_bytes": 14948,
+   "records_in_window": 324,
+   "records_outside_window": 0,
+   "rows": 369,
+   "sectors": 96,
+   "slot": 42,
+   "translated_bytes": 18550,
+   "verdict": "FIT_WINDOW",
+   "window_segments": [
+    [
+     4322,
+     4418
+    ]
+   ]
+  },
+  {
+   "exclusive_bytes": 163840,
+   "glyph_bytes": 3880,
+   "lba": 4418,
+   "need_bytes": 23081,
+   "note": "",
+   "reclaim_lower_bytes": 14590,
+   "records_in_window": 330,
+   "records_outside_window": 0,
+   "rows": 324,
+   "sectors": 80,
+   "slot": 43,
+   "translated_bytes": 15897,
+   "verdict": "FIT_WINDOW",
+   "window_segments": [
+    [
+     4418,
+     4498
+    ]
+   ]
+  },
+  {
+   "exclusive_bytes": 167936,
+   "glyph_bytes": 3856,
+   "lba": 4514,
+   "need_bytes": 22719,
+   "note": "",
+   "reclaim_lower_bytes": 14053,
+   "records_in_window": 233,
+   "records_outside_window": 0,
+   "rows": 330,
+   "sectors": 82,
+   "slot": 44,
+   "translated_bytes": 15499,
+   "verdict": "FIT_WINDOW",
+   "window_segments": [
+    [
+     4514,
+     4596
+    ]
+   ]
+  },
+  {
+   "exclusive_bytes": 165888,
+   "glyph_bytes": 4776,
+   "lba": 4610,
+   "need_bytes": 22025,
+   "note": "",
+   "reclaim_lower_bytes": 14784,
+   "records_in_window": 316,
+   "records_outside_window": 0,
+   "rows": 236,
+   "sectors": 81,
+   "slot": 45,
+   "translated_bytes": 14825,
+   "verdict": "FIT_WINDOW",
+   "window_segments": [
+    [
+     4610,
+     4691
+    ]
+   ]
+  },
+  {
+   "exclusive_bytes": 165888,
+   "glyph_bytes": 3856,
+   "lba": 4706,
+   "need_bytes": 22777,
+   "note": "",
+   "reclaim_lower_bytes": 17324,
+   "records_in_window": 356,
+   "records_outside_window": 0,
+   "rows": 318,
+   "sectors": 81,
+   "slot": 46,
+   "translated_bytes": 15677,
+   "verdict": "FIT_WINDOW",
+   "window_segments": [
+    [
+     4706,
+     4787
+    ]
+   ]
+  },
+  {
+   "exclusive_bytes": 184320,
+   "glyph_bytes": 4320,
+   "lba": 4802,
+   "need_bytes": 31914,
+   "note": "",
+   "reclaim_lower_bytes": 15017,
+   "records_in_window": 336,
+   "records_outside_window": 0,
+   "rows": 551,
+   "sectors": 90,
+   "slot": 47,
+   "translated_bytes": 22020,
+   "verdict": "FIT_WINDOW",
+   "window_segments": [
+    [
+     4802,
+     4892
+    ]
+   ]
+  },
+  {
+   "exclusive_bytes": 155648,
+   "glyph_bytes": 3912,
+   "lba": 4898,
+   "need_bytes": 23333,
+   "note": "",
+   "reclaim_lower_bytes": 15968,
+   "records_in_window": 340,
+   "records_outside_window": 0,
+   "rows": 342,
+   "sectors": 76,
+   "slot": 48,
+   "translated_bytes": 15937,
+   "verdict": "FIT_WINDOW",
+   "window_segments": [
+    [
+     4898,
+     4974
+    ]
+   ]
+  },
+  {
+   "exclusive_bytes": 155648,
+   "glyph_bytes": 4064,
+   "lba": 4994,
+   "need_bytes": 24483,
+   "note": "",
+   "reclaim_lower_bytes": 15848,
+   "records_in_window": 257,
+   "records_outside_window": 0,
+   "rows": 340,
+   "sectors": 76,
+   "slot": 49,
+   "translated_bytes": 16955,
+   "verdict": "FIT_WINDOW",
+   "window_segments": [
+    [
+     4994,
+     5070
+    ]
+   ]
+  },
+  {
+   "exclusive_bytes": 172032,
+   "glyph_bytes": 5056,
+   "lba": 5090,
+   "need_bytes": 24403,
+   "note": "",
+   "reclaim_lower_bytes": 16568,
+   "records_in_window": 350,
+   "records_outside_window": 0,
+   "rows": 253,
+   "sectors": 84,
+   "slot": 50,
+   "translated_bytes": 16753,
+   "verdict": "FIT_WINDOW",
+   "window_segments": [
+    [
+     5090,
+     5174
+    ]
+   ]
+  },
+  {
+   "exclusive_bytes": 196608,
+   "glyph_bytes": 4504,
+   "lba": 5186,
+   "need_bytes": 33695,
+   "note": "",
+   "reclaim_lower_bytes": 16477,
+   "records_in_window": 379,
+   "records_outside_window": 0,
+   "rows": 598,
+   "sectors": 96,
+   "slot": 51,
+   "translated_bytes": 23147,
+   "verdict": "FIT_WINDOW",
+   "window_segments": [
+    [
+     5186,
+     5282
+    ]
+   ]
+  },
+  {
+   "exclusive_bytes": 196608,
+   "glyph_bytes": 3960,
+   "lba": 5282,
+   "need_bytes": 25562,
+   "note": "",
+   "reclaim_lower_bytes": 15429,
+   "records_in_window": 323,
+   "records_outside_window": 0,
+   "rows": 380,
+   "sectors": 96,
+   "slot": 52,
+   "translated_bytes": 17738,
+   "verdict": "FIT_WINDOW",
+   "window_segments": [
+    [
+     5282,
+     5378
+    ]
+   ]
+  },
+  {
+   "lba": 1730,
+   "slot": 53,
+   "verdict": "TWIN_OF_16"
+  },
+  {
+   "exclusive_bytes": 196608,
+   "glyph_bytes": 4200,
+   "lba": 5378,
+   "need_bytes": 25163,
+   "note": "",
+   "reclaim_lower_bytes": 16410,
+   "records_in_window": 333,
+   "records_outside_window": 0,
+   "rows": 333,
+   "sectors": 96,
+   "slot": 54,
+   "translated_bytes": 17569,
+   "verdict": "FIT_WINDOW",
+   "window_segments": [
+    [
+     5378,
+     5474
+    ]
+   ]
+  }
+ ],
+ "status": "WHOLE_SURFACE_UNRESOLVED_SLOTS_8_NONSCENE_RELOCATION_AUDIT_OPEN_SHARED_SECTOR_TEXT_5938_RECORDS",
+ "verdict_counts": {
+  "FIT_RECLAIM": 1,
+  "FIT_WINDOW": 39,
+  "NO_WINDOW": 1,
+  "OVER": 7,
+  "TIGHT": 6
+ },
+ "version": 1
+}

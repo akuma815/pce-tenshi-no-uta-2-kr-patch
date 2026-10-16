@@ -1,0 +1,20 @@
+{
+  "format": "TASK4-FIELD-HOOK-POC-RUNTIME",
+  "version": 1,
+  "status": "FAIL",
+  "date": "2026-07-17",
+  "scope": "renderer.field_main first-dialogue path only",
+  "observations": {
+    "boot_and_graphics": "PASS: System Card, title, field graphics and dialogue windows remained normal.",
+    "custom_position": "FAIL: the EF41 position did not display 가 and resembled the same blank/stale mark seen in the Task 2 no-hook probe.",
+    "original_japanese": "PASS: the later original 出 remained Japanese 出.",
+    "page_progression": "PASS: the first three dialogue pages cleared and progressed normally."
+  },
+  "screenshots": [
+    "C:/Users/akuma/AppData/Local/Temp/codex-clipboard-9c7311bc-5de4-4b88-a47f-6ea345345810.png",
+    "C:/Users/akuma/AppData/Local/Temp/codex-clipboard-17bb5a83-eae4-441e-9063-42ad6ed4ef4a.png",
+    "C:/Users/akuma/AppData/Local/Temp/codex-clipboard-2559ddb6-841f-4e88-946b-bd512854b6cd.png"
+  ],
+  "decision": "Task 4 is not PASS. Keep the equal-length EF41 parser result, but do not approve the conditional GETFNT hook until call reachability and live F8/F9 values are isolated.",
+  "next_probe": "Use a separate original-text build whose patched field call unconditionally returns the single Galmuri8x8 가 glyph. This distinguishes call/cave reachability from conditional dispatch failure."
+}

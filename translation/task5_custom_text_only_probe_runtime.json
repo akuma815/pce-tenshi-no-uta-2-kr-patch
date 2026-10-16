@@ -1,0 +1,14 @@
+{
+  "format": "TASK5-CUSTOM-TEXT-ONLY-PROBE-RUNTIME",
+  "version": 1,
+  "task": 5,
+  "date": "2026-07-17",
+  "status": "PASS",
+  "decision": "CUSTOM_TEXT_BYTES_ALONE_NOT_SUFFICIENT",
+  "evidence": {
+    "screenshot": "C:/Users/akuma/AppData/Local/Temp/codex-clipboard-2c9744f2-ab3b-411d-ae9d-c7d80f808376.png"
+  },
+  "observation": "With only the 16-byte EF58..EF5F substitution and no hook or glyph page, Memo opens normally and remains responsive.",
+  "conclusion": "The custom dialogue bytes alone do not cause the hang. Combined with the failed C800 isolation probe, the remaining causal scope is execution of the custom field hook path.",
+  "next": "Test a BIOS-shadow hook that preserves the original E060 side effects before overwriting only the glyph output"
+}

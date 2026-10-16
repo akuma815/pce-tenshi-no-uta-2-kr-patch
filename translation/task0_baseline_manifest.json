@@ -1,0 +1,77 @@
+{
+  "format": "TASK0-BASELINE-LOCK",
+  "version": 1,
+  "created_date": "2026-07-17",
+  "status": "LOCKED",
+  "hash_algorithm": "SHA-256",
+  "scope": "Tenshi no Uta II PC Engine CD Korean patch research baseline",
+  "coordinate_systems": {
+    "cooked_iso": "Track02 relative LBA, 2048-byte user-data sectors",
+    "raw_bin": "CUE-addressed 2352-byte sectors including pregap/track layout",
+    "data_track_raw_offset": 7914480,
+    "runtime_cd_lba_bias_from_track02": 128
+  },
+  "artifacts": {
+    "immutable_inputs": [
+      {"id":"original_bin","path":"Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP.bin","size":523184384,"sha256":"D16D29EB80B1B74A2EC929924349256B50B8F9F5C9A3FA37B6FCC08B059B22C5","policy":"read-only original; every build starts here"},
+      {"id":"original_cue","path":"Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP.cue","size":1430,"sha256":"C491342EA8CBF2B6E829316AAAD0AF3F790EC58288DE9BF880927CDCC7C9CC6B","policy":"read-only original track layout"},
+      {"id":"track02_cooked_iso","path":"extracted_bin/Track02_data.iso","size":19103744,"sha256":"7566073A2AA1F48E7B39ED2B34277D9935FADE8A3FAD7DCC72C21276E2632AF9","policy":"read-only analysis coordinate baseline"},
+      {"id":"system_card_3_j_original","path":"H:/BizHawk/Firmware/PCECD_3.0-(J).pce","size":262144,"sha1":"79F5FF55DD10187C7FD7B8DAAB0B3FFBD1F56A2C","sha256":"E11527B3B96CE112A037138988CA72FD117A6B0779C2480D9E03EAEBECE3D9CE","policy":"read-only original firmware"}
+    ],
+    "runtime_environment": [
+      {"id":"bizhawk_emuhawk","path":"H:/BizHawk/EmuHawk.exe","size":5385216,"sha256":"E3AD72418FD125BB6D47A3FE21D8FB7E20802F7392A17B266ED71FE98FA27FFF","version":"2.11.2+4d63f303a1e74dcb7680fbb3b327a13cf9963362"},
+      {"id":"bizhawk_pce_core_assembly","path":"H:/BizHawk/dll/BizHawk.Emulation.Cores.dll","size":10832896,"sha256":"36D755B904E747E7705778787B7A2BD06502E72589C7F2F6E5CE203233EAF53B","version":"2.11.2+4d63f303a1e74dcb7680fbb3b327a13cf9963362"},
+      {"id":"accepted_probe_bizhawk_config","path":"translation/one_glyph_bizhawk_config.ini","size":131943,"sha256":"306FABF17DF54A8F53A21BBF0BF86A04C928F086EE2E63930E96D639B9DF25F1"}
+    ],
+    "accepted_evidence": [
+      {"id":"one_glyph_mode1_bios","path":"SystemCard3_one_glyph_probe.pce","size":262144,"sha256":"212F3C96A4010BF06A13CEFFD8DEC92C00639188287F18376006CBA67EBB8198","runtime_status":"PASS","proven_scope":"field EX_GETFNT mode-1 index 1722 renders one Hangul glyph"},
+      {"id":"one_glyph_mode1_manifest","path":"translation/system_card_one_glyph_probe_manifest.json","size":2131,"sha256":"EBA242D3BD59DC21341158A0EE7EBFA99FC6663E798E79E77A2AC3BECD9E1D82","runtime_status":"PASS"},
+      {"id":"exact_substitution_bin","path":"Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_exact_substitution_probe.bin","size":523184384,"sha256":"73A7513F633118BEBAB1A741BC06E8C47C5D75BB134B79F7CC7BA1EA469E8D17","runtime_status":"PASS","proven_scope":"exact two-byte 6F2D to 8F6F substitution with no padding"},
+      {"id":"exact_substitution_cue","path":"Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_exact_substitution_probe.cue","size":1526,"sha256":"9ED08B6E52719CA98DC00EFCFE88FC410F8FD83284DE375CAE4A2E612E2A03BB","runtime_status":"PASS"},
+      {"id":"exact_substitution_manifest","path":"translation/exact_substitution_probe_manifest.json","size":2453,"sha256":"637992DA4269AEE28BD3F524185037E5B3A02D81A6D41243021B04E80A6FAEC9","runtime_status":"PASS"}
+    ],
+    "rejected_evidence": [
+      {"id":"bios_896_glyph","path":"SystemCard3_KoreanFont_diagnostic.pce","size":262144,"sha256":"FB4494EEBDB200FCF02DCEF99FC051B5594E68FCC29021E246AFF6102EA0DF88","runtime_status":"FAIL","policy":"DO_NOT_USE"},
+      {"id":"disc_896_glyph_bin","path":"Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_biosfont_diagnostic.bin","size":523184384,"sha256":"0DBAF60A2B746F3F6D432DD93070DEAF173B5A2C54D44A0C33240D170453EE8F","runtime_status":"FAIL","policy":"DO_NOT_USE"},
+      {"id":"disc_896_glyph_cue","path":"Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_biosfont_diagnostic.cue","size":1521,"sha256":"12450617E44D5FDEFC67C733F07B67C896B4D9230C0392ADA183DE2EB77A286C","runtime_status":"FAIL","policy":"DO_NOT_USE"},
+      {"id":"manifest_896_glyph","path":"translation/bios_font_diagnostic_manifest.json","size":2186,"sha256":"CDFF99BEA81E80CF036EECB7B64BE1EE8747C9986911F38F81189D6880994219","runtime_status":"FAIL","policy":"evidence only"},
+      {"id":"bios_18_glyph","path":"SystemCard3_KoreanFont_current_translation_probe.pce","size":262144,"sha256":"4461D2960D9E2B2B85FEBC33C4E3F0A7742F286CA9B7A11CF88840CB4A9C2BFC","runtime_status":"FAIL","policy":"DO_NOT_USE"},
+      {"id":"disc_18_glyph_bin","path":"Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_current_translation_probe.bin","size":523184384,"sha256":"7B13C4BDF5A3D524BFD0356856845AD4338A5068F4F4AAB3BDF04573D947D13C","runtime_status":"FAIL","policy":"DO_NOT_USE"},
+      {"id":"disc_18_glyph_cue","path":"Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_current_translation_probe.cue","size":1527,"sha256":"2E54EAEBC244A9CA58C5538C7A1B9005DAF11490F0AF4164DE558261E0C6C236","runtime_status":"FAIL","policy":"DO_NOT_USE"},
+      {"id":"manifest_18_glyph","path":"translation/current_translation_probe_manifest.json","size":5391,"sha256":"C1D39BAB8B8A469D37E631276025CC543D9B98147C352F31984CA864D40811A7","runtime_status":"FAIL","policy":"evidence only"},
+      {"id":"bios_2_glyph","path":"SystemCard3_KoreanFont_two_glyph_probe.pce","size":262144,"sha256":"E0463C210400F483CF29B41649F14900321978C95D8D119B4FC31CD1B8EC4A6F","runtime_status":"FAIL","policy":"DO_NOT_USE"},
+      {"id":"disc_2_glyph_bin","path":"Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_two_glyph_probe.bin","size":523184384,"sha256":"45F5E13F450FC19799A02B726946CFF2A570FA9840EF96404BF617895AB82A42","runtime_status":"FAIL","policy":"DO_NOT_USE"},
+      {"id":"disc_2_glyph_cue","path":"Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_two_glyph_probe.cue","size":1517,"sha256":"DCC87DCA3C7B9E091273A1562C2C7F164E655F522BC224DBFD4639FB8A72A23B","runtime_status":"FAIL","policy":"DO_NOT_USE"},
+      {"id":"manifest_2_glyph","path":"translation/two_glyph_probe_manifest.json","size":2996,"sha256":"E655E1E2729B9534D608DA10C87D413B651D6C21B22430E8C8ACA9F74CA614C4","runtime_status":"FAIL","policy":"evidence only"},
+      {"id":"ascii_padding_probe_bin","path":"Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_one_glyph_e2e_probe.bin","size":523184384,"sha256":"FCC8FA47074742E88E4C8532447630C17C6FAB97CC6E822DC5052CC8D787A2E6","runtime_status":"PARTIAL_PASS_POLICY_FAIL","policy":"DO_NOT_USE; ASCII 0x20 padding breaks dialogue flow"},
+      {"id":"ascii_padding_probe_cue","path":"Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_one_glyph_e2e_probe.cue","size":1521,"sha256":"12D28F950FEF2645F914A7CABD8EAC3BE7492073F32DAC4B0D39B5378A0CEDBA","runtime_status":"PARTIAL_PASS_POLICY_FAIL","policy":"DO_NOT_USE"},
+      {"id":"ascii_padding_probe_manifest","path":"translation/one_glyph_e2e_probe_manifest.json","size":2383,"sha256":"C84ACB941CED9954DACCD490FBFD3C3EE0CA0C134D07F7B108F5F5F36316F59F","runtime_status":"PARTIAL_PASS_POLICY_FAIL","policy":"evidence only"}
+    ]
+  },
+  "execution_contract": {
+    "emulator": "BizHawk EmuHawk 2.11.2",
+    "core": "PCEHawk",
+    "system": "PCECD",
+    "accepted_firmware_override": "SystemCard3_one_glyph_probe.pce",
+    "original_firmware_for_unmodified_control": "H:/BizHawk/Firmware/PCECD_3.0-(J).pce",
+    "load_target": "Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_exact_substitution_probe.cue",
+    "load_cue_not_bin": true,
+    "autoload_last_savestate": false,
+    "autosave_saveram": false,
+    "saveram_policy": "clean start; no Tenshi/Datenshi SaveRAM file in project root or H:/BizHawk/SaveRAM",
+    "start_policy": "close existing EmuHawk, start with the locked config, cold boot the locked CUE"
+  },
+  "policy_locks": {
+    "exact_substitution_probe": "accepted only for the proven equal-byte 6F2D->8F6F field test",
+    "ascii_0x20_padding": "PROHIBITED",
+    "bios_896_glyph": "PROHIBITED",
+    "bios_18_glyph": "PROHIBITED",
+    "bios_2_glyph": "PROHIBITED",
+    "additional_bios_slots": "UNPROVEN; do not infer from index reachability",
+    "subsequent_task_preflight": "python tools/verify_task0_baseline.py must exit 0 before work begins"
+  },
+  "retroactive_task1_check": {
+    "result": "PASS",
+    "basis": "Task 1 used the same locked Track02 ISO and original System Card hashes"
+  }
+}

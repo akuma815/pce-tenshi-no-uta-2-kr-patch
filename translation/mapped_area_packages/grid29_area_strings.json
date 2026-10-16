@@ -1,0 +1,30 @@
+{
+  "format": "KAP1",
+  "version": 1,
+  "physical_grid": 29,
+  "lba": 2946,
+  "logical_entries": [
+    29
+  ],
+  "original_load_sectors": 81,
+  "package_area_offset": 165888,
+  "package_bytes": 61,
+  "needed_sectors": 82,
+  "unique_strings": 2,
+  "source_redirects": {
+    "05e3e56": {
+      "package_relative_offset": 32,
+      "area_relative_offset": 165920,
+      "length": 15
+    },
+    "05e3ec0": {
+      "package_relative_offset": 47,
+      "area_relative_offset": 165935,
+      "length": 14
+    }
+  },
+  "source_live_range": [
+    6033408,
+    6199296
+  ]
+}

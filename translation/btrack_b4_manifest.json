@@ -1,0 +1,23 @@
+{
+ "format": "BTRACK-B4-FIELD-PAYLOAD",
+ "records": 235,
+ "errors": [],
+ "line_over_24": 0,
+ "text_bytes_total": 22719,
+ "index_reserve": 2852,
+ "budget": {
+  "bank_7A_7B": 16384,
+  "bank_7E": 8192,
+  "bank_6D_head": 4096
+ },
+ "budget_total": 28672,
+ "fit": true,
+ "headroom": 3101,
+ "wrap_policy": {
+  "line_max": 24,
+  "line_pref": 20,
+  "speaker_page_body_lines": 2,
+  "plain_page_body_lines": 3
+ },
+ "payload_sha256": "c8167f102e87d68a6481a1d415d82726f36dc44468aba300665f2d02fc072c65"
+}

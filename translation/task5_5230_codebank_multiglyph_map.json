@@ -1,0 +1,291 @@
+{
+  "format": "TASK5-5230-CODEBANK-MULTIGLYPH-MAP",
+  "version": 1,
+  "task": 5,
+  "status": "RUNTIME_PASS",
+  "scope": "renderer.field_main first-dialogue event only",
+  "text": "준비는다됐나페이",
+  "replacement_hex": "EF58EF59EF5AEF5BEF5CEF5DEF5EEF5F",
+  "font": {
+    "path": "font/Galmuri8x8.ttf",
+    "sha256": "97BA3DCC2CD5E5B2927E4E6BA9558A48A2A194A852C420DF160654D66BBF2A05"
+  },
+  "code": {
+    "runtime": "0x5230",
+    "physical_bank": "0x80",
+    "mapped_by": "MPR2=0x80"
+  },
+  "glyph_page": {
+    "runtime_start": "0xC800",
+    "runtime_end_exclusive": "0xC900",
+    "physical_bank": "0x84",
+    "mapped_by": "MPR6=0x84",
+    "policy": "data only; never executed"
+  },
+  "entries": [
+    {
+      "character": "준",
+      "code": "EF58",
+      "index": 0,
+      "runtime_address": "0xC800",
+      "expanded_32_hex": "000000003F800A00318000003F80040020003F80000000000000000000000000",
+      "render_profile": {
+        "font_size_argument": 16,
+        "native_ink_bbox": [
+          0,
+          0,
+          7,
+          8
+        ],
+        "native_ink_size": [
+          7,
+          8
+        ],
+        "pce_cell": [
+          12,
+          12
+        ],
+        "paste_xy": [
+          2,
+          2
+        ],
+        "output_canvas": [
+          16,
+          16
+        ],
+        "bit_order": "two bytes per row, MSB first"
+      }
+    },
+    {
+      "character": "비",
+      "code": "EF59",
+      "index": 1,
+      "runtime_address": "0xC820",
+      "expanded_32_hex": "00000000248024803C80248024803C8000800080000000000000000000000000",
+      "render_profile": {
+        "font_size_argument": 16,
+        "native_ink_bbox": [
+          0,
+          0,
+          7,
+          8
+        ],
+        "native_ink_size": [
+          7,
+          8
+        ],
+        "pce_cell": [
+          12,
+          12
+        ],
+        "paste_xy": [
+          2,
+          2
+        ],
+        "output_canvas": [
+          16,
+          16
+        ],
+        "bit_order": "two bytes per row, MSB first"
+      }
+    },
+    {
+      "character": "는",
+      "code": "EF5A",
+      "index": 2,
+      "runtime_address": "0xC840",
+      "expanded_32_hex": "00000000100010001F8000003FC0000010001F80000000000000000000000000",
+      "render_profile": {
+        "font_size_argument": 16,
+        "native_ink_bbox": [
+          0,
+          0,
+          8,
+          8
+        ],
+        "native_ink_size": [
+          8,
+          8
+        ],
+        "pce_cell": [
+          12,
+          12
+        ],
+        "paste_xy": [
+          2,
+          2
+        ],
+        "output_canvas": [
+          16,
+          16
+        ],
+        "bit_order": "two bytes per row, MSB first"
+      }
+    },
+    {
+      "character": "다",
+      "code": "EF5B",
+      "index": 3,
+      "runtime_address": "0xC860",
+      "expanded_32_hex": "000000003E80208020C0208020803E8000800080000000000000000000000000",
+      "render_profile": {
+        "font_size_argument": 16,
+        "native_ink_bbox": [
+          0,
+          0,
+          8,
+          8
+        ],
+        "native_ink_size": [
+          8,
+          8
+        ],
+        "pce_cell": [
+          12,
+          12
+        ],
+        "paste_xy": [
+          2,
+          2
+        ],
+        "output_canvas": [
+          16,
+          16
+        ],
+        "bit_order": "two bytes per row, MSB first"
+      }
+    },
+    {
+      "character": "됐",
+      "code": "EF5C",
+      "index": 4,
+      "runtime_address": "0xC880",
+      "expanded_32_hex": "000000003A8022803B8012803E80090009003680000000000000000000000000",
+      "render_profile": {
+        "font_size_argument": 16,
+        "native_ink_bbox": [
+          0,
+          0,
+          7,
+          8
+        ],
+        "native_ink_size": [
+          7,
+          8
+        ],
+        "pce_cell": [
+          12,
+          12
+        ],
+        "paste_xy": [
+          2,
+          2
+        ],
+        "output_canvas": [
+          16,
+          16
+        ],
+        "bit_order": "two bytes per row, MSB first"
+      }
+    },
+    {
+      "character": "나",
+      "code": "EF5D",
+      "index": 5,
+      "runtime_address": "0xC8A0",
+      "expanded_32_hex": "0000000020802080208020C020803E8000800080000000000000000000000000",
+      "render_profile": {
+        "font_size_argument": 16,
+        "native_ink_bbox": [
+          0,
+          0,
+          8,
+          8
+        ],
+        "native_ink_size": [
+          8,
+          8
+        ],
+        "pce_cell": [
+          12,
+          12
+        ],
+        "paste_xy": [
+          2,
+          2
+        ],
+        "output_canvas": [
+          16,
+          16
+        ],
+        "bit_order": "two bytes per row, MSB first"
+      }
+    },
+    {
+      "character": "페",
+      "code": "EF5E",
+      "index": 6,
+      "runtime_address": "0xC8C0",
+      "expanded_32_hex": "000000003EC014C017C014C014C03EC000C000C0000000000000000000000000",
+      "render_profile": {
+        "font_size_argument": 16,
+        "native_ink_bbox": [
+          0,
+          0,
+          8,
+          8
+        ],
+        "native_ink_size": [
+          8,
+          8
+        ],
+        "pce_cell": [
+          12,
+          12
+        ],
+        "paste_xy": [
+          2,
+          2
+        ],
+        "output_canvas": [
+          16,
+          16
+        ],
+        "bit_order": "two bytes per row, MSB first"
+      }
+    },
+    {
+      "character": "이",
+      "code": "EF5F",
+      "index": 7,
+      "runtime_address": "0xC8E0",
+      "expanded_32_hex": "0000000018802480248024802480188000800080000000000000000000000000",
+      "render_profile": {
+        "font_size_argument": 16,
+        "native_ink_bbox": [
+          0,
+          0,
+          7,
+          8
+        ],
+        "native_ink_size": [
+          7,
+          8
+        ],
+        "pce_cell": [
+          12,
+          12
+        ],
+        "paste_xy": [
+          2,
+          2
+        ],
+        "output_canvas": [
+          16,
+          16
+        ],
+        "bit_order": "two bytes per row, MSB first"
+      }
+    }
+  ]
+}

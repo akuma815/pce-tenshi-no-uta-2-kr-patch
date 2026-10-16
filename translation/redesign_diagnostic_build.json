@@ -1,0 +1,22 @@
+{
+  "format": "REDESIGN-DIAGNOSTIC-BUILD",
+  "release_safe": false,
+  "invalid_for_progress_beyond_first_dialogue": true,
+  "cross_loader_conflicting_writes": 481,
+  "runtime_scope": "first-dialogue fetch/MPR safety evidence only; do not continue gameplay",
+  "purpose": "fetch/redirect/continuation/token execution only; local glyph hook missing",
+  "source_sha256": "d16d29eb80b1b74a2ec929924349256b50b8f9f5c9a3fa37b6fcc08b059b22c5",
+  "output_sha256": "827bce3769d20a5e996c4022a809f98918ce0c4f610c421f7499e9faf23c9f69",
+  "output_bin": "Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_redesign_diagnostic.bin",
+  "output_cue": "Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_redesign_diagnostic.cue",
+  "patch_spans": 3484,
+  "patched_bytes": 257784,
+  "field_loader_proof": {
+    "field_lba_start": 130,
+    "first_area_lba": 162,
+    "sectors": 32,
+    "banks": 8,
+    "observed_initial_physical_mapping": "0x80..0x84 in MPR2..MPR6",
+    "selected_hook_bank": "fourth field bank = 0x83"
+  }
+}

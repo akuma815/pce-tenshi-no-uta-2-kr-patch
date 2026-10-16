@@ -1,0 +1,59 @@
+{
+  "format": "FIELD-FETCH-HOOK-PROTOTYPE",
+  "version": 1,
+  "dry_run_only": true,
+  "trampoline": {
+    "logical_address": "0x4111",
+    "iso_offset": "0x41111",
+    "code_bytes": 13,
+    "replaced_bytes": 73,
+    "original_hex": "a558d02da556d01a44c7b2538ddf31e653d002e654685340685320685310addf3160b2558ddf31e655d002e656addf3160b257f00d8ddf31e657d002e658addf3160645764584c1141",
+    "image_hex": "0878da432048a98353204c39a3eaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaea"
+  },
+  "hook": {
+    "physical_bank": "0x83",
+    "logical_address": "0xA339",
+    "iso_offset": "0x47339",
+    "bytes": 395,
+    "cave_bytes": 7367,
+    "hex": "adc1a4f0099cc1a4adc2a44c7ea4adbca4d02a20d7a3c901f0034c7ea420d7a34829808dc0a468297f8dbda420d7a38dbea420d7a38dbfa4a9018dbca42048a4f018c902d01c2048a48dbda42048a48dbea42048a48dbfa480e39cbca4a9004c7ea48dc3a4adc0a4f02eadc3a4c9039027c90b900dc90f901fc920b01b38e907800338e9030aaabd8ba48dc2a4a9018dc1a4bd8aa44c7ea4adc3a44c7ea4a558f011b257f007e657d002e658606457645880eba556f009b255e655d0efe65660a5fc48a5fd48430848a554c9a09014c9c09008add02218690e800eadd02218690d8006add02218690c5308a55385fca554291f096085fdb2fc8ddf31e653d002e6546853086885fd6885fcaddf3160a5fc48a5fd48430848add022186dbda45308adbea485fcadbfa485fdb2fc8ddf31eebea4d003eebfa46853086885fd6885fcaddf31608ddf31685320fa28addf3160edc1ebc6ebbdedfded87ed7beb20edbded65eb46eb94eec4edcaedc0edbcec37ec75eb63eb69ebf8ed74eda7ebc1ebdceb390000000000000000"
+  },
+  "labels": {
+    "no_pending": "0xA347",
+    "redirect": "0xA356",
+    "translated_loop": "0xA376",
+    "translated_end": "0xA393",
+    "token_check": "0xA39B",
+    "token_low": "0xA3BB",
+    "token_index": "0xA3BE",
+    "return_saved": "0xA3D1",
+    "native_fetch": "0xA3D7",
+    "native_rts": "0xA3E5",
+    "variable_end": "0xA3E6",
+    "native_aux": "0xA3EC",
+    "native_main": "0xA3F9",
+    "main_bank1": "0xA414",
+    "main_bank0": "0xA41C",
+    "main_map": "0xA422",
+    "main_restore": "0xA43B",
+    "translated_raw": "0xA448",
+    "translated_restore": "0xA471",
+    "exit": "0xA47E",
+    "token_table": "0xA48A",
+    "token_table_plus_1": "0xA48B",
+    "active": "0xA4BC",
+    "stream_bank": "0xA4BD",
+    "stream_low": "0xA4BE",
+    "stream_high": "0xA4BF",
+    "token_mode": "0xA4C0",
+    "pending_valid": "0xA4C1",
+    "pending_byte": "0xA4C2",
+    "return_byte": "0xA4C3"
+  },
+  "token_table_bytes": 50,
+  "guards": [
+    "original fetch signature",
+    "hook cave remains FF",
+    "all relative branches in range"
+  ]
+}

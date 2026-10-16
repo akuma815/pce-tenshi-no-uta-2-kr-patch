@@ -1,0 +1,16 @@
+{
+  "format": "TASK5-DIRECT-BIOS-ENTRY-PROBE-RUNTIME",
+  "version": 1,
+  "task": 5,
+  "date": "2026-07-17",
+  "status": "PASS",
+  "decision": "DIRECT_BIOS_ENTRY_SAFE_C737_ROUTE_CAUSAL",
+  "evidence": {
+    "user_observation": "정상 진입 됨",
+    "screenshot": null,
+    "trace": null
+  },
+  "observation": "With only the live call changed from JSR E060 to direct JSR F124, field output remains original and Memo opens normally.",
+  "conclusion": "Changing the call operand and entering F124 directly are safe. The failed controls require execution/fetch through C737 module RAM.",
+  "next": "Relocate the identical cycle-matched JMP F124 trampoline to C800 in the same bank to distinguish C737-specific behavior from module-RAM execution generally"
+}

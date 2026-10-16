@@ -1,0 +1,53 @@
+{
+  "format": "TASK7-BIOS-RESIDENT-TRAMPOLINE-CONTROL",
+  "version": 1,
+  "task": 7,
+  "status": "STATIC_PASS_RUNTIME_PENDING",
+  "source": {
+    "file": "PCECD_3.0-J.original.pce",
+    "size": 262144,
+    "sha256": "E11527B3B96CE112A037138988CA72FD117A6B0779C2480D9E03EAEBECE3D9CE"
+  },
+  "architecture": {
+    "original": "E060 JMP F124",
+    "probe": "E060 JMP FEC4; FEC4 JMP F124",
+    "fixed_mapping": "MPR7=00",
+    "cave": "FEC4..FFDB / file 0x1EC4..0x1FDB / 280 original FF bytes"
+  },
+  "runtime_decision": {
+    "battle_passes": "fixed-MPR7 resident execution is safe; use this site for the real dispatcher",
+    "battle_fails": "any extra BIOS jump/timing or FEC4 occupancy is unsafe; reject BIOS-resident architecture"
+  },
+  "writes": [
+    {
+      "id": "ex_getfnt_redirect",
+      "file_offset": "0x0060",
+      "runtime": "0xE060",
+      "expected_hex": "4C24F1",
+      "replacement_hex": "4CC4FE"
+    },
+    {
+      "id": "fixed_bank_trampoline",
+      "file_offset": "0x1EC4",
+      "runtime": "0xFEC4",
+      "expected_hex": "FFFFFF",
+      "replacement_hex": "4C24F1"
+    }
+  ],
+  "diff_audit": {
+    "actual_changed_bytes": 5,
+    "changed_offsets": [
+      "0x61",
+      "0x62",
+      "0x1EC4",
+      "0x1EC5",
+      "0x1EC6"
+    ],
+    "file_size_preserved": true
+  },
+  "output": {
+    "file": "PCECD_3.0-J.task7_bios_trampoline_control.pce",
+    "size": 262144,
+    "sha256": "AC318780DB4FDF55192129D6D959E3EF3ED888CE3D2415892C28020056A3845D"
+  }
+}

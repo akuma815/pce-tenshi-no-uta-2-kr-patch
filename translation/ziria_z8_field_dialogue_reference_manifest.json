@@ -1,0 +1,75 @@
+{
+  "format": "ZIRIA-Z8-FIELD-DIALOGUE-REFERENCE-CATALOG",
+  "version": 1,
+  "task": "Z8-v2-reference-denominator",
+  "status": "LOADER_REFERENCE_PASS_TEXT_REFERENCE_DENOMINATOR_OPEN",
+  "mutation_scope": "analysis only; no CUE/BIN/ISO mutation",
+  "inputs": {
+    "master_text": {
+      "path": "translation/full_extraction/master_text.csv",
+      "sha256": "36AAE2700FB26239A29BBCC3770EFC203BF494997A72DD0C85B8F6026E560AC0"
+    },
+    "track02_iso": {
+      "path": "extracted_bin/Track02_data.iso",
+      "sha256": "7566073A2AA1F48E7B39ED2B34277D9935FADE8A3FAD7DCC72C21276E2632AF9"
+    },
+    "module_catalog": {
+      "path": "translation/ziria_module_catalog.json",
+      "sha256": "914C6D243A8E3E5CCAF530727E186CD48BA386CF017978F80D6C4A203427F256"
+    },
+    "z8_manifest": {
+      "path": "translation/ziria_z8_text_containers_manifest.json",
+      "sha256": "38AF4D5E8C9ABFE8F61A46FA8949092D2E0C9E597DD61C01B2983FA63323FF03"
+    },
+    "z8_entry_index": {
+      "path": "translation/ziria_z8_text_entry_index.csv",
+      "sha256": "6CD14B3D18512E375D2F0443DFF21715FAD2C3B8EFB2B57E0C4955BE1A94E5C0"
+    },
+    "runtime_trace": {
+      "path": "translation/ziria_z6_stream_source_trace.tsv",
+      "sha256": "2F3F8D76CA30F308626CDF2BDE6A08A79851856223EBE592700FF866D7BE6637"
+    }
+  },
+  "loader_reference": {
+    "status": "PASS",
+    "catalogue_entries": 55,
+    "matching_entries": 1,
+    "logical_entry": 2,
+    "storage_offset": "0x83539",
+    "raw_hex": "0001E260",
+    "target_lba": 482,
+    "sector_count": 96
+  },
+  "text_reference_population": {
+    "field_dialogue_records_in_extent": 236,
+    "runtime_observed_records": 9,
+    "runtime_fully_observed_records": 8,
+    "runtime_unobserved_records": 227,
+    "direct_literal_scan_candidates": 2,
+    "direct_literal_scan_policy": "candidate bytes are not accepted as references",
+    "denominator_status": "OPEN_STATIC_EVENT_BYTECODE_DECODER_OR_COMPLETE_RUNTIME_COVERAGE_REQUIRED"
+  },
+  "source_key_model": {
+    "basis": "scene package relative offset",
+    "width_bits": 24,
+    "endian": "little",
+    "formula": "physical_bank=MPR[logical>>13]; source_offset=(physical_bank-0x68)*0x2000+(logical&0x1FFF)",
+    "valid_physical_banks": "0x68..0x7F",
+    "round_trip": "PASS_FOR_ALL_CATALOGUED_RECORDS",
+    "reason": "stable across MPR page remapping while the owning scene package is resident"
+  },
+  "redirect_index": {
+    "status": "NOT_BUILT",
+    "reason": "source-key representation is proven, but the complete text-consumer reference denominator, translation storage coordinate, hook ABI, and loader-owned lifetime are not yet proven",
+    "legacy_01_02_protocol": "PROHIBITED"
+  },
+  "outputs": {
+    "reference_catalog": "module_relink/z8_field_dialogue_refs/field_dialogue_reference_catalog.csv",
+    "observed_starts": "module_relink/z8_field_dialogue_refs/observed_stream_starts.csv",
+    "loader_reference": "module_relink/z8_field_dialogue_refs/loader_reference.json",
+    "report": "docs/active/Z8_2_field_dialogue_참조_카탈로그.md",
+    "reference_catalog_sha256": "E125E6D78050DDEC644551D0B49C9F5D0BD4E0236D4A9CD9836005610406C8C0",
+    "observed_starts_sha256": "8BF248DA31C038087B4D2E339CE1366B405F138A6FC90884BBF06A6C4BB88E2F",
+    "loader_reference_sha256": "F2DDD758A9DADD0F951F66F41E9FE8A03B810276AB353846F2F8AFBF82D0F5B2"
+  }
+}

@@ -1,0 +1,136 @@
+{
+  "format": "FIELD-HOOK-PADDING-AUDIT",
+  "module": "field engine MPR2",
+  "logical_range": "0x4000..0x5FFF",
+  "iso_range": "0x41000..0x42FFF",
+  "original_fetch_signature": "a558d02da556d01a44c7b2538ddf31e653d002e654685340685320685310addf3160b2558ddf31e655d002e656addf3160b257f00d8ddf31e657d002e658addf3160645764584c1141",
+  "jump_table": [
+    {
+      "entry": "0x4000",
+      "target": "0x4428"
+    },
+    {
+      "entry": "0x4003",
+      "target": "0x4526"
+    },
+    {
+      "entry": "0x4006",
+      "target": "0x44B9"
+    },
+    {
+      "entry": "0x4009",
+      "target": "0x451C"
+    },
+    {
+      "entry": "0x400C",
+      "target": "0x4526"
+    },
+    {
+      "entry": "0x400F",
+      "target": "0x4073"
+    },
+    {
+      "entry": "0x4012",
+      "target": "0x407A"
+    },
+    {
+      "entry": "0x4015",
+      "target": "0x4083"
+    },
+    {
+      "entry": "0x4018",
+      "target": "0x408C"
+    },
+    {
+      "entry": "0x401B",
+      "target": "0x4090"
+    },
+    {
+      "entry": "0x401E",
+      "target": "0x4095"
+    },
+    {
+      "entry": "0x4021",
+      "target": "0x409D"
+    },
+    {
+      "entry": "0x4024",
+      "target": "0x40C2"
+    },
+    {
+      "entry": "0x4027",
+      "target": "0x40CA"
+    },
+    {
+      "entry": "0x402A",
+      "target": "0x40D2"
+    },
+    {
+      "entry": "0x402D",
+      "target": "0x40DA"
+    },
+    {
+      "entry": "0x4030",
+      "target": "0x4533"
+    },
+    {
+      "entry": "0x4033",
+      "target": "0x4111"
+    },
+    {
+      "entry": "0x4036",
+      "target": "0x41D4"
+    },
+    {
+      "entry": "0x4039",
+      "target": "0x41E0"
+    },
+    {
+      "entry": "0x403C",
+      "target": "0x4212"
+    },
+    {
+      "entry": "0x403F",
+      "target": "0x41C5"
+    },
+    {
+      "entry": "0x4042",
+      "target": "0x415A"
+    },
+    {
+      "entry": "0x4045",
+      "target": "0x4402"
+    }
+  ],
+  "repeated_runs_at_least_8": [
+    {
+      "value": "0x06",
+      "logical_start": "0x55A0",
+      "iso_start": "0x425A0",
+      "length": 26
+    },
+    {
+      "value": "0x07",
+      "logical_start": "0x5587",
+      "iso_start": "0x42587",
+      "length": 25
+    },
+    {
+      "value": "0x00",
+      "logical_start": "0x5493",
+      "iso_start": "0x42493",
+      "length": 11
+    }
+  ],
+  "zero_or_ff_runs_at_least_8": [
+    {
+      "value": "0x00",
+      "logical_start": "0x5493",
+      "iso_start": "0x42493",
+      "length": 11
+    }
+  ],
+  "largest_zero_or_ff_run": 11,
+  "safe_padding_candidate": null,
+  "conclusion": "No verified padding cave; perform API call-graph/liveness audit before reclaiming code."
+}

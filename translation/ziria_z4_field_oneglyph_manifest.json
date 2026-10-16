@@ -1,0 +1,154 @@
+{
+  "format": "ZIRIA-Z4-FIELD-ONEGLYPH",
+  "version": 1,
+  "status": "RUNTIME_FAIL_MEMO_MPR6_EXECUTION",
+  "source_bin_sha256": "D16D29EB80B1B74A2EC929924349256B50B8F9F5C9A3FA37B6FCC08B059B22C5",
+  "font": {
+    "path": "font/Galmuri8x8.ttf",
+    "sha256": "97BA3DCC2CD5E5B2927E4E6BA9558A48A2A194A852C420DF160654D66BBF2A05",
+    "glyph": "가"
+  },
+  "custom_code": "EF41",
+  "hook": {
+    "path": "translation/task3_field_getfnt_hook.bin",
+    "sha256": "677BC25A04CF7C3FFA035F5D20EF362987F9DED29847E4A04D388D65EB6362DB",
+    "runtime_address": "0xC737",
+    "fallback": "JMP $E060 original BIOS EX_GETFNT",
+    "mpr_changes": 0,
+    "work_ram_bytes": 0
+  },
+  "registry": "module_relink/z4_field_oneglyph/extension_registry.json",
+  "linked_modules": [
+    {
+      "id": "field.main_engine",
+      "input": "module_relink/track02/semantic_modules/field.main_engine_lba0258_s20.bin",
+      "input_sha256": "8C0573AEB900A5897402205908E02E501CC608C8EC8F2DB5F3ADA3A9E2D8A230",
+      "output": "module_relink/z4_field_oneglyph/linked_modules/field.main_engine_lba0258_s20.bin",
+      "output_sha256": "E2D5226461189ECEE3C81CA6E82803E4038A250AF6DED6D4BEFD636FCDF8E61A",
+      "changed_bytes": 78,
+      "changed_ranges": [
+        {
+          "start": "0x567F",
+          "end_exclusive": "0x5681",
+          "changed_bytes": 2
+        },
+        {
+          "start": "0x8737",
+          "end_exclusive": "0x875F",
+          "changed_bytes": 40
+        },
+        {
+          "start": "0x8760",
+          "end_exclusive": "0x8784",
+          "changed_bytes": 36
+        }
+      ],
+      "writes": [
+        {
+          "id": "field-main-getfnt-call",
+          "module_offset": "0x567E",
+          "length": 3,
+          "expected_hex": "2060E0",
+          "replacement_hex": "2037C7"
+        },
+        {
+          "id": "field-main-local-hook-glyph",
+          "module_offset": "0x8737",
+          "length": 77,
+          "expected_hex": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF",
+          "replacement_hex": "A5F9C9EFD024A5F8C941D01EA000B964C791FAC8C020D0F618A5FA691885FA9002E6FBA900A200A0FF604C60E0000000003C80048004C004800880308000800080000000000000000000000000"
+        }
+      ]
+    },
+    {
+      "id": "scene.field_start",
+      "input": "module_relink/track02/semantic_modules/scene.field_start_lba0482_s96.bin",
+      "input_sha256": "C065773C86FEC790D96CD3F52FEF804BFD426C8270A0BAD8ED0313977BBA5BB6",
+      "output": "module_relink/z4_field_oneglyph/linked_modules/scene.field_start_lba0482_s96.bin",
+      "output_sha256": "D64950776B130BDC5473DF8716D9625D29F3D57F8C70522BDECA142318C89B2C",
+      "changed_bytes": 2,
+      "changed_ranges": [
+        {
+          "start": "0x1A9F2",
+          "end_exclusive": "0x1A9F4",
+          "changed_bytes": 2
+        }
+      ],
+      "writes": [
+        {
+          "id": "field-start-text-probe",
+          "module_offset": "0x1A9F2",
+          "length": 2,
+          "expected_hex": "6F2D",
+          "replacement_hex": "EF41"
+        }
+      ]
+    }
+  ],
+  "track02": {
+    "input": "module_relink/track02/Track02_data.identity.iso",
+    "input_sha256": "7566073A2AA1F48E7B39ED2B34277D9935FADE8A3FAD7DCC72C21276E2632AF9",
+    "output": "module_relink/z4_field_oneglyph/Track02_data.z4.iso",
+    "output_sha256": "77DBD1FD09EBC3CBB4689C8360C0037D9D0FAB3765127535677A2292427F45B7",
+    "changed_bytes": 80,
+    "changed_ranges": [
+      {
+        "start": "0x8667F",
+        "end_exclusive": "0x86681",
+        "changed_bytes": 2
+      },
+      {
+        "start": "0x89737",
+        "end_exclusive": "0x8975F",
+        "changed_bytes": 40
+      },
+      {
+        "start": "0x89760",
+        "end_exclusive": "0x89784",
+        "changed_bytes": 36
+      },
+      {
+        "start": "0x10B9F2",
+        "end_exclusive": "0x10B9F4",
+        "changed_bytes": 2
+      }
+    ],
+    "sector_count_preserved": true,
+    "loader_tables_changed": false
+  },
+  "output": {
+    "bin": "module_relink/z4_field_oneglyph/output/Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_ziria_z4_field_oneglyph.bin",
+    "bin_size": 523184384,
+    "bin_sha256": "4DA30EA2002BC1CAA7E1207FFFA0C2A2B45893D600433494E2A2DF2EA664189B",
+    "cue": "module_relink/z4_field_oneglyph/output/Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_ziria_z4_field_oneglyph.cue",
+    "cue_sha256": "BC916769A2746B3FEE377142EDA4AE50800E69F6DF90577260D6E2506E033D6D"
+  },
+  "diff_audit": {
+    "actual_changed_bytes": 80,
+    "changed_modules": [
+      "field.main_engine",
+      "scene.field_start"
+    ],
+    "undeclared_changes": 0,
+    "audio_changed_bytes": 0,
+    "cue_track_layout_changed": false
+  },
+  "runtime": {
+    "status": "FAIL",
+    "observed_at": "2026-07-18",
+    "results": {
+      "first_custom_glyph": "PASS",
+      "memo_entry": "FAIL_CRASH",
+      "first_battle_attack_and_field_return": "PASS",
+      "tower_entry_after_battle": "PASS"
+    },
+    "cause": "The wrapper executed from physical bank 0x84/MPR6 at C737. This reproduces the previously isolated Memo overlay corruption; bank 0x84 is data-only and cannot host executable hook code.",
+    "required_checks": [
+      "first custom position renders 가",
+      "later original Japanese glyphs use BIOS fallback",
+      "Memo enter/return remains normal",
+      "first battle attack and field return remain normal",
+      "tower entry after battle remains normal"
+    ]
+  }
+}

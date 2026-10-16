@@ -1,0 +1,55 @@
+{
+  "format": "TASK5-FIELD-MULTIGLYPH-POC-RUNTIME",
+  "version": 1,
+  "task": 5,
+  "date": "2026-07-17",
+  "status": "FAIL",
+  "decision": "DISPLAY_PASS_STABILITY_FAIL_MEMO_HANG",
+  "scope": "renderer.field_main first-dialogue event and first-field menu transition",
+  "baseline": {
+    "cue": "Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_task5_field_multiglyph_poc.cue",
+    "bin_sha256": "47F78192A40C37E98DA56A958DBBC3E87EE9A02F33E3FA92E800129A046B3C27",
+    "bios_sha256": "E11527B3B96CE112A037138988CA72FD117A6B0779C2480D9E03EAEBECE3D9CE",
+    "font_sha256": "97BA3DCC2CD5E5B2927E4E6BA9558A48A2A194A852C420DF160654D66BBF2A05",
+    "method": "fresh EmuHawk launch without Lua"
+  },
+  "screenshots": [
+    "C:/Users/akuma/AppData/Local/Temp/codex-clipboard-cf831ac7-2a88-456d-8fd3-0f9ec3144dbb.png",
+    "C:/Users/akuma/AppData/Local/Temp/codex-clipboard-162e2f5f-2491-45f3-a0f7-4d06d97e63b5.png",
+    "C:/Users/akuma/AppData/Local/Temp/codex-clipboard-4bd66723-9cbc-4dfd-ada9-589bdf637881.png",
+    "C:/Users/akuma/AppData/Local/Temp/codex-clipboard-d5c01009-2894-4f2a-87ec-9e046d42affe.png"
+  ],
+  "observations": {
+    "original_page": "PASS: Japanese fallback and field graphics are normal",
+    "multiglyph_page": "PASS: eight ordered Galmuri8x8 glyphs display",
+    "first_field_exit": "PASS: play remains normal through leaving the first field",
+    "field_menu": "PASS: field menu opens and renders normally",
+    "memo_entry": "FAIL: selecting Memo makes EmuHawk unresponsive",
+    "exec_brk": "NOT_OBSERVED"
+  },
+  "proved": [
+    "the eight-code custom display path works on the observed dialogue",
+    "the failure is delayed until the Memo menu transition rather than immediate dialogue rendering"
+  ],
+  "not_proved": [
+    "that C800-C8FF is unused after the dialogue scene",
+    "that the 55-byte hook ABI remains safe across every later module transition",
+    "that Memo itself works on this patched image"
+  ],
+  "cause_status": "UNCONFIRMED",
+  "hypotheses": [
+    {
+      "id": "H1",
+      "statement": "the non-FF 256-byte glyph page at runtime C800-C8FF overwrites data consumed by the Memo transition",
+      "priority": 1,
+      "test": "keep the hook and eight codes but restore C800-C8FF to original FF"
+    },
+    {
+      "id": "H2",
+      "statement": "the repeated custom hook path leaves state that fails later regardless of the C800-C8FF page contents",
+      "priority": 2,
+      "test": "only if H1 is rejected, isolate custom-call count and ABI state"
+    }
+  ],
+  "next": "Run the C800 isolation probe and select Memo; glyph appearance is intentionally outside that probe's gate"
+}

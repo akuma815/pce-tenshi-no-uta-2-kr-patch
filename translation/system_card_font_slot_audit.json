@@ -1,0 +1,5390 @@
+{
+  "format": "SYSTEM-CARD-FONT-SLOT-AUDIT",
+  "bios_path": "H:\\BizHawk\\Firmware\\PCECD_3.0-(J).pce",
+  "bios_size": 262144,
+  "font_offset": 65536,
+  "glyph_bytes": 32,
+  "glyph_capacity": 6144,
+  "valid_unique_glyph_indices": 3461,
+  "protected_glyph_indices": 1612,
+  "unused_candidate_indices": 1849,
+  "hangul_glyphs": 896,
+  "selected": [
+    {
+      "hangul": "가",
+      "sjis": "989E",
+      "glyph_index": 3460,
+      "bios_offset": 176256
+    },
+    {
+      "hangul": "각",
+      "sjis": "989D",
+      "glyph_index": 3459,
+      "bios_offset": 176224
+    },
+    {
+      "hangul": "간",
+      "sjis": "989C",
+      "glyph_index": 3458,
+      "bios_offset": 176192
+    },
+    {
+      "hangul": "갇",
+      "sjis": "989B",
+      "glyph_index": 3457,
+      "bios_offset": 176160
+    },
+    {
+      "hangul": "갈",
+      "sjis": "989A",
+      "glyph_index": 3456,
+      "bios_offset": 176128
+    },
+    {
+      "hangul": "감",
+      "sjis": "9899",
+      "glyph_index": 3455,
+      "bios_offset": 176096
+    },
+    {
+      "hangul": "갑",
+      "sjis": "9898",
+      "glyph_index": 3454,
+      "bios_offset": 176064
+    },
+    {
+      "hangul": "값",
+      "sjis": "9897",
+      "glyph_index": 3453,
+      "bios_offset": 176032
+    },
+    {
+      "hangul": "갔",
+      "sjis": "9896",
+      "glyph_index": 3452,
+      "bios_offset": 176000
+    },
+    {
+      "hangul": "강",
+      "sjis": "9895",
+      "glyph_index": 3451,
+      "bios_offset": 175968
+    },
+    {
+      "hangul": "갖",
+      "sjis": "9894",
+      "glyph_index": 3450,
+      "bios_offset": 175936
+    },
+    {
+      "hangul": "같",
+      "sjis": "9893",
+      "glyph_index": 3449,
+      "bios_offset": 175904
+    },
+    {
+      "hangul": "갚",
+      "sjis": "9892",
+      "glyph_index": 3448,
+      "bios_offset": 175872
+    },
+    {
+      "hangul": "개",
+      "sjis": "9891",
+      "glyph_index": 3447,
+      "bios_offset": 175840
+    },
+    {
+      "hangul": "객",
+      "sjis": "9890",
+      "glyph_index": 3446,
+      "bios_offset": 175808
+    },
+    {
+      "hangul": "갬",
+      "sjis": "988F",
+      "glyph_index": 3445,
+      "bios_offset": 175776
+    },
+    {
+      "hangul": "거",
+      "sjis": "988E",
+      "glyph_index": 3444,
+      "bios_offset": 175744
+    },
+    {
+      "hangul": "걱",
+      "sjis": "988D",
+      "glyph_index": 3443,
+      "bios_offset": 175712
+    },
+    {
+      "hangul": "건",
+      "sjis": "988C",
+      "glyph_index": 3442,
+      "bios_offset": 175680
+    },
+    {
+      "hangul": "걷",
+      "sjis": "988B",
+      "glyph_index": 3441,
+      "bios_offset": 175648
+    },
+    {
+      "hangul": "걸",
+      "sjis": "988A",
+      "glyph_index": 3440,
+      "bios_offset": 175616
+    },
+    {
+      "hangul": "검",
+      "sjis": "9889",
+      "glyph_index": 3439,
+      "bios_offset": 175584
+    },
+    {
+      "hangul": "겁",
+      "sjis": "9888",
+      "glyph_index": 3438,
+      "bios_offset": 175552
+    },
+    {
+      "hangul": "것",
+      "sjis": "9887",
+      "glyph_index": 3437,
+      "bios_offset": 175520
+    },
+    {
+      "hangul": "겉",
+      "sjis": "9886",
+      "glyph_index": 3436,
+      "bios_offset": 175488
+    },
+    {
+      "hangul": "게",
+      "sjis": "9885",
+      "glyph_index": 3435,
+      "bios_offset": 175456
+    },
+    {
+      "hangul": "겐",
+      "sjis": "9884",
+      "glyph_index": 3434,
+      "bios_offset": 175424
+    },
+    {
+      "hangul": "겠",
+      "sjis": "9883",
+      "glyph_index": 3433,
+      "bios_offset": 175392
+    },
+    {
+      "hangul": "겨",
+      "sjis": "9882",
+      "glyph_index": 3432,
+      "bios_offset": 175360
+    },
+    {
+      "hangul": "격",
+      "sjis": "9881",
+      "glyph_index": 3431,
+      "bios_offset": 175328
+    },
+    {
+      "hangul": "견",
+      "sjis": "9880",
+      "glyph_index": 3430,
+      "bios_offset": 175296
+    },
+    {
+      "hangul": "결",
+      "sjis": "987E",
+      "glyph_index": 3429,
+      "bios_offset": 175264
+    },
+    {
+      "hangul": "겸",
+      "sjis": "987D",
+      "glyph_index": 3428,
+      "bios_offset": 175232
+    },
+    {
+      "hangul": "겹",
+      "sjis": "987C",
+      "glyph_index": 3427,
+      "bios_offset": 175200
+    },
+    {
+      "hangul": "겼",
+      "sjis": "987B",
+      "glyph_index": 3426,
+      "bios_offset": 175168
+    },
+    {
+      "hangul": "경",
+      "sjis": "987A",
+      "glyph_index": 3425,
+      "bios_offset": 175136
+    },
+    {
+      "hangul": "곁",
+      "sjis": "9879",
+      "glyph_index": 3424,
+      "bios_offset": 175104
+    },
+    {
+      "hangul": "계",
+      "sjis": "9878",
+      "glyph_index": 3423,
+      "bios_offset": 175072
+    },
+    {
+      "hangul": "고",
+      "sjis": "9877",
+      "glyph_index": 3422,
+      "bios_offset": 175040
+    },
+    {
+      "hangul": "곡",
+      "sjis": "9876",
+      "glyph_index": 3421,
+      "bios_offset": 175008
+    },
+    {
+      "hangul": "곤",
+      "sjis": "9875",
+      "glyph_index": 3420,
+      "bios_offset": 174976
+    },
+    {
+      "hangul": "곧",
+      "sjis": "9874",
+      "glyph_index": 3419,
+      "bios_offset": 174944
+    },
+    {
+      "hangul": "골",
+      "sjis": "9873",
+      "glyph_index": 3418,
+      "bios_offset": 174912
+    },
+    {
+      "hangul": "곱",
+      "sjis": "9871",
+      "glyph_index": 3416,
+      "bios_offset": 174848
+    },
+    {
+      "hangul": "곳",
+      "sjis": "986F",
+      "glyph_index": 3414,
+      "bios_offset": 174784
+    },
+    {
+      "hangul": "공",
+      "sjis": "986E",
+      "glyph_index": 3413,
+      "bios_offset": 174752
+    },
+    {
+      "hangul": "곶",
+      "sjis": "986D",
+      "glyph_index": 3412,
+      "bios_offset": 174720
+    },
+    {
+      "hangul": "과",
+      "sjis": "986C",
+      "glyph_index": 3411,
+      "bios_offset": 174688
+    },
+    {
+      "hangul": "관",
+      "sjis": "986B",
+      "glyph_index": 3410,
+      "bios_offset": 174656
+    },
+    {
+      "hangul": "광",
+      "sjis": "986A",
+      "glyph_index": 3409,
+      "bios_offset": 174624
+    },
+    {
+      "hangul": "괜",
+      "sjis": "9869",
+      "glyph_index": 3408,
+      "bios_offset": 174592
+    },
+    {
+      "hangul": "괭",
+      "sjis": "9868",
+      "glyph_index": 3407,
+      "bios_offset": 174560
+    },
+    {
+      "hangul": "괴",
+      "sjis": "9867",
+      "glyph_index": 3406,
+      "bios_offset": 174528
+    },
+    {
+      "hangul": "굉",
+      "sjis": "9865",
+      "glyph_index": 3404,
+      "bios_offset": 174464
+    },
+    {
+      "hangul": "교",
+      "sjis": "9864",
+      "glyph_index": 3403,
+      "bios_offset": 174432
+    },
+    {
+      "hangul": "구",
+      "sjis": "9860",
+      "glyph_index": 3399,
+      "bios_offset": 174304
+    },
+    {
+      "hangul": "국",
+      "sjis": "985D",
+      "glyph_index": 3396,
+      "bios_offset": 174208
+    },
+    {
+      "hangul": "군",
+      "sjis": "985C",
+      "glyph_index": 3395,
+      "bios_offset": 174176
+    },
+    {
+      "hangul": "굳",
+      "sjis": "985B",
+      "glyph_index": 3394,
+      "bios_offset": 174144
+    },
+    {
+      "hangul": "굴",
+      "sjis": "985A",
+      "glyph_index": 3393,
+      "bios_offset": 174112
+    },
+    {
+      "hangul": "궁",
+      "sjis": "9858",
+      "glyph_index": 3391,
+      "bios_offset": 174048
+    },
+    {
+      "hangul": "권",
+      "sjis": "9857",
+      "glyph_index": 3390,
+      "bios_offset": 174016
+    },
+    {
+      "hangul": "궤",
+      "sjis": "9855",
+      "glyph_index": 3388,
+      "bios_offset": 173952
+    },
+    {
+      "hangul": "귀",
+      "sjis": "9852",
+      "glyph_index": 3385,
+      "bios_offset": 173856
+    },
+    {
+      "hangul": "귄",
+      "sjis": "9851",
+      "glyph_index": 3384,
+      "bios_offset": 173824
+    },
+    {
+      "hangul": "규",
+      "sjis": "9850",
+      "glyph_index": 3383,
+      "bios_offset": 173792
+    },
+    {
+      "hangul": "균",
+      "sjis": "984E",
+      "glyph_index": 3381,
+      "bios_offset": 173728
+    },
+    {
+      "hangul": "그",
+      "sjis": "984D",
+      "glyph_index": 3380,
+      "bios_offset": 173696
+    },
+    {
+      "hangul": "극",
+      "sjis": "984C",
+      "glyph_index": 3379,
+      "bios_offset": 173664
+    },
+    {
+      "hangul": "근",
+      "sjis": "984B",
+      "glyph_index": 3378,
+      "bios_offset": 173632
+    },
+    {
+      "hangul": "글",
+      "sjis": "9849",
+      "glyph_index": 3376,
+      "bios_offset": 173568
+    },
+    {
+      "hangul": "금",
+      "sjis": "9847",
+      "glyph_index": 3374,
+      "bios_offset": 173504
+    },
+    {
+      "hangul": "급",
+      "sjis": "9845",
+      "glyph_index": 3372,
+      "bios_offset": 173440
+    },
+    {
+      "hangul": "기",
+      "sjis": "9844",
+      "glyph_index": 3371,
+      "bios_offset": 173408
+    },
+    {
+      "hangul": "긴",
+      "sjis": "9843",
+      "glyph_index": 3370,
+      "bios_offset": 173376
+    },
+    {
+      "hangul": "길",
+      "sjis": "9840",
+      "glyph_index": 3367,
+      "bios_offset": 173280
+    },
+    {
+      "hangul": "깃",
+      "sjis": "97FC",
+      "glyph_index": 3366,
+      "bios_offset": 173248
+    },
+    {
+      "hangul": "깊",
+      "sjis": "97FA",
+      "glyph_index": 3364,
+      "bios_offset": 173184
+    },
+    {
+      "hangul": "까",
+      "sjis": "97F9",
+      "glyph_index": 3363,
+      "bios_offset": 173152
+    },
+    {
+      "hangul": "깎",
+      "sjis": "97F8",
+      "glyph_index": 3362,
+      "bios_offset": 173120
+    },
+    {
+      "hangul": "깐",
+      "sjis": "97F7",
+      "glyph_index": 3361,
+      "bios_offset": 173088
+    },
+    {
+      "hangul": "깔",
+      "sjis": "97F5",
+      "glyph_index": 3359,
+      "bios_offset": 173024
+    },
+    {
+      "hangul": "깜",
+      "sjis": "97EF",
+      "glyph_index": 3353,
+      "bios_offset": 172832
+    },
+    {
+      "hangul": "깝",
+      "sjis": "97EE",
+      "glyph_index": 3352,
+      "bios_offset": 172800
+    },
+    {
+      "hangul": "깥",
+      "sjis": "97ED",
+      "glyph_index": 3351,
+      "bios_offset": 172768
+    },
+    {
+      "hangul": "깨",
+      "sjis": "97EB",
+      "glyph_index": 3349,
+      "bios_offset": 172704
+    },
+    {
+      "hangul": "꺄",
+      "sjis": "97EA",
+      "glyph_index": 3348,
+      "bios_offset": 172672
+    },
+    {
+      "hangul": "꺼",
+      "sjis": "97E8",
+      "glyph_index": 3346,
+      "bios_offset": 172608
+    },
+    {
+      "hangul": "꺽",
+      "sjis": "97E6",
+      "glyph_index": 3344,
+      "bios_offset": 172544
+    },
+    {
+      "hangul": "꺾",
+      "sjis": "97E5",
+      "glyph_index": 3343,
+      "bios_offset": 172512
+    },
+    {
+      "hangul": "껍",
+      "sjis": "97E4",
+      "glyph_index": 3342,
+      "bios_offset": 172480
+    },
+    {
+      "hangul": "껏",
+      "sjis": "97E3",
+      "glyph_index": 3341,
+      "bios_offset": 172448
+    },
+    {
+      "hangul": "께",
+      "sjis": "97E0",
+      "glyph_index": 3338,
+      "bios_offset": 172352
+    },
+    {
+      "hangul": "껴",
+      "sjis": "97DD",
+      "glyph_index": 3335,
+      "bios_offset": 172256
+    },
+    {
+      "hangul": "꼈",
+      "sjis": "97DB",
+      "glyph_index": 3333,
+      "bios_offset": 172192
+    },
+    {
+      "hangul": "꼬",
+      "sjis": "97DA",
+      "glyph_index": 3332,
+      "bios_offset": 172160
+    },
+    {
+      "hangul": "꼭",
+      "sjis": "97D9",
+      "glyph_index": 3331,
+      "bios_offset": 172128
+    },
+    {
+      "hangul": "꼴",
+      "sjis": "97D8",
+      "glyph_index": 3330,
+      "bios_offset": 172096
+    },
+    {
+      "hangul": "꼼",
+      "sjis": "97D4",
+      "glyph_index": 3326,
+      "bios_offset": 171968
+    },
+    {
+      "hangul": "꽃",
+      "sjis": "97D3",
+      "glyph_index": 3325,
+      "bios_offset": 171936
+    },
+    {
+      "hangul": "꽤",
+      "sjis": "97D2",
+      "glyph_index": 3324,
+      "bios_offset": 171904
+    },
+    {
+      "hangul": "꾀",
+      "sjis": "97D1",
+      "glyph_index": 3323,
+      "bios_offset": 171872
+    },
+    {
+      "hangul": "꾸",
+      "sjis": "97D0",
+      "glyph_index": 3322,
+      "bios_offset": 171840
+    },
+    {
+      "hangul": "꾼",
+      "sjis": "97CF",
+      "glyph_index": 3321,
+      "bios_offset": 171808
+    },
+    {
+      "hangul": "꿀",
+      "sjis": "97CB",
+      "glyph_index": 3317,
+      "bios_offset": 171680
+    },
+    {
+      "hangul": "꿈",
+      "sjis": "97C9",
+      "glyph_index": 3315,
+      "bios_offset": 171616
+    },
+    {
+      "hangul": "꿔",
+      "sjis": "97C8",
+      "glyph_index": 3314,
+      "bios_offset": 171584
+    },
+    {
+      "hangul": "뀌",
+      "sjis": "97C5",
+      "glyph_index": 3311,
+      "bios_offset": 171488
+    },
+    {
+      "hangul": "뀐",
+      "sjis": "97C4",
+      "glyph_index": 3310,
+      "bios_offset": 171456
+    },
+    {
+      "hangul": "끄",
+      "sjis": "97C3",
+      "glyph_index": 3309,
+      "bios_offset": 171424
+    },
+    {
+      "hangul": "끌",
+      "sjis": "97C2",
+      "glyph_index": 3308,
+      "bios_offset": 171392
+    },
+    {
+      "hangul": "끔",
+      "sjis": "97C0",
+      "glyph_index": 3306,
+      "bios_offset": 171328
+    },
+    {
+      "hangul": "끝",
+      "sjis": "97BE",
+      "glyph_index": 3304,
+      "bios_offset": 171264
+    },
+    {
+      "hangul": "끼",
+      "sjis": "97BD",
+      "glyph_index": 3303,
+      "bios_offset": 171232
+    },
+    {
+      "hangul": "낄",
+      "sjis": "97BC",
+      "glyph_index": 3302,
+      "bios_offset": 171200
+    },
+    {
+      "hangul": "낌",
+      "sjis": "97BB",
+      "glyph_index": 3301,
+      "bios_offset": 171168
+    },
+    {
+      "hangul": "나",
+      "sjis": "97BA",
+      "glyph_index": 3300,
+      "bios_offset": 171136
+    },
+    {
+      "hangul": "낙",
+      "sjis": "97B8",
+      "glyph_index": 3298,
+      "bios_offset": 171072
+    },
+    {
+      "hangul": "낚",
+      "sjis": "97B4",
+      "glyph_index": 3294,
+      "bios_offset": 170944
+    },
+    {
+      "hangul": "난",
+      "sjis": "97B2",
+      "glyph_index": 3292,
+      "bios_offset": 170880
+    },
+    {
+      "hangul": "날",
+      "sjis": "97B1",
+      "glyph_index": 3291,
+      "bios_offset": 170848
+    },
+    {
+      "hangul": "남",
+      "sjis": "97B0",
+      "glyph_index": 3290,
+      "bios_offset": 170816
+    },
+    {
+      "hangul": "납",
+      "sjis": "97AE",
+      "glyph_index": 3288,
+      "bios_offset": 170752
+    },
+    {
+      "hangul": "낫",
+      "sjis": "97AD",
+      "glyph_index": 3287,
+      "bios_offset": 170720
+    },
+    {
+      "hangul": "났",
+      "sjis": "97AB",
+      "glyph_index": 3285,
+      "bios_offset": 170656
+    },
+    {
+      "hangul": "낮",
+      "sjis": "97A9",
+      "glyph_index": 3283,
+      "bios_offset": 170592
+    },
+    {
+      "hangul": "내",
+      "sjis": "97A8",
+      "glyph_index": 3282,
+      "bios_offset": 170560
+    },
+    {
+      "hangul": "낸",
+      "sjis": "97A5",
+      "glyph_index": 3279,
+      "bios_offset": 170464
+    },
+    {
+      "hangul": "낼",
+      "sjis": "97A1",
+      "glyph_index": 3275,
+      "bios_offset": 170336
+    },
+    {
+      "hangul": "냈",
+      "sjis": "979F",
+      "glyph_index": 3273,
+      "bios_offset": 170272
+    },
+    {
+      "hangul": "냐",
+      "sjis": "979E",
+      "glyph_index": 3272,
+      "bios_offset": 170240
+    },
+    {
+      "hangul": "냥",
+      "sjis": "979C",
+      "glyph_index": 3270,
+      "bios_offset": 170176
+    },
+    {
+      "hangul": "너",
+      "sjis": "979B",
+      "glyph_index": 3269,
+      "bios_offset": 170144
+    },
+    {
+      "hangul": "널",
+      "sjis": "979A",
+      "glyph_index": 3268,
+      "bios_offset": 170112
+    },
+    {
+      "hangul": "넓",
+      "sjis": "9799",
+      "glyph_index": 3267,
+      "bios_offset": 170080
+    },
+    {
+      "hangul": "넘",
+      "sjis": "9796",
+      "glyph_index": 3264,
+      "bios_offset": 169984
+    },
+    {
+      "hangul": "넣",
+      "sjis": "9795",
+      "glyph_index": 3263,
+      "bios_offset": 169952
+    },
+    {
+      "hangul": "네",
+      "sjis": "9794",
+      "glyph_index": 3262,
+      "bios_offset": 169920
+    },
+    {
+      "hangul": "녀",
+      "sjis": "9793",
+      "glyph_index": 3261,
+      "bios_offset": 169888
+    },
+    {
+      "hangul": "년",
+      "sjis": "9791",
+      "glyph_index": 3259,
+      "bios_offset": 169824
+    },
+    {
+      "hangul": "념",
+      "sjis": "978F",
+      "glyph_index": 3257,
+      "bios_offset": 169760
+    },
+    {
+      "hangul": "녔",
+      "sjis": "978C",
+      "glyph_index": 3254,
+      "bios_offset": 169664
+    },
+    {
+      "hangul": "녕",
+      "sjis": "9789",
+      "glyph_index": 3251,
+      "bios_offset": 169568
+    },
+    {
+      "hangul": "노",
+      "sjis": "9787",
+      "glyph_index": 3249,
+      "bios_offset": 169504
+    },
+    {
+      "hangul": "녹",
+      "sjis": "9786",
+      "glyph_index": 3248,
+      "bios_offset": 169472
+    },
+    {
+      "hangul": "놀",
+      "sjis": "9785",
+      "glyph_index": 3247,
+      "bios_offset": 169440
+    },
+    {
+      "hangul": "놈",
+      "sjis": "9784",
+      "glyph_index": 3246,
+      "bios_offset": 169408
+    },
+    {
+      "hangul": "농",
+      "sjis": "9780",
+      "glyph_index": 3242,
+      "bios_offset": 169280
+    },
+    {
+      "hangul": "높",
+      "sjis": "977C",
+      "glyph_index": 3239,
+      "bios_offset": 169184
+    },
+    {
+      "hangul": "놓",
+      "sjis": "977B",
+      "glyph_index": 3238,
+      "bios_offset": 169152
+    },
+    {
+      "hangul": "뇌",
+      "sjis": "9777",
+      "glyph_index": 3234,
+      "bios_offset": 169024
+    },
+    {
+      "hangul": "누",
+      "sjis": "9775",
+      "glyph_index": 3232,
+      "bios_offset": 168960
+    },
+    {
+      "hangul": "눅",
+      "sjis": "9773",
+      "glyph_index": 3230,
+      "bios_offset": 168896
+    },
+    {
+      "hangul": "눈",
+      "sjis": "9771",
+      "glyph_index": 3228,
+      "bios_offset": 168832
+    },
+    {
+      "hangul": "눕",
+      "sjis": "976F",
+      "glyph_index": 3226,
+      "bios_offset": 168768
+    },
+    {
+      "hangul": "뉴",
+      "sjis": "976B",
+      "glyph_index": 3222,
+      "bios_offset": 168640
+    },
+    {
+      "hangul": "느",
+      "sjis": "976A",
+      "glyph_index": 3221,
+      "bios_offset": 168608
+    },
+    {
+      "hangul": "는",
+      "sjis": "9769",
+      "glyph_index": 3220,
+      "bios_offset": 168576
+    },
+    {
+      "hangul": "늘",
+      "sjis": "9768",
+      "glyph_index": 3219,
+      "bios_offset": 168544
+    },
+    {
+      "hangul": "능",
+      "sjis": "9766",
+      "glyph_index": 3217,
+      "bios_offset": 168480
+    },
+    {
+      "hangul": "늦",
+      "sjis": "9762",
+      "glyph_index": 3213,
+      "bios_offset": 168352
+    },
+    {
+      "hangul": "니",
+      "sjis": "9760",
+      "glyph_index": 3211,
+      "bios_offset": 168288
+    },
+    {
+      "hangul": "닌",
+      "sjis": "975B",
+      "glyph_index": 3206,
+      "bios_offset": 168128
+    },
+    {
+      "hangul": "닐",
+      "sjis": "9758",
+      "glyph_index": 3203,
+      "bios_offset": 168032
+    },
+    {
+      "hangul": "님",
+      "sjis": "9757",
+      "glyph_index": 3202,
+      "bios_offset": 168000
+    },
+    {
+      "hangul": "닙",
+      "sjis": "9755",
+      "glyph_index": 3200,
+      "bios_offset": 167936
+    },
+    {
+      "hangul": "다",
+      "sjis": "9754",
+      "glyph_index": 3199,
+      "bios_offset": 167904
+    },
+    {
+      "hangul": "닥",
+      "sjis": "9753",
+      "glyph_index": 3198,
+      "bios_offset": 167872
+    },
+    {
+      "hangul": "단",
+      "sjis": "9751",
+      "glyph_index": 3196,
+      "bios_offset": 167808
+    },
+    {
+      "hangul": "닫",
+      "sjis": "9750",
+      "glyph_index": 3195,
+      "bios_offset": 167776
+    },
+    {
+      "hangul": "달",
+      "sjis": "974D",
+      "glyph_index": 3192,
+      "bios_offset": 167680
+    },
+    {
+      "hangul": "닮",
+      "sjis": "974B",
+      "glyph_index": 3190,
+      "bios_offset": 167616
+    },
+    {
+      "hangul": "담",
+      "sjis": "974A",
+      "glyph_index": 3189,
+      "bios_offset": 167584
+    },
+    {
+      "hangul": "답",
+      "sjis": "9749",
+      "glyph_index": 3188,
+      "bios_offset": 167552
+    },
+    {
+      "hangul": "당",
+      "sjis": "9748",
+      "glyph_index": 3187,
+      "bios_offset": 167520
+    },
+    {
+      "hangul": "닿",
+      "sjis": "9747",
+      "glyph_index": 3186,
+      "bios_offset": 167488
+    },
+    {
+      "hangul": "대",
+      "sjis": "9743",
+      "glyph_index": 3182,
+      "bios_offset": 167360
+    },
+    {
+      "hangul": "댁",
+      "sjis": "9742",
+      "glyph_index": 3181,
+      "bios_offset": 167328
+    },
+    {
+      "hangul": "더",
+      "sjis": "9740",
+      "glyph_index": 3179,
+      "bios_offset": 167264
+    },
+    {
+      "hangul": "덕",
+      "sjis": "96FB",
+      "glyph_index": 3177,
+      "bios_offset": 167200
+    },
+    {
+      "hangul": "던",
+      "sjis": "96FA",
+      "glyph_index": 3176,
+      "bios_offset": 167168
+    },
+    {
+      "hangul": "덜",
+      "sjis": "96F9",
+      "glyph_index": 3175,
+      "bios_offset": 167136
+    },
+    {
+      "hangul": "덤",
+      "sjis": "96F8",
+      "glyph_index": 3174,
+      "bios_offset": 167104
+    },
+    {
+      "hangul": "덧",
+      "sjis": "96F7",
+      "glyph_index": 3173,
+      "bios_offset": 167072
+    },
+    {
+      "hangul": "덩",
+      "sjis": "96F6",
+      "glyph_index": 3172,
+      "bios_offset": 167040
+    },
+    {
+      "hangul": "덮",
+      "sjis": "96F5",
+      "glyph_index": 3171,
+      "bios_offset": 167008
+    },
+    {
+      "hangul": "데",
+      "sjis": "96EE",
+      "glyph_index": 3164,
+      "bios_offset": 166784
+    },
+    {
+      "hangul": "뎌",
+      "sjis": "96ED",
+      "glyph_index": 3163,
+      "bios_offset": 166752
+    },
+    {
+      "hangul": "도",
+      "sjis": "96EB",
+      "glyph_index": 3161,
+      "bios_offset": 166688
+    },
+    {
+      "hangul": "독",
+      "sjis": "96EA",
+      "glyph_index": 3160,
+      "bios_offset": 166656
+    },
+    {
+      "hangul": "돈",
+      "sjis": "96E7",
+      "glyph_index": 3157,
+      "bios_offset": 166560
+    },
+    {
+      "hangul": "돌",
+      "sjis": "96E6",
+      "glyph_index": 3156,
+      "bios_offset": 166528
+    },
+    {
+      "hangul": "돕",
+      "sjis": "96E3",
+      "glyph_index": 3153,
+      "bios_offset": 166432
+    },
+    {
+      "hangul": "동",
+      "sjis": "96E1",
+      "glyph_index": 3151,
+      "bios_offset": 166368
+    },
+    {
+      "hangul": "돼",
+      "sjis": "96E0",
+      "glyph_index": 3150,
+      "bios_offset": 166336
+    },
+    {
+      "hangul": "됐",
+      "sjis": "96DE",
+      "glyph_index": 3148,
+      "bios_offset": 166272
+    },
+    {
+      "hangul": "되",
+      "sjis": "96DD",
+      "glyph_index": 3147,
+      "bios_offset": 166240
+    },
+    {
+      "hangul": "된",
+      "sjis": "96DC",
+      "glyph_index": 3146,
+      "bios_offset": 166208
+    },
+    {
+      "hangul": "될",
+      "sjis": "96DB",
+      "glyph_index": 3145,
+      "bios_offset": 166176
+    },
+    {
+      "hangul": "됩",
+      "sjis": "96D6",
+      "glyph_index": 3140,
+      "bios_offset": 166016
+    },
+    {
+      "hangul": "두",
+      "sjis": "96D5",
+      "glyph_index": 3139,
+      "bios_offset": 165984
+    },
+    {
+      "hangul": "둑",
+      "sjis": "96D4",
+      "glyph_index": 3138,
+      "bios_offset": 165952
+    },
+    {
+      "hangul": "둔",
+      "sjis": "96D3",
+      "glyph_index": 3137,
+      "bios_offset": 165920
+    },
+    {
+      "hangul": "둘",
+      "sjis": "96D2",
+      "glyph_index": 3136,
+      "bios_offset": 165888
+    },
+    {
+      "hangul": "둠",
+      "sjis": "96D1",
+      "glyph_index": 3135,
+      "bios_offset": 165856
+    },
+    {
+      "hangul": "둡",
+      "sjis": "96D0",
+      "glyph_index": 3134,
+      "bios_offset": 165824
+    },
+    {
+      "hangul": "둥",
+      "sjis": "96CF",
+      "glyph_index": 3133,
+      "bios_offset": 165792
+    },
+    {
+      "hangul": "둬",
+      "sjis": "96CE",
+      "glyph_index": 3132,
+      "bios_offset": 165760
+    },
+    {
+      "hangul": "뒀",
+      "sjis": "96CC",
+      "glyph_index": 3130,
+      "bios_offset": 165696
+    },
+    {
+      "hangul": "뒤",
+      "sjis": "96CB",
+      "glyph_index": 3129,
+      "bios_offset": 165664
+    },
+    {
+      "hangul": "뒷",
+      "sjis": "96C9",
+      "glyph_index": 3127,
+      "bios_offset": 165600
+    },
+    {
+      "hangul": "듀",
+      "sjis": "96C8",
+      "glyph_index": 3126,
+      "bios_offset": 165568
+    },
+    {
+      "hangul": "드",
+      "sjis": "96C7",
+      "glyph_index": 3125,
+      "bios_offset": 165536
+    },
+    {
+      "hangul": "득",
+      "sjis": "96C4",
+      "glyph_index": 3122,
+      "bios_offset": 165440
+    },
+    {
+      "hangul": "든",
+      "sjis": "96C3",
+      "glyph_index": 3121,
+      "bios_offset": 165408
+    },
+    {
+      "hangul": "듣",
+      "sjis": "96C1",
+      "glyph_index": 3119,
+      "bios_offset": 165344
+    },
+    {
+      "hangul": "들",
+      "sjis": "96BB",
+      "glyph_index": 3113,
+      "bios_offset": 165152
+    },
+    {
+      "hangul": "듭",
+      "sjis": "96B9",
+      "glyph_index": 3111,
+      "bios_offset": 165088
+    },
+    {
+      "hangul": "듯",
+      "sjis": "96B8",
+      "glyph_index": 3110,
+      "bios_offset": 165056
+    },
+    {
+      "hangul": "등",
+      "sjis": "96B7",
+      "glyph_index": 3109,
+      "bios_offset": 165024
+    },
+    {
+      "hangul": "디",
+      "sjis": "96B5",
+      "glyph_index": 3107,
+      "bios_offset": 164960
+    },
+    {
+      "hangul": "딘",
+      "sjis": "96B4",
+      "glyph_index": 3106,
+      "bios_offset": 164928
+    },
+    {
+      "hangul": "딜",
+      "sjis": "96AE",
+      "glyph_index": 3100,
+      "bios_offset": 164736
+    },
+    {
+      "hangul": "딩",
+      "sjis": "96AB",
+      "glyph_index": 3097,
+      "bios_offset": 164640
+    },
+    {
+      "hangul": "딪",
+      "sjis": "96AA",
+      "glyph_index": 3096,
+      "bios_offset": 164608
+    },
+    {
+      "hangul": "따",
+      "sjis": "96A8",
+      "glyph_index": 3094,
+      "bios_offset": 164544
+    },
+    {
+      "hangul": "딱",
+      "sjis": "96A5",
+      "glyph_index": 3091,
+      "bios_offset": 164448
+    },
+    {
+      "hangul": "딴",
+      "sjis": "96A4",
+      "glyph_index": 3090,
+      "bios_offset": 164416
+    },
+    {
+      "hangul": "땅",
+      "sjis": "96A0",
+      "glyph_index": 3086,
+      "bios_offset": 164288
+    },
+    {
+      "hangul": "때",
+      "sjis": "969B",
+      "glyph_index": 3081,
+      "bios_offset": 164128
+    },
+    {
+      "hangul": "땡",
+      "sjis": "969A",
+      "glyph_index": 3080,
+      "bios_offset": 164096
+    },
+    {
+      "hangul": "떠",
+      "sjis": "9699",
+      "glyph_index": 3079,
+      "bios_offset": 164064
+    },
+    {
+      "hangul": "떡",
+      "sjis": "9698",
+      "glyph_index": 3078,
+      "bios_offset": 164032
+    },
+    {
+      "hangul": "떤",
+      "sjis": "9697",
+      "glyph_index": 3077,
+      "bios_offset": 164000
+    },
+    {
+      "hangul": "떨",
+      "sjis": "9694",
+      "glyph_index": 3074,
+      "bios_offset": 163904
+    },
+    {
+      "hangul": "떻",
+      "sjis": "9693",
+      "glyph_index": 3073,
+      "bios_offset": 163872
+    },
+    {
+      "hangul": "떼",
+      "sjis": "9692",
+      "glyph_index": 3072,
+      "bios_offset": 163840
+    },
+    {
+      "hangul": "또",
+      "sjis": "9691",
+      "glyph_index": 3071,
+      "bios_offset": 163808
+    },
+    {
+      "hangul": "똑",
+      "sjis": "9690",
+      "glyph_index": 3070,
+      "bios_offset": 163776
+    },
+    {
+      "hangul": "뚝",
+      "sjis": "968F",
+      "glyph_index": 3069,
+      "bios_offset": 163744
+    },
+    {
+      "hangul": "뛰",
+      "sjis": "968E",
+      "glyph_index": 3068,
+      "bios_offset": 163712
+    },
+    {
+      "hangul": "뜨",
+      "sjis": "968C",
+      "glyph_index": 3066,
+      "bios_offset": 163648
+    },
+    {
+      "hangul": "뜩",
+      "sjis": "968B",
+      "glyph_index": 3065,
+      "bios_offset": 163616
+    },
+    {
+      "hangul": "뜻",
+      "sjis": "968A",
+      "glyph_index": 3064,
+      "bios_offset": 163584
+    },
+    {
+      "hangul": "띄",
+      "sjis": "9689",
+      "glyph_index": 3063,
+      "bios_offset": 163552
+    },
+    {
+      "hangul": "띠",
+      "sjis": "9686",
+      "glyph_index": 3060,
+      "bios_offset": 163456
+    },
+    {
+      "hangul": "띤",
+      "sjis": "9684",
+      "glyph_index": 3058,
+      "bios_offset": 163392
+    },
+    {
+      "hangul": "라",
+      "sjis": "9683",
+      "glyph_index": 3057,
+      "bios_offset": 163360
+    },
+    {
+      "hangul": "락",
+      "sjis": "9680",
+      "glyph_index": 3054,
+      "bios_offset": 163264
+    },
+    {
+      "hangul": "란",
+      "sjis": "967E",
+      "glyph_index": 3053,
+      "bios_offset": 163232
+    },
+    {
+      "hangul": "랄",
+      "sjis": "967D",
+      "glyph_index": 3052,
+      "bios_offset": 163200
+    },
+    {
+      "hangul": "람",
+      "sjis": "967C",
+      "glyph_index": 3051,
+      "bios_offset": 163168
+    },
+    {
+      "hangul": "랍",
+      "sjis": "967A",
+      "glyph_index": 3049,
+      "bios_offset": 163104
+    },
+    {
+      "hangul": "랐",
+      "sjis": "9679",
+      "glyph_index": 3048,
+      "bios_offset": 163072
+    },
+    {
+      "hangul": "랑",
+      "sjis": "9678",
+      "glyph_index": 3047,
+      "bios_offset": 163040
+    },
+    {
+      "hangul": "래",
+      "sjis": "9677",
+      "glyph_index": 3046,
+      "bios_offset": 163008
+    },
+    {
+      "hangul": "랜",
+      "sjis": "9675",
+      "glyph_index": 3044,
+      "bios_offset": 162944
+    },
+    {
+      "hangul": "랫",
+      "sjis": "9674",
+      "glyph_index": 3043,
+      "bios_offset": 162912
+    },
+    {
+      "hangul": "랬",
+      "sjis": "9673",
+      "glyph_index": 3042,
+      "bios_offset": 162880
+    },
+    {
+      "hangul": "략",
+      "sjis": "9672",
+      "glyph_index": 3041,
+      "bios_offset": 162848
+    },
+    {
+      "hangul": "량",
+      "sjis": "9671",
+      "glyph_index": 3040,
+      "bios_offset": 162816
+    },
+    {
+      "hangul": "러",
+      "sjis": "9670",
+      "glyph_index": 3039,
+      "bios_offset": 162784
+    },
+    {
+      "hangul": "럭",
+      "sjis": "966F",
+      "glyph_index": 3038,
+      "bios_offset": 162752
+    },
+    {
+      "hangul": "런",
+      "sjis": "966E",
+      "glyph_index": 3037,
+      "bios_offset": 162720
+    },
+    {
+      "hangul": "럴",
+      "sjis": "966D",
+      "glyph_index": 3036,
+      "bios_offset": 162688
+    },
+    {
+      "hangul": "럼",
+      "sjis": "966A",
+      "glyph_index": 3033,
+      "bios_offset": 162592
+    },
+    {
+      "hangul": "럽",
+      "sjis": "9669",
+      "glyph_index": 3032,
+      "bios_offset": 162560
+    },
+    {
+      "hangul": "렀",
+      "sjis": "9667",
+      "glyph_index": 3030,
+      "bios_offset": 162496
+    },
+    {
+      "hangul": "렁",
+      "sjis": "9666",
+      "glyph_index": 3029,
+      "bios_offset": 162464
+    },
+    {
+      "hangul": "렇",
+      "sjis": "9665",
+      "glyph_index": 3028,
+      "bios_offset": 162432
+    },
+    {
+      "hangul": "레",
+      "sjis": "9662",
+      "glyph_index": 3025,
+      "bios_offset": 162336
+    },
+    {
+      "hangul": "렉",
+      "sjis": "9661",
+      "glyph_index": 3024,
+      "bios_offset": 162304
+    },
+    {
+      "hangul": "렌",
+      "sjis": "965E",
+      "glyph_index": 3021,
+      "bios_offset": 162208
+    },
+    {
+      "hangul": "려",
+      "sjis": "9655",
+      "glyph_index": 3012,
+      "bios_offset": 161920
+    },
+    {
+      "hangul": "력",
+      "sjis": "9654",
+      "glyph_index": 3011,
+      "bios_offset": 161888
+    },
+    {
+      "hangul": "련",
+      "sjis": "9650",
+      "glyph_index": 3007,
+      "bios_offset": 161760
+    },
+    {
+      "hangul": "렬",
+      "sjis": "964E",
+      "glyph_index": 3005,
+      "bios_offset": 161696
+    },
+    {
+      "hangul": "렴",
+      "sjis": "964D",
+      "glyph_index": 3004,
+      "bios_offset": 161664
+    },
+    {
+      "hangul": "렸",
+      "sjis": "964A",
+      "glyph_index": 3001,
+      "bios_offset": 161568
+    },
+    {
+      "hangul": "령",
+      "sjis": "9649",
+      "glyph_index": 3000,
+      "bios_offset": 161536
+    },
+    {
+      "hangul": "례",
+      "sjis": "9648",
+      "glyph_index": 2999,
+      "bios_offset": 161504
+    },
+    {
+      "hangul": "로",
+      "sjis": "9647",
+      "glyph_index": 2998,
+      "bios_offset": 161472
+    },
+    {
+      "hangul": "록",
+      "sjis": "9646",
+      "glyph_index": 2997,
+      "bios_offset": 161440
+    },
+    {
+      "hangul": "론",
+      "sjis": "9644",
+      "glyph_index": 2995,
+      "bios_offset": 161376
+    },
+    {
+      "hangul": "롭",
+      "sjis": "9643",
+      "glyph_index": 2994,
+      "bios_offset": 161344
+    },
+    {
+      "hangul": "롯",
+      "sjis": "9642",
+      "glyph_index": 2993,
+      "bios_offset": 161312
+    },
+    {
+      "hangul": "롱",
+      "sjis": "9641",
+      "glyph_index": 2992,
+      "bios_offset": 161280
+    },
+    {
+      "hangul": "뢰",
+      "sjis": "95FC",
+      "glyph_index": 2990,
+      "bios_offset": 161216
+    },
+    {
+      "hangul": "료",
+      "sjis": "95F7",
+      "glyph_index": 2985,
+      "bios_offset": 161056
+    },
+    {
+      "hangul": "룡",
+      "sjis": "95F5",
+      "glyph_index": 2983,
+      "bios_offset": 160992
+    },
+    {
+      "hangul": "루",
+      "sjis": "95F4",
+      "glyph_index": 2982,
+      "bios_offset": 160960
+    },
+    {
+      "hangul": "룬",
+      "sjis": "95F0",
+      "glyph_index": 2978,
+      "bios_offset": 160832
+    },
+    {
+      "hangul": "룸",
+      "sjis": "95EE",
+      "glyph_index": 2976,
+      "bios_offset": 160768
+    },
+    {
+      "hangul": "룻",
+      "sjis": "95ED",
+      "glyph_index": 2975,
+      "bios_offset": 160736
+    },
+    {
+      "hangul": "류",
+      "sjis": "95EC",
+      "glyph_index": 2974,
+      "bios_offset": 160704
+    },
+    {
+      "hangul": "륙",
+      "sjis": "95EB",
+      "glyph_index": 2973,
+      "bios_offset": 160672
+    },
+    {
+      "hangul": "륭",
+      "sjis": "95E8",
+      "glyph_index": 2970,
+      "bios_offset": 160576
+    },
+    {
+      "hangul": "르",
+      "sjis": "95E7",
+      "glyph_index": 2969,
+      "bios_offset": 160544
+    },
+    {
+      "hangul": "른",
+      "sjis": "95E5",
+      "glyph_index": 2967,
+      "bios_offset": 160480
+    },
+    {
+      "hangul": "를",
+      "sjis": "95E4",
+      "glyph_index": 2966,
+      "bios_offset": 160448
+    },
+    {
+      "hangul": "름",
+      "sjis": "95E3",
+      "glyph_index": 2965,
+      "bios_offset": 160416
+    },
+    {
+      "hangul": "릅",
+      "sjis": "95E1",
+      "glyph_index": 2963,
+      "bios_offset": 160352
+    },
+    {
+      "hangul": "릇",
+      "sjis": "95DE",
+      "glyph_index": 2960,
+      "bios_offset": 160256
+    },
+    {
+      "hangul": "리",
+      "sjis": "95DD",
+      "glyph_index": 2959,
+      "bios_offset": 160224
+    },
+    {
+      "hangul": "린",
+      "sjis": "95DC",
+      "glyph_index": 2958,
+      "bios_offset": 160192
+    },
+    {
+      "hangul": "릴",
+      "sjis": "95DA",
+      "glyph_index": 2956,
+      "bios_offset": 160128
+    },
+    {
+      "hangul": "림",
+      "sjis": "95D8",
+      "glyph_index": 2954,
+      "bios_offset": 160064
+    },
+    {
+      "hangul": "립",
+      "sjis": "95D1",
+      "glyph_index": 2947,
+      "bios_offset": 159840
+    },
+    {
+      "hangul": "릿",
+      "sjis": "95CE",
+      "glyph_index": 2944,
+      "bios_offset": 159744
+    },
+    {
+      "hangul": "마",
+      "sjis": "95CD",
+      "glyph_index": 2943,
+      "bios_offset": 159712
+    },
+    {
+      "hangul": "막",
+      "sjis": "95CC",
+      "glyph_index": 2942,
+      "bios_offset": 159680
+    },
+    {
+      "hangul": "만",
+      "sjis": "95CB",
+      "glyph_index": 2941,
+      "bios_offset": 159648
+    },
+    {
+      "hangul": "많",
+      "sjis": "95C9",
+      "glyph_index": 2939,
+      "bios_offset": 159584
+    },
+    {
+      "hangul": "말",
+      "sjis": "95C6",
+      "glyph_index": 2936,
+      "bios_offset": 159488
+    },
+    {
+      "hangul": "맑",
+      "sjis": "95C5",
+      "glyph_index": 2935,
+      "bios_offset": 159456
+    },
+    {
+      "hangul": "맘",
+      "sjis": "95C4",
+      "glyph_index": 2934,
+      "bios_offset": 159424
+    },
+    {
+      "hangul": "맙",
+      "sjis": "95C1",
+      "glyph_index": 2931,
+      "bios_offset": 159328
+    },
+    {
+      "hangul": "맛",
+      "sjis": "95C0",
+      "glyph_index": 2930,
+      "bios_offset": 159296
+    },
+    {
+      "hangul": "망",
+      "sjis": "95BE",
+      "glyph_index": 2928,
+      "bios_offset": 159232
+    },
+    {
+      "hangul": "맞",
+      "sjis": "95BC",
+      "glyph_index": 2926,
+      "bios_offset": 159168
+    },
+    {
+      "hangul": "맡",
+      "sjis": "95BB",
+      "glyph_index": 2925,
+      "bios_offset": 159136
+    },
+    {
+      "hangul": "맣",
+      "sjis": "95B9",
+      "glyph_index": 2923,
+      "bios_offset": 159072
+    },
+    {
+      "hangul": "매",
+      "sjis": "95B8",
+      "glyph_index": 2922,
+      "bios_offset": 159040
+    },
+    {
+      "hangul": "맥",
+      "sjis": "95B4",
+      "glyph_index": 2918,
+      "bios_offset": 158912
+    },
+    {
+      "hangul": "맹",
+      "sjis": "95B3",
+      "glyph_index": 2917,
+      "bios_offset": 158880
+    },
+    {
+      "hangul": "머",
+      "sjis": "95B0",
+      "glyph_index": 2914,
+      "bios_offset": 158784
+    },
+    {
+      "hangul": "먹",
+      "sjis": "95AF",
+      "glyph_index": 2913,
+      "bios_offset": 158752
+    },
+    {
+      "hangul": "먼",
+      "sjis": "95AE",
+      "glyph_index": 2912,
+      "bios_offset": 158720
+    },
+    {
+      "hangul": "멀",
+      "sjis": "95AD",
+      "glyph_index": 2911,
+      "bios_offset": 158688
+    },
+    {
+      "hangul": "멈",
+      "sjis": "95AB",
+      "glyph_index": 2909,
+      "bios_offset": 158624
+    },
+    {
+      "hangul": "멋",
+      "sjis": "95A9",
+      "glyph_index": 2907,
+      "bios_offset": 158560
+    },
+    {
+      "hangul": "멍",
+      "sjis": "95A7",
+      "glyph_index": 2905,
+      "bios_offset": 158496
+    },
+    {
+      "hangul": "메",
+      "sjis": "95A6",
+      "glyph_index": 2904,
+      "bios_offset": 158464
+    },
+    {
+      "hangul": "멘",
+      "sjis": "95A4",
+      "glyph_index": 2902,
+      "bios_offset": 158400
+    },
+    {
+      "hangul": "멜",
+      "sjis": "95A3",
+      "glyph_index": 2901,
+      "bios_offset": 158368
+    },
+    {
+      "hangul": "며",
+      "sjis": "95A1",
+      "glyph_index": 2899,
+      "bios_offset": 158304
+    },
+    {
+      "hangul": "면",
+      "sjis": "95A0",
+      "glyph_index": 2898,
+      "bios_offset": 158272
+    },
+    {
+      "hangul": "멸",
+      "sjis": "959B",
+      "glyph_index": 2893,
+      "bios_offset": 158112
+    },
+    {
+      "hangul": "명",
+      "sjis": "9599",
+      "glyph_index": 2891,
+      "bios_offset": 158048
+    },
+    {
+      "hangul": "몇",
+      "sjis": "9598",
+      "glyph_index": 2890,
+      "bios_offset": 158016
+    },
+    {
+      "hangul": "모",
+      "sjis": "9596",
+      "glyph_index": 2888,
+      "bios_offset": 157952
+    },
+    {
+      "hangul": "목",
+      "sjis": "9593",
+      "glyph_index": 2885,
+      "bios_offset": 157856
+    },
+    {
+      "hangul": "몫",
+      "sjis": "9592",
+      "glyph_index": 2884,
+      "bios_offset": 157824
+    },
+    {
+      "hangul": "몬",
+      "sjis": "958F",
+      "glyph_index": 2881,
+      "bios_offset": 157728
+    },
+    {
+      "hangul": "몰",
+      "sjis": "958E",
+      "glyph_index": 2880,
+      "bios_offset": 157696
+    },
+    {
+      "hangul": "몸",
+      "sjis": "958D",
+      "glyph_index": 2879,
+      "bios_offset": 157664
+    },
+    {
+      "hangul": "못",
+      "sjis": "958C",
+      "glyph_index": 2878,
+      "bios_offset": 157632
+    },
+    {
+      "hangul": "몽",
+      "sjis": "958B",
+      "glyph_index": 2877,
+      "bios_offset": 157600
+    },
+    {
+      "hangul": "묘",
+      "sjis": "958A",
+      "glyph_index": 2876,
+      "bios_offset": 157568
+    },
+    {
+      "hangul": "무",
+      "sjis": "9588",
+      "glyph_index": 2874,
+      "bios_offset": 157504
+    },
+    {
+      "hangul": "묵",
+      "sjis": "9587",
+      "glyph_index": 2873,
+      "bios_offset": 157472
+    },
+    {
+      "hangul": "묶",
+      "sjis": "9586",
+      "glyph_index": 2872,
+      "bios_offset": 157440
+    },
+    {
+      "hangul": "문",
+      "sjis": "9585",
+      "glyph_index": 2871,
+      "bios_offset": 157408
+    },
+    {
+      "hangul": "묻",
+      "sjis": "957D",
+      "glyph_index": 2864,
+      "bios_offset": 157184
+    },
+    {
+      "hangul": "물",
+      "sjis": "957B",
+      "glyph_index": 2862,
+      "bios_offset": 157120
+    },
+    {
+      "hangul": "뭐",
+      "sjis": "9579",
+      "glyph_index": 2860,
+      "bios_offset": 157056
+    },
+    {
+      "hangul": "뭔",
+      "sjis": "9575",
+      "glyph_index": 2856,
+      "bios_offset": 156928
+    },
+    {
+      "hangul": "뭘",
+      "sjis": "9571",
+      "glyph_index": 2852,
+      "bios_offset": 156800
+    },
+    {
+      "hangul": "미",
+      "sjis": "9570",
+      "glyph_index": 2851,
+      "bios_offset": 156768
+    },
+    {
+      "hangul": "민",
+      "sjis": "956F",
+      "glyph_index": 2850,
+      "bios_offset": 156736
+    },
+    {
+      "hangul": "믿",
+      "sjis": "956D",
+      "glyph_index": 2848,
+      "bios_offset": 156672
+    },
+    {
+      "hangul": "밀",
+      "sjis": "956C",
+      "glyph_index": 2847,
+      "bios_offset": 156640
+    },
+    {
+      "hangul": "밌",
+      "sjis": "956B",
+      "glyph_index": 2846,
+      "bios_offset": 156608
+    },
+    {
+      "hangul": "밑",
+      "sjis": "956A",
+      "glyph_index": 2845,
+      "bios_offset": 156576
+    },
+    {
+      "hangul": "바",
+      "sjis": "9568",
+      "glyph_index": 2843,
+      "bios_offset": 156512
+    },
+    {
+      "hangul": "박",
+      "sjis": "9567",
+      "glyph_index": 2842,
+      "bios_offset": 156480
+    },
+    {
+      "hangul": "밖",
+      "sjis": "9566",
+      "glyph_index": 2841,
+      "bios_offset": 156448
+    },
+    {
+      "hangul": "반",
+      "sjis": "9565",
+      "glyph_index": 2840,
+      "bios_offset": 156416
+    },
+    {
+      "hangul": "받",
+      "sjis": "9564",
+      "glyph_index": 2839,
+      "bios_offset": 156384
+    },
+    {
+      "hangul": "발",
+      "sjis": "9562",
+      "glyph_index": 2837,
+      "bios_offset": 156320
+    },
+    {
+      "hangul": "밝",
+      "sjis": "955F",
+      "glyph_index": 2834,
+      "bios_offset": 156224
+    },
+    {
+      "hangul": "밤",
+      "sjis": "955E",
+      "glyph_index": 2833,
+      "bios_offset": 156192
+    },
+    {
+      "hangul": "밥",
+      "sjis": "955B",
+      "glyph_index": 2830,
+      "bios_offset": 156096
+    },
+    {
+      "hangul": "방",
+      "sjis": "955A",
+      "glyph_index": 2829,
+      "bios_offset": 156064
+    },
+    {
+      "hangul": "밭",
+      "sjis": "9556",
+      "glyph_index": 2825,
+      "bios_offset": 155936
+    },
+    {
+      "hangul": "배",
+      "sjis": "9555",
+      "glyph_index": 2824,
+      "bios_offset": 155904
+    },
+    {
+      "hangul": "백",
+      "sjis": "9554",
+      "glyph_index": 2823,
+      "bios_offset": 155872
+    },
+    {
+      "hangul": "버",
+      "sjis": "9552",
+      "glyph_index": 2821,
+      "bios_offset": 155808
+    },
+    {
+      "hangul": "번",
+      "sjis": "9551",
+      "glyph_index": 2820,
+      "bios_offset": 155776
+    },
+    {
+      "hangul": "벌",
+      "sjis": "954E",
+      "glyph_index": 2817,
+      "bios_offset": 155680
+    },
+    {
+      "hangul": "범",
+      "sjis": "954D",
+      "glyph_index": 2816,
+      "bios_offset": 155648
+    },
+    {
+      "hangul": "법",
+      "sjis": "954C",
+      "glyph_index": 2815,
+      "bios_offset": 155616
+    },
+    {
+      "hangul": "베",
+      "sjis": "954A",
+      "glyph_index": 2813,
+      "bios_offset": 155552
+    },
+    {
+      "hangul": "벤",
+      "sjis": "9549",
+      "glyph_index": 2812,
+      "bios_offset": 155520
+    },
+    {
+      "hangul": "벨",
+      "sjis": "9548",
+      "glyph_index": 2811,
+      "bios_offset": 155488
+    },
+    {
+      "hangul": "벼",
+      "sjis": "9547",
+      "glyph_index": 2810,
+      "bios_offset": 155456
+    },
+    {
+      "hangul": "벽",
+      "sjis": "9546",
+      "glyph_index": 2809,
+      "bios_offset": 155424
+    },
+    {
+      "hangul": "변",
+      "sjis": "9545",
+      "glyph_index": 2808,
+      "bios_offset": 155392
+    },
+    {
+      "hangul": "별",
+      "sjis": "9544",
+      "glyph_index": 2807,
+      "bios_offset": 155360
+    },
+    {
+      "hangul": "볍",
+      "sjis": "9542",
+      "glyph_index": 2805,
+      "bios_offset": 155296
+    },
+    {
+      "hangul": "병",
+      "sjis": "9541",
+      "glyph_index": 2804,
+      "bios_offset": 155264
+    },
+    {
+      "hangul": "보",
+      "sjis": "9540",
+      "glyph_index": 2803,
+      "bios_offset": 155232
+    },
+    {
+      "hangul": "복",
+      "sjis": "94FB",
+      "glyph_index": 2801,
+      "bios_offset": 155168
+    },
+    {
+      "hangul": "본",
+      "sjis": "94FA",
+      "glyph_index": 2800,
+      "bios_offset": 155136
+    },
+    {
+      "hangul": "볼",
+      "sjis": "94F9",
+      "glyph_index": 2799,
+      "bios_offset": 155104
+    },
+    {
+      "hangul": "봉",
+      "sjis": "94F8",
+      "glyph_index": 2798,
+      "bios_offset": 155072
+    },
+    {
+      "hangul": "봐",
+      "sjis": "94F4",
+      "glyph_index": 2794,
+      "bios_offset": 154944
+    },
+    {
+      "hangul": "봤",
+      "sjis": "94F3",
+      "glyph_index": 2793,
+      "bios_offset": 154912
+    },
+    {
+      "hangul": "봬",
+      "sjis": "94EF",
+      "glyph_index": 2789,
+      "bios_offset": 154784
+    },
+    {
+      "hangul": "뵙",
+      "sjis": "94EE",
+      "glyph_index": 2788,
+      "bios_offset": 154752
+    },
+    {
+      "hangul": "부",
+      "sjis": "94EC",
+      "glyph_index": 2786,
+      "bios_offset": 154688
+    },
+    {
+      "hangul": "북",
+      "sjis": "94EB",
+      "glyph_index": 2785,
+      "bios_offset": 154656
+    },
+    {
+      "hangul": "분",
+      "sjis": "94EA",
+      "glyph_index": 2784,
+      "bios_offset": 154624
+    },
+    {
+      "hangul": "불",
+      "sjis": "94E8",
+      "glyph_index": 2782,
+      "bios_offset": 154560
+    },
+    {
+      "hangul": "붉",
+      "sjis": "94E7",
+      "glyph_index": 2781,
+      "bios_offset": 154528
+    },
+    {
+      "hangul": "붕",
+      "sjis": "94E5",
+      "glyph_index": 2779,
+      "bios_offset": 154464
+    },
+    {
+      "hangul": "붙",
+      "sjis": "94E2",
+      "glyph_index": 2776,
+      "bios_offset": 154368
+    },
+    {
+      "hangul": "브",
+      "sjis": "94E1",
+      "glyph_index": 2775,
+      "bios_offset": 154336
+    },
+    {
+      "hangul": "븐",
+      "sjis": "94DD",
+      "glyph_index": 2771,
+      "bios_offset": 154208
+    },
+    {
+      "hangul": "블",
+      "sjis": "94DA",
+      "glyph_index": 2768,
+      "bios_offset": 154112
+    },
+    {
+      "hangul": "비",
+      "sjis": "94D9",
+      "glyph_index": 2767,
+      "bios_offset": 154080
+    },
+    {
+      "hangul": "빈",
+      "sjis": "94D8",
+      "glyph_index": 2766,
+      "bios_offset": 154048
+    },
+    {
+      "hangul": "빌",
+      "sjis": "94D7",
+      "glyph_index": 2765,
+      "bios_offset": 154016
+    },
+    {
+      "hangul": "빕",
+      "sjis": "94D6",
+      "glyph_index": 2764,
+      "bios_offset": 153984
+    },
+    {
+      "hangul": "빙",
+      "sjis": "94D2",
+      "glyph_index": 2760,
+      "bios_offset": 153856
+    },
+    {
+      "hangul": "빛",
+      "sjis": "94D1",
+      "glyph_index": 2759,
+      "bios_offset": 153824
+    },
+    {
+      "hangul": "빠",
+      "sjis": "94D0",
+      "glyph_index": 2758,
+      "bios_offset": 153792
+    },
+    {
+      "hangul": "빡",
+      "sjis": "94CF",
+      "glyph_index": 2757,
+      "bios_offset": 153760
+    },
+    {
+      "hangul": "빨",
+      "sjis": "94CE",
+      "glyph_index": 2756,
+      "bios_offset": 153728
+    },
+    {
+      "hangul": "빼",
+      "sjis": "94CB",
+      "glyph_index": 2753,
+      "bios_offset": 153632
+    },
+    {
+      "hangul": "뺐",
+      "sjis": "94C8",
+      "glyph_index": 2750,
+      "bios_offset": 153536
+    },
+    {
+      "hangul": "뻐",
+      "sjis": "94C7",
+      "glyph_index": 2749,
+      "bios_offset": 153504
+    },
+    {
+      "hangul": "뻔",
+      "sjis": "94C5",
+      "glyph_index": 2747,
+      "bios_offset": 153440
+    },
+    {
+      "hangul": "뼈",
+      "sjis": "94C4",
+      "glyph_index": 2746,
+      "bios_offset": 153408
+    },
+    {
+      "hangul": "뽐",
+      "sjis": "94C3",
+      "glyph_index": 2745,
+      "bios_offset": 153376
+    },
+    {
+      "hangul": "뿐",
+      "sjis": "94C2",
+      "glyph_index": 2744,
+      "bios_offset": 153344
+    },
+    {
+      "hangul": "뿔",
+      "sjis": "94C1",
+      "glyph_index": 2743,
+      "bios_offset": 153312
+    },
+    {
+      "hangul": "뿜",
+      "sjis": "94BE",
+      "glyph_index": 2740,
+      "bios_offset": 153216
+    },
+    {
+      "hangul": "쁘",
+      "sjis": "94BA",
+      "glyph_index": 2736,
+      "bios_offset": 153088
+    },
+    {
+      "hangul": "쁜",
+      "sjis": "94B9",
+      "glyph_index": 2735,
+      "bios_offset": 153056
+    },
+    {
+      "hangul": "사",
+      "sjis": "94B8",
+      "glyph_index": 2734,
+      "bios_offset": 153024
+    },
+    {
+      "hangul": "삭",
+      "sjis": "94B7",
+      "glyph_index": 2733,
+      "bios_offset": 152992
+    },
+    {
+      "hangul": "산",
+      "sjis": "94B6",
+      "glyph_index": 2732,
+      "bios_offset": 152960
+    },
+    {
+      "hangul": "살",
+      "sjis": "94B5",
+      "glyph_index": 2731,
+      "bios_offset": 152928
+    },
+    {
+      "hangul": "삶",
+      "sjis": "94B4",
+      "glyph_index": 2730,
+      "bios_offset": 152896
+    },
+    {
+      "hangul": "삼",
+      "sjis": "94B3",
+      "glyph_index": 2729,
+      "bios_offset": 152864
+    },
+    {
+      "hangul": "상",
+      "sjis": "94B1",
+      "glyph_index": 2727,
+      "bios_offset": 152800
+    },
+    {
+      "hangul": "새",
+      "sjis": "94AE",
+      "glyph_index": 2724,
+      "bios_offset": 152704
+    },
+    {
+      "hangul": "색",
+      "sjis": "94AC",
+      "glyph_index": 2722,
+      "bios_offset": 152640
+    },
+    {
+      "hangul": "샌",
+      "sjis": "94AB",
+      "glyph_index": 2721,
+      "bios_offset": 152608
+    },
+    {
+      "hangul": "샘",
+      "sjis": "94AA",
+      "glyph_index": 2720,
+      "bios_offset": 152576
+    },
+    {
+      "hangul": "생",
+      "sjis": "94A9",
+      "glyph_index": 2719,
+      "bios_offset": 152544
+    },
+    {
+      "hangul": "서",
+      "sjis": "94A6",
+      "glyph_index": 2716,
+      "bios_offset": 152448
+    },
+    {
+      "hangul": "석",
+      "sjis": "94A5",
+      "glyph_index": 2715,
+      "bios_offset": 152416
+    },
+    {
+      "hangul": "섞",
+      "sjis": "94A4",
+      "glyph_index": 2714,
+      "bios_offset": 152384
+    },
+    {
+      "hangul": "선",
+      "sjis": "94A3",
+      "glyph_index": 2713,
+      "bios_offset": 152352
+    },
+    {
+      "hangul": "설",
+      "sjis": "94A2",
+      "glyph_index": 2712,
+      "bios_offset": 152320
+    },
+    {
+      "hangul": "섬",
+      "sjis": "94A1",
+      "glyph_index": 2711,
+      "bios_offset": 152288
+    },
+    {
+      "hangul": "섭",
+      "sjis": "949F",
+      "glyph_index": 2709,
+      "bios_offset": 152224
+    },
+    {
+      "hangul": "섯",
+      "sjis": "949D",
+      "glyph_index": 2707,
+      "bios_offset": 152160
+    },
+    {
+      "hangul": "섰",
+      "sjis": "949C",
+      "glyph_index": 2706,
+      "bios_offset": 152128
+    },
+    {
+      "hangul": "성",
+      "sjis": "9498",
+      "glyph_index": 2702,
+      "bios_offset": 152000
+    },
+    {
+      "hangul": "세",
+      "sjis": "9496",
+      "glyph_index": 2700,
+      "bios_offset": 151936
+    },
+    {
+      "hangul": "셀",
+      "sjis": "9495",
+      "glyph_index": 2699,
+      "bios_offset": 151904
+    },
+    {
+      "hangul": "셈",
+      "sjis": "9494",
+      "glyph_index": 2698,
+      "bios_offset": 151872
+    },
+    {
+      "hangul": "셔",
+      "sjis": "9493",
+      "glyph_index": 2697,
+      "bios_offset": 151840
+    },
+    {
+      "hangul": "션",
+      "sjis": "9490",
+      "glyph_index": 2694,
+      "bios_offset": 151744
+    },
+    {
+      "hangul": "셨",
+      "sjis": "948F",
+      "glyph_index": 2693,
+      "bios_offset": 151712
+    },
+    {
+      "hangul": "소",
+      "sjis": "948E",
+      "glyph_index": 2692,
+      "bios_offset": 151680
+    },
+    {
+      "hangul": "속",
+      "sjis": "948D",
+      "glyph_index": 2691,
+      "bios_offset": 151648
+    },
+    {
+      "hangul": "손",
+      "sjis": "948C",
+      "glyph_index": 2690,
+      "bios_offset": 151616
+    },
+    {
+      "hangul": "솔",
+      "sjis": "948B",
+      "glyph_index": 2689,
+      "bios_offset": 151584
+    },
+    {
+      "hangul": "솜",
+      "sjis": "948A",
+      "glyph_index": 2688,
+      "bios_offset": 151552
+    },
+    {
+      "hangul": "솟",
+      "sjis": "9489",
+      "glyph_index": 2687,
+      "bios_offset": 151520
+    },
+    {
+      "hangul": "송",
+      "sjis": "9488",
+      "glyph_index": 2686,
+      "bios_offset": 151488
+    },
+    {
+      "hangul": "쇄",
+      "sjis": "9487",
+      "glyph_index": 2685,
+      "bios_offset": 151456
+    },
+    {
+      "hangul": "쇠",
+      "sjis": "9486",
+      "glyph_index": 2684,
+      "bios_offset": 151424
+    },
+    {
+      "hangul": "쇼",
+      "sjis": "9485",
+      "glyph_index": 2683,
+      "bios_offset": 151392
+    },
+    {
+      "hangul": "수",
+      "sjis": "9482",
+      "glyph_index": 2680,
+      "bios_offset": 151296
+    },
+    {
+      "hangul": "숙",
+      "sjis": "9481",
+      "glyph_index": 2679,
+      "bios_offset": 151264
+    },
+    {
+      "hangul": "순",
+      "sjis": "9480",
+      "glyph_index": 2678,
+      "bios_offset": 151232
+    },
+    {
+      "hangul": "술",
+      "sjis": "947E",
+      "glyph_index": 2677,
+      "bios_offset": 151200
+    },
+    {
+      "hangul": "숨",
+      "sjis": "947C",
+      "glyph_index": 2675,
+      "bios_offset": 151136
+    },
+    {
+      "hangul": "숭",
+      "sjis": "9478",
+      "glyph_index": 2671,
+      "bios_offset": 151008
+    },
+    {
+      "hangul": "숲",
+      "sjis": "9476",
+      "glyph_index": 2669,
+      "bios_offset": 150944
+    },
+    {
+      "hangul": "쉈",
+      "sjis": "9475",
+      "glyph_index": 2668,
+      "bios_offset": 150912
+    },
+    {
+      "hangul": "쉬",
+      "sjis": "9471",
+      "glyph_index": 2664,
+      "bios_offset": 150784
+    },
+    {
+      "hangul": "쉴",
+      "sjis": "946F",
+      "glyph_index": 2662,
+      "bios_offset": 150720
+    },
+    {
+      "hangul": "쉽",
+      "sjis": "946D",
+      "glyph_index": 2660,
+      "bios_offset": 150656
+    },
+    {
+      "hangul": "쉿",
+      "sjis": "946C",
+      "glyph_index": 2659,
+      "bios_offset": 150624
+    },
+    {
+      "hangul": "슈",
+      "sjis": "9469",
+      "glyph_index": 2656,
+      "bios_offset": 150528
+    },
+    {
+      "hangul": "슝",
+      "sjis": "9466",
+      "glyph_index": 2653,
+      "bios_offset": 150432
+    },
+    {
+      "hangul": "스",
+      "sjis": "9465",
+      "glyph_index": 2652,
+      "bios_offset": 150400
+    },
+    {
+      "hangul": "슨",
+      "sjis": "9464",
+      "glyph_index": 2651,
+      "bios_offset": 150368
+    },
+    {
+      "hangul": "슬",
+      "sjis": "9462",
+      "glyph_index": 2649,
+      "bios_offset": 150304
+    },
+    {
+      "hangul": "습",
+      "sjis": "9461",
+      "glyph_index": 2648,
+      "bios_offset": 150272
+    },
+    {
+      "hangul": "슷",
+      "sjis": "945E",
+      "glyph_index": 2645,
+      "bios_offset": 150176
+    },
+    {
+      "hangul": "승",
+      "sjis": "945A",
+      "glyph_index": 2641,
+      "bios_offset": 150048
+    },
+    {
+      "hangul": "시",
+      "sjis": "9458",
+      "glyph_index": 2639,
+      "bios_offset": 149984
+    },
+    {
+      "hangul": "식",
+      "sjis": "9457",
+      "glyph_index": 2638,
+      "bios_offset": 149952
+    },
+    {
+      "hangul": "신",
+      "sjis": "9456",
+      "glyph_index": 2637,
+      "bios_offset": 149920
+    },
+    {
+      "hangul": "실",
+      "sjis": "9455",
+      "glyph_index": 2636,
+      "bios_offset": 149888
+    },
+    {
+      "hangul": "싫",
+      "sjis": "9454",
+      "glyph_index": 2635,
+      "bios_offset": 149856
+    },
+    {
+      "hangul": "심",
+      "sjis": "9453",
+      "glyph_index": 2634,
+      "bios_offset": 149824
+    },
+    {
+      "hangul": "십",
+      "sjis": "9451",
+      "glyph_index": 2632,
+      "bios_offset": 149760
+    },
+    {
+      "hangul": "싶",
+      "sjis": "9450",
+      "glyph_index": 2631,
+      "bios_offset": 149728
+    },
+    {
+      "hangul": "싸",
+      "sjis": "944C",
+      "glyph_index": 2627,
+      "bios_offset": 149600
+    },
+    {
+      "hangul": "싹",
+      "sjis": "944B",
+      "glyph_index": 2626,
+      "bios_offset": 149568
+    },
+    {
+      "hangul": "싼",
+      "sjis": "944A",
+      "glyph_index": 2625,
+      "bios_offset": 149536
+    },
+    {
+      "hangul": "쌀",
+      "sjis": "9449",
+      "glyph_index": 2624,
+      "bios_offset": 149504
+    },
+    {
+      "hangul": "쌍",
+      "sjis": "9448",
+      "glyph_index": 2623,
+      "bios_offset": 149472
+    },
+    {
+      "hangul": "쌓",
+      "sjis": "9444",
+      "glyph_index": 2619,
+      "bios_offset": 149344
+    },
+    {
+      "hangul": "쌔",
+      "sjis": "9442",
+      "glyph_index": 2617,
+      "bios_offset": 149280
+    },
+    {
+      "hangul": "써",
+      "sjis": "9441",
+      "glyph_index": 2616,
+      "bios_offset": 149248
+    },
+    {
+      "hangul": "썩",
+      "sjis": "9440",
+      "glyph_index": 2615,
+      "bios_offset": 149216
+    },
+    {
+      "hangul": "쏘",
+      "sjis": "93FB",
+      "glyph_index": 2613,
+      "bios_offset": 149152
+    },
+    {
+      "hangul": "쏜",
+      "sjis": "93F9",
+      "glyph_index": 2611,
+      "bios_offset": 149088
+    },
+    {
+      "hangul": "쏟",
+      "sjis": "93F8",
+      "glyph_index": 2610,
+      "bios_offset": 149056
+    },
+    {
+      "hangul": "쏠",
+      "sjis": "93F6",
+      "glyph_index": 2608,
+      "bios_offset": 148992
+    },
+    {
+      "hangul": "쓰",
+      "sjis": "93F5",
+      "glyph_index": 2607,
+      "bios_offset": 148960
+    },
+    {
+      "hangul": "쓴",
+      "sjis": "93F4",
+      "glyph_index": 2606,
+      "bios_offset": 148928
+    },
+    {
+      "hangul": "쓸",
+      "sjis": "93F3",
+      "glyph_index": 2605,
+      "bios_offset": 148896
+    },
+    {
+      "hangul": "씀",
+      "sjis": "93F2",
+      "glyph_index": 2604,
+      "bios_offset": 148864
+    },
+    {
+      "hangul": "씨",
+      "sjis": "93ED",
+      "glyph_index": 2599,
+      "bios_offset": 148704
+    },
+    {
+      "hangul": "씩",
+      "sjis": "93EB",
+      "glyph_index": 2597,
+      "bios_offset": 148640
+    },
+    {
+      "hangul": "씬",
+      "sjis": "93E9",
+      "glyph_index": 2595,
+      "bios_offset": 148576
+    },
+    {
+      "hangul": "씻",
+      "sjis": "93E8",
+      "glyph_index": 2594,
+      "bios_offset": 148544
+    },
+    {
+      "hangul": "아",
+      "sjis": "93E6",
+      "glyph_index": 2592,
+      "bios_offset": 148480
+    },
+    {
+      "hangul": "악",
+      "sjis": "93E5",
+      "glyph_index": 2591,
+      "bios_offset": 148448
+    },
+    {
+      "hangul": "안",
+      "sjis": "93E3",
+      "glyph_index": 2589,
+      "bios_offset": 148384
+    },
+    {
+      "hangul": "앉",
+      "sjis": "93E2",
+      "glyph_index": 2588,
+      "bios_offset": 148352
+    },
+    {
+      "hangul": "않",
+      "sjis": "93E1",
+      "glyph_index": 2587,
+      "bios_offset": 148320
+    },
+    {
+      "hangul": "알",
+      "sjis": "93DE",
+      "glyph_index": 2584,
+      "bios_offset": 148224
+    },
+    {
+      "hangul": "암",
+      "sjis": "93DC",
+      "glyph_index": 2582,
+      "bios_offset": 148160
+    },
+    {
+      "hangul": "압",
+      "sjis": "93DB",
+      "glyph_index": 2581,
+      "bios_offset": 148128
+    },
+    {
+      "hangul": "앗",
+      "sjis": "93DA",
+      "glyph_index": 2580,
+      "bios_offset": 148096
+    },
+    {
+      "hangul": "았",
+      "sjis": "93D9",
+      "glyph_index": 2579,
+      "bios_offset": 148064
+    },
+    {
+      "hangul": "앙",
+      "sjis": "93D8",
+      "glyph_index": 2578,
+      "bios_offset": 148032
+    },
+    {
+      "hangul": "앞",
+      "sjis": "93D6",
+      "glyph_index": 2576,
+      "bios_offset": 147968
+    },
+    {
+      "hangul": "애",
+      "sjis": "93D5",
+      "glyph_index": 2575,
+      "bios_offset": 147936
+    },
+    {
+      "hangul": "액",
+      "sjis": "93D4",
+      "glyph_index": 2574,
+      "bios_offset": 147904
+    },
+    {
+      "hangul": "앨",
+      "sjis": "93D3",
+      "glyph_index": 2573,
+      "bios_offset": 147872
+    },
+    {
+      "hangul": "야",
+      "sjis": "93D2",
+      "glyph_index": 2572,
+      "bios_offset": 147840
+    },
+    {
+      "hangul": "약",
+      "sjis": "93D1",
+      "glyph_index": 2571,
+      "bios_offset": 147808
+    },
+    {
+      "hangul": "얀",
+      "sjis": "93CF",
+      "glyph_index": 2569,
+      "bios_offset": 147744
+    },
+    {
+      "hangul": "얌",
+      "sjis": "93CE",
+      "glyph_index": 2568,
+      "bios_offset": 147712
+    },
+    {
+      "hangul": "얏",
+      "sjis": "93CC",
+      "glyph_index": 2566,
+      "bios_offset": 147648
+    },
+    {
+      "hangul": "양",
+      "sjis": "93CA",
+      "glyph_index": 2564,
+      "bios_offset": 147584
+    },
+    {
+      "hangul": "얘",
+      "sjis": "93C9",
+      "glyph_index": 2563,
+      "bios_offset": 147552
+    },
+    {
+      "hangul": "어",
+      "sjis": "93C8",
+      "glyph_index": 2562,
+      "bios_offset": 147520
+    },
+    {
+      "hangul": "억",
+      "sjis": "93C4",
+      "glyph_index": 2558,
+      "bios_offset": 147392
+    },
+    {
+      "hangul": "언",
+      "sjis": "93C3",
+      "glyph_index": 2557,
+      "bios_offset": 147360
+    },
+    {
+      "hangul": "얻",
+      "sjis": "93C2",
+      "glyph_index": 2556,
+      "bios_offset": 147328
+    },
+    {
+      "hangul": "얼",
+      "sjis": "93C0",
+      "glyph_index": 2554,
+      "bios_offset": 147264
+    },
+    {
+      "hangul": "얽",
+      "sjis": "93BF",
+      "glyph_index": 2553,
+      "bios_offset": 147232
+    },
+    {
+      "hangul": "엄",
+      "sjis": "93BD",
+      "glyph_index": 2551,
+      "bios_offset": 147168
+    },
+    {
+      "hangul": "업",
+      "sjis": "93BC",
+      "glyph_index": 2550,
+      "bios_offset": 147136
+    },
+    {
+      "hangul": "없",
+      "sjis": "93BB",
+      "glyph_index": 2549,
+      "bios_offset": 147104
+    },
+    {
+      "hangul": "엇",
+      "sjis": "93B8",
+      "glyph_index": 2546,
+      "bios_offset": 147008
+    },
+    {
+      "hangul": "었",
+      "sjis": "93B6",
+      "glyph_index": 2544,
+      "bios_offset": 146944
+    },
+    {
+      "hangul": "엉",
+      "sjis": "93B3",
+      "glyph_index": 2541,
+      "bios_offset": 146848
+    },
+    {
+      "hangul": "에",
+      "sjis": "93B2",
+      "glyph_index": 2540,
+      "bios_offset": 146816
+    },
+    {
+      "hangul": "엑",
+      "sjis": "93AB",
+      "glyph_index": 2533,
+      "bios_offset": 146592
+    },
+    {
+      "hangul": "엔",
+      "sjis": "93A9",
+      "glyph_index": 2531,
+      "bios_offset": 146528
+    },
+    {
+      "hangul": "엘",
+      "sjis": "93A8",
+      "glyph_index": 2530,
+      "bios_offset": 146496
+    },
+    {
+      "hangul": "엣",
+      "sjis": "93A4",
+      "glyph_index": 2526,
+      "bios_offset": 146368
+    },
+    {
+      "hangul": "여",
+      "sjis": "93A3",
+      "glyph_index": 2525,
+      "bios_offset": 146336
+    },
+    {
+      "hangul": "역",
+      "sjis": "93A1",
+      "glyph_index": 2523,
+      "bios_offset": 146272
+    },
+    {
+      "hangul": "엮",
+      "sjis": "939F",
+      "glyph_index": 2521,
+      "bios_offset": 146208
+    },
+    {
+      "hangul": "연",
+      "sjis": "939B",
+      "glyph_index": 2517,
+      "bios_offset": 146080
+    },
+    {
+      "hangul": "열",
+      "sjis": "9398",
+      "glyph_index": 2514,
+      "bios_offset": 145984
+    },
+    {
+      "hangul": "염",
+      "sjis": "9397",
+      "glyph_index": 2513,
+      "bios_offset": 145952
+    },
+    {
+      "hangul": "엽",
+      "sjis": "9395",
+      "glyph_index": 2511,
+      "bios_offset": 145888
+    },
+    {
+      "hangul": "였",
+      "sjis": "9393",
+      "glyph_index": 2509,
+      "bios_offset": 145824
+    },
+    {
+      "hangul": "영",
+      "sjis": "9392",
+      "glyph_index": 2508,
+      "bios_offset": 145792
+    },
+    {
+      "hangul": "옆",
+      "sjis": "9391",
+      "glyph_index": 2507,
+      "bios_offset": 145760
+    },
+    {
+      "hangul": "예",
+      "sjis": "938F",
+      "glyph_index": 2505,
+      "bios_offset": 145696
+    },
+    {
+      "hangul": "옛",
+      "sjis": "938E",
+      "glyph_index": 2504,
+      "bios_offset": 145664
+    },
+    {
+      "hangul": "오",
+      "sjis": "938D",
+      "glyph_index": 2503,
+      "bios_offset": 145632
+    },
+    {
+      "hangul": "옥",
+      "sjis": "9389",
+      "glyph_index": 2499,
+      "bios_offset": 145504
+    },
+    {
+      "hangul": "온",
+      "sjis": "9388",
+      "glyph_index": 2498,
+      "bios_offset": 145472
+    },
+    {
+      "hangul": "올",
+      "sjis": "9386",
+      "glyph_index": 2496,
+      "bios_offset": 145408
+    },
+    {
+      "hangul": "옮",
+      "sjis": "9385",
+      "glyph_index": 2495,
+      "bios_offset": 145376
+    },
+    {
+      "hangul": "옵",
+      "sjis": "9384",
+      "glyph_index": 2494,
+      "bios_offset": 145344
+    },
+    {
+      "hangul": "옷",
+      "sjis": "9382",
+      "glyph_index": 2492,
+      "bios_offset": 145280
+    },
+    {
+      "hangul": "와",
+      "sjis": "937E",
+      "glyph_index": 2489,
+      "bios_offset": 145184
+    },
+    {
+      "hangul": "완",
+      "sjis": "937D",
+      "glyph_index": 2488,
+      "bios_offset": 145152
+    },
+    {
+      "hangul": "왓",
+      "sjis": "9376",
+      "glyph_index": 2481,
+      "bios_offset": 144928
+    },
+    {
+      "hangul": "왔",
+      "sjis": "9375",
+      "glyph_index": 2480,
+      "bios_offset": 144896
+    },
+    {
+      "hangul": "왕",
+      "sjis": "9374",
+      "glyph_index": 2479,
+      "bios_offset": 144864
+    },
+    {
+      "hangul": "왜",
+      "sjis": "9370",
+      "glyph_index": 2475,
+      "bios_offset": 144736
+    },
+    {
+      "hangul": "왠",
+      "sjis": "936D",
+      "glyph_index": 2472,
+      "bios_offset": 144640
+    },
+    {
+      "hangul": "외",
+      "sjis": "936C",
+      "glyph_index": 2471,
+      "bios_offset": 144608
+    },
+    {
+      "hangul": "요",
+      "sjis": "936A",
+      "glyph_index": 2469,
+      "bios_offset": 144544
+    },
+    {
+      "hangul": "욕",
+      "sjis": "9369",
+      "glyph_index": 2468,
+      "bios_offset": 144512
+    },
+    {
+      "hangul": "용",
+      "sjis": "9368",
+      "glyph_index": 2467,
+      "bios_offset": 144480
+    },
+    {
+      "hangul": "우",
+      "sjis": "9367",
+      "glyph_index": 2466,
+      "bios_offset": 144448
+    },
+    {
+      "hangul": "욱",
+      "sjis": "9366",
+      "glyph_index": 2465,
+      "bios_offset": 144416
+    },
+    {
+      "hangul": "운",
+      "sjis": "9365",
+      "glyph_index": 2464,
+      "bios_offset": 144384
+    },
+    {
+      "hangul": "울",
+      "sjis": "9362",
+      "glyph_index": 2461,
+      "bios_offset": 144288
+    },
+    {
+      "hangul": "움",
+      "sjis": "935E",
+      "glyph_index": 2457,
+      "bios_offset": 144160
+    },
+    {
+      "hangul": "웃",
+      "sjis": "935C",
+      "glyph_index": 2455,
+      "bios_offset": 144096
+    },
+    {
+      "hangul": "웅",
+      "sjis": "935B",
+      "glyph_index": 2454,
+      "bios_offset": 144064
+    },
+    {
+      "hangul": "워",
+      "sjis": "935A",
+      "glyph_index": 2453,
+      "bios_offset": 144032
+    },
+    {
+      "hangul": "원",
+      "sjis": "9355",
+      "glyph_index": 2448,
+      "bios_offset": 143872
+    },
+    {
+      "hangul": "월",
+      "sjis": "9352",
+      "glyph_index": 2445,
+      "bios_offset": 143776
+    },
+    {
+      "hangul": "웠",
+      "sjis": "9351",
+      "glyph_index": 2444,
+      "bios_offset": 143744
+    },
+    {
+      "hangul": "웨",
+      "sjis": "9350",
+      "glyph_index": 2443,
+      "bios_offset": 143712
+    },
+    {
+      "hangul": "위",
+      "sjis": "934E",
+      "glyph_index": 2441,
+      "bios_offset": 143648
+    },
+    {
+      "hangul": "윈",
+      "sjis": "934D",
+      "glyph_index": 2440,
+      "bios_offset": 143616
+    },
+    {
+      "hangul": "유",
+      "sjis": "934C",
+      "glyph_index": 2439,
+      "bios_offset": 143584
+    },
+    {
+      "hangul": "육",
+      "sjis": "9346",
+      "glyph_index": 2433,
+      "bios_offset": 143392
+    },
+    {
+      "hangul": "융",
+      "sjis": "9343",
+      "glyph_index": 2430,
+      "bios_offset": 143296
+    },
+    {
+      "hangul": "으",
+      "sjis": "9342",
+      "glyph_index": 2429,
+      "bios_offset": 143264
+    },
+    {
+      "hangul": "은",
+      "sjis": "9341",
+      "glyph_index": 2428,
+      "bios_offset": 143232
+    },
+    {
+      "hangul": "을",
+      "sjis": "9340",
+      "glyph_index": 2427,
+      "bios_offset": 143200
+    },
+    {
+      "hangul": "음",
+      "sjis": "92FC",
+      "glyph_index": 2426,
+      "bios_offset": 143168
+    },
+    {
+      "hangul": "응",
+      "sjis": "92F9",
+      "glyph_index": 2423,
+      "bios_offset": 143072
+    },
+    {
+      "hangul": "의",
+      "sjis": "92F8",
+      "glyph_index": 2422,
+      "bios_offset": 143040
+    },
+    {
+      "hangul": "이",
+      "sjis": "92F7",
+      "glyph_index": 2421,
+      "bios_offset": 143008
+    },
+    {
+      "hangul": "익",
+      "sjis": "92F5",
+      "glyph_index": 2419,
+      "bios_offset": 142944
+    },
+    {
+      "hangul": "인",
+      "sjis": "92F4",
+      "glyph_index": 2418,
+      "bios_offset": 142912
+    },
+    {
+      "hangul": "일",
+      "sjis": "92F3",
+      "glyph_index": 2417,
+      "bios_offset": 142880
+    },
+    {
+      "hangul": "읽",
+      "sjis": "92F2",
+      "glyph_index": 2416,
+      "bios_offset": 142848
+    },
+    {
+      "hangul": "잃",
+      "sjis": "92F0",
+      "glyph_index": 2414,
+      "bios_offset": 142784
+    },
+    {
+      "hangul": "임",
+      "sjis": "92EE",
+      "glyph_index": 2412,
+      "bios_offset": 142720
+    },
+    {
+      "hangul": "입",
+      "sjis": "92EB",
+      "glyph_index": 2409,
+      "bios_offset": 142624
+    },
+    {
+      "hangul": "잇",
+      "sjis": "92E9",
+      "glyph_index": 2407,
+      "bios_offset": 142560
+    },
+    {
+      "hangul": "있",
+      "sjis": "92E7",
+      "glyph_index": 2405,
+      "bios_offset": 142496
+    },
+    {
+      "hangul": "잊",
+      "sjis": "92E6",
+      "glyph_index": 2404,
+      "bios_offset": 142464
+    },
+    {
+      "hangul": "자",
+      "sjis": "92E5",
+      "glyph_index": 2403,
+      "bios_offset": 142432
+    },
+    {
+      "hangul": "작",
+      "sjis": "92E4",
+      "glyph_index": 2402,
+      "bios_offset": 142400
+    },
+    {
+      "hangul": "잔",
+      "sjis": "92E3",
+      "glyph_index": 2401,
+      "bios_offset": 142368
+    },
+    {
+      "hangul": "잖",
+      "sjis": "92DF",
+      "glyph_index": 2397,
+      "bios_offset": 142240
+    },
+    {
+      "hangul": "잘",
+      "sjis": "92DD",
+      "glyph_index": 2395,
+      "bios_offset": 142176
+    },
+    {
+      "hangul": "잠",
+      "sjis": "92DB",
+      "glyph_index": 2393,
+      "bios_offset": 142112
+    },
+    {
+      "hangul": "잡",
+      "sjis": "92DA",
+      "glyph_index": 2392,
+      "bios_offset": 142080
+    },
+    {
+      "hangul": "잤",
+      "sjis": "92D8",
+      "glyph_index": 2390,
+      "bios_offset": 142016
+    },
+    {
+      "hangul": "장",
+      "sjis": "92D7",
+      "glyph_index": 2389,
+      "bios_offset": 141984
+    },
+    {
+      "hangul": "재",
+      "sjis": "92D6",
+      "glyph_index": 2388,
+      "bios_offset": 141952
+    },
+    {
+      "hangul": "쟁",
+      "sjis": "92D5",
+      "glyph_index": 2387,
+      "bios_offset": 141920
+    },
+    {
+      "hangul": "저",
+      "sjis": "92D4",
+      "glyph_index": 2386,
+      "bios_offset": 141888
+    },
+    {
+      "hangul": "적",
+      "sjis": "92D3",
+      "glyph_index": 2385,
+      "bios_offset": 141856
+    },
+    {
+      "hangul": "전",
+      "sjis": "92D2",
+      "glyph_index": 2384,
+      "bios_offset": 141824
+    },
+    {
+      "hangul": "절",
+      "sjis": "92D1",
+      "glyph_index": 2383,
+      "bios_offset": 141792
+    },
+    {
+      "hangul": "젊",
+      "sjis": "92D0",
+      "glyph_index": 2382,
+      "bios_offset": 141760
+    },
+    {
+      "hangul": "점",
+      "sjis": "92CF",
+      "glyph_index": 2381,
+      "bios_offset": 141728
+    },
+    {
+      "hangul": "접",
+      "sjis": "92CE",
+      "glyph_index": 2380,
+      "bios_offset": 141696
+    },
+    {
+      "hangul": "정",
+      "sjis": "92CD",
+      "glyph_index": 2379,
+      "bios_offset": 141664
+    },
+    {
+      "hangul": "제",
+      "sjis": "92CC",
+      "glyph_index": 2378,
+      "bios_offset": 141632
+    },
+    {
+      "hangul": "젠",
+      "sjis": "92CB",
+      "glyph_index": 2377,
+      "bios_offset": 141600
+    },
+    {
+      "hangul": "져",
+      "sjis": "92C6",
+      "glyph_index": 2372,
+      "bios_offset": 141440
+    },
+    {
+      "hangul": "졌",
+      "sjis": "92C5",
+      "glyph_index": 2371,
+      "bios_offset": 141408
+    },
+    {
+      "hangul": "조",
+      "sjis": "92C4",
+      "glyph_index": 2370,
+      "bios_offset": 141376
+    },
+    {
+      "hangul": "족",
+      "sjis": "92C3",
+      "glyph_index": 2369,
+      "bios_offset": 141344
+    },
+    {
+      "hangul": "존",
+      "sjis": "92C2",
+      "glyph_index": 2368,
+      "bios_offset": 141312
+    },
+    {
+      "hangul": "졸",
+      "sjis": "92C1",
+      "glyph_index": 2367,
+      "bios_offset": 141280
+    },
+    {
+      "hangul": "좀",
+      "sjis": "92C0",
+      "glyph_index": 2366,
+      "bios_offset": 141248
+    },
+    {
+      "hangul": "좁",
+      "sjis": "92BD",
+      "glyph_index": 2363,
+      "bios_offset": 141152
+    },
+    {
+      "hangul": "종",
+      "sjis": "92BB",
+      "glyph_index": 2361,
+      "bios_offset": 141088
+    },
+    {
+      "hangul": "좋",
+      "sjis": "92BA",
+      "glyph_index": 2360,
+      "bios_offset": 141056
+    },
+    {
+      "hangul": "죄",
+      "sjis": "92B6",
+      "glyph_index": 2356,
+      "bios_offset": 140928
+    },
+    {
+      "hangul": "죠",
+      "sjis": "92B0",
+      "glyph_index": 2350,
+      "bios_offset": 140736
+    },
+    {
+      "hangul": "주",
+      "sjis": "92AF",
+      "glyph_index": 2349,
+      "bios_offset": 140704
+    },
+    {
+      "hangul": "죽",
+      "sjis": "92AE",
+      "glyph_index": 2348,
+      "bios_offset": 140672
+    },
+    {
+      "hangul": "준",
+      "sjis": "92AB",
+      "glyph_index": 2345,
+      "bios_offset": 140576
+    },
+    {
+      "hangul": "줄",
+      "sjis": "92A8",
+      "glyph_index": 2342,
+      "bios_offset": 140480
+    },
+    {
+      "hangul": "줌",
+      "sjis": "92A6",
+      "glyph_index": 2340,
+      "bios_offset": 140416
+    },
+    {
+      "hangul": "줍",
+      "sjis": "92A2",
+      "glyph_index": 2336,
+      "bios_offset": 140288
+    },
+    {
+      "hangul": "중",
+      "sjis": "92A1",
+      "glyph_index": 2335,
+      "bios_offset": 140256
+    },
+    {
+      "hangul": "줘",
+      "sjis": "92A0",
+      "glyph_index": 2334,
+      "bios_offset": 140224
+    },
+    {
+      "hangul": "줬",
+      "sjis": "929F",
+      "glyph_index": 2333,
+      "bios_offset": 140192
+    },
+    {
+      "hangul": "쥐",
+      "sjis": "929E",
+      "glyph_index": 2332,
+      "bios_offset": 140160
+    },
+    {
+      "hangul": "쥬",
+      "sjis": "929C",
+      "glyph_index": 2330,
+      "bios_offset": 140096
+    },
+    {
+      "hangul": "즈",
+      "sjis": "929A",
+      "glyph_index": 2328,
+      "bios_offset": 140032
+    },
+    {
+      "hangul": "즉",
+      "sjis": "9299",
+      "glyph_index": 2327,
+      "bios_offset": 140000
+    },
+    {
+      "hangul": "즐",
+      "sjis": "9298",
+      "glyph_index": 2326,
+      "bios_offset": 139968
+    },
+    {
+      "hangul": "즘",
+      "sjis": "9297",
+      "glyph_index": 2325,
+      "bios_offset": 139936
+    },
+    {
+      "hangul": "증",
+      "sjis": "9296",
+      "glyph_index": 2324,
+      "bios_offset": 139904
+    },
+    {
+      "hangul": "지",
+      "sjis": "9295",
+      "glyph_index": 2323,
+      "bios_offset": 139872
+    },
+    {
+      "hangul": "직",
+      "sjis": "9294",
+      "glyph_index": 2322,
+      "bios_offset": 139840
+    },
+    {
+      "hangul": "진",
+      "sjis": "9293",
+      "glyph_index": 2321,
+      "bios_offset": 139808
+    },
+    {
+      "hangul": "질",
+      "sjis": "9292",
+      "glyph_index": 2320,
+      "bios_offset": 139776
+    },
+    {
+      "hangul": "짊",
+      "sjis": "9291",
+      "glyph_index": 2319,
+      "bios_offset": 139744
+    },
+    {
+      "hangul": "짐",
+      "sjis": "9290",
+      "glyph_index": 2318,
+      "bios_offset": 139712
+    },
+    {
+      "hangul": "집",
+      "sjis": "928F",
+      "glyph_index": 2317,
+      "bios_offset": 139680
+    },
+    {
+      "hangul": "짓",
+      "sjis": "928A",
+      "glyph_index": 2312,
+      "bios_offset": 139520
+    },
+    {
+      "hangul": "징",
+      "sjis": "9289",
+      "glyph_index": 2311,
+      "bios_offset": 139488
+    },
+    {
+      "hangul": "짜",
+      "sjis": "9288",
+      "glyph_index": 2310,
+      "bios_offset": 139456
+    },
+    {
+      "hangul": "짝",
+      "sjis": "9284",
+      "glyph_index": 2306,
+      "bios_offset": 139328
+    },
+    {
+      "hangul": "짱",
+      "sjis": "9282",
+      "glyph_index": 2304,
+      "bios_offset": 139264
+    },
+    {
+      "hangul": "째",
+      "sjis": "9280",
+      "glyph_index": 2302,
+      "bios_offset": 139200
+    },
+    {
+      "hangul": "쨌",
+      "sjis": "927E",
+      "glyph_index": 2301,
+      "bios_offset": 139168
+    },
+    {
+      "hangul": "쩌",
+      "sjis": "927D",
+      "glyph_index": 2300,
+      "bios_offset": 139136
+    },
+    {
+      "hangul": "쩍",
+      "sjis": "927C",
+      "glyph_index": 2299,
+      "bios_offset": 139104
+    },
+    {
+      "hangul": "쩐",
+      "sjis": "9279",
+      "glyph_index": 2296,
+      "bios_offset": 139008
+    },
+    {
+      "hangul": "쩔",
+      "sjis": "9277",
+      "glyph_index": 2294,
+      "bios_offset": 138944
+    },
+    {
+      "hangul": "쩡",
+      "sjis": "9274",
+      "glyph_index": 2291,
+      "bios_offset": 138848
+    },
+    {
+      "hangul": "쪽",
+      "sjis": "9273",
+      "glyph_index": 2290,
+      "bios_offset": 138816
+    },
+    {
+      "hangul": "쫓",
+      "sjis": "9271",
+      "glyph_index": 2288,
+      "bios_offset": 138752
+    },
+    {
+      "hangul": "쯤",
+      "sjis": "926F",
+      "glyph_index": 2286,
+      "bios_offset": 138688
+    },
+    {
+      "hangul": "찌",
+      "sjis": "9268",
+      "glyph_index": 2279,
+      "bios_offset": 138464
+    },
+    {
+      "hangul": "찍",
+      "sjis": "9260",
+      "glyph_index": 2271,
+      "bios_offset": 138208
+    },
+    {
+      "hangul": "찢",
+      "sjis": "925E",
+      "glyph_index": 2269,
+      "bios_offset": 138144
+    },
+    {
+      "hangul": "차",
+      "sjis": "925D",
+      "glyph_index": 2268,
+      "bios_offset": 138112
+    },
+    {
+      "hangul": "착",
+      "sjis": "925C",
+      "glyph_index": 2267,
+      "bios_offset": 138080
+    },
+    {
+      "hangul": "찬",
+      "sjis": "925A",
+      "glyph_index": 2265,
+      "bios_offset": 138016
+    },
+    {
+      "hangul": "찮",
+      "sjis": "9259",
+      "glyph_index": 2264,
+      "bios_offset": 137984
+    },
+    {
+      "hangul": "찰",
+      "sjis": "9258",
+      "glyph_index": 2263,
+      "bios_offset": 137952
+    },
+    {
+      "hangul": "참",
+      "sjis": "9257",
+      "glyph_index": 2262,
+      "bios_offset": 137920
+    },
+    {
+      "hangul": "찻",
+      "sjis": "9256",
+      "glyph_index": 2261,
+      "bios_offset": 137888
+    },
+    {
+      "hangul": "찼",
+      "sjis": "9252",
+      "glyph_index": 2257,
+      "bios_offset": 137760
+    },
+    {
+      "hangul": "창",
+      "sjis": "924D",
+      "glyph_index": 2252,
+      "bios_offset": 137600
+    },
+    {
+      "hangul": "찾",
+      "sjis": "924C",
+      "glyph_index": 2251,
+      "bios_offset": 137568
+    },
+    {
+      "hangul": "채",
+      "sjis": "924B",
+      "glyph_index": 2250,
+      "bios_offset": 137536
+    },
+    {
+      "hangul": "책",
+      "sjis": "924A",
+      "glyph_index": 2249,
+      "bios_offset": 137504
+    },
+    {
+      "hangul": "챈",
+      "sjis": "9247",
+      "glyph_index": 2246,
+      "bios_offset": 137408
+    },
+    {
+      "hangul": "챙",
+      "sjis": "9246",
+      "glyph_index": 2245,
+      "bios_offset": 137376
+    },
+    {
+      "hangul": "처",
+      "sjis": "9243",
+      "glyph_index": 2242,
+      "bios_offset": 137280
+    },
+    {
+      "hangul": "척",
+      "sjis": "91FC",
+      "glyph_index": 2238,
+      "bios_offset": 137152
+    },
+    {
+      "hangul": "천",
+      "sjis": "91FB",
+      "glyph_index": 2237,
+      "bios_offset": 137120
+    },
+    {
+      "hangul": "철",
+      "sjis": "91FA",
+      "glyph_index": 2236,
+      "bios_offset": 137088
+    },
+    {
+      "hangul": "첩",
+      "sjis": "91F9",
+      "glyph_index": 2235,
+      "bios_offset": 137056
+    },
+    {
+      "hangul": "청",
+      "sjis": "91F8",
+      "glyph_index": 2234,
+      "bios_offset": 137024
+    },
+    {
+      "hangul": "체",
+      "sjis": "91F7",
+      "glyph_index": 2233,
+      "bios_offset": 136992
+    },
+    {
+      "hangul": "쳇",
+      "sjis": "91F6",
+      "glyph_index": 2232,
+      "bios_offset": 136960
+    },
+    {
+      "hangul": "쳐",
+      "sjis": "91F4",
+      "glyph_index": 2230,
+      "bios_offset": 136896
+    },
+    {
+      "hangul": "쳤",
+      "sjis": "91F3",
+      "glyph_index": 2229,
+      "bios_offset": 136864
+    },
+    {
+      "hangul": "초",
+      "sjis": "91F2",
+      "glyph_index": 2228,
+      "bios_offset": 136832
+    },
+    {
+      "hangul": "촌",
+      "sjis": "91F1",
+      "glyph_index": 2227,
+      "bios_offset": 136800
+    },
+    {
+      "hangul": "총",
+      "sjis": "91EF",
+      "glyph_index": 2225,
+      "bios_offset": 136736
+    },
+    {
+      "hangul": "최",
+      "sjis": "91EE",
+      "glyph_index": 2224,
+      "bios_offset": 136704
+    },
+    {
+      "hangul": "쵸",
+      "sjis": "91ED",
+      "glyph_index": 2223,
+      "bios_offset": 136672
+    },
+    {
+      "hangul": "추",
+      "sjis": "91EC",
+      "glyph_index": 2222,
+      "bios_offset": 136640
+    },
+    {
+      "hangul": "축",
+      "sjis": "91EB",
+      "glyph_index": 2221,
+      "bios_offset": 136608
+    },
+    {
+      "hangul": "춘",
+      "sjis": "91EA",
+      "glyph_index": 2220,
+      "bios_offset": 136576
+    },
+    {
+      "hangul": "출",
+      "sjis": "91E7",
+      "glyph_index": 2217,
+      "bios_offset": 136480
+    },
+    {
+      "hangul": "춤",
+      "sjis": "91E2",
+      "glyph_index": 2212,
+      "bios_offset": 136320
+    },
+    {
+      "hangul": "춥",
+      "sjis": "91E1",
+      "glyph_index": 2211,
+      "bios_offset": 136288
+    },
+    {
+      "hangul": "충",
+      "sjis": "91DF",
+      "glyph_index": 2209,
+      "bios_offset": 136224
+    },
+    {
+      "hangul": "춰",
+      "sjis": "91DB",
+      "glyph_index": 2205,
+      "bios_offset": 136096
+    },
+    {
+      "hangul": "취",
+      "sjis": "91D9",
+      "glyph_index": 2203,
+      "bios_offset": 136032
+    },
+    {
+      "hangul": "측",
+      "sjis": "91D7",
+      "glyph_index": 2201,
+      "bios_offset": 135968
+    },
+    {
+      "hangul": "층",
+      "sjis": "91D5",
+      "glyph_index": 2199,
+      "bios_offset": 135904
+    },
+    {
+      "hangul": "치",
+      "sjis": "91D3",
+      "glyph_index": 2197,
+      "bios_offset": 135840
+    },
+    {
+      "hangul": "친",
+      "sjis": "91D0",
+      "glyph_index": 2194,
+      "bios_offset": 135744
+    },
+    {
+      "hangul": "칠",
+      "sjis": "91CD",
+      "glyph_index": 2191,
+      "bios_offset": 135648
+    },
+    {
+      "hangul": "침",
+      "sjis": "91CB",
+      "glyph_index": 2189,
+      "bios_offset": 135584
+    },
+    {
+      "hangul": "칫",
+      "sjis": "91C9",
+      "glyph_index": 2187,
+      "bios_offset": 135520
+    },
+    {
+      "hangul": "칭",
+      "sjis": "91C8",
+      "glyph_index": 2186,
+      "bios_offset": 135488
+    },
+    {
+      "hangul": "카",
+      "sjis": "91C7",
+      "glyph_index": 2185,
+      "bios_offset": 135456
+    },
+    {
+      "hangul": "칸",
+      "sjis": "91C6",
+      "glyph_index": 2184,
+      "bios_offset": 135424
+    },
+    {
+      "hangul": "칼",
+      "sjis": "91C4",
+      "glyph_index": 2182,
+      "bios_offset": 135360
+    },
+    {
+      "hangul": "캉",
+      "sjis": "91C3",
+      "glyph_index": 2181,
+      "bios_offset": 135328
+    },
+    {
+      "hangul": "캣",
+      "sjis": "91C1",
+      "glyph_index": 2179,
+      "bios_offset": 135264
+    },
+    {
+      "hangul": "커",
+      "sjis": "91C0",
+      "glyph_index": 2178,
+      "bios_offset": 135232
+    },
+    {
+      "hangul": "컬",
+      "sjis": "91BB",
+      "glyph_index": 2173,
+      "bios_offset": 135072
+    },
+    {
+      "hangul": "케",
+      "sjis": "91B8",
+      "glyph_index": 2170,
+      "bios_offset": 134976
+    },
+    {
+      "hangul": "켁",
+      "sjis": "91B4",
+      "glyph_index": 2166,
+      "bios_offset": 134848
+    },
+    {
+      "hangul": "켄",
+      "sjis": "91B3",
+      "glyph_index": 2165,
+      "bios_offset": 134816
+    },
+    {
+      "hangul": "켈",
+      "sjis": "91B2",
+      "glyph_index": 2164,
+      "bios_offset": 134784
+    },
+    {
+      "hangul": "켜",
+      "sjis": "91AA",
+      "glyph_index": 2156,
+      "bios_offset": 134528
+    },
+    {
+      "hangul": "켰",
+      "sjis": "91A8",
+      "glyph_index": 2154,
+      "bios_offset": 134464
+    },
+    {
+      "hangul": "코",
+      "sjis": "91A5",
+      "glyph_index": 2151,
+      "bios_offset": 134368
+    },
+    {
+      "hangul": "콘",
+      "sjis": "91A1",
+      "glyph_index": 2147,
+      "bios_offset": 134240
+    },
+    {
+      "hangul": "쾌",
+      "sjis": "91A0",
+      "glyph_index": 2146,
+      "bios_offset": 134208
+    },
+    {
+      "hangul": "쿠",
+      "sjis": "919F",
+      "glyph_index": 2145,
+      "bios_offset": 134176
+    },
+    {
+      "hangul": "쿨",
+      "sjis": "9199",
+      "glyph_index": 2139,
+      "bios_offset": 133984
+    },
+    {
+      "hangul": "크",
+      "sjis": "9198",
+      "glyph_index": 2138,
+      "bios_offset": 133952
+    },
+    {
+      "hangul": "큰",
+      "sjis": "9194",
+      "glyph_index": 2134,
+      "bios_offset": 133824
+    },
+    {
+      "hangul": "클",
+      "sjis": "9192",
+      "glyph_index": 2132,
+      "bios_offset": 133760
+    },
+    {
+      "hangul": "큼",
+      "sjis": "9191",
+      "glyph_index": 2131,
+      "bios_offset": 133728
+    },
+    {
+      "hangul": "키",
+      "sjis": "918F",
+      "glyph_index": 2129,
+      "bios_offset": 133664
+    },
+    {
+      "hangul": "킨",
+      "sjis": "918E",
+      "glyph_index": 2128,
+      "bios_offset": 133632
+    },
+    {
+      "hangul": "킬",
+      "sjis": "918D",
+      "glyph_index": 2127,
+      "bios_offset": 133600
+    },
+    {
+      "hangul": "킴",
+      "sjis": "918C",
+      "glyph_index": 2126,
+      "bios_offset": 133568
+    },
+    {
+      "hangul": "타",
+      "sjis": "918B",
+      "glyph_index": 2125,
+      "bios_offset": 133536
+    },
+    {
+      "hangul": "탁",
+      "sjis": "9189",
+      "glyph_index": 2123,
+      "bios_offset": 133472
+    },
+    {
+      "hangul": "탄",
+      "sjis": "9187",
+      "glyph_index": 2121,
+      "bios_offset": 133408
+    },
+    {
+      "hangul": "탈",
+      "sjis": "9186",
+      "glyph_index": 2120,
+      "bios_offset": 133376
+    },
+    {
+      "hangul": "탐",
+      "sjis": "9185",
+      "glyph_index": 2119,
+      "bios_offset": 133344
+    },
+    {
+      "hangul": "탑",
+      "sjis": "9182",
+      "glyph_index": 2116,
+      "bios_offset": 133248
+    },
+    {
+      "hangul": "탓",
+      "sjis": "917E",
+      "glyph_index": 2113,
+      "bios_offset": 133152
+    },
+    {
+      "hangul": "탕",
+      "sjis": "917D",
+      "glyph_index": 2112,
+      "bios_offset": 133120
+    },
+    {
+      "hangul": "태",
+      "sjis": "917C",
+      "glyph_index": 2111,
+      "bios_offset": 133088
+    },
+    {
+      "hangul": "택",
+      "sjis": "9179",
+      "glyph_index": 2108,
+      "bios_offset": 132992
+    },
+    {
+      "hangul": "탱",
+      "sjis": "9178",
+      "glyph_index": 2107,
+      "bios_offset": 132960
+    },
+    {
+      "hangul": "터",
+      "sjis": "9176",
+      "glyph_index": 2105,
+      "bios_offset": 132896
+    },
+    {
+      "hangul": "털",
+      "sjis": "9175",
+      "glyph_index": 2104,
+      "bios_offset": 132864
+    },
+    {
+      "hangul": "텅",
+      "sjis": "9173",
+      "glyph_index": 2102,
+      "bios_offset": 132800
+    },
+    {
+      "hangul": "테",
+      "sjis": "9170",
+      "glyph_index": 2099,
+      "bios_offset": 132704
+    },
+    {
+      "hangul": "텍",
+      "sjis": "916C",
+      "glyph_index": 2095,
+      "bios_offset": 132576
+    },
+    {
+      "hangul": "텐",
+      "sjis": "916B",
+      "glyph_index": 2094,
+      "bios_offset": 132544
+    },
+    {
+      "hangul": "템",
+      "sjis": "9165",
+      "glyph_index": 2088,
+      "bios_offset": 132352
+    },
+    {
+      "hangul": "토",
+      "sjis": "9164",
+      "glyph_index": 2087,
+      "bios_offset": 132320
+    },
+    {
+      "hangul": "톡",
+      "sjis": "9162",
+      "glyph_index": 2085,
+      "bios_offset": 132256
+    },
+    {
+      "hangul": "톰",
+      "sjis": "9161",
+      "glyph_index": 2084,
+      "bios_offset": 132224
+    },
+    {
+      "hangul": "톱",
+      "sjis": "9160",
+      "glyph_index": 2083,
+      "bios_offset": 132192
+    },
+    {
+      "hangul": "통",
+      "sjis": "915E",
+      "glyph_index": 2081,
+      "bios_offset": 132128
+    },
+    {
+      "hangul": "퇴",
+      "sjis": "915D",
+      "glyph_index": 2080,
+      "bios_offset": 132096
+    },
+    {
+      "hangul": "투",
+      "sjis": "915C",
+      "glyph_index": 2079,
+      "bios_offset": 132064
+    },
+    {
+      "hangul": "툰",
+      "sjis": "915B",
+      "glyph_index": 2078,
+      "bios_offset": 132032
+    },
+    {
+      "hangul": "툴",
+      "sjis": "915A",
+      "glyph_index": 2077,
+      "bios_offset": 132000
+    },
+    {
+      "hangul": "튈",
+      "sjis": "9159",
+      "glyph_index": 2076,
+      "bios_offset": 131968
+    },
+    {
+      "hangul": "트",
+      "sjis": "9158",
+      "glyph_index": 2075,
+      "bios_offset": 131936
+    },
+    {
+      "hangul": "특",
+      "sjis": "9157",
+      "glyph_index": 2074,
+      "bios_offset": 131904
+    },
+    {
+      "hangul": "튼",
+      "sjis": "9156",
+      "glyph_index": 2073,
+      "bios_offset": 131872
+    },
+    {
+      "hangul": "틀",
+      "sjis": "9155",
+      "glyph_index": 2072,
+      "bios_offset": 131840
+    },
+    {
+      "hangul": "틈",
+      "sjis": "9154",
+      "glyph_index": 2071,
+      "bios_offset": 131808
+    },
+    {
+      "hangul": "티",
+      "sjis": "9151",
+      "glyph_index": 2068,
+      "bios_offset": 131712
+    },
+    {
+      "hangul": "틱",
+      "sjis": "914C",
+      "glyph_index": 2063,
+      "bios_offset": 131552
+    },
+    {
+      "hangul": "팅",
+      "sjis": "914A",
+      "glyph_index": 2061,
+      "bios_offset": 131488
+    },
+    {
+      "hangul": "파",
+      "sjis": "9148",
+      "glyph_index": 2059,
+      "bios_offset": 131424
+    },
+    {
+      "hangul": "판",
+      "sjis": "9147",
+      "glyph_index": 2058,
+      "bios_offset": 131392
+    },
+    {
+      "hangul": "팔",
+      "sjis": "9146",
+      "glyph_index": 2057,
+      "bios_offset": 131360
+    },
+    {
+      "hangul": "팡",
+      "sjis": "9145",
+      "glyph_index": 2056,
+      "bios_offset": 131328
+    },
+    {
+      "hangul": "패",
+      "sjis": "9143",
+      "glyph_index": 2054,
+      "bios_offset": 131264
+    },
+    {
+      "hangul": "팬",
+      "sjis": "9142",
+      "glyph_index": 2053,
+      "bios_offset": 131232
+    },
+    {
+      "hangul": "팽",
+      "sjis": "9141",
+      "glyph_index": 2052,
+      "bios_offset": 131200
+    },
+    {
+      "hangul": "퍼",
+      "sjis": "9140",
+      "glyph_index": 2051,
+      "bios_offset": 131168
+    },
+    {
+      "hangul": "펌",
+      "sjis": "90FB",
+      "glyph_index": 2049,
+      "bios_offset": 131104
+    },
+    {
+      "hangul": "페",
+      "sjis": "90FA",
+      "glyph_index": 2048,
+      "bios_offset": 131072
+    },
+    {
+      "hangul": "펜",
+      "sjis": "90F9",
+      "glyph_index": 2047,
+      "bios_offset": 131040
+    },
+    {
+      "hangul": "펠",
+      "sjis": "90F8",
+      "glyph_index": 2046,
+      "bios_offset": 131008
+    },
+    {
+      "hangul": "펨",
+      "sjis": "90F7",
+      "glyph_index": 2045,
+      "bios_offset": 130976
+    },
+    {
+      "hangul": "펴",
+      "sjis": "90F3",
+      "glyph_index": 2041,
+      "bios_offset": 130848
+    },
+    {
+      "hangul": "편",
+      "sjis": "90F1",
+      "glyph_index": 2039,
+      "bios_offset": 130784
+    },
+    {
+      "hangul": "펼",
+      "sjis": "90F0",
+      "glyph_index": 2038,
+      "bios_offset": 130752
+    },
+    {
+      "hangul": "평",
+      "sjis": "90EF",
+      "glyph_index": 2037,
+      "bios_offset": 130720
+    },
+    {
+      "hangul": "폐",
+      "sjis": "90EE",
+      "glyph_index": 2036,
+      "bios_offset": 130688
+    },
+    {
+      "hangul": "포",
+      "sjis": "90EB",
+      "glyph_index": 2033,
+      "bios_offset": 130592
+    },
+    {
+      "hangul": "폭",
+      "sjis": "90E9",
+      "glyph_index": 2031,
+      "bios_offset": 130528
+    },
+    {
+      "hangul": "표",
+      "sjis": "90E7",
+      "glyph_index": 2029,
+      "bios_offset": 130464
+    },
+    {
+      "hangul": "푸",
+      "sjis": "90E4",
+      "glyph_index": 2026,
+      "bios_offset": 130368
+    },
+    {
+      "hangul": "푹",
+      "sjis": "90DE",
+      "glyph_index": 2020,
+      "bios_offset": 130176
+    },
+    {
+      "hangul": "풀",
+      "sjis": "90DB",
+      "glyph_index": 2017,
+      "bios_offset": 130080
+    },
+    {
+      "hangul": "품",
+      "sjis": "90D9",
+      "glyph_index": 2015,
+      "bios_offset": 130016
+    },
+    {
+      "hangul": "풋",
+      "sjis": "90D7",
+      "glyph_index": 2013,
+      "bios_offset": 129952
+    },
+    {
+      "hangul": "풍",
+      "sjis": "90D6",
+      "glyph_index": 2012,
+      "bios_offset": 129920
+    },
+    {
+      "hangul": "퓌",
+      "sjis": "90D2",
+      "glyph_index": 2008,
+      "bios_offset": 129792
+    },
+    {
+      "hangul": "프",
+      "sjis": "90D0",
+      "glyph_index": 2006,
+      "bios_offset": 129728
+    },
+    {
+      "hangul": "플",
+      "sjis": "90CD",
+      "glyph_index": 2003,
+      "bios_offset": 129632
+    },
+    {
+      "hangul": "픔",
+      "sjis": "90CB",
+      "glyph_index": 2001,
+      "bios_offset": 129568
+    },
+    {
+      "hangul": "피",
+      "sjis": "90CA",
+      "glyph_index": 2000,
+      "bios_offset": 129536
+    },
+    {
+      "hangul": "핀",
+      "sjis": "90C6",
+      "glyph_index": 1996,
+      "bios_offset": 129408
+    },
+    {
+      "hangul": "필",
+      "sjis": "90C5",
+      "glyph_index": 1995,
+      "bios_offset": 129376
+    },
+    {
+      "hangul": "하",
+      "sjis": "90C4",
+      "glyph_index": 1994,
+      "bios_offset": 129344
+    },
+    {
+      "hangul": "학",
+      "sjis": "90C1",
+      "glyph_index": 1991,
+      "bios_offset": 129248
+    },
+    {
+      "hangul": "한",
+      "sjis": "90C0",
+      "glyph_index": 1990,
+      "bios_offset": 129216
+    },
+    {
+      "hangul": "할",
+      "sjis": "90BD",
+      "glyph_index": 1987,
+      "bios_offset": 129120
+    },
+    {
+      "hangul": "함",
+      "sjis": "90B2",
+      "glyph_index": 1976,
+      "bios_offset": 128768
+    },
+    {
+      "hangul": "합",
+      "sjis": "90AD",
+      "glyph_index": 1971,
+      "bios_offset": 128608
+    },
+    {
+      "hangul": "핫",
+      "sjis": "90A9",
+      "glyph_index": 1967,
+      "bios_offset": 128480
+    },
+    {
+      "hangul": "항",
+      "sjis": "90A4",
+      "glyph_index": 1962,
+      "bios_offset": 128320
+    },
+    {
+      "hangul": "해",
+      "sjis": "90A3",
+      "glyph_index": 1961,
+      "bios_offset": 128288
+    },
+    {
+      "hangul": "했",
+      "sjis": "90A0",
+      "glyph_index": 1958,
+      "bios_offset": 128192
+    },
+    {
+      "hangul": "행",
+      "sjis": "909E",
+      "glyph_index": 1956,
+      "bios_offset": 128128
+    },
+    {
+      "hangul": "향",
+      "sjis": "909D",
+      "glyph_index": 1955,
+      "bios_offset": 128096
+    },
+    {
+      "hangul": "허",
+      "sjis": "909C",
+      "glyph_index": 1954,
+      "bios_offset": 128064
+    },
+    {
+      "hangul": "헌",
+      "sjis": "909B",
+      "glyph_index": 1953,
+      "bios_offset": 128032
+    },
+    {
+      "hangul": "험",
+      "sjis": "909A",
+      "glyph_index": 1952,
+      "bios_offset": 128000
+    },
+    {
+      "hangul": "헛",
+      "sjis": "9099",
+      "glyph_index": 1951,
+      "bios_offset": 127968
+    },
+    {
+      "hangul": "헤",
+      "sjis": "9098",
+      "glyph_index": 1950,
+      "bios_offset": 127936
+    },
+    {
+      "hangul": "헬",
+      "sjis": "9097",
+      "glyph_index": 1949,
+      "bios_offset": 127904
+    },
+    {
+      "hangul": "헷",
+      "sjis": "9096",
+      "glyph_index": 1948,
+      "bios_offset": 127872
+    },
+    {
+      "hangul": "혀",
+      "sjis": "9095",
+      "glyph_index": 1947,
+      "bios_offset": 127840
+    },
+    {
+      "hangul": "현",
+      "sjis": "9093",
+      "glyph_index": 1945,
+      "bios_offset": 127776
+    },
+    {
+      "hangul": "혈",
+      "sjis": "9092",
+      "glyph_index": 1944,
+      "bios_offset": 127744
+    },
+    {
+      "hangul": "협",
+      "sjis": "9091",
+      "glyph_index": 1943,
+      "bios_offset": 127712
+    },
+    {
+      "hangul": "혔",
+      "sjis": "9090",
+      "glyph_index": 1942,
+      "bios_offset": 127680
+    },
+    {
+      "hangul": "형",
+      "sjis": "908E",
+      "glyph_index": 1940,
+      "bios_offset": 127616
+    },
+    {
+      "hangul": "혜",
+      "sjis": "908D",
+      "glyph_index": 1939,
+      "bios_offset": 127584
+    },
+    {
+      "hangul": "호",
+      "sjis": "908A",
+      "glyph_index": 1936,
+      "bios_offset": 127488
+    },
+    {
+      "hangul": "혹",
+      "sjis": "9089",
+      "glyph_index": 1935,
+      "bios_offset": 127456
+    },
+    {
+      "hangul": "혼",
+      "sjis": "9088",
+      "glyph_index": 1934,
+      "bios_offset": 127424
+    },
+    {
+      "hangul": "홀",
+      "sjis": "9086",
+      "glyph_index": 1932,
+      "bios_offset": 127360
+    },
+    {
+      "hangul": "홋",
+      "sjis": "9084",
+      "glyph_index": 1930,
+      "bios_offset": 127296
+    },
+    {
+      "hangul": "홍",
+      "sjis": "9083",
+      "glyph_index": 1929,
+      "bios_offset": 127264
+    },
+    {
+      "hangul": "화",
+      "sjis": "9082",
+      "glyph_index": 1928,
+      "bios_offset": 127232
+    },
+    {
+      "hangul": "확",
+      "sjis": "9080",
+      "glyph_index": 1926,
+      "bios_offset": 127168
+    },
+    {
+      "hangul": "환",
+      "sjis": "907E",
+      "glyph_index": 1925,
+      "bios_offset": 127136
+    },
+    {
+      "hangul": "활",
+      "sjis": "907C",
+      "glyph_index": 1923,
+      "bios_offset": 127072
+    },
+    {
+      "hangul": "황",
+      "sjis": "907B",
+      "glyph_index": 1922,
+      "bios_offset": 127040
+    },
+    {
+      "hangul": "회",
+      "sjis": "907A",
+      "glyph_index": 1921,
+      "bios_offset": 127008
+    },
+    {
+      "hangul": "획",
+      "sjis": "9079",
+      "glyph_index": 1920,
+      "bios_offset": 126976
+    },
+    {
+      "hangul": "효",
+      "sjis": "9078",
+      "glyph_index": 1919,
+      "bios_offset": 126944
+    },
+    {
+      "hangul": "후",
+      "sjis": "9076",
+      "glyph_index": 1917,
+      "bios_offset": 126880
+    },
+    {
+      "hangul": "훈",
+      "sjis": "9074",
+      "glyph_index": 1915,
+      "bios_offset": 126816
+    },
+    {
+      "hangul": "훌",
+      "sjis": "9072",
+      "glyph_index": 1913,
+      "bios_offset": 126752
+    },
+    {
+      "hangul": "훔",
+      "sjis": "9070",
+      "glyph_index": 1911,
+      "bios_offset": 126688
+    },
+    {
+      "hangul": "훗",
+      "sjis": "906A",
+      "glyph_index": 1905,
+      "bios_offset": 126496
+    },
+    {
+      "hangul": "훨",
+      "sjis": "9066",
+      "glyph_index": 1901,
+      "bios_offset": 126368
+    },
+    {
+      "hangul": "휘",
+      "sjis": "9064",
+      "glyph_index": 1899,
+      "bios_offset": 126304
+    },
+    {
+      "hangul": "휩",
+      "sjis": "9063",
+      "glyph_index": 1898,
+      "bios_offset": 126272
+    },
+    {
+      "hangul": "흉",
+      "sjis": "9062",
+      "glyph_index": 1897,
+      "bios_offset": 126240
+    },
+    {
+      "hangul": "흐",
+      "sjis": "9061",
+      "glyph_index": 1896,
+      "bios_offset": 126208
+    },
+    {
+      "hangul": "흑",
+      "sjis": "9060",
+      "glyph_index": 1895,
+      "bios_offset": 126176
+    },
+    {
+      "hangul": "흘",
+      "sjis": "905D",
+      "glyph_index": 1892,
+      "bios_offset": 126080
+    },
+    {
+      "hangul": "흠",
+      "sjis": "905A",
+      "glyph_index": 1889,
+      "bios_offset": 125984
+    },
+    {
+      "hangul": "흡",
+      "sjis": "9059",
+      "glyph_index": 1888,
+      "bios_offset": 125952
+    },
+    {
+      "hangul": "흥",
+      "sjis": "9057",
+      "glyph_index": 1886,
+      "bios_offset": 125888
+    },
+    {
+      "hangul": "흩",
+      "sjis": "9050",
+      "glyph_index": 1879,
+      "bios_offset": 125664
+    },
+    {
+      "hangul": "희",
+      "sjis": "904C",
+      "glyph_index": 1875,
+      "bios_offset": 125536
+    },
+    {
+      "hangul": "히",
+      "sjis": "904B",
+      "glyph_index": 1874,
+      "bios_offset": 125504
+    },
+    {
+      "hangul": "힌",
+      "sjis": "904A",
+      "glyph_index": 1873,
+      "bios_offset": 125472
+    },
+    {
+      "hangul": "힘",
+      "sjis": "9049",
+      "glyph_index": 1872,
+      "bios_offset": 125440
+    }
+  ]
+}

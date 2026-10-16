@@ -1,0 +1,142 @@
+{
+  "format": "TASK3-FIELD-GETFNT-HOOK-DESIGN",
+  "version": 1,
+  "task": 3,
+  "status": "DESIGN_PASS_READY_FOR_TASK4_POC_BUILD",
+  "dry_run_only": true,
+  "scope": "renderer.field_main first-dialogue path only",
+  "baseline": {
+    "track02_sha256": "7566073A2AA1F48E7B39ED2B34277D9935FADE8A3FAD7DCC72C21276E2632AF9",
+    "task0_gate": "PASS",
+    "task2_gate": "PASS",
+    "custom_code": "EF41",
+    "font": "G:\\Downloads\\Tenshi no Uta II - Datenshi no Sentaku (Japan)\\font\\Galmuri8x8.ttf",
+    "font_sha256": "97BA3DCC2CD5E5B2927E4E6BA9558A48A2A194A852C420DF160654D66BBF2A05"
+  },
+  "module": {
+    "iso_start": "0x81000",
+    "bytes": 40960,
+    "physical_banks": "0x80..0x84",
+    "observed_mpr2_to_mpr6": [
+      "80",
+      "81",
+      "82",
+      "83",
+      "84"
+    ],
+    "lifetime": "loaded before the field scene and observed resident through the first and second dialogue pages"
+  },
+  "expected_writes_for_task4": [
+    {
+      "id": "field-getfnt-call",
+      "iso_offset": "0x8667E",
+      "runtime_address": "0x967E",
+      "expected_hex": "2060E0",
+      "replacement_hex": "2037C7",
+      "reason": "replace JSR EX_GETFNT with JSR field-local hook"
+    },
+    {
+      "id": "field-getfnt-hook-and-glyph",
+      "iso_offset": "0x89737",
+      "runtime_address": "0xC737",
+      "expected_hex": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF",
+      "replacement_hex": "A5F9C9EFD024A5F8C941D01EA000B964C791FAC8C020D0F618A5FA691885FA9002E6FBA900A200A0FF604C60E0000000003C80048004C004800880308000800080000000000000000000000000",
+      "reason": "install hook code and one 32-byte expanded glyph"
+    }
+  ],
+  "hook": {
+    "address": "0xC737",
+    "iso_offset": "0x89737",
+    "window_bytes": 457,
+    "used_bytes": 77,
+    "remaining_bytes": 380,
+    "physical_bank": "0x84",
+    "mapped_by": "MPR6=0x84; already true at the first dialogue",
+    "mpr_policy": "No TMA/TAM and no MPR change on either path",
+    "stack_policy": "Patched JSR pushes one return frame; fallback JMP E060 adds none; either BIOS RTS or custom RTS returns directly to 0x8858",
+    "labels": {
+      "copy": "0xC745",
+      "no_carry": "0xC75A",
+      "fallback": "0xC761",
+      "glyph": "0xC764"
+    },
+    "binary": "G:\\Downloads\\Tenshi no Uta II - Datenshi no Sentaku (Japan)\\translation\\task3_field_getfnt_hook.bin",
+    "binary_sha256": "677BC25A04CF7C3FFA035F5D20EF362987F9DED29847E4A04D388D65EB6362DB"
+  },
+  "fallback_path": {
+    "condition": "F9:F8 is not EF:41",
+    "transfer": "JMP E060",
+    "abi_reason": "A and P are not EX_GETFNT live-ins; F8/F9, FA/FB, FF, X, Y and the caller return frame reach the BIOS path unchanged",
+    "output": "original System Card EX_GETFNT output and side effects"
+  },
+  "custom_path": {
+    "condition": "F9:F8 is EF:41",
+    "glyph_character": "가",
+    "font_source": "G:\\Downloads\\Tenshi no Uta II - Datenshi no Sentaku (Japan)\\font\\Galmuri8x8.ttf",
+    "font_sha256": "97BA3DCC2CD5E5B2927E4E6BA9558A48A2A194A852C420DF160654D66BBF2A05",
+    "render_profile": {
+      "font_size_argument": 16,
+      "native_ink_bbox": [
+        0,
+        0,
+        8,
+        8
+      ],
+      "native_ink_size": [
+        8,
+        8
+      ],
+      "pce_cell": [
+        12,
+        12
+      ],
+      "paste_xy": [
+        2,
+        2
+      ],
+      "output_canvas": [
+        16,
+        16
+      ],
+      "bit_order": "two bytes per row, MSB first"
+    },
+    "expanded_32_hex": "000000003C80048004C004800880308000800080000000000000000000000000",
+    "destination": "32 bytes at the original FA/FB start",
+    "success_abi": {
+      "A": "00",
+      "X": "00",
+      "Y": "FF",
+      "FA_FB": "+24",
+      "FF": "preserved",
+      "MPR": "unchanged",
+      "stack": "balanced"
+    }
+  },
+  "cave_audit": {
+    "window_original_fill": "FF",
+    "original_raw_word_references_into_used_range": 6,
+    "raw_word_reference_offsets": [
+      "0x81329",
+      "0x8455B",
+      "0x84A10",
+      "0x8663C",
+      "0x867DD",
+      "0x89309"
+    ],
+    "original_jsr_jmp_references_into_used_range": 0,
+    "bank_boundary_crossed": false,
+    "cave_boundary_evidence": "The cave begins immediately after RTS at ISO 0x89736 and ends before the pointer table at 0x89900; no JSR/JMP targets the used range.",
+    "reserved_outside_window": "All bytes before 0x89737 and from 0x89900 onward remain untouched by this design"
+  },
+  "proved": [
+    "The hook, glyph and all branch targets fit in the observed resident field bank.",
+    "The fallback uses the original BIOS and preserves its call-stack shape.",
+    "The custom path supplies exactly 32 bytes and matches the known mode-1 success ABI relevant to the field caller.",
+    "No MPR or shared work-RAM scratch storage is required."
+  ],
+  "not_proved": [
+    "No game BIN/ISO was patched or executed in Task 3.",
+    "Runtime display of EF41 as Hangul belongs to Task 4.",
+    "Non-field renderers and a multi-glyph/local-remapping implementation remain unapproved."
+  ]
+}

@@ -1,0 +1,5 @@
+# domains: System Bus (21 bit) | System Bus | Main Memory | ROM | Battery RAM | TurboCD RAM | ADPCM RAM | Super System Card RAM | VRAM1 | VCEPalette | CPU registers
+# using VRAM=VRAM1 SCD=Super System Card RAM
+frame	event	detail
+# vram size 0x10000
+10061	MARK	1

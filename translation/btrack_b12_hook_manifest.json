@@ -1,0 +1,18 @@
+{
+ "format": "BTRACK-B12-HOOK-BUILD",
+ "runtime_status": "PENDING",
+ "base": "b10 구성 + armchk_v4 + 디스패처($4284) 훅",
+ "armchk": {
+  "builder": "asm_armchk_v4",
+  "bytes": 221,
+  "scratch": {
+   "PTRL": "0xc8f2",
+   "PTRH": "0xc8f3",
+   "STREAM": "0xc8f4"
+  }
+ },
+ "menu_stage": {
+  "patches": 513,
+  "patched_bytes": 52198
+ }
+}

@@ -1,0 +1,242 @@
+{
+  "format": "UNIFIED-INTERVAL-TOPOLOGY",
+  "version": 1,
+  "policy": "Any sector loaded by either topology is live; internal zero/FF bytes are not holes.",
+  "payload_range_lba": [
+    162,
+    5474
+  ],
+  "merged_live_intervals": [
+    {
+      "start_lba": 162,
+      "end_lba": 1822,
+      "sectors": 1660,
+      "owners": [
+        "overlay",
+        "primary",
+        "runtime-trace"
+      ]
+    },
+    {
+      "start_lba": 1826,
+      "end_lba": 2100,
+      "sectors": 274,
+      "owners": [
+        "overlay"
+      ]
+    },
+    {
+      "start_lba": 2114,
+      "end_lba": 2189,
+      "sectors": 75,
+      "owners": [
+        "overlay"
+      ]
+    },
+    {
+      "start_lba": 2210,
+      "end_lba": 2286,
+      "sectors": 76,
+      "owners": [
+        "overlay"
+      ]
+    },
+    {
+      "start_lba": 2306,
+      "end_lba": 2569,
+      "sectors": 263,
+      "owners": [
+        "overlay"
+      ]
+    },
+    {
+      "start_lba": 2594,
+      "end_lba": 4498,
+      "sectors": 1904,
+      "owners": [
+        "overlay",
+        "primary"
+      ]
+    },
+    {
+      "start_lba": 4514,
+      "end_lba": 4596,
+      "sectors": 82,
+      "owners": [
+        "overlay"
+      ]
+    },
+    {
+      "start_lba": 4610,
+      "end_lba": 4691,
+      "sectors": 81,
+      "owners": [
+        "overlay"
+      ]
+    },
+    {
+      "start_lba": 4706,
+      "end_lba": 4787,
+      "sectors": 81,
+      "owners": [
+        "overlay"
+      ]
+    },
+    {
+      "start_lba": 4802,
+      "end_lba": 4892,
+      "sectors": 90,
+      "owners": [
+        "overlay"
+      ]
+    },
+    {
+      "start_lba": 4898,
+      "end_lba": 4974,
+      "sectors": 76,
+      "owners": [
+        "overlay"
+      ]
+    },
+    {
+      "start_lba": 4994,
+      "end_lba": 5070,
+      "sectors": 76,
+      "owners": [
+        "overlay"
+      ]
+    },
+    {
+      "start_lba": 5090,
+      "end_lba": 5174,
+      "sectors": 84,
+      "owners": [
+        "overlay"
+      ]
+    },
+    {
+      "start_lba": 5186,
+      "end_lba": 5474,
+      "sectors": 288,
+      "owners": [
+        "overlay"
+      ]
+    }
+  ],
+  "common_unloaded_gaps": [
+    {
+      "start_lba": 1822,
+      "end_lba": 1826,
+      "sectors": 4,
+      "bytes": 8192,
+      "unclassified_translation_sources": 0
+    },
+    {
+      "start_lba": 2100,
+      "end_lba": 2114,
+      "sectors": 14,
+      "bytes": 28672,
+      "unclassified_translation_sources": 0
+    },
+    {
+      "start_lba": 2189,
+      "end_lba": 2210,
+      "sectors": 21,
+      "bytes": 43008,
+      "unclassified_translation_sources": 0
+    },
+    {
+      "start_lba": 2286,
+      "end_lba": 2306,
+      "sectors": 20,
+      "bytes": 40960,
+      "unclassified_translation_sources": 0
+    },
+    {
+      "start_lba": 2569,
+      "end_lba": 2594,
+      "sectors": 25,
+      "bytes": 51200,
+      "unclassified_translation_sources": 0
+    },
+    {
+      "start_lba": 4498,
+      "end_lba": 4514,
+      "sectors": 16,
+      "bytes": 32768,
+      "unclassified_translation_sources": 0
+    },
+    {
+      "start_lba": 4596,
+      "end_lba": 4610,
+      "sectors": 14,
+      "bytes": 28672,
+      "unclassified_translation_sources": 0
+    },
+    {
+      "start_lba": 4691,
+      "end_lba": 4706,
+      "sectors": 15,
+      "bytes": 30720,
+      "unclassified_translation_sources": 107
+    },
+    {
+      "start_lba": 4787,
+      "end_lba": 4802,
+      "sectors": 15,
+      "bytes": 30720,
+      "unclassified_translation_sources": 0
+    },
+    {
+      "start_lba": 4892,
+      "end_lba": 4898,
+      "sectors": 6,
+      "bytes": 12288,
+      "unclassified_translation_sources": 0
+    },
+    {
+      "start_lba": 4974,
+      "end_lba": 4994,
+      "sectors": 20,
+      "bytes": 40960,
+      "unclassified_translation_sources": 0
+    },
+    {
+      "start_lba": 5070,
+      "end_lba": 5090,
+      "sectors": 20,
+      "bytes": 40960,
+      "unclassified_translation_sources": 152
+    },
+    {
+      "start_lba": 5174,
+      "end_lba": 5186,
+      "sectors": 12,
+      "bytes": 24576,
+      "unclassified_translation_sources": 0
+    }
+  ],
+  "common_gap_sectors": 202,
+  "largest_common_gap_sectors": 25,
+  "fill_sector_candidates_not_runtime_verified": [
+    {
+      "start_lba": 4697,
+      "end_lba": 4698,
+      "sectors": 1,
+      "bytes": 2048
+    },
+    {
+      "start_lba": 5081,
+      "end_lba": 5082,
+      "sectors": 1,
+      "bytes": 2048
+    }
+  ],
+  "fill_candidate_sectors": 2,
+  "verified_sidecar": {
+    "start_lba": 9178,
+    "end_lba": 9328,
+    "sectors": 150,
+    "bytes": 307200
+  }
+}

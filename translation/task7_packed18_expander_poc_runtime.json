@@ -1,0 +1,30 @@
+{
+  "format": "TASK7-PACKED18-EXPANDER-POC-RUNTIME",
+  "version": 1,
+  "task": 7,
+  "date": "2026-07-17",
+  "status": "PASS",
+  "decision": "PACKED18_EXPANSION_GATE_PASS",
+  "baseline": {
+    "cue": "Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_task7_packed18_expander_poc.cue",
+    "bin_sha256": "753E1E3D2858A08DB123472CEDFAABD105CCF0C22AE4CF839525F29B86A1ECFB"
+  },
+  "evidence": {
+    "source": "user runtime observation",
+    "observation": "두 번째 대사 정상 출력, 메모 나옴, 이후 대사 일본어 나옴"
+  },
+  "observations": {
+    "packed_custom_path": "PASS: the second dialogue displayed the ordered eight Korean glyphs",
+    "bios_fallback": "PASS: the following dialogue displayed the original Japanese through BIOS fallback",
+    "memo": "PASS: the field Memo menu opened normally"
+  },
+  "approved_scope": "renderer.field_main first-field packed 18-byte eight-glyph expansion, BIOS fallback continuity, and Memo entry in the observed session",
+  "not_proved": [
+    "all 85 loader contexts",
+    "scene-load sidecar storage-to-RAM lifetime",
+    "other field scenes and field re-entry",
+    "menu, battle, card, boot, and late-event renderers",
+    "full-text reinsertion and long-session stability"
+  ],
+  "conclusion": "The 18-byte packed glyph format can be expanded by the verified MPR2 code / MPR6 data architecture without breaking the observed BIOS fallback or Memo path. Task 7 may use the packed 18-byte budget for branch planning, but sidecar runtime reachability remains a separate gate."
+}

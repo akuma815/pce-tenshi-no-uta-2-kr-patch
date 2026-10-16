@@ -1,0 +1,91 @@
+from cdrom_ecc_tables import EDC_crctable, L2sq
+
+def crc32(data):
+    result = 0
+    for value in data:
+        # In Python 3, iterating over bytes yields ints, so no ord() is needed.
+        result = EDC_crctable[(result ^ value) & 0xFF] ^ (result >> 8)
+    return result
+
+L2_RAW = 0x800
+L2_P = 43*2*2
+L2_Q = 26*2*2
+
+def encode_L2_P(data):
+    base_index = 0
+    P_index = 4 + L2_RAW + 4 + 8
+    target_size = P_index + L2_P
+    data = list(data) + ([0] * (target_size - len(data)))
+    assert len(data) == target_size
+    for j in range(43):
+        a, b = 0, 0
+        index = base_index
+        for i in range(19, 43):
+            assert index < P_index - 1
+            a ^= L2sq[i][data[index]]
+            b ^= L2sq[i][data[index+1]]
+            index += (2 * 43)
+
+        data[P_index] = a >> 8
+        data[P_index + (43 * 2)] = a & 0xFF
+        data[P_index + 1] = b >> 8
+        data[P_index + (43 * 2) + 1] = b & 0xFF
+        base_index += 2
+        P_index += 2
+    return data
+
+def encode_L2_Q(data):
+    base_index = 0
+    Q_index = 4 + L2_RAW + 4 + 8 + L2_P
+    MOD_INDEX = Q_index
+    target_size = Q_index + L2_Q
+    data = data + ([0] * (target_size - len(data)))
+    assert len(data) == target_size
+    counter = 0
+    for j in range(26):
+        a, b = 0, 0
+        index = base_index
+        for i in range(43):
+            a ^= L2sq[i][data[index]]
+            b ^= L2sq[i][data[index+1]]
+            index += (2 * 44)
+            index = index % MOD_INDEX
+        data[Q_index] = a >> 8
+        data[Q_index + (26 * 2)] = a & 0xFF
+        data[Q_index + 1] = b >> 8
+        data[Q_index + (26 * 2) + 1] = b & 0xFF
+        base_index += (2 * 43)
+        Q_index += 2
+        counter += 1
+    return data
+
+def get_edc_ecc(data):
+    # -data- is a bytes object of length 0x810 (2064 bytes):
+    # 12-byte sync
+    # 4-byte address and flag
+    # 2048-bytes program data.
+    # Returns: (4-byte EDC, 276-byte ECC, 2352-byte full sector)
+    assert len(data) == 0x810
+    edc = crc32(data[0x00:0x810])
+
+    edc_bytes = bytearray(4)
+    for i in range(4):
+        edc_bytes[i] = edc & 0xFF
+        edc >>= 8
+
+    # data including EDC
+    data_with_edc = data + bytes(edc_bytes)
+    assert len(data_with_edc) == 0x814
+
+    # Add 8 bytes of zero padding
+    data_with_pad = data_with_edc + b'\x00' * 8
+
+    # ECC P and Q parity calculations
+    temp = encode_L2_P(data_with_pad[0x0C:])
+    temp = encode_L2_Q(temp)
+
+    ecc_bytes = bytes(temp[-0x114:])
+    full_sector = data_with_pad + ecc_bytes
+    assert len(full_sector) == 2352
+
+    return bytes(edc_bytes), ecc_bytes, full_sector

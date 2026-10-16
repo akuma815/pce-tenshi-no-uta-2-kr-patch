@@ -1,0 +1,249 @@
+{
+ "format": "BTRACK-B8-2-HOOK-BUILD",
+ "runtime_status": "PENDING",
+ "changes_vs_b8_1": [
+  "reader v2: index bank <- SCRATCH+4 (행 이미지 첫 행 = 인덱스 행)",
+  "b8.3: scene 578 = $76 단일 뱅크 (play∪init coverage cold 재선정 — b8.2 의 $6A/$6B 는 init 그래픽 소스로 FAIL)",
+  "레코드 dedupe + 578∩2882 교집합을 카드에 강제 배치(prefer_card, 두 씬 공유)"
+ ],
+ "scenes": {
+  "482": {
+   "records": 235,
+   "mode": "uniform",
+   "pool_base": 9178,
+   "bins": {
+    "u482_t7B": {
+     "cap": 8192,
+     "used": 8191,
+     "kind": "ram",
+     "bank": "7B"
+    },
+    "u482_t7C": {
+     "cap": 8192,
+     "used": 8192,
+     "kind": "ram",
+     "bank": "7C"
+    },
+    "u482_t7D": {
+     "cap": 8192,
+     "used": 4147,
+     "kind": "ram",
+     "bank": "7D"
+    },
+    "u482_ihi": {
+     "cap": 5857,
+     "used": 0,
+     "kind": "ram",
+     "bank": "7E"
+    },
+    "u482_ilo": {
+     "cap": 457,
+     "used": 0,
+     "kind": "ram",
+     "bank": "7E"
+    },
+    "_shared_bytes": 0
+   },
+   "index_bytes": 1719
+  },
+  "290": {
+   "records": 84,
+   "mode": "uniform",
+   "pool_base": 9192,
+   "bins": {
+    "u290_t76": {
+     "cap": 8192,
+     "used": 8189,
+     "kind": "ram",
+     "bank": "76"
+    },
+    "u290_t7F": {
+     "cap": 8192,
+     "used": 4134,
+     "kind": "ram",
+     "bank": "7F"
+    },
+    "u290_ihi": {
+     "cap": 5857,
+     "used": 0,
+     "kind": "ram",
+     "bank": "7E"
+    },
+    "u290_ilo": {
+     "cap": 1514,
+     "used": 0,
+     "kind": "ram",
+     "bank": "7E"
+    },
+    "_shared_bytes": 0
+   },
+   "index_bytes": 662
+  },
+  "2882": {
+   "records": 171,
+   "mode": "hybrid",
+   "pool_base": 9206,
+   "bins": {
+    "h2882_7F": {
+     "cap": 8192,
+     "used": 3722,
+     "kind": "ram",
+     "bank": "7F"
+    },
+    "h2882_ihi": {
+     "cap": 5857,
+     "used": 0,
+     "kind": "ram",
+     "bank": "7E"
+    },
+    "h2882_ilo": {
+     "cap": 905,
+     "used": 0,
+     "kind": "ram",
+     "bank": "7E"
+    },
+    "h2882_c2AB40": {
+     "cap": 5312,
+     "used": 5312,
+     "kind": "card",
+     "bank": "15"
+    },
+    "h2882_c02CF9": {
+     "cap": 3966,
+     "used": 3966,
+     "kind": "card",
+     "bank": "01"
+    },
+    "h2882_c07A50": {
+     "cap": 1456,
+     "used": 1452,
+     "kind": "card",
+     "bank": "03"
+    },
+    "h2882_c03C7A": {
+     "cap": 902,
+     "used": 443,
+     "kind": "card",
+     "bank": "01"
+    },
+    "h2882_c2FE43": {
+     "cap": 445,
+     "used": 0,
+     "kind": "card",
+     "bank": "17"
+    },
+    "h2882_c05F46": {
+     "cap": 186,
+     "used": 0,
+     "kind": "card",
+     "bank": "02"
+    },
+    "_shared_bytes": 0
+   },
+   "index_bytes": 1271
+  },
+  "578": {
+   "records": 200,
+   "mode": "hybrid578",
+   "pool_base": 9214,
+   "bins": {
+    "s578_ihi": {
+     "cap": 5857,
+     "used": 5856,
+     "kind": "ram",
+     "bank": "76"
+    },
+    "s578_ilo": {
+     "cap": 702,
+     "used": 699,
+     "kind": "ram",
+     "bank": "76"
+    },
+    "s578_c03E35": {
+     "cap": 459,
+     "used": 459,
+     "kind": "card",
+     "bank": "01"
+    },
+    "s578_c2FE43": {
+     "cap": 445,
+     "used": 445,
+     "kind": "card",
+     "bank": "17"
+    },
+    "s578_c05F46": {
+     "cap": 186,
+     "used": 182,
+     "kind": "card",
+     "bank": "02"
+    },
+    "s578_c2D59E": {
+     "cap": 2658,
+     "used": 1255,
+     "kind": "card",
+     "bank": "16"
+    },
+    "_shared_bytes": 11173
+   },
+   "index_bytes": 1474
+  }
+ },
+ "card": {
+  "out": "SystemCard3_btrack_b8_3.pce",
+  "written": [
+   {
+    "off": "03F054",
+    "bytes": 177,
+    "what": "scene table"
+   },
+   {
+    "off": "02AB40",
+    "bytes": 5312,
+    "what": "h2882_c2AB40"
+   },
+   {
+    "off": "002CF9",
+    "bytes": 3966,
+    "what": "h2882_c02CF9"
+   },
+   {
+    "off": "007A50",
+    "bytes": 1452,
+    "what": "h2882_c07A50"
+   },
+   {
+    "off": "003C7A",
+    "bytes": 443,
+    "what": "h2882_c03C7A"
+   },
+   {
+    "off": "003E35",
+    "bytes": 459,
+    "what": "s578_c03E35"
+   },
+   {
+    "off": "02FE43",
+    "bytes": 445,
+    "what": "s578_c2FE43"
+   },
+   {
+    "off": "005F46",
+    "bytes": 182,
+    "what": "s578_c05F46"
+   },
+   {
+    "off": "02D59E",
+    "bytes": 1255,
+    "what": "s578_c2D59E"
+   }
+  ]
+ },
+ "window": {
+  "loader": 212,
+  "slice": 43,
+  "reader": 76,
+  "free": 70
+ },
+ "output_bin_sha256": "396a1a1a7974f90f4577d6e2a92c0ef111dba9bf9d2562d37cbd2db4efeb4f4f",
+ "card_sha256": "4390c13d9773da905f90112b2e4e297b3324665bccab227fee24c256fbd5652a"
+}

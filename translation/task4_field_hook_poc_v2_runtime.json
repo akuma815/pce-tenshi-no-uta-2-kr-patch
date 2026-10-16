@@ -1,0 +1,38 @@
+{
+  "format": "TASK4-FIELD-HOOK-POC-V2-RUNTIME",
+  "version": 2,
+  "task": 4,
+  "date": "2026-07-17",
+  "status": "PASS",
+  "scope": "renderer.field_main first-dialogue path only",
+  "build": {
+    "cue": "Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_task4_field_hook_poc_v2.cue",
+    "bin_sha256": "4DA30EA2002BC1CAA7E1207FFFA0C2A2B45893D600433494E2A2DF2EA664189B",
+    "bios_sha256": "E11527B3B96CE112A037138988CA72FD117A6B0779C2480D9E03EAEBECE3D9CE",
+    "font": "font/Galmuri8x8.ttf",
+    "font_sha256": "97BA3DCC2CD5E5B2927E4E6BA9558A48A2A194A852C420DF160654D66BBF2A05"
+  },
+  "observations": {
+    "custom_position": "PASS: the EF41 position displays the Galmuri8x8 glyph 가",
+    "original_japanese": "PASS: the later original 出 in 支度は出来たのかフェイト remains Japanese 出",
+    "graphics": "PASS: field background, sprites and dialogue window remain normal",
+    "page_transition": "PASS: the first page advances and clears into the second original page normally"
+  },
+  "screenshots": [
+    "C:/Users/akuma/AppData/Local/Temp/codex-clipboard-fc9a80ef-e038-46bf-ad83-33fca99670e4.png",
+    "C:/Users/akuma/AppData/Local/Temp/codex-clipboard-7bff0e69-52a5-4e96-bc1b-49272d9b6aae.png"
+  ],
+  "proved": [
+    "The corrected field callsite at runtime $967E is live on the first-dialogue path",
+    "EF41 dispatches to the module-local Galmuri8x8 glyph and renders 가",
+    "A later non-custom Japanese glyph still falls back to the original BIOS renderer",
+    "The one-glyph hook preserves field graphics and page progression in the observed path"
+  ],
+  "not_proved": [
+    "multiple custom glyphs or scene-local remapping",
+    "menu, battle, event, boot, name or item renderers",
+    "relocated strings or text longer than the original allocation",
+    "full-game translation coverage"
+  ],
+  "decision": "PASS_TASK4_FIELD_ONE_GLYPH"
+}

@@ -1,0 +1,47 @@
+{
+  "format": "TASK4-HOOK-REACHABILITY-PROBE",
+  "version": 1,
+  "status": "RUNTIME_NOT_REACHED",
+  "diagnostic_only": true,
+  "purpose": "Prove whether ISO 0x45855 JSR BB20 and the BB20 cave execute in the first field dialogue.",
+  "text_policy": "Original text is byte-identical; no EF41 substitution is applied.",
+  "glyph": {
+    "character": "가",
+    "font": "font/Galmuri8x8.ttf",
+    "font_sha256": "97BA3DCC2CD5E5B2927E4E6BA9558A48A2A194A852C420DF160654D66BBF2A05",
+    "expanded_32_hex": "000000003C80048004C004800880308000800080000000000000000000000000"
+  },
+  "behavior": "Every invocation through the selected field GETFNT wrapper returns 가; no BIOS fallback in this diagnostic.",
+  "expected_result_if_reached": "All ordinary two-byte Japanese glyphs in the field dialogue become 가 while controls and half-width paths remain intact.",
+  "expected_result_if_not_reached": "Dialogue remains Japanese, proving the selected callsite is not the live path.",
+  "writes": [
+    {
+      "id": "field-call",
+      "iso_offset": "0x45855",
+      "physical_offset": "0x7D1C45",
+      "expected_hex": "2060E0",
+      "replacement_hex": "2020BB"
+    },
+    {
+      "id": "unconditional-hook-and-glyph",
+      "iso_offset": "0x48B20",
+      "physical_offset": "0x7D4F10",
+      "expected_hex": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF",
+      "replacement_hex": "A000B93EBB91FAC8C020D0F618A5FA691885FA9002E6FBA900A200A0FF60000000003C80048004C004800880308000800080000000000000000000000000"
+    }
+  ],
+  "output": {
+    "bin": "Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_task4_hook_reachability_probe.bin",
+    "bin_size": 523184384,
+    "bin_sha256": "2077050AB7408FAC9654FCCB825A548F93559BDB2E1F57F55E29EA234FC994FC",
+    "cue": "Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_task4_hook_reachability_probe.cue",
+    "cue_sha256": "E96D11A2203D900095E4658D13E0C80DD9ED9ECF7F02F8D90DB36105A73554BA"
+  },
+  "diff": {
+    "actual_changed_bytes": 63,
+    "undeclared_changes": 0,
+    "file_size_preserved": true
+  },
+  "firmware": "Original H:/BizHawk/Firmware/PCECD_3.0-(J).pce",
+  "runtime_evidence": "translation/task4_hook_reachability_probe_runtime.json"
+}

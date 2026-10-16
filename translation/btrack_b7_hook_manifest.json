@@ -1,0 +1,50 @@
+{
+ "format": "BTRACK-B7-HOOK-BUILD",
+ "runtime_status": "PENDING",
+ "scenes": {
+  "482": {
+   "records": 235,
+   "text": {
+    "7B": 8191,
+    "7C": 8191,
+    "7D": 6175
+   },
+   "index_bytes": 1719,
+   "pool_base": 9178,
+   "text_banks": [
+    "7B",
+    "7C",
+    "7D"
+   ]
+  },
+  "290": {
+   "records": 84,
+   "text": {
+    "78": 8189,
+    "79": 4194,
+    "7A": 0
+   },
+   "index_bytes": 662,
+   "pool_base": 9192,
+   "text_banks": [
+    "78",
+    "79",
+    "7A"
+   ]
+  }
+ },
+ "card": {
+  "out": "SystemCard3_btrack_b7.pce",
+  "table_off": "0x3f054",
+  "table_logical": "0xb054",
+  "entries": 2
+ },
+ "window": {
+  "loader": 189,
+  "slice": 43,
+  "reader": 75,
+  "free": 94
+ },
+ "output_bin_sha256": "8ea7fc71e3fcbe2b562d929541b8a1c699e44d9f75384d95fde436dce90fc7d3",
+ "card_sha256": "d874f431f5508d66c4d16ef56b655902c5c8fe728d829d887b2e7f05a9a97fb2"
+}

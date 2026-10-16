@@ -1,0 +1,156 @@
+id	scene	consumer	review_status	jp	ko
+iso:016BA83	674	opcode02	draft	{#5}ラミアム：\n{#1}・・・私はダーク教最高司祭ラミアム\p・・・！？\p君は、ジーア・・・\p{#5}フェイト：\n{#1}ジーア、この人は？\p{#5}ジーア：\n{#1}・・・	{#5}라미암：\n{#1}・・・나는 다크교 최고사제 라미암\p・・・！？\p너는、 지아・・・\p{#5}페이트：\n{#1}지아、 이 사람은？\p{#5}지아：\n{#1}・・・
+iso:01CD28C	866	opcode02	draft	{#5}フェイト：\n{#1}・・・シオン\p・・・	{#5}페이트：\n{#1}・・・시온\p・・・
+iso:03DAF29	1922	opcode02	draft	日誌は旅のバロメーター\n　　　　　　　　　　　　　　　　〜旅の日誌屋〜	일지는 여행의 바로미터\n　　　　　　　　　〜여행 일지가〜
+iso:03DEF29	1922	opcode02	draft	(0x03DAF29 동일 사본)	일지는 여행의 바로미터\n　　　　　　　　　〜여행 일지가〜
+iso:03E0F29	1922	opcode02	draft	(0x03DAF29 동일 사본)	일지는 여행의 바로미터\n　　　　　　　　　〜여행 일지가〜
+iso:043B381	2114	opcode02	draft	オキャクサン！\n見テカナイト、キット後悔スルヨ！\p今日ハ雨ダカラ大サービス！\nタッタノ、１００ギミルネッ！	손님！\n안 보고 가면 분명 후회할 거야！\p오늘은 비 오니까 대서비스！\n단돈、 100기밀！
+iso:043B40D	2114	opcode02	draft	オキャクサン！\n見テカナイト、キットキット後悔スルヨ！\pオキャクサンダケニ大サービス！\nタッタノタッタノ、５０ギミルネッ！	손님！\n안 보고 가면 꼭꼭 후회할 거야！\p손님한테만 대서비스！\n단돈 단돈、 50기밀！
+iso:043B88A	2114	continuation	master_verified	それでは約束通り船を出しましょう\p船は街の外に用意させました\n航海の無事を祈っています	그럼 약속대로 배를 띄우죠\p배는 거리 밖에 준비했습니다\n무사한 항해를 빕니다
+iso:04CA864	2402	opcode02	draft	９０ギミル\p金ないよ	90기밀\p돈 없어
+iso:04CE864	2402	opcode02	draft	(0x04CA864 동일 사본)	90기밀\p돈 없어
+iso:04D0864	2402	opcode02	draft	(0x04CA864 동일 사본)	90기밀\p돈 없어
+iso:055B5F1	2690	opcode02	draft	ここは風導師の村\n　　　　　　　　　　　　　　　　〜旅の日誌屋〜	여기는 풍도사의 마을\n　　　　　　　　　〜여행 일지가〜
+iso:05BA126	2882	opcode02	draft	{#5}シオン：\n{#1}・・・！！\pフェイト！　地震だ！！	{#5}시온：\n{#1}・・・！！\p페이트！ 지진이다！！
+iso:070A0D9	3554	opcode02	draft	{#5}リアーナ：\n{#1}・・・何・・・何かの力が・・・\p{#5}フェイト：\n{#1}！？	{#5}리아나：\n{#1}・・・뭐지・・・무언가의 힘이・・・\p{#5}페이트：\n{#1}！？
+iso:070E0D9	3554	opcode02	draft	(0x070A0D9 동일 사본)	{#5}리아나：\n{#1}・・・뭐지・・・무언가의 힘이・・・\p{#5}페이트：\n{#1}！？
+iso:07100D9	3554	opcode02	draft	(0x070A0D9 동일 사본)	{#5}리아나：\n{#1}・・・뭐지・・・무언가의 힘이・・・\p{#5}페이트：\n{#1}！？
+iso:085A7BA	4226	opcode02	draft	＊ケイコク　ケイコク・・・\p＊シキベツコード　フメイ\p＊コレヨリサキノ　シンニュウヲ　キンズル	＊경고　경고・・・\p＊식별 코드　불명\p＊이 앞의 침입을 금한다
+iso:085A801	4226	opcode02	draft	＊ガード・システム『バエル』　キドウ\p＊コレヨリ　シンニュウシャヲ　ハイジョスル	＊가드 시스템「바엘」 기동\p＊지금부터 침입자를 배제한다
+iso:00AB6B2	290	opcode02	index	南　トランディス鉱山	남　트란디스 광산
+iso:00AB6C4	290	opcode02	index	南　ビスト	남　비스트
+iso:00DB2A7	386	opcode02	index	北　海神の神殿	북 해신의 신전
+iso:010D28C	482	opcode02	index	ジイサン　モ　ウマカッタゼ	노인도 맛있었지
+iso:010D2A2	482	opcode02	index	グルルルルル・・・	크르르르르…
+iso:010D2CD	482	opcode02	index	ニンゲンガリハ、ヤメラレナイゼ	인간 사냥은 그만둘 수 없지
+iso:010D2E9	482	opcode02	index	バアサン　モ　ウマカッタゼ	노파도 맛있었지
+iso:010D2FF	482	opcode02	index	タノム。ヒトクチカジラセテクレ	부탁이다. 한입만 물게 해줘
+iso:013A64A	578	opcode02	index	領主『マイク・Ｈ』宅	영주『마이크H』저택
+iso:013AB13	578	opcode02	index	ｚｚｚ・・・	쿨쿨…
+iso:013B3F7	578	opcode02	index	・・・	…
+iso:013B4C2	578	opcode02	index	・・・	…
+iso:013BB47	578	opcode02	index	北へ行くとウリムダークだ	북쪽으로가면 우림다크다
+iso:013C077	578	opcode02	index	バウワウ	멍멍
+iso:013C081	578	opcode02	index	アオ〜ン	아우우
+iso:013C659	578	opcode02	index	キャンキャン	깽깽
+iso:013C664	578	opcode02	index	クウ〜ン	낑낑
+iso:013E64A	578	opcode02	index	領主『マイク・Ｈ』宅	영주『마이크H』저택
+iso:013EB13	578	opcode02	index	ｚｚｚ・・・	쿨쿨…
+iso:014064A	578	opcode02	index	領主『マイク・Ｈ』宅	영주『마이크H』저택
+iso:0140B13	578	opcode02	index	ｚｚｚ・・・	쿨쿨…
+iso:016BF26	674	opcode02	index	{#1}ｚｚｚ・・・	{#1}쿨쿨…
+iso:016C1D4	674	opcode02	index	毎度〜	고마워〜 또 와〜
+iso:016CB7D	674	opcode02	index	ｚｚｚ・・・	쿨쿨…
+iso:016CEC1	674	opcode02	index	＊サーカス場建設予定地＊	＊서커스장건설 예정지＊
+iso:016CF03	674	opcode02	index	{~}{~}一方その頃・・・	{~}{~}한편 그 무렵…
+iso:01CC1AF	866	opcode02	index	くーくー	새근새근
+iso:01CC670	866	opcode02	index	グスッ・・・　村が・・・	흑… 마을이…
+iso:01CC958	866	opcode02	index	ｚｚｚ・・・	쿨쿨…
+iso:01CCC0C	866	opcode02	index	くー・・・	쿨…
+iso:01CCC71	866	opcode02	index	ｚｚｚ・・・	쿨쿨…
+iso:01FB14E	962	opcode02	index	寒いの・・・　とっても	추워… 너무나
+iso:01FB2C5	962	opcode02	index	ぐお〜　むにゃ、むにゃ	드르렁~ 음냐, 음냐
+iso:01FBFAB	962	opcode02	index	それではごゆっくり・・・	그럼 푹 쉬세요…
+iso:022BE15	1058	opcode02	index	うそっすよ	농담이야
+iso:025C88D	1154	opcode02	index	ｚｚｚ・・・	쿨쿨…
+iso:025C89C	1154	opcode02	index	ｚｚｚ・・・	쿨쿨…
+iso:025C8AB	1154	opcode02	index	ｚｚｚ・・・	쿨쿨…
+iso:025C8BA	1154	opcode02	index	ｚｚｚ・・・	쿨쿨…
+iso:025C8C9	1154	opcode02	index	ｚｚｚ・・・	쿨쿨…
+iso:028BC7F	1250	opcode02	index	ベッドは２階だよ	침대는 2층이야
+iso:028C47B	1250	opcode02	index	ベッドは２階だよ	침대는 2층이야
+iso:028C8AC	1250	opcode02	index	＊こわれた時計だ	＊고장난 시계다
+iso:02BC19A	1346	opcode02	index	すやすや	새근새근
+iso:02BC1A5	1346	opcode02	index	くーくー	새근새근
+iso:02EACF2	1442	opcode02	index	{#5}・・・・・・ねむ゛い{#1}	{#5}……졸려{#1}
+iso:02EECF2	1442	opcode02	index	{#5}・・・・・・ねむ゛い{#1}	{#5}……졸려{#1}
+iso:02F0CF2	1442	opcode02	index	{#5}・・・・・・ねむ゛い{#1}	{#5}……졸려{#1}
+iso:031AE81	1538	opcode02	index	リアは・・・？	리아는・・・?
+iso:031B546	1538	opcode02	index	コッコッコッココケッコー！！	꼬끼오오오!!
+iso:031B559	1538	opcode02	index	クックドォールドゥー！	꼬꼬댁꼬꼬!
+iso:031EE81	1538	opcode02	index	リアは・・・？	리아는・・・?
+iso:0320E81	1538	opcode02	index	リアは・・・？	리아는・・・?
+iso:034B63B	1634	opcode02	index	すかーすかーすかー	새근~새근~새근~
+iso:037C5EC	1730	opcode02	index	{#5}ん・・・寝ぼけてたな{#1}	{#5}음・・・잠이덜 깼군{#1}
+iso:037C6EA	1730	opcode02	index	{#5}ん・・・寝ぼけてたな{#1}	{#5}음・・・잠이덜 깼군{#1}
+iso:037C892	1730	opcode02	index	{#5}ん・・・寝ぼけてたな{#1}	{#5}음・・・잠이덜 깼군{#1}
+iso:037C983	1730	opcode02	index	{#5}ん・・・寝ぼけてたな{#1}	{#5}음・・・잠이덜 깼군{#1}
+iso:037D0C5	1730	opcode02	index	ＺＺｚｚｚ・・・ＺＺＺｚｚｚ・・・	쿨쿨・・・ 쿨쿨・・・
+iso:037D633	1730	opcode02	index	クー・・・　スピー・・・	쿨・・・ 새근・・・
+iso:037D68B	1730	opcode02	index	すー・・・すー・・・	새근・・・새근・・・
+iso:03ABA19	1826	opcode02	index	びし	휙
+iso:03AC3E4	1826	opcode02	index	それではよろしく頼む	그럼 잘 부탁하네
+iso:03AD729	1826	opcode02	index	・・・いぢわるぅ	・・・심술쟁이
+iso:03AD739	1826	opcode02	index	ＺＺｚｚｚ・・・	쿨쿨・・・
+iso:03AD7F3	1826	opcode02	index	すやすや	새근새근
+iso:03DB5F2	1922	opcode02	index	コココ・・・	꼬꼬꼬・・・
+iso:03DB6C7	1922	opcode02	index	・・・今日も雨か	오늘도비네・・・
+iso:040B465	2018	opcode02	index	じめじめするやな天気だ・・・	축축하고 궂은 날씨야・・・
+iso:043B2D9	2114	opcode02	index	商売道具ニ、サワッチャダメアルネ！	장사 도구에 손대면 안 돼요!
+iso:043B4D2	2114	opcode02	index	デハデハ、ヨク見ルヨロシ	그럼 잘 보세요
+iso:043BB75	2114	opcode02	index	文無しはお断りだよ	빈털터리는 안 받아
+iso:043BB84	2114	opcode02	index	ごゆっくり	푹 쉬어
+iso:043C1D2	2114	opcode02	index	ＺＺＺｚｚｚ・・・	쿨쿨・・・
+iso:043C315	2114	opcode02	index	すーすー	새근새근
+iso:043C356	2114	opcode02	index	あうん	아웅
+iso:046B182	2210	opcode02	index	毎度！	고맙습니다！ 또 오세요！
+iso:046B19C	2210	opcode02	index	毎度！	고맙습니다！ 또 오세요！
+iso:046B973	2210	opcode02	index	・・・・・・	・・・・・・
+iso:046BA19	2210	opcode02	index	・・・世の中広いな	・・・세상은넓구나
+iso:049BF8D	2306	opcode02	index	では、ごゆっくり	그럼 푹 쉬세요
+iso:04CAC20	2402	opcode02	index	ＺＺＺ・・・	쿨쿨・・・
+iso:04CAC84	2402	opcode02	index	ふふ・・・ふふふ・・・	후후・・・후후후・・・
+iso:04CACD3	2402	opcode02	index	ＺＺＺ・・・	쿨쿨・・・
+iso:04CAD6E	2402	opcode02	index	すーすー・・・	새근새근・・・
+iso:04CAE39	2402	opcode02	index	んごー	드렁
+iso:04CEC20	2402	opcode02	index	ＺＺＺ・・・	쿨쿨・・・
+iso:04CEC84	2402	opcode02	index	ふふ・・・ふふふ・・・	후후・・・후후후・・・
+iso:04CECD3	2402	opcode02	index	ＺＺＺ・・・	쿨쿨・・・
+iso:04CED6E	2402	opcode02	index	すーすー・・・	새근새근・・・
+iso:04CEE39	2402	opcode02	index	んごー	드렁
+iso:04D0C20	2402	opcode02	index	ＺＺＺ・・・	쿨쿨・・・
+iso:04D0C84	2402	opcode02	index	ふふ・・・ふふふ・・・	후후・・・후후후・・・
+iso:04D0CD3	2402	opcode02	index	ＺＺＺ・・・	쿨쿨・・・
+iso:04D0D6E	2402	opcode02	index	すーすー・・・	새근새근・・・
+iso:04D0E39	2402	opcode02	index	んごー	드렁
+iso:04FB9F9	2498	opcode02	index	グー・・・グー・・・	쿨・・・ 쿨・・・
+iso:04FBE09	2498	opcode02	index	グガー・・・ゴォ・・・	드르렁・・・고오・・・
+iso:052BBEA	2594	opcode02	index	キャンキャン！	깨갱깨갱!
+iso:052BBF7	2594	opcode02	index	キャインキャイン！	깽깽!
+iso:055B775	2690	opcode02	index	記録終了！	기록 끝!
+iso:055B814	2690	opcode02	index	では、ごゆっくり	그럼 푹 쉬세요
+iso:05BB4A0	2882	opcode02	index	ライヒ草を見つけた	라이히풀을 찾았다
+iso:05BB807	2882	opcode02	index	ライヒ草を見つけた	라이히풀을 찾았다
+iso:05BB8A7	2882	opcode02	index	ライヒ草を見つけた	라이히풀을 찾았다
+iso:067B176	3266	opcode02	index	・・・	…
+iso:067FA00	3266	opcode02	index	聞けるかもな・・・	들을지도・・・
+iso:06AB032	3362	opcode02	index	・・・ど、どうも・・・	・・・아, 안녕・・・
+iso:06AB0DD	3362	opcode02	index	いやあぁぁぁぁぁ！！！	아아아아아아!!!
+iso:06DA03E	3458	opcode02	index	グルロロロ・・・	그르르르・・・
+iso:06DA062	3458	opcode02	index	グルロロロ・・・	그르르르・・・
+iso:073A1F0	3650	opcode02	index	赤い像だ	붉은 상
+iso:073A202	3650	opcode02	index	青い像だ	푸른 상
+iso:073A20B	3650	opcode02	index	黄色い像だ	노란상이다
+iso:073E1F0	3650	opcode02	index	赤い像だ	붉은 상
+iso:073E202	3650	opcode02	index	青い像だ	푸른 상
+iso:073E20B	3650	opcode02	index	黄色い像だ	노란상이다
+iso:07401F0	3650	opcode02	index	赤い像だ	붉은 상
+iso:0740202	3650	opcode02	index	青い像だ	푸른 상
+iso:074020B	3650	opcode02	index	黄色い像だ	노란상이다
+iso:076B815	3746	opcode02	index	黒めのうを外した	흑마노를 뺐다
+iso:076BA6E	3746	opcode02	index	黒めのうを掲げますか	흑마노를 들어 올리겠습니까
+iso:076BA8A	3746	opcode02	index	黒めのうを掲げた	흑마노를 들어 올렸다
+iso:076BB74	3746	opcode02	index	黒めのうを外した	흑마노를 뺐다
+iso:076BDAA	3746	opcode02	index	黒めのうを掲げますか	흑마노를 들어 올리겠습니까
+iso:076BDC2	3746	opcode02	index	黒めのうを掲げた	흑마노를 들어 올렸다
+iso:076BEDF	3746	opcode02	index	黒めのうを外した	흑마노를 뺐다
+iso:076C0E1	3746	opcode02	index	黒めのうを掲げますか	흑마노를 들어 올리겠습니까
+iso:076C0F9	3746	opcode02	index	黒めのうを掲げた	흑마노를 들어 올렸다
+iso:085B1C3	4226	opcode02	index	アスタロート	아스타로트
+iso:08BFA00	4418	opcode02	index	聞けるかもな・・・	들을지도・・・
+iso:0919DC1	4610	opcode02	index	・・・ト・・・	・・・트・・・
+iso:0919DDA	4610	opcode02	index	フェイト・・・	페이트・・・
+iso:09DABCE	4994	opcode02	index	ライヒ草を見つけた	라이히풀을 찾았다
+iso:09DAC8E	4994	opcode02	index	・・・	…
+iso:0A9B106	5378	opcode02	index	{~}{~}{~}{~}{~}一ヵ月後	{~}{~}{~}{~}{~}한달 후
+iso:0A9B134	5378	opcode02	index	フェイト	페이트

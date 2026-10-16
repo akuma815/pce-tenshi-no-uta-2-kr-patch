@@ -1,0 +1,4030 @@
+{
+ "format": "ZIRIA-Z9-STATIC-ASSET-MAP",
+ "version": 1,
+ "iso_sha256": "7566073A2AA1F48E7B39ED2B34277D9935FADE8A3FAD7DCC72C21276E2632AF9",
+ "scene_population": {
+  "unique_96sector_lbas": 32,
+  "lbas": [
+   290,
+   386,
+   482,
+   674,
+   770,
+   866,
+   962,
+   1154,
+   1250,
+   1346,
+   1442,
+   1634,
+   1826,
+   1922,
+   2306,
+   2402,
+   2690,
+   2882,
+   3074,
+   3170,
+   3266,
+   3362,
+   3458,
+   3746,
+   3842,
+   3938,
+   4130,
+   4226,
+   4322,
+   5186,
+   5282,
+   5378
+  ]
+ },
+ "rules": {
+  "granule_bytes": 16,
+  "global_min_fraction": 0.9,
+  "global_threshold_scenes": 29,
+  "fill_definition": "그래뉼 16B 가 전 씬에서 단일 반복 바이트",
+  "min_run_bytes": 64,
+  "fill_bridge_max_bytes": 1024,
+  "meaning": "GLOBAL_ASSET 뱅크는 전 씬 풀 배치 금지. CANDIDATE 는 승인이 아니라 '정적 배제 사유 없음' — 씬별 CDL cold + 강화 게이트가 여전히 필요하다.",
+  "residual_risk": "씬-고유 상태 의존 소비자는 미검출 — 게이트에 아이템 획득·메뉴 조작 포함 필수"
+ },
+ "global_asset_runs": [
+  {
+   "offset_start": "000000",
+   "offset_end": "0028A0",
+   "bytes": 10400,
+   "banks": "$68..$69",
+   "fill_bridged_bytes": 0,
+   "annotation": "씬 부트스트랩 코드+고정 테이블 (482 의 JSR $E009 @0xA01 포함)"
+  },
+  {
+   "offset_start": "008000",
+   "offset_end": "00BB00",
+   "bytes": 15104,
+   "banks": "$6C..$6D",
+   "fill_bridged_bytes": 0,
+   "annotation": "공유 자산 A — 노이즈성(압축 추정), 메뉴가 head 0x8000..0x94A0 소비(CDL)"
+  },
+  {
+   "offset_start": "00C000",
+   "offset_end": "00FF80",
+   "bytes": 16256,
+   "banks": "$6E..$6F",
+   "fill_bridged_bytes": 64,
+   "annotation": "아이템 아이콘 타일 블록 (raw PCE 타일, 렌더 판독 — b7.1/b7.4 깨짐의 원천)"
+  },
+  {
+   "offset_start": "0159F0",
+   "offset_end": "016EF0",
+   "bytes": 5376,
+   "banks": "$72..$73",
+   "fill_bridged_bytes": 128,
+   "annotation": "공유 자산 B — 노이즈성(용도 미상)"
+  }
+ ],
+ "global_bank_bytes": {
+  "68": 8192,
+  "69": 2208,
+  "6C": 8192,
+  "6D": 6912,
+  "6E": 8160,
+  "6F": 8032,
+  "72": 1424,
+  "73": 3824
+ },
+ "excluded_banks_all_scenes": [
+  "68",
+  "69",
+  "6C",
+  "6D",
+  "6E",
+  "6F",
+  "72",
+  "73"
+ ],
+ "cdl_segments": [
+  {
+   "file": "seg_2882_full.cdl",
+   "scene_context": 2882,
+   "touched_fraction": 0.0955,
+   "status": "OK"
+  },
+  {
+   "file": "seg_2882_tower.cdl",
+   "scene_context": 2882,
+   "touched_fraction": 0.1635,
+   "status": "OK"
+  },
+  {
+   "file": "seg_290_full.cdl",
+   "scene_context": 290,
+   "touched_fraction": 0.0912,
+   "status": "OK"
+  },
+  {
+   "file": "seg_290_menu.cdl",
+   "scene_context": 290,
+   "touched_fraction": 0.0343,
+   "status": "OK"
+  },
+  {
+   "file": "seg_482_full.cdl",
+   "scene_context": 482,
+   "touched_fraction": 0.1795,
+   "status": "OK"
+  },
+  {
+   "file": "seg_482_menu.cdl",
+   "scene_context": 482,
+   "touched_fraction": 0.0604,
+   "status": "OK"
+  },
+  {
+   "file": "segment_a.cdl",
+   "scene_context": null,
+   "touched_fraction": 0.1009,
+   "status": "EXCLUDED_BY_TABLE"
+  },
+  {
+   "file": "segment_b.cdl",
+   "scene_context": null,
+   "touched_fraction": 0.0809,
+   "status": "EXCLUDED_BY_TABLE"
+  },
+  {
+   "file": "segment_c.cdl",
+   "scene_context": null,
+   "touched_fraction": 1.0,
+   "status": "EXCLUDED_BY_TABLE"
+  }
+ ],
+ "self_checks": [
+  {
+   "check": "runtime_fail_banks_are_global",
+   "ok": true,
+   "detail": "b7.1/b7.4 깨짐 뱅크 ['6C', '6D', '6E', '6F'] ⊆ 전역 ['68', '69', '6C', '6D', '6E', '6F', '72', '73']"
+  },
+  {
+   "check": "runtime_pass_banks_not_global_482",
+   "ok": true,
+   "detail": "b7.2 PASS 뱅크 ['7B', '7C', '7D', '7E'] 전역과 교집합 없음"
+  },
+  {
+   "check": "runtime_pass_banks_are_candidates_482",
+   "ok": true,
+   "detail": "b7.2 PASS 뱅크 중 비-CANDIDATE 없음"
+  },
+  {
+   "check": "runtime_pass_banks_not_global_290",
+   "ok": true,
+   "detail": "b7.2 PASS 뱅크 ['78', '79', '7A', '7E'] 전역과 교집합 없음"
+  },
+  {
+   "check": "runtime_pass_banks_are_candidates_290",
+   "ok": true,
+   "detail": "b7.2 PASS 뱅크 중 비-CANDIDATE 없음"
+  },
+  {
+   "check": "menu_cdl_icon_access_inside_global_runs",
+   "ok": true,
+   "detail": "$6C/$6E 메뉴 접근 3574B 전역 블록 내부, 외부 0B"
+  },
+  {
+   "check": "bootstrap_jsr_e009_global",
+   "ok": true,
+   "detail": "0xA01 JSR $E009 전 씬 동일 + 전역 run 내부"
+  }
+ ],
+ "scene_verdicts": {
+  "290": {
+   "cdl_segments": [
+    "seg_290_full.cdl",
+    "seg_290_menu.cdl"
+   ],
+   "candidate_banks": [
+    "76",
+    "78",
+    "79",
+    "7A",
+    "7E",
+    "7F"
+   ],
+   "banks": {
+    "68": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8192B"
+    },
+    "69": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 2208B"
+    },
+    "6A": {
+     "verdict": "CDL_HOT",
+     "detail": "접근 790B (seg_290_full.cdl, seg_290_menu.cdl)"
+    },
+    "6B": {
+     "verdict": "CDL_HOT",
+     "detail": "접근 3654B (seg_290_full.cdl, seg_290_menu.cdl)"
+    },
+    "6C": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8192B"
+    },
+    "6D": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 6912B"
+    },
+    "6E": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8160B"
+    },
+    "6F": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8032B"
+    },
+    "70": {
+     "verdict": "CDL_HOT",
+     "detail": "접근 281B (seg_290_full.cdl, seg_290_menu.cdl)"
+    },
+    "71": {
+     "verdict": "CDL_HOT",
+     "detail": "접근 226B (seg_290_full.cdl, seg_290_menu.cdl)"
+    },
+    "72": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 1424B"
+    },
+    "73": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 3824B"
+    },
+    "74": {
+     "verdict": "CDL_HOT",
+     "detail": "접근 3243B (seg_290_full.cdl, seg_290_menu.cdl)"
+    },
+    "75": {
+     "verdict": "CDL_HOT",
+     "detail": "접근 46B (seg_290_full.cdl, seg_290_menu.cdl)"
+    },
+    "76": {
+     "verdict": "CANDIDATE",
+     "detail": ""
+    },
+    "77": {
+     "verdict": "CDL_HOT",
+     "detail": "접근 2905B (seg_290_full.cdl, seg_290_menu.cdl)"
+    },
+    "78": {
+     "verdict": "CANDIDATE",
+     "detail": ""
+    },
+    "79": {
+     "verdict": "CANDIDATE",
+     "detail": ""
+    },
+    "7A": {
+     "verdict": "CANDIDATE",
+     "detail": ""
+    },
+    "7B": {
+     "verdict": "CDL_HOT",
+     "detail": "접근 78B (seg_290_full.cdl, seg_290_menu.cdl)"
+    },
+    "7C": {
+     "verdict": "CDL_HOT",
+     "detail": "접근 1064B (seg_290_full.cdl, seg_290_menu.cdl)"
+    },
+    "7D": {
+     "verdict": "CDL_HOT",
+     "detail": "접근 166B (seg_290_full.cdl, seg_290_menu.cdl)"
+    },
+    "7E": {
+     "verdict": "CANDIDATE",
+     "detail": ""
+    },
+    "7F": {
+     "verdict": "CANDIDATE",
+     "detail": ""
+    }
+   }
+  },
+  "386": {
+   "cdl_segments": [],
+   "candidate_banks": [
+    "6A",
+    "6B",
+    "70",
+    "71",
+    "74",
+    "75",
+    "76",
+    "77",
+    "78",
+    "79",
+    "7A",
+    "7B",
+    "7C",
+    "7D",
+    "7E",
+    "7F"
+   ],
+   "banks": {
+    "68": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8192B"
+    },
+    "69": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 2208B"
+    },
+    "6A": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "6B": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "6C": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8192B"
+    },
+    "6D": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 6912B"
+    },
+    "6E": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8160B"
+    },
+    "6F": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8032B"
+    },
+    "70": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 128B — 게이트 필수"
+    },
+    "71": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 8192B — 게이트 필수"
+    },
+    "72": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 1424B"
+    },
+    "73": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 3824B"
+    },
+    "74": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "75": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 5264B — 게이트 필수"
+    },
+    "76": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "77": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 112B — 게이트 필수"
+    },
+    "78": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "79": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7A": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7B": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7C": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7D": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7E": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7F": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    }
+   }
+  },
+  "482": {
+   "cdl_segments": [
+    "seg_482_full.cdl",
+    "seg_482_menu.cdl"
+   ],
+   "candidate_banks": [
+    "7B",
+    "7C",
+    "7D",
+    "7E"
+   ],
+   "banks": {
+    "68": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8192B"
+    },
+    "69": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 2208B"
+    },
+    "6A": {
+     "verdict": "CDL_HOT",
+     "detail": "접근 2791B (seg_482_full.cdl, seg_482_menu.cdl)"
+    },
+    "6B": {
+     "verdict": "CDL_HOT",
+     "detail": "접근 5979B (seg_482_full.cdl, seg_482_menu.cdl)"
+    },
+    "6C": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8192B"
+    },
+    "6D": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 6912B"
+    },
+    "6E": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8160B"
+    },
+    "6F": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8032B"
+    },
+    "70": {
+     "verdict": "CDL_HOT",
+     "detail": "접근 1537B (seg_482_full.cdl, seg_482_menu.cdl)"
+    },
+    "71": {
+     "verdict": "CDL_HOT",
+     "detail": "접근 234B (seg_482_full.cdl, seg_482_menu.cdl)"
+    },
+    "72": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 1424B"
+    },
+    "73": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 3824B"
+    },
+    "74": {
+     "verdict": "CDL_HOT",
+     "detail": "접근 3841B (seg_482_full.cdl, seg_482_menu.cdl)"
+    },
+    "75": {
+     "verdict": "CDL_HOT",
+     "detail": "접근 2846B (seg_482_full.cdl, seg_482_menu.cdl)"
+    },
+    "76": {
+     "verdict": "CDL_HOT",
+     "detail": "접근 125B (seg_482_full.cdl, seg_482_menu.cdl)"
+    },
+    "77": {
+     "verdict": "CDL_HOT",
+     "detail": "접근 3698B (seg_482_full.cdl, seg_482_menu.cdl)"
+    },
+    "78": {
+     "verdict": "CDL_HOT",
+     "detail": "접근 2800B (seg_482_full.cdl, seg_482_menu.cdl)"
+    },
+    "79": {
+     "verdict": "CDL_HOT",
+     "detail": "접근 3144B (seg_482_full.cdl, seg_482_menu.cdl)"
+    },
+    "7A": {
+     "verdict": "CDL_HOT",
+     "detail": "접근 1797B (seg_482_full.cdl, seg_482_menu.cdl)"
+    },
+    "7B": {
+     "verdict": "CANDIDATE",
+     "detail": ""
+    },
+    "7C": {
+     "verdict": "CANDIDATE",
+     "detail": ""
+    },
+    "7D": {
+     "verdict": "CANDIDATE",
+     "detail": ""
+    },
+    "7E": {
+     "verdict": "CANDIDATE",
+     "detail": ""
+    },
+    "7F": {
+     "verdict": "CDL_HOT",
+     "detail": "접근 281B (seg_482_full.cdl, seg_482_menu.cdl)"
+    }
+   }
+  },
+  "674": {
+   "cdl_segments": [],
+   "candidate_banks": [
+    "6A",
+    "6B",
+    "70",
+    "71",
+    "74",
+    "75",
+    "76",
+    "77",
+    "78",
+    "79",
+    "7A",
+    "7B",
+    "7C",
+    "7D",
+    "7E",
+    "7F"
+   ],
+   "banks": {
+    "68": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8192B"
+    },
+    "69": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 2208B"
+    },
+    "6A": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "6B": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "6C": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8192B"
+    },
+    "6D": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 6912B"
+    },
+    "6E": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8160B"
+    },
+    "6F": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8032B"
+    },
+    "70": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 1120B — 게이트 필수"
+    },
+    "71": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 8192B — 게이트 필수"
+    },
+    "72": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 1424B"
+    },
+    "73": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 3824B"
+    },
+    "74": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 1088B — 게이트 필수"
+    },
+    "75": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "76": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 544B — 게이트 필수"
+    },
+    "77": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 32B — 게이트 필수"
+    },
+    "78": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "79": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7A": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7B": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7C": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7D": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7E": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7F": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 8048B — 게이트 필수"
+    }
+   }
+  },
+  "770": {
+   "cdl_segments": [],
+   "candidate_banks": [
+    "6A",
+    "6B",
+    "70",
+    "71",
+    "74",
+    "75",
+    "76",
+    "77",
+    "78",
+    "79",
+    "7A",
+    "7B",
+    "7C",
+    "7D",
+    "7E",
+    "7F"
+   ],
+   "banks": {
+    "68": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8192B"
+    },
+    "69": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 2208B"
+    },
+    "6A": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "6B": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "6C": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8192B"
+    },
+    "6D": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 6912B"
+    },
+    "6E": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8160B"
+    },
+    "6F": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8032B"
+    },
+    "70": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 6144B — 게이트 필수"
+    },
+    "71": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 8192B — 게이트 필수"
+    },
+    "72": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 1424B"
+    },
+    "73": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 3824B"
+    },
+    "74": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 1120B — 게이트 필수"
+    },
+    "75": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 2368B — 게이트 필수"
+    },
+    "76": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 960B — 게이트 필수"
+    },
+    "77": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 160B — 게이트 필수"
+    },
+    "78": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "79": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7A": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7B": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7C": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7D": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7E": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7F": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 8048B — 게이트 필수"
+    }
+   }
+  },
+  "866": {
+   "cdl_segments": [],
+   "candidate_banks": [
+    "6A",
+    "6B",
+    "70",
+    "71",
+    "74",
+    "75",
+    "76",
+    "77",
+    "78",
+    "79",
+    "7A",
+    "7B",
+    "7C",
+    "7D",
+    "7E",
+    "7F"
+   ],
+   "banks": {
+    "68": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8192B"
+    },
+    "69": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 2208B"
+    },
+    "6A": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "6B": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "6C": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8192B"
+    },
+    "6D": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 6912B"
+    },
+    "6E": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8160B"
+    },
+    "6F": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8032B"
+    },
+    "70": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "71": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 8192B — 게이트 필수"
+    },
+    "72": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 1424B"
+    },
+    "73": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 3824B"
+    },
+    "74": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 752B — 게이트 필수"
+    },
+    "75": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "76": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 192B — 게이트 필수"
+    },
+    "77": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 80B — 게이트 필수"
+    },
+    "78": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "79": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7A": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7B": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7C": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7D": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7E": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7F": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 8048B — 게이트 필수"
+    }
+   }
+  },
+  "962": {
+   "cdl_segments": [],
+   "candidate_banks": [
+    "6A",
+    "6B",
+    "70",
+    "71",
+    "74",
+    "75",
+    "76",
+    "77",
+    "78",
+    "79",
+    "7A",
+    "7B",
+    "7C",
+    "7D",
+    "7E",
+    "7F"
+   ],
+   "banks": {
+    "68": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8192B"
+    },
+    "69": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 2208B"
+    },
+    "6A": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "6B": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "6C": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8192B"
+    },
+    "6D": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 6912B"
+    },
+    "6E": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8160B"
+    },
+    "6F": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8032B"
+    },
+    "70": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 2560B — 게이트 필수"
+    },
+    "71": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 8192B — 게이트 필수"
+    },
+    "72": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 1424B"
+    },
+    "73": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 3824B"
+    },
+    "74": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 1088B — 게이트 필수"
+    },
+    "75": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "76": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 672B — 게이트 필수"
+    },
+    "77": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 256B — 게이트 필수"
+    },
+    "78": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "79": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7A": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7B": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7C": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7D": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7E": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7F": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 8048B — 게이트 필수"
+    }
+   }
+  },
+  "1154": {
+   "cdl_segments": [],
+   "candidate_banks": [
+    "6A",
+    "6B",
+    "70",
+    "71",
+    "74",
+    "75",
+    "76",
+    "77",
+    "78",
+    "79",
+    "7A",
+    "7B",
+    "7C",
+    "7D",
+    "7E",
+    "7F"
+   ],
+   "banks": {
+    "68": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8192B"
+    },
+    "69": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 2208B"
+    },
+    "6A": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "6B": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "6C": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8192B"
+    },
+    "6D": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 6912B"
+    },
+    "6E": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8160B"
+    },
+    "6F": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8032B"
+    },
+    "70": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 6144B — 게이트 필수"
+    },
+    "71": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 8192B — 게이트 필수"
+    },
+    "72": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 1424B"
+    },
+    "73": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 3824B"
+    },
+    "74": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 1120B — 게이트 필수"
+    },
+    "75": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 1184B — 게이트 필수"
+    },
+    "76": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 960B — 게이트 필수"
+    },
+    "77": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 128B — 게이트 필수"
+    },
+    "78": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "79": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7A": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7B": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7C": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7D": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7E": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7F": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 8048B — 게이트 필수"
+    }
+   }
+  },
+  "1250": {
+   "cdl_segments": [],
+   "candidate_banks": [
+    "6A",
+    "6B",
+    "70",
+    "71",
+    "74",
+    "75",
+    "76",
+    "77",
+    "78",
+    "79",
+    "7A",
+    "7B",
+    "7C",
+    "7D",
+    "7E",
+    "7F"
+   ],
+   "banks": {
+    "68": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8192B"
+    },
+    "69": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 2208B"
+    },
+    "6A": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "6B": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "6C": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8192B"
+    },
+    "6D": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 6912B"
+    },
+    "6E": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8160B"
+    },
+    "6F": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8032B"
+    },
+    "70": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 5136B — 게이트 필수"
+    },
+    "71": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 8192B — 게이트 필수"
+    },
+    "72": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 1424B"
+    },
+    "73": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 3824B"
+    },
+    "74": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 912B — 게이트 필수"
+    },
+    "75": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 96B — 게이트 필수"
+    },
+    "76": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 864B — 게이트 필수"
+    },
+    "77": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 48B — 게이트 필수"
+    },
+    "78": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "79": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7A": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7B": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7C": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7D": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7E": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7F": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 1728B — 게이트 필수"
+    }
+   }
+  },
+  "1346": {
+   "cdl_segments": [],
+   "candidate_banks": [
+    "6A",
+    "6B",
+    "70",
+    "71",
+    "74",
+    "75",
+    "76",
+    "77",
+    "78",
+    "79",
+    "7A",
+    "7B",
+    "7C",
+    "7D",
+    "7E",
+    "7F"
+   ],
+   "banks": {
+    "68": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8192B"
+    },
+    "69": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 2208B"
+    },
+    "6A": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "6B": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "6C": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8192B"
+    },
+    "6D": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 6912B"
+    },
+    "6E": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8160B"
+    },
+    "6F": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8032B"
+    },
+    "70": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 6144B — 게이트 필수"
+    },
+    "71": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 8192B — 게이트 필수"
+    },
+    "72": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 1424B"
+    },
+    "73": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 3824B"
+    },
+    "74": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 1120B — 게이트 필수"
+    },
+    "75": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 1120B — 게이트 필수"
+    },
+    "76": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 960B — 게이트 필수"
+    },
+    "77": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 96B — 게이트 필수"
+    },
+    "78": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "79": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7A": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7B": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7C": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7D": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7E": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7F": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 8048B — 게이트 필수"
+    }
+   }
+  },
+  "1442": {
+   "cdl_segments": [],
+   "candidate_banks": [
+    "6A",
+    "6B",
+    "70",
+    "71",
+    "74",
+    "75",
+    "76",
+    "77",
+    "78",
+    "79",
+    "7A",
+    "7B",
+    "7C",
+    "7D",
+    "7E",
+    "7F"
+   ],
+   "banks": {
+    "68": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8192B"
+    },
+    "69": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 2208B"
+    },
+    "6A": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "6B": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "6C": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8192B"
+    },
+    "6D": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 6912B"
+    },
+    "6E": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8160B"
+    },
+    "6F": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8032B"
+    },
+    "70": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 5472B — 게이트 필수"
+    },
+    "71": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 8192B — 게이트 필수"
+    },
+    "72": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 1424B"
+    },
+    "73": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 3824B"
+    },
+    "74": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 1120B — 게이트 필수"
+    },
+    "75": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 736B — 게이트 필수"
+    },
+    "76": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 960B — 게이트 필수"
+    },
+    "77": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 192B — 게이트 필수"
+    },
+    "78": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "79": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7A": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7B": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7C": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7D": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7E": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7F": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 8048B — 게이트 필수"
+    }
+   }
+  },
+  "1634": {
+   "cdl_segments": [],
+   "candidate_banks": [
+    "6A",
+    "6B",
+    "70",
+    "71",
+    "74",
+    "75",
+    "76",
+    "77",
+    "78",
+    "79",
+    "7A",
+    "7B",
+    "7C",
+    "7D",
+    "7E",
+    "7F"
+   ],
+   "banks": {
+    "68": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8192B"
+    },
+    "69": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 2208B"
+    },
+    "6A": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "6B": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "6C": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8192B"
+    },
+    "6D": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 6912B"
+    },
+    "6E": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8160B"
+    },
+    "6F": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8032B"
+    },
+    "70": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 128B — 게이트 필수"
+    },
+    "71": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 8192B — 게이트 필수"
+    },
+    "72": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 1424B"
+    },
+    "73": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 3824B"
+    },
+    "74": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 1120B — 게이트 필수"
+    },
+    "75": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 2432B — 게이트 필수"
+    },
+    "76": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 960B — 게이트 필수"
+    },
+    "77": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 144B — 게이트 필수"
+    },
+    "78": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "79": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7A": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7B": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7C": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7D": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7E": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7F": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 8048B — 게이트 필수"
+    }
+   }
+  },
+  "1826": {
+   "cdl_segments": [],
+   "candidate_banks": [
+    "6A",
+    "6B",
+    "70",
+    "71",
+    "74",
+    "75",
+    "76",
+    "77",
+    "78",
+    "79",
+    "7A",
+    "7B",
+    "7C",
+    "7D",
+    "7E",
+    "7F"
+   ],
+   "banks": {
+    "68": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8192B"
+    },
+    "69": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 2208B"
+    },
+    "6A": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "6B": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "6C": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8192B"
+    },
+    "6D": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 6912B"
+    },
+    "6E": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8160B"
+    },
+    "6F": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8032B"
+    },
+    "70": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 5472B — 게이트 필수"
+    },
+    "71": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 8192B — 게이트 필수"
+    },
+    "72": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 1424B"
+    },
+    "73": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 3824B"
+    },
+    "74": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 928B — 게이트 필수"
+    },
+    "75": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "76": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "77": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 80B — 게이트 필수"
+    },
+    "78": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "79": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7A": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7B": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7C": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7D": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7E": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7F": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 8048B — 게이트 필수"
+    }
+   }
+  },
+  "1922": {
+   "cdl_segments": [],
+   "candidate_banks": [
+    "6A",
+    "6B",
+    "70",
+    "71",
+    "74",
+    "75",
+    "76",
+    "77",
+    "78",
+    "79",
+    "7A",
+    "7B",
+    "7C",
+    "7D",
+    "7E",
+    "7F"
+   ],
+   "banks": {
+    "68": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8192B"
+    },
+    "69": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 2208B"
+    },
+    "6A": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "6B": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "6C": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8192B"
+    },
+    "6D": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 6912B"
+    },
+    "6E": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8160B"
+    },
+    "6F": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8032B"
+    },
+    "70": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 6656B — 게이트 필수"
+    },
+    "71": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 8192B — 게이트 필수"
+    },
+    "72": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 1424B"
+    },
+    "73": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 3824B"
+    },
+    "74": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "75": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 4800B — 게이트 필수"
+    },
+    "76": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "77": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 208B — 게이트 필수"
+    },
+    "78": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "79": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7A": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7B": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7C": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7D": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7E": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7F": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 8048B — 게이트 필수"
+    }
+   }
+  },
+  "2306": {
+   "cdl_segments": [],
+   "candidate_banks": [
+    "6A",
+    "6B",
+    "70",
+    "71",
+    "74",
+    "75",
+    "76",
+    "77",
+    "78",
+    "79",
+    "7A",
+    "7B",
+    "7C",
+    "7D",
+    "7E",
+    "7F"
+   ],
+   "banks": {
+    "68": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8192B"
+    },
+    "69": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 2208B"
+    },
+    "6A": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "6B": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "6C": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8192B"
+    },
+    "6D": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 6912B"
+    },
+    "6E": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8160B"
+    },
+    "6F": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8032B"
+    },
+    "70": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 6656B — 게이트 필수"
+    },
+    "71": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 8192B — 게이트 필수"
+    },
+    "72": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 1424B"
+    },
+    "73": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 3824B"
+    },
+    "74": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "75": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 320B — 게이트 필수"
+    },
+    "76": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "77": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 80B — 게이트 필수"
+    },
+    "78": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "79": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7A": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7B": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7C": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7D": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7E": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7F": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 8048B — 게이트 필수"
+    }
+   }
+  },
+  "2402": {
+   "cdl_segments": [],
+   "candidate_banks": [
+    "6A",
+    "6B",
+    "70",
+    "71",
+    "74",
+    "75",
+    "76",
+    "77",
+    "78",
+    "79",
+    "7A",
+    "7B",
+    "7C",
+    "7D",
+    "7E",
+    "7F"
+   ],
+   "banks": {
+    "68": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8192B"
+    },
+    "69": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 2208B"
+    },
+    "6A": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "6B": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "6C": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8192B"
+    },
+    "6D": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 6912B"
+    },
+    "6E": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8160B"
+    },
+    "6F": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8032B"
+    },
+    "70": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 6400B — 게이트 필수"
+    },
+    "71": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 8192B — 게이트 필수"
+    },
+    "72": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 1424B"
+    },
+    "73": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 3824B"
+    },
+    "74": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 1120B — 게이트 필수"
+    },
+    "75": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 5264B — 게이트 필수"
+    },
+    "76": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 960B — 게이트 필수"
+    },
+    "77": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 96B — 게이트 필수"
+    },
+    "78": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "79": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7A": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7B": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7C": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7D": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7E": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7F": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 8048B — 게이트 필수"
+    }
+   }
+  },
+  "2690": {
+   "cdl_segments": [],
+   "candidate_banks": [
+    "6A",
+    "6B",
+    "70",
+    "71",
+    "74",
+    "75",
+    "76",
+    "77",
+    "78",
+    "79",
+    "7A",
+    "7B",
+    "7C",
+    "7D",
+    "7E",
+    "7F"
+   ],
+   "banks": {
+    "68": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8192B"
+    },
+    "69": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 2208B"
+    },
+    "6A": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "6B": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "6C": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8192B"
+    },
+    "6D": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 6912B"
+    },
+    "6E": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8160B"
+    },
+    "6F": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8032B"
+    },
+    "70": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 4096B — 게이트 필수"
+    },
+    "71": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 8192B — 게이트 필수"
+    },
+    "72": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 1424B"
+    },
+    "73": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 3824B"
+    },
+    "74": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "75": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 1536B — 게이트 필수"
+    },
+    "76": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "77": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 80B — 게이트 필수"
+    },
+    "78": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "79": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7A": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7B": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7C": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7D": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7E": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7F": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 8048B — 게이트 필수"
+    }
+   }
+  },
+  "2882": {
+   "cdl_segments": [
+    "seg_2882_full.cdl",
+    "seg_2882_tower.cdl"
+   ],
+   "candidate_banks": [
+    "7E",
+    "7F"
+   ],
+   "banks": {
+    "68": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8192B"
+    },
+    "69": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 2208B"
+    },
+    "6A": {
+     "verdict": "CDL_HOT",
+     "detail": "접근 8192B (seg_2882_full.cdl, seg_2882_tower.cdl)"
+    },
+    "6B": {
+     "verdict": "CDL_HOT",
+     "detail": "접근 4435B (seg_2882_full.cdl, seg_2882_tower.cdl)"
+    },
+    "6C": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8192B"
+    },
+    "6D": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 6912B"
+    },
+    "6E": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8160B"
+    },
+    "6F": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8032B"
+    },
+    "70": {
+     "verdict": "CDL_HOT",
+     "detail": "접근 1921B (seg_2882_full.cdl, seg_2882_tower.cdl)"
+    },
+    "71": {
+     "verdict": "CDL_HOT",
+     "detail": "접근 145B (seg_2882_full.cdl, seg_2882_tower.cdl)"
+    },
+    "72": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 1424B"
+    },
+    "73": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 3824B"
+    },
+    "74": {
+     "verdict": "CDL_HOT",
+     "detail": "접근 2442B (seg_2882_full.cdl, seg_2882_tower.cdl)"
+    },
+    "75": {
+     "verdict": "CDL_HOT",
+     "detail": "접근 3B (seg_2882_full.cdl, seg_2882_tower.cdl)"
+    },
+    "76": {
+     "verdict": "CDL_HOT",
+     "detail": "접근 281B (seg_2882_full.cdl, seg_2882_tower.cdl)"
+    },
+    "77": {
+     "verdict": "CDL_HOT",
+     "detail": "접근 3981B (seg_2882_full.cdl, seg_2882_tower.cdl)"
+    },
+    "78": {
+     "verdict": "CDL_HOT",
+     "detail": "접근 1504B (seg_2882_full.cdl, seg_2882_tower.cdl)"
+    },
+    "79": {
+     "verdict": "CDL_HOT",
+     "detail": "접근 1196B (seg_2882_full.cdl, seg_2882_tower.cdl)"
+    },
+    "7A": {
+     "verdict": "CDL_HOT",
+     "detail": "접근 182B (seg_2882_full.cdl, seg_2882_tower.cdl)"
+    },
+    "7B": {
+     "verdict": "CDL_HOT",
+     "detail": "접근 1487B (seg_2882_full.cdl, seg_2882_tower.cdl)"
+    },
+    "7C": {
+     "verdict": "CDL_HOT",
+     "detail": "접근 445B (seg_2882_full.cdl, seg_2882_tower.cdl)"
+    },
+    "7D": {
+     "verdict": "CDL_HOT",
+     "detail": "접근 54B (seg_2882_full.cdl, seg_2882_tower.cdl)"
+    },
+    "7E": {
+     "verdict": "CANDIDATE",
+     "detail": ""
+    },
+    "7F": {
+     "verdict": "CANDIDATE",
+     "detail": "패밀리 공유(g>=8) 48B — 게이트 필수"
+    }
+   }
+  },
+  "3074": {
+   "cdl_segments": [],
+   "candidate_banks": [
+    "6A",
+    "6B",
+    "70",
+    "71",
+    "74",
+    "75",
+    "76",
+    "77",
+    "78",
+    "79",
+    "7A",
+    "7B",
+    "7C",
+    "7D",
+    "7E",
+    "7F"
+   ],
+   "banks": {
+    "68": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8192B"
+    },
+    "69": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 2208B"
+    },
+    "6A": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "6B": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "6C": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8192B"
+    },
+    "6D": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 6912B"
+    },
+    "6E": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8160B"
+    },
+    "6F": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8032B"
+    },
+    "70": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 1248B — 게이트 필수"
+    },
+    "71": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 8192B — 게이트 필수"
+    },
+    "72": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 1424B"
+    },
+    "73": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 3824B"
+    },
+    "74": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 1024B — 게이트 필수"
+    },
+    "75": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 5264B — 게이트 필수"
+    },
+    "76": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 352B — 게이트 필수"
+    },
+    "77": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 240B — 게이트 필수"
+    },
+    "78": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "79": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7A": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7B": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7C": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7D": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7E": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7F": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 5856B — 게이트 필수"
+    }
+   }
+  },
+  "3170": {
+   "cdl_segments": [],
+   "candidate_banks": [
+    "6A",
+    "6B",
+    "70",
+    "71",
+    "74",
+    "75",
+    "76",
+    "77",
+    "78",
+    "79",
+    "7A",
+    "7B",
+    "7C",
+    "7D",
+    "7E",
+    "7F"
+   ],
+   "banks": {
+    "68": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8192B"
+    },
+    "69": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 2208B"
+    },
+    "6A": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "6B": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "6C": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8192B"
+    },
+    "6D": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 6912B"
+    },
+    "6E": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8160B"
+    },
+    "6F": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8032B"
+    },
+    "70": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "71": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 8192B — 게이트 필수"
+    },
+    "72": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 1424B"
+    },
+    "73": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 3824B"
+    },
+    "74": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 1184B — 게이트 필수"
+    },
+    "75": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 5264B — 게이트 필수"
+    },
+    "76": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 416B — 게이트 필수"
+    },
+    "77": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 272B — 게이트 필수"
+    },
+    "78": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "79": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7A": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7B": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7C": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7D": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7E": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7F": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 8048B — 게이트 필수"
+    }
+   }
+  },
+  "3266": {
+   "cdl_segments": [],
+   "candidate_banks": [
+    "6A",
+    "6B",
+    "70",
+    "71",
+    "74",
+    "75",
+    "76",
+    "77",
+    "78",
+    "79",
+    "7A",
+    "7B",
+    "7C",
+    "7D",
+    "7E",
+    "7F"
+   ],
+   "banks": {
+    "68": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8192B"
+    },
+    "69": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 2208B"
+    },
+    "6A": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "6B": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "6C": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8192B"
+    },
+    "6D": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 6912B"
+    },
+    "6E": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8160B"
+    },
+    "6F": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8032B"
+    },
+    "70": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "71": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 8192B — 게이트 필수"
+    },
+    "72": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 1424B"
+    },
+    "73": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 3824B"
+    },
+    "74": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 1072B — 게이트 필수"
+    },
+    "75": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 5488B — 게이트 필수"
+    },
+    "76": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 8048B — 게이트 필수"
+    },
+    "77": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 5584B — 게이트 필수"
+    },
+    "78": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "79": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7A": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7B": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7C": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7D": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7E": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7F": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 48B — 게이트 필수"
+    }
+   }
+  },
+  "3362": {
+   "cdl_segments": [],
+   "candidate_banks": [
+    "6A",
+    "6B",
+    "70",
+    "71",
+    "74",
+    "75",
+    "76",
+    "77",
+    "78",
+    "79",
+    "7A",
+    "7B",
+    "7C",
+    "7D",
+    "7E",
+    "7F"
+   ],
+   "banks": {
+    "68": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8192B"
+    },
+    "69": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 2208B"
+    },
+    "6A": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "6B": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "6C": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8192B"
+    },
+    "6D": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 6912B"
+    },
+    "6E": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8160B"
+    },
+    "6F": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8032B"
+    },
+    "70": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 4864B — 게이트 필수"
+    },
+    "71": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 8192B — 게이트 필수"
+    },
+    "72": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 1424B"
+    },
+    "73": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 3824B"
+    },
+    "74": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 1056B — 게이트 필수"
+    },
+    "75": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 5488B — 게이트 필수"
+    },
+    "76": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 304B — 게이트 필수"
+    },
+    "77": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 304B — 게이트 필수"
+    },
+    "78": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "79": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7A": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7B": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7C": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7D": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7E": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7F": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 7216B — 게이트 필수"
+    }
+   }
+  },
+  "3458": {
+   "cdl_segments": [],
+   "candidate_banks": [
+    "6A",
+    "6B",
+    "70",
+    "71",
+    "74",
+    "75",
+    "76",
+    "77",
+    "78",
+    "79",
+    "7A",
+    "7B",
+    "7C",
+    "7D",
+    "7E",
+    "7F"
+   ],
+   "banks": {
+    "68": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8192B"
+    },
+    "69": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 2208B"
+    },
+    "6A": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "6B": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "6C": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8192B"
+    },
+    "6D": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 6912B"
+    },
+    "6E": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8160B"
+    },
+    "6F": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8032B"
+    },
+    "70": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 4096B — 게이트 필수"
+    },
+    "71": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 8192B — 게이트 필수"
+    },
+    "72": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 1424B"
+    },
+    "73": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 3824B"
+    },
+    "74": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 928B — 게이트 필수"
+    },
+    "75": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 3504B — 게이트 필수"
+    },
+    "76": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 8048B — 게이트 필수"
+    },
+    "77": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 5600B — 게이트 필수"
+    },
+    "78": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "79": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7A": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7B": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7C": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7D": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7E": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7F": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 48B — 게이트 필수"
+    }
+   }
+  },
+  "3746": {
+   "cdl_segments": [],
+   "candidate_banks": [
+    "6A",
+    "6B",
+    "70",
+    "71",
+    "74",
+    "75",
+    "76",
+    "77",
+    "78",
+    "79",
+    "7A",
+    "7B",
+    "7C",
+    "7D",
+    "7E",
+    "7F"
+   ],
+   "banks": {
+    "68": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8192B"
+    },
+    "69": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 2208B"
+    },
+    "6A": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "6B": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "6C": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8192B"
+    },
+    "6D": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 6912B"
+    },
+    "6E": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8160B"
+    },
+    "6F": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8032B"
+    },
+    "70": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 224B — 게이트 필수"
+    },
+    "71": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 8192B — 게이트 필수"
+    },
+    "72": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 1424B"
+    },
+    "73": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 3824B"
+    },
+    "74": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 1120B — 게이트 필수"
+    },
+    "75": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 3488B — 게이트 필수"
+    },
+    "76": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 8048B — 게이트 필수"
+    },
+    "77": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 5616B — 게이트 필수"
+    },
+    "78": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "79": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7A": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7B": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7C": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7D": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7E": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7F": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 48B — 게이트 필수"
+    }
+   }
+  },
+  "3842": {
+   "cdl_segments": [],
+   "candidate_banks": [
+    "6A",
+    "6B",
+    "70",
+    "71",
+    "74",
+    "75",
+    "76",
+    "77",
+    "78",
+    "79",
+    "7A",
+    "7B",
+    "7C",
+    "7D",
+    "7E",
+    "7F"
+   ],
+   "banks": {
+    "68": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8192B"
+    },
+    "69": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 2208B"
+    },
+    "6A": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "6B": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "6C": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8192B"
+    },
+    "6D": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 6912B"
+    },
+    "6E": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8160B"
+    },
+    "6F": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8032B"
+    },
+    "70": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "71": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 8192B — 게이트 필수"
+    },
+    "72": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 1424B"
+    },
+    "73": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 3824B"
+    },
+    "74": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 1024B — 게이트 필수"
+    },
+    "75": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 5264B — 게이트 필수"
+    },
+    "76": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 304B — 게이트 필수"
+    },
+    "77": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 96B — 게이트 필수"
+    },
+    "78": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "79": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7A": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7B": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7C": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7D": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7E": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7F": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 4656B — 게이트 필수"
+    }
+   }
+  },
+  "3938": {
+   "cdl_segments": [],
+   "candidate_banks": [
+    "6A",
+    "6B",
+    "70",
+    "71",
+    "74",
+    "75",
+    "76",
+    "77",
+    "78",
+    "79",
+    "7A",
+    "7B",
+    "7C",
+    "7D",
+    "7E",
+    "7F"
+   ],
+   "banks": {
+    "68": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8192B"
+    },
+    "69": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 2208B"
+    },
+    "6A": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "6B": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "6C": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8192B"
+    },
+    "6D": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 6912B"
+    },
+    "6E": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8160B"
+    },
+    "6F": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8032B"
+    },
+    "70": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 4800B — 게이트 필수"
+    },
+    "71": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 8192B — 게이트 필수"
+    },
+    "72": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 1424B"
+    },
+    "73": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 3824B"
+    },
+    "74": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 1088B — 게이트 필수"
+    },
+    "75": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 5488B — 게이트 필수"
+    },
+    "76": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 304B — 게이트 필수"
+    },
+    "77": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 336B — 게이트 필수"
+    },
+    "78": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "79": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7A": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7B": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7C": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7D": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7E": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7F": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 8048B — 게이트 필수"
+    }
+   }
+  },
+  "4130": {
+   "cdl_segments": [],
+   "candidate_banks": [
+    "6A",
+    "6B",
+    "70",
+    "71",
+    "74",
+    "75",
+    "76",
+    "77",
+    "78",
+    "79",
+    "7A",
+    "7B",
+    "7C",
+    "7D",
+    "7E",
+    "7F"
+   ],
+   "banks": {
+    "68": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8192B"
+    },
+    "69": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 2208B"
+    },
+    "6A": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "6B": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "6C": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8192B"
+    },
+    "6D": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 6912B"
+    },
+    "6E": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8160B"
+    },
+    "6F": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8032B"
+    },
+    "70": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 128B — 게이트 필수"
+    },
+    "71": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 8192B — 게이트 필수"
+    },
+    "72": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 1424B"
+    },
+    "73": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 3824B"
+    },
+    "74": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 880B — 게이트 필수"
+    },
+    "75": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 5264B — 게이트 필수"
+    },
+    "76": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 304B — 게이트 필수"
+    },
+    "77": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 96B — 게이트 필수"
+    },
+    "78": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "79": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7A": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7B": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7C": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7D": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7E": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7F": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 16B — 게이트 필수"
+    }
+   }
+  },
+  "4226": {
+   "cdl_segments": [],
+   "candidate_banks": [
+    "6A",
+    "6B",
+    "70",
+    "71",
+    "74",
+    "75",
+    "76",
+    "77",
+    "78",
+    "79",
+    "7A",
+    "7B",
+    "7C",
+    "7D",
+    "7E",
+    "7F"
+   ],
+   "banks": {
+    "68": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8192B"
+    },
+    "69": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 2208B"
+    },
+    "6A": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "6B": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "6C": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8192B"
+    },
+    "6D": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 6912B"
+    },
+    "6E": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8160B"
+    },
+    "6F": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8032B"
+    },
+    "70": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "71": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 8192B — 게이트 필수"
+    },
+    "72": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 1424B"
+    },
+    "73": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 3824B"
+    },
+    "74": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 1056B — 게이트 필수"
+    },
+    "75": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 5472B — 게이트 필수"
+    },
+    "76": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 8048B — 게이트 필수"
+    },
+    "77": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 5568B — 게이트 필수"
+    },
+    "78": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "79": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7A": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7B": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7C": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7D": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7E": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7F": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 48B — 게이트 필수"
+    }
+   }
+  },
+  "4322": {
+   "cdl_segments": [],
+   "candidate_banks": [
+    "6A",
+    "6B",
+    "70",
+    "71",
+    "74",
+    "75",
+    "76",
+    "77",
+    "78",
+    "79",
+    "7A",
+    "7B",
+    "7C",
+    "7D",
+    "7E",
+    "7F"
+   ],
+   "banks": {
+    "68": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8192B"
+    },
+    "69": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 2208B"
+    },
+    "6A": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "6B": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "6C": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8192B"
+    },
+    "6D": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 6912B"
+    },
+    "6E": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8160B"
+    },
+    "6F": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8032B"
+    },
+    "70": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 256B — 게이트 필수"
+    },
+    "71": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 8192B — 게이트 필수"
+    },
+    "72": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 1424B"
+    },
+    "73": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 3824B"
+    },
+    "74": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 736B — 게이트 필수"
+    },
+    "75": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 5488B — 게이트 필수"
+    },
+    "76": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 8048B — 게이트 필수"
+    },
+    "77": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 5792B — 게이트 필수"
+    },
+    "78": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "79": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7A": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7B": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7C": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7D": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7E": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7F": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    }
+   }
+  },
+  "5186": {
+   "cdl_segments": [],
+   "candidate_banks": [
+    "6A",
+    "6B",
+    "70",
+    "71",
+    "74",
+    "75",
+    "76",
+    "77",
+    "78",
+    "79",
+    "7A",
+    "7B",
+    "7C",
+    "7D",
+    "7E",
+    "7F"
+   ],
+   "banks": {
+    "68": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8192B"
+    },
+    "69": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 2208B"
+    },
+    "6A": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "6B": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "6C": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8192B"
+    },
+    "6D": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 6912B"
+    },
+    "6E": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8160B"
+    },
+    "6F": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8032B"
+    },
+    "70": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 1376B — 게이트 필수"
+    },
+    "71": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 8192B — 게이트 필수"
+    },
+    "72": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 1424B"
+    },
+    "73": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 3824B"
+    },
+    "74": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 720B — 게이트 필수"
+    },
+    "75": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 5488B — 게이트 필수"
+    },
+    "76": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 8048B — 게이트 필수"
+    },
+    "77": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 5760B — 게이트 필수"
+    },
+    "78": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "79": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7A": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7B": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7C": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7D": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7E": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7F": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 48B — 게이트 필수"
+    }
+   }
+  },
+  "5282": {
+   "cdl_segments": [],
+   "candidate_banks": [
+    "6A",
+    "6B",
+    "70",
+    "71",
+    "74",
+    "75",
+    "76",
+    "77",
+    "78",
+    "79",
+    "7A",
+    "7B",
+    "7C",
+    "7D",
+    "7E",
+    "7F"
+   ],
+   "banks": {
+    "68": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8192B"
+    },
+    "69": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 2208B"
+    },
+    "6A": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "6B": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "6C": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8192B"
+    },
+    "6D": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 6912B"
+    },
+    "6E": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8160B"
+    },
+    "6F": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8032B"
+    },
+    "70": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 352B — 게이트 필수"
+    },
+    "71": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 8192B — 게이트 필수"
+    },
+    "72": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 1424B"
+    },
+    "73": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 3824B"
+    },
+    "74": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 752B — 게이트 필수"
+    },
+    "75": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 5488B — 게이트 필수"
+    },
+    "76": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 8048B — 게이트 필수"
+    },
+    "77": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 5824B — 게이트 필수"
+    },
+    "78": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "79": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7A": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7B": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7C": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7D": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7E": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7F": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 48B — 게이트 필수"
+    }
+   }
+  },
+  "5378": {
+   "cdl_segments": [],
+   "candidate_banks": [
+    "6A",
+    "6B",
+    "70",
+    "71",
+    "74",
+    "75",
+    "76",
+    "77",
+    "78",
+    "79",
+    "7A",
+    "7B",
+    "7C",
+    "7D",
+    "7E",
+    "7F"
+   ],
+   "banks": {
+    "68": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8192B"
+    },
+    "69": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 2208B"
+    },
+    "6A": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "6B": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "6C": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8192B"
+    },
+    "6D": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 6912B"
+    },
+    "6E": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8160B"
+    },
+    "6F": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 8032B"
+    },
+    "70": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 1376B — 게이트 필수"
+    },
+    "71": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 8192B — 게이트 필수"
+    },
+    "72": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 1424B"
+    },
+    "73": {
+     "verdict": "GLOBAL_ASSET",
+     "detail": "전역 공유 3824B"
+    },
+    "74": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 608B — 게이트 필수"
+    },
+    "75": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 5280B — 게이트 필수"
+    },
+    "76": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 8048B — 게이트 필수"
+    },
+    "77": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 5824B — 게이트 필수"
+    },
+    "78": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "79": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7A": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7B": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7C": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7D": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7E": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "씬 CDL 미보유 — cold 검증 필요"
+    },
+    "7F": {
+     "verdict": "CANDIDATE_STATIC_ONLY",
+     "detail": "패밀리 공유(g>=8) 48B — 게이트 필수"
+    }
+   }
+  }
+ },
+ "capacity_precheck": {
+  "290": {
+   "records": 84,
+   "text_bytes": 12383,
+   "index_est_bytes": 918,
+   "candidate_banks": [
+    "76",
+    "78",
+    "79",
+    "7A",
+    "7E",
+    "7F"
+   ],
+   "candidate_capacity": 49152,
+   "ram_only_feasible": true
+  },
+  "482": {
+   "records": 235,
+   "text_bytes": 22557,
+   "index_est_bytes": 1975,
+   "candidate_banks": [
+    "7B",
+    "7C",
+    "7D",
+    "7E"
+   ],
+   "candidate_capacity": 32768,
+   "ram_only_feasible": true
+  },
+  "2882": {
+   "records": 171,
+   "text_bytes": 24050,
+   "index_est_bytes": 1527,
+   "candidate_banks": [
+    "7E",
+    "7F"
+   ],
+   "candidate_capacity": 16384,
+   "ram_only_feasible": false
+  }
+ },
+ "renders": [
+  "run_000000.png",
+  "run_008000.png",
+  "run_00C000.png",
+  "run_0159F0.png"
+ ],
+ "status": "PASS"
+}

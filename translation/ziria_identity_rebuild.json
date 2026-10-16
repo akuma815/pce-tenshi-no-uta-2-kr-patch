@@ -1,0 +1,3480 @@
+{
+  "format": "ZIRIA-Z2-IDENTITY-REBUILD",
+  "version": 1,
+  "status": "PASS",
+  "source": {
+    "bin": "Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP.bin",
+    "size": 523184384,
+    "sha256": "D16D29EB80B1B74A2EC929924349256B50B8F9F5C9A3FA37B6FCC08B059B22C5",
+    "cue": "Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP.cue",
+    "cue_sha256": "C491342EA8CBF2B6E829316AAAD0AF3F790EC58288DE9BF880927CDCC7C9CC6B"
+  },
+  "cue_tracks": [
+    {
+      "number": 1,
+      "type": "AUDIO",
+      "index_frame": 0,
+      "sector_size": 2352,
+      "sector_count": 3365,
+      "file_offset": 0,
+      "byte_length": 7914480,
+      "file_end": 7914480
+    },
+    {
+      "number": 2,
+      "type": "MODE1/2048",
+      "index_frame": 3365,
+      "sector_size": 2048,
+      "sector_count": 9328,
+      "file_offset": 7914480,
+      "byte_length": 19103744,
+      "file_end": 27018224
+    },
+    {
+      "number": 3,
+      "type": "AUDIO",
+      "index_frame": 12693,
+      "sector_size": 2352,
+      "sector_count": 3755,
+      "file_offset": 27018224,
+      "byte_length": 8831760,
+      "file_end": 35849984
+    },
+    {
+      "number": 4,
+      "type": "AUDIO",
+      "index_frame": 16448,
+      "sector_size": 2352,
+      "sector_count": 9072,
+      "file_offset": 35849984,
+      "byte_length": 21337344,
+      "file_end": 57187328
+    },
+    {
+      "number": 5,
+      "type": "AUDIO",
+      "index_frame": 25520,
+      "sector_size": 2352,
+      "sector_count": 4589,
+      "file_offset": 57187328,
+      "byte_length": 10793328,
+      "file_end": 67980656
+    },
+    {
+      "number": 6,
+      "type": "AUDIO",
+      "index_frame": 30109,
+      "sector_size": 2352,
+      "sector_count": 4768,
+      "file_offset": 67980656,
+      "byte_length": 11214336,
+      "file_end": 79194992
+    },
+    {
+      "number": 7,
+      "type": "AUDIO",
+      "index_frame": 34877,
+      "sector_size": 2352,
+      "sector_count": 5005,
+      "file_offset": 79194992,
+      "byte_length": 11771760,
+      "file_end": 90966752
+    },
+    {
+      "number": 8,
+      "type": "AUDIO",
+      "index_frame": 39882,
+      "sector_size": 2352,
+      "sector_count": 3885,
+      "file_offset": 90966752,
+      "byte_length": 9137520,
+      "file_end": 100104272
+    },
+    {
+      "number": 9,
+      "type": "AUDIO",
+      "index_frame": 43767,
+      "sector_size": 2352,
+      "sector_count": 5451,
+      "file_offset": 100104272,
+      "byte_length": 12820752,
+      "file_end": 112925024
+    },
+    {
+      "number": 10,
+      "type": "AUDIO",
+      "index_frame": 49218,
+      "sector_size": 2352,
+      "sector_count": 4457,
+      "file_offset": 112925024,
+      "byte_length": 10482864,
+      "file_end": 123407888
+    },
+    {
+      "number": 11,
+      "type": "AUDIO",
+      "index_frame": 53675,
+      "sector_size": 2352,
+      "sector_count": 6096,
+      "file_offset": 123407888,
+      "byte_length": 14337792,
+      "file_end": 137745680
+    },
+    {
+      "number": 12,
+      "type": "AUDIO",
+      "index_frame": 59771,
+      "sector_size": 2352,
+      "sector_count": 4251,
+      "file_offset": 137745680,
+      "byte_length": 9998352,
+      "file_end": 147744032
+    },
+    {
+      "number": 13,
+      "type": "AUDIO",
+      "index_frame": 64022,
+      "sector_size": 2352,
+      "sector_count": 4330,
+      "file_offset": 147744032,
+      "byte_length": 10184160,
+      "file_end": 157928192
+    },
+    {
+      "number": 14,
+      "type": "AUDIO",
+      "index_frame": 68352,
+      "sector_size": 2352,
+      "sector_count": 5528,
+      "file_offset": 157928192,
+      "byte_length": 13001856,
+      "file_end": 170930048
+    },
+    {
+      "number": 15,
+      "type": "AUDIO",
+      "index_frame": 73880,
+      "sector_size": 2352,
+      "sector_count": 4832,
+      "file_offset": 170930048,
+      "byte_length": 11364864,
+      "file_end": 182294912
+    },
+    {
+      "number": 16,
+      "type": "AUDIO",
+      "index_frame": 78712,
+      "sector_size": 2352,
+      "sector_count": 4696,
+      "file_offset": 182294912,
+      "byte_length": 11044992,
+      "file_end": 193339904
+    },
+    {
+      "number": 17,
+      "type": "AUDIO",
+      "index_frame": 83408,
+      "sector_size": 2352,
+      "sector_count": 5028,
+      "file_offset": 193339904,
+      "byte_length": 11825856,
+      "file_end": 205165760
+    },
+    {
+      "number": 18,
+      "type": "AUDIO",
+      "index_frame": 88436,
+      "sector_size": 2352,
+      "sector_count": 5497,
+      "file_offset": 205165760,
+      "byte_length": 12928944,
+      "file_end": 218094704
+    },
+    {
+      "number": 19,
+      "type": "AUDIO",
+      "index_frame": 93933,
+      "sector_size": 2352,
+      "sector_count": 7503,
+      "file_offset": 218094704,
+      "byte_length": 17647056,
+      "file_end": 235741760
+    },
+    {
+      "number": 20,
+      "type": "AUDIO",
+      "index_frame": 101436,
+      "sector_size": 2352,
+      "sector_count": 4723,
+      "file_offset": 235741760,
+      "byte_length": 11108496,
+      "file_end": 246850256
+    },
+    {
+      "number": 21,
+      "type": "AUDIO",
+      "index_frame": 106159,
+      "sector_size": 2352,
+      "sector_count": 5403,
+      "file_offset": 246850256,
+      "byte_length": 12707856,
+      "file_end": 259558112
+    },
+    {
+      "number": 22,
+      "type": "AUDIO",
+      "index_frame": 111562,
+      "sector_size": 2352,
+      "sector_count": 9012,
+      "file_offset": 259558112,
+      "byte_length": 21196224,
+      "file_end": 280754336
+    },
+    {
+      "number": 23,
+      "type": "AUDIO",
+      "index_frame": 120574,
+      "sector_size": 2352,
+      "sector_count": 5105,
+      "file_offset": 280754336,
+      "byte_length": 12006960,
+      "file_end": 292761296
+    },
+    {
+      "number": 24,
+      "type": "AUDIO",
+      "index_frame": 125679,
+      "sector_size": 2352,
+      "sector_count": 5037,
+      "file_offset": 292761296,
+      "byte_length": 11847024,
+      "file_end": 304608320
+    },
+    {
+      "number": 25,
+      "type": "AUDIO",
+      "index_frame": 130716,
+      "sector_size": 2352,
+      "sector_count": 7175,
+      "file_offset": 304608320,
+      "byte_length": 16875600,
+      "file_end": 321483920
+    },
+    {
+      "number": 26,
+      "type": "AUDIO",
+      "index_frame": 137891,
+      "sector_size": 2352,
+      "sector_count": 4166,
+      "file_offset": 321483920,
+      "byte_length": 9798432,
+      "file_end": 331282352
+    },
+    {
+      "number": 27,
+      "type": "AUDIO",
+      "index_frame": 142057,
+      "sector_size": 2352,
+      "sector_count": 8652,
+      "file_offset": 331282352,
+      "byte_length": 20349504,
+      "file_end": 351631856
+    },
+    {
+      "number": 28,
+      "type": "AUDIO",
+      "index_frame": 150709,
+      "sector_size": 2352,
+      "sector_count": 7367,
+      "file_offset": 351631856,
+      "byte_length": 17327184,
+      "file_end": 368959040
+    },
+    {
+      "number": 29,
+      "type": "AUDIO",
+      "index_frame": 158076,
+      "sector_size": 2352,
+      "sector_count": 11139,
+      "file_offset": 368959040,
+      "byte_length": 26198928,
+      "file_end": 395157968
+    },
+    {
+      "number": 30,
+      "type": "AUDIO",
+      "index_frame": 169215,
+      "sector_size": 2352,
+      "sector_count": 7064,
+      "file_offset": 395157968,
+      "byte_length": 16614528,
+      "file_end": 411772496
+    },
+    {
+      "number": 31,
+      "type": "AUDIO",
+      "index_frame": 176279,
+      "sector_size": 2352,
+      "sector_count": 7411,
+      "file_offset": 411772496,
+      "byte_length": 17430672,
+      "file_end": 429203168
+    },
+    {
+      "number": 32,
+      "type": "AUDIO",
+      "index_frame": 183690,
+      "sector_size": 2352,
+      "sector_count": 21727,
+      "file_offset": 429203168,
+      "byte_length": 51101904,
+      "file_end": 480305072
+    },
+    {
+      "number": 33,
+      "type": "AUDIO",
+      "index_frame": 205417,
+      "sector_size": 2352,
+      "sector_count": 12675,
+      "file_offset": 480305072,
+      "byte_length": 29811600,
+      "file_end": 510116672
+    },
+    {
+      "number": 34,
+      "type": "AUDIO",
+      "index_frame": 218092,
+      "sector_size": 2352,
+      "sector_count": 5556,
+      "file_offset": 510116672,
+      "byte_length": 13067712,
+      "file_end": 523184384
+    }
+  ],
+  "track02": {
+    "file_offset": 7914480,
+    "size": 19103744,
+    "sector_size": 2048,
+    "sector_count": 9328,
+    "expected_sha256": "7566073A2AA1F48E7B39ED2B34277D9935FADE8A3FAD7DCC72C21276E2632AF9",
+    "rebuilt_path": "module_relink/track02/Track02_data.identity.iso",
+    "rebuilt_sha256": "7566073A2AA1F48E7B39ED2B34277D9935FADE8A3FAD7DCC72C21276E2632AF9",
+    "partition_segment_count": 152,
+    "partition_coverage_bytes": 19103744,
+    "segments": [
+      {
+        "index": 0,
+        "path": "module_relink/track02/segments/seg_000_0000_0002.bin",
+        "track02_offset": 0,
+        "length": 4096,
+        "start_lba": 0,
+        "end_lba_exclusive": 2,
+        "sha256": "FF75016BBEA5FC54EE02255C940A7754693C34A6BB606083435F1E7231B71FF0",
+        "owners": []
+      },
+      {
+        "index": 1,
+        "path": "module_relink/track02/segments/seg_001_0002_0018.bin",
+        "track02_offset": 4096,
+        "length": 32768,
+        "start_lba": 2,
+        "end_lba_exclusive": 18,
+        "sha256": "4BB13D78A8CEEF61D416D0AB088B93F66A6E686780BDE04AFCA6E0586E68E57F",
+        "owners": [
+          "boot.kernel"
+        ]
+      },
+      {
+        "index": 2,
+        "path": "module_relink/track02/segments/seg_002_0018_0034.bin",
+        "track02_offset": 36864,
+        "length": 32768,
+        "start_lba": 18,
+        "end_lba_exclusive": 34,
+        "sha256": "29753B9B05D08D86E789BF863A4B7110A4289DE3ACE695C31E169631C50506E9",
+        "owners": []
+      },
+      {
+        "index": 3,
+        "path": "module_relink/track02/segments/seg_003_0034_0046.bin",
+        "track02_offset": 69632,
+        "length": 24576,
+        "start_lba": 34,
+        "end_lba_exclusive": 46,
+        "sha256": "A9EF4DAD3E4B331D2875FF3B71BC5227CB1E5DC2D112EBE890E71C6E5F6C45D0",
+        "owners": [
+          "boot.resource_a"
+        ]
+      },
+      {
+        "index": 4,
+        "path": "module_relink/track02/segments/seg_004_0046_0098.bin",
+        "track02_offset": 94208,
+        "length": 106496,
+        "start_lba": 46,
+        "end_lba_exclusive": 98,
+        "sha256": "76FE46AAF274B5C55B97D8EB840D3E97F6B4F0FA26B44025231B535511B36E35",
+        "owners": []
+      },
+      {
+        "index": 5,
+        "path": "module_relink/track02/segments/seg_005_0098_0118.bin",
+        "track02_offset": 200704,
+        "length": 40960,
+        "start_lba": 98,
+        "end_lba_exclusive": 118,
+        "sha256": "9DED1694C987CB0295A0C931E2A3BDFBE12EC7AC14BF90A08A7735A4EDCDDEDA",
+        "owners": [
+          "opening.engine"
+        ]
+      },
+      {
+        "index": 6,
+        "path": "module_relink/track02/segments/seg_006_0118_0124.bin",
+        "track02_offset": 241664,
+        "length": 12288,
+        "start_lba": 118,
+        "end_lba_exclusive": 124,
+        "sha256": "54C4EDC9E038EADB7B1B29CD931F317CE8B22D6418F67C77DD68228AB1A6589B",
+        "owners": [
+          "opening.resource"
+        ]
+      },
+      {
+        "index": 7,
+        "path": "module_relink/track02/segments/seg_007_0124_0162.bin",
+        "track02_offset": 253952,
+        "length": 77824,
+        "start_lba": 124,
+        "end_lba_exclusive": 162,
+        "sha256": "D323678C8196ACF5C7186D49EE173F0B6D4147010C73820A18EBFFC7E10A36C8",
+        "owners": []
+      },
+      {
+        "index": 8,
+        "path": "module_relink/track02/segments/seg_008_0162_0226.bin",
+        "track02_offset": 331776,
+        "length": 131072,
+        "start_lba": 162,
+        "end_lba_exclusive": 226,
+        "sha256": "4B9ADFBAABFAFA7DC2966953F06E411A7FC3E2C1732A063370955BB44CC4EB99",
+        "owners": [
+          "primary.00",
+          "primary.01"
+        ]
+      },
+      {
+        "index": 9,
+        "path": "module_relink/track02/segments/seg_009_0226_0254.bin",
+        "track02_offset": 462848,
+        "length": 57344,
+        "start_lba": 226,
+        "end_lba_exclusive": 254,
+        "sha256": "7BBD31865867A53E6AC62D9CE9F52C46B0EB5A1D11532D2119C3AE0BE42E3B85",
+        "owners": [
+          "primary.00",
+          "primary.01",
+          "system.bundle"
+        ]
+      },
+      {
+        "index": 10,
+        "path": "module_relink/track02/segments/seg_010_0254_0258.bin",
+        "track02_offset": 520192,
+        "length": 8192,
+        "start_lba": 254,
+        "end_lba_exclusive": 258,
+        "sha256": "51DFB65E3C37016D6A34D27DF6684CE7B9E1EF767D8E36D81F01A28616B77A97",
+        "owners": [
+          "primary.00",
+          "primary.01"
+        ]
+      },
+      {
+        "index": 11,
+        "path": "module_relink/track02/segments/seg_011_0258_0278.bin",
+        "track02_offset": 528384,
+        "length": 40960,
+        "start_lba": 258,
+        "end_lba_exclusive": 278,
+        "sha256": "8C0573AEB900A5897402205908E02E501CC608C8EC8F2DB5F3ADA3A9E2D8A230",
+        "owners": [
+          "field.main_engine"
+        ]
+      },
+      {
+        "index": 12,
+        "path": "module_relink/track02/segments/seg_012_0278_0290.bin",
+        "track02_offset": 569344,
+        "length": 24576,
+        "start_lba": 278,
+        "end_lba_exclusive": 290,
+        "sha256": "D806E2B87CAADAECB2142730BC592E4D0D43F27FF2659986D9F8812498BA3FF7",
+        "owners": [
+          "field.resource"
+        ]
+      },
+      {
+        "index": 13,
+        "path": "module_relink/track02/segments/seg_013_0290_0354.bin",
+        "track02_offset": 593920,
+        "length": 131072,
+        "start_lba": 290,
+        "end_lba_exclusive": 354,
+        "sha256": "52A340041DF13AFA9B9C3677AA5567A494E55318927A0B0AEE62399B0811A494",
+        "owners": [
+          "overlay.00",
+          "scene.battle_first"
+        ]
+      },
+      {
+        "index": 14,
+        "path": "module_relink/track02/segments/seg_014_0354_0386.bin",
+        "track02_offset": 724992,
+        "length": 65536,
+        "start_lba": 354,
+        "end_lba_exclusive": 386,
+        "sha256": "13ECE67087953FC3D3D65288E322523904FBEC2C765007C079E54A1DD73A8B49",
+        "owners": [
+          "overlay.00",
+          "primary.02",
+          "primary.17",
+          "primary.18",
+          "primary.19",
+          "primary.20",
+          "primary.21",
+          "primary.22",
+          "primary.23",
+          "primary.24",
+          "primary.25",
+          "primary.26",
+          "scene.battle_first"
+        ]
+      },
+      {
+        "index": 15,
+        "path": "module_relink/track02/segments/seg_015_0386_0429.bin",
+        "track02_offset": 790528,
+        "length": 88064,
+        "start_lba": 386,
+        "end_lba_exclusive": 429,
+        "sha256": "C7135ADE47E708ABE3BE198882F333D75DC89703C54C6C29F159FB6DE3225647",
+        "owners": [
+          "overlay.01",
+          "primary.02",
+          "primary.17",
+          "primary.18",
+          "primary.19",
+          "primary.20",
+          "primary.21",
+          "primary.22",
+          "primary.23",
+          "primary.24",
+          "primary.25",
+          "primary.26"
+        ]
+      },
+      {
+        "index": 16,
+        "path": "module_relink/track02/segments/seg_016_0429_0450.bin",
+        "track02_offset": 878592,
+        "length": 43008,
+        "start_lba": 429,
+        "end_lba_exclusive": 450,
+        "sha256": "C718A83FAF88080168098BABC609D35ADB0EB486ACAFC227FA7A230F088EF7F2",
+        "owners": [
+          "overlay.01"
+        ]
+      },
+      {
+        "index": 17,
+        "path": "module_relink/track02/segments/seg_017_0450_0482.bin",
+        "track02_offset": 921600,
+        "length": 65536,
+        "start_lba": 450,
+        "end_lba_exclusive": 482,
+        "sha256": "6C07B363849C36E3FD1C081024FB16B7A79C545514B73CF54A962FE226F52017",
+        "owners": [
+          "overlay.01",
+          "primary.04"
+        ]
+      },
+      {
+        "index": 18,
+        "path": "module_relink/track02/segments/seg_018_0482_0528.bin",
+        "track02_offset": 987136,
+        "length": 94208,
+        "start_lba": 482,
+        "end_lba_exclusive": 528,
+        "sha256": "EB072AE20773F9D6D50C1DC50C9922F9A86B110FF3468F7FB95B282FF5DE7782",
+        "owners": [
+          "overlay.02",
+          "primary.04",
+          "scene.field_start"
+        ]
+      },
+      {
+        "index": 19,
+        "path": "module_relink/track02/segments/seg_019_0528_0546.bin",
+        "track02_offset": 1081344,
+        "length": 36864,
+        "start_lba": 528,
+        "end_lba_exclusive": 546,
+        "sha256": "C1A65E71AEE3464BDA47620E66C703125833CF331C4181433C3E9173AAD9A1A0",
+        "owners": [
+          "overlay.02",
+          "scene.field_start"
+        ]
+      },
+      {
+        "index": 20,
+        "path": "module_relink/track02/segments/seg_020_0546_0578.bin",
+        "track02_offset": 1118208,
+        "length": 65536,
+        "start_lba": 546,
+        "end_lba_exclusive": 578,
+        "sha256": "4A4780080DDD36442C578DE342945D1A20E40F6A873E9F7F3F7EC5AE684AEFFE",
+        "owners": [
+          "overlay.02",
+          "primary.05",
+          "scene.field_start"
+        ]
+      },
+      {
+        "index": 21,
+        "path": "module_relink/track02/segments/seg_021_0578_0630.bin",
+        "track02_offset": 1183744,
+        "length": 106496,
+        "start_lba": 578,
+        "end_lba_exclusive": 630,
+        "sha256": "103732C0CC4F6FDEDE18D67D0A829FD2E1305A175BC72D1A0E1B4E8A25766BC1",
+        "owners": [
+          "overlay.04",
+          "primary.05"
+        ]
+      },
+      {
+        "index": 22,
+        "path": "module_relink/track02/segments/seg_022_0630_0642.bin",
+        "track02_offset": 1290240,
+        "length": 24576,
+        "start_lba": 630,
+        "end_lba_exclusive": 642,
+        "sha256": "E2B58FA4A60E3DBDC8B44E55E195F93A4230ACE488AFEFA805CD20448A8E2895",
+        "owners": [
+          "overlay.04"
+        ]
+      },
+      {
+        "index": 23,
+        "path": "module_relink/track02/segments/seg_023_0642_0656.bin",
+        "track02_offset": 1314816,
+        "length": 28672,
+        "start_lba": 642,
+        "end_lba_exclusive": 656,
+        "sha256": "87F83F4768EB7FBB2B69CEBF0D6FDD4C59842008CC9687FAF48A99AB52993F69",
+        "owners": [
+          "overlay.04",
+          "primary.06"
+        ]
+      },
+      {
+        "index": 24,
+        "path": "module_relink/track02/segments/seg_024_0656_0674.bin",
+        "track02_offset": 1343488,
+        "length": 36864,
+        "start_lba": 656,
+        "end_lba_exclusive": 674,
+        "sha256": "D4F8B1C9BDCFCE18488F38BBBCA310770FD7AF49C5E13278019AF3877D86679D",
+        "owners": [
+          "primary.06"
+        ]
+      },
+      {
+        "index": 25,
+        "path": "module_relink/track02/segments/seg_025_0674_0713.bin",
+        "track02_offset": 1380352,
+        "length": 79872,
+        "start_lba": 674,
+        "end_lba_exclusive": 713,
+        "sha256": "B0470616BDC612C5DC9EA0D990CE2ECAF6DC03FF246BA1170E215D22A438AF4F",
+        "owners": [
+          "overlay.05",
+          "primary.06"
+        ]
+      },
+      {
+        "index": 26,
+        "path": "module_relink/track02/segments/seg_026_0713_0738.bin",
+        "track02_offset": 1460224,
+        "length": 51200,
+        "start_lba": 713,
+        "end_lba_exclusive": 738,
+        "sha256": "D022859CF9C4AA82AA9701D13275EF83F9E786AF8E2650E2C47C5BEAD024E293",
+        "owners": [
+          "overlay.05"
+        ]
+      },
+      {
+        "index": 27,
+        "path": "module_relink/track02/segments/seg_027_0738_0770.bin",
+        "track02_offset": 1511424,
+        "length": 65536,
+        "start_lba": 738,
+        "end_lba_exclusive": 770,
+        "sha256": "AB6ED45430F3974F85C814A44241606F4197467CB50EE469BD879A2D6E0DBC78",
+        "owners": [
+          "overlay.05",
+          "primary.07"
+        ]
+      },
+      {
+        "index": 28,
+        "path": "module_relink/track02/segments/seg_028_0770_0812.bin",
+        "track02_offset": 1576960,
+        "length": 86016,
+        "start_lba": 770,
+        "end_lba_exclusive": 812,
+        "sha256": "BC16D74577DB77A2D5343F66EDCF056AAC1C3393E50FBD1DA50B1313D21249C9",
+        "owners": [
+          "overlay.06",
+          "primary.07"
+        ]
+      },
+      {
+        "index": 29,
+        "path": "module_relink/track02/segments/seg_029_0812_0834.bin",
+        "track02_offset": 1662976,
+        "length": 45056,
+        "start_lba": 812,
+        "end_lba_exclusive": 834,
+        "sha256": "0A1EE9D499E5316392D190C7A0F2068C4C19CF28DC603142ECA836FBD994EABA",
+        "owners": [
+          "overlay.06"
+        ]
+      },
+      {
+        "index": 30,
+        "path": "module_relink/track02/segments/seg_030_0834_0866.bin",
+        "track02_offset": 1708032,
+        "length": 65536,
+        "start_lba": 834,
+        "end_lba_exclusive": 866,
+        "sha256": "5F78145DD202173CF3209F22D440FD38E989773AF90F7D85C18AB51DD3465CB9",
+        "owners": [
+          "overlay.06",
+          "primary.08"
+        ]
+      },
+      {
+        "index": 31,
+        "path": "module_relink/track02/segments/seg_031_0866_0906.bin",
+        "track02_offset": 1773568,
+        "length": 81920,
+        "start_lba": 866,
+        "end_lba_exclusive": 906,
+        "sha256": "03F6DC1BBF8473D94322E8DAA67BD174C97FA120D08E89FF8185BF7A8AB563E9",
+        "owners": [
+          "overlay.07",
+          "primary.08"
+        ]
+      },
+      {
+        "index": 32,
+        "path": "module_relink/track02/segments/seg_032_0906_0930.bin",
+        "track02_offset": 1855488,
+        "length": 49152,
+        "start_lba": 906,
+        "end_lba_exclusive": 930,
+        "sha256": "52552EC00F728EBAC9CA0E4DF67E51470CBDFAD82862CD7D0424ADA4634AB5DA",
+        "owners": [
+          "overlay.07"
+        ]
+      },
+      {
+        "index": 33,
+        "path": "module_relink/track02/segments/seg_033_0930_0962.bin",
+        "track02_offset": 1904640,
+        "length": 65536,
+        "start_lba": 930,
+        "end_lba_exclusive": 962,
+        "sha256": "BF3DA7F4E17A169943FF6186B6A50F6687338602C4C65FF667B9A644D4039525",
+        "owners": [
+          "overlay.07",
+          "primary.09"
+        ]
+      },
+      {
+        "index": 34,
+        "path": "module_relink/track02/segments/seg_034_0962_1013.bin",
+        "track02_offset": 1970176,
+        "length": 104448,
+        "start_lba": 962,
+        "end_lba_exclusive": 1013,
+        "sha256": "AC73791B89AEDD23DAC28FA7F219AFBC6E6F12FC10622B26CFD05FB0B99E1528",
+        "owners": [
+          "overlay.08",
+          "primary.09"
+        ]
+      },
+      {
+        "index": 35,
+        "path": "module_relink/track02/segments/seg_035_1013_1026.bin",
+        "track02_offset": 2074624,
+        "length": 26624,
+        "start_lba": 1013,
+        "end_lba_exclusive": 1026,
+        "sha256": "0B549D3D4A20F294B50024F72173889376D90B469E338EBA9A9D062B933E6045",
+        "owners": [
+          "overlay.08"
+        ]
+      },
+      {
+        "index": 36,
+        "path": "module_relink/track02/segments/seg_036_1026_1058.bin",
+        "track02_offset": 2101248,
+        "length": 65536,
+        "start_lba": 1026,
+        "end_lba_exclusive": 1058,
+        "sha256": "739F029E4DC03B3FFDD7A57BBB1F510A283E0CD63073E5C6CD4887B4BC948357",
+        "owners": [
+          "overlay.08",
+          "primary.10"
+        ]
+      },
+      {
+        "index": 37,
+        "path": "module_relink/track02/segments/seg_037_1058_1102.bin",
+        "track02_offset": 2166784,
+        "length": 90112,
+        "start_lba": 1058,
+        "end_lba_exclusive": 1102,
+        "sha256": "1F64DC1CD9F3F6F644552E08CB6C50D198B8B07B5373B57B78B76663028F9056",
+        "owners": [
+          "overlay.09",
+          "primary.10"
+        ]
+      },
+      {
+        "index": 38,
+        "path": "module_relink/track02/segments/seg_038_1102_1122.bin",
+        "track02_offset": 2256896,
+        "length": 40960,
+        "start_lba": 1102,
+        "end_lba_exclusive": 1122,
+        "sha256": "55E94FC492F39F908AED9B661D6B620CB92D31F941D039D44F309FB403315EAD",
+        "owners": [
+          "overlay.09"
+        ]
+      },
+      {
+        "index": 39,
+        "path": "module_relink/track02/segments/seg_039_1122_1141.bin",
+        "track02_offset": 2297856,
+        "length": 38912,
+        "start_lba": 1122,
+        "end_lba_exclusive": 1141,
+        "sha256": "FE0E8F6E3A9A001FBC6C1C8D18436A7B7C16CB61F2A444DBBEF7DE3CFE1A189A",
+        "owners": [
+          "overlay.09",
+          "primary.11"
+        ]
+      },
+      {
+        "index": 40,
+        "path": "module_relink/track02/segments/seg_040_1141_1154.bin",
+        "track02_offset": 2336768,
+        "length": 26624,
+        "start_lba": 1141,
+        "end_lba_exclusive": 1154,
+        "sha256": "B0ECEFED19648BC2146BE89508201656D7FC70340B5D7A8A35B1C3B28B89C737",
+        "owners": [
+          "primary.11"
+        ]
+      },
+      {
+        "index": 41,
+        "path": "module_relink/track02/segments/seg_041_1154_1214.bin",
+        "track02_offset": 2363392,
+        "length": 122880,
+        "start_lba": 1154,
+        "end_lba_exclusive": 1214,
+        "sha256": "FD6DB818E7ED17F21A3C51ED98429B34C3EBCF62F943B0CEEBBECFA1423AFCD5",
+        "owners": [
+          "overlay.10",
+          "primary.11"
+        ]
+      },
+      {
+        "index": 42,
+        "path": "module_relink/track02/segments/seg_042_1214_1218.bin",
+        "track02_offset": 2486272,
+        "length": 8192,
+        "start_lba": 1214,
+        "end_lba_exclusive": 1218,
+        "sha256": "FF747EE0FD16D972EF466790012B73633725F65B2928AD1ADF6E690F599496DB",
+        "owners": [
+          "overlay.10"
+        ]
+      },
+      {
+        "index": 43,
+        "path": "module_relink/track02/segments/seg_043_1218_1250.bin",
+        "track02_offset": 2494464,
+        "length": 65536,
+        "start_lba": 1218,
+        "end_lba_exclusive": 1250,
+        "sha256": "AB68EA7D8D9AB676DBAED4844496287581C76CE3990CB31298809CF2D93F76DE",
+        "owners": [
+          "overlay.10",
+          "primary.12"
+        ]
+      },
+      {
+        "index": 44,
+        "path": "module_relink/track02/segments/seg_044_1250_1296.bin",
+        "track02_offset": 2560000,
+        "length": 94208,
+        "start_lba": 1250,
+        "end_lba_exclusive": 1296,
+        "sha256": "B539ABDCECB8A089D8DE5B3802C45EAC01D81B818AD7B042C4B21C18AD627D88",
+        "owners": [
+          "overlay.11",
+          "primary.12"
+        ]
+      },
+      {
+        "index": 45,
+        "path": "module_relink/track02/segments/seg_045_1296_1314.bin",
+        "track02_offset": 2654208,
+        "length": 36864,
+        "start_lba": 1296,
+        "end_lba_exclusive": 1314,
+        "sha256": "0EBF8F47835C00BD588BF5334F477AD770A625347B7140A81E221768C82BA033",
+        "owners": [
+          "overlay.11"
+        ]
+      },
+      {
+        "index": 46,
+        "path": "module_relink/track02/segments/seg_046_1314_1346.bin",
+        "track02_offset": 2691072,
+        "length": 65536,
+        "start_lba": 1314,
+        "end_lba_exclusive": 1346,
+        "sha256": "893C30CED19B4D9A23BB1CA53F271BE0861341EAA11DD1BE9F82A6E4CFCC0AC2",
+        "owners": [
+          "overlay.11",
+          "primary.13"
+        ]
+      },
+      {
+        "index": 47,
+        "path": "module_relink/track02/segments/seg_047_1346_1387.bin",
+        "track02_offset": 2756608,
+        "length": 83968,
+        "start_lba": 1346,
+        "end_lba_exclusive": 1387,
+        "sha256": "D25C36434359F48EAC0527F659F7ED6070AD93522FD69912B35BCFFC526F3012",
+        "owners": [
+          "overlay.12",
+          "primary.13"
+        ]
+      },
+      {
+        "index": 48,
+        "path": "module_relink/track02/segments/seg_048_1387_1410.bin",
+        "track02_offset": 2840576,
+        "length": 47104,
+        "start_lba": 1387,
+        "end_lba_exclusive": 1410,
+        "sha256": "36BDDD901BA5E374D54516368C4A8996DDC3CF690C14800A2571361497A9F505",
+        "owners": [
+          "overlay.12"
+        ]
+      },
+      {
+        "index": 49,
+        "path": "module_relink/track02/segments/seg_049_1410_1442.bin",
+        "track02_offset": 2887680,
+        "length": 65536,
+        "start_lba": 1410,
+        "end_lba_exclusive": 1442,
+        "sha256": "586896B038D0ABA6933C98F0A604D3EFD8843D4A7AE7C6F073FA3FF0C52D8694",
+        "owners": [
+          "overlay.12",
+          "primary.14"
+        ]
+      },
+      {
+        "index": 50,
+        "path": "module_relink/track02/segments/seg_050_1442_1483.bin",
+        "track02_offset": 2953216,
+        "length": 83968,
+        "start_lba": 1442,
+        "end_lba_exclusive": 1483,
+        "sha256": "8F7B9E78D6A0633ECA0AB177D04EC035F7F5996592D5EB4B0C6D08C00862516C",
+        "owners": [
+          "overlay.13",
+          "primary.14"
+        ]
+      },
+      {
+        "index": 51,
+        "path": "module_relink/track02/segments/seg_051_1483_1506.bin",
+        "track02_offset": 3037184,
+        "length": 47104,
+        "start_lba": 1483,
+        "end_lba_exclusive": 1506,
+        "sha256": "12AEDC28C421E5AD4559B9C272F58686BD1A3395B0BCC07B37593592BF3AF8FA",
+        "owners": [
+          "overlay.13"
+        ]
+      },
+      {
+        "index": 52,
+        "path": "module_relink/track02/segments/seg_052_1506_1538.bin",
+        "track02_offset": 3084288,
+        "length": 65536,
+        "start_lba": 1506,
+        "end_lba_exclusive": 1538,
+        "sha256": "DE93DEAD17794E6917B67E035DB617166CFF745990750449FE95BC39170422B0",
+        "owners": [
+          "overlay.13",
+          "primary.15"
+        ]
+      },
+      {
+        "index": 53,
+        "path": "module_relink/track02/segments/seg_053_1538_1579.bin",
+        "track02_offset": 3149824,
+        "length": 83968,
+        "start_lba": 1538,
+        "end_lba_exclusive": 1579,
+        "sha256": "111FA78B30116BFA205F2AEBE19404CB8372DB18362138952EFB118F2975C266",
+        "owners": [
+          "overlay.14",
+          "primary.15"
+        ]
+      },
+      {
+        "index": 54,
+        "path": "module_relink/track02/segments/seg_054_1579_1602.bin",
+        "track02_offset": 3233792,
+        "length": 47104,
+        "start_lba": 1579,
+        "end_lba_exclusive": 1602,
+        "sha256": "8AFD9D2D5389AEB23037D5DD1012996C106A46E393C78A403596CD8965A6802A",
+        "owners": [
+          "overlay.14"
+        ]
+      },
+      {
+        "index": 55,
+        "path": "module_relink/track02/segments/seg_055_1602_1611.bin",
+        "track02_offset": 3280896,
+        "length": 18432,
+        "start_lba": 1602,
+        "end_lba_exclusive": 1611,
+        "sha256": "9350086DC531D92466F23E7DB35D542A6DC8E3678D45DCF1064962C2B623E246",
+        "owners": [
+          "overlay.14",
+          "primary.16",
+          "primary.53"
+        ]
+      },
+      {
+        "index": 56,
+        "path": "module_relink/track02/segments/seg_056_1611_1634.bin",
+        "track02_offset": 3299328,
+        "length": 47104,
+        "start_lba": 1611,
+        "end_lba_exclusive": 1634,
+        "sha256": "67982AA93EADCBCFF500D2576EB8722E11A72AC8159368D7D3381EAAA6E77B2C",
+        "owners": [
+          "primary.16",
+          "primary.53"
+        ]
+      },
+      {
+        "index": 57,
+        "path": "module_relink/track02/segments/seg_057_1634_1697.bin",
+        "track02_offset": 3346432,
+        "length": 129024,
+        "start_lba": 1634,
+        "end_lba_exclusive": 1697,
+        "sha256": "487AA1D6C64703EDE6CD1F772A02ED03B095824C453B0E8AEDF6ACBCE4EA062F",
+        "owners": [
+          "overlay.15",
+          "primary.16",
+          "primary.53"
+        ]
+      },
+      {
+        "index": 58,
+        "path": "module_relink/track02/segments/seg_058_1697_1730.bin",
+        "track02_offset": 3475456,
+        "length": 67584,
+        "start_lba": 1697,
+        "end_lba_exclusive": 1730,
+        "sha256": "02066F074EC7E1D31C61A8776F81F60AE7B9BFEC7712C26DB5863B39299F9517",
+        "owners": [
+          "overlay.15"
+        ]
+      },
+      {
+        "index": 59,
+        "path": "module_relink/track02/segments/seg_059_1730_1822.bin",
+        "track02_offset": 3543040,
+        "length": 188416,
+        "start_lba": 1730,
+        "end_lba_exclusive": 1822,
+        "sha256": "EBAE73741DE360F4ED598C30E3A5CFD32472F9B1136341DC75F38FF5A18EFE40",
+        "owners": [
+          "overlay.16",
+          "overlay.53"
+        ]
+      },
+      {
+        "index": 60,
+        "path": "module_relink/track02/segments/seg_060_1822_1826.bin",
+        "track02_offset": 3731456,
+        "length": 8192,
+        "start_lba": 1822,
+        "end_lba_exclusive": 1826,
+        "sha256": "782A1CC59CEE70789697453CE75ABC14459114BFB0401CC4444D07B23247617C",
+        "owners": []
+      },
+      {
+        "index": 61,
+        "path": "module_relink/track02/segments/seg_061_1826_1922.bin",
+        "track02_offset": 3739648,
+        "length": 196608,
+        "start_lba": 1826,
+        "end_lba_exclusive": 1922,
+        "sha256": "02C3E56830DF05388C4B3FA7E1D79A58694BAAAADFE2A8EA6FC64E8299E19308",
+        "owners": [
+          "overlay.17"
+        ]
+      },
+      {
+        "index": 62,
+        "path": "module_relink/track02/segments/seg_062_1922_2018.bin",
+        "track02_offset": 3936256,
+        "length": 196608,
+        "start_lba": 1922,
+        "end_lba_exclusive": 2018,
+        "sha256": "0541707F2EC0784DD20809B711C6F1E3F18B8A9D2E8EA0B11BAF5CCB75C80267",
+        "owners": [
+          "overlay.18"
+        ]
+      },
+      {
+        "index": 63,
+        "path": "module_relink/track02/segments/seg_063_2018_2100.bin",
+        "track02_offset": 4132864,
+        "length": 167936,
+        "start_lba": 2018,
+        "end_lba_exclusive": 2100,
+        "sha256": "A4303D7D2B5873B6492CF145F490B80188AB1638DCB0A045C987466A499FBA20",
+        "owners": [
+          "overlay.19"
+        ]
+      },
+      {
+        "index": 64,
+        "path": "module_relink/track02/segments/seg_064_2100_2114.bin",
+        "track02_offset": 4300800,
+        "length": 28672,
+        "start_lba": 2100,
+        "end_lba_exclusive": 2114,
+        "sha256": "383797B49C4EE2BB07DDC3F8FF0819207278353C0D36074640EA2CF3A4E19E2D",
+        "owners": []
+      },
+      {
+        "index": 65,
+        "path": "module_relink/track02/segments/seg_065_2114_2189.bin",
+        "track02_offset": 4329472,
+        "length": 153600,
+        "start_lba": 2114,
+        "end_lba_exclusive": 2189,
+        "sha256": "FF85B5004CE0E31B7A52055CEFB6D1FB02E9868B60C093AA247CEBEA68EFFDE5",
+        "owners": [
+          "overlay.20"
+        ]
+      },
+      {
+        "index": 66,
+        "path": "module_relink/track02/segments/seg_066_2189_2210.bin",
+        "track02_offset": 4483072,
+        "length": 43008,
+        "start_lba": 2189,
+        "end_lba_exclusive": 2210,
+        "sha256": "AF1AD437BBFFB9FD5100A5BF11AD6E22ABF1AD64909FC92273607C2CF1EC3E74",
+        "owners": []
+      },
+      {
+        "index": 67,
+        "path": "module_relink/track02/segments/seg_067_2210_2286.bin",
+        "track02_offset": 4526080,
+        "length": 155648,
+        "start_lba": 2210,
+        "end_lba_exclusive": 2286,
+        "sha256": "5A8CD1A2078F4E39C9659A7DB9C111381357EA362D8AE4DEEA87F01E0589380A",
+        "owners": [
+          "overlay.21"
+        ]
+      },
+      {
+        "index": 68,
+        "path": "module_relink/track02/segments/seg_068_2286_2306.bin",
+        "track02_offset": 4681728,
+        "length": 40960,
+        "start_lba": 2286,
+        "end_lba_exclusive": 2306,
+        "sha256": "EF2D56918EA374456FDA37581F161CA38F3D043B1AF5BA10B4A97D836D1A4DF3",
+        "owners": []
+      },
+      {
+        "index": 69,
+        "path": "module_relink/track02/segments/seg_069_2306_2402.bin",
+        "track02_offset": 4722688,
+        "length": 196608,
+        "start_lba": 2306,
+        "end_lba_exclusive": 2402,
+        "sha256": "79205FB27052C38CBA3C72EC77D088E9C8DB45D1BAEB64BE7BDF47703F685260",
+        "owners": [
+          "overlay.22"
+        ]
+      },
+      {
+        "index": 70,
+        "path": "module_relink/track02/segments/seg_070_2402_2498.bin",
+        "track02_offset": 4919296,
+        "length": 196608,
+        "start_lba": 2402,
+        "end_lba_exclusive": 2498,
+        "sha256": "8DD037262124205971B6F9BA7DC599FF967C883A10BA7778009801A2BDF65847",
+        "owners": [
+          "overlay.23"
+        ]
+      },
+      {
+        "index": 71,
+        "path": "module_relink/track02/segments/seg_071_2498_2569.bin",
+        "track02_offset": 5115904,
+        "length": 145408,
+        "start_lba": 2498,
+        "end_lba_exclusive": 2569,
+        "sha256": "07BFC862405D8529B059769B5BE947071CC625E3B714B808154C1FB81595C646",
+        "owners": [
+          "overlay.24"
+        ]
+      },
+      {
+        "index": 72,
+        "path": "module_relink/track02/segments/seg_072_2569_2594.bin",
+        "track02_offset": 5261312,
+        "length": 51200,
+        "start_lba": 2569,
+        "end_lba_exclusive": 2594,
+        "sha256": "84BA50B0DD13D2AD8CF74647CC63E172EA808D20E3D5DA7C8A471446E24F4696",
+        "owners": []
+      },
+      {
+        "index": 73,
+        "path": "module_relink/track02/segments/seg_073_2594_2658.bin",
+        "track02_offset": 5312512,
+        "length": 131072,
+        "start_lba": 2594,
+        "end_lba_exclusive": 2658,
+        "sha256": "86D39DEC2D0B794E6D08869CD425F38FC204E6086EAD1F12102D0F24D3BC8542",
+        "owners": [
+          "overlay.25"
+        ]
+      },
+      {
+        "index": 74,
+        "path": "module_relink/track02/segments/seg_074_2658_2665.bin",
+        "track02_offset": 5443584,
+        "length": 14336,
+        "start_lba": 2658,
+        "end_lba_exclusive": 2665,
+        "sha256": "56BD195A97D15AFB7E8C7922C5F3D3495101D62BE11EBD53900566C4605F5FB8",
+        "owners": [
+          "overlay.25",
+          "primary.03"
+        ]
+      },
+      {
+        "index": 75,
+        "path": "module_relink/track02/segments/seg_075_2665_2690.bin",
+        "track02_offset": 5457920,
+        "length": 51200,
+        "start_lba": 2665,
+        "end_lba_exclusive": 2690,
+        "sha256": "C6467E7CFA4A0A5A0CA847C9F26858634A2CA4559CF8CF20E16D37BEC1ADBD8B",
+        "owners": [
+          "primary.03"
+        ]
+      },
+      {
+        "index": 76,
+        "path": "module_relink/track02/segments/seg_076_2690_2727.bin",
+        "track02_offset": 5509120,
+        "length": 75776,
+        "start_lba": 2690,
+        "end_lba_exclusive": 2727,
+        "sha256": "1AC77FF5D0AC3301AD6CBAB8B2EE236C8B2857C9088AAA7A0B172E5310E50534",
+        "owners": [
+          "overlay.26",
+          "primary.03"
+        ]
+      },
+      {
+        "index": 77,
+        "path": "module_relink/track02/segments/seg_077_2727_2754.bin",
+        "track02_offset": 5584896,
+        "length": 55296,
+        "start_lba": 2727,
+        "end_lba_exclusive": 2754,
+        "sha256": "14D3C791D372F37A11BD5F37269D3BCFC46A7441B126CED0C66CFAA1FE217BF7",
+        "owners": [
+          "overlay.26"
+        ]
+      },
+      {
+        "index": 78,
+        "path": "module_relink/track02/segments/seg_078_2754_2786.bin",
+        "track02_offset": 5640192,
+        "length": 65536,
+        "start_lba": 2754,
+        "end_lba_exclusive": 2786,
+        "sha256": "3FFB8A81307866E1AFAB3309A7252793F99E80D0169DF54A9437C05F48721F61",
+        "owners": [
+          "overlay.26",
+          "primary.27",
+          "primary.42",
+          "primary.43",
+          "primary.44",
+          "primary.45",
+          "primary.46",
+          "primary.47",
+          "primary.48",
+          "primary.49",
+          "primary.50",
+          "primary.51",
+          "primary.52"
+        ]
+      },
+      {
+        "index": 79,
+        "path": "module_relink/track02/segments/seg_079_2786_2839.bin",
+        "track02_offset": 5705728,
+        "length": 108544,
+        "start_lba": 2786,
+        "end_lba_exclusive": 2839,
+        "sha256": "554C1E64C496B7EC9B22FAF4E9F2898F2F0B7AFB0228DA9C8F595B36FB00EA9F",
+        "owners": [
+          "overlay.03",
+          "primary.27",
+          "primary.42",
+          "primary.43",
+          "primary.44",
+          "primary.45",
+          "primary.46",
+          "primary.47",
+          "primary.48",
+          "primary.49",
+          "primary.50",
+          "primary.51",
+          "primary.52"
+        ]
+      },
+      {
+        "index": 80,
+        "path": "module_relink/track02/segments/seg_080_2839_2850.bin",
+        "track02_offset": 5814272,
+        "length": 22528,
+        "start_lba": 2839,
+        "end_lba_exclusive": 2850,
+        "sha256": "5508931BF8498F905514928C8F0282BA634773EBD3BF98E12F0947FEE07B61F0",
+        "owners": [
+          "overlay.03"
+        ]
+      },
+      {
+        "index": 81,
+        "path": "module_relink/track02/segments/seg_081_2850_2855.bin",
+        "track02_offset": 5836800,
+        "length": 10240,
+        "start_lba": 2850,
+        "end_lba_exclusive": 2855,
+        "sha256": "8400D94B45B8506711630DD8ABE3E8A6EEB119F512FD2C0730E418D4CFF113D2",
+        "owners": [
+          "overlay.03",
+          "primary.28"
+        ]
+      },
+      {
+        "index": 82,
+        "path": "module_relink/track02/segments/seg_082_2855_2882.bin",
+        "track02_offset": 5847040,
+        "length": 55296,
+        "start_lba": 2855,
+        "end_lba_exclusive": 2882,
+        "sha256": "F5D3EC5CEA30E13E780F7AD6BF2B32CBFA29418396D4EE75FF17B43E290107A0",
+        "owners": [
+          "primary.28"
+        ]
+      },
+      {
+        "index": 83,
+        "path": "module_relink/track02/segments/seg_083_2882_2944.bin",
+        "track02_offset": 5902336,
+        "length": 126976,
+        "start_lba": 2882,
+        "end_lba_exclusive": 2944,
+        "sha256": "D883A9464323429192C0132DF529E8F0E555D4B9DBFC3C0D40044098B37769D0",
+        "owners": [
+          "overlay.27",
+          "primary.28",
+          "scene.tower_first"
+        ]
+      },
+      {
+        "index": 84,
+        "path": "module_relink/track02/segments/seg_084_2944_2946.bin",
+        "track02_offset": 6029312,
+        "length": 4096,
+        "start_lba": 2944,
+        "end_lba_exclusive": 2946,
+        "sha256": "FF351F233CD9D930B28357BCEB34A2D428F248CF4B8959AEE07A439248CFA6DD",
+        "owners": [
+          "overlay.27",
+          "scene.tower_first"
+        ]
+      },
+      {
+        "index": 85,
+        "path": "module_relink/track02/segments/seg_085_2946_2978.bin",
+        "track02_offset": 6033408,
+        "length": 65536,
+        "start_lba": 2946,
+        "end_lba_exclusive": 2978,
+        "sha256": "0AAB5DE91E8BD53CAE43796B9EADF94CC362FF951B1780E20EAD42465A44B0C4",
+        "owners": [
+          "overlay.27",
+          "primary.29",
+          "scene.tower_first"
+        ]
+      },
+      {
+        "index": 86,
+        "path": "module_relink/track02/segments/seg_086_2978_3027.bin",
+        "track02_offset": 6098944,
+        "length": 100352,
+        "start_lba": 2978,
+        "end_lba_exclusive": 3027,
+        "sha256": "A6E85AE4FD643B5F0B40C7B1976BFA6B0380A7287106BB01D7241BB5F1D55955",
+        "owners": [
+          "overlay.28",
+          "primary.29"
+        ]
+      },
+      {
+        "index": 87,
+        "path": "module_relink/track02/segments/seg_087_3027_3042.bin",
+        "track02_offset": 6199296,
+        "length": 30720,
+        "start_lba": 3027,
+        "end_lba_exclusive": 3042,
+        "sha256": "AE52ED818F900849EAAB5EA82AA43ACB57DEBA75728274260C7A7C747844143D",
+        "owners": [
+          "overlay.28"
+        ]
+      },
+      {
+        "index": 88,
+        "path": "module_relink/track02/segments/seg_088_3042_3072.bin",
+        "track02_offset": 6230016,
+        "length": 61440,
+        "start_lba": 3042,
+        "end_lba_exclusive": 3072,
+        "sha256": "B9D39B629FAF656453AF0DECC0C90953E60D1F302804F71CACF7F9E38DE93CCC",
+        "owners": [
+          "overlay.28",
+          "primary.30"
+        ]
+      },
+      {
+        "index": 89,
+        "path": "module_relink/track02/segments/seg_089_3072_3074.bin",
+        "track02_offset": 6291456,
+        "length": 4096,
+        "start_lba": 3072,
+        "end_lba_exclusive": 3074,
+        "sha256": "AB7C48D658A89C2460BD90669551592C97B8A93B87CE1CB18A8E4CD6CCEC7E36",
+        "owners": [
+          "primary.30"
+        ]
+      },
+      {
+        "index": 90,
+        "path": "module_relink/track02/segments/seg_090_3074_3125.bin",
+        "track02_offset": 6295552,
+        "length": 104448,
+        "start_lba": 3074,
+        "end_lba_exclusive": 3125,
+        "sha256": "3E584EDF85A152149EC41B512DCC42CBCABA22C515FD4783BBF5C1D000917E16",
+        "owners": [
+          "overlay.29",
+          "primary.30"
+        ]
+      },
+      {
+        "index": 91,
+        "path": "module_relink/track02/segments/seg_091_3125_3138.bin",
+        "track02_offset": 6400000,
+        "length": 26624,
+        "start_lba": 3125,
+        "end_lba_exclusive": 3138,
+        "sha256": "F2825D4EB485E8D2F600258CCF44914837C41098B5E3CDF933661D931D5EF30B",
+        "owners": [
+          "overlay.29"
+        ]
+      },
+      {
+        "index": 92,
+        "path": "module_relink/track02/segments/seg_092_3138_3170.bin",
+        "track02_offset": 6426624,
+        "length": 65536,
+        "start_lba": 3138,
+        "end_lba_exclusive": 3170,
+        "sha256": "FE967D55ED3B39ABBAC7BFF6F174D5842A31CAF5AB64E1C5CB36F3B64E6FEC63",
+        "owners": [
+          "overlay.29",
+          "primary.31"
+        ]
+      },
+      {
+        "index": 93,
+        "path": "module_relink/track02/segments/seg_093_3170_3228.bin",
+        "track02_offset": 6492160,
+        "length": 118784,
+        "start_lba": 3170,
+        "end_lba_exclusive": 3228,
+        "sha256": "859AD1353B5E77F41C5484812F81EFB23B05B1D3921EFC655593503E3E653634",
+        "owners": [
+          "overlay.30",
+          "primary.31"
+        ]
+      },
+      {
+        "index": 94,
+        "path": "module_relink/track02/segments/seg_094_3228_3234.bin",
+        "track02_offset": 6610944,
+        "length": 12288,
+        "start_lba": 3228,
+        "end_lba_exclusive": 3234,
+        "sha256": "F916A848DDF1B6188AC06E1A336ACE91742F4628CA848B79241ABADB814C1EEA",
+        "owners": [
+          "overlay.30"
+        ]
+      },
+      {
+        "index": 95,
+        "path": "module_relink/track02/segments/seg_095_3234_3266.bin",
+        "track02_offset": 6623232,
+        "length": 65536,
+        "start_lba": 3234,
+        "end_lba_exclusive": 3266,
+        "sha256": "50321BF48F6C226C4AB82C8701A0CFCA8119D4871064E88A69EF5AE4825E4695",
+        "owners": [
+          "overlay.30",
+          "primary.32"
+        ]
+      },
+      {
+        "index": 96,
+        "path": "module_relink/track02/segments/seg_096_3266_3309.bin",
+        "track02_offset": 6688768,
+        "length": 88064,
+        "start_lba": 3266,
+        "end_lba_exclusive": 3309,
+        "sha256": "036237F3FFFB850307716E8DD484765F590633DBE65270EC684C016AB92B5F14",
+        "owners": [
+          "overlay.31",
+          "primary.32"
+        ]
+      },
+      {
+        "index": 97,
+        "path": "module_relink/track02/segments/seg_097_3309_3330.bin",
+        "track02_offset": 6776832,
+        "length": 43008,
+        "start_lba": 3309,
+        "end_lba_exclusive": 3330,
+        "sha256": "223D94454C5E326F16EC7B761D34F79575C70BF0C0F47BE6926EF3B2A94FE598",
+        "owners": [
+          "overlay.31"
+        ]
+      },
+      {
+        "index": 98,
+        "path": "module_relink/track02/segments/seg_098_3330_3362.bin",
+        "track02_offset": 6819840,
+        "length": 65536,
+        "start_lba": 3330,
+        "end_lba_exclusive": 3362,
+        "sha256": "1EB9FDACD992A0B9146E62094AB8D1A0271B29D0AE6D48FA02D1C2925DEF320A",
+        "owners": [
+          "overlay.31",
+          "primary.33"
+        ]
+      },
+      {
+        "index": 99,
+        "path": "module_relink/track02/segments/seg_099_3362_3413.bin",
+        "track02_offset": 6885376,
+        "length": 104448,
+        "start_lba": 3362,
+        "end_lba_exclusive": 3413,
+        "sha256": "1D69439F816C56B4E4DB4ADEE479A21740785B1B9E78F82B1D9E39B164F7231D",
+        "owners": [
+          "overlay.32",
+          "primary.33"
+        ]
+      },
+      {
+        "index": 100,
+        "path": "module_relink/track02/segments/seg_100_3413_3426.bin",
+        "track02_offset": 6989824,
+        "length": 26624,
+        "start_lba": 3413,
+        "end_lba_exclusive": 3426,
+        "sha256": "E9A7977F55800B546651D980E3A2FDA771B9EA90B11CF7D2119D05709F9B54D1",
+        "owners": [
+          "overlay.32"
+        ]
+      },
+      {
+        "index": 101,
+        "path": "module_relink/track02/segments/seg_101_3426_3458.bin",
+        "track02_offset": 7016448,
+        "length": 65536,
+        "start_lba": 3426,
+        "end_lba_exclusive": 3458,
+        "sha256": "80FDCA5184BA35436689E9D20B68C37D95F0E10DA5B41FAD97C2BDEB80409137",
+        "owners": [
+          "overlay.32",
+          "primary.34"
+        ]
+      },
+      {
+        "index": 102,
+        "path": "module_relink/track02/segments/seg_102_3458_3510.bin",
+        "track02_offset": 7081984,
+        "length": 106496,
+        "start_lba": 3458,
+        "end_lba_exclusive": 3510,
+        "sha256": "160B8CDBCC0A6BC4A2F596F029FA8EF2810E409D2D4D51B5D6EF56EA6AFE7DCB",
+        "owners": [
+          "overlay.33",
+          "primary.34"
+        ]
+      },
+      {
+        "index": 103,
+        "path": "module_relink/track02/segments/seg_103_3510_3522.bin",
+        "track02_offset": 7188480,
+        "length": 24576,
+        "start_lba": 3510,
+        "end_lba_exclusive": 3522,
+        "sha256": "0DDF544D9525C9C8E73C25ACA893050C8D9C6E99A5F400C256F5A515BFE3EE18",
+        "owners": [
+          "overlay.33"
+        ]
+      },
+      {
+        "index": 104,
+        "path": "module_relink/track02/segments/seg_104_3522_3554.bin",
+        "track02_offset": 7213056,
+        "length": 65536,
+        "start_lba": 3522,
+        "end_lba_exclusive": 3554,
+        "sha256": "89214E511CD1D24A4B44C426E051BEB4C4547917B27FE9F9946926B5733E3540",
+        "owners": [
+          "overlay.33",
+          "primary.35"
+        ]
+      },
+      {
+        "index": 105,
+        "path": "module_relink/track02/segments/seg_105_3554_3606.bin",
+        "track02_offset": 7278592,
+        "length": 106496,
+        "start_lba": 3554,
+        "end_lba_exclusive": 3606,
+        "sha256": "AA8210434789DEC7E29A006F121F0A82BBF1958650B65EE7E34A6374F5D8BF99",
+        "owners": [
+          "overlay.34",
+          "primary.35"
+        ]
+      },
+      {
+        "index": 106,
+        "path": "module_relink/track02/segments/seg_106_3606_3618.bin",
+        "track02_offset": 7385088,
+        "length": 24576,
+        "start_lba": 3606,
+        "end_lba_exclusive": 3618,
+        "sha256": "97D218E600A50AF8765DACF2D02F21A123E1CF5939F4333B5D8195C66D9B24BA",
+        "owners": [
+          "overlay.34"
+        ]
+      },
+      {
+        "index": 107,
+        "path": "module_relink/track02/segments/seg_107_3618_3638.bin",
+        "track02_offset": 7409664,
+        "length": 40960,
+        "start_lba": 3618,
+        "end_lba_exclusive": 3638,
+        "sha256": "9813923B0DBED14EBA336593650E18EE42AB98F9FBE0EE599EFFBFCC1C36CA7D",
+        "owners": [
+          "overlay.34",
+          "primary.36"
+        ]
+      },
+      {
+        "index": 108,
+        "path": "module_relink/track02/segments/seg_108_3638_3650.bin",
+        "track02_offset": 7450624,
+        "length": 24576,
+        "start_lba": 3638,
+        "end_lba_exclusive": 3650,
+        "sha256": "F5C82CBBD77CC9EE4214BACDED1417FF7139C9D5F01CCD0DFBE42AA6B65402E0",
+        "owners": [
+          "primary.36"
+        ]
+      },
+      {
+        "index": 109,
+        "path": "module_relink/track02/segments/seg_109_3650_3708.bin",
+        "track02_offset": 7475200,
+        "length": 118784,
+        "start_lba": 3650,
+        "end_lba_exclusive": 3708,
+        "sha256": "EDB6019555846FA19505342AEA27844A963C17B627CD5585431F672C0710164E",
+        "owners": [
+          "overlay.35",
+          "primary.36"
+        ]
+      },
+      {
+        "index": 110,
+        "path": "module_relink/track02/segments/seg_110_3708_3714.bin",
+        "track02_offset": 7593984,
+        "length": 12288,
+        "start_lba": 3708,
+        "end_lba_exclusive": 3714,
+        "sha256": "DE74A88988E8EE278DB4F753F9A11CA102955A5F968FE8452E9E211AD2628237",
+        "owners": [
+          "overlay.35"
+        ]
+      },
+      {
+        "index": 111,
+        "path": "module_relink/track02/segments/seg_111_3714_3734.bin",
+        "track02_offset": 7606272,
+        "length": 40960,
+        "start_lba": 3714,
+        "end_lba_exclusive": 3734,
+        "sha256": "048AAFC94650AC3C2119567C80AEEB29018ABB9375A1826834C4BA9DC46D40FE",
+        "owners": [
+          "overlay.35",
+          "primary.37"
+        ]
+      },
+      {
+        "index": 112,
+        "path": "module_relink/track02/segments/seg_112_3734_3746.bin",
+        "track02_offset": 7647232,
+        "length": 24576,
+        "start_lba": 3734,
+        "end_lba_exclusive": 3746,
+        "sha256": "76A1CAA333F4DD5DC2413D808867A6780BDA36968D815F4D44227DD024CFB4D1",
+        "owners": [
+          "primary.37"
+        ]
+      },
+      {
+        "index": 113,
+        "path": "module_relink/track02/segments/seg_113_3746_3792.bin",
+        "track02_offset": 7671808,
+        "length": 94208,
+        "start_lba": 3746,
+        "end_lba_exclusive": 3792,
+        "sha256": "943351B54B6DCA099F51E6B0C930BBA4232099A867A4C0DB320A3717EC78A202",
+        "owners": [
+          "overlay.36",
+          "primary.37"
+        ]
+      },
+      {
+        "index": 114,
+        "path": "module_relink/track02/segments/seg_114_3792_3810.bin",
+        "track02_offset": 7766016,
+        "length": 36864,
+        "start_lba": 3792,
+        "end_lba_exclusive": 3810,
+        "sha256": "922674A1D7D0FE3781A124A3A94ACEFCA2B0270DFDB2AB877E43D3D36D1A47F0",
+        "owners": [
+          "overlay.36"
+        ]
+      },
+      {
+        "index": 115,
+        "path": "module_relink/track02/segments/seg_115_3810_3842.bin",
+        "track02_offset": 7802880,
+        "length": 65536,
+        "start_lba": 3810,
+        "end_lba_exclusive": 3842,
+        "sha256": "29388194F21F95900F86022A88430B5EB8199AA6BFE80339C5F54607181ADDFF",
+        "owners": [
+          "overlay.36",
+          "primary.38"
+        ]
+      },
+      {
+        "index": 116,
+        "path": "module_relink/track02/segments/seg_116_3842_3887.bin",
+        "track02_offset": 7868416,
+        "length": 92160,
+        "start_lba": 3842,
+        "end_lba_exclusive": 3887,
+        "sha256": "86B3ED5B86D960143B1A1CFFFCD58001BB434C16D6DEBB72BD06B6D64C5F77C3",
+        "owners": [
+          "overlay.37",
+          "primary.38"
+        ]
+      },
+      {
+        "index": 117,
+        "path": "module_relink/track02/segments/seg_117_3887_3906.bin",
+        "track02_offset": 7960576,
+        "length": 38912,
+        "start_lba": 3887,
+        "end_lba_exclusive": 3906,
+        "sha256": "316B0D804F1055274C000C8E8318390E01855D36242F2D08F1C8D6C9207F7A8A",
+        "owners": [
+          "overlay.37"
+        ]
+      },
+      {
+        "index": 118,
+        "path": "module_relink/track02/segments/seg_118_3906_3938.bin",
+        "track02_offset": 7999488,
+        "length": 65536,
+        "start_lba": 3906,
+        "end_lba_exclusive": 3938,
+        "sha256": "E0AFE1FF73914D7C638FF06FD21A2A0B9D18408517EAAAFE53FDDA4AC656CB23",
+        "owners": [
+          "overlay.37",
+          "primary.39"
+        ]
+      },
+      {
+        "index": 119,
+        "path": "module_relink/track02/segments/seg_119_3938_3981.bin",
+        "track02_offset": 8065024,
+        "length": 88064,
+        "start_lba": 3938,
+        "end_lba_exclusive": 3981,
+        "sha256": "B0429F839A32DBFB2FF1A259E82C4679DCB92DA879D91C7068F6927958BB770B",
+        "owners": [
+          "overlay.38",
+          "primary.39"
+        ]
+      },
+      {
+        "index": 120,
+        "path": "module_relink/track02/segments/seg_120_3981_4002.bin",
+        "track02_offset": 8153088,
+        "length": 43008,
+        "start_lba": 3981,
+        "end_lba_exclusive": 4002,
+        "sha256": "9606E56C12D492D10A4C5BC537E481A21935FC17E3DF8C41E51055EC241776C5",
+        "owners": [
+          "overlay.38"
+        ]
+      },
+      {
+        "index": 121,
+        "path": "module_relink/track02/segments/seg_121_4002_4034.bin",
+        "track02_offset": 8196096,
+        "length": 65536,
+        "start_lba": 4002,
+        "end_lba_exclusive": 4034,
+        "sha256": "ED2A8283EF8F9EA77C1FB25EEE027391CBE3803A6938C9C6998251B7B6208546",
+        "owners": [
+          "overlay.38",
+          "primary.40"
+        ]
+      },
+      {
+        "index": 122,
+        "path": "module_relink/track02/segments/seg_122_4034_4097.bin",
+        "track02_offset": 8261632,
+        "length": 129024,
+        "start_lba": 4034,
+        "end_lba_exclusive": 4097,
+        "sha256": "F96020AB53000FE580CC54B7539A44044644CC0CE07D17839769C9894F03ED09",
+        "owners": [
+          "overlay.39",
+          "primary.40"
+        ]
+      },
+      {
+        "index": 123,
+        "path": "module_relink/track02/segments/seg_123_4097_4098.bin",
+        "track02_offset": 8390656,
+        "length": 2048,
+        "start_lba": 4097,
+        "end_lba_exclusive": 4098,
+        "sha256": "B7258235B963BF5119F368D7CE5B17D3512C76D2D61E254F9D034E4C12B4A363",
+        "owners": [
+          "overlay.39"
+        ]
+      },
+      {
+        "index": 124,
+        "path": "module_relink/track02/segments/seg_124_4098_4109.bin",
+        "track02_offset": 8392704,
+        "length": 22528,
+        "start_lba": 4098,
+        "end_lba_exclusive": 4109,
+        "sha256": "94EAD17245A0F53FFC4BD544941FA5ABD7408D4AC78406FC1586FEF5DD5E62C8",
+        "owners": [
+          "overlay.39",
+          "primary.41"
+        ]
+      },
+      {
+        "index": 125,
+        "path": "module_relink/track02/segments/seg_125_4109_4130.bin",
+        "track02_offset": 8415232,
+        "length": 43008,
+        "start_lba": 4109,
+        "end_lba_exclusive": 4130,
+        "sha256": "8B687D2872E942B9674C9DD0B9C5C29C896852E6378C0CDC9B7750B2B9C71D04",
+        "owners": [
+          "primary.41"
+        ]
+      },
+      {
+        "index": 126,
+        "path": "module_relink/track02/segments/seg_126_4130_4188.bin",
+        "track02_offset": 8458240,
+        "length": 118784,
+        "start_lba": 4130,
+        "end_lba_exclusive": 4188,
+        "sha256": "7B3437143CADBC44353094AFDA787E19A3D34100686EAE3F0BCFE9F557D7DD06",
+        "owners": [
+          "overlay.40",
+          "primary.41"
+        ]
+      },
+      {
+        "index": 127,
+        "path": "module_relink/track02/segments/seg_127_4188_4226.bin",
+        "track02_offset": 8577024,
+        "length": 77824,
+        "start_lba": 4188,
+        "end_lba_exclusive": 4226,
+        "sha256": "F3233355225FA497B7D355D9E34C4A21EFDF572AF265DF290C35D67E14C88F28",
+        "owners": [
+          "overlay.40"
+        ]
+      },
+      {
+        "index": 128,
+        "path": "module_relink/track02/segments/seg_128_4226_4322.bin",
+        "track02_offset": 8654848,
+        "length": 196608,
+        "start_lba": 4226,
+        "end_lba_exclusive": 4322,
+        "sha256": "922C0F6FE95C59DBA9586588701A98605C0E8C3521A5457DFD0F318A336B84A7",
+        "owners": [
+          "overlay.41"
+        ]
+      },
+      {
+        "index": 129,
+        "path": "module_relink/track02/segments/seg_129_4322_4418.bin",
+        "track02_offset": 8851456,
+        "length": 196608,
+        "start_lba": 4322,
+        "end_lba_exclusive": 4418,
+        "sha256": "04E8F76C02753F836C9E9F746BCD66AB732C28C6585415675FC321BF0E35D2D0",
+        "owners": [
+          "overlay.42"
+        ]
+      },
+      {
+        "index": 130,
+        "path": "module_relink/track02/segments/seg_130_4418_4498.bin",
+        "track02_offset": 9048064,
+        "length": 163840,
+        "start_lba": 4418,
+        "end_lba_exclusive": 4498,
+        "sha256": "EE31A74F77C0CABB3FCEF5E2F4048101CF5F92832DD1046ED5864D07B7BAE770",
+        "owners": [
+          "overlay.43"
+        ]
+      },
+      {
+        "index": 131,
+        "path": "module_relink/track02/segments/seg_131_4498_4514.bin",
+        "track02_offset": 9211904,
+        "length": 32768,
+        "start_lba": 4498,
+        "end_lba_exclusive": 4514,
+        "sha256": "28D287E0B36AB5FBD36CD380FB1BD3CD63419FE3176DA118665BB1E751099C3E",
+        "owners": []
+      },
+      {
+        "index": 132,
+        "path": "module_relink/track02/segments/seg_132_4514_4596.bin",
+        "track02_offset": 9244672,
+        "length": 167936,
+        "start_lba": 4514,
+        "end_lba_exclusive": 4596,
+        "sha256": "EED8A3F736D36949D657B95BA81CD1A954619DE3C3BF54CD2963C33E13A23C46",
+        "owners": [
+          "overlay.44"
+        ]
+      },
+      {
+        "index": 133,
+        "path": "module_relink/track02/segments/seg_133_4596_4610.bin",
+        "track02_offset": 9412608,
+        "length": 28672,
+        "start_lba": 4596,
+        "end_lba_exclusive": 4610,
+        "sha256": "D33DBA15E5101C02AF2D3FD333311870C7E6CE245DE976006C9C51082FE7690C",
+        "owners": []
+      },
+      {
+        "index": 134,
+        "path": "module_relink/track02/segments/seg_134_4610_4691.bin",
+        "track02_offset": 9441280,
+        "length": 165888,
+        "start_lba": 4610,
+        "end_lba_exclusive": 4691,
+        "sha256": "B59B04AC4F0EB2DD56DA35C171C4143AC9FCEF944BB93B72F80BF2A38F791165",
+        "owners": [
+          "overlay.45"
+        ]
+      },
+      {
+        "index": 135,
+        "path": "module_relink/track02/segments/seg_135_4691_4706.bin",
+        "track02_offset": 9607168,
+        "length": 30720,
+        "start_lba": 4691,
+        "end_lba_exclusive": 4706,
+        "sha256": "378A7B14C284A036A93619AEB310FD65693E6D5A2EF6CC16142E53706A9DC02F",
+        "owners": []
+      },
+      {
+        "index": 136,
+        "path": "module_relink/track02/segments/seg_136_4706_4787.bin",
+        "track02_offset": 9637888,
+        "length": 165888,
+        "start_lba": 4706,
+        "end_lba_exclusive": 4787,
+        "sha256": "3ECFDFB508C0C5B81550390E93B844F5408547684F0A7017ECD09F322C05C639",
+        "owners": [
+          "overlay.46"
+        ]
+      },
+      {
+        "index": 137,
+        "path": "module_relink/track02/segments/seg_137_4787_4802.bin",
+        "track02_offset": 9803776,
+        "length": 30720,
+        "start_lba": 4787,
+        "end_lba_exclusive": 4802,
+        "sha256": "026EDDD73A272DDA4A7310C9D37366CE7F6F3A686DCC54E0618F5A5BE8A80FC7",
+        "owners": []
+      },
+      {
+        "index": 138,
+        "path": "module_relink/track02/segments/seg_138_4802_4892.bin",
+        "track02_offset": 9834496,
+        "length": 184320,
+        "start_lba": 4802,
+        "end_lba_exclusive": 4892,
+        "sha256": "FA248E2198ED50B2C51B0BBBEE5951362017A7B6353E586FE4B6AB30307F8B87",
+        "owners": [
+          "overlay.47"
+        ]
+      },
+      {
+        "index": 139,
+        "path": "module_relink/track02/segments/seg_139_4892_4898.bin",
+        "track02_offset": 10018816,
+        "length": 12288,
+        "start_lba": 4892,
+        "end_lba_exclusive": 4898,
+        "sha256": "B72A64F269AAF27BDFCB86B3D09DF764D4FF348BF7A093FB7C7C89E6A90084E5",
+        "owners": []
+      },
+      {
+        "index": 140,
+        "path": "module_relink/track02/segments/seg_140_4898_4974.bin",
+        "track02_offset": 10031104,
+        "length": 155648,
+        "start_lba": 4898,
+        "end_lba_exclusive": 4974,
+        "sha256": "5D24969B09B0A14ECE0845A1699FD5D726899016687C9CDE3813D42594410870",
+        "owners": [
+          "overlay.48"
+        ]
+      },
+      {
+        "index": 141,
+        "path": "module_relink/track02/segments/seg_141_4974_4994.bin",
+        "track02_offset": 10186752,
+        "length": 40960,
+        "start_lba": 4974,
+        "end_lba_exclusive": 4994,
+        "sha256": "469767E9297532FDDFEFF3E4EF853032ABBC1F3AAE468929BCB74AFFA7430BEE",
+        "owners": []
+      },
+      {
+        "index": 142,
+        "path": "module_relink/track02/segments/seg_142_4994_5070.bin",
+        "track02_offset": 10227712,
+        "length": 155648,
+        "start_lba": 4994,
+        "end_lba_exclusive": 5070,
+        "sha256": "B2F2DACA90FC49BB35795AA97F9285357329AE52855EA2EEAE29F7A9E15CF299",
+        "owners": [
+          "overlay.49"
+        ]
+      },
+      {
+        "index": 143,
+        "path": "module_relink/track02/segments/seg_143_5070_5090.bin",
+        "track02_offset": 10383360,
+        "length": 40960,
+        "start_lba": 5070,
+        "end_lba_exclusive": 5090,
+        "sha256": "7128A67E76229E1EDF3CCB5D94F7470F14E974A17B80F4BA05764854E92850C9",
+        "owners": []
+      },
+      {
+        "index": 144,
+        "path": "module_relink/track02/segments/seg_144_5090_5174.bin",
+        "track02_offset": 10424320,
+        "length": 172032,
+        "start_lba": 5090,
+        "end_lba_exclusive": 5174,
+        "sha256": "6F4A20124CC5706D09AAB40FF60163B0B994D48F64C4F265175485CB1AE9468A",
+        "owners": [
+          "overlay.50"
+        ]
+      },
+      {
+        "index": 145,
+        "path": "module_relink/track02/segments/seg_145_5174_5186.bin",
+        "track02_offset": 10596352,
+        "length": 24576,
+        "start_lba": 5174,
+        "end_lba_exclusive": 5186,
+        "sha256": "0B655E976FDED6538CDA6B5CA66028BD0A355B0AC53C0E3126EA31A4258D64CB",
+        "owners": []
+      },
+      {
+        "index": 146,
+        "path": "module_relink/track02/segments/seg_146_5186_5282.bin",
+        "track02_offset": 10620928,
+        "length": 196608,
+        "start_lba": 5186,
+        "end_lba_exclusive": 5282,
+        "sha256": "AFE51C18CE8B07DCBA46606702E4B6CA5790EECC6BE97F05CAC4DF335A5120A2",
+        "owners": [
+          "overlay.51"
+        ]
+      },
+      {
+        "index": 147,
+        "path": "module_relink/track02/segments/seg_147_5282_5378.bin",
+        "track02_offset": 10817536,
+        "length": 196608,
+        "start_lba": 5282,
+        "end_lba_exclusive": 5378,
+        "sha256": "2830D77C60365CEF056CAE0DC23757C4BE850FCDD6512F9261235F7739C63683",
+        "owners": [
+          "overlay.52"
+        ]
+      },
+      {
+        "index": 148,
+        "path": "module_relink/track02/segments/seg_148_5378_5474.bin",
+        "track02_offset": 11014144,
+        "length": 196608,
+        "start_lba": 5378,
+        "end_lba_exclusive": 5474,
+        "sha256": "A431C994015A7115840A822D577B75A22DBA9DDC8652421555A930C359614273",
+        "owners": [
+          "overlay.54"
+        ]
+      },
+      {
+        "index": 149,
+        "path": "module_relink/track02/segments/seg_149_5474_6018.bin",
+        "track02_offset": 11210752,
+        "length": 1114112,
+        "start_lba": 5474,
+        "end_lba_exclusive": 6018,
+        "sha256": "B3DE5E34E6BEACDCFE23412B73BA735302D2F887C07BC6D44E967E9338E21BD2",
+        "owners": []
+      },
+      {
+        "index": 150,
+        "path": "module_relink/track02/segments/seg_150_6018_6050.bin",
+        "track02_offset": 12324864,
+        "length": 65536,
+        "start_lba": 6018,
+        "end_lba_exclusive": 6050,
+        "sha256": "82298FD267235D1BC2C989EFBD2EE2557F02A500BE7AB63956C352ACE5A6B048",
+        "owners": [
+          "primary.54"
+        ]
+      },
+      {
+        "index": 151,
+        "path": "module_relink/track02/segments/seg_151_6050_9328.bin",
+        "track02_offset": 12390400,
+        "length": 6713344,
+        "start_lba": 6050,
+        "end_lba_exclusive": 9328,
+        "sha256": "B89BCBBD35279E7449860880BD0C30C86E7732ED369B6856B371309C50006AB1",
+        "owners": []
+      }
+    ]
+  },
+  "logical_modules": [
+    {
+      "id": "primary.00",
+      "directory": "primary",
+      "logical_entry": 0,
+      "lba": 162,
+      "sector_count": 96,
+      "path": "module_relink/track02/logical_modules/primary_00_lba0162_s96.bin",
+      "size": 196608,
+      "sha256": "4F8B65B54F8EDA85A5356B2149425C9A8879AA55C1F35AA0E8A2389814A367E5"
+    },
+    {
+      "id": "primary.01",
+      "directory": "primary",
+      "logical_entry": 1,
+      "lba": 162,
+      "sector_count": 96,
+      "path": "module_relink/track02/logical_modules/primary_01_lba0162_s96.bin",
+      "size": 196608,
+      "sha256": "4F8B65B54F8EDA85A5356B2149425C9A8879AA55C1F35AA0E8A2389814A367E5"
+    },
+    {
+      "id": "primary.02",
+      "directory": "primary",
+      "logical_entry": 2,
+      "lba": 354,
+      "sector_count": 75,
+      "path": "module_relink/track02/logical_modules/primary_02_lba0354_s75.bin",
+      "size": 153600,
+      "sha256": "A5330AAD0B91B19F0BC6ACC841D985FC867E821151D61547720D0FCB0C5881E4"
+    },
+    {
+      "id": "primary.03",
+      "directory": "primary",
+      "logical_entry": 3,
+      "lba": 2658,
+      "sector_count": 69,
+      "path": "module_relink/track02/logical_modules/primary_03_lba2658_s69.bin",
+      "size": 141312,
+      "sha256": "87DBCD7188FBE38B23FA7C23905DFD64E805CE3FC3A076697733F309FDC862CE"
+    },
+    {
+      "id": "primary.04",
+      "directory": "primary",
+      "logical_entry": 4,
+      "lba": 450,
+      "sector_count": 78,
+      "path": "module_relink/track02/logical_modules/primary_04_lba0450_s78.bin",
+      "size": 159744,
+      "sha256": "F858200286B21C49DAA186723696E4729D34435067589D644C2D1C065BC1C304"
+    },
+    {
+      "id": "primary.05",
+      "directory": "primary",
+      "logical_entry": 5,
+      "lba": 546,
+      "sector_count": 84,
+      "path": "module_relink/track02/logical_modules/primary_05_lba0546_s84.bin",
+      "size": 172032,
+      "sha256": "A6505DC3CC856A5564BD1FCA19F87069A3C8EC8DB1E1EE1AD039838FF57E840F"
+    },
+    {
+      "id": "primary.06",
+      "directory": "primary",
+      "logical_entry": 6,
+      "lba": 642,
+      "sector_count": 71,
+      "path": "module_relink/track02/logical_modules/primary_06_lba0642_s71.bin",
+      "size": 145408,
+      "sha256": "C7143750A84C537924950990191108FF2E072F755624B1C39E46E5CEAA46AF5F"
+    },
+    {
+      "id": "primary.07",
+      "directory": "primary",
+      "logical_entry": 7,
+      "lba": 738,
+      "sector_count": 74,
+      "path": "module_relink/track02/logical_modules/primary_07_lba0738_s74.bin",
+      "size": 151552,
+      "sha256": "D8CAF4BD80EA41CC4FFD8A38D84E9FDBE8B4E36226C51E3BB0D2C253E36D8220"
+    },
+    {
+      "id": "primary.08",
+      "directory": "primary",
+      "logical_entry": 8,
+      "lba": 834,
+      "sector_count": 72,
+      "path": "module_relink/track02/logical_modules/primary_08_lba0834_s72.bin",
+      "size": 147456,
+      "sha256": "28BE9BDCCC13399F8B7A1F2EADCD3B9BF9B7039652AB3B50A00C1097F88282E9"
+    },
+    {
+      "id": "primary.09",
+      "directory": "primary",
+      "logical_entry": 9,
+      "lba": 930,
+      "sector_count": 83,
+      "path": "module_relink/track02/logical_modules/primary_09_lba0930_s83.bin",
+      "size": 169984,
+      "sha256": "0C1B2899A96DFC72DEAAC582D20B30BC56307A8C7B4B69428E854FE8DF425F6D"
+    },
+    {
+      "id": "primary.10",
+      "directory": "primary",
+      "logical_entry": 10,
+      "lba": 1026,
+      "sector_count": 76,
+      "path": "module_relink/track02/logical_modules/primary_10_lba1026_s76.bin",
+      "size": 155648,
+      "sha256": "E686A01B4C7C4CE8FA87E9CEA401B8B1E5D3BF4B080054D192C5497B7779BF1D"
+    },
+    {
+      "id": "primary.11",
+      "directory": "primary",
+      "logical_entry": 11,
+      "lba": 1122,
+      "sector_count": 92,
+      "path": "module_relink/track02/logical_modules/primary_11_lba1122_s92.bin",
+      "size": 188416,
+      "sha256": "95AD3D9D5967A0D120A42C07719F948BC4F1313FE499B7E503FA15416329EB04"
+    },
+    {
+      "id": "primary.12",
+      "directory": "primary",
+      "logical_entry": 12,
+      "lba": 1218,
+      "sector_count": 78,
+      "path": "module_relink/track02/logical_modules/primary_12_lba1218_s78.bin",
+      "size": 159744,
+      "sha256": "3C0ACE2640AD3644CC82E804171A868681BBA45E72994F951D14D349F03A46D7"
+    },
+    {
+      "id": "primary.13",
+      "directory": "primary",
+      "logical_entry": 13,
+      "lba": 1314,
+      "sector_count": 73,
+      "path": "module_relink/track02/logical_modules/primary_13_lba1314_s73.bin",
+      "size": 149504,
+      "sha256": "42F78359C257FD668C54915ACB43377594C1B55CAD7ED60570561A1936B6714C"
+    },
+    {
+      "id": "primary.14",
+      "directory": "primary",
+      "logical_entry": 14,
+      "lba": 1410,
+      "sector_count": 73,
+      "path": "module_relink/track02/logical_modules/primary_14_lba1410_s73.bin",
+      "size": 149504,
+      "sha256": "DDF834556050F733EBE1AC6F67290407B9090E7DA175BA0B76A55C71625EAB74"
+    },
+    {
+      "id": "primary.15",
+      "directory": "primary",
+      "logical_entry": 15,
+      "lba": 1506,
+      "sector_count": 73,
+      "path": "module_relink/track02/logical_modules/primary_15_lba1506_s73.bin",
+      "size": 149504,
+      "sha256": "EDA634DF191909D27B39816CF95ACF5F682F8E876C23798B04C16A4006789D3F"
+    },
+    {
+      "id": "primary.16",
+      "directory": "primary",
+      "logical_entry": 16,
+      "lba": 1602,
+      "sector_count": 95,
+      "path": "module_relink/track02/logical_modules/primary_16_lba1602_s95.bin",
+      "size": 194560,
+      "sha256": "91D917D05E562DCBD6461A807C78F8950D93C0D738E5EC9440BF1C31D9B93BC5"
+    },
+    {
+      "id": "primary.17",
+      "directory": "primary",
+      "logical_entry": 17,
+      "lba": 354,
+      "sector_count": 75,
+      "path": "module_relink/track02/logical_modules/primary_17_lba0354_s75.bin",
+      "size": 153600,
+      "sha256": "A5330AAD0B91B19F0BC6ACC841D985FC867E821151D61547720D0FCB0C5881E4"
+    },
+    {
+      "id": "primary.18",
+      "directory": "primary",
+      "logical_entry": 18,
+      "lba": 354,
+      "sector_count": 75,
+      "path": "module_relink/track02/logical_modules/primary_18_lba0354_s75.bin",
+      "size": 153600,
+      "sha256": "A5330AAD0B91B19F0BC6ACC841D985FC867E821151D61547720D0FCB0C5881E4"
+    },
+    {
+      "id": "primary.19",
+      "directory": "primary",
+      "logical_entry": 19,
+      "lba": 354,
+      "sector_count": 75,
+      "path": "module_relink/track02/logical_modules/primary_19_lba0354_s75.bin",
+      "size": 153600,
+      "sha256": "A5330AAD0B91B19F0BC6ACC841D985FC867E821151D61547720D0FCB0C5881E4"
+    },
+    {
+      "id": "primary.20",
+      "directory": "primary",
+      "logical_entry": 20,
+      "lba": 354,
+      "sector_count": 75,
+      "path": "module_relink/track02/logical_modules/primary_20_lba0354_s75.bin",
+      "size": 153600,
+      "sha256": "A5330AAD0B91B19F0BC6ACC841D985FC867E821151D61547720D0FCB0C5881E4"
+    },
+    {
+      "id": "primary.21",
+      "directory": "primary",
+      "logical_entry": 21,
+      "lba": 354,
+      "sector_count": 75,
+      "path": "module_relink/track02/logical_modules/primary_21_lba0354_s75.bin",
+      "size": 153600,
+      "sha256": "A5330AAD0B91B19F0BC6ACC841D985FC867E821151D61547720D0FCB0C5881E4"
+    },
+    {
+      "id": "primary.22",
+      "directory": "primary",
+      "logical_entry": 22,
+      "lba": 354,
+      "sector_count": 75,
+      "path": "module_relink/track02/logical_modules/primary_22_lba0354_s75.bin",
+      "size": 153600,
+      "sha256": "A5330AAD0B91B19F0BC6ACC841D985FC867E821151D61547720D0FCB0C5881E4"
+    },
+    {
+      "id": "primary.23",
+      "directory": "primary",
+      "logical_entry": 23,
+      "lba": 354,
+      "sector_count": 75,
+      "path": "module_relink/track02/logical_modules/primary_23_lba0354_s75.bin",
+      "size": 153600,
+      "sha256": "A5330AAD0B91B19F0BC6ACC841D985FC867E821151D61547720D0FCB0C5881E4"
+    },
+    {
+      "id": "primary.24",
+      "directory": "primary",
+      "logical_entry": 24,
+      "lba": 354,
+      "sector_count": 75,
+      "path": "module_relink/track02/logical_modules/primary_24_lba0354_s75.bin",
+      "size": 153600,
+      "sha256": "A5330AAD0B91B19F0BC6ACC841D985FC867E821151D61547720D0FCB0C5881E4"
+    },
+    {
+      "id": "primary.25",
+      "directory": "primary",
+      "logical_entry": 25,
+      "lba": 354,
+      "sector_count": 75,
+      "path": "module_relink/track02/logical_modules/primary_25_lba0354_s75.bin",
+      "size": 153600,
+      "sha256": "A5330AAD0B91B19F0BC6ACC841D985FC867E821151D61547720D0FCB0C5881E4"
+    },
+    {
+      "id": "primary.26",
+      "directory": "primary",
+      "logical_entry": 26,
+      "lba": 354,
+      "sector_count": 75,
+      "path": "module_relink/track02/logical_modules/primary_26_lba0354_s75.bin",
+      "size": 153600,
+      "sha256": "A5330AAD0B91B19F0BC6ACC841D985FC867E821151D61547720D0FCB0C5881E4"
+    },
+    {
+      "id": "primary.27",
+      "directory": "primary",
+      "logical_entry": 27,
+      "lba": 2754,
+      "sector_count": 85,
+      "path": "module_relink/track02/logical_modules/primary_27_lba2754_s85.bin",
+      "size": 174080,
+      "sha256": "CD7EFC19C75C069C7EC3957582875D19C79CC9D71A00D4A3C732F0657CA365FD"
+    },
+    {
+      "id": "primary.28",
+      "directory": "primary",
+      "logical_entry": 28,
+      "lba": 2850,
+      "sector_count": 94,
+      "path": "module_relink/track02/logical_modules/primary_28_lba2850_s94.bin",
+      "size": 192512,
+      "sha256": "7627A97B7492F681B260F293F480ECA94815F1A58B082CACE1628828FB95AE74"
+    },
+    {
+      "id": "primary.29",
+      "directory": "primary",
+      "logical_entry": 29,
+      "lba": 2946,
+      "sector_count": 81,
+      "path": "module_relink/track02/logical_modules/primary_29_lba2946_s81.bin",
+      "size": 165888,
+      "sha256": "336B85C16A8CF12EB92C78357E4753295D098C293F760CBFD05EDE24A304939C"
+    },
+    {
+      "id": "primary.30",
+      "directory": "primary",
+      "logical_entry": 30,
+      "lba": 3042,
+      "sector_count": 83,
+      "path": "module_relink/track02/logical_modules/primary_30_lba3042_s83.bin",
+      "size": 169984,
+      "sha256": "D1811CF229D8ABDEAE8A7C14F5918B3DE907B2AEBC000C90CF67F2DB471ED181"
+    },
+    {
+      "id": "primary.31",
+      "directory": "primary",
+      "logical_entry": 31,
+      "lba": 3138,
+      "sector_count": 90,
+      "path": "module_relink/track02/logical_modules/primary_31_lba3138_s90.bin",
+      "size": 184320,
+      "sha256": "C50EBA4B1CDEA55971187DF1EA515B83D327A1489CA837832E90BC21C91C7D7A"
+    },
+    {
+      "id": "primary.32",
+      "directory": "primary",
+      "logical_entry": 32,
+      "lba": 3234,
+      "sector_count": 75,
+      "path": "module_relink/track02/logical_modules/primary_32_lba3234_s75.bin",
+      "size": 153600,
+      "sha256": "31C8C2DCDA63573B9FDEDA754CF7FA85A32E2E1A6EAC8136BDB0A498B1059FDE"
+    },
+    {
+      "id": "primary.33",
+      "directory": "primary",
+      "logical_entry": 33,
+      "lba": 3330,
+      "sector_count": 83,
+      "path": "module_relink/track02/logical_modules/primary_33_lba3330_s83.bin",
+      "size": 169984,
+      "sha256": "86901D3E5FBD187F7010415A22C54DD337E37A5915B1827D862B1160D539BB1B"
+    },
+    {
+      "id": "primary.34",
+      "directory": "primary",
+      "logical_entry": 34,
+      "lba": 3426,
+      "sector_count": 84,
+      "path": "module_relink/track02/logical_modules/primary_34_lba3426_s84.bin",
+      "size": 172032,
+      "sha256": "27195D298A57E98F18BB70325FD28B5BEA17EBB9E73C6C88B048697DFCA1734F"
+    },
+    {
+      "id": "primary.35",
+      "directory": "primary",
+      "logical_entry": 35,
+      "lba": 3522,
+      "sector_count": 84,
+      "path": "module_relink/track02/logical_modules/primary_35_lba3522_s84.bin",
+      "size": 172032,
+      "sha256": "4BDE8DF68B7649EB8824588733C74C0738AFB1BE18BA5E44D80B71AC33C15331"
+    },
+    {
+      "id": "primary.36",
+      "directory": "primary",
+      "logical_entry": 36,
+      "lba": 3618,
+      "sector_count": 90,
+      "path": "module_relink/track02/logical_modules/primary_36_lba3618_s90.bin",
+      "size": 184320,
+      "sha256": "8F6EDA33007F8AD3726C081617B6897981B3869B32BF27E3658007086E3B4193"
+    },
+    {
+      "id": "primary.37",
+      "directory": "primary",
+      "logical_entry": 37,
+      "lba": 3714,
+      "sector_count": 78,
+      "path": "module_relink/track02/logical_modules/primary_37_lba3714_s78.bin",
+      "size": 159744,
+      "sha256": "64F2166C1E723BEB1FAE66D6CDF2FD8A5E35D524135943AE6BE7BF4B0F658AE7"
+    },
+    {
+      "id": "primary.38",
+      "directory": "primary",
+      "logical_entry": 38,
+      "lba": 3810,
+      "sector_count": 77,
+      "path": "module_relink/track02/logical_modules/primary_38_lba3810_s77.bin",
+      "size": 157696,
+      "sha256": "7E2DBAD0662BB09184747A621A553F6D8EA4C4A83BC0FD5A28433D737913C064"
+    },
+    {
+      "id": "primary.39",
+      "directory": "primary",
+      "logical_entry": 39,
+      "lba": 3906,
+      "sector_count": 75,
+      "path": "module_relink/track02/logical_modules/primary_39_lba3906_s75.bin",
+      "size": 153600,
+      "sha256": "77C279D1FCFDCCD24568FCDED1866C7EE441B8783B10C674499703AE4426ECFD"
+    },
+    {
+      "id": "primary.40",
+      "directory": "primary",
+      "logical_entry": 40,
+      "lba": 4002,
+      "sector_count": 95,
+      "path": "module_relink/track02/logical_modules/primary_40_lba4002_s95.bin",
+      "size": 194560,
+      "sha256": "C9FF7F122D96ABCE0C02BA22E109B92A0F81EB447C62F1946346A13896D10C6D"
+    },
+    {
+      "id": "primary.41",
+      "directory": "primary",
+      "logical_entry": 41,
+      "lba": 4098,
+      "sector_count": 90,
+      "path": "module_relink/track02/logical_modules/primary_41_lba4098_s90.bin",
+      "size": 184320,
+      "sha256": "BCD88ABBCD414B9544069FF36D19006031122F8D1773BDEA26DE9A67C6F67286"
+    },
+    {
+      "id": "primary.42",
+      "directory": "primary",
+      "logical_entry": 42,
+      "lba": 2754,
+      "sector_count": 85,
+      "path": "module_relink/track02/logical_modules/primary_42_lba2754_s85.bin",
+      "size": 174080,
+      "sha256": "CD7EFC19C75C069C7EC3957582875D19C79CC9D71A00D4A3C732F0657CA365FD"
+    },
+    {
+      "id": "primary.43",
+      "directory": "primary",
+      "logical_entry": 43,
+      "lba": 2754,
+      "sector_count": 85,
+      "path": "module_relink/track02/logical_modules/primary_43_lba2754_s85.bin",
+      "size": 174080,
+      "sha256": "CD7EFC19C75C069C7EC3957582875D19C79CC9D71A00D4A3C732F0657CA365FD"
+    },
+    {
+      "id": "primary.44",
+      "directory": "primary",
+      "logical_entry": 44,
+      "lba": 2754,
+      "sector_count": 85,
+      "path": "module_relink/track02/logical_modules/primary_44_lba2754_s85.bin",
+      "size": 174080,
+      "sha256": "CD7EFC19C75C069C7EC3957582875D19C79CC9D71A00D4A3C732F0657CA365FD"
+    },
+    {
+      "id": "primary.45",
+      "directory": "primary",
+      "logical_entry": 45,
+      "lba": 2754,
+      "sector_count": 85,
+      "path": "module_relink/track02/logical_modules/primary_45_lba2754_s85.bin",
+      "size": 174080,
+      "sha256": "CD7EFC19C75C069C7EC3957582875D19C79CC9D71A00D4A3C732F0657CA365FD"
+    },
+    {
+      "id": "primary.46",
+      "directory": "primary",
+      "logical_entry": 46,
+      "lba": 2754,
+      "sector_count": 85,
+      "path": "module_relink/track02/logical_modules/primary_46_lba2754_s85.bin",
+      "size": 174080,
+      "sha256": "CD7EFC19C75C069C7EC3957582875D19C79CC9D71A00D4A3C732F0657CA365FD"
+    },
+    {
+      "id": "primary.47",
+      "directory": "primary",
+      "logical_entry": 47,
+      "lba": 2754,
+      "sector_count": 85,
+      "path": "module_relink/track02/logical_modules/primary_47_lba2754_s85.bin",
+      "size": 174080,
+      "sha256": "CD7EFC19C75C069C7EC3957582875D19C79CC9D71A00D4A3C732F0657CA365FD"
+    },
+    {
+      "id": "primary.48",
+      "directory": "primary",
+      "logical_entry": 48,
+      "lba": 2754,
+      "sector_count": 85,
+      "path": "module_relink/track02/logical_modules/primary_48_lba2754_s85.bin",
+      "size": 174080,
+      "sha256": "CD7EFC19C75C069C7EC3957582875D19C79CC9D71A00D4A3C732F0657CA365FD"
+    },
+    {
+      "id": "primary.49",
+      "directory": "primary",
+      "logical_entry": 49,
+      "lba": 2754,
+      "sector_count": 85,
+      "path": "module_relink/track02/logical_modules/primary_49_lba2754_s85.bin",
+      "size": 174080,
+      "sha256": "CD7EFC19C75C069C7EC3957582875D19C79CC9D71A00D4A3C732F0657CA365FD"
+    },
+    {
+      "id": "primary.50",
+      "directory": "primary",
+      "logical_entry": 50,
+      "lba": 2754,
+      "sector_count": 85,
+      "path": "module_relink/track02/logical_modules/primary_50_lba2754_s85.bin",
+      "size": 174080,
+      "sha256": "CD7EFC19C75C069C7EC3957582875D19C79CC9D71A00D4A3C732F0657CA365FD"
+    },
+    {
+      "id": "primary.51",
+      "directory": "primary",
+      "logical_entry": 51,
+      "lba": 2754,
+      "sector_count": 85,
+      "path": "module_relink/track02/logical_modules/primary_51_lba2754_s85.bin",
+      "size": 174080,
+      "sha256": "CD7EFC19C75C069C7EC3957582875D19C79CC9D71A00D4A3C732F0657CA365FD"
+    },
+    {
+      "id": "primary.52",
+      "directory": "primary",
+      "logical_entry": 52,
+      "lba": 2754,
+      "sector_count": 85,
+      "path": "module_relink/track02/logical_modules/primary_52_lba2754_s85.bin",
+      "size": 174080,
+      "sha256": "CD7EFC19C75C069C7EC3957582875D19C79CC9D71A00D4A3C732F0657CA365FD"
+    },
+    {
+      "id": "primary.53",
+      "directory": "primary",
+      "logical_entry": 53,
+      "lba": 1602,
+      "sector_count": 95,
+      "path": "module_relink/track02/logical_modules/primary_53_lba1602_s95.bin",
+      "size": 194560,
+      "sha256": "91D917D05E562DCBD6461A807C78F8950D93C0D738E5EC9440BF1C31D9B93BC5"
+    },
+    {
+      "id": "primary.54",
+      "directory": "primary",
+      "logical_entry": 54,
+      "lba": 6018,
+      "sector_count": 32,
+      "path": "module_relink/track02/logical_modules/primary_54_lba6018_s32.bin",
+      "size": 65536,
+      "sha256": "82298FD267235D1BC2C989EFBD2EE2557F02A500BE7AB63956C352ACE5A6B048"
+    },
+    {
+      "id": "overlay.00",
+      "directory": "overlay",
+      "logical_entry": 0,
+      "lba": 290,
+      "sector_count": 96,
+      "path": "module_relink/track02/logical_modules/overlay_00_lba0290_s96.bin",
+      "size": 196608,
+      "sha256": "C320A8D2226D52C604D8E228F981D719D863DFD3E1D001E1D4C362961ECD1AE0"
+    },
+    {
+      "id": "overlay.01",
+      "directory": "overlay",
+      "logical_entry": 1,
+      "lba": 386,
+      "sector_count": 96,
+      "path": "module_relink/track02/logical_modules/overlay_01_lba0386_s96.bin",
+      "size": 196608,
+      "sha256": "44FBB01C16100C386D615397DA193AF9A00621713C4DCE5AB9EA9F3F50275CCA"
+    },
+    {
+      "id": "overlay.02",
+      "directory": "overlay",
+      "logical_entry": 2,
+      "lba": 482,
+      "sector_count": 96,
+      "path": "module_relink/track02/logical_modules/overlay_02_lba0482_s96.bin",
+      "size": 196608,
+      "sha256": "C065773C86FEC790D96CD3F52FEF804BFD426C8270A0BAD8ED0313977BBA5BB6"
+    },
+    {
+      "id": "overlay.03",
+      "directory": "overlay",
+      "logical_entry": 3,
+      "lba": 2786,
+      "sector_count": 69,
+      "path": "module_relink/track02/logical_modules/overlay_03_lba2786_s69.bin",
+      "size": 141312,
+      "sha256": "5C325FE167DB3998D148A6C77C063A623BD3AC7354CD6A96DCC8DBE73D29F4B0"
+    },
+    {
+      "id": "overlay.04",
+      "directory": "overlay",
+      "logical_entry": 4,
+      "lba": 578,
+      "sector_count": 78,
+      "path": "module_relink/track02/logical_modules/overlay_04_lba0578_s78.bin",
+      "size": 159744,
+      "sha256": "0A0D99A77E544F541F33804A655BB90EC1B2A46B080DD4F29CF4F840000FCA88"
+    },
+    {
+      "id": "overlay.05",
+      "directory": "overlay",
+      "logical_entry": 5,
+      "lba": 674,
+      "sector_count": 96,
+      "path": "module_relink/track02/logical_modules/overlay_05_lba0674_s96.bin",
+      "size": 196608,
+      "sha256": "A304BCB6F5C54D5883DFC9177D968F4E9E212E5CFF7B463F1BF682E677D8CAF9"
+    },
+    {
+      "id": "overlay.06",
+      "directory": "overlay",
+      "logical_entry": 6,
+      "lba": 770,
+      "sector_count": 96,
+      "path": "module_relink/track02/logical_modules/overlay_06_lba0770_s96.bin",
+      "size": 196608,
+      "sha256": "7FA42654DC1E28C05F501BA91409FFA06291A81F0617456F7ABFD7424CDAC679"
+    },
+    {
+      "id": "overlay.07",
+      "directory": "overlay",
+      "logical_entry": 7,
+      "lba": 866,
+      "sector_count": 96,
+      "path": "module_relink/track02/logical_modules/overlay_07_lba0866_s96.bin",
+      "size": 196608,
+      "sha256": "BF7DB1C8D8B7A68593A132AFA3B3C2DC63363CA4A5D878650E4D184A20037D80"
+    },
+    {
+      "id": "overlay.08",
+      "directory": "overlay",
+      "logical_entry": 8,
+      "lba": 962,
+      "sector_count": 96,
+      "path": "module_relink/track02/logical_modules/overlay_08_lba0962_s96.bin",
+      "size": 196608,
+      "sha256": "33BFF37E631039F00482FDCDC2A007F9963F08935931A1761408C42F99070498"
+    },
+    {
+      "id": "overlay.09",
+      "directory": "overlay",
+      "logical_entry": 9,
+      "lba": 1058,
+      "sector_count": 83,
+      "path": "module_relink/track02/logical_modules/overlay_09_lba1058_s83.bin",
+      "size": 169984,
+      "sha256": "C4366A7C6E32E1C3DDA6A17187A2EC5FF524F04ED59588C931C3E172E4C16E77"
+    },
+    {
+      "id": "overlay.10",
+      "directory": "overlay",
+      "logical_entry": 10,
+      "lba": 1154,
+      "sector_count": 96,
+      "path": "module_relink/track02/logical_modules/overlay_10_lba1154_s96.bin",
+      "size": 196608,
+      "sha256": "36FED8E020213949D3A11E59DC85E112010B30C78FD32020A095A02529878740"
+    },
+    {
+      "id": "overlay.11",
+      "directory": "overlay",
+      "logical_entry": 11,
+      "lba": 1250,
+      "sector_count": 96,
+      "path": "module_relink/track02/logical_modules/overlay_11_lba1250_s96.bin",
+      "size": 196608,
+      "sha256": "79736F218506349B50C16D7049A45A8E98B0349F703C8C4F62D89F35C2D1BC91"
+    },
+    {
+      "id": "overlay.12",
+      "directory": "overlay",
+      "logical_entry": 12,
+      "lba": 1346,
+      "sector_count": 96,
+      "path": "module_relink/track02/logical_modules/overlay_12_lba1346_s96.bin",
+      "size": 196608,
+      "sha256": "B0267641C0166563DA10AF22BCB23CDFCF634933FBD01252C77B11499F926717"
+    },
+    {
+      "id": "overlay.13",
+      "directory": "overlay",
+      "logical_entry": 13,
+      "lba": 1442,
+      "sector_count": 96,
+      "path": "module_relink/track02/logical_modules/overlay_13_lba1442_s96.bin",
+      "size": 196608,
+      "sha256": "525A95E4A397F57C2119B0380CE2DF473F95A3D3C5627401A831F53F931AEEF2"
+    },
+    {
+      "id": "overlay.14",
+      "directory": "overlay",
+      "logical_entry": 14,
+      "lba": 1538,
+      "sector_count": 73,
+      "path": "module_relink/track02/logical_modules/overlay_14_lba1538_s73.bin",
+      "size": 149504,
+      "sha256": "CDBB9B045055B56418D650164C40049999C3B92250AC4E7295F10EF724BA7B62"
+    },
+    {
+      "id": "overlay.15",
+      "directory": "overlay",
+      "logical_entry": 15,
+      "lba": 1634,
+      "sector_count": 96,
+      "path": "module_relink/track02/logical_modules/overlay_15_lba1634_s96.bin",
+      "size": 196608,
+      "sha256": "A05EC3A5E9A1DDFA733DA89B213B1E852EBAFA6E5AD301E7FDA96C66CA11AE63"
+    },
+    {
+      "id": "overlay.16",
+      "directory": "overlay",
+      "logical_entry": 16,
+      "lba": 1730,
+      "sector_count": 92,
+      "path": "module_relink/track02/logical_modules/overlay_16_lba1730_s92.bin",
+      "size": 188416,
+      "sha256": "EBAE73741DE360F4ED598C30E3A5CFD32472F9B1136341DC75F38FF5A18EFE40"
+    },
+    {
+      "id": "overlay.17",
+      "directory": "overlay",
+      "logical_entry": 17,
+      "lba": 1826,
+      "sector_count": 96,
+      "path": "module_relink/track02/logical_modules/overlay_17_lba1826_s96.bin",
+      "size": 196608,
+      "sha256": "02C3E56830DF05388C4B3FA7E1D79A58694BAAAADFE2A8EA6FC64E8299E19308"
+    },
+    {
+      "id": "overlay.18",
+      "directory": "overlay",
+      "logical_entry": 18,
+      "lba": 1922,
+      "sector_count": 96,
+      "path": "module_relink/track02/logical_modules/overlay_18_lba1922_s96.bin",
+      "size": 196608,
+      "sha256": "0541707F2EC0784DD20809B711C6F1E3F18B8A9D2E8EA0B11BAF5CCB75C80267"
+    },
+    {
+      "id": "overlay.19",
+      "directory": "overlay",
+      "logical_entry": 19,
+      "lba": 2018,
+      "sector_count": 82,
+      "path": "module_relink/track02/logical_modules/overlay_19_lba2018_s82.bin",
+      "size": 167936,
+      "sha256": "A4303D7D2B5873B6492CF145F490B80188AB1638DCB0A045C987466A499FBA20"
+    },
+    {
+      "id": "overlay.20",
+      "directory": "overlay",
+      "logical_entry": 20,
+      "lba": 2114,
+      "sector_count": 75,
+      "path": "module_relink/track02/logical_modules/overlay_20_lba2114_s75.bin",
+      "size": 153600,
+      "sha256": "FF85B5004CE0E31B7A52055CEFB6D1FB02E9868B60C093AA247CEBEA68EFFDE5"
+    },
+    {
+      "id": "overlay.21",
+      "directory": "overlay",
+      "logical_entry": 21,
+      "lba": 2210,
+      "sector_count": 76,
+      "path": "module_relink/track02/logical_modules/overlay_21_lba2210_s76.bin",
+      "size": 155648,
+      "sha256": "5A8CD1A2078F4E39C9659A7DB9C111381357EA362D8AE4DEEA87F01E0589380A"
+    },
+    {
+      "id": "overlay.22",
+      "directory": "overlay",
+      "logical_entry": 22,
+      "lba": 2306,
+      "sector_count": 96,
+      "path": "module_relink/track02/logical_modules/overlay_22_lba2306_s96.bin",
+      "size": 196608,
+      "sha256": "79205FB27052C38CBA3C72EC77D088E9C8DB45D1BAEB64BE7BDF47703F685260"
+    },
+    {
+      "id": "overlay.23",
+      "directory": "overlay",
+      "logical_entry": 23,
+      "lba": 2402,
+      "sector_count": 96,
+      "path": "module_relink/track02/logical_modules/overlay_23_lba2402_s96.bin",
+      "size": 196608,
+      "sha256": "8DD037262124205971B6F9BA7DC599FF967C883A10BA7778009801A2BDF65847"
+    },
+    {
+      "id": "overlay.24",
+      "directory": "overlay",
+      "logical_entry": 24,
+      "lba": 2498,
+      "sector_count": 71,
+      "path": "module_relink/track02/logical_modules/overlay_24_lba2498_s71.bin",
+      "size": 145408,
+      "sha256": "07BFC862405D8529B059769B5BE947071CC625E3B714B808154C1FB81595C646"
+    },
+    {
+      "id": "overlay.25",
+      "directory": "overlay",
+      "logical_entry": 25,
+      "lba": 2594,
+      "sector_count": 71,
+      "path": "module_relink/track02/logical_modules/overlay_25_lba2594_s71.bin",
+      "size": 145408,
+      "sha256": "B41831C6640E5B1025033895DE14459AC0F9F5EF8B8A7DC91F99483CB41C1926"
+    },
+    {
+      "id": "overlay.26",
+      "directory": "overlay",
+      "logical_entry": 26,
+      "lba": 2690,
+      "sector_count": 96,
+      "path": "module_relink/track02/logical_modules/overlay_26_lba2690_s96.bin",
+      "size": 196608,
+      "sha256": "24F891954498FEF4E6A6A279E7E258DBAB5F0940D448C865C8F032CEC51D22A8"
+    },
+    {
+      "id": "overlay.27",
+      "directory": "overlay",
+      "logical_entry": 27,
+      "lba": 2882,
+      "sector_count": 96,
+      "path": "module_relink/track02/logical_modules/overlay_27_lba2882_s96.bin",
+      "size": 196608,
+      "sha256": "AB414926C530BEC99B9C59CB421725E768012E4C98E93D2D4B8779F4D1AB04ED"
+    },
+    {
+      "id": "overlay.28",
+      "directory": "overlay",
+      "logical_entry": 28,
+      "lba": 2978,
+      "sector_count": 94,
+      "path": "module_relink/track02/logical_modules/overlay_28_lba2978_s94.bin",
+      "size": 192512,
+      "sha256": "F6E293DA5A3D02A4C84194B6DD1097EC004A3F0516760D93761F6AF15696660F"
+    },
+    {
+      "id": "overlay.29",
+      "directory": "overlay",
+      "logical_entry": 29,
+      "lba": 3074,
+      "sector_count": 96,
+      "path": "module_relink/track02/logical_modules/overlay_29_lba3074_s96.bin",
+      "size": 196608,
+      "sha256": "9DC0E78C94B693AF583754AA5A71C075EAC7824DD83EDC461C9EECEBD2BE564B"
+    },
+    {
+      "id": "overlay.30",
+      "directory": "overlay",
+      "logical_entry": 30,
+      "lba": 3170,
+      "sector_count": 96,
+      "path": "module_relink/track02/logical_modules/overlay_30_lba3170_s96.bin",
+      "size": 196608,
+      "sha256": "B112CE2ECFFCD3E0B59456FB9B7DFF6079CFDCE9E35DCD73092C469B95466AF0"
+    },
+    {
+      "id": "overlay.31",
+      "directory": "overlay",
+      "logical_entry": 31,
+      "lba": 3266,
+      "sector_count": 96,
+      "path": "module_relink/track02/logical_modules/overlay_31_lba3266_s96.bin",
+      "size": 196608,
+      "sha256": "6926EA23C5B8DCB1E6116947F0D87FCECFA8E6CA4F088B703454E1C578867E53"
+    },
+    {
+      "id": "overlay.32",
+      "directory": "overlay",
+      "logical_entry": 32,
+      "lba": 3362,
+      "sector_count": 96,
+      "path": "module_relink/track02/logical_modules/overlay_32_lba3362_s96.bin",
+      "size": 196608,
+      "sha256": "E3CE30731D64B64C4F9040D920C87123926A5C62E32D4E7338BC95E70AE406FF"
+    },
+    {
+      "id": "overlay.33",
+      "directory": "overlay",
+      "logical_entry": 33,
+      "lba": 3458,
+      "sector_count": 96,
+      "path": "module_relink/track02/logical_modules/overlay_33_lba3458_s96.bin",
+      "size": 196608,
+      "sha256": "FB6A44474477F7C281C8A1B8297B0AB405836DF74F5BE5BE1EFC73EF407F561E"
+    },
+    {
+      "id": "overlay.34",
+      "directory": "overlay",
+      "logical_entry": 34,
+      "lba": 3554,
+      "sector_count": 84,
+      "path": "module_relink/track02/logical_modules/overlay_34_lba3554_s84.bin",
+      "size": 172032,
+      "sha256": "51C98069B178AC56113BA89F52061F2A74C61F4A38E8FC88261FF6EF3BD82FED"
+    },
+    {
+      "id": "overlay.35",
+      "directory": "overlay",
+      "logical_entry": 35,
+      "lba": 3650,
+      "sector_count": 84,
+      "path": "module_relink/track02/logical_modules/overlay_35_lba3650_s84.bin",
+      "size": 172032,
+      "sha256": "2D168A330A4BB07191E3C191DCB8D2AB8CD9AC0986B5974BF5DCF8DF63801BE5"
+    },
+    {
+      "id": "overlay.36",
+      "directory": "overlay",
+      "logical_entry": 36,
+      "lba": 3746,
+      "sector_count": 96,
+      "path": "module_relink/track02/logical_modules/overlay_36_lba3746_s96.bin",
+      "size": 196608,
+      "sha256": "42E3A380D1A61621B1CBEDD29CCA1246EEFE00F8D4963D835850D181801BB915"
+    },
+    {
+      "id": "overlay.37",
+      "directory": "overlay",
+      "logical_entry": 37,
+      "lba": 3842,
+      "sector_count": 96,
+      "path": "module_relink/track02/logical_modules/overlay_37_lba3842_s96.bin",
+      "size": 196608,
+      "sha256": "7A42D2E54FC18EFF109770EB461F0664ADA364DDFE834A51BF1EB8358996BEFB"
+    },
+    {
+      "id": "overlay.38",
+      "directory": "overlay",
+      "logical_entry": 38,
+      "lba": 3938,
+      "sector_count": 96,
+      "path": "module_relink/track02/logical_modules/overlay_38_lba3938_s96.bin",
+      "size": 196608,
+      "sha256": "20425DB31C1FBD42A54BEABE6A573845CC161583437BB85B57731B96E1D85D94"
+    },
+    {
+      "id": "overlay.39",
+      "directory": "overlay",
+      "logical_entry": 39,
+      "lba": 4034,
+      "sector_count": 75,
+      "path": "module_relink/track02/logical_modules/overlay_39_lba4034_s75.bin",
+      "size": 153600,
+      "sha256": "E639069828AFF7E6A209CA209C3AF9671D205E5615B571452008844F7F0ACF5C"
+    },
+    {
+      "id": "overlay.40",
+      "directory": "overlay",
+      "logical_entry": 40,
+      "lba": 4130,
+      "sector_count": 96,
+      "path": "module_relink/track02/logical_modules/overlay_40_lba4130_s96.bin",
+      "size": 196608,
+      "sha256": "342618F2273940F1B437EE765EFD8618867870D172AB666442E9EF4C13537734"
+    },
+    {
+      "id": "overlay.41",
+      "directory": "overlay",
+      "logical_entry": 41,
+      "lba": 4226,
+      "sector_count": 96,
+      "path": "module_relink/track02/logical_modules/overlay_41_lba4226_s96.bin",
+      "size": 196608,
+      "sha256": "922C0F6FE95C59DBA9586588701A98605C0E8C3521A5457DFD0F318A336B84A7"
+    },
+    {
+      "id": "overlay.42",
+      "directory": "overlay",
+      "logical_entry": 42,
+      "lba": 4322,
+      "sector_count": 96,
+      "path": "module_relink/track02/logical_modules/overlay_42_lba4322_s96.bin",
+      "size": 196608,
+      "sha256": "04E8F76C02753F836C9E9F746BCD66AB732C28C6585415675FC321BF0E35D2D0"
+    },
+    {
+      "id": "overlay.43",
+      "directory": "overlay",
+      "logical_entry": 43,
+      "lba": 4418,
+      "sector_count": 80,
+      "path": "module_relink/track02/logical_modules/overlay_43_lba4418_s80.bin",
+      "size": 163840,
+      "sha256": "EE31A74F77C0CABB3FCEF5E2F4048101CF5F92832DD1046ED5864D07B7BAE770"
+    },
+    {
+      "id": "overlay.44",
+      "directory": "overlay",
+      "logical_entry": 44,
+      "lba": 4514,
+      "sector_count": 82,
+      "path": "module_relink/track02/logical_modules/overlay_44_lba4514_s82.bin",
+      "size": 167936,
+      "sha256": "EED8A3F736D36949D657B95BA81CD1A954619DE3C3BF54CD2963C33E13A23C46"
+    },
+    {
+      "id": "overlay.45",
+      "directory": "overlay",
+      "logical_entry": 45,
+      "lba": 4610,
+      "sector_count": 81,
+      "path": "module_relink/track02/logical_modules/overlay_45_lba4610_s81.bin",
+      "size": 165888,
+      "sha256": "B59B04AC4F0EB2DD56DA35C171C4143AC9FCEF944BB93B72F80BF2A38F791165"
+    },
+    {
+      "id": "overlay.46",
+      "directory": "overlay",
+      "logical_entry": 46,
+      "lba": 4706,
+      "sector_count": 81,
+      "path": "module_relink/track02/logical_modules/overlay_46_lba4706_s81.bin",
+      "size": 165888,
+      "sha256": "3ECFDFB508C0C5B81550390E93B844F5408547684F0A7017ECD09F322C05C639"
+    },
+    {
+      "id": "overlay.47",
+      "directory": "overlay",
+      "logical_entry": 47,
+      "lba": 4802,
+      "sector_count": 90,
+      "path": "module_relink/track02/logical_modules/overlay_47_lba4802_s90.bin",
+      "size": 184320,
+      "sha256": "FA248E2198ED50B2C51B0BBBEE5951362017A7B6353E586FE4B6AB30307F8B87"
+    },
+    {
+      "id": "overlay.48",
+      "directory": "overlay",
+      "logical_entry": 48,
+      "lba": 4898,
+      "sector_count": 76,
+      "path": "module_relink/track02/logical_modules/overlay_48_lba4898_s76.bin",
+      "size": 155648,
+      "sha256": "5D24969B09B0A14ECE0845A1699FD5D726899016687C9CDE3813D42594410870"
+    },
+    {
+      "id": "overlay.49",
+      "directory": "overlay",
+      "logical_entry": 49,
+      "lba": 4994,
+      "sector_count": 76,
+      "path": "module_relink/track02/logical_modules/overlay_49_lba4994_s76.bin",
+      "size": 155648,
+      "sha256": "B2F2DACA90FC49BB35795AA97F9285357329AE52855EA2EEAE29F7A9E15CF299"
+    },
+    {
+      "id": "overlay.50",
+      "directory": "overlay",
+      "logical_entry": 50,
+      "lba": 5090,
+      "sector_count": 84,
+      "path": "module_relink/track02/logical_modules/overlay_50_lba5090_s84.bin",
+      "size": 172032,
+      "sha256": "6F4A20124CC5706D09AAB40FF60163B0B994D48F64C4F265175485CB1AE9468A"
+    },
+    {
+      "id": "overlay.51",
+      "directory": "overlay",
+      "logical_entry": 51,
+      "lba": 5186,
+      "sector_count": 96,
+      "path": "module_relink/track02/logical_modules/overlay_51_lba5186_s96.bin",
+      "size": 196608,
+      "sha256": "AFE51C18CE8B07DCBA46606702E4B6CA5790EECC6BE97F05CAC4DF335A5120A2"
+    },
+    {
+      "id": "overlay.52",
+      "directory": "overlay",
+      "logical_entry": 52,
+      "lba": 5282,
+      "sector_count": 96,
+      "path": "module_relink/track02/logical_modules/overlay_52_lba5282_s96.bin",
+      "size": 196608,
+      "sha256": "2830D77C60365CEF056CAE0DC23757C4BE850FCDD6512F9261235F7739C63683"
+    },
+    {
+      "id": "overlay.53",
+      "directory": "overlay",
+      "logical_entry": 53,
+      "lba": 1730,
+      "sector_count": 92,
+      "path": "module_relink/track02/logical_modules/overlay_53_lba1730_s92.bin",
+      "size": 188416,
+      "sha256": "EBAE73741DE360F4ED598C30E3A5CFD32472F9B1136341DC75F38FF5A18EFE40"
+    },
+    {
+      "id": "overlay.54",
+      "directory": "overlay",
+      "logical_entry": 54,
+      "lba": 5378,
+      "sector_count": 96,
+      "path": "module_relink/track02/logical_modules/overlay_54_lba5378_s96.bin",
+      "size": 196608,
+      "sha256": "A431C994015A7115840A822D577B75A22DBA9DDC8652421555A930C359614273"
+    }
+  ],
+  "semantic_modules": [
+    {
+      "id": "boot.kernel",
+      "kind": "executable_engine",
+      "lba": 2,
+      "sector_count": 16,
+      "path": "module_relink/track02/semantic_modules/boot.kernel_lba0002_s16.bin",
+      "size": 32768,
+      "sha256": "4BB13D78A8CEEF61D416D0AB088B93F66A6E686780BDE04AFCA6E0586E68E57F"
+    },
+    {
+      "id": "boot.resource_a",
+      "kind": "resource_bundle",
+      "lba": 34,
+      "sector_count": 12,
+      "path": "module_relink/track02/semantic_modules/boot.resource_a_lba0034_s12.bin",
+      "size": 24576,
+      "sha256": "A9EF4DAD3E4B331D2875FF3B71BC5227CB1E5DC2D112EBE890E71C6E5F6C45D0"
+    },
+    {
+      "id": "opening.engine",
+      "kind": "executable_engine",
+      "lba": 98,
+      "sector_count": 20,
+      "path": "module_relink/track02/semantic_modules/opening.engine_lba0098_s20.bin",
+      "size": 40960,
+      "sha256": "9DED1694C987CB0295A0C931E2A3BDFBE12EC7AC14BF90A08A7735A4EDCDDEDA"
+    },
+    {
+      "id": "opening.resource",
+      "kind": "resource_bundle",
+      "lba": 118,
+      "sector_count": 6,
+      "path": "module_relink/track02/semantic_modules/opening.resource_lba0118_s06.bin",
+      "size": 12288,
+      "sha256": "54C4EDC9E038EADB7B1B29CD931F317CE8B22D6418F67C77DD68228AB1A6589B"
+    },
+    {
+      "id": "system.bundle",
+      "kind": "resource_bundle",
+      "lba": 226,
+      "sector_count": 28,
+      "path": "module_relink/track02/semantic_modules/system.bundle_lba0226_s28.bin",
+      "size": 57344,
+      "sha256": "7BBD31865867A53E6AC62D9CE9F52C46B0EB5A1D11532D2119C3AE0BE42E3B85"
+    },
+    {
+      "id": "field.main_engine",
+      "kind": "executable_engine",
+      "lba": 258,
+      "sector_count": 20,
+      "path": "module_relink/track02/semantic_modules/field.main_engine_lba0258_s20.bin",
+      "size": 40960,
+      "sha256": "8C0573AEB900A5897402205908E02E501CC608C8EC8F2DB5F3ADA3A9E2D8A230"
+    },
+    {
+      "id": "field.resource",
+      "kind": "resource_bundle",
+      "lba": 278,
+      "sector_count": 12,
+      "path": "module_relink/track02/semantic_modules/field.resource_lba0278_s12.bin",
+      "size": 24576,
+      "sha256": "D806E2B87CAADAECB2142730BC592E4D0D43F27FF2659986D9F8812498BA3FF7"
+    },
+    {
+      "id": "scene.field_start",
+      "kind": "scene_package",
+      "lba": 482,
+      "sector_count": 96,
+      "path": "module_relink/track02/semantic_modules/scene.field_start_lba0482_s96.bin",
+      "size": 196608,
+      "sha256": "C065773C86FEC790D96CD3F52FEF804BFD426C8270A0BAD8ED0313977BBA5BB6"
+    },
+    {
+      "id": "scene.battle_first",
+      "kind": "scene_package",
+      "lba": 290,
+      "sector_count": 96,
+      "path": "module_relink/track02/semantic_modules/scene.battle_first_lba0290_s96.bin",
+      "size": 196608,
+      "sha256": "C320A8D2226D52C604D8E228F981D719D863DFD3E1D001E1D4C362961ECD1AE0"
+    },
+    {
+      "id": "scene.tower_first",
+      "kind": "scene_package",
+      "lba": 2882,
+      "sector_count": 96,
+      "path": "module_relink/track02/semantic_modules/scene.tower_first_lba2882_s96.bin",
+      "size": 196608,
+      "sha256": "AB414926C530BEC99B9C59CB421725E768012E4C98E93D2D4B8779F4D1AB04ED"
+    }
+  ],
+  "output": {
+    "bin": "module_relink/output/Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP.bin",
+    "bin_size": 523184384,
+    "bin_sha256": "D16D29EB80B1B74A2EC929924349256B50B8F9F5C9A3FA37B6FCC08B059B22C5",
+    "cue": "module_relink/output/Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP.cue",
+    "cue_sha256": "C491342EA8CBF2B6E829316AAAD0AF3F790EC58288DE9BF880927CDCC7C9CC6B"
+  },
+  "identity_guarantees": {
+    "track02_partition_is_non_overlapping": true,
+    "track02_partition_is_gapless": true,
+    "raw_audio_bytes_are_streamed_unchanged": true,
+    "cue_bytes_are_identical": true,
+    "full_bin_bytes_are_identical": true,
+    "source_disc_was_modified": false
+  }
+}

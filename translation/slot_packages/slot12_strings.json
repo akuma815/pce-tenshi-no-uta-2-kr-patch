@@ -1,0 +1,956 @@
+{
+  "format": "KSP1",
+  "slot": 12,
+  "original_sectors": 78,
+  "package_offset": 159744,
+  "package_bytes": 18137,
+  "needed_sectors": 87,
+  "unique_strings": 161,
+  "source_redirects": {
+    "029d011": {
+      "package_relative_offset": 32,
+      "slot_relative_offset": 159776,
+      "length": 19
+    },
+    "029d029": {
+      "package_relative_offset": 51,
+      "slot_relative_offset": 159795,
+      "length": 14
+    },
+    "029d031": {
+      "package_relative_offset": 65,
+      "slot_relative_offset": 159809,
+      "length": 14
+    },
+    "029d03b": {
+      "package_relative_offset": 79,
+      "slot_relative_offset": 159823,
+      "length": 12
+    },
+    "029d043": {
+      "package_relative_offset": 91,
+      "slot_relative_offset": 159835,
+      "length": 17
+    },
+    "029d04f": {
+      "package_relative_offset": 108,
+      "slot_relative_offset": 159852,
+      "length": 14
+    },
+    "029d059": {
+      "package_relative_offset": 122,
+      "slot_relative_offset": 159866,
+      "length": 14
+    },
+    "029d071": {
+      "package_relative_offset": 136,
+      "slot_relative_offset": 159880,
+      "length": 120
+    },
+    "029d0c8": {
+      "package_relative_offset": 256,
+      "slot_relative_offset": 160000,
+      "length": 202
+    },
+    "029d16f": {
+      "package_relative_offset": 458,
+      "slot_relative_offset": 160202,
+      "length": 138
+    },
+    "029d1dc": {
+      "package_relative_offset": 596,
+      "slot_relative_offset": 160340,
+      "length": 146
+    },
+    "029d256": {
+      "package_relative_offset": 742,
+      "slot_relative_offset": 160486,
+      "length": 84
+    },
+    "029d2a5": {
+      "package_relative_offset": 826,
+      "slot_relative_offset": 160570,
+      "length": 146
+    },
+    "029d31b": {
+      "package_relative_offset": 972,
+      "slot_relative_offset": 160716,
+      "length": 161
+    },
+    "029d39b": {
+      "package_relative_offset": 1133,
+      "slot_relative_offset": 160877,
+      "length": 71
+    },
+    "029d3da": {
+      "package_relative_offset": 1204,
+      "slot_relative_offset": 160948,
+      "length": 91
+    },
+    "029d438": {
+      "package_relative_offset": 1295,
+      "slot_relative_offset": 161039,
+      "length": 87
+    },
+    "029d486": {
+      "package_relative_offset": 1382,
+      "slot_relative_offset": 161126,
+      "length": 126
+    },
+    "029d4f4": {
+      "package_relative_offset": 1508,
+      "slot_relative_offset": 161252,
+      "length": 87
+    },
+    "029d545": {
+      "package_relative_offset": 1595,
+      "slot_relative_offset": 161339,
+      "length": 148
+    },
+    "029d5b5": {
+      "package_relative_offset": 1743,
+      "slot_relative_offset": 161487,
+      "length": 101
+    },
+    "029d618": {
+      "package_relative_offset": 1844,
+      "slot_relative_offset": 161588,
+      "length": 198
+    },
+    "029d6d4": {
+      "package_relative_offset": 2042,
+      "slot_relative_offset": 161786,
+      "length": 56
+    },
+    "029d708": {
+      "package_relative_offset": 2098,
+      "slot_relative_offset": 161842,
+      "length": 163
+    },
+    "029d780": {
+      "package_relative_offset": 2261,
+      "slot_relative_offset": 162005,
+      "length": 196
+    },
+    "029d824": {
+      "package_relative_offset": 2457,
+      "slot_relative_offset": 162201,
+      "length": 138
+    },
+    "029d895": {
+      "package_relative_offset": 2595,
+      "slot_relative_offset": 162339,
+      "length": 216
+    },
+    "029d949": {
+      "package_relative_offset": 2811,
+      "slot_relative_offset": 162555,
+      "length": 146
+    },
+    "029d9bb": {
+      "package_relative_offset": 2957,
+      "slot_relative_offset": 162701,
+      "length": 115
+    },
+    "029da13": {
+      "package_relative_offset": 3072,
+      "slot_relative_offset": 162816,
+      "length": 172
+    },
+    "029daa5": {
+      "package_relative_offset": 3244,
+      "slot_relative_offset": 162988,
+      "length": 197
+    },
+    "029db4d": {
+      "package_relative_offset": 3441,
+      "slot_relative_offset": 163185,
+      "length": 244
+    },
+    "029dc09": {
+      "package_relative_offset": 3685,
+      "slot_relative_offset": 163429,
+      "length": 213
+    },
+    "029dcc2": {
+      "package_relative_offset": 4096,
+      "slot_relative_offset": 163840,
+      "length": 218
+    },
+    "029dd6a": {
+      "package_relative_offset": 4314,
+      "slot_relative_offset": 164058,
+      "length": 202
+    },
+    "029de1b": {
+      "package_relative_offset": 4516,
+      "slot_relative_offset": 164260,
+      "length": 179
+    },
+    "029deb1": {
+      "package_relative_offset": 4695,
+      "slot_relative_offset": 164439,
+      "length": 207
+    },
+    "029df54": {
+      "package_relative_offset": 4902,
+      "slot_relative_offset": 164646,
+      "length": 248
+    },
+    "029e01d": {
+      "package_relative_offset": 5150,
+      "slot_relative_offset": 164894,
+      "length": 190
+    },
+    "029e0ac": {
+      "package_relative_offset": 5340,
+      "slot_relative_offset": 165084,
+      "length": 138
+    },
+    "029e120": {
+      "package_relative_offset": 5478,
+      "slot_relative_offset": 165222,
+      "length": 249
+    },
+    "029e1e5": {
+      "package_relative_offset": 5727,
+      "slot_relative_offset": 165471,
+      "length": 258
+    },
+    "029e2b4": {
+      "package_relative_offset": 5985,
+      "slot_relative_offset": 165729,
+      "length": 57
+    },
+    "029e2dd": {
+      "package_relative_offset": 6042,
+      "slot_relative_offset": 165786,
+      "length": 137
+    },
+    "029e344": {
+      "package_relative_offset": 6179,
+      "slot_relative_offset": 165923,
+      "length": 210
+    },
+    "029e3ed": {
+      "package_relative_offset": 6389,
+      "slot_relative_offset": 166133,
+      "length": 272
+    },
+    "029e4cd": {
+      "package_relative_offset": 6661,
+      "slot_relative_offset": 166405,
+      "length": 72
+    },
+    "029e511": {
+      "package_relative_offset": 6733,
+      "slot_relative_offset": 166477,
+      "length": 82
+    },
+    "029e55f": {
+      "package_relative_offset": 6815,
+      "slot_relative_offset": 166559,
+      "length": 181
+    },
+    "029e5e9": {
+      "package_relative_offset": 6996,
+      "slot_relative_offset": 166740,
+      "length": 154
+    },
+    "029e664": {
+      "package_relative_offset": 7150,
+      "slot_relative_offset": 166894,
+      "length": 168
+    },
+    "029e6ec": {
+      "package_relative_offset": 7318,
+      "slot_relative_offset": 167062,
+      "length": 78
+    },
+    "029e726": {
+      "package_relative_offset": 7396,
+      "slot_relative_offset": 167140,
+      "length": 148
+    },
+    "029e79a": {
+      "package_relative_offset": 7544,
+      "slot_relative_offset": 167288,
+      "length": 189
+    },
+    "029e82d": {
+      "package_relative_offset": 7733,
+      "slot_relative_offset": 167477,
+      "length": 121
+    },
+    "029e898": {
+      "package_relative_offset": 7854,
+      "slot_relative_offset": 167598,
+      "length": 212
+    },
+    "029e946": {
+      "package_relative_offset": 8066,
+      "slot_relative_offset": 167810,
+      "length": 89
+    },
+    "029e98d": {
+      "package_relative_offset": 8155,
+      "slot_relative_offset": 167899,
+      "length": 124
+    },
+    "029e9eb": {
+      "package_relative_offset": 8279,
+      "slot_relative_offset": 168023,
+      "length": 149
+    },
+    "029ea6a": {
+      "package_relative_offset": 8428,
+      "slot_relative_offset": 168172,
+      "length": 188
+    },
+    "029eaf9": {
+      "package_relative_offset": 8616,
+      "slot_relative_offset": 168360,
+      "length": 70
+    },
+    "029eb35": {
+      "package_relative_offset": 8686,
+      "slot_relative_offset": 168430,
+      "length": 163
+    },
+    "029ebad": {
+      "package_relative_offset": 8849,
+      "slot_relative_offset": 168593,
+      "length": 175
+    },
+    "029ec3d": {
+      "package_relative_offset": 9024,
+      "slot_relative_offset": 168768,
+      "length": 368
+    },
+    "029ed53": {
+      "package_relative_offset": 9392,
+      "slot_relative_offset": 169136,
+      "length": 221
+    },
+    "029ee13": {
+      "package_relative_offset": 9613,
+      "slot_relative_offset": 169357,
+      "length": 190
+    },
+    "029eeaf": {
+      "package_relative_offset": 9803,
+      "slot_relative_offset": 169547,
+      "length": 274
+    },
+    "02a08ad": {
+      "package_relative_offset": 10077,
+      "slot_relative_offset": 169821,
+      "length": 196
+    },
+    "02a0946": {
+      "package_relative_offset": 8066,
+      "slot_relative_offset": 167810,
+      "length": 89
+    },
+    "02a098d": {
+      "package_relative_offset": 8155,
+      "slot_relative_offset": 167899,
+      "length": 124
+    },
+    "02a09eb": {
+      "package_relative_offset": 8279,
+      "slot_relative_offset": 168023,
+      "length": 149
+    },
+    "02a0a6a": {
+      "package_relative_offset": 8428,
+      "slot_relative_offset": 168172,
+      "length": 188
+    },
+    "02a0af9": {
+      "package_relative_offset": 8616,
+      "slot_relative_offset": 168360,
+      "length": 70
+    },
+    "02a0b35": {
+      "package_relative_offset": 8686,
+      "slot_relative_offset": 168430,
+      "length": 163
+    },
+    "02a0bad": {
+      "package_relative_offset": 8849,
+      "slot_relative_offset": 168593,
+      "length": 175
+    },
+    "02a0c3d": {
+      "package_relative_offset": 9024,
+      "slot_relative_offset": 168768,
+      "length": 368
+    },
+    "02a0d53": {
+      "package_relative_offset": 9392,
+      "slot_relative_offset": 169136,
+      "length": 221
+    },
+    "02a0e13": {
+      "package_relative_offset": 9613,
+      "slot_relative_offset": 169357,
+      "length": 190
+    },
+    "02a0eaf": {
+      "package_relative_offset": 9803,
+      "slot_relative_offset": 169547,
+      "length": 274
+    },
+    "02bae28": {
+      "package_relative_offset": 10273,
+      "slot_relative_offset": 170017,
+      "length": 279
+    },
+    "02baf0c": {
+      "package_relative_offset": 10552,
+      "slot_relative_offset": 170296,
+      "length": 25
+    },
+    "02baf53": {
+      "package_relative_offset": 10577,
+      "slot_relative_offset": 170321,
+      "length": 667
+    },
+    "02bb127": {
+      "package_relative_offset": 11244,
+      "slot_relative_offset": 170988,
+      "length": 20
+    },
+    "02bb146": {
+      "package_relative_offset": 11264,
+      "slot_relative_offset": 171008,
+      "length": 129
+    },
+    "02bb1b0": {
+      "package_relative_offset": 11393,
+      "slot_relative_offset": 171137,
+      "length": 144
+    },
+    "02bb212": {
+      "package_relative_offset": 11537,
+      "slot_relative_offset": 171281,
+      "length": 205
+    },
+    "02bb2b9": {
+      "package_relative_offset": 11742,
+      "slot_relative_offset": 171486,
+      "length": 161
+    },
+    "02bb33a": {
+      "package_relative_offset": 11903,
+      "slot_relative_offset": 171647,
+      "length": 89
+    },
+    "02bb382": {
+      "package_relative_offset": 11992,
+      "slot_relative_offset": 171736,
+      "length": 73
+    },
+    "02bb3b9": {
+      "package_relative_offset": 12065,
+      "slot_relative_offset": 171809,
+      "length": 79
+    },
+    "02bb3f6": {
+      "package_relative_offset": 12144,
+      "slot_relative_offset": 171888,
+      "length": 75
+    },
+    "02bb42c": {
+      "package_relative_offset": 12288,
+      "slot_relative_offset": 172032,
+      "length": 70
+    },
+    "02bb46b": {
+      "package_relative_offset": 12358,
+      "slot_relative_offset": 172102,
+      "length": 75
+    },
+    "02bb4af": {
+      "package_relative_offset": 12433,
+      "slot_relative_offset": 172177,
+      "length": 107
+    },
+    "02bb503": {
+      "package_relative_offset": 12540,
+      "slot_relative_offset": 172284,
+      "length": 70
+    },
+    "02bb53c": {
+      "package_relative_offset": 12610,
+      "slot_relative_offset": 172354,
+      "length": 63
+    },
+    "02bb589": {
+      "package_relative_offset": 12673,
+      "slot_relative_offset": 172417,
+      "length": 41
+    },
+    "02bb5ad": {
+      "package_relative_offset": 12714,
+      "slot_relative_offset": 172458,
+      "length": 15
+    },
+    "02bb5c1": {
+      "package_relative_offset": 12729,
+      "slot_relative_offset": 172473,
+      "length": 16
+    },
+    "02bb5df": {
+      "package_relative_offset": 12745,
+      "slot_relative_offset": 172489,
+      "length": 29
+    },
+    "02bb60e": {
+      "package_relative_offset": 12673,
+      "slot_relative_offset": 172417,
+      "length": 41
+    },
+    "02bb632": {
+      "package_relative_offset": 12774,
+      "slot_relative_offset": 172518,
+      "length": 32
+    },
+    "02bb647": {
+      "package_relative_offset": 12729,
+      "slot_relative_offset": 172473,
+      "length": 16
+    },
+    "02bb665": {
+      "package_relative_offset": 12806,
+      "slot_relative_offset": 172550,
+      "length": 70
+    },
+    "02bb69b": {
+      "package_relative_offset": 12876,
+      "slot_relative_offset": 172620,
+      "length": 20
+    },
+    "02bb6b3": {
+      "package_relative_offset": 12876,
+      "slot_relative_offset": 172620,
+      "length": 20
+    },
+    "02bb6cb": {
+      "package_relative_offset": 12876,
+      "slot_relative_offset": 172620,
+      "length": 20
+    },
+    "02bb6e3": {
+      "package_relative_offset": 12876,
+      "slot_relative_offset": 172620,
+      "length": 20
+    },
+    "02bb6fb": {
+      "package_relative_offset": 12876,
+      "slot_relative_offset": 172620,
+      "length": 20
+    },
+    "02bb713": {
+      "package_relative_offset": 12876,
+      "slot_relative_offset": 172620,
+      "length": 20
+    },
+    "02bb72b": {
+      "package_relative_offset": 12876,
+      "slot_relative_offset": 172620,
+      "length": 20
+    },
+    "02bb7e9": {
+      "package_relative_offset": 12896,
+      "slot_relative_offset": 172640,
+      "length": 123
+    },
+    "02bb852": {
+      "package_relative_offset": 13019,
+      "slot_relative_offset": 172763,
+      "length": 122
+    },
+    "02bb8c4": {
+      "package_relative_offset": 13141,
+      "slot_relative_offset": 172885,
+      "length": 131
+    },
+    "02bb92b": {
+      "package_relative_offset": 13272,
+      "slot_relative_offset": 173016,
+      "length": 115
+    },
+    "02bb998": {
+      "package_relative_offset": 13387,
+      "slot_relative_offset": 173131,
+      "length": 122
+    },
+    "02bb9fe": {
+      "package_relative_offset": 13509,
+      "slot_relative_offset": 173253,
+      "length": 121
+    },
+    "02bba61": {
+      "package_relative_offset": 13630,
+      "slot_relative_offset": 173374,
+      "length": 126
+    },
+    "02bbac4": {
+      "package_relative_offset": 13756,
+      "slot_relative_offset": 173500,
+      "length": 127
+    },
+    "02bbb17": {
+      "package_relative_offset": 13883,
+      "slot_relative_offset": 173627,
+      "length": 53
+    },
+    "02bbb46": {
+      "package_relative_offset": 13936,
+      "slot_relative_offset": 173680,
+      "length": 570
+    },
+    "02bbda2": {
+      "package_relative_offset": 14506,
+      "slot_relative_offset": 174250,
+      "length": 36
+    },
+    "02bbdee": {
+      "package_relative_offset": 14542,
+      "slot_relative_offset": 174286,
+      "length": 119
+    },
+    "02bbe53": {
+      "package_relative_offset": 14661,
+      "slot_relative_offset": 174405,
+      "length": 51
+    },
+    "02bbe7a": {
+      "package_relative_offset": 14712,
+      "slot_relative_offset": 174456,
+      "length": 41
+    },
+    "02bbecd": {
+      "package_relative_offset": 14753,
+      "slot_relative_offset": 174497,
+      "length": 79
+    },
+    "02bbf0c": {
+      "package_relative_offset": 14832,
+      "slot_relative_offset": 174576,
+      "length": 35
+    },
+    "02bbf3b": {
+      "package_relative_offset": 14867,
+      "slot_relative_offset": 174611,
+      "length": 77
+    },
+    "02bbf73": {
+      "package_relative_offset": 14944,
+      "slot_relative_offset": 174688,
+      "length": 57
+    },
+    "02bbf9f": {
+      "package_relative_offset": 15001,
+      "slot_relative_offset": 174745,
+      "length": 86
+    },
+    "02bbfe5": {
+      "package_relative_offset": 15087,
+      "slot_relative_offset": 174831,
+      "length": 71
+    },
+    "02bc018": {
+      "package_relative_offset": 15158,
+      "slot_relative_offset": 174902,
+      "length": 315
+    },
+    "02bc0f4": {
+      "package_relative_offset": 15473,
+      "slot_relative_offset": 175217,
+      "length": 20
+    },
+    "02bc10a": {
+      "package_relative_offset": 15493,
+      "slot_relative_offset": 175237,
+      "length": 20
+    },
+    "02bc12b": {
+      "package_relative_offset": 15513,
+      "slot_relative_offset": 175257,
+      "length": 22
+    },
+    "02bc143": {
+      "package_relative_offset": 15535,
+      "slot_relative_offset": 175279,
+      "length": 19
+    },
+    "02bc15a": {
+      "package_relative_offset": 15554,
+      "slot_relative_offset": 175298,
+      "length": 99
+    },
+    "02bc1ae": {
+      "package_relative_offset": 15653,
+      "slot_relative_offset": 175397,
+      "length": 115
+    },
+    "02bc203": {
+      "package_relative_offset": 15768,
+      "slot_relative_offset": 175512,
+      "length": 55
+    },
+    "02bc230": {
+      "package_relative_offset": 15823,
+      "slot_relative_offset": 175567,
+      "length": 141
+    },
+    "02bc29f": {
+      "package_relative_offset": 15964,
+      "slot_relative_offset": 175708,
+      "length": 80
+    },
+    "02bc2e4": {
+      "package_relative_offset": 16044,
+      "slot_relative_offset": 175788,
+      "length": 70
+    },
+    "02bc320": {
+      "package_relative_offset": 16114,
+      "slot_relative_offset": 175858,
+      "length": 78
+    },
+    "02bc363": {
+      "package_relative_offset": 16192,
+      "slot_relative_offset": 175936,
+      "length": 63
+    },
+    "02bc38f": {
+      "package_relative_offset": 16255,
+      "slot_relative_offset": 175999,
+      "length": 60
+    },
+    "02bc3c1": {
+      "package_relative_offset": 16315,
+      "slot_relative_offset": 176059,
+      "length": 25
+    },
+    "02bc3d7": {
+      "package_relative_offset": 16340,
+      "slot_relative_offset": 176084,
+      "length": 59
+    },
+    "02bc402": {
+      "package_relative_offset": 16399,
+      "slot_relative_offset": 176143,
+      "length": 55
+    },
+    "02bc438": {
+      "package_relative_offset": 16454,
+      "slot_relative_offset": 176198,
+      "length": 34
+    },
+    "02bc44f": {
+      "package_relative_offset": 16488,
+      "slot_relative_offset": 176232,
+      "length": 51
+    },
+    "02bc47d": {
+      "package_relative_offset": 16539,
+      "slot_relative_offset": 176283,
+      "length": 93
+    },
+    "02bc4c8": {
+      "package_relative_offset": 16632,
+      "slot_relative_offset": 176376,
+      "length": 60
+    },
+    "02bc509": {
+      "package_relative_offset": 16692,
+      "slot_relative_offset": 176436,
+      "length": 77
+    },
+    "02bc53e": {
+      "package_relative_offset": 16769,
+      "slot_relative_offset": 176513,
+      "length": 70
+    },
+    "02bc574": {
+      "package_relative_offset": 16839,
+      "slot_relative_offset": 176583,
+      "length": 25
+    },
+    "02bc5a8": {
+      "package_relative_offset": 16864,
+      "slot_relative_offset": 176608,
+      "length": 30
+    },
+    "02bc604": {
+      "package_relative_offset": 16894,
+      "slot_relative_offset": 176638,
+      "length": 38
+    },
+    "02bc61e": {
+      "package_relative_offset": 16932,
+      "slot_relative_offset": 176676,
+      "length": 35
+    },
+    "02bc645": {
+      "package_relative_offset": 16864,
+      "slot_relative_offset": 176608,
+      "length": 30
+    },
+    "02bc664": {
+      "package_relative_offset": 16967,
+      "slot_relative_offset": 176711,
+      "length": 37
+    },
+    "02bc67d": {
+      "package_relative_offset": 17004,
+      "slot_relative_offset": 176748,
+      "length": 35
+    },
+    "02bc6e5": {
+      "package_relative_offset": 17039,
+      "slot_relative_offset": 176783,
+      "length": 22
+    },
+    "02bc6fa": {
+      "package_relative_offset": 17061,
+      "slot_relative_offset": 176805,
+      "length": 40
+    },
+    "02bc712": {
+      "package_relative_offset": 17101,
+      "slot_relative_offset": 176845,
+      "length": 85
+    },
+    "02bc74b": {
+      "package_relative_offset": 17186,
+      "slot_relative_offset": 176930,
+      "length": 39
+    },
+    "02bc7bb": {
+      "package_relative_offset": 17225,
+      "slot_relative_offset": 176969,
+      "length": 64
+    },
+    "02bc7f3": {
+      "package_relative_offset": 17289,
+      "slot_relative_offset": 177033,
+      "length": 27
+    },
+    "02bc80b": {
+      "package_relative_offset": 17316,
+      "slot_relative_offset": 177060,
+      "length": 17
+    },
+    "02bc82a": {
+      "package_relative_offset": 17333,
+      "slot_relative_offset": 177077,
+      "length": 25
+    },
+    "02bc841": {
+      "package_relative_offset": 17358,
+      "slot_relative_offset": 177102,
+      "length": 29
+    },
+    "02bc85b": {
+      "package_relative_offset": 17387,
+      "slot_relative_offset": 177131,
+      "length": 17
+    },
+    "02bc87a": {
+      "package_relative_offset": 17333,
+      "slot_relative_offset": 177077,
+      "length": 25
+    },
+    "02bc891": {
+      "package_relative_offset": 17358,
+      "slot_relative_offset": 177102,
+      "length": 29
+    },
+    "02bc8b5": {
+      "package_relative_offset": 17404,
+      "slot_relative_offset": 177148,
+      "length": 27
+    },
+    "02bc8d5": {
+      "package_relative_offset": 17333,
+      "slot_relative_offset": 177077,
+      "length": 25
+    },
+    "02bc8ea": {
+      "package_relative_offset": 17431,
+      "slot_relative_offset": 177175,
+      "length": 69
+    },
+    "02bc91b": {
+      "package_relative_offset": 17500,
+      "slot_relative_offset": 177244,
+      "length": 69
+    },
+    "02bc952": {
+      "package_relative_offset": 17569,
+      "slot_relative_offset": 177313,
+      "length": 179
+    },
+    "02bc9d5": {
+      "package_relative_offset": 17748,
+      "slot_relative_offset": 177492,
+      "length": 28
+    },
+    "02bca07": {
+      "package_relative_offset": 17776,
+      "slot_relative_offset": 177520,
+      "length": 205
+    },
+    "02bcaef": {
+      "package_relative_offset": 17981,
+      "slot_relative_offset": 177725,
+      "length": 45
+    },
+    "02bcb12": {
+      "package_relative_offset": 18026,
+      "slot_relative_offset": 177770,
+      "length": 39
+    },
+    "02bcb2b": {
+      "package_relative_offset": 18065,
+      "slot_relative_offset": 177809,
+      "length": 28
+    },
+    "02bcb4c": {
+      "package_relative_offset": 18065,
+      "slot_relative_offset": 177809,
+      "length": 28
+    },
+    "02bcb71": {
+      "package_relative_offset": 18093,
+      "slot_relative_offset": 177837,
+      "length": 44
+    },
+    "02bee28": {
+      "package_relative_offset": 10273,
+      "slot_relative_offset": 170017,
+      "length": 279
+    },
+    "02bef0c": {
+      "package_relative_offset": 10552,
+      "slot_relative_offset": 170296,
+      "length": 25
+    },
+    "02c0e28": {
+      "package_relative_offset": 10273,
+      "slot_relative_offset": 170017,
+      "length": 279
+    },
+    "02c0f0c": {
+      "package_relative_offset": 10552,
+      "slot_relative_offset": 170296,
+      "length": 25
+    }
+  }
+}

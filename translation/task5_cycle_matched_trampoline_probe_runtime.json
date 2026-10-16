@@ -1,0 +1,23 @@
+{
+  "format": "TASK5-CYCLE-MATCHED-TRAMPOLINE-PROBE-RUNTIME",
+  "version": 1,
+  "task": 5,
+  "date": "2026-07-17",
+  "status": "FAIL",
+  "decision": "EXTRA_JMP_INSTRUCTION_COUNT_HYPOTHESIS_REJECTED",
+  "evidence": {
+    "user_observation": "멈춰",
+    "trace": "H:/BizHawk/Tools/Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_task5_c800_isolation_probe.log",
+    "trace_sha256": "56826B193FFC17735968DB3C9358DED485FCF65C8A2E0D21995DF417B7A02B7D",
+    "trace_last_write": "2026-07-17T20:44:11+09:00",
+    "trace_lines": 10002
+  },
+  "observations": {
+    "field_hook_entries_retained": 0,
+    "first_bad_pointer_sequence": "4E01 selects index 00; 4E05/4E0A load pointer 0000 into D8/D9",
+    "bad_length": "4E0F reads 00; TAX gives X=00; JSR 4E6B enters a decrement-before-zero loop",
+    "trace_limitation": "The 10,002-line trace retained only the final Memo interval; the earlier field entry was overwritten"
+  },
+  "conclusion": "Matching the original one-JSR/one-JMP instruction count does not prevent the hang. The remaining scope is the changed call target and execution/fetch through C737 module RAM.",
+  "next": "Remove C737 entirely and call the same BIOS implementation at F124 directly"
+}

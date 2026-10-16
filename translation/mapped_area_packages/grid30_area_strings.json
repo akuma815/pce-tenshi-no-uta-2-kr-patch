@@ -1,0 +1,180 @@
+{
+  "format": "KAP1",
+  "version": 1,
+  "physical_grid": 30,
+  "lba": 3042,
+  "logical_entries": [
+    30
+  ],
+  "original_load_sectors": 83,
+  "package_area_offset": 169984,
+  "package_bytes": 5730,
+  "needed_sectors": 86,
+  "unique_strings": 32,
+  "source_redirects": {
+    "0600020": {
+      "package_relative_offset": 3061,
+      "area_relative_offset": 173045,
+      "length": 190
+    },
+    "06000af": {
+      "package_relative_offset": 4780,
+      "area_relative_offset": 174764,
+      "length": 138
+    },
+    "0600123": {
+      "package_relative_offset": 1521,
+      "area_relative_offset": 171505,
+      "length": 249
+    },
+    "06001e8": {
+      "package_relative_offset": 1263,
+      "area_relative_offset": 171247,
+      "length": 258
+    },
+    "06002b7": {
+      "package_relative_offset": 2674,
+      "area_relative_offset": 172658,
+      "length": 197
+    },
+    "0600341": {
+      "package_relative_offset": 2260,
+      "area_relative_offset": 172244,
+      "length": 210
+    },
+    "06004c0": {
+      "package_relative_offset": 5518,
+      "area_relative_offset": 175502,
+      "length": 72
+    },
+    "0600504": {
+      "package_relative_offset": 5358,
+      "area_relative_offset": 175342,
+      "length": 82
+    },
+    "060054d": {
+      "package_relative_offset": 3628,
+      "area_relative_offset": 173612,
+      "length": 181
+    },
+    "06005d7": {
+      "package_relative_offset": 4329,
+      "area_relative_offset": 174313,
+      "length": 154
+    },
+    "060064d": {
+      "package_relative_offset": 4161,
+      "area_relative_offset": 174145,
+      "length": 168
+    },
+    "06006d5": {
+      "package_relative_offset": 5440,
+      "area_relative_offset": 175424,
+      "length": 78
+    },
+    "060070f": {
+      "package_relative_offset": 4632,
+      "area_relative_offset": 174616,
+      "length": 148
+    },
+    "0600783": {
+      "package_relative_offset": 3251,
+      "area_relative_offset": 173235,
+      "length": 189
+    },
+    "0600816": {
+      "package_relative_offset": 5042,
+      "area_relative_offset": 175026,
+      "length": 121
+    },
+    "0600881": {
+      "package_relative_offset": 2048,
+      "area_relative_offset": 172032,
+      "length": 212
+    },
+    "060092f": {
+      "package_relative_offset": 5269,
+      "area_relative_offset": 175253,
+      "length": 89
+    },
+    "0600976": {
+      "package_relative_offset": 4918,
+      "area_relative_offset": 174902,
+      "length": 124
+    },
+    "06009d4": {
+      "package_relative_offset": 4483,
+      "area_relative_offset": 174467,
+      "length": 149
+    },
+    "0600a53": {
+      "package_relative_offset": 3440,
+      "area_relative_offset": 173424,
+      "length": 188
+    },
+    "0600ae2": {
+      "package_relative_offset": 5590,
+      "area_relative_offset": 175574,
+      "length": 70
+    },
+    "0600b1e": {
+      "package_relative_offset": 3809,
+      "area_relative_offset": 173793,
+      "length": 177
+    },
+    "0600b9a": {
+      "package_relative_offset": 3986,
+      "area_relative_offset": 173970,
+      "length": 175
+    },
+    "0600c2a": {
+      "package_relative_offset": 32,
+      "area_relative_offset": 170016,
+      "length": 368
+    },
+    "0600d40": {
+      "package_relative_offset": 1770,
+      "area_relative_offset": 171754,
+      "length": 225
+    },
+    "0600dfc": {
+      "package_relative_offset": 2871,
+      "area_relative_offset": 172855,
+      "length": 190
+    },
+    "0600e98": {
+      "package_relative_offset": 989,
+      "area_relative_offset": 170973,
+      "length": 274
+    },
+    "061a226": {
+      "package_relative_offset": 5660,
+      "area_relative_offset": 175644,
+      "length": 70
+    },
+    "061a269": {
+      "package_relative_offset": 2470,
+      "area_relative_offset": 172454,
+      "length": 204
+    },
+    "061a32c": {
+      "package_relative_offset": 713,
+      "area_relative_offset": 170697,
+      "length": 276
+    },
+    "061a3f9": {
+      "package_relative_offset": 400,
+      "area_relative_offset": 170384,
+      "length": 313
+    },
+    "061a7a9": {
+      "package_relative_offset": 5163,
+      "area_relative_offset": 175147,
+      "length": 106
+    }
+  },
+  "source_live_range": [
+    6230016,
+    6400000
+  ]
+}

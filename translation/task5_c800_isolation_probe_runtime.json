@@ -1,0 +1,30 @@
+{
+  "format": "TASK5-C800-ISOLATION-PROBE-RUNTIME",
+  "version": 1,
+  "task": 5,
+  "date": "2026-07-17",
+  "status": "FAIL",
+  "decision": "C800_GLYPH_PAGE_HYPOTHESIS_REJECTED",
+  "baseline": {
+    "cue": "Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_task5_c800_isolation_probe.cue",
+    "bin_sha256": "D42C321C202B828CD1700BFE8EDF162B2ABAA809B1A6422729E9DDD9A76B9038"
+  },
+  "evidence": {
+    "screenshots": [
+      "C:/Users/akuma/AppData/Local/Temp/codex-clipboard-80561fa0-f0e6-40d8-a1d1-75549f925c8c.png",
+      "C:/Users/akuma/AppData/Local/Temp/codex-clipboard-89a2383d-f879-4061-b667-bb7875faa8f5.png"
+    ],
+    "trace": "H:/BizHawk/Tools/Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_task5_c800_isolation_probe.log",
+    "trace_lines": 10002
+  },
+  "observations": {
+    "memo_entry": "FAIL: identical unresponsive state with C800-C8FF restored to original FF",
+    "stopped_pc": "0x4EA0",
+    "overlay_mpr": "MPR5=96, MPR6=7F",
+    "hook_pc_occurrences": 0,
+    "copy_loop": "PC 4E6C and 4EB9 each occur 241 times in the captured trace",
+    "first_bad_state": "LDA ($D8) at 4E0F returns 00; TAX sets X=00; JSR 4E6B enters a loop that DEXes before its BNE zero test, causing X to underflow to FF"
+  },
+  "conclusion": "The non-FF C800-C8FF glyph page is not necessary for the Memo hang. The trace captures a downstream zero-length copy underflow in the Memo overlay, not execution of the field hook.",
+  "next": "Use a text-only EF58-EF5F probe to test whether Memo's separate consumer rejects the stored field-local custom codes"
+}

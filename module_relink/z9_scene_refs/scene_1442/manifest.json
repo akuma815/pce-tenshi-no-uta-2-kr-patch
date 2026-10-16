@@ -1,0 +1,22 @@
+{
+ "format": "ZIRIA-Z9-SCENE-DIALOGUE-REFS",
+ "version": 1,
+ "scene_lba": 1442,
+ "sector_count": 96,
+ "loader_reference": {
+  "raw_hex": "0005A260",
+  "status": "PASS"
+ },
+ "records": 270,
+ "reference_kinds": {
+  "INLINE_OPCODE_02": 246,
+  "INLINE_OPCODE_03": 14,
+  "INLINE_OPCODE_14": 3,
+  "MEMO_TABLE_ROW": 1,
+  "MEMO_POINTER_TARGET": 6
+ },
+ "unclassified": 0,
+ "status": "PASS",
+ "catalog_sha256": "6931BAB451B2AB7CB9FAF1CEA63BB6D525D2952362D6684202F4F94BFF993807",
+ "note": "trace 보강·boundary repair 는 씬별 후속 단계 (필드 Z8.4/8.6 대응)"
+}

@@ -1,0 +1,92 @@
+{
+  "여": {
+    "sjis": "989E",
+    "glyph_index": 3460,
+    "bios_offset": 258888
+  },
+  "어": {
+    "sjis": "989D",
+    "glyph_index": 3459,
+    "bios_offset": 258870
+  },
+  "시": {
+    "sjis": "989C",
+    "glyph_index": 3458,
+    "bios_offset": 258852
+  },
+  "온": {
+    "sjis": "989B",
+    "glyph_index": 3457,
+    "bios_offset": 258834
+  },
+  "준": {
+    "sjis": "989A",
+    "glyph_index": 3456,
+    "bios_offset": 258816
+  },
+  "비": {
+    "sjis": "9899",
+    "glyph_index": 3455,
+    "bios_offset": 258798
+  },
+  "는": {
+    "sjis": "9898",
+    "glyph_index": 3454,
+    "bios_offset": 258780
+  },
+  "다": {
+    "sjis": "9897",
+    "glyph_index": 3453,
+    "bios_offset": 258762
+  },
+  "됐": {
+    "sjis": "9896",
+    "glyph_index": 3452,
+    "bios_offset": 258744
+  },
+  "나": {
+    "sjis": "9895",
+    "glyph_index": 3451,
+    "bios_offset": 258726
+  },
+  "페": {
+    "sjis": "9894",
+    "glyph_index": 3450,
+    "bios_offset": 258708
+  },
+  "이": {
+    "sjis": "9893",
+    "glyph_index": 3449,
+    "bios_offset": 258690
+  },
+  "트": {
+    "sjis": "9892",
+    "glyph_index": 3448,
+    "bios_offset": 258672
+  },
+  "에": {
+    "sjis": "9891",
+    "glyph_index": 3447,
+    "bios_offset": 258654
+  },
+  "라": {
+    "sjis": "9890",
+    "glyph_index": 3446,
+    "bios_offset": 258636
+  },
+  "니": {
+    "sjis": "988F",
+    "glyph_index": 3445,
+    "bios_offset": 258618
+  },
+  "뭐": {
+    "sjis": "988E",
+    "glyph_index": 3444,
+    "bios_offset": 258600
+  },
+  "가": {
+    "sjis": "988D",
+    "glyph_index": 3443,
+    "bios_offset": 258582
+  }
+}

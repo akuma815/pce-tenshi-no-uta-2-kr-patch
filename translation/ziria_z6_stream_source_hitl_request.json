@@ -1,0 +1,41 @@
+{
+  "format": "ZIRIA-HITL-REQUEST",
+  "version": 1,
+  "request_id": "Z6-STREAM-SOURCE-TRACE-002",
+  "state": "COMPLETED",
+  "baseline": {
+    "build": "Z5 battle one-glyph v1",
+    "manifest": "translation/ziria_z5_battle_oneglyph_v1_manifest.json",
+    "bin_sha256": "7E133A82ECA649535534C9FF3D563BA801DDBBB6625014542A430901E3C0932A"
+  },
+  "reason": "The transition trace resolved all families to the shared resident renderer, but GETFNT codes are produced from compressed/token streams. Exact reader addresses are required before modifying source bytes.",
+  "setup": "Boot without Lua; after the first field appears, manually load tools/trace_ziria_z6_stream_sources.lua.",
+  "route": [
+    "first dialogue",
+    "Memo entry and return",
+    "first battle attack and field return",
+    "tower entry after battle",
+    "tower portrait/event dialogue"
+  ],
+  "capture": [
+    "$4293 main stream source",
+    "$42DE overlay stream source",
+    "$42AB pointer-52 source",
+    "$42BA pointer-54 source",
+    "GETFNT output code",
+    "last mode-06 CD LBA and derived ISO offset"
+  ],
+  "evidence": {
+    "trace": "translation/ziria_z6_stream_source_trace.tsv",
+    "status": "translation/ziria_z6_stream_source_status.txt"
+  },
+  "result": {
+    "status": "PASS",
+    "records": 10564,
+    "stream_records": 8957,
+    "getfnt_records": 1602,
+    "cd_records": 5,
+    "resolved_sources": ["0x011FA17", "0x05BA0EC", "0x05BA1AF", "0x05BDA17"]
+  },
+  "next": "Build the fixed-length four-source Z6 integration gate and run the seven-route regression."
+}

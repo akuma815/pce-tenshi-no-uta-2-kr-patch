@@ -1,0 +1,59 @@
+{
+ "format": "BTRACK-B29-HOOK-BUILD",
+ "runtime_status": "PENDING",
+ "base": "b17 + 리더 v4($55 창 내 처리) + 조사 루틴(카드 $1F $79A0/$7AC3) + 뱅크 $5F 받침표",
+ "josa": {
+  "mark": 160,
+  "bank": 95,
+  "code_a": {
+   "addr": 31134,
+   "bytes": 79,
+   "hex": "daaaadf5c8d0298a29fcc9a0f02c8ac9a79004c9de9014c980901cc9a09004c9e090148df2c8eef5c8800ca9948df2c88a8df3c89cf5c8fa18608a29030aaa432048a95f53204c00ae685320fa1860"
+  },
+  "gate": {
+   "addr": 44544,
+   "bytes": 54,
+   "hex": "8a48babd0a21c9f0d028bd0b21c992d021adf2c8c988901ac995b0161869188501adf3c88500b200290185006805004cc37a684ce779",
+   "printer_ret": 37616
+  },
+  "code_b": {
+   "addr": 31427,
+   "bytes": 27,
+   "hex": "0a0a0a8dfbc8a9ad8dfcc8a95f8dfac8a9018df9c8685320fa3860"
+  },
+  "scratch": {
+   "LASTHI": 51442,
+   "LASTLO": 51443,
+   "EXPECT": 51445
+  },
+  "types": [
+   [
+    "은",
+    "는"
+   ],
+   [
+    "이",
+    "가"
+   ],
+   [
+    "을",
+    "를"
+   ],
+   [
+    "과",
+    "와"
+   ]
+  ]
+ },
+ "menu_stage": {
+  "patches": 571,
+  "patched_bytes": 77889
+ },
+ "title_logo": {
+  "cells_patched": 30
+ },
+ "cardgame_tiles": {
+  "patches": 450,
+  "source": "btrack_b29_cardgame_tiles.json"
+ }
+}

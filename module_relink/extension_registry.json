@@ -1,0 +1,19 @@
+{
+  "format": "ZIRIA-EXTENSION-REGISTRY",
+  "version": 1,
+  "status": "LOCKED_EMPTY_AT_Z3",
+  "approved_allocations": [],
+  "transaction_rule": "A non-zero section is legal only when sector allocation and the owning loader's table patch/load condition are approved in the same registry entry.",
+  "prohibited": [
+    "auto_sidecar",
+    "fill_run",
+    "implicit_gap",
+    "shared_scene_bank",
+    "work_ram"
+  ],
+  "scene_replacement_window": {
+    "physical_banks": "0x68-0x7F",
+    "size_bytes": 196608,
+    "persistent_across_family_transition": false
+  }
+}

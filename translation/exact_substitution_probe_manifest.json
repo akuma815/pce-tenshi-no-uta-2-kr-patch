@@ -1,0 +1,48 @@
+{
+  "format": "EXACT-TWO-BYTE-SUBSTITUTION-PROBE",
+  "runtime_status": "PASS",
+  "runtime_validated_date": "2026-07-17",
+  "runtime_observation": "System Card startup, game graphics, first dialogue, and the following page transition remained normal. The first body displayed the replacement Hangul glyph followed by the untouched Japanese tail, and the original 出 in the next page displayed the same replacement glyph.",
+  "runtime_conclusion": "Exact equal-byte substitution is valid for the proven 8F6F/index-1722 slot. ASCII 0x20 padding is not valid for this dialogue renderer, and additional BIOS slots remain unproven.",
+  "purpose": "Validate Hangul substitution without introducing any padding byte.",
+  "bios": {
+    "path": "G:\\Downloads\\Tenshi no Uta II - Datenshi no Sentaku (Japan)\\SystemCard3_one_glyph_probe.pce",
+    "sha256": "212f3c96a4010bf06a13ceffd8dec92c00639188287f18376006cba67ebb8198",
+    "new_writes": 0
+  },
+  "game_write": {
+    "master_row_id": "iso:010B9E7",
+    "iso_offset": 1096178,
+    "expected_hex": "6F2D",
+    "replacement_hex": "8F6F",
+    "original_body_hex": "6F2D8141BCB5DD",
+    "result_body_hex": "8F6F8141BCB5DD",
+    "expected_visible_text": "가、シオン"
+  },
+  "safety": {
+    "game_expected_writes": 1,
+    "game_diff_bytes": 2,
+    "padding_bytes_added": 0,
+    "control_bytes_changed": 0,
+    "speaker_bytes_changed": 0,
+    "terminator_changed": false
+  },
+  "diff_ranges": {
+    "game_physical": [
+      [
+        9010658,
+        9010660
+      ]
+    ]
+  },
+  "outputs": {
+    "bin": "G:\\Downloads\\Tenshi no Uta II - Datenshi no Sentaku (Japan)\\Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_exact_substitution_probe.bin",
+    "bin_sha256": "73a7513f633118bebab1a741bc06e8c47c5d75bb134b79f7cc7ba1ea469e8d17",
+    "cue": "G:\\Downloads\\Tenshi no Uta II - Datenshi no Sentaku (Japan)\\Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_exact_substitution_probe.cue",
+    "bizhawk_config": "G:\\Downloads\\Tenshi no Uta II - Datenshi no Sentaku (Japan)\\translation\\one_glyph_bizhawk_config.ini"
+  },
+  "pass_criteria": "Normal graphics/page transition and first body reads 가、シオン.",
+  "fail_criteria": "Global corruption, page overlap, or failure to display 가.",
+  "next_if_pass": "Adopt exact encoded-byte-budget substitution; do not use ASCII padding.",
+  "next_if_fail": "Trace the page-clear state; do not expand translation or BIOS mapping."
+}

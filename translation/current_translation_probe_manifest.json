@@ -1,0 +1,178 @@
+{
+  "format": "CURRENT-TRANSLATION-MODE1-FIRST-DIALOGUE-PROBE",
+  "runtime_status": "FAIL",
+  "purpose": "Verify multi-glyph Hangul output using the current master translation.",
+  "input": {
+    "original_bin_sha256": "d16d29eb80b1b74a2ec929924349256b50b8f9f5c9a3fa37b6fcc08b059b22c5",
+    "original_bios_sha1": "79f5ff55dd10187c7fd7b8daab0b3ffbd1f56a2c",
+    "master_row_id": "iso:010B9E7",
+    "master_status": "verified_corrected_boundary",
+    "source_iso_offset": 1096167
+  },
+  "safety": {
+    "font_mode": 1,
+    "font_offset": 196608,
+    "glyph_bytes": 18,
+    "protected_indices_from_master_raw_hex": 1647,
+    "speaker_runs_changed": 0,
+    "control_bytes_changed": 0,
+    "game_expected_writes": 3,
+    "game_diff_bytes": 39,
+    "bios_expected_writes": 18,
+    "bios_diff_bytes": 324
+  },
+  "body_runs": [
+    {
+      "iso_offset": 1096178,
+      "capacity": 7,
+      "translation": "여어、 시온",
+      "kept_translation": "여어、 ",
+      "expected_hex": "6F2D8141BCB5DD",
+      "replacement_hex": "989E989D814120"
+    },
+    {
+      "iso_offset": 1096196,
+      "capacity": 16,
+      "translation": "준비는 다 됐나, 페이트",
+      "kept_translation": "준비는 다 됐나, ",
+      "expected_hex": "8E789378568F6F9788465532CCAAB2C4",
+      "replacement_hex": "989A9899989820989720989698952C20"
+    },
+    {
+      "iso_offset": 1096224,
+      "capacity": 16,
+      "translation": "에、 준비라니 뭐가？",
+      "kept_translation": "에、 준비라니 뭐",
+      "expected_hex": "5F81418E7893784A4D517A474A388148",
+      "replacement_hex": "9891814120989A98999890988F20988E"
+    }
+  ],
+  "glyphs": {
+    "여": {
+      "sjis": "989E",
+      "glyph_index": 3460,
+      "bios_offset": 258888
+    },
+    "어": {
+      "sjis": "989D",
+      "glyph_index": 3459,
+      "bios_offset": 258870
+    },
+    "시": {
+      "sjis": "989C",
+      "glyph_index": 3458,
+      "bios_offset": 258852
+    },
+    "온": {
+      "sjis": "989B",
+      "glyph_index": 3457,
+      "bios_offset": 258834
+    },
+    "준": {
+      "sjis": "989A",
+      "glyph_index": 3456,
+      "bios_offset": 258816
+    },
+    "비": {
+      "sjis": "9899",
+      "glyph_index": 3455,
+      "bios_offset": 258798
+    },
+    "는": {
+      "sjis": "9898",
+      "glyph_index": 3454,
+      "bios_offset": 258780
+    },
+    "다": {
+      "sjis": "9897",
+      "glyph_index": 3453,
+      "bios_offset": 258762
+    },
+    "됐": {
+      "sjis": "9896",
+      "glyph_index": 3452,
+      "bios_offset": 258744
+    },
+    "나": {
+      "sjis": "9895",
+      "glyph_index": 3451,
+      "bios_offset": 258726
+    },
+    "페": {
+      "sjis": "9894",
+      "glyph_index": 3450,
+      "bios_offset": 258708
+    },
+    "이": {
+      "sjis": "9893",
+      "glyph_index": 3449,
+      "bios_offset": 258690
+    },
+    "트": {
+      "sjis": "9892",
+      "glyph_index": 3448,
+      "bios_offset": 258672
+    },
+    "에": {
+      "sjis": "9891",
+      "glyph_index": 3447,
+      "bios_offset": 258654
+    },
+    "라": {
+      "sjis": "9890",
+      "glyph_index": 3446,
+      "bios_offset": 258636
+    },
+    "니": {
+      "sjis": "988F",
+      "glyph_index": 3445,
+      "bios_offset": 258618
+    },
+    "뭐": {
+      "sjis": "988E",
+      "glyph_index": 3444,
+      "bios_offset": 258600
+    },
+    "가": {
+      "sjis": "988D",
+      "glyph_index": 3443,
+      "bios_offset": 258582
+    }
+  },
+  "diff_ranges": {
+    "game_physical": [
+      [
+        9010658,
+        9010665
+      ],
+      [
+        9010676,
+        9010692
+      ],
+      [
+        9010704,
+        9010720
+      ]
+    ],
+    "bios": [
+      [
+        258582,
+        258906
+      ]
+    ]
+  },
+  "outputs": {
+    "bios": "G:\\Downloads\\Tenshi no Uta II - Datenshi no Sentaku (Japan)\\SystemCard3_KoreanFont_current_translation_probe.pce",
+    "bios_sha256": "4461d2960d9e2b2b85febc33c4e3f0a7742f286ca9b7a11cf88840cb4a9c2bfc",
+    "bin": "G:\\Downloads\\Tenshi no Uta II - Datenshi no Sentaku (Japan)\\Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_current_translation_probe.bin",
+    "bin_sha256": "7b13c4bdf5a3d524bfd0356856845ad4338a5068f4f4aab3bdf04573d947d13c",
+    "cue": "G:\\Downloads\\Tenshi no Uta II - Datenshi no Sentaku (Japan)\\Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_current_translation_probe.cue",
+    "char_map": "G:\\Downloads\\Tenshi no Uta II - Datenshi no Sentaku (Japan)\\translation\\current_translation_probe_char_map.json",
+    "bizhawk_config": "G:\\Downloads\\Tenshi no Uta II - Datenshi no Sentaku (Japan)\\translation\\current_translation_probe_bizhawk_config.ini"
+  },
+  "pass_criteria": "Game graphics remain normal and the three first-dialogue body runs display readable Hangul.",
+  "fail_criteria": "Global graphics corrupt, dialogue flow breaks, or mapped Hangul renders as unrelated glyphs.",
+  "runtime_observation": "System Card startup/global graphics corrupted before gameplay.",
+  "runtime_conclusion": "Indices 3443..3460 at BIOS 0x3F216..0x3F348 are not proven replaceable font-only storage; reachable compact indices cannot be treated as free BIOS slots.",
+  "replacement_probe": "G:\\Downloads\\Tenshi no Uta II - Datenshi no Sentaku (Japan)\\Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_two_glyph_probe.cue"
+}

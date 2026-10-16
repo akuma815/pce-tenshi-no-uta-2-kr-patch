@@ -1,0 +1,46 @@
+{
+  "format": "EXACT-PASSED-BIOS-ONE-GLYPH-E2E-PROBE",
+  "runtime_status": "PARTIAL_PASS",
+  "purpose": "Isolate game text re-encoding from every BIOS variable.",
+  "bios": {
+    "path": "G:\\Downloads\\Tenshi no Uta II - Datenshi no Sentaku (Japan)\\SystemCard3_one_glyph_probe.pce",
+    "sha256": "212f3c96a4010bf06a13ceffd8dec92c00639188287f18376006cba67ebb8198",
+    "runtime_baseline": "PASS: original game displayed 가 at original 出 positions without global corruption."
+  },
+  "game_write": {
+    "master_row_id": "iso:010B9E7",
+    "iso_offset": 1096178,
+    "capacity": 7,
+    "expected_hex": "6F2D8141BCB5DD",
+    "replacement_hex": "8F6F2020202020",
+    "expected_visible_text": "가"
+  },
+  "safety": {
+    "bios_new_writes": 0,
+    "game_expected_writes": 1,
+    "game_diff_bytes": 7,
+    "speaker_runs_changed": 0,
+    "control_bytes_changed": 0
+  },
+  "diff_ranges": {
+    "game_physical": [
+      [
+        9010658,
+        9010665
+      ]
+    ]
+  },
+  "outputs": {
+    "bin": "G:\\Downloads\\Tenshi no Uta II - Datenshi no Sentaku (Japan)\\Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_one_glyph_e2e_probe.bin",
+    "bin_sha256": "fcc8fa47074742e88e4c8532447630c17c6fab97cc6e822dc5052cc8d787a2e6",
+    "cue": "G:\\Downloads\\Tenshi no Uta II - Datenshi no Sentaku (Japan)\\Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_one_glyph_e2e_probe.cue",
+    "bizhawk_config": "G:\\Downloads\\Tenshi no Uta II - Datenshi no Sentaku (Japan)\\translation\\one_glyph_bizhawk_config.ini"
+  },
+  "pass_criteria": "Startup/game graphics remain normal and the first dialogue body displays 가.",
+  "fail_criteria": "Startup/global graphics corrupt or the first body does not display 가.",
+  "next_if_pass": "Game text injection is valid; isolate index 1720 using the exact passed index-1722 bytes.",
+  "next_if_fail": "Reject current fixed-run game injection or configuration identity before any BIOS expansion.",
+  "runtime_observation": "Hangul rendered and graphics remained normal, but ASCII 0x20 padding left/combined dialogue rows across the page transition.",
+  "runtime_conclusion": "BIOS glyph and 8F6F text consumption pass; ASCII-space padding policy fails this renderer.",
+  "replacement_probe": "G:\\Downloads\\Tenshi no Uta II - Datenshi no Sentaku (Japan)\\Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_exact_substitution_probe.cue"
+}

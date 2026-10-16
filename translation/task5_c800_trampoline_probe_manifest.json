@@ -1,0 +1,72 @@
+{
+  "format": "TASK5-C800-TRAMPOLINE-PROBE",
+  "version": 1,
+  "task": 5,
+  "status": "RUNTIME_FAIL",
+  "hypothesis": "the failure is specific to executing the C737 address rather than executing an equivalent trampoline from module RAM",
+  "control_flow": {
+    "probe": "JSR C800; C800 JMP F124",
+    "matched_failed_control": "JSR C737; C737 JMP F124"
+  },
+  "present_variables": [
+    "module-RAM trampoline execution",
+    "one JSR plus one JMP",
+    "same MPR6 bank 84"
+  ],
+  "changed_variable": "trampoline address C737 -> C800",
+  "absent_variables": [
+    "custom text",
+    "glyph pool",
+    "custom branch",
+    "C737 write or execution"
+  ],
+  "runtime_decision": {
+    "memo_responsive": "the failure is C737-address-specific; C800 execution is a viable hook-location candidate",
+    "memo_hangs": "the failure follows module-RAM trampoline execution; abandon this redirect architecture"
+  },
+  "expected_writes": [
+    {
+      "id": "field-getfnt-call-c800",
+      "iso_offset": "0x8667E",
+      "physical_bin_offset": "0x812A6E",
+      "length": 3,
+      "expected_hex": "2060E0",
+      "replacement_hex": "2000C8",
+      "reason": "redirect the live call to the relocated C800 trampoline"
+    },
+    {
+      "id": "c800-cycle-matched-trampoline",
+      "iso_offset": "0x89800",
+      "physical_bin_offset": "0x815BF0",
+      "length": 3,
+      "expected_hex": "FFFFFF",
+      "replacement_hex": "4C24F1",
+      "reason": "execute the same JMP F124 from a different address in the same module bank"
+    }
+  ],
+  "diff_audit": {
+    "declared_span_count": 2,
+    "actual_changed_bytes": 5,
+    "actual_changed_ranges": [
+      {
+        "physical_start": "0x812A6F",
+        "physical_end_exclusive": "0x812A71",
+        "changed_bytes": 2
+      },
+      {
+        "physical_start": "0x815BF0",
+        "physical_end_exclusive": "0x815BF3",
+        "changed_bytes": 3
+      }
+    ],
+    "undeclared_changes": 0,
+    "file_size_preserved": true
+  },
+  "output": {
+    "bin": "Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_task5_c800_trampoline_probe.bin",
+    "bin_size": 523184384,
+    "bin_sha256": "CC119B6E517A6FECBE9704B6DEAF4694AC260551FA2FA5C5D314CB60371DAD7F",
+    "cue": "Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_task5_c800_trampoline_probe.cue",
+    "cue_sha256": "7C73B3F95FA5E01D3CB00301FFBDF89CF1E6EA0BF342098FD06FC4482B3632D0"
+  }
+}

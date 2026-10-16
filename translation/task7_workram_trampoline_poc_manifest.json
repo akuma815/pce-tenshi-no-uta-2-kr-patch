@@ -1,0 +1,93 @@
+{
+  "format": "TASK7-WORKRAM-TRAMPOLINE-POC",
+  "version": 1,
+  "task": 7,
+  "status": "RUNTIME_PASS",
+  "purpose": "Validate fixed Work RAM execution and lifetime without custom text or glyph behavior",
+  "candidate_audit": {
+    "path": "translation/task7_work_ram_candidate_audit.json",
+    "sha256": "8B3562F72B38CDD380055414EB643315BC06F1DC40E4C1E511A7EF9792CC28C0"
+  },
+  "control_flow": {
+    "disk_call": "JSR 5230",
+    "first_call": "5230 installs JMP F124 at 2AFF, rewrites 967F/9680 to FF/2A, then JMP F124",
+    "later_calls": "JSR 2AFF; [2AFF] JMP F124",
+    "custom_text": false,
+    "custom_glyphs": false,
+    "mpr_changes": 0
+  },
+  "loader": {
+    "runtime_address": "0x5230",
+    "bytes": 28,
+    "hex": "A9FF8D7F96A92A8D8096A94C8DFF2AA9248D002BA9F18D012B4C24F1",
+    "lifetime": "first field call only; never required after callsite self-modification"
+  },
+  "work_ram": {
+    "physical_bank": "F8",
+    "runtime_address": "0x2AFF",
+    "bytes": 3,
+    "hex": "4C24F1",
+    "installation": "after first field load, during first GETFNT call"
+  },
+  "expected_writes": [
+    {
+      "id": "field-getfnt-first-call-loader",
+      "iso_offset": "0x8667E",
+      "physical_bin_offset": "0x812A6E",
+      "length": 3,
+      "expected_hex": "2060E0",
+      "replacement_hex": "203052",
+      "reason": "first post-load GETFNT call enters the one-shot field-local loader"
+    },
+    {
+      "id": "field-one-shot-workram-installer",
+      "iso_offset": "0x82230",
+      "physical_bin_offset": "0x80E620",
+      "length": 28,
+      "expected_hex": "00000000000000000000000000000000000000000000000000000000",
+      "replacement_hex": "A9FF8D7F96A92A8D8096A94C8DFF2AA9248D002BA9F18D012B4C24F1",
+      "reason": "rewrite live call to 2AFF, install JMP F124 there, and tail to F124"
+    }
+  ],
+  "diff_audit": {
+    "declared_span_count": 2,
+    "actual_changed_bytes": 29,
+    "actual_changed_ranges": [
+      {
+        "physical_start": "0x80E620",
+        "physical_end_exclusive": "0x80E632",
+        "changed_bytes": 18
+      },
+      {
+        "physical_start": "0x80E633",
+        "physical_end_exclusive": "0x80E63C",
+        "changed_bytes": 9
+      },
+      {
+        "physical_start": "0x812A6F",
+        "physical_end_exclusive": "0x812A71",
+        "changed_bytes": 2
+      }
+    ],
+    "undeclared_changes": 0,
+    "file_size_preserved": true
+  },
+  "output": {
+    "bin": "Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_task7_workram_trampoline_poc.bin",
+    "bin_size": 523184384,
+    "bin_sha256": "9FB2A5C75D20E0715B81EF0A827B950484080EE10B6A60A5728A3AB816ED80F4",
+    "cue": "Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_task7_workram_trampoline_poc.cue",
+    "cue_sha256": "08B206593990A2326F08446D4B1AE45CCC20E98B14B4ECFB55FE036FE6456D80"
+  },
+  "runtime": {
+    "status": "PASS",
+    "confirmed_by_user": "2026-07-18",
+    "observation": "Original dialogue, Memo, battle Attack and correct field return all completed normally.",
+    "pass_criteria": [
+      "original Japanese first and following dialogue render normally",
+      "field menu and Memo open normally",
+      "battle Attack resolves normally",
+      "battle exit returns to the correct field"
+    ]
+  }
+}

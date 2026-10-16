@@ -1,0 +1,995 @@
+{
+ "effective_changed_bytes": 28127,
+ "format": "ZIRIA-Z8-9-CANARY-BUILD",
+ "on_failure": "실패 증상과 위치를 기록하고 해당 구간을 후보에서 제거 후 재배치",
+ "output_bin_sha256": "B8174FD17CB09DD0A763EA0A89A3216B20CFA02479D218A5BD899FF15E44A1F4",
+ "pattern": "00 E7 repeating (BRK trap + visible garbage)",
+ "purpose": "diagnostic only — MUST NOT be a release input",
+ "ranges": [
+  {
+   "bytes": 2852,
+   "scene_offset_end": 43812,
+   "scene_offset_start": 40960
+  },
+  {
+   "bytes": 1560,
+   "scene_offset_end": 45372,
+   "scene_offset_start": 43812
+  },
+  {
+   "bytes": 3780,
+   "scene_offset_end": 49152,
+   "scene_offset_start": 45372
+  },
+  {
+   "bytes": 5580,
+   "scene_offset_end": 153036,
+   "scene_offset_start": 147456
+  },
+  {
+   "bytes": 392,
+   "scene_offset_end": 153428,
+   "scene_offset_start": 153036
+  },
+  {
+   "bytes": 270,
+   "scene_offset_end": 153698,
+   "scene_offset_start": 153428
+  },
+  {
+   "bytes": 216,
+   "scene_offset_end": 153914,
+   "scene_offset_start": 153698
+  },
+  {
+   "bytes": 213,
+   "scene_offset_end": 154127,
+   "scene_offset_start": 153914
+  },
+  {
+   "bytes": 201,
+   "scene_offset_end": 154328,
+   "scene_offset_start": 154127
+  },
+  {
+   "bytes": 199,
+   "scene_offset_end": 154527,
+   "scene_offset_start": 154328
+  },
+  {
+   "bytes": 199,
+   "scene_offset_end": 154726,
+   "scene_offset_start": 154527
+  },
+  {
+   "bytes": 185,
+   "scene_offset_end": 154911,
+   "scene_offset_start": 154726
+  },
+  {
+   "bytes": 185,
+   "scene_offset_end": 155096,
+   "scene_offset_start": 154911
+  },
+  {
+   "bytes": 182,
+   "scene_offset_end": 155278,
+   "scene_offset_start": 155096
+  },
+  {
+   "bytes": 176,
+   "scene_offset_end": 155454,
+   "scene_offset_start": 155278
+  },
+  {
+   "bytes": 172,
+   "scene_offset_end": 155626,
+   "scene_offset_start": 155454
+  },
+  {
+   "bytes": 22,
+   "scene_offset_end": 155648,
+   "scene_offset_start": 155626
+  },
+  {
+   "bytes": 171,
+   "scene_offset_end": 155819,
+   "scene_offset_start": 155648
+  },
+  {
+   "bytes": 170,
+   "scene_offset_end": 155989,
+   "scene_offset_start": 155819
+  },
+  {
+   "bytes": 169,
+   "scene_offset_end": 156158,
+   "scene_offset_start": 155989
+  },
+  {
+   "bytes": 168,
+   "scene_offset_end": 156326,
+   "scene_offset_start": 156158
+  },
+  {
+   "bytes": 166,
+   "scene_offset_end": 156492,
+   "scene_offset_start": 156326
+  },
+  {
+   "bytes": 166,
+   "scene_offset_end": 156658,
+   "scene_offset_start": 156492
+  },
+  {
+   "bytes": 165,
+   "scene_offset_end": 156823,
+   "scene_offset_start": 156658
+  },
+  {
+   "bytes": 165,
+   "scene_offset_end": 156988,
+   "scene_offset_start": 156823
+  },
+  {
+   "bytes": 161,
+   "scene_offset_end": 157149,
+   "scene_offset_start": 156988
+  },
+  {
+   "bytes": 157,
+   "scene_offset_end": 157306,
+   "scene_offset_start": 157149
+  },
+  {
+   "bytes": 156,
+   "scene_offset_end": 157462,
+   "scene_offset_start": 157306
+  },
+  {
+   "bytes": 151,
+   "scene_offset_end": 157613,
+   "scene_offset_start": 157462
+  },
+  {
+   "bytes": 147,
+   "scene_offset_end": 157760,
+   "scene_offset_start": 157613
+  },
+  {
+   "bytes": 145,
+   "scene_offset_end": 157905,
+   "scene_offset_start": 157760
+  },
+  {
+   "bytes": 144,
+   "scene_offset_end": 158049,
+   "scene_offset_start": 157905
+  },
+  {
+   "bytes": 142,
+   "scene_offset_end": 158191,
+   "scene_offset_start": 158049
+  },
+  {
+   "bytes": 139,
+   "scene_offset_end": 158330,
+   "scene_offset_start": 158191
+  },
+  {
+   "bytes": 137,
+   "scene_offset_end": 158467,
+   "scene_offset_start": 158330
+  },
+  {
+   "bytes": 137,
+   "scene_offset_end": 158604,
+   "scene_offset_start": 158467
+  },
+  {
+   "bytes": 135,
+   "scene_offset_end": 158739,
+   "scene_offset_start": 158604
+  },
+  {
+   "bytes": 134,
+   "scene_offset_end": 158873,
+   "scene_offset_start": 158739
+  },
+  {
+   "bytes": 128,
+   "scene_offset_end": 159001,
+   "scene_offset_start": 158873
+  },
+  {
+   "bytes": 128,
+   "scene_offset_end": 159129,
+   "scene_offset_start": 159001
+  },
+  {
+   "bytes": 126,
+   "scene_offset_end": 159255,
+   "scene_offset_start": 159129
+  },
+  {
+   "bytes": 125,
+   "scene_offset_end": 159380,
+   "scene_offset_start": 159255
+  },
+  {
+   "bytes": 120,
+   "scene_offset_end": 159500,
+   "scene_offset_start": 159380
+  },
+  {
+   "bytes": 116,
+   "scene_offset_end": 159616,
+   "scene_offset_start": 159500
+  },
+  {
+   "bytes": 116,
+   "scene_offset_end": 159732,
+   "scene_offset_start": 159616
+  },
+  {
+   "bytes": 116,
+   "scene_offset_end": 159848,
+   "scene_offset_start": 159732
+  },
+  {
+   "bytes": 115,
+   "scene_offset_end": 159963,
+   "scene_offset_start": 159848
+  },
+  {
+   "bytes": 112,
+   "scene_offset_end": 160075,
+   "scene_offset_start": 159963
+  },
+  {
+   "bytes": 112,
+   "scene_offset_end": 160187,
+   "scene_offset_start": 160075
+  },
+  {
+   "bytes": 111,
+   "scene_offset_end": 160298,
+   "scene_offset_start": 160187
+  },
+  {
+   "bytes": 111,
+   "scene_offset_end": 160409,
+   "scene_offset_start": 160298
+  },
+  {
+   "bytes": 109,
+   "scene_offset_end": 160518,
+   "scene_offset_start": 160409
+  },
+  {
+   "bytes": 109,
+   "scene_offset_end": 160627,
+   "scene_offset_start": 160518
+  },
+  {
+   "bytes": 109,
+   "scene_offset_end": 160736,
+   "scene_offset_start": 160627
+  },
+  {
+   "bytes": 108,
+   "scene_offset_end": 160844,
+   "scene_offset_start": 160736
+  },
+  {
+   "bytes": 108,
+   "scene_offset_end": 160952,
+   "scene_offset_start": 160844
+  },
+  {
+   "bytes": 104,
+   "scene_offset_end": 161056,
+   "scene_offset_start": 160952
+  },
+  {
+   "bytes": 101,
+   "scene_offset_end": 161157,
+   "scene_offset_start": 161056
+  },
+  {
+   "bytes": 101,
+   "scene_offset_end": 161258,
+   "scene_offset_start": 161157
+  },
+  {
+   "bytes": 99,
+   "scene_offset_end": 161357,
+   "scene_offset_start": 161258
+  },
+  {
+   "bytes": 99,
+   "scene_offset_end": 161456,
+   "scene_offset_start": 161357
+  },
+  {
+   "bytes": 99,
+   "scene_offset_end": 161555,
+   "scene_offset_start": 161456
+  },
+  {
+   "bytes": 98,
+   "scene_offset_end": 161653,
+   "scene_offset_start": 161555
+  },
+  {
+   "bytes": 97,
+   "scene_offset_end": 161750,
+   "scene_offset_start": 161653
+  },
+  {
+   "bytes": 96,
+   "scene_offset_end": 161846,
+   "scene_offset_start": 161750
+  },
+  {
+   "bytes": 96,
+   "scene_offset_end": 161942,
+   "scene_offset_start": 161846
+  },
+  {
+   "bytes": 95,
+   "scene_offset_end": 162037,
+   "scene_offset_start": 161942
+  },
+  {
+   "bytes": 94,
+   "scene_offset_end": 162131,
+   "scene_offset_start": 162037
+  },
+  {
+   "bytes": 94,
+   "scene_offset_end": 162225,
+   "scene_offset_start": 162131
+  },
+  {
+   "bytes": 94,
+   "scene_offset_end": 162319,
+   "scene_offset_start": 162225
+  },
+  {
+   "bytes": 89,
+   "scene_offset_end": 162408,
+   "scene_offset_start": 162319
+  },
+  {
+   "bytes": 88,
+   "scene_offset_end": 162496,
+   "scene_offset_start": 162408
+  },
+  {
+   "bytes": 86,
+   "scene_offset_end": 162582,
+   "scene_offset_start": 162496
+  },
+  {
+   "bytes": 86,
+   "scene_offset_end": 162668,
+   "scene_offset_start": 162582
+  },
+  {
+   "bytes": 84,
+   "scene_offset_end": 162752,
+   "scene_offset_start": 162668
+  },
+  {
+   "bytes": 82,
+   "scene_offset_end": 162834,
+   "scene_offset_start": 162752
+  },
+  {
+   "bytes": 81,
+   "scene_offset_end": 162915,
+   "scene_offset_start": 162834
+  },
+  {
+   "bytes": 80,
+   "scene_offset_end": 162995,
+   "scene_offset_start": 162915
+  },
+  {
+   "bytes": 78,
+   "scene_offset_end": 163073,
+   "scene_offset_start": 162995
+  },
+  {
+   "bytes": 76,
+   "scene_offset_end": 163149,
+   "scene_offset_start": 163073
+  },
+  {
+   "bytes": 76,
+   "scene_offset_end": 163225,
+   "scene_offset_start": 163149
+  },
+  {
+   "bytes": 74,
+   "scene_offset_end": 163299,
+   "scene_offset_start": 163225
+  },
+  {
+   "bytes": 72,
+   "scene_offset_end": 163371,
+   "scene_offset_start": 163299
+  },
+  {
+   "bytes": 72,
+   "scene_offset_end": 163443,
+   "scene_offset_start": 163371
+  },
+  {
+   "bytes": 71,
+   "scene_offset_end": 163514,
+   "scene_offset_start": 163443
+  },
+  {
+   "bytes": 70,
+   "scene_offset_end": 163584,
+   "scene_offset_start": 163514
+  },
+  {
+   "bytes": 70,
+   "scene_offset_end": 163654,
+   "scene_offset_start": 163584
+  },
+  {
+   "bytes": 70,
+   "scene_offset_end": 163724,
+   "scene_offset_start": 163654
+  },
+  {
+   "bytes": 69,
+   "scene_offset_end": 163793,
+   "scene_offset_start": 163724
+  },
+  {
+   "bytes": 47,
+   "scene_offset_end": 163840,
+   "scene_offset_start": 163793
+  },
+  {
+   "bytes": 68,
+   "scene_offset_end": 180292,
+   "scene_offset_start": 180224
+  },
+  {
+   "bytes": 66,
+   "scene_offset_end": 180358,
+   "scene_offset_start": 180292
+  },
+  {
+   "bytes": 66,
+   "scene_offset_end": 180424,
+   "scene_offset_start": 180358
+  },
+  {
+   "bytes": 65,
+   "scene_offset_end": 180489,
+   "scene_offset_start": 180424
+  },
+  {
+   "bytes": 65,
+   "scene_offset_end": 180554,
+   "scene_offset_start": 180489
+  },
+  {
+   "bytes": 64,
+   "scene_offset_end": 180618,
+   "scene_offset_start": 180554
+  },
+  {
+   "bytes": 64,
+   "scene_offset_end": 180682,
+   "scene_offset_start": 180618
+  },
+  {
+   "bytes": 63,
+   "scene_offset_end": 180745,
+   "scene_offset_start": 180682
+  },
+  {
+   "bytes": 63,
+   "scene_offset_end": 180808,
+   "scene_offset_start": 180745
+  },
+  {
+   "bytes": 62,
+   "scene_offset_end": 180870,
+   "scene_offset_start": 180808
+  },
+  {
+   "bytes": 62,
+   "scene_offset_end": 180932,
+   "scene_offset_start": 180870
+  },
+  {
+   "bytes": 61,
+   "scene_offset_end": 180993,
+   "scene_offset_start": 180932
+  },
+  {
+   "bytes": 60,
+   "scene_offset_end": 181053,
+   "scene_offset_start": 180993
+  },
+  {
+   "bytes": 59,
+   "scene_offset_end": 181112,
+   "scene_offset_start": 181053
+  },
+  {
+   "bytes": 59,
+   "scene_offset_end": 181171,
+   "scene_offset_start": 181112
+  },
+  {
+   "bytes": 58,
+   "scene_offset_end": 181229,
+   "scene_offset_start": 181171
+  },
+  {
+   "bytes": 58,
+   "scene_offset_end": 181287,
+   "scene_offset_start": 181229
+  },
+  {
+   "bytes": 58,
+   "scene_offset_end": 181345,
+   "scene_offset_start": 181287
+  },
+  {
+   "bytes": 56,
+   "scene_offset_end": 181401,
+   "scene_offset_start": 181345
+  },
+  {
+   "bytes": 56,
+   "scene_offset_end": 181457,
+   "scene_offset_start": 181401
+  },
+  {
+   "bytes": 55,
+   "scene_offset_end": 181512,
+   "scene_offset_start": 181457
+  },
+  {
+   "bytes": 55,
+   "scene_offset_end": 181567,
+   "scene_offset_start": 181512
+  },
+  {
+   "bytes": 53,
+   "scene_offset_end": 181620,
+   "scene_offset_start": 181567
+  },
+  {
+   "bytes": 52,
+   "scene_offset_end": 181672,
+   "scene_offset_start": 181620
+  },
+  {
+   "bytes": 51,
+   "scene_offset_end": 181723,
+   "scene_offset_start": 181672
+  },
+  {
+   "bytes": 50,
+   "scene_offset_end": 181773,
+   "scene_offset_start": 181723
+  },
+  {
+   "bytes": 50,
+   "scene_offset_end": 181823,
+   "scene_offset_start": 181773
+  },
+  {
+   "bytes": 50,
+   "scene_offset_end": 181873,
+   "scene_offset_start": 181823
+  },
+  {
+   "bytes": 49,
+   "scene_offset_end": 181922,
+   "scene_offset_start": 181873
+  },
+  {
+   "bytes": 49,
+   "scene_offset_end": 181971,
+   "scene_offset_start": 181922
+  },
+  {
+   "bytes": 49,
+   "scene_offset_end": 182020,
+   "scene_offset_start": 181971
+  },
+  {
+   "bytes": 48,
+   "scene_offset_end": 182068,
+   "scene_offset_start": 182020
+  },
+  {
+   "bytes": 47,
+   "scene_offset_end": 182115,
+   "scene_offset_start": 182068
+  },
+  {
+   "bytes": 47,
+   "scene_offset_end": 182162,
+   "scene_offset_start": 182115
+  },
+  {
+   "bytes": 46,
+   "scene_offset_end": 182208,
+   "scene_offset_start": 182162
+  },
+  {
+   "bytes": 46,
+   "scene_offset_end": 182254,
+   "scene_offset_start": 182208
+  },
+  {
+   "bytes": 44,
+   "scene_offset_end": 182298,
+   "scene_offset_start": 182254
+  },
+  {
+   "bytes": 43,
+   "scene_offset_end": 182341,
+   "scene_offset_start": 182298
+  },
+  {
+   "bytes": 43,
+   "scene_offset_end": 182384,
+   "scene_offset_start": 182341
+  },
+  {
+   "bytes": 42,
+   "scene_offset_end": 182426,
+   "scene_offset_start": 182384
+  },
+  {
+   "bytes": 42,
+   "scene_offset_end": 182468,
+   "scene_offset_start": 182426
+  },
+  {
+   "bytes": 42,
+   "scene_offset_end": 182510,
+   "scene_offset_start": 182468
+  },
+  {
+   "bytes": 41,
+   "scene_offset_end": 182551,
+   "scene_offset_start": 182510
+  },
+  {
+   "bytes": 41,
+   "scene_offset_end": 182592,
+   "scene_offset_start": 182551
+  },
+  {
+   "bytes": 40,
+   "scene_offset_end": 182632,
+   "scene_offset_start": 182592
+  },
+  {
+   "bytes": 40,
+   "scene_offset_end": 182672,
+   "scene_offset_start": 182632
+  },
+  {
+   "bytes": 39,
+   "scene_offset_end": 182711,
+   "scene_offset_start": 182672
+  },
+  {
+   "bytes": 39,
+   "scene_offset_end": 182750,
+   "scene_offset_start": 182711
+  },
+  {
+   "bytes": 39,
+   "scene_offset_end": 182789,
+   "scene_offset_start": 182750
+  },
+  {
+   "bytes": 38,
+   "scene_offset_end": 182827,
+   "scene_offset_start": 182789
+  },
+  {
+   "bytes": 38,
+   "scene_offset_end": 182865,
+   "scene_offset_start": 182827
+  },
+  {
+   "bytes": 36,
+   "scene_offset_end": 182901,
+   "scene_offset_start": 182865
+  },
+  {
+   "bytes": 36,
+   "scene_offset_end": 182937,
+   "scene_offset_start": 182901
+  },
+  {
+   "bytes": 36,
+   "scene_offset_end": 182973,
+   "scene_offset_start": 182937
+  },
+  {
+   "bytes": 34,
+   "scene_offset_end": 183007,
+   "scene_offset_start": 182973
+  },
+  {
+   "bytes": 34,
+   "scene_offset_end": 183041,
+   "scene_offset_start": 183007
+  },
+  {
+   "bytes": 32,
+   "scene_offset_end": 183073,
+   "scene_offset_start": 183041
+  },
+  {
+   "bytes": 31,
+   "scene_offset_end": 183104,
+   "scene_offset_start": 183073
+  },
+  {
+   "bytes": 31,
+   "scene_offset_end": 183135,
+   "scene_offset_start": 183104
+  },
+  {
+   "bytes": 31,
+   "scene_offset_end": 183166,
+   "scene_offset_start": 183135
+  },
+  {
+   "bytes": 31,
+   "scene_offset_end": 183197,
+   "scene_offset_start": 183166
+  },
+  {
+   "bytes": 31,
+   "scene_offset_end": 183228,
+   "scene_offset_start": 183197
+  },
+  {
+   "bytes": 31,
+   "scene_offset_end": 183259,
+   "scene_offset_start": 183228
+  },
+  {
+   "bytes": 30,
+   "scene_offset_end": 183289,
+   "scene_offset_start": 183259
+  },
+  {
+   "bytes": 30,
+   "scene_offset_end": 183319,
+   "scene_offset_start": 183289
+  },
+  {
+   "bytes": 30,
+   "scene_offset_end": 183349,
+   "scene_offset_start": 183319
+  },
+  {
+   "bytes": 30,
+   "scene_offset_end": 183379,
+   "scene_offset_start": 183349
+  },
+  {
+   "bytes": 29,
+   "scene_offset_end": 183408,
+   "scene_offset_start": 183379
+  },
+  {
+   "bytes": 25,
+   "scene_offset_end": 183433,
+   "scene_offset_start": 183408
+  },
+  {
+   "bytes": 25,
+   "scene_offset_end": 183458,
+   "scene_offset_start": 183433
+  },
+  {
+   "bytes": 24,
+   "scene_offset_end": 183482,
+   "scene_offset_start": 183458
+  },
+  {
+   "bytes": 24,
+   "scene_offset_end": 183506,
+   "scene_offset_start": 183482
+  },
+  {
+   "bytes": 24,
+   "scene_offset_end": 183530,
+   "scene_offset_start": 183506
+  },
+  {
+   "bytes": 22,
+   "scene_offset_end": 183552,
+   "scene_offset_start": 183530
+  },
+  {
+   "bytes": 22,
+   "scene_offset_end": 183574,
+   "scene_offset_start": 183552
+  },
+  {
+   "bytes": 21,
+   "scene_offset_end": 183595,
+   "scene_offset_start": 183574
+  },
+  {
+   "bytes": 21,
+   "scene_offset_end": 183616,
+   "scene_offset_start": 183595
+  },
+  {
+   "bytes": 21,
+   "scene_offset_end": 183637,
+   "scene_offset_start": 183616
+  },
+  {
+   "bytes": 20,
+   "scene_offset_end": 183657,
+   "scene_offset_start": 183637
+  },
+  {
+   "bytes": 20,
+   "scene_offset_end": 183677,
+   "scene_offset_start": 183657
+  },
+  {
+   "bytes": 19,
+   "scene_offset_end": 183696,
+   "scene_offset_start": 183677
+  },
+  {
+   "bytes": 19,
+   "scene_offset_end": 183715,
+   "scene_offset_start": 183696
+  },
+  {
+   "bytes": 19,
+   "scene_offset_end": 183734,
+   "scene_offset_start": 183715
+  },
+  {
+   "bytes": 18,
+   "scene_offset_end": 183752,
+   "scene_offset_start": 183734
+  },
+  {
+   "bytes": 18,
+   "scene_offset_end": 183770,
+   "scene_offset_start": 183752
+  },
+  {
+   "bytes": 17,
+   "scene_offset_end": 183787,
+   "scene_offset_start": 183770
+  },
+  {
+   "bytes": 15,
+   "scene_offset_end": 183802,
+   "scene_offset_start": 183787
+  },
+  {
+   "bytes": 15,
+   "scene_offset_end": 183817,
+   "scene_offset_start": 183802
+  },
+  {
+   "bytes": 15,
+   "scene_offset_end": 183832,
+   "scene_offset_start": 183817
+  },
+  {
+   "bytes": 15,
+   "scene_offset_end": 183847,
+   "scene_offset_start": 183832
+  },
+  {
+   "bytes": 15,
+   "scene_offset_end": 183862,
+   "scene_offset_start": 183847
+  },
+  {
+   "bytes": 14,
+   "scene_offset_end": 183876,
+   "scene_offset_start": 183862
+  },
+  {
+   "bytes": 13,
+   "scene_offset_end": 183889,
+   "scene_offset_start": 183876
+  },
+  {
+   "bytes": 13,
+   "scene_offset_end": 183902,
+   "scene_offset_start": 183889
+  },
+  {
+   "bytes": 13,
+   "scene_offset_end": 183915,
+   "scene_offset_start": 183902
+  },
+  {
+   "bytes": 12,
+   "scene_offset_end": 183927,
+   "scene_offset_start": 183915
+  },
+  {
+   "bytes": 12,
+   "scene_offset_end": 183939,
+   "scene_offset_start": 183927
+  },
+  {
+   "bytes": 11,
+   "scene_offset_end": 183950,
+   "scene_offset_start": 183939
+  },
+  {
+   "bytes": 11,
+   "scene_offset_end": 183961,
+   "scene_offset_start": 183950
+  },
+  {
+   "bytes": 11,
+   "scene_offset_end": 183972,
+   "scene_offset_start": 183961
+  },
+  {
+   "bytes": 11,
+   "scene_offset_end": 183983,
+   "scene_offset_start": 183972
+  },
+  {
+   "bytes": 11,
+   "scene_offset_end": 183994,
+   "scene_offset_start": 183983
+  },
+  {
+   "bytes": 9,
+   "scene_offset_end": 184003,
+   "scene_offset_start": 183994
+  },
+  {
+   "bytes": 7,
+   "scene_offset_end": 184010,
+   "scene_offset_start": 184003
+  },
+  {
+   "bytes": 7,
+   "scene_offset_end": 184017,
+   "scene_offset_start": 184010
+  }
+ ],
+ "runtime_gate": [
+  "System Card -> title -> first field 정상",
+  "첫 대사, NPC 대화, Memo 진입·복귀 정상",
+  "첫 전투 공격·필드 복귀 정상",
+  "탑 진입, 초상화 대사 정상",
+  "화면 깨짐·EXEC BRK·진행 정지 0건"
+ ],
+ "source_bin_sha256": "D16D29EB80B1B74A2EC929924349256B50B8F9F5C9A3FA37B6FCC08B059B22C5",
+ "total_fill_bytes": 28369,
+ "version": 1
+}

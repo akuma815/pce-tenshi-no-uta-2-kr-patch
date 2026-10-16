@@ -1,0 +1,7587 @@
+{
+ "format": "BTRACK-SLOT-ASSIGNMENT",
+ "version": 6,
+ "font_sheet": "G:\\Downloads\\Korean Traslate Project\\Font\\Galmuri11-Condensed_9x12.png",
+ "glyph_x_offset": 1,
+ "card": "G:\\Downloads\\Korean Traslate Project\\Games\\Tenshi no Uta II - Datenshi no Sentaku (Japan)\\probes\\SystemCard3_btrack_full.pce",
+ "assignment": {
+  "이": {
+   "sjis": "889F",
+   "glyph_index": 453,
+   "original_kanji": "亜",
+   "kanji_game_freq": 0,
+   "ko_freq": 8885
+  },
+  "다": {
+   "sjis": "88A0",
+   "glyph_index": 454,
+   "original_kanji": "唖",
+   "kanji_game_freq": 0,
+   "ko_freq": 5549
+  },
+  "지": {
+   "sjis": "88A1",
+   "glyph_index": 455,
+   "original_kanji": "娃",
+   "kanji_game_freq": 0,
+   "ko_freq": 4432
+  },
+  "는": {
+   "sjis": "88A6",
+   "glyph_index": 460,
+   "original_kanji": "姶",
+   "kanji_game_freq": 0,
+   "ko_freq": 4372
+  },
+  "에": {
+   "sjis": "88A8",
+   "glyph_index": 462,
+   "original_kanji": "葵",
+   "kanji_game_freq": 0,
+   "ko_freq": 3985
+  },
+  "가": {
+   "sjis": "88A9",
+   "glyph_index": 463,
+   "original_kanji": "茜",
+   "kanji_game_freq": 0,
+   "ko_freq": 3709
+  },
+  "을": {
+   "sjis": "88AA",
+   "glyph_index": 464,
+   "original_kanji": "穐",
+   "kanji_game_freq": 0,
+   "ko_freq": 3602
+  },
+  "아": {
+   "sjis": "88AD",
+   "glyph_index": 467,
+   "original_kanji": "渥",
+   "kanji_game_freq": 0,
+   "ko_freq": 3466
+  },
+  "의": {
+   "sjis": "88AE",
+   "glyph_index": 468,
+   "original_kanji": "旭",
+   "kanji_game_freq": 0,
+   "ko_freq": 3362
+  },
+  "하": {
+   "sjis": "88AF",
+   "glyph_index": 469,
+   "original_kanji": "葦",
+   "kanji_game_freq": 0,
+   "ko_freq": 3205
+  },
+  "어": {
+   "sjis": "88B0",
+   "glyph_index": 470,
+   "original_kanji": "芦",
+   "kanji_game_freq": 0,
+   "ko_freq": 3128
+  },
+  "고": {
+   "sjis": "88B1",
+   "glyph_index": 471,
+   "original_kanji": "鯵",
+   "kanji_game_freq": 0,
+   "ko_freq": 3007
+  },
+  "라": {
+   "sjis": "88B2",
+   "glyph_index": 472,
+   "original_kanji": "梓",
+   "kanji_game_freq": 0,
+   "ko_freq": 2726
+  },
+  "나": {
+   "sjis": "88B4",
+   "glyph_index": 474,
+   "original_kanji": "斡",
+   "kanji_game_freq": 0,
+   "ko_freq": 2583
+  },
+  "리": {
+   "sjis": "88B7",
+   "glyph_index": 477,
+   "original_kanji": "姐",
+   "kanji_game_freq": 0,
+   "ko_freq": 2406
+  },
+  "마": {
+   "sjis": "88B8",
+   "glyph_index": 478,
+   "original_kanji": "虻",
+   "kanji_game_freq": 0,
+   "ko_freq": 2372
+  },
+  "은": {
+   "sjis": "88B9",
+   "glyph_index": 479,
+   "original_kanji": "飴",
+   "kanji_game_freq": 0,
+   "ko_freq": 2358
+  },
+  "기": {
+   "sjis": "88BA",
+   "glyph_index": 480,
+   "original_kanji": "絢",
+   "kanji_game_freq": 0,
+   "ko_freq": 2324
+  },
+  "그": {
+   "sjis": "88BB",
+   "glyph_index": 481,
+   "original_kanji": "綾",
+   "kanji_game_freq": 0,
+   "ko_freq": 2316
+  },
+  "니": {
+   "sjis": "88BC",
+   "glyph_index": 482,
+   "original_kanji": "鮎",
+   "kanji_game_freq": 0,
+   "ko_freq": 2286
+  },
+  "도": {
+   "sjis": "88BD",
+   "glyph_index": 483,
+   "original_kanji": "或",
+   "kanji_game_freq": 0,
+   "ko_freq": 2228
+  },
+  "있": {
+   "sjis": "88BF",
+   "glyph_index": 485,
+   "original_kanji": "袷",
+   "kanji_game_freq": 0,
+   "ko_freq": 2082
+  },
+  "로": {
+   "sjis": "88C1",
+   "glyph_index": 487,
+   "original_kanji": "庵",
+   "kanji_game_freq": 0,
+   "ko_freq": 1950
+  },
+  "서": {
+   "sjis": "88C2",
+   "glyph_index": 488,
+   "original_kanji": "按",
+   "kanji_game_freq": 0,
+   "ko_freq": 1928
+  },
+  "요": {
+   "sjis": "88C6",
+   "glyph_index": 492,
+   "original_kanji": "鞍",
+   "kanji_game_freq": 0,
+   "ko_freq": 1793
+  },
+  "게": {
+   "sjis": "88C7",
+   "glyph_index": 493,
+   "original_kanji": "杏",
+   "kanji_game_freq": 0,
+   "ko_freq": 1776
+  },
+  "사": {
+   "sjis": "88CE",
+   "glyph_index": 500,
+   "original_kanji": "夷",
+   "kanji_game_freq": 0,
+   "ko_freq": 1776
+  },
+  "해": {
+   "sjis": "88CF",
+   "glyph_index": 501,
+   "original_kanji": "委",
+   "kanji_game_freq": 0,
+   "ko_freq": 1729
+  },
+  "시": {
+   "sjis": "88D1",
+   "glyph_index": 503,
+   "original_kanji": "尉",
+   "kanji_game_freq": 0,
+   "ko_freq": 1697
+  },
+  "들": {
+   "sjis": "88D2",
+   "glyph_index": 504,
+   "original_kanji": "惟",
+   "kanji_game_freq": 0,
+   "ko_freq": 1620
+  },
+  "를": {
+   "sjis": "88D4",
+   "glyph_index": 506,
+   "original_kanji": "慰",
+   "kanji_game_freq": 0,
+   "ko_freq": 1492
+  },
+  "야": {
+   "sjis": "88D8",
+   "glyph_index": 510,
+   "original_kanji": "畏",
+   "kanji_game_freq": 0,
+   "ko_freq": 1468
+  },
+  "자": {
+   "sjis": "88DB",
+   "glyph_index": 513,
+   "original_kanji": "維",
+   "kanji_game_freq": 0,
+   "ko_freq": 1317
+  },
+  "한": {
+   "sjis": "88DC",
+   "glyph_index": 514,
+   "original_kanji": "緯",
+   "kanji_game_freq": 0,
+   "ko_freq": 1305
+  },
+  "트": {
+   "sjis": "88DD",
+   "glyph_index": 515,
+   "original_kanji": "胃",
+   "kanji_game_freq": 0,
+   "ko_freq": 1256
+  },
+  "오": {
+   "sjis": "88DE",
+   "glyph_index": 516,
+   "original_kanji": "萎",
+   "kanji_game_freq": 0,
+   "ko_freq": 1207
+  },
+  "여": {
+   "sjis": "88E0",
+   "glyph_index": 518,
+   "original_kanji": "謂",
+   "kanji_game_freq": 0,
+   "ko_freq": 1181
+  },
+  "신": {
+   "sjis": "88E5",
+   "glyph_index": 523,
+   "original_kanji": "亥",
+   "kanji_game_freq": 0,
+   "ko_freq": 1180
+  },
+  "만": {
+   "sjis": "88E8",
+   "glyph_index": 526,
+   "original_kanji": "郁",
+   "kanji_game_freq": 0,
+   "ko_freq": 1178
+  },
+  "으": {
+   "sjis": "88E9",
+   "glyph_index": 527,
+   "original_kanji": "磯",
+   "kanji_game_freq": 0,
+   "ko_freq": 1139
+  },
+  "네": {
+   "sjis": "88EB",
+   "glyph_index": 529,
+   "original_kanji": "壱",
+   "kanji_game_freq": 0,
+   "ko_freq": 1133
+  },
+  "인": {
+   "sjis": "88EC",
+   "glyph_index": 530,
+   "original_kanji": "溢",
+   "kanji_game_freq": 0,
+   "ko_freq": 1067
+  },
+  "면": {
+   "sjis": "88ED",
+   "glyph_index": 531,
+   "original_kanji": "逸",
+   "kanji_game_freq": 0,
+   "ko_freq": 1034
+  },
+  "스": {
+   "sjis": "88EF",
+   "glyph_index": 533,
+   "original_kanji": "茨",
+   "kanji_game_freq": 0,
+   "ko_freq": 1023
+  },
+  "주": {
+   "sjis": "88F0",
+   "glyph_index": 534,
+   "original_kanji": "芋",
+   "kanji_game_freq": 0,
+   "ko_freq": 997
+  },
+  "말": {
+   "sjis": "88F1",
+   "glyph_index": 535,
+   "original_kanji": "鰯",
+   "kanji_game_freq": 0,
+   "ko_freq": 986
+  },
+  "거": {
+   "sjis": "88F2",
+   "glyph_index": 536,
+   "original_kanji": "允",
+   "kanji_game_freq": 0,
+   "ko_freq": 978
+  },
+  "우": {
+   "sjis": "88F4",
+   "glyph_index": 538,
+   "original_kanji": "咽",
+   "kanji_game_freq": 0,
+   "ko_freq": 962
+  },
+  "수": {
+   "sjis": "88F7",
+   "glyph_index": 541,
+   "original_kanji": "姻",
+   "kanji_game_freq": 0,
+   "ko_freq": 949
+  },
+  "었": {
+   "sjis": "88FA",
+   "glyph_index": 544,
+   "original_kanji": "淫",
+   "kanji_game_freq": 0,
+   "ko_freq": 946
+  },
+  "페": {
+   "sjis": "88FB",
+   "glyph_index": 545,
+   "original_kanji": "胤",
+   "kanji_game_freq": 0,
+   "ko_freq": 938
+  },
+  "겠": {
+   "sjis": "88FC",
+   "glyph_index": 546,
+   "original_kanji": "蔭",
+   "kanji_game_freq": 0,
+   "ko_freq": 924
+  },
+  "까": {
+   "sjis": "8940",
+   "glyph_index": 547,
+   "original_kanji": "院",
+   "kanji_game_freq": 0,
+   "ko_freq": 908
+  },
+  "것": {
+   "sjis": "8943",
+   "glyph_index": 550,
+   "original_kanji": "韻",
+   "kanji_game_freq": 0,
+   "ko_freq": 896
+  },
+  "대": {
+   "sjis": "8944",
+   "glyph_index": 551,
+   "original_kanji": "吋",
+   "kanji_game_freq": 0,
+   "ko_freq": 870
+  },
+  "상": {
+   "sjis": "8946",
+   "glyph_index": 553,
+   "original_kanji": "宇",
+   "kanji_game_freq": 0,
+   "ko_freq": 851
+  },
+  "구": {
+   "sjis": "8947",
+   "glyph_index": 554,
+   "original_kanji": "烏",
+   "kanji_game_freq": 0,
+   "ko_freq": 849
+  },
+  "무": {
+   "sjis": "8949",
+   "glyph_index": 556,
+   "original_kanji": "迂",
+   "kanji_game_freq": 0,
+   "ko_freq": 839
+  },
+  "정": {
+   "sjis": "894B",
+   "glyph_index": 558,
+   "original_kanji": "卯",
+   "kanji_game_freq": 0,
+   "ko_freq": 826
+  },
+  "세": {
+   "sjis": "894C",
+   "glyph_index": 559,
+   "original_kanji": "鵜",
+   "kanji_game_freq": 0,
+   "ko_freq": 823
+  },
+  "보": {
+   "sjis": "894D",
+   "glyph_index": 560,
+   "original_kanji": "窺",
+   "kanji_game_freq": 0,
+   "ko_freq": 798
+  },
+  "일": {
+   "sjis": "894E",
+   "glyph_index": 561,
+   "original_kanji": "丑",
+   "kanji_game_freq": 0,
+   "ko_freq": 769
+  },
+  "부": {
+   "sjis": "894F",
+   "glyph_index": 562,
+   "original_kanji": "碓",
+   "kanji_game_freq": 0,
+   "ko_freq": 730
+  },
+  "물": {
+   "sjis": "8950",
+   "glyph_index": 563,
+   "original_kanji": "臼",
+   "kanji_game_freq": 0,
+   "ko_freq": 730
+  },
+  "모": {
+   "sjis": "8951",
+   "glyph_index": 564,
+   "original_kanji": "渦",
+   "kanji_game_freq": 0,
+   "ko_freq": 687
+  },
+  "계": {
+   "sjis": "8954",
+   "glyph_index": 567,
+   "original_kanji": "欝",
+   "kanji_game_freq": 0,
+   "ko_freq": 679
+  },
+  "내": {
+   "sjis": "8955",
+   "glyph_index": 568,
+   "original_kanji": "蔚",
+   "kanji_game_freq": 0,
+   "ko_freq": 676
+  },
+  "전": {
+   "sjis": "8956",
+   "glyph_index": 569,
+   "original_kanji": "鰻",
+   "kanji_game_freq": 0,
+   "ko_freq": 671
+  },
+  "없": {
+   "sjis": "8957",
+   "glyph_index": 570,
+   "original_kanji": "姥",
+   "kanji_game_freq": 0,
+   "ko_freq": 668
+  },
+  "저": {
+   "sjis": "8958",
+   "glyph_index": 571,
+   "original_kanji": "厩",
+   "kanji_game_freq": 0,
+   "ko_freq": 650
+  },
+  "건": {
+   "sjis": "895A",
+   "glyph_index": 573,
+   "original_kanji": "瓜",
+   "kanji_game_freq": 0,
+   "ko_freq": 643
+  },
+  "단": {
+   "sjis": "895B",
+   "glyph_index": 574,
+   "original_kanji": "閏",
+   "kanji_game_freq": 0,
+   "ko_freq": 640
+  },
+  "안": {
+   "sjis": "895D",
+   "glyph_index": 576,
+   "original_kanji": "云",
+   "kanji_game_freq": 0,
+   "ko_freq": 632
+  },
+  "미": {
+   "sjis": "8960",
+   "glyph_index": 579,
+   "original_kanji": "荏",
+   "kanji_game_freq": 0,
+   "ko_freq": 609
+  },
+  "습": {
+   "sjis": "8962",
+   "glyph_index": 581,
+   "original_kanji": "叡",
+   "kanji_game_freq": 0,
+   "ko_freq": 609
+  },
+  "군": {
+   "sjis": "8964",
+   "glyph_index": 583,
+   "original_kanji": "嬰",
+   "kanji_game_freq": 0,
+   "ko_freq": 604
+  },
+  "크": {
+   "sjis": "8967",
+   "glyph_index": 586,
+   "original_kanji": "曳",
+   "kanji_game_freq": 0,
+   "ko_freq": 589
+  },
+  "소": {
+   "sjis": "896B",
+   "glyph_index": 590,
+   "original_kanji": "洩",
+   "kanji_game_freq": 0,
+   "ko_freq": 579
+  },
+  "바": {
+   "sjis": "896D",
+   "glyph_index": 592,
+   "original_kanji": "盈",
+   "kanji_game_freq": 0,
+   "ko_freq": 556
+  },
+  "려": {
+   "sjis": "896E",
+   "glyph_index": 593,
+   "original_kanji": "穎",
+   "kanji_game_freq": 0,
+   "ko_freq": 545
+  },
+  "알": {
+   "sjis": "896F",
+   "glyph_index": 594,
+   "original_kanji": "頴",
+   "kanji_game_freq": 0,
+   "ko_freq": 526
+  },
+  "않": {
+   "sjis": "8971",
+   "glyph_index": 596,
+   "original_kanji": "衛",
+   "kanji_game_freq": 0,
+   "ko_freq": 520
+  },
+  "성": {
+   "sjis": "8972",
+   "glyph_index": 597,
+   "original_kanji": "詠",
+   "kanji_game_freq": 0,
+   "ko_freq": 518
+  },
+  "쪽": {
+   "sjis": "8973",
+   "glyph_index": 598,
+   "original_kanji": "鋭",
+   "kanji_game_freq": 0,
+   "ko_freq": 513
+  },
+  "제": {
+   "sjis": "8975",
+   "glyph_index": 600,
+   "original_kanji": "疫",
+   "kanji_game_freq": 0,
+   "ko_freq": 509
+  },
+  "조": {
+   "sjis": "8976",
+   "glyph_index": 601,
+   "original_kanji": "益",
+   "kanji_game_freq": 0,
+   "ko_freq": 502
+  },
+  "동": {
+   "sjis": "8977",
+   "glyph_index": 602,
+   "original_kanji": "駅",
+   "kanji_game_freq": 0,
+   "ko_freq": 498
+  },
+  "와": {
+   "sjis": "8978",
+   "glyph_index": 603,
+   "original_kanji": "悦",
+   "kanji_game_freq": 0,
+   "ko_freq": 483
+  },
+  "데": {
+   "sjis": "8979",
+   "glyph_index": 604,
+   "original_kanji": "謁",
+   "kanji_game_freq": 0,
+   "ko_freq": 481
+  },
+  "장": {
+   "sjis": "897B",
+   "glyph_index": 606,
+   "original_kanji": "閲",
+   "kanji_game_freq": 0,
+   "ko_freq": 473
+  },
+  "러": {
+   "sjis": "897C",
+   "glyph_index": 607,
+   "original_kanji": "榎",
+   "kanji_game_freq": 0,
+   "ko_freq": 471
+  },
+  "행": {
+   "sjis": "897D",
+   "glyph_index": 608,
+   "original_kanji": "厭",
+   "kanji_game_freq": 0,
+   "ko_freq": 464
+  },
+  "르": {
+   "sjis": "897E",
+   "glyph_index": 609,
+   "original_kanji": "円",
+   "kanji_game_freq": 0,
+   "ko_freq": 455
+  },
+  "당": {
+   "sjis": "8980",
+   "glyph_index": 610,
+   "original_kanji": "園",
+   "kanji_game_freq": 0,
+   "ko_freq": 453
+  },
+  "히": {
+   "sjis": "8981",
+   "glyph_index": 611,
+   "original_kanji": "堰",
+   "kanji_game_freq": 0,
+   "ko_freq": 449
+  },
+  "위": {
+   "sjis": "8982",
+   "glyph_index": 612,
+   "original_kanji": "奄",
+   "kanji_game_freq": 0,
+   "ko_freq": 448
+  },
+  "할": {
+   "sjis": "8983",
+   "glyph_index": 613,
+   "original_kanji": "宴",
+   "kanji_game_freq": 0,
+   "ko_freq": 440
+  },
+  "간": {
+   "sjis": "8985",
+   "glyph_index": 615,
+   "original_kanji": "怨",
+   "kanji_game_freq": 0,
+   "ko_freq": 432
+  },
+  "음": {
+   "sjis": "8986",
+   "glyph_index": 616,
+   "original_kanji": "掩",
+   "kanji_game_freq": 0,
+   "ko_freq": 424
+  },
+  "키": {
+   "sjis": "8988",
+   "glyph_index": 618,
+   "original_kanji": "沿",
+   "kanji_game_freq": 0,
+   "ko_freq": 415
+  },
+  "되": {
+   "sjis": "898B",
+   "glyph_index": 621,
+   "original_kanji": "焔",
+   "kanji_game_freq": 0,
+   "ko_freq": 414
+  },
+  "교": {
+   "sjis": "898D",
+   "glyph_index": 623,
+   "original_kanji": "燕",
+   "kanji_game_freq": 0,
+   "ko_freq": 413
+  },
+  "드": {
+   "sjis": "8990",
+   "glyph_index": 626,
+   "original_kanji": "艶",
+   "kanji_game_freq": 0,
+   "ko_freq": 411
+  },
+  "했": {
+   "sjis": "8991",
+   "glyph_index": 627,
+   "original_kanji": "苑",
+   "kanji_game_freq": 0,
+   "ko_freq": 410
+  },
+  "너": {
+   "sjis": "8992",
+   "glyph_index": 628,
+   "original_kanji": "薗",
+   "kanji_game_freq": 0,
+   "ko_freq": 406
+  },
+  "님": {
+   "sjis": "8994",
+   "glyph_index": 630,
+   "original_kanji": "鉛",
+   "kanji_game_freq": 0,
+   "ko_freq": 402
+  },
+  "더": {
+   "sjis": "8995",
+   "glyph_index": 631,
+   "original_kanji": "鴛",
+   "kanji_game_freq": 0,
+   "ko_freq": 399
+  },
+  "람": {
+   "sjis": "8997",
+   "glyph_index": 633,
+   "original_kanji": "於",
+   "kanji_game_freq": 0,
+   "ko_freq": 396
+  },
+  "방": {
+   "sjis": "8999",
+   "glyph_index": 635,
+   "original_kanji": "甥",
+   "kanji_game_freq": 0,
+   "ko_freq": 391
+  },
+  "래": {
+   "sjis": "899A",
+   "glyph_index": 636,
+   "original_kanji": "凹",
+   "kanji_game_freq": 0,
+   "ko_freq": 385
+  },
+  "온": {
+   "sjis": "89A0",
+   "glyph_index": 642,
+   "original_kanji": "旺",
+   "kanji_game_freq": 0,
+   "ko_freq": 383
+  },
+  "렇": {
+   "sjis": "89A2",
+   "glyph_index": 644,
+   "original_kanji": "欧",
+   "kanji_game_freq": 0,
+   "ko_freq": 381
+  },
+  "녀": {
+   "sjis": "89A5",
+   "glyph_index": 647,
+   "original_kanji": "翁",
+   "kanji_game_freq": 0,
+   "ko_freq": 377
+  },
+  "레": {
+   "sjis": "89A6",
+   "glyph_index": 648,
+   "original_kanji": "襖",
+   "kanji_game_freq": 0,
+   "ko_freq": 373
+  },
+  "과": {
+   "sjis": "89A7",
+   "glyph_index": 649,
+   "original_kanji": "鴬",
+   "kanji_game_freq": 0,
+   "ko_freq": 373
+  },
+  "럼": {
+   "sjis": "89A8",
+   "glyph_index": 650,
+   "original_kanji": "鴎",
+   "kanji_game_freq": 0,
+   "ko_freq": 373
+  },
+  "금": {
+   "sjis": "89AC",
+   "glyph_index": 654,
+   "original_kanji": "荻",
+   "kanji_game_freq": 0,
+   "ko_freq": 368
+  },
+  "천": {
+   "sjis": "89AD",
+   "glyph_index": 655,
+   "original_kanji": "億",
+   "kanji_game_freq": 0,
+   "ko_freq": 363
+  },
+  "문": {
+   "sjis": "89B0",
+   "glyph_index": 658,
+   "original_kanji": "臆",
+   "kanji_game_freq": 0,
+   "ko_freq": 361
+  },
+  "분": {
+   "sjis": "89B1",
+   "glyph_index": 659,
+   "original_kanji": "桶",
+   "kanji_game_freq": 0,
+   "ko_freq": 361
+  },
+  "생": {
+   "sjis": "89B2",
+   "glyph_index": 660,
+   "original_kanji": "牡",
+   "kanji_game_freq": 0,
+   "ko_freq": 359
+  },
+  "걸": {
+   "sjis": "89B5",
+   "glyph_index": 663,
+   "original_kanji": "卸",
+   "kanji_game_freq": 0,
+   "ko_freq": 357
+  },
+  "석": {
+   "sjis": "89BE",
+   "glyph_index": 672,
+   "original_kanji": "伽",
+   "kanji_game_freq": 0,
+   "ko_freq": 344
+  },
+  "같": {
+   "sjis": "89BF",
+   "glyph_index": 673,
+   "original_kanji": "価",
+   "kanji_game_freq": 0,
+   "ko_freq": 339
+  },
+  "입": {
+   "sjis": "89C0",
+   "glyph_index": 674,
+   "original_kanji": "佳",
+   "kanji_game_freq": 0,
+   "ko_freq": 337
+  },
+  "좋": {
+   "sjis": "89C3",
+   "glyph_index": 677,
+   "original_kanji": "嘉",
+   "kanji_game_freq": 0,
+   "ko_freq": 330
+  },
+  "비": {
+   "sjis": "89C5",
+   "glyph_index": 679,
+   "original_kanji": "嫁",
+   "kanji_game_freq": 0,
+   "ko_freq": 317
+  },
+  "진": {
+   "sjis": "89C7",
+   "glyph_index": 681,
+   "original_kanji": "寡",
+   "kanji_game_freq": 0,
+   "ko_freq": 315
+  },
+  "란": {
+   "sjis": "89C8",
+   "glyph_index": 682,
+   "original_kanji": "科",
+   "kanji_game_freq": 0,
+   "ko_freq": 312
+  },
+  "남": {
+   "sjis": "89CF",
+   "glyph_index": 689,
+   "original_kanji": "珂",
+   "kanji_game_freq": 0,
+   "ko_freq": 312
+  },
+  "힘": {
+   "sjis": "89D0",
+   "glyph_index": 690,
+   "original_kanji": "禍",
+   "kanji_game_freq": 0,
+   "ko_freq": 311
+  },
+  "버": {
+   "sjis": "89D1",
+   "glyph_index": 691,
+   "original_kanji": "禾",
+   "kanji_game_freq": 0,
+   "ko_freq": 307
+  },
+  "치": {
+   "sjis": "89D5",
+   "glyph_index": 695,
+   "original_kanji": "苛",
+   "kanji_game_freq": 0,
+   "ko_freq": 307
+  },
+  "뭐": {
+   "sjis": "89D6",
+   "glyph_index": 696,
+   "original_kanji": "茄",
+   "kanji_game_freq": 0,
+   "ko_freq": 307
+  },
+  "루": {
+   "sjis": "89D8",
+   "glyph_index": 698,
+   "original_kanji": "華",
+   "kanji_game_freq": 0,
+   "ko_freq": 303
+  },
+  "든": {
+   "sjis": "89D9",
+   "glyph_index": 699,
+   "original_kanji": "菓",
+   "kanji_game_freq": 0,
+   "ko_freq": 302
+  },
+  "용": {
+   "sjis": "89DA",
+   "glyph_index": 700,
+   "original_kanji": "蝦",
+   "kanji_game_freq": 0,
+   "ko_freq": 299
+  },
+  "적": {
+   "sjis": "89DC",
+   "glyph_index": 702,
+   "original_kanji": "嘩",
+   "kanji_game_freq": 0,
+   "ko_freq": 294
+  },
+  "파": {
+   "sjis": "89DE",
+   "glyph_index": 704,
+   "original_kanji": "迦",
+   "kanji_game_freq": 0,
+   "ko_freq": 290
+  },
+  "두": {
+   "sjis": "89E1",
+   "glyph_index": 707,
+   "original_kanji": "蚊",
+   "kanji_game_freq": 0,
+   "ko_freq": 286
+  },
+  "중": {
+   "sjis": "89E2",
+   "glyph_index": 708,
+   "original_kanji": "俄",
+   "kanji_game_freq": 0,
+   "ko_freq": 286
+  },
+  "곳": {
+   "sjis": "89E3",
+   "glyph_index": 709,
+   "original_kanji": "峨",
+   "kanji_game_freq": 0,
+   "ko_freq": 282
+  },
+  "배": {
+   "sjis": "89E7",
+   "glyph_index": 713,
+   "original_kanji": "臥",
+   "kanji_game_freq": 0,
+   "ko_freq": 281
+  },
+  "판": {
+   "sjis": "89E8",
+   "glyph_index": 714,
+   "original_kanji": "芽",
+   "kanji_game_freq": 0,
+   "ko_freq": 278
+  },
+  "명": {
+   "sjis": "89E9",
+   "glyph_index": 715,
+   "original_kanji": "蛾",
+   "kanji_game_freq": 0,
+   "ko_freq": 278
+  },
+  "터": {
+   "sjis": "89EA",
+   "glyph_index": 716,
+   "original_kanji": "賀",
+   "kanji_game_freq": 0,
+   "ko_freq": 275
+  },
+  "프": {
+   "sjis": "89EC",
+   "glyph_index": 718,
+   "original_kanji": "餓",
+   "kanji_game_freq": 0,
+   "ko_freq": 274
+  },
+  "때": {
+   "sjis": "89ED",
+   "glyph_index": 719,
+   "original_kanji": "駕",
+   "kanji_game_freq": 0,
+   "ko_freq": 272
+  },
+  "께": {
+   "sjis": "89F2",
+   "glyph_index": 724,
+   "original_kanji": "塊",
+   "kanji_game_freq": 0,
+   "ko_freq": 271
+  },
+  "타": {
+   "sjis": "89F8",
+   "glyph_index": 730,
+   "original_kanji": "恢",
+   "kanji_game_freq": 0,
+   "ko_freq": 270
+  },
+  "밀": {
+   "sjis": "89F9",
+   "glyph_index": 731,
+   "original_kanji": "懐",
+   "kanji_game_freq": 0,
+   "ko_freq": 269
+  },
+  "각": {
+   "sjis": "89FA",
+   "glyph_index": 732,
+   "original_kanji": "戒",
+   "kanji_game_freq": 0,
+   "ko_freq": 266
+  },
+  "카": {
+   "sjis": "89FB",
+   "glyph_index": 733,
+   "original_kanji": "拐",
+   "kanji_game_freq": 0,
+   "ko_freq": 264
+  },
+  "영": {
+   "sjis": "8A40",
+   "glyph_index": 735,
+   "original_kanji": "魁",
+   "kanji_game_freq": 0,
+   "ko_freq": 264
+  },
+  "머": {
+   "sjis": "8A41",
+   "glyph_index": 736,
+   "original_kanji": "晦",
+   "kanji_game_freq": 0,
+   "ko_freq": 263
+  },
+  "난": {
+   "sjis": "8A44",
+   "glyph_index": 739,
+   "original_kanji": "灰",
+   "kanji_game_freq": 0,
+   "ko_freq": 263
+  },
+  "속": {
+   "sjis": "8A48",
+   "glyph_index": 743,
+   "original_kanji": "芥",
+   "kanji_game_freq": 0,
+   "ko_freq": 256
+  },
+  "실": {
+   "sjis": "8A49",
+   "glyph_index": 744,
+   "original_kanji": "蟹",
+   "kanji_game_freq": 0,
+   "ko_freq": 255
+  },
+  "씨": {
+   "sjis": "8A4D",
+   "glyph_index": 748,
+   "original_kanji": "凱",
+   "kanji_game_freq": 0,
+   "ko_freq": 254
+  },
+  "운": {
+   "sjis": "8A4E",
+   "glyph_index": 749,
+   "original_kanji": "劾",
+   "kanji_game_freq": 0,
+   "ko_freq": 253
+  },
+  "디": {
+   "sjis": "8A50",
+   "glyph_index": 751,
+   "original_kanji": "咳",
+   "kanji_game_freq": 0,
+   "ko_freq": 248
+  },
+  "손": {
+   "sjis": "8A53",
+   "glyph_index": 754,
+   "original_kanji": "慨",
+   "kanji_game_freq": 0,
+   "ko_freq": 245
+  },
+  "합": {
+   "sjis": "8A54",
+   "glyph_index": 755,
+   "original_kanji": "概",
+   "kanji_game_freq": 0,
+   "ko_freq": 245
+  },
+  "런": {
+   "sjis": "8A56",
+   "glyph_index": 757,
+   "original_kanji": "碍",
+   "kanji_game_freq": 0,
+   "ko_freq": 240
+  },
+  "법": {
+   "sjis": "8A57",
+   "glyph_index": 758,
+   "original_kanji": "蓋",
+   "kanji_game_freq": 0,
+   "ko_freq": 238
+  },
+  "술": {
+   "sjis": "8A59",
+   "glyph_index": 760,
+   "original_kanji": "該",
+   "kanji_game_freq": 0,
+   "ko_freq": 236
+  },
+  "심": {
+   "sjis": "8A5C",
+   "glyph_index": 763,
+   "original_kanji": "浬",
+   "kanji_game_freq": 0,
+   "ko_freq": 235
+  },
+  "찾": {
+   "sjis": "8A5D",
+   "glyph_index": 764,
+   "original_kanji": "馨",
+   "kanji_game_freq": 0,
+   "ko_freq": 235
+  },
+  "록": {
+   "sjis": "8A5E",
+   "glyph_index": 765,
+   "original_kanji": "蛙",
+   "kanji_game_freq": 0,
+   "ko_freq": 234
+  },
+  "돌": {
+   "sjis": "8A5F",
+   "glyph_index": 766,
+   "original_kanji": "垣",
+   "kanji_game_freq": 0,
+   "ko_freq": 229
+  },
+  "았": {
+   "sjis": "8A60",
+   "glyph_index": 767,
+   "original_kanji": "柿",
+   "kanji_game_freq": 0,
+   "ko_freq": 228
+  },
+  "검": {
+   "sjis": "8A61",
+   "glyph_index": 768,
+   "original_kanji": "蛎",
+   "kanji_game_freq": 0,
+   "ko_freq": 226
+  },
+  "져": {
+   "sjis": "8A62",
+   "glyph_index": 769,
+   "original_kanji": "鈎",
+   "kanji_game_freq": 0,
+   "ko_freq": 224
+  },
+  "밤": {
+   "sjis": "8A63",
+   "glyph_index": 770,
+   "original_kanji": "劃",
+   "kanji_game_freq": 0,
+   "ko_freq": 215
+  },
+  "유": {
+   "sjis": "8A64",
+   "glyph_index": 771,
+   "original_kanji": "嚇",
+   "kanji_game_freq": 0,
+   "ko_freq": 213
+  },
+  "화": {
+   "sjis": "8A66",
+   "glyph_index": 773,
+   "original_kanji": "廓",
+   "kanji_game_freq": 0,
+   "ko_freq": 212
+  },
+  "양": {
+   "sjis": "8A68",
+   "glyph_index": 775,
+   "original_kanji": "撹",
+   "kanji_game_freq": 0,
+   "ko_freq": 212
+  },
+  "날": {
+   "sjis": "8A6A",
+   "glyph_index": 777,
+   "original_kanji": "核",
+   "kanji_game_freq": 0,
+   "ko_freq": 209
+  },
+  "목": {
+   "sjis": "8A6B",
+   "glyph_index": 778,
+   "original_kanji": "殻",
+   "kanji_game_freq": 0,
+   "ko_freq": 204
+  },
+  "암": {
+   "sjis": "8A6C",
+   "glyph_index": 779,
+   "original_kanji": "獲",
+   "kanji_game_freq": 0,
+   "ko_freq": 203
+  },
+  "관": {
+   "sjis": "8A71",
+   "glyph_index": 784,
+   "original_kanji": "赫",
+   "kanji_game_freq": 0,
+   "ko_freq": 202
+  },
+  "얻": {
+   "sjis": "8A72",
+   "glyph_index": 785,
+   "original_kanji": "較",
+   "kanji_game_freq": 0,
+   "ko_freq": 200
+  },
+  "던": {
+   "sjis": "8A73",
+   "glyph_index": 786,
+   "original_kanji": "郭",
+   "kanji_game_freq": 0,
+   "ko_freq": 200
+  },
+  "불": {
+   "sjis": "8A74",
+   "glyph_index": 787,
+   "original_kanji": "閣",
+   "kanji_game_freq": 0,
+   "ko_freq": 199
+  },
+  "늘": {
+   "sjis": "8A78",
+   "glyph_index": 791,
+   "original_kanji": "岳",
+   "kanji_game_freq": 0,
+   "ko_freq": 198
+  },
+  "싶": {
+   "sjis": "8A7B",
+   "glyph_index": 794,
+   "original_kanji": "顎",
+   "kanji_game_freq": 0,
+   "ko_freq": 197
+  },
+  "발": {
+   "sjis": "8A80",
+   "glyph_index": 798,
+   "original_kanji": "橿",
+   "kanji_game_freq": 0,
+   "ko_freq": 193
+  },
+  "갈": {
+   "sjis": "8A81",
+   "glyph_index": 799,
+   "original_kanji": "梶",
+   "kanji_game_freq": 0,
+   "ko_freq": 193
+  },
+  "왕": {
+   "sjis": "8A82",
+   "glyph_index": 800,
+   "original_kanji": "鰍",
+   "kanji_game_freq": 0,
+   "ko_freq": 193
+  },
+  "작": {
+   "sjis": "8A85",
+   "glyph_index": 803,
+   "original_kanji": "喝",
+   "kanji_game_freq": 0,
+   "ko_freq": 193
+  },
+  "노": {
+   "sjis": "8A86",
+   "glyph_index": 804,
+   "original_kanji": "恰",
+   "kanji_game_freq": 0,
+   "ko_freq": 192
+  },
+  "강": {
+   "sjis": "8A87",
+   "glyph_index": 805,
+   "original_kanji": "括",
+   "kanji_game_freq": 0,
+   "ko_freq": 191
+  },
+  "워": {
+   "sjis": "8A89",
+   "glyph_index": 807,
+   "original_kanji": "渇",
+   "kanji_game_freq": 0,
+   "ko_freq": 187
+  },
+  "공": {
+   "sjis": "8A8A",
+   "glyph_index": 808,
+   "original_kanji": "滑",
+   "kanji_game_freq": 0,
+   "ko_freq": 186
+  },
+  "함": {
+   "sjis": "8A8B",
+   "glyph_index": 809,
+   "original_kanji": "葛",
+   "kanji_game_freq": 0,
+   "ko_freq": 186
+  },
+  "놈": {
+   "sjis": "8A8C",
+   "glyph_index": 810,
+   "original_kanji": "褐",
+   "kanji_game_freq": 0,
+   "ko_freq": 184
+  },
+  "처": {
+   "sjis": "8A8D",
+   "glyph_index": 811,
+   "original_kanji": "轄",
+   "kanji_game_freq": 0,
+   "ko_freq": 184
+  },
+  "또": {
+   "sjis": "8A8E",
+   "glyph_index": 812,
+   "original_kanji": "且",
+   "kanji_game_freq": 0,
+   "ko_freq": 184
+  },
+  "언": {
+   "sjis": "8A8F",
+   "glyph_index": 813,
+   "original_kanji": "鰹",
+   "kanji_game_freq": 0,
+   "ko_freq": 183
+  },
+  "후": {
+   "sjis": "8A90",
+   "glyph_index": 814,
+   "original_kanji": "叶",
+   "kanji_game_freq": 0,
+   "ko_freq": 182
+  },
+  "감": {
+   "sjis": "8A91",
+   "glyph_index": 815,
+   "original_kanji": "椛",
+   "kanji_game_freq": 0,
+   "ko_freq": 180
+  },
+  "원": {
+   "sjis": "8A92",
+   "glyph_index": 816,
+   "original_kanji": "樺",
+   "kanji_game_freq": 0,
+   "ko_freq": 179
+  },
+  "름": {
+   "sjis": "8A93",
+   "glyph_index": 817,
+   "original_kanji": "鞄",
+   "kanji_game_freq": 0,
+   "ko_freq": 178
+  },
+  "희": {
+   "sjis": "8A96",
+   "glyph_index": 820,
+   "original_kanji": "竃",
+   "kanji_game_freq": 0,
+   "ko_freq": 177
+  },
+  "체": {
+   "sjis": "8A97",
+   "glyph_index": 821,
+   "original_kanji": "蒲",
+   "kanji_game_freq": 0,
+   "ko_freq": 176
+  },
+  "악": {
+   "sjis": "8A98",
+   "glyph_index": 822,
+   "original_kanji": "釜",
+   "kanji_game_freq": 0,
+   "ko_freq": 172
+  },
+  "환": {
+   "sjis": "8A99",
+   "glyph_index": 823,
+   "original_kanji": "鎌",
+   "kanji_game_freq": 0,
+   "ko_freq": 171
+  },
+  "길": {
+   "sjis": "8A9A",
+   "glyph_index": 824,
+   "original_kanji": "噛",
+   "kanji_game_freq": 0,
+   "ko_freq": 171
+  },
+  "즈": {
+   "sjis": "8A9B",
+   "glyph_index": 825,
+   "original_kanji": "鴨",
+   "kanji_game_freq": 0,
+   "ko_freq": 170
+  },
+  "북": {
+   "sjis": "8A9C",
+   "glyph_index": 826,
+   "original_kanji": "栢",
+   "kanji_game_freq": 0,
+   "ko_freq": 170
+  },
+  "집": {
+   "sjis": "8A9D",
+   "glyph_index": 827,
+   "original_kanji": "茅",
+   "kanji_game_freq": 0,
+   "ko_freq": 170
+  },
+  "열": {
+   "sjis": "8A9E",
+   "glyph_index": 828,
+   "original_kanji": "萱",
+   "kanji_game_freq": 0,
+   "ko_freq": 167
+  },
+  "항": {
+   "sjis": "8A9F",
+   "glyph_index": 829,
+   "original_kanji": "粥",
+   "kanji_game_freq": 0,
+   "ko_freq": 167
+  },
+  "식": {
+   "sjis": "8AA0",
+   "glyph_index": 830,
+   "original_kanji": "刈",
+   "kanji_game_freq": 0,
+   "ko_freq": 164
+  },
+  "역": {
+   "sjis": "8AA1",
+   "glyph_index": 831,
+   "original_kanji": "苅",
+   "kanji_game_freq": 0,
+   "ko_freq": 164
+  },
+  "최": {
+   "sjis": "8AA2",
+   "glyph_index": 832,
+   "original_kanji": "瓦",
+   "kanji_game_freq": 0,
+   "ko_freq": 163
+  },
+  "살": {
+   "sjis": "8AA4",
+   "glyph_index": 834,
+   "original_kanji": "侃",
+   "kanji_game_freq": 0,
+   "ko_freq": 162
+  },
+  "새": {
+   "sjis": "8AA7",
+   "glyph_index": 837,
+   "original_kanji": "刊",
+   "kanji_game_freq": 0,
+   "ko_freq": 160
+  },
+  "직": {
+   "sjis": "8AAC",
+   "glyph_index": 842,
+   "original_kanji": "堪",
+   "kanji_game_freq": 0,
+   "ko_freq": 160
+  },
+  "탑": {
+   "sjis": "8AAD",
+   "glyph_index": 843,
+   "original_kanji": "姦",
+   "kanji_game_freq": 0,
+   "ko_freq": 159
+  },
+  "잠": {
+   "sjis": "8AB0",
+   "glyph_index": 846,
+   "original_kanji": "寛",
+   "kanji_game_freq": 0,
+   "ko_freq": 159
+  },
+  "산": {
+   "sjis": "8AB6",
+   "glyph_index": 852,
+   "original_kanji": "憾",
+   "kanji_game_freq": 0,
+   "ko_freq": 158
+  },
+  "된": {
+   "sjis": "8AB9",
+   "glyph_index": 855,
+   "original_kanji": "柑",
+   "kanji_game_freq": 0,
+   "ko_freq": 158
+  },
+  "잘": {
+   "sjis": "8ABA",
+   "glyph_index": 856,
+   "original_kanji": "桓",
+   "kanji_game_freq": 0,
+   "ko_freq": 158
+  },
+  "격": {
+   "sjis": "8ABC",
+   "glyph_index": 858,
+   "original_kanji": "款",
+   "kanji_game_freq": 0,
+   "ko_freq": 157
+  },
+  "줄": {
+   "sjis": "8ABE",
+   "glyph_index": 860,
+   "original_kanji": "汗",
+   "kanji_game_freq": 0,
+   "ko_freq": 157
+  },
+  "랑": {
+   "sjis": "8ABF",
+   "glyph_index": 861,
+   "original_kanji": "漢",
+   "kanji_game_freq": 0,
+   "ko_freq": 156
+  },
+  "코": {
+   "sjis": "8AC0",
+   "glyph_index": 862,
+   "original_kanji": "澗",
+   "kanji_game_freq": 0,
+   "ko_freq": 156
+  },
+  "력": {
+   "sjis": "8AC1",
+   "glyph_index": 863,
+   "original_kanji": "潅",
+   "kanji_game_freq": 0,
+   "ko_freq": 156
+  },
+  "누": {
+   "sjis": "8AC2",
+   "glyph_index": 864,
+   "original_kanji": "環",
+   "kanji_game_freq": 0,
+   "ko_freq": 153
+  },
+  "족": {
+   "sjis": "8AC6",
+   "glyph_index": 868,
+   "original_kanji": "竿",
+   "kanji_game_freq": 0,
+   "ko_freq": 152
+  },
+  "침": {
+   "sjis": "8AC9",
+   "glyph_index": 871,
+   "original_kanji": "緩",
+   "kanji_game_freq": 0,
+   "ko_freq": 152
+  },
+  "막": {
+   "sjis": "8ACA",
+   "glyph_index": 872,
+   "original_kanji": "缶",
+   "kanji_game_freq": 0,
+   "ko_freq": 151
+  },
+  "울": {
+   "sjis": "8ACB",
+   "glyph_index": 873,
+   "original_kanji": "翰",
+   "kanji_game_freq": 0,
+   "ko_freq": 148
+  },
+  "억": {
+   "sjis": "8ACC",
+   "glyph_index": 874,
+   "original_kanji": "肝",
+   "kanji_game_freq": 0,
+   "ko_freq": 148
+  },
+  "티": {
+   "sjis": "8ACD",
+   "glyph_index": 875,
+   "original_kanji": "艦",
+   "kanji_game_freq": 0,
+   "ko_freq": 147
+  },
+  "점": {
+   "sjis": "8ACE",
+   "glyph_index": 876,
+   "original_kanji": "莞",
+   "kanji_game_freq": 0,
+   "ko_freq": 147
+  },
+  "냐": {
+   "sjis": "8ACF",
+   "glyph_index": 877,
+   "original_kanji": "観",
+   "kanji_game_freq": 0,
+   "ko_freq": 146
+  },
+  "빛": {
+   "sjis": "8AD0",
+   "glyph_index": 878,
+   "original_kanji": "諌",
+   "kanji_game_freq": 0,
+   "ko_freq": 145
+  },
+  "케": {
+   "sjis": "8AD3",
+   "glyph_index": 881,
+   "original_kanji": "鑑",
+   "kanji_game_freq": 0,
+   "ko_freq": 145
+  },
+  "줘": {
+   "sjis": "8AD5",
+   "glyph_index": 883,
+   "original_kanji": "閑",
+   "kanji_game_freq": 0,
+   "ko_freq": 144
+  },
+  "선": {
+   "sjis": "8AD7",
+   "glyph_index": 885,
+   "original_kanji": "陥",
+   "kanji_game_freq": 0,
+   "ko_freq": 143
+  },
+  "굴": {
+   "sjis": "8AD8",
+   "glyph_index": 886,
+   "original_kanji": "韓",
+   "kanji_game_freq": 0,
+   "ko_freq": 142
+  },
+  "른": {
+   "sjis": "8ADA",
+   "glyph_index": 888,
+   "original_kanji": "舘",
+   "kanji_game_freq": 0,
+   "ko_freq": 142
+  },
+  "몬": {
+   "sjis": "8ADC",
+   "glyph_index": 890,
+   "original_kanji": "含",
+   "kanji_game_freq": 0,
+   "ko_freq": 141
+  },
+  "반": {
+   "sjis": "8ADE",
+   "glyph_index": 892,
+   "original_kanji": "巌",
+   "kanji_game_freq": 0,
+   "ko_freq": 140
+  },
+  "예": {
+   "sjis": "8AE0",
+   "glyph_index": 894,
+   "original_kanji": "癌",
+   "kanji_game_freq": 0,
+   "ko_freq": 140
+  },
+  "쉬": {
+   "sjis": "8AE1",
+   "glyph_index": 895,
+   "original_kanji": "眼",
+   "kanji_game_freq": 0,
+   "ko_freq": 140
+  },
+  "경": {
+   "sjis": "8AE3",
+   "glyph_index": 897,
+   "original_kanji": "翫",
+   "kanji_game_freq": 0,
+   "ko_freq": 139
+  },
+  "린": {
+   "sjis": "8AE4",
+   "glyph_index": 898,
+   "original_kanji": "贋",
+   "kanji_game_freq": 0,
+   "ko_freq": 138
+  },
+  "많": {
+   "sjis": "8AE5",
+   "glyph_index": 899,
+   "original_kanji": "雁",
+   "kanji_game_freq": 0,
+   "ko_freq": 138
+  },
+  "연": {
+   "sjis": "8AEA",
+   "glyph_index": 904,
+   "original_kanji": "伎",
+   "kanji_game_freq": 0,
+   "ko_freq": 137
+  },
+  "쓰": {
+   "sjis": "8AF2",
+   "glyph_index": 912,
+   "original_kanji": "岐",
+   "kanji_game_freq": 0,
+   "ko_freq": 136
+  },
+  "토": {
+   "sjis": "8AF9",
+   "glyph_index": 919,
+   "original_kanji": "既",
+   "kanji_game_freq": 0,
+   "ko_freq": 135
+  },
+  "편": {
+   "sjis": "8AFB",
+   "glyph_index": 921,
+   "original_kanji": "棋",
+   "kanji_game_freq": 0,
+   "ko_freq": 135
+  },
+  "엔": {
+   "sjis": "8AFC",
+   "glyph_index": 922,
+   "original_kanji": "棄",
+   "kanji_game_freq": 0,
+   "ko_freq": 132
+  },
+  "개": {
+   "sjis": "8B42",
+   "glyph_index": 925,
+   "original_kanji": "毅",
+   "kanji_game_freq": 0,
+   "ko_freq": 132
+  },
+  "테": {
+   "sjis": "8B44",
+   "glyph_index": 927,
+   "original_kanji": "汽",
+   "kanji_game_freq": 0,
+   "ko_freq": 132
+  },
+  "탁": {
+   "sjis": "8B45",
+   "glyph_index": 928,
+   "original_kanji": "畿",
+   "kanji_game_freq": 0,
+   "ko_freq": 132
+  },
+  "움": {
+   "sjis": "8B49",
+   "glyph_index": 932,
+   "original_kanji": "紀",
+   "kanji_game_freq": 0,
+   "ko_freq": 131
+  },
+  "눈": {
+   "sjis": "8B4A",
+   "glyph_index": 933,
+   "original_kanji": "徽",
+   "kanji_game_freq": 0,
+   "ko_freq": 130
+  },
+  "차": {
+   "sjis": "8B51",
+   "glyph_index": 940,
+   "original_kanji": "飢",
+   "kanji_game_freq": 0,
+   "ko_freq": 130
+  },
+  "망": {
+   "sjis": "8B57",
+   "glyph_index": 946,
+   "original_kanji": "妓",
+   "kanji_game_freq": 0,
+   "ko_freq": 129
+  },
+  "재": {
+   "sjis": "8B58",
+   "glyph_index": 947,
+   "original_kanji": "宜",
+   "kanji_game_freq": 0,
+   "ko_freq": 129
+  },
+  "엘": {
+   "sjis": "8B59",
+   "glyph_index": 948,
+   "original_kanji": "戯",
+   "kanji_game_freq": 0,
+   "ko_freq": 128
+  },
+  "결": {
+   "sjis": "8B5C",
+   "glyph_index": 951,
+   "original_kanji": "欺",
+   "kanji_game_freq": 0,
+   "ko_freq": 128
+  },
+  "향": {
+   "sjis": "8B61",
+   "glyph_index": 956,
+   "original_kanji": "蟻",
+   "kanji_game_freq": 0,
+   "ko_freq": 127
+  },
+  "근": {
+   "sjis": "8B62",
+   "glyph_index": 957,
+   "original_kanji": "誼",
+   "kanji_game_freq": 0,
+   "ko_freq": 127
+  },
+  "넣": {
+   "sjis": "8B64",
+   "glyph_index": 959,
+   "original_kanji": "掬",
+   "kanji_game_freq": 0,
+   "ko_freq": 126
+  },
+  "피": {
+   "sjis": "8B66",
+   "glyph_index": 961,
+   "original_kanji": "鞠",
+   "kanji_game_freq": 0,
+   "ko_freq": 125
+  },
+  "렸": {
+   "sjis": "8B68",
+   "glyph_index": 963,
+   "original_kanji": "吃",
+   "kanji_game_freq": 0,
+   "ko_freq": 124
+  },
+  "왔": {
+   "sjis": "8B6A",
+   "glyph_index": 965,
+   "original_kanji": "桔",
+   "kanji_game_freq": 0,
+   "ko_freq": 124
+  },
+  "찮": {
+   "sjis": "8B6B",
+   "glyph_index": 966,
+   "original_kanji": "橘",
+   "kanji_game_freq": 0,
+   "ko_freq": 124
+  },
+  "초": {
+   "sjis": "8B6D",
+   "glyph_index": 968,
+   "original_kanji": "砧",
+   "kanji_game_freq": 0,
+   "ko_freq": 123
+  },
+  "먼": {
+   "sjis": "8B6E",
+   "glyph_index": 969,
+   "original_kanji": "杵",
+   "kanji_game_freq": 0,
+   "ko_freq": 123
+  },
+  "봐": {
+   "sjis": "8B70",
+   "glyph_index": 971,
+   "original_kanji": "却",
+   "kanji_game_freq": 0,
+   "ko_freq": 122
+  },
+  "올": {
+   "sjis": "8B73",
+   "glyph_index": 974,
+   "original_kanji": "虐",
+   "kanji_game_freq": 0,
+   "ko_freq": 121
+  },
+  "설": {
+   "sjis": "8B79",
+   "glyph_index": 980,
+   "original_kanji": "及",
+   "kanji_game_freq": 0,
+   "ko_freq": 120
+  },
+  "느": {
+   "sjis": "8B84",
+   "glyph_index": 990,
+   "original_kanji": "灸",
+   "kanji_game_freq": 0,
+   "ko_freq": 120
+  },
+  "둠": {
+   "sjis": "8B87",
+   "glyph_index": 993,
+   "original_kanji": "窮",
+   "kanji_game_freq": 0,
+   "ko_freq": 119
+  },
+  "번": {
+   "sjis": "8B88",
+   "glyph_index": 994,
+   "original_kanji": "笈",
+   "kanji_game_freq": 0,
+   "ko_freq": 118
+  },
+  "괜": {
+   "sjis": "8B8A",
+   "glyph_index": 996,
+   "original_kanji": "糾",
+   "kanji_game_freq": 0,
+   "ko_freq": 118
+  },
+  "떻": {
+   "sjis": "8B8B",
+   "glyph_index": 997,
+   "original_kanji": "給",
+   "kanji_game_freq": 0,
+   "ko_freq": 118
+  },
+  "투": {
+   "sjis": "8B8D",
+   "glyph_index": 999,
+   "original_kanji": "牛",
+   "kanji_game_freq": 0,
+   "ko_freq": 117
+  },
+  "떠": {
+   "sjis": "8B94",
+   "glyph_index": 1006,
+   "original_kanji": "渠",
+   "kanji_game_freq": 0,
+   "ko_freq": 117
+  },
+  "릴": {
+   "sjis": "8B97",
+   "glyph_index": 1009,
+   "original_kanji": "距",
+   "kanji_game_freq": 0,
+   "ko_freq": 114
+  },
+  "셨": {
+   "sjis": "8B98",
+   "glyph_index": 1010,
+   "original_kanji": "鋸",
+   "kanji_game_freq": 0,
+   "ko_freq": 114
+  },
+  "돈": {
+   "sjis": "8B9A",
+   "glyph_index": 1012,
+   "original_kanji": "禦",
+   "kanji_game_freq": 0,
+   "ko_freq": 114
+  },
+  "복": {
+   "sjis": "8B9C",
+   "glyph_index": 1014,
+   "original_kanji": "亨",
+   "kanji_game_freq": 0,
+   "ko_freq": 113
+  },
+  "싸": {
+   "sjis": "8B9D",
+   "glyph_index": 1015,
+   "original_kanji": "享",
+   "kanji_game_freq": 0,
+   "ko_freq": 113
+  },
+  "십": {
+   "sjis": "8B9E",
+   "glyph_index": 1016,
+   "original_kanji": "京",
+   "kanji_game_freq": 0,
+   "ko_freq": 113
+  },
+  "통": {
+   "sjis": "8BA0",
+   "glyph_index": 1018,
+   "original_kanji": "侠",
+   "kanji_game_freq": 0,
+   "ko_freq": 113
+  },
+  "매": {
+   "sjis": "8BA1",
+   "glyph_index": 1019,
+   "original_kanji": "僑",
+   "kanji_game_freq": 0,
+   "ko_freq": 112
+  },
+  "갑": {
+   "sjis": "8BA2",
+   "glyph_index": 1020,
+   "original_kanji": "兇",
+   "kanji_game_freq": 0,
+   "ko_freq": 112
+  },
+  "메": {
+   "sjis": "8BA8",
+   "glyph_index": 1026,
+   "original_kanji": "卿",
+   "kanji_game_freq": 0,
+   "ko_freq": 110
+  },
+  "듀": {
+   "sjis": "8BAA",
+   "glyph_index": 1028,
+   "original_kanji": "喬",
+   "kanji_game_freq": 0,
+   "ko_freq": 109
+  },
+  "필": {
+   "sjis": "8BAC",
+   "glyph_index": 1030,
+   "original_kanji": "峡",
+   "kanji_game_freq": 0,
+   "ko_freq": 109
+  },
+  "믿": {
+   "sjis": "8BAE",
+   "glyph_index": 1032,
+   "original_kanji": "彊",
+   "kanji_game_freq": 0,
+   "ko_freq": 109
+  },
+  "견": {
+   "sjis": "8BB1",
+   "glyph_index": 1035,
+   "original_kanji": "恭",
+   "kanji_game_freq": 0,
+   "ko_freq": 109
+  },
+  "좀": {
+   "sjis": "8BB2",
+   "glyph_index": 1036,
+   "original_kanji": "挟",
+   "kanji_game_freq": 0,
+   "ko_freq": 108
+  },
+  "옷": {
+   "sjis": "8BBC",
+   "glyph_index": 1046,
+   "original_kanji": "蕎",
+   "kanji_game_freq": 0,
+   "ko_freq": 107
+  },
+  "못": {
+   "sjis": "8BC0",
+   "glyph_index": 1050,
+   "original_kanji": "饗",
+   "kanji_game_freq": 0,
+   "ko_freq": 107
+  },
+  "친": {
+   "sjis": "8BC3",
+   "glyph_index": 1053,
+   "original_kanji": "凝",
+   "kanji_game_freq": 0,
+   "ko_freq": 105
+  },
+  "애": {
+   "sjis": "8BC4",
+   "glyph_index": 1054,
+   "original_kanji": "尭",
+   "kanji_game_freq": 0,
+   "ko_freq": 105
+  },
+  "죽": {
+   "sjis": "8BC5",
+   "glyph_index": 1055,
+   "original_kanji": "暁",
+   "kanji_game_freq": 0,
+   "ko_freq": 104
+  },
+  "봉": {
+   "sjis": "8BC8",
+   "glyph_index": 1058,
+   "original_kanji": "曲",
+   "kanji_game_freq": 0,
+   "ko_freq": 103
+  },
+  "쳐": {
+   "sjis": "8BCB",
+   "glyph_index": 1061,
+   "original_kanji": "桐",
+   "kanji_game_freq": 0,
+   "ko_freq": 102
+  },
+  "달": {
+   "sjis": "8BCC",
+   "glyph_index": 1062,
+   "original_kanji": "粁",
+   "kanji_game_freq": 0,
+   "ko_freq": 101
+  },
+  "얼": {
+   "sjis": "8BCD",
+   "glyph_index": 1063,
+   "original_kanji": "僅",
+   "kanji_game_freq": 0,
+   "ko_freq": 101
+  },
+  "커": {
+   "sjis": "8BCE",
+   "glyph_index": 1064,
+   "original_kanji": "勤",
+   "kanji_game_freq": 0,
+   "ko_freq": 101
+  },
+  "평": {
+   "sjis": "8BD0",
+   "glyph_index": 1066,
+   "original_kanji": "巾",
+   "kanji_game_freq": 0,
+   "ko_freq": 101
+  },
+  "약": {
+   "sjis": "8BD1",
+   "glyph_index": 1067,
+   "original_kanji": "錦",
+   "kanji_game_freq": 0,
+   "ko_freq": 100
+  },
+  "풍": {
+   "sjis": "8BD2",
+   "glyph_index": 1068,
+   "original_kanji": "斤",
+   "kanji_game_freq": 0,
+   "ko_freq": 99
+  },
+  "광": {
+   "sjis": "8BD3",
+   "glyph_index": 1069,
+   "original_kanji": "欣",
+   "kanji_game_freq": 0,
+   "ko_freq": 99
+  },
+  "회": {
+   "sjis": "8BD4",
+   "glyph_index": 1070,
+   "original_kanji": "欽",
+   "kanji_game_freq": 0,
+   "ko_freq": 98
+  },
+  "받": {
+   "sjis": "8BD7",
+   "glyph_index": 1073,
+   "original_kanji": "禽",
+   "kanji_game_freq": 0,
+   "ko_freq": 98
+  },
+  "질": {
+   "sjis": "8BD8",
+   "glyph_index": 1074,
+   "original_kanji": "筋",
+   "kanji_game_freq": 0,
+   "ko_freq": 97
+  },
+  "호": {
+   "sjis": "8BDA",
+   "glyph_index": 1076,
+   "original_kanji": "芹",
+   "kanji_game_freq": 0,
+   "ko_freq": 97
+  },
+  "잖": {
+   "sjis": "8BDB",
+   "glyph_index": 1077,
+   "original_kanji": "菌",
+   "kanji_game_freq": 0,
+   "ko_freq": 97
+  },
+  "겨": {
+   "sjis": "8BDC",
+   "glyph_index": 1078,
+   "original_kanji": "衿",
+   "kanji_game_freq": 0,
+   "ko_freq": 95
+  },
+  "쿠": {
+   "sjis": "8BDD",
+   "glyph_index": 1079,
+   "original_kanji": "襟",
+   "kanji_game_freq": 0,
+   "ko_freq": 94
+  },
+  "몸": {
+   "sjis": "8BDE",
+   "glyph_index": 1080,
+   "original_kanji": "謹",
+   "kanji_game_freq": 0,
+   "ko_freq": 93
+  },
+  "숨": {
+   "sjis": "8BE3",
+   "glyph_index": 1085,
+   "original_kanji": "九",
+   "kanji_game_freq": 0,
+   "ko_freq": 93
+  },
+  "앞": {
+   "sjis": "8BE4",
+   "glyph_index": 1086,
+   "original_kanji": "倶",
+   "kanji_game_freq": 0,
+   "ko_freq": 93
+  },
+  "죠": {
+   "sjis": "8BE7",
+   "glyph_index": 1089,
+   "original_kanji": "狗",
+   "kanji_game_freq": 0,
+   "ko_freq": 93
+  },
+  "옥": {
+   "sjis": "8BE8",
+   "glyph_index": 1090,
+   "original_kanji": "玖",
+   "kanji_game_freq": 0,
+   "ko_freq": 92
+  },
+  "꽃": {
+   "sjis": "8BE9",
+   "glyph_index": 1091,
+   "original_kanji": "矩",
+   "kanji_game_freq": 0,
+   "ko_freq": 91
+  },
+  "험": {
+   "sjis": "8BEB",
+   "glyph_index": 1093,
+   "original_kanji": "躯",
+   "kanji_game_freq": 0,
+   "ko_freq": 90
+  },
+  "될": {
+   "sjis": "8BED",
+   "glyph_index": 1095,
+   "original_kanji": "駈",
+   "kanji_game_freq": 0,
+   "ko_freq": 89
+  },
+  "브": {
+   "sjis": "8BEE",
+   "glyph_index": 1096,
+   "original_kanji": "駒",
+   "kanji_game_freq": 0,
+   "ko_freq": 88
+  },
+  "숲": {
+   "sjis": "8BF1",
+   "glyph_index": 1099,
+   "original_kanji": "虞",
+   "kanji_game_freq": 0,
+   "ko_freq": 88
+  },
+  "철": {
+   "sjis": "8BF5",
+   "glyph_index": 1103,
+   "original_kanji": "寓",
+   "kanji_game_freq": 0,
+   "ko_freq": 87
+  },
+  "림": {
+   "sjis": "8BF6",
+   "glyph_index": 1104,
+   "original_kanji": "遇",
+   "kanji_game_freq": 0,
+   "ko_freq": 87
+  },
+  "태": {
+   "sjis": "8BF7",
+   "glyph_index": 1105,
+   "original_kanji": "隅",
+   "kanji_game_freq": 0,
+   "ko_freq": 87
+  },
+  "출": {
+   "sjis": "8BF8",
+   "glyph_index": 1106,
+   "original_kanji": "串",
+   "kanji_game_freq": 0,
+   "ko_freq": 87
+  },
+  "료": {
+   "sjis": "8BF9",
+   "glyph_index": 1107,
+   "original_kanji": "櫛",
+   "kanji_game_freq": 0,
+   "ko_freq": 86
+  },
+  "응": {
+   "sjis": "8BFA",
+   "glyph_index": 1108,
+   "original_kanji": "釧",
+   "kanji_game_freq": 0,
+   "ko_freq": 86
+  },
+  "묵": {
+   "sjis": "8BFB",
+   "glyph_index": 1109,
+   "original_kanji": "屑",
+   "kanji_game_freq": 0,
+   "ko_freq": 86
+  },
+  "형": {
+   "sjis": "8C42",
+   "glyph_index": 1113,
+   "original_kanji": "沓",
+   "kanji_game_freq": 0,
+   "ko_freq": 85
+  },
+  "병": {
+   "sjis": "8C43",
+   "glyph_index": 1114,
+   "original_kanji": "靴",
+   "kanji_game_freq": 0,
+   "ko_freq": 85
+  },
+  "포": {
+   "sjis": "8C44",
+   "glyph_index": 1115,
+   "original_kanji": "轡",
+   "kanji_game_freq": 0,
+   "ko_freq": 84
+  },
+  "졌": {
+   "sjis": "8C45",
+   "glyph_index": 1116,
+   "original_kanji": "窪",
+   "kanji_game_freq": 0,
+   "ko_freq": 84
+  },
+  "절": {
+   "sjis": "8C46",
+   "glyph_index": 1117,
+   "original_kanji": "熊",
+   "kanji_game_freq": 0,
+   "ko_freq": 82
+  },
+  "떤": {
+   "sjis": "8C47",
+   "glyph_index": 1118,
+   "original_kanji": "隈",
+   "kanji_game_freq": 0,
+   "ko_freq": 82
+  },
+  "준": {
+   "sjis": "8C48",
+   "glyph_index": 1119,
+   "original_kanji": "粂",
+   "kanji_game_freq": 0,
+   "ko_freq": 82
+  },
+  "맞": {
+   "sjis": "8C49",
+   "glyph_index": 1120,
+   "original_kanji": "栗",
+   "kanji_game_freq": 0,
+   "ko_freq": 82
+  },
+  "끼": {
+   "sjis": "8C4B",
+   "glyph_index": 1122,
+   "original_kanji": "桑",
+   "kanji_game_freq": 0,
+   "ko_freq": 81
+  },
+  "뿐": {
+   "sjis": "8C4C",
+   "glyph_index": 1123,
+   "original_kanji": "鍬",
+   "kanji_game_freq": 0,
+   "ko_freq": 81
+  },
+  "됐": {
+   "sjis": "8C4D",
+   "glyph_index": 1124,
+   "original_kanji": "勲",
+   "kanji_game_freq": 0,
+   "ko_freq": 81
+  },
+  "였": {
+   "sjis": "8C4F",
+   "glyph_index": 1126,
+   "original_kanji": "薫",
+   "kanji_game_freq": 0,
+   "ko_freq": 80
+  },
+  "뒤": {
+   "sjis": "8C53",
+   "glyph_index": 1130,
+   "original_kanji": "郡",
+   "kanji_game_freq": 0,
+   "ko_freq": 79
+  },
+  "추": {
+   "sjis": "8C54",
+   "glyph_index": 1131,
+   "original_kanji": "卦",
+   "kanji_game_freq": 0,
+   "ko_freq": 79
+  },
+  "혼": {
+   "sjis": "8C55",
+   "glyph_index": 1132,
+   "original_kanji": "袈",
+   "kanji_game_freq": 0,
+   "ko_freq": 78
+  },
+  "혀": {
+   "sjis": "8C56",
+   "glyph_index": 1133,
+   "original_kanji": "祁",
+   "kanji_game_freq": 0,
+   "ko_freq": 78
+  },
+  "렴": {
+   "sjis": "8C58",
+   "glyph_index": 1135,
+   "original_kanji": "傾",
+   "kanji_game_freq": 0,
+   "ko_freq": 78
+  },
+  "냥": {
+   "sjis": "8C5C",
+   "glyph_index": 1139,
+   "original_kanji": "圭",
+   "kanji_game_freq": 0,
+   "ko_freq": 76
+  },
+  "켜": {
+   "sjis": "8C5D",
+   "glyph_index": 1140,
+   "original_kanji": "珪",
+   "kanji_game_freq": 0,
+   "ko_freq": 76
+  },
+  "따": {
+   "sjis": "8C61",
+   "glyph_index": 1144,
+   "original_kanji": "径",
+   "kanji_game_freq": 0,
+   "ko_freq": 76
+  },
+  "슬": {
+   "sjis": "8C63",
+   "glyph_index": 1146,
+   "original_kanji": "慶",
+   "kanji_game_freq": 0,
+   "ko_freq": 75
+  },
+  "잔": {
+   "sjis": "8C64",
+   "glyph_index": 1147,
+   "original_kanji": "慧",
+   "kanji_game_freq": 0,
+   "ko_freq": 75
+  },
+  "괴": {
+   "sjis": "8C65",
+   "glyph_index": 1148,
+   "original_kanji": "憩",
+   "kanji_game_freq": 0,
+   "ko_freq": 75
+  },
+  "며": {
+   "sjis": "8C67",
+   "glyph_index": 1150,
+   "original_kanji": "携",
+   "kanji_game_freq": 0,
+   "ko_freq": 75
+  },
+  "팡": {
+   "sjis": "8C68",
+   "glyph_index": 1151,
+   "original_kanji": "敬",
+   "kanji_game_freq": 0,
+   "ko_freq": 74
+  },
+  "멸": {
+   "sjis": "8C6A",
+   "glyph_index": 1153,
+   "original_kanji": "桂",
+   "kanji_game_freq": 0,
+   "ko_freq": 74
+  },
+  "몰": {
+   "sjis": "8C6B",
+   "glyph_index": 1154,
+   "original_kanji": "渓",
+   "kanji_game_freq": 0,
+   "ko_freq": 74
+  },
+  "펠": {
+   "sjis": "8C6C",
+   "glyph_index": 1155,
+   "original_kanji": "畦",
+   "kanji_game_freq": 0,
+   "ko_freq": 74
+  },
+  "돼": {
+   "sjis": "8C6D",
+   "glyph_index": 1156,
+   "original_kanji": "稽",
+   "kanji_game_freq": 0,
+   "ko_freq": 74
+  },
+  "탕": {
+   "sjis": "8C71",
+   "glyph_index": 1160,
+   "original_kanji": "繋",
+   "kanji_game_freq": 0,
+   "ko_freq": 74
+  },
+  "승": {
+   "sjis": "8C72",
+   "glyph_index": 1161,
+   "original_kanji": "罫",
+   "kanji_game_freq": 0,
+   "ko_freq": 73
+  },
+  "밖": {
+   "sjis": "8C73",
+   "glyph_index": 1162,
+   "original_kanji": "茎",
+   "kanji_game_freq": 0,
+   "ko_freq": 73
+  },
+  "봤": {
+   "sjis": "8C74",
+   "glyph_index": 1163,
+   "original_kanji": "荊",
+   "kanji_game_freq": 0,
+   "ko_freq": 73
+  },
+  "종": {
+   "sjis": "8C75",
+   "glyph_index": 1164,
+   "original_kanji": "蛍",
+   "kanji_game_freq": 0,
+   "ko_freq": 72
+  },
+  "년": {
+   "sjis": "8C77",
+   "glyph_index": 1166,
+   "original_kanji": "詣",
+   "kanji_game_freq": 0,
+   "ko_freq": 72
+  },
+  "났": {
+   "sjis": "8C7A",
+   "glyph_index": 1169,
+   "original_kanji": "頚",
+   "kanji_game_freq": 0,
+   "ko_freq": 70
+  },
+  "민": {
+   "sjis": "8C7E",
+   "glyph_index": 1173,
+   "original_kanji": "鯨",
+   "kanji_game_freq": 0,
+   "ko_freq": 70
+  },
+  "령": {
+   "sjis": "8C81",
+   "glyph_index": 1175,
+   "original_kanji": "戟",
+   "kanji_game_freq": 0,
+   "ko_freq": 70
+  },
+  "흑": {
+   "sjis": "8C84",
+   "glyph_index": 1178,
+   "original_kanji": "隙",
+   "kanji_game_freq": 0,
+   "ko_freq": 69
+  },
+  "먹": {
+   "sjis": "8C85",
+   "glyph_index": 1179,
+   "original_kanji": "桁",
+   "kanji_game_freq": 0,
+   "ko_freq": 69
+  },
+  "슨": {
+   "sjis": "8C8D",
+   "glyph_index": 1187,
+   "original_kanji": "訣",
+   "kanji_game_freq": 0,
+   "ko_freq": 68
+  },
+  "엇": {
+   "sjis": "8C90",
+   "glyph_index": 1190,
+   "original_kanji": "倹",
+   "kanji_game_freq": 0,
+   "ko_freq": 68
+  },
+  "콘": {
+   "sjis": "8C91",
+   "glyph_index": 1191,
+   "original_kanji": "倦",
+   "kanji_game_freq": 0,
+   "ko_freq": 68
+  },
+  "잃": {
+   "sjis": "8C94",
+   "glyph_index": 1194,
+   "original_kanji": "券",
+   "kanji_game_freq": 0,
+   "ko_freq": 67
+  },
+  "뜨": {
+   "sjis": "8C96",
+   "glyph_index": 1196,
+   "original_kanji": "喧",
+   "kanji_game_freq": 0,
+   "ko_freq": 67
+  },
+  "객": {
+   "sjis": "8C97",
+   "glyph_index": 1197,
+   "original_kanji": "圏",
+   "kanji_game_freq": 0,
+   "ko_freq": 67
+  },
+  "활": {
+   "sjis": "8C9B",
+   "glyph_index": 1201,
+   "original_kanji": "憲",
+   "kanji_game_freq": 0,
+   "ko_freq": 66
+  },
+  "빠": {
+   "sjis": "8C9C",
+   "glyph_index": 1202,
+   "original_kanji": "懸",
+   "kanji_game_freq": 0,
+   "ko_freq": 66
+  },
+  "둘": {
+   "sjis": "8C9D",
+   "glyph_index": 1203,
+   "original_kanji": "拳",
+   "kanji_game_freq": 0,
+   "ko_freq": 66
+  },
+  "왜": {
+   "sjis": "8C9E",
+   "glyph_index": 1204,
+   "original_kanji": "捲",
+   "kanji_game_freq": 0,
+   "ko_freq": 66
+  },
+  "외": {
+   "sjis": "8C9F",
+   "glyph_index": 1205,
+   "original_kanji": "検",
+   "kanji_game_freq": 0,
+   "ko_freq": 65
+  },
+  "업": {
+   "sjis": "8CA1",
+   "glyph_index": 1207,
+   "original_kanji": "牽",
+   "kanji_game_freq": 0,
+   "ko_freq": 64
+  },
+  "득": {
+   "sjis": "8CA3",
+   "glyph_index": 1209,
+   "original_kanji": "献",
+   "kanji_game_freq": 0,
+   "ko_freq": 64
+  },
+  "덕": {
+   "sjis": "8CA5",
+   "glyph_index": 1211,
+   "original_kanji": "硯",
+   "kanji_game_freq": 0,
+   "ko_freq": 62
+  },
+  "패": {
+   "sjis": "8CA7",
+   "glyph_index": 1213,
+   "original_kanji": "県",
+   "kanji_game_freq": 0,
+   "ko_freq": 61
+  },
+  "옛": {
+   "sjis": "8CAA",
+   "glyph_index": 1216,
+   "original_kanji": "謙",
+   "kanji_game_freq": 0,
+   "ko_freq": 61
+  },
+  "쇠": {
+   "sjis": "8CAC",
+   "glyph_index": 1218,
+   "original_kanji": "軒",
+   "kanji_game_freq": 0,
+   "ko_freq": 60
+  },
+  "앗": {
+   "sjis": "8CB0",
+   "glyph_index": 1222,
+   "original_kanji": "顕",
+   "kanji_game_freq": 0,
+   "ko_freq": 60
+  },
+  "송": {
+   "sjis": "8CB2",
+   "glyph_index": 1224,
+   "original_kanji": "鹸",
+   "kanji_game_freq": 0,
+   "ko_freq": 59
+  },
+  "능": {
+   "sjis": "8CB7",
+   "glyph_index": 1229,
+   "original_kanji": "弦",
+   "kanji_game_freq": 0,
+   "ko_freq": 59
+  },
+  "증": {
+   "sjis": "8CBC",
+   "glyph_index": 1234,
+   "original_kanji": "絃",
+   "kanji_game_freq": 0,
+   "ko_freq": 59
+  },
+  "섬": {
+   "sjis": "8CBD",
+   "glyph_index": 1235,
+   "original_kanji": "舷",
+   "kanji_game_freq": 0,
+   "ko_freq": 59
+  },
+  "넘": {
+   "sjis": "8CBF",
+   "glyph_index": 1237,
+   "original_kanji": "諺",
+   "kanji_game_freq": 0,
+   "ko_freq": 59
+  },
+  "답": {
+   "sjis": "8CC1",
+   "glyph_index": 1239,
+   "original_kanji": "乎",
+   "kanji_game_freq": 0,
+   "ko_freq": 59
+  },
+  "쁜": {
+   "sjis": "8CC5",
+   "glyph_index": 1243,
+   "original_kanji": "固",
+   "kanji_game_freq": 0,
+   "ko_freq": 58
+  },
+  "잡": {
+   "sjis": "8CC6",
+   "glyph_index": 1244,
+   "original_kanji": "姑",
+   "kanji_game_freq": 0,
+   "ko_freq": 58
+  },
+  "칼": {
+   "sjis": "8CCA",
+   "glyph_index": 1248,
+   "original_kanji": "弧",
+   "kanji_game_freq": 0,
+   "ko_freq": 57
+  },
+  "허": {
+   "sjis": "8CCD",
+   "glyph_index": 1251,
+   "original_kanji": "枯",
+   "kanji_game_freq": 0,
+   "ko_freq": 56
+  },
+  "청": {
+   "sjis": "8CCE",
+   "glyph_index": 1252,
+   "original_kanji": "湖",
+   "kanji_game_freq": 0,
+   "ko_freq": 56
+  },
+  "완": {
+   "sjis": "8CD0",
+   "glyph_index": 1254,
+   "original_kanji": "糊",
+   "kanji_game_freq": 0,
+   "ko_freq": 56
+  },
+  "셔": {
+   "sjis": "8CD1",
+   "glyph_index": 1255,
+   "original_kanji": "袴",
+   "kanji_game_freq": 0,
+   "ko_freq": 56
+  },
+  "듣": {
+   "sjis": "8CD2",
+   "glyph_index": 1256,
+   "original_kanji": "股",
+   "kanji_game_freq": 0,
+   "ko_freq": 56
+  },
+  "염": {
+   "sjis": "8CD3",
+   "glyph_index": 1257,
+   "original_kanji": "胡",
+   "kanji_game_freq": 0,
+   "ko_freq": 55
+  },
+  "맡": {
+   "sjis": "8CD4",
+   "glyph_index": 1258,
+   "original_kanji": "菰",
+   "kanji_game_freq": 0,
+   "ko_freq": 55
+  },
+  "임": {
+   "sjis": "8CD5",
+   "glyph_index": 1259,
+   "original_kanji": "虎",
+   "kanji_game_freq": 0,
+   "ko_freq": 54
+  },
+  "존": {
+   "sjis": "8CD7",
+   "glyph_index": 1261,
+   "original_kanji": "跨",
+   "kanji_game_freq": 0,
+   "ko_freq": 54
+  },
+  "클": {
+   "sjis": "8CD8",
+   "glyph_index": 1262,
+   "original_kanji": "鈷",
+   "kanji_game_freq": 0,
+   "ko_freq": 54
+  },
+  "써": {
+   "sjis": "8CDA",
+   "glyph_index": 1264,
+   "original_kanji": "顧",
+   "kanji_game_freq": 0,
+   "ko_freq": 54
+  },
+  "창": {
+   "sjis": "8CDB",
+   "glyph_index": 1265,
+   "original_kanji": "鼓",
+   "kanji_game_freq": 0,
+   "ko_freq": 53
+  },
+  "탈": {
+   "sjis": "8CDE",
+   "glyph_index": 1268,
+   "original_kanji": "伍",
+   "kanji_game_freq": 0,
+   "ko_freq": 53
+  },
+  "씀": {
+   "sjis": "8CDF",
+   "glyph_index": 1269,
+   "original_kanji": "午",
+   "kanji_game_freq": 0,
+   "ko_freq": 53
+  },
+  "류": {
+   "sjis": "8CE0",
+   "glyph_index": 1270,
+   "original_kanji": "呉",
+   "kanji_game_freq": 0,
+   "ko_freq": 52
+  },
+  "갖": {
+   "sjis": "8CE1",
+   "glyph_index": 1271,
+   "original_kanji": "吾",
+   "kanji_game_freq": 0,
+   "ko_freq": 52
+  },
+  "짓": {
+   "sjis": "8CE2",
+   "glyph_index": 1272,
+   "original_kanji": "娯",
+   "kanji_game_freq": 0,
+   "ko_freq": 52
+  },
+  "놀": {
+   "sjis": "8CE6",
+   "glyph_index": 1276,
+   "original_kanji": "梧",
+   "kanji_game_freq": 0,
+   "ko_freq": 52
+  },
+  "층": {
+   "sjis": "8CE7",
+   "glyph_index": 1277,
+   "original_kanji": "檎",
+   "kanji_game_freq": 0,
+   "ko_freq": 52
+  },
+  "담": {
+   "sjis": "8CE8",
+   "glyph_index": 1278,
+   "original_kanji": "瑚",
+   "kanji_game_freq": 0,
+   "ko_freq": 52
+  },
+  "등": {
+   "sjis": "8CE9",
+   "glyph_index": 1279,
+   "original_kanji": "碁",
+   "kanji_game_freq": 0,
+   "ko_freq": 52
+  },
+  "벌": {
+   "sjis": "8CED",
+   "glyph_index": 1283,
+   "original_kanji": "醐",
+   "kanji_game_freq": 0,
+   "ko_freq": 51
+  },
+  "탄": {
+   "sjis": "8CEE",
+   "glyph_index": 1284,
+   "original_kanji": "乞",
+   "kanji_game_freq": 0,
+   "ko_freq": 51
+  },
+  "표": {
+   "sjis": "8CEF",
+   "glyph_index": 1285,
+   "original_kanji": "鯉",
+   "kanji_game_freq": 0,
+   "ko_freq": 51
+  },
+  "순": {
+   "sjis": "8CF1",
+   "glyph_index": 1287,
+   "original_kanji": "佼",
+   "kanji_game_freq": 0,
+   "ko_freq": 51
+  },
+  "긴": {
+   "sjis": "8CF2",
+   "glyph_index": 1288,
+   "original_kanji": "侯",
+   "kanji_game_freq": 0,
+   "ko_freq": 50
+  },
+  "럴": {
+   "sjis": "8CF4",
+   "glyph_index": 1290,
+   "original_kanji": "倖",
+   "kanji_game_freq": 0,
+   "ko_freq": 50
+  },
+  "쉽": {
+   "sjis": "8CF9",
+   "glyph_index": 1295,
+   "original_kanji": "勾",
+   "kanji_game_freq": 0,
+   "ko_freq": 50
+  },
+  "뭔": {
+   "sjis": "8CFA",
+   "glyph_index": 1296,
+   "original_kanji": "厚",
+   "kanji_game_freq": 0,
+   "ko_freq": 49
+  },
+  "특": {
+   "sjis": "8D40",
+   "glyph_index": 1299,
+   "original_kanji": "后",
+   "kanji_game_freq": 0,
+   "ko_freq": 49
+  },
+  "헤": {
+   "sjis": "8D41",
+   "glyph_index": 1300,
+   "original_kanji": "喉",
+   "kanji_game_freq": 0,
+   "ko_freq": 48
+  },
+  "끝": {
+   "sjis": "8D42",
+   "glyph_index": 1301,
+   "original_kanji": "坑",
+   "kanji_game_freq": 0,
+   "ko_freq": 48
+  },
+  "별": {
+   "sjis": "8D43",
+   "glyph_index": 1302,
+   "original_kanji": "垢",
+   "kanji_game_freq": 0,
+   "ko_freq": 48
+  },
+  "텐": {
+   "sjis": "8D45",
+   "glyph_index": 1304,
+   "original_kanji": "孔",
+   "kanji_game_freq": 0,
+   "ko_freq": 48
+  },
+  "캉": {
+   "sjis": "8D47",
+   "glyph_index": 1306,
+   "original_kanji": "宏",
+   "kanji_game_freq": 0,
+   "ko_freq": 48
+  },
+  "택": {
+   "sjis": "8D49",
+   "glyph_index": 1308,
+   "original_kanji": "巧",
+   "kanji_game_freq": 0,
+   "ko_freq": 48
+  },
+  "딘": {
+   "sjis": "8D4D",
+   "glyph_index": 1312,
+   "original_kanji": "庚",
+   "kanji_game_freq": 0,
+   "ko_freq": 47
+  },
+  "왠": {
+   "sjis": "8D4E",
+   "glyph_index": 1313,
+   "original_kanji": "康",
+   "kanji_game_freq": 0,
+   "ko_freq": 47
+  },
+  "젠": {
+   "sjis": "8D54",
+   "glyph_index": 1319,
+   "original_kanji": "控",
+   "kanji_game_freq": 0,
+   "ko_freq": 47
+  },
+  "색": {
+   "sjis": "8D56",
+   "glyph_index": 1321,
+   "original_kanji": "昂",
+   "kanji_game_freq": 0,
+   "ko_freq": 46
+  },
+  "쓸": {
+   "sjis": "8D57",
+   "glyph_index": 1322,
+   "original_kanji": "晃",
+   "kanji_game_freq": 0,
+   "ko_freq": 46
+  },
+  "맛": {
+   "sjis": "8D59",
+   "glyph_index": 1324,
+   "original_kanji": "杭",
+   "kanji_game_freq": 0,
+   "ko_freq": 46
+  },
+  "숙": {
+   "sjis": "8D5D",
+   "glyph_index": 1328,
+   "original_kanji": "江",
+   "kanji_game_freq": 0,
+   "ko_freq": 46
+  },
+  "쩔": {
+   "sjis": "8D5E",
+   "glyph_index": 1329,
+   "original_kanji": "洪",
+   "kanji_game_freq": 0,
+   "ko_freq": 46
+  },
+  "맙": {
+   "sjis": "8D61",
+   "glyph_index": 1332,
+   "original_kanji": "溝",
+   "kanji_game_freq": 0,
+   "ko_freq": 45
+  },
+  "귀": {
+   "sjis": "8D63",
+   "glyph_index": 1334,
+   "original_kanji": "皇",
+   "kanji_game_freq": 0,
+   "ko_freq": 45
+  },
+  "볼": {
+   "sjis": "8D68",
+   "glyph_index": 1339,
+   "original_kanji": "紘",
+   "kanji_game_freq": 0,
+   "ko_freq": 45
+  },
+  "풀": {
+   "sjis": "8D69",
+   "glyph_index": 1340,
+   "original_kanji": "絞",
+   "kanji_game_freq": 0,
+   "ko_freq": 45
+  },
+  "본": {
+   "sjis": "8D6A",
+   "glyph_index": 1341,
+   "original_kanji": "綱",
+   "kanji_game_freq": 0,
+   "ko_freq": 44
+  },
+  "큰": {
+   "sjis": "8D6D",
+   "glyph_index": 1344,
+   "original_kanji": "肯",
+   "kanji_game_freq": 0,
+   "ko_freq": 44
+  },
+  "품": {
+   "sjis": "8D6E",
+   "glyph_index": 1345,
+   "original_kanji": "肱",
+   "kanji_game_freq": 0,
+   "ko_freq": 44
+  },
+  "멋": {
+   "sjis": "8D6F",
+   "glyph_index": 1346,
+   "original_kanji": "腔",
+   "kanji_game_freq": 0,
+   "ko_freq": 44
+  },
+  "퇴": {
+   "sjis": "8D70",
+   "glyph_index": 1347,
+   "original_kanji": "膏",
+   "kanji_game_freq": 0,
+   "ko_freq": 43
+  },
+  "곤": {
+   "sjis": "8D75",
+   "glyph_index": 1352,
+   "original_kanji": "講",
+   "kanji_game_freq": 0,
+   "ko_freq": 43
+  },
+  "롭": {
+   "sjis": "8D77",
+   "glyph_index": 1354,
+   "original_kanji": "購",
+   "kanji_game_freq": 0,
+   "ko_freq": 43
+  },
+  "황": {
+   "sjis": "8D79",
+   "glyph_index": 1356,
+   "original_kanji": "酵",
+   "kanji_game_freq": 0,
+   "ko_freq": 42
+  },
+  "갔": {
+   "sjis": "8D7B",
+   "glyph_index": 1358,
+   "original_kanji": "砿",
+   "kanji_game_freq": 0,
+   "ko_freq": 42
+  },
+  "충": {
+   "sjis": "8D7D",
+   "glyph_index": 1360,
+   "original_kanji": "閤",
+   "kanji_game_freq": 0,
+   "ko_freq": 42
+  },
+  "잊": {
+   "sjis": "8D83",
+   "glyph_index": 1365,
+   "original_kanji": "鴻",
+   "kanji_game_freq": 0,
+   "ko_freq": 42
+  },
+  "촌": {
+   "sjis": "8D84",
+   "glyph_index": 1366,
+   "original_kanji": "剛",
+   "kanji_game_freq": 0,
+   "ko_freq": 42
+  },
+  "채": {
+   "sjis": "8D85",
+   "glyph_index": 1367,
+   "original_kanji": "劫",
+   "kanji_game_freq": 0,
+   "ko_freq": 41
+  },
+  "현": {
+   "sjis": "8D86",
+   "glyph_index": 1368,
+   "original_kanji": "号",
+   "kanji_game_freq": 0,
+   "ko_freq": 41
+  },
+  "빨": {
+   "sjis": "8D88",
+   "glyph_index": 1370,
+   "original_kanji": "壕",
+   "kanji_game_freq": 0,
+   "ko_freq": 41
+  },
+  "빌": {
+   "sjis": "8D89",
+   "glyph_index": 1371,
+   "original_kanji": "拷",
+   "kanji_game_freq": 0,
+   "ko_freq": 41
+  },
+  "높": {
+   "sjis": "8D8A",
+   "glyph_index": 1372,
+   "original_kanji": "濠",
+   "kanji_game_freq": 0,
+   "ko_freq": 41
+  },
+  "베": {
+   "sjis": "8D8C",
+   "glyph_index": 1374,
+   "original_kanji": "轟",
+   "kanji_game_freq": 0,
+   "ko_freq": 40
+  },
+  "틀": {
+   "sjis": "8D8D",
+   "glyph_index": 1375,
+   "original_kanji": "麹",
+   "kanji_game_freq": 0,
+   "ko_freq": 39
+  },
+  "칠": {
+   "sjis": "8D8E",
+   "glyph_index": 1376,
+   "original_kanji": "克",
+   "kanji_game_freq": 0,
+   "ko_freq": 39
+  },
+  "삼": {
+   "sjis": "8D94",
+   "glyph_index": 1382,
+   "original_kanji": "鵠",
+   "kanji_game_freq": 0,
+   "ko_freq": 39
+  },
+  "윈": {
+   "sjis": "8D97",
+   "glyph_index": 1385,
+   "original_kanji": "漉",
+   "kanji_game_freq": 0,
+   "ko_freq": 38
+  },
+  "쫓": {
+   "sjis": "8D99",
+   "glyph_index": 1387,
+   "original_kanji": "甑",
+   "kanji_game_freq": 0,
+   "ko_freq": 38
+  },
+  "엄": {
+   "sjis": "8D9A",
+   "glyph_index": 1388,
+   "original_kanji": "忽",
+   "kanji_game_freq": 0,
+   "ko_freq": 38
+  },
+  "깊": {
+   "sjis": "8D9B",
+   "glyph_index": 1389,
+   "original_kanji": "惚",
+   "kanji_game_freq": 0,
+   "ko_freq": 38
+  },
+  "독": {
+   "sjis": "8D9D",
+   "glyph_index": 1391,
+   "original_kanji": "狛",
+   "kanji_game_freq": 0,
+   "ko_freq": 37
+  },
+  "효": {
+   "sjis": "8D9F",
+   "glyph_index": 1393,
+   "original_kanji": "此",
+   "kanji_game_freq": 0,
+   "ko_freq": 37
+  },
+  "놓": {
+   "sjis": "8DA3",
+   "glyph_index": 1397,
+   "original_kanji": "坤",
+   "kanji_game_freq": 0,
+   "ko_freq": 37
+  },
+  "싫": {
+   "sjis": "8DA4",
+   "glyph_index": 1398,
+   "original_kanji": "墾",
+   "kanji_game_freq": 0,
+   "ko_freq": 37
+  },
+  "짜": {
+   "sjis": "8DA7",
+   "glyph_index": 1401,
+   "original_kanji": "懇",
+   "kanji_game_freq": 0,
+   "ko_freq": 37
+  },
+  "죄": {
+   "sjis": "8DA9",
+   "glyph_index": 1403,
+   "original_kanji": "昆",
+   "kanji_game_freq": 0,
+   "ko_freq": 37
+  },
+  "꽤": {
+   "sjis": "8DAB",
+   "glyph_index": 1405,
+   "original_kanji": "梱",
+   "kanji_game_freq": 0,
+   "ko_freq": 37
+  },
+  "폐": {
+   "sjis": "8DAD",
+   "glyph_index": 1407,
+   "original_kanji": "痕",
+   "kanji_game_freq": 0,
+   "ko_freq": 36
+  },
+  "확": {
+   "sjis": "8DAE",
+   "glyph_index": 1408,
+   "original_kanji": "紺",
+   "kanji_game_freq": 0,
+   "ko_freq": 36
+  },
+  "박": {
+   "sjis": "8DAF",
+   "glyph_index": 1409,
+   "original_kanji": "艮",
+   "kanji_game_freq": 0,
+   "ko_freq": 36
+  },
+  "벤": {
+   "sjis": "8DB1",
+   "glyph_index": 1411,
+   "original_kanji": "些",
+   "kanji_game_freq": 0,
+   "ko_freq": 36
+  },
+  "깨": {
+   "sjis": "8DB2",
+   "glyph_index": 1412,
+   "original_kanji": "佐",
+   "kanji_game_freq": 0,
+   "ko_freq": 35
+  },
+  "겁": {
+   "sjis": "8DB3",
+   "glyph_index": 1413,
+   "original_kanji": "叉",
+   "kanji_game_freq": 0,
+   "ko_freq": 35
+  },
+  "덤": {
+   "sjis": "8DB4",
+   "glyph_index": 1414,
+   "original_kanji": "唆",
+   "kanji_game_freq": 0,
+   "ko_freq": 34
+  },
+  "훨": {
+   "sjis": "8DB5",
+   "glyph_index": 1415,
+   "original_kanji": "嵯",
+   "kanji_game_freq": 0,
+   "ko_freq": 34
+  },
+  "씬": {
+   "sjis": "8DB8",
+   "glyph_index": 1418,
+   "original_kanji": "査",
+   "kanji_game_freq": 0,
+   "ko_freq": 34
+  },
+  "걷": {
+   "sjis": "8DBA",
+   "glyph_index": 1420,
+   "original_kanji": "瑳",
+   "kanji_game_freq": 0,
+   "ko_freq": 34
+  },
+  "츠": {
+   "sjis": "8DBC",
+   "glyph_index": 1422,
+   "original_kanji": "詐",
+   "kanji_game_freq": 0,
+   "ko_freq": 34
+  },
+  "템": {
+   "sjis": "8DBE",
+   "glyph_index": 1424,
+   "original_kanji": "裟",
+   "kanji_game_freq": 0,
+   "ko_freq": 34
+  },
+  "꼬": {
+   "sjis": "8DBF",
+   "glyph_index": 1425,
+   "original_kanji": "坐",
+   "kanji_game_freq": 0,
+   "ko_freq": 34
+  },
+  "백": {
+   "sjis": "8DC2",
+   "glyph_index": 1428,
+   "original_kanji": "債",
+   "kanji_game_freq": 0,
+   "ko_freq": 34
+  },
+  "땅": {
+   "sjis": "8DC3",
+   "glyph_index": 1429,
+   "original_kanji": "催",
+   "kanji_game_freq": 0,
+   "ko_freq": 34
+  },
+  "룬": {
+   "sjis": "8DC6",
+   "glyph_index": 1432,
+   "original_kanji": "哉",
+   "kanji_game_freq": 0,
+   "ko_freq": 33
+  },
+  "련": {
+   "sjis": "8DC7",
+   "glyph_index": 1433,
+   "original_kanji": "塞",
+   "kanji_game_freq": 0,
+   "ko_freq": 33
+  },
+  "락": {
+   "sjis": "8DC9",
+   "glyph_index": 1435,
+   "original_kanji": "宰",
+   "kanji_game_freq": 0,
+   "ko_freq": 33
+  },
+  "량": {
+   "sjis": "8DCA",
+   "glyph_index": 1436,
+   "original_kanji": "彩",
+   "kanji_game_freq": 0,
+   "ko_freq": 33
+  },
+  "엣": {
+   "sjis": "8DCD",
+   "glyph_index": 1439,
+   "original_kanji": "栽",
+   "kanji_game_freq": 0,
+   "ko_freq": 33
+  },
+  "례": {
+   "sjis": "8DD1",
+   "glyph_index": 1443,
+   "original_kanji": "采",
+   "kanji_game_freq": 0,
+   "ko_freq": 33
+  },
+  "둥": {
+   "sjis": "8DD2",
+   "glyph_index": 1444,
+   "original_kanji": "犀",
+   "kanji_game_freq": 0,
+   "ko_freq": 32
+  },
+  "샘": {
+   "sjis": "8DD6",
+   "glyph_index": 1448,
+   "original_kanji": "斎",
+   "kanji_game_freq": 0,
+   "ko_freq": 32
+  },
+  "룻": {
+   "sjis": "8DE0",
+   "glyph_index": 1458,
+   "original_kanji": "財",
+   "kanji_game_freq": 0,
+   "ko_freq": 32
+  },
+  "변": {
+   "sjis": "8DE1",
+   "glyph_index": 1459,
+   "original_kanji": "冴",
+   "kanji_game_freq": 0,
+   "ko_freq": 32
+  },
+  "즐": {
+   "sjis": "8DE2",
+   "glyph_index": 1460,
+   "original_kanji": "坂",
+   "kanji_game_freq": 0,
+   "ko_freq": 32
+  },
+  "럽": {
+   "sjis": "8DE3",
+   "glyph_index": 1461,
+   "original_kanji": "阪",
+   "kanji_game_freq": 0,
+   "ko_freq": 32
+  },
+  "훗": {
+   "sjis": "8DE4",
+   "glyph_index": 1462,
+   "original_kanji": "堺",
+   "kanji_game_freq": 0,
+   "ko_freq": 32
+  },
+  "켰": {
+   "sjis": "8DE5",
+   "glyph_index": 1463,
+   "original_kanji": "榊",
+   "kanji_game_freq": 0,
+   "ko_freq": 31
+  },
+  "국": {
+   "sjis": "8DE6",
+   "glyph_index": 1464,
+   "original_kanji": "肴",
+   "kanji_game_freq": 0,
+   "ko_freq": 31
+  },
+  "녕": {
+   "sjis": "8DE9",
+   "glyph_index": 1467,
+   "original_kanji": "埼",
+   "kanji_game_freq": 0,
+   "ko_freq": 31
+  },
+  "플": {
+   "sjis": "8DEA",
+   "glyph_index": 1468,
+   "original_kanji": "碕",
+   "kanji_game_freq": 0,
+   "ko_freq": 30
+  },
+  "혹": {
+   "sjis": "8DEB",
+   "glyph_index": 1469,
+   "original_kanji": "鷺",
+   "kanji_game_freq": 0,
+   "ko_freq": 30
+  },
+  "꿈": {
+   "sjis": "8DEE",
+   "glyph_index": 1472,
+   "original_kanji": "咋",
+   "kanji_game_freq": 0,
+   "ko_freq": 30
+  },
+  "착": {
+   "sjis": "8DEF",
+   "glyph_index": 1473,
+   "original_kanji": "搾",
+   "kanji_game_freq": 0,
+   "ko_freq": 30
+  },
+  "끌": {
+   "sjis": "8DF1",
+   "glyph_index": 1475,
+   "original_kanji": "朔",
+   "kanji_game_freq": 0,
+   "ko_freq": 30
+  },
+  "줬": {
+   "sjis": "8DF2",
+   "glyph_index": 1476,
+   "original_kanji": "柵",
+   "kanji_game_freq": 0,
+   "ko_freq": 30
+  },
+  "즉": {
+   "sjis": "8DF3",
+   "glyph_index": 1477,
+   "original_kanji": "窄",
+   "kanji_game_freq": 0,
+   "ko_freq": 30
+  },
+  "깐": {
+   "sjis": "8DF6",
+   "glyph_index": 1480,
+   "original_kanji": "錯",
+   "kanji_game_freq": 0,
+   "ko_freq": 30
+  },
+  "웠": {
+   "sjis": "8DF8",
+   "glyph_index": 1482,
+   "original_kanji": "鮭",
+   "kanji_game_freq": 0,
+   "ko_freq": 29
+  },
+  "킬": {
+   "sjis": "8DF9",
+   "glyph_index": 1483,
+   "original_kanji": "笹",
+   "kanji_game_freq": 0,
+   "ko_freq": 29
+  },
+  "즘": {
+   "sjis": "8DFA",
+   "glyph_index": 1484,
+   "original_kanji": "匙",
+   "kanji_game_freq": 0,
+   "ko_freq": 29
+  },
+  "참": {
+   "sjis": "8DFB",
+   "glyph_index": 1485,
+   "original_kanji": "冊",
+   "kanji_game_freq": 0,
+   "ko_freq": 29
+  },
+  "몽": {
+   "sjis": "8DFC",
+   "glyph_index": 1486,
+   "original_kanji": "刷",
+   "kanji_game_freq": 0,
+   "ko_freq": 28
+  },
+  "푸": {
+   "sjis": "8E42",
+   "glyph_index": 1489,
+   "original_kanji": "撮",
+   "kanji_game_freq": 0,
+   "ko_freq": 28
+  },
+  "취": {
+   "sjis": "8E43",
+   "glyph_index": 1490,
+   "original_kanji": "擦",
+   "kanji_game_freq": 0,
+   "ko_freq": 28
+  },
+  "깝": {
+   "sjis": "8E44",
+   "glyph_index": 1491,
+   "original_kanji": "札",
+   "kanji_game_freq": 0,
+   "ko_freq": 28
+  },
+  "춰": {
+   "sjis": "8E46",
+   "glyph_index": 1493,
+   "original_kanji": "薩",
+   "kanji_game_freq": 0,
+   "ko_freq": 28
+  },
+  "흉": {
+   "sjis": "8E48",
+   "glyph_index": 1495,
+   "original_kanji": "皐",
+   "kanji_game_freq": 0,
+   "ko_freq": 27
+  },
+  "멍": {
+   "sjis": "8E49",
+   "glyph_index": 1496,
+   "original_kanji": "鯖",
+   "kanji_game_freq": 0,
+   "ko_freq": 27
+  },
+  "뉴": {
+   "sjis": "8E4A",
+   "glyph_index": 1497,
+   "original_kanji": "捌",
+   "kanji_game_freq": 0,
+   "ko_freq": 27
+  },
+  "폭": {
+   "sjis": "8E4B",
+   "glyph_index": 1498,
+   "original_kanji": "錆",
+   "kanji_game_freq": 0,
+   "ko_freq": 27
+  },
+  "떨": {
+   "sjis": "8E4C",
+   "glyph_index": 1499,
+   "original_kanji": "鮫",
+   "kanji_game_freq": 0,
+   "ko_freq": 27
+  },
+  "딱": {
+   "sjis": "8E4D",
+   "glyph_index": 1500,
+   "original_kanji": "皿",
+   "kanji_game_freq": 0,
+   "ko_freq": 27
+  },
+  "둑": {
+   "sjis": "8E4E",
+   "glyph_index": 1501,
+   "original_kanji": "晒",
+   "kanji_game_freq": 0,
+   "ko_freq": 27
+  },
+  "쯤": {
+   "sjis": "8E50",
+   "glyph_index": 1503,
+   "original_kanji": "傘",
+   "kanji_game_freq": 0,
+   "ko_freq": 27
+  },
+  "펜": {
+   "sjis": "8E53",
+   "glyph_index": 1506,
+   "original_kanji": "惨",
+   "kanji_game_freq": 0,
+   "ko_freq": 26
+  },
+  "낼": {
+   "sjis": "8E54",
+   "glyph_index": 1507,
+   "original_kanji": "撒",
+   "kanji_game_freq": 0,
+   "ko_freq": 26
+  },
+  "짐": {
+   "sjis": "8E56",
+   "glyph_index": 1509,
+   "original_kanji": "桟",
+   "kanji_game_freq": 0,
+   "ko_freq": 26
+  },
+  "척": {
+   "sjis": "8E57",
+   "glyph_index": 1510,
+   "original_kanji": "燦",
+   "kanji_game_freq": 0,
+   "ko_freq": 26
+  },
+  "멜": {
+   "sjis": "8E58",
+   "glyph_index": 1511,
+   "original_kanji": "珊",
+   "kanji_game_freq": 0,
+   "ko_freq": 25
+  },
+  "론": {
+   "sjis": "8E5B",
+   "glyph_index": 1514,
+   "original_kanji": "纂",
+   "kanji_game_freq": 0,
+   "ko_freq": 25
+  },
+  "얀": {
+   "sjis": "8E5C",
+   "glyph_index": 1515,
+   "original_kanji": "蚕",
+   "kanji_game_freq": 0,
+   "ko_freq": 25
+  },
+  "홍": {
+   "sjis": "8E5D",
+   "glyph_index": 1516,
+   "original_kanji": "讃",
+   "kanji_game_freq": 0,
+   "ko_freq": 25
+  },
+  "셀": {
+   "sjis": "8E5E",
+   "glyph_index": 1517,
+   "original_kanji": "賛",
+   "kanji_game_freq": 0,
+   "ko_freq": 25
+  },
+  "랐": {
+   "sjis": "8E5F",
+   "glyph_index": 1518,
+   "original_kanji": "酸",
+   "kanji_game_freq": 0,
+   "ko_freq": 25
+  },
+  "획": {
+   "sjis": "8E60",
+   "glyph_index": 1519,
+   "original_kanji": "餐",
+   "kanji_game_freq": 0,
+   "ko_freq": 25
+  },
+  "욕": {
+   "sjis": "8E62",
+   "glyph_index": 1521,
+   "original_kanji": "暫",
+   "kanji_game_freq": 0,
+   "ko_freq": 25
+  },
+  "뜻": {
+   "sjis": "8E65",
+   "glyph_index": 1524,
+   "original_kanji": "仔",
+   "kanji_game_freq": 0,
+   "ko_freq": 25
+  },
+  "덮": {
+   "sjis": "8E79",
+   "glyph_index": 1544,
+   "original_kanji": "孜",
+   "kanji_game_freq": 0,
+   "ko_freq": 25
+  },
+  "급": {
+   "sjis": "8E7A",
+   "glyph_index": 1545,
+   "original_kanji": "斯",
+   "kanji_game_freq": 0,
+   "ko_freq": 25
+  },
+  "낮": {
+   "sjis": "8E7D",
+   "glyph_index": 1548,
+   "original_kanji": "枝",
+   "kanji_game_freq": 0,
+   "ko_freq": 25
+  },
+  "닌": {
+   "sjis": "8E81",
+   "glyph_index": 1551,
+   "original_kanji": "氏",
+   "kanji_game_freq": 0,
+   "ko_freq": 25
+  },
+  "듯": {
+   "sjis": "8E83",
+   "glyph_index": 1553,
+   "original_kanji": "祉",
+   "kanji_game_freq": 0,
+   "ko_freq": 25
+  },
+  "짝": {
+   "sjis": "8E85",
+   "glyph_index": 1555,
+   "original_kanji": "糸",
+   "kanji_game_freq": 0,
+   "ko_freq": 25
+  },
+  "닥": {
+   "sjis": "8E87",
+   "glyph_index": 1557,
+   "original_kanji": "紫",
+   "kanji_game_freq": 0,
+   "ko_freq": 25
+  },
+  "깃": {
+   "sjis": "8E88",
+   "glyph_index": 1558,
+   "original_kanji": "肢",
+   "kanji_game_freq": 0,
+   "ko_freq": 24
+  },
+  "켈": {
+   "sjis": "8E89",
+   "glyph_index": 1559,
+   "original_kanji": "脂",
+   "kanji_game_freq": 0,
+   "ko_freq": 24
+  },
+  "팔": {
+   "sjis": "8E90",
+   "glyph_index": 1566,
+   "original_kanji": "諮",
+   "kanji_game_freq": 0,
+   "ko_freq": 24
+  },
+  "쇄": {
+   "sjis": "8E92",
+   "glyph_index": 1568,
+   "original_kanji": "賜",
+   "kanji_game_freq": 0,
+   "ko_freq": 24
+  },
+  "째": {
+   "sjis": "8E93",
+   "glyph_index": 1569,
+   "original_kanji": "雌",
+   "kanji_game_freq": 0,
+   "ko_freq": 24
+  },
+  "쨌": {
+   "sjis": "8E99",
+   "glyph_index": 1575,
+   "original_kanji": "児",
+   "kanji_game_freq": 0,
+   "ko_freq": 24
+  },
+  "꼭": {
+   "sjis": "8E9B",
+   "glyph_index": 1577,
+   "original_kanji": "寺",
+   "kanji_game_freq": 0,
+   "ko_freq": 24
+  },
+  "책": {
+   "sjis": "8EA2",
+   "glyph_index": 1584,
+   "original_kanji": "爾",
+   "kanji_game_freq": 0,
+   "ko_freq": 24
+  },
+  "쿨": {
+   "sjis": "8EA3",
+   "glyph_index": 1585,
+   "original_kanji": "璽",
+   "kanji_game_freq": 0,
+   "ko_freq": 24
+  },
+  "흥": {
+   "sjis": "8EA4",
+   "glyph_index": 1586,
+   "original_kanji": "痔",
+   "kanji_game_freq": 0,
+   "ko_freq": 24
+  },
+  "얘": {
+   "sjis": "8EA5",
+   "glyph_index": 1587,
+   "original_kanji": "磁",
+   "kanji_game_freq": 0,
+   "ko_freq": 24
+  },
+  "궁": {
+   "sjis": "8EA7",
+   "glyph_index": 1589,
+   "original_kanji": "而",
+   "kanji_game_freq": 0,
+   "ko_freq": 23
+  },
+  "룸": {
+   "sjis": "8EAA",
+   "glyph_index": 1592,
+   "original_kanji": "蒔",
+   "kanji_game_freq": 0,
+   "ko_freq": 23
+  },
+  "쳤": {
+   "sjis": "8EAB",
+   "glyph_index": 1593,
+   "original_kanji": "辞",
+   "kanji_game_freq": 0,
+   "ko_freq": 23
+  },
+  "튼": {
+   "sjis": "8EAC",
+   "glyph_index": 1594,
+   "original_kanji": "汐",
+   "kanji_game_freq": 0,
+   "ko_freq": 23
+  },
+  "돕": {
+   "sjis": "8EB0",
+   "glyph_index": 1598,
+   "original_kanji": "鴫",
+   "kanji_game_freq": 0,
+   "ko_freq": 23
+  },
+  "앙": {
+   "sjis": "8EB1",
+   "glyph_index": 1599,
+   "original_kanji": "竺",
+   "kanji_game_freq": 0,
+   "ko_freq": 23
+  },
+  "협": {
+   "sjis": "8EB2",
+   "glyph_index": 1600,
+   "original_kanji": "軸",
+   "kanji_game_freq": 0,
+   "ko_freq": 23
+  },
+  "곡": {
+   "sjis": "8EB3",
+   "glyph_index": 1601,
+   "original_kanji": "宍",
+   "kanji_game_freq": 0,
+   "ko_freq": 22
+  },
+  "닐": {
+   "sjis": "8EB4",
+   "glyph_index": 1602,
+   "original_kanji": "雫",
+   "kanji_game_freq": 0,
+   "ko_freq": 22
+  },
+  "랍": {
+   "sjis": "8EB6",
+   "glyph_index": 1604,
+   "original_kanji": "叱",
+   "kanji_game_freq": 0,
+   "ko_freq": 22
+  },
+  "골": {
+   "sjis": "8EB7",
+   "glyph_index": 1605,
+   "original_kanji": "執",
+   "kanji_game_freq": 0,
+   "ko_freq": 22
+  },
+  "접": {
+   "sjis": "8EB9",
+   "glyph_index": 1607,
+   "original_kanji": "嫉",
+   "kanji_game_freq": 0,
+   "ko_freq": 22
+  },
+  "잇": {
+   "sjis": "8EBB",
+   "glyph_index": 1609,
+   "original_kanji": "悉",
+   "kanji_game_freq": 0,
+   "ko_freq": 22
+  },
+  "찍": {
+   "sjis": "8EBD",
+   "glyph_index": 1611,
+   "original_kanji": "漆",
+   "kanji_game_freq": 0,
+   "ko_freq": 22
+  },
+  "멀": {
+   "sjis": "8EC1",
+   "glyph_index": 1615,
+   "original_kanji": "蔀",
+   "kanji_game_freq": 0,
+   "ko_freq": 22
+  },
+  "껴": {
+   "sjis": "8EC2",
+   "glyph_index": 1616,
+   "original_kanji": "篠",
+   "kanji_game_freq": 0,
+   "ko_freq": 22
+  },
+  "꺾": {
+   "sjis": "8EC3",
+   "glyph_index": 1617,
+   "original_kanji": "偲",
+   "kanji_game_freq": 0,
+   "ko_freq": 22
+  },
+  "블": {
+   "sjis": "8EC4",
+   "glyph_index": 1618,
+   "original_kanji": "柴",
+   "kanji_game_freq": 0,
+   "ko_freq": 21
+  },
+  "빙": {
+   "sjis": "8EC5",
+   "glyph_index": 1619,
+   "original_kanji": "芝",
+   "kanji_game_freq": 0,
+   "ko_freq": 21
+  },
+  "엑": {
+   "sjis": "8EC6",
+   "glyph_index": 1620,
+   "original_kanji": "屡",
+   "kanji_game_freq": 0,
+   "ko_freq": 21
+  },
+  "솔": {
+   "sjis": "8EC7",
+   "glyph_index": 1621,
+   "original_kanji": "蕊",
+   "kanji_game_freq": 0,
+   "ko_freq": 21
+  },
+  "냈": {
+   "sjis": "8EC8",
+   "glyph_index": 1622,
+   "original_kanji": "縞",
+   "kanji_game_freq": 0,
+   "ko_freq": 21
+  },
+  "붙": {
+   "sjis": "8ECB",
+   "glyph_index": 1625,
+   "original_kanji": "射",
+   "kanji_game_freq": 0,
+   "ko_freq": 21
+  },
+  "헬": {
+   "sjis": "8ECE",
+   "glyph_index": 1628,
+   "original_kanji": "斜",
+   "kanji_game_freq": 0,
+   "ko_freq": 20
+  },
+  "흘": {
+   "sjis": "8ECF",
+   "glyph_index": 1629,
+   "original_kanji": "煮",
+   "kanji_game_freq": 0,
+   "ko_freq": 20
+  },
+  "꾸": {
+   "sjis": "8ED0",
+   "glyph_index": 1630,
+   "original_kanji": "社",
+   "kanji_game_freq": 0,
+   "ko_freq": 20
+  },
+  "뛰": {
+   "sjis": "8ED1",
+   "glyph_index": 1631,
+   "original_kanji": "紗",
+   "kanji_game_freq": 0,
+   "ko_freq": 20
+  },
+  "켄": {
+   "sjis": "8ED9",
+   "glyph_index": 1639,
+   "original_kanji": "勺",
+   "kanji_game_freq": 0,
+   "ko_freq": 20
+  },
+  "꼼": {
+   "sjis": "8EDA",
+   "glyph_index": 1640,
+   "original_kanji": "尺",
+   "kanji_game_freq": 0,
+   "ko_freq": 20
+  },
+  "둬": {
+   "sjis": "8EDB",
+   "glyph_index": 1641,
+   "original_kanji": "杓",
+   "kanji_game_freq": 0,
+   "ko_freq": 20
+  },
+  "똑": {
+   "sjis": "8EDC",
+   "glyph_index": 1642,
+   "original_kanji": "灼",
+   "kanji_game_freq": 0,
+   "ko_freq": 20
+  },
+  "맥": {
+   "sjis": "8EDE",
+   "glyph_index": 1644,
+   "original_kanji": "酌",
+   "kanji_game_freq": 0,
+   "ko_freq": 20
+  },
+  "육": {
+   "sjis": "8EDF",
+   "glyph_index": 1645,
+   "original_kanji": "釈",
+   "kanji_game_freq": 0,
+   "ko_freq": 20
+  },
+  "넓": {
+   "sjis": "8EE0",
+   "glyph_index": 1646,
+   "original_kanji": "錫",
+   "kanji_game_freq": 0,
+   "ko_freq": 20
+  },
+  "곶": {
+   "sjis": "8EE4",
+   "glyph_index": 1650,
+   "original_kanji": "惹",
+   "kanji_game_freq": 0,
+   "ko_freq": 19
+  },
+  "흐": {
+   "sjis": "8EE9",
+   "glyph_index": 1655,
+   "original_kanji": "朱",
+   "kanji_game_freq": 0,
+   "ko_freq": 19
+  },
+  "겼": {
+   "sjis": "8EEC",
+   "glyph_index": 1658,
+   "original_kanji": "珠",
+   "kanji_game_freq": 0,
+   "ko_freq": 19
+  },
+  "곁": {
+   "sjis": "8EEE",
+   "glyph_index": 1660,
+   "original_kanji": "腫",
+   "kanji_game_freq": 0,
+   "ko_freq": 19
+  },
+  "끄": {
+   "sjis": "8EEF",
+   "glyph_index": 1661,
+   "original_kanji": "趣",
+   "kanji_game_freq": 0,
+   "ko_freq": 19
+  },
+  "극": {
+   "sjis": "8EF2",
+   "glyph_index": 1664,
+   "original_kanji": "儒",
+   "kanji_game_freq": 0,
+   "ko_freq": 19
+  },
+  "핫": {
+   "sjis": "8EF8",
+   "glyph_index": 1670,
+   "original_kanji": "綬",
+   "kanji_game_freq": 0,
+   "ko_freq": 19
+  },
+  "톰": {
+   "sjis": "8EF9",
+   "glyph_index": 1671,
+   "original_kanji": "需",
+   "kanji_game_freq": 0,
+   "ko_freq": 18
+  },
+  "걱": {
+   "sjis": "8EFA",
+   "glyph_index": 1672,
+   "original_kanji": "囚",
+   "kanji_game_freq": 0,
+   "ko_freq": 18
+  },
+  "널": {
+   "sjis": "8F42",
+   "glyph_index": 1677,
+   "original_kanji": "州",
+   "kanji_game_freq": 0,
+   "ko_freq": 18
+  },
+  "낙": {
+   "sjis": "8F44",
+   "glyph_index": 1679,
+   "original_kanji": "愁",
+   "kanji_game_freq": 0,
+   "ko_freq": 18
+  },
+  "땡": {
+   "sjis": "8F46",
+   "glyph_index": 1681,
+   "original_kanji": "洲",
+   "kanji_game_freq": 0,
+   "ko_freq": 18
+  },
+  "뭘": {
+   "sjis": "8F48",
+   "glyph_index": 1683,
+   "original_kanji": "秋",
+   "kanji_game_freq": 0,
+   "ko_freq": 18
+  },
+  "읽": {
+   "sjis": "8F4A",
+   "glyph_index": 1685,
+   "original_kanji": "繍",
+   "kanji_game_freq": 0,
+   "ko_freq": 18
+  },
+  "띄": {
+   "sjis": "8F4C",
+   "glyph_index": 1687,
+   "original_kanji": "臭",
+   "kanji_game_freq": 0,
+   "ko_freq": 18
+  },
+  "웅": {
+   "sjis": "8F4E",
+   "glyph_index": 1689,
+   "original_kanji": "蒐",
+   "kanji_game_freq": 0,
+   "ko_freq": 18
+  },
+  "셈": {
+   "sjis": "8F53",
+   "glyph_index": 1694,
+   "original_kanji": "輯",
+   "kanji_game_freq": 0,
+   "ko_freq": 18
+  },
+  "범": {
+   "sjis": "8F54",
+   "glyph_index": 1695,
+   "original_kanji": "週",
+   "kanji_game_freq": 0,
+   "ko_freq": 18
+  },
+  "흠": {
+   "sjis": "8F55",
+   "glyph_index": 1696,
+   "original_kanji": "酋",
+   "kanji_game_freq": 0,
+   "ko_freq": 18
+  },
+  "념": {
+   "sjis": "8F59",
+   "glyph_index": 1700,
+   "original_kanji": "什",
+   "kanji_game_freq": 0,
+   "ko_freq": 18
+  },
+  "룡": {
+   "sjis": "8F5E",
+   "glyph_index": 1705,
+   "original_kanji": "戎",
+   "kanji_game_freq": 0,
+   "ko_freq": 17
+  },
+  "휩": {
+   "sjis": "8F60",
+   "glyph_index": 1707,
+   "original_kanji": "汁",
+   "kanji_game_freq": 0,
+   "ko_freq": 17
+  },
+  "퍼": {
+   "sjis": "8F61",
+   "glyph_index": 1708,
+   "original_kanji": "渋",
+   "kanji_game_freq": 0,
+   "ko_freq": 17
+  },
+  "붉": {
+   "sjis": "8F65",
+   "glyph_index": 1712,
+   "original_kanji": "銃",
+   "kanji_game_freq": 0,
+   "ko_freq": 17
+  },
+  "슈": {
+   "sjis": "8F66",
+   "glyph_index": 1713,
+   "original_kanji": "叔",
+   "kanji_game_freq": 0,
+   "ko_freq": 16
+  },
+  "휘": {
+   "sjis": "8F67",
+   "glyph_index": 1714,
+   "original_kanji": "夙",
+   "kanji_game_freq": 0,
+   "ko_freq": 16
+  },
+  "쌍": {
+   "sjis": "8F6B",
+   "glyph_index": 1718,
+   "original_kanji": "縮",
+   "kanji_game_freq": 0,
+   "ko_freq": 16
+  },
+  "렌": {
+   "sjis": "8F6C",
+   "glyph_index": 1719,
+   "original_kanji": "粛",
+   "kanji_game_freq": 0,
+   "ko_freq": 16
+  },
+  "됩": {
+   "sjis": "8F6D",
+   "glyph_index": 1720,
+   "original_kanji": "塾",
+   "kanji_game_freq": 0,
+   "ko_freq": 16
+  },
+  "익": {
+   "sjis": "8F71",
+   "glyph_index": 1724,
+   "original_kanji": "述",
+   "kanji_game_freq": 0,
+   "ko_freq": 16
+  },
+  "징": {
+   "sjis": "8F73",
+   "glyph_index": 1726,
+   "original_kanji": "峻",
+   "kanji_game_freq": 0,
+   "ko_freq": 16
+  },
+  "권": {
+   "sjis": "8F77",
+   "glyph_index": 1730,
+   "original_kanji": "舜",
+   "kanji_game_freq": 0,
+   "ko_freq": 16
+  },
+  "푹": {
+   "sjis": "8F79",
+   "glyph_index": 1732,
+   "original_kanji": "准",
+   "kanji_game_freq": 0,
+   "ko_freq": 16
+  },
+  "축": {
+   "sjis": "8F7A",
+   "glyph_index": 1733,
+   "original_kanji": "循",
+   "kanji_game_freq": 0,
+   "ko_freq": 16
+  },
+  "빡": {
+   "sjis": "8F7B",
+   "glyph_index": 1734,
+   "original_kanji": "旬",
+   "kanji_game_freq": 0,
+   "ko_freq": 16
+  },
+  "벽": {
+   "sjis": "8F7C",
+   "glyph_index": 1735,
+   "original_kanji": "楯",
+   "kanji_game_freq": 0,
+   "ko_freq": 16
+  },
+  "쌔": {
+   "sjis": "8F7D",
+   "glyph_index": 1736,
+   "original_kanji": "殉",
+   "kanji_game_freq": 0,
+   "ko_freq": 16
+  },
+  "찌": {
+   "sjis": "8F81",
+   "glyph_index": 1739,
+   "original_kanji": "潤",
+   "kanji_game_freq": 0,
+   "ko_freq": 16
+  },
+  "늦": {
+   "sjis": "8F85",
+   "glyph_index": 1743,
+   "original_kanji": "遵",
+   "kanji_game_freq": 0,
+   "ko_freq": 16
+  },
+  "캐": {
+   "sjis": "8F86",
+   "glyph_index": 1744,
+   "original_kanji": "醇",
+   "kanji_game_freq": 0,
+   "ko_freq": 16
+  },
+  "릿": {
+   "sjis": "8F87",
+   "glyph_index": 1745,
+   "original_kanji": "順",
+   "kanji_game_freq": 0,
+   "ko_freq": 15
+  },
+  "칭": {
+   "sjis": "8F8C",
+   "glyph_index": 1750,
+   "original_kanji": "曙",
+   "kanji_game_freq": 0,
+   "ko_freq": 15
+  },
+  "흡": {
+   "sjis": "8F8D",
+   "glyph_index": 1751,
+   "original_kanji": "渚",
+   "kanji_game_freq": 0,
+   "ko_freq": 15
+  },
+  "겐": {
+   "sjis": "8F8E",
+   "glyph_index": 1752,
+   "original_kanji": "庶",
+   "kanji_game_freq": 0,
+   "ko_freq": 15
+  },
+  "끔": {
+   "sjis": "8F90",
+   "glyph_index": 1754,
+   "original_kanji": "署",
+   "kanji_game_freq": 0,
+   "ko_freq": 15
+  },
+  "뒀": {
+   "sjis": "8F92",
+   "glyph_index": 1756,
+   "original_kanji": "薯",
+   "kanji_game_freq": 0,
+   "ko_freq": 15
+  },
+  "뵙": {
+   "sjis": "8F93",
+   "glyph_index": 1757,
+   "original_kanji": "藷",
+   "kanji_game_freq": 0,
+   "ko_freq": 15
+  },
+  "꾼": {
+   "sjis": "8F96",
+   "glyph_index": 1760,
+   "original_kanji": "叙",
+   "kanji_game_freq": 0,
+   "ko_freq": 14
+  },
+  "월": {
+   "sjis": "8F99",
+   "glyph_index": 1763,
+   "original_kanji": "徐",
+   "kanji_game_freq": 0,
+   "ko_freq": 14
+  },
+  "털": {
+   "sjis": "8F9A",
+   "glyph_index": 1764,
+   "original_kanji": "恕",
+   "kanji_game_freq": 0,
+   "ko_freq": 14
+  },
+  "큼": {
+   "sjis": "8F9B",
+   "glyph_index": 1765,
+   "original_kanji": "鋤",
+   "kanji_game_freq": 0,
+   "ko_freq": 14
+  },
+  "몇": {
+   "sjis": "8FA1",
+   "glyph_index": 1771,
+   "original_kanji": "升",
+   "kanji_game_freq": 0,
+   "ko_freq": 14
+  },
+  "훔": {
+   "sjis": "8FA3",
+   "glyph_index": 1773,
+   "original_kanji": "哨",
+   "kanji_game_freq": 0,
+   "ko_freq": 14
+  },
+  "낸": {
+   "sjis": "8FA6",
+   "glyph_index": 1776,
+   "original_kanji": "嘗",
+   "kanji_game_freq": 0,
+   "ko_freq": 14
+  },
+  "깽": {
+   "sjis": "8FA7",
+   "glyph_index": 1777,
+   "original_kanji": "奨",
+   "kanji_game_freq": 0,
+   "ko_freq": 14
+  },
+  "립": {
+   "sjis": "8FA8",
+   "glyph_index": 1778,
+   "original_kanji": "妾",
+   "kanji_game_freq": 0,
+   "ko_freq": 14
+  },
+  "헛": {
+   "sjis": "8FA9",
+   "glyph_index": 1779,
+   "original_kanji": "娼",
+   "kanji_game_freq": 0,
+   "ko_freq": 14
+  },
+  "웃": {
+   "sjis": "8FAF",
+   "glyph_index": 1785,
+   "original_kanji": "庄",
+   "kanji_game_freq": 0,
+   "ko_freq": 14
+  },
+  "쟁": {
+   "sjis": "8FB1",
+   "glyph_index": 1787,
+   "original_kanji": "廠",
+   "kanji_game_freq": 0,
+   "ko_freq": 14
+  },
+  "탓": {
+   "sjis": "8FB4",
+   "glyph_index": 1790,
+   "original_kanji": "抄",
+   "kanji_game_freq": 0,
+   "ko_freq": 14
+  },
+  "낌": {
+   "sjis": "8FB6",
+   "glyph_index": 1792,
+   "original_kanji": "掌",
+   "kanji_game_freq": 0,
+   "ko_freq": 14
+  },
+  "앉": {
+   "sjis": "8FB7",
+   "glyph_index": 1793,
+   "original_kanji": "捷",
+   "kanji_game_freq": 0,
+   "ko_freq": 14
+  },
+  "렀": {
+   "sjis": "8FBC",
+   "glyph_index": 1798,
+   "original_kanji": "松",
+   "kanji_game_freq": 0,
+   "ko_freq": 13
+  },
+  "뿜": {
+   "sjis": "8FBD",
+   "glyph_index": 1799,
+   "original_kanji": "梢",
+   "kanji_game_freq": 0,
+   "ko_freq": 13
+  },
+  "랜": {
+   "sjis": "8FBE",
+   "glyph_index": 1800,
+   "original_kanji": "樟",
+   "kanji_game_freq": 0,
+   "ko_freq": 13
+  },
+  "학": {
+   "sjis": "8FBF",
+   "glyph_index": 1801,
+   "original_kanji": "樵",
+   "kanji_game_freq": 0,
+   "ko_freq": 13
+  },
+  "랄": {
+   "sjis": "8FC0",
+   "glyph_index": 1802,
+   "original_kanji": "沼",
+   "kanji_game_freq": 0,
+   "ko_freq": 12
+  },
+  "샌": {
+   "sjis": "8FC2",
+   "glyph_index": 1804,
+   "original_kanji": "渉",
+   "kanji_game_freq": 0,
+   "ko_freq": 12
+  },
+  "븐": {
+   "sjis": "8FC3",
+   "glyph_index": 1805,
+   "original_kanji": "湘",
+   "kanji_game_freq": 0,
+   "ko_freq": 12
+  },
+  "벨": {
+   "sjis": "8FC6",
+   "glyph_index": 1808,
+   "original_kanji": "照",
+   "kanji_game_freq": 0,
+   "ko_freq": 12
+  },
+  "흩": {
+   "sjis": "8FC7",
+   "glyph_index": 1809,
+   "original_kanji": "症",
+   "kanji_game_freq": 0,
+   "ko_freq": 12
+  },
+  "랫": {
+   "sjis": "8FC9",
+   "glyph_index": 1811,
+   "original_kanji": "硝",
+   "kanji_game_freq": 0,
+   "ko_freq": 12
+  },
+  "맨": {
+   "sjis": "8FCA",
+   "glyph_index": 1812,
+   "original_kanji": "礁",
+   "kanji_game_freq": 0,
+   "ko_freq": 12
+  },
+  "쥬": {
+   "sjis": "8FCB",
+   "glyph_index": 1813,
+   "original_kanji": "祥",
+   "kanji_game_freq": 0,
+   "ko_freq": 12
+  },
+  "찼": {
+   "sjis": "8FD1",
+   "glyph_index": 1819,
+   "original_kanji": "肖",
+   "kanji_game_freq": 0,
+   "ko_freq": 12
+  },
+  "딜": {
+   "sjis": "8FD2",
+   "glyph_index": 1820,
+   "original_kanji": "菖",
+   "kanji_game_freq": 0,
+   "ko_freq": 12
+  },
+  "쓴": {
+   "sjis": "8FD3",
+   "glyph_index": 1821,
+   "original_kanji": "蒋",
+   "kanji_game_freq": 0,
+   "ko_freq": 12
+  },
+  "슷": {
+   "sjis": "8FD4",
+   "glyph_index": 1822,
+   "original_kanji": "蕉",
+   "kanji_game_freq": 0,
+   "ko_freq": 12
+  },
+  "훌": {
+   "sjis": "8FD6",
+   "glyph_index": 1824,
+   "original_kanji": "裳",
+   "kanji_game_freq": 0,
+   "ko_freq": 12
+  },
+  "륭": {
+   "sjis": "8FD7",
+   "glyph_index": 1825,
+   "original_kanji": "訟",
+   "kanji_game_freq": 0,
+   "ko_freq": 12
+  },
+  "힌": {
+   "sjis": "8FD9",
+   "glyph_index": 1827,
+   "original_kanji": "詔",
+   "kanji_game_freq": 0,
+   "ko_freq": 12
+  },
+  "겸": {
+   "sjis": "8FDD",
+   "glyph_index": 1831,
+   "original_kanji": "醤",
+   "kanji_game_freq": 0,
+   "ko_freq": 12
+  },
+  "틈": {
+   "sjis": "8FDE",
+   "glyph_index": 1832,
+   "original_kanji": "鉦",
+   "kanji_game_freq": 0,
+   "ko_freq": 12
+  },
+  "껏": {
+   "sjis": "8FDF",
+   "glyph_index": 1833,
+   "original_kanji": "鍾",
+   "kanji_game_freq": 0,
+   "ko_freq": 12
+  },
+  "웨": {
+   "sjis": "8FE0",
+   "glyph_index": 1834,
+   "original_kanji": "鐘",
+   "kanji_game_freq": 0,
+   "ko_freq": 12
+  },
+  "밑": {
+   "sjis": "8FE2",
+   "glyph_index": 1836,
+   "original_kanji": "鞘",
+   "kanji_game_freq": 0,
+   "ko_freq": 12
+  },
+  "렉": {
+   "sjis": "8FE5",
+   "glyph_index": 1839,
+   "original_kanji": "丞",
+   "kanji_game_freq": 0,
+   "ko_freq": 12
+  },
+  "릭": {
+   "sjis": "8FE8",
+   "glyph_index": 1842,
+   "original_kanji": "剰",
+   "kanji_game_freq": 0,
+   "ko_freq": 12
+  },
+  "램": {
+   "sjis": "8FEB",
+   "glyph_index": 1845,
+   "original_kanji": "壌",
+   "kanji_game_freq": 0,
+   "ko_freq": 12
+  },
+  "뇌": {
+   "sjis": "8FEF",
+   "glyph_index": 1849,
+   "original_kanji": "擾",
+   "kanji_game_freq": 0,
+   "ko_freq": 11
+  },
+  "삭": {
+   "sjis": "8FF4",
+   "glyph_index": 1854,
+   "original_kanji": "畳",
+   "kanji_game_freq": 0,
+   "ko_freq": 11
+  },
+  "쾌": {
+   "sjis": "8FF5",
+   "glyph_index": 1855,
+   "original_kanji": "穣",
+   "kanji_game_freq": 0,
+   "ko_freq": 11
+  },
+  "괭": {
+   "sjis": "8FF6",
+   "glyph_index": 1856,
+   "original_kanji": "蒸",
+   "kanji_game_freq": 0,
+   "ko_freq": 11
+  },
+  "묘": {
+   "sjis": "8FF8",
+   "glyph_index": 1858,
+   "original_kanji": "醸",
+   "kanji_game_freq": 0,
+   "ko_freq": 11
+  },
+  "꼴": {
+   "sjis": "8FF9",
+   "glyph_index": 1859,
+   "original_kanji": "錠",
+   "kanji_game_freq": 0,
+   "ko_freq": 11
+  },
+  "멈": {
+   "sjis": "8FFA",
+   "glyph_index": 1860,
+   "original_kanji": "嘱",
+   "kanji_game_freq": 0,
+   "ko_freq": 11
+  },
+  "댁": {
+   "sjis": "8FFB",
+   "glyph_index": 1861,
+   "original_kanji": "埴",
+   "kanji_game_freq": 0,
+   "ko_freq": 11
+  },
+  "쩌": {
+   "sjis": "9040",
+   "glyph_index": 1863,
+   "original_kanji": "拭",
+   "kanji_game_freq": 0,
+   "ko_freq": 11
+  },
+  "꺄": {
+   "sjis": "9041",
+   "glyph_index": 1864,
+   "original_kanji": "植",
+   "kanji_game_freq": 0,
+   "ko_freq": 11
+  },
+  "딩": {
+   "sjis": "9043",
+   "glyph_index": 1866,
+   "original_kanji": "燭",
+   "kanji_game_freq": 0,
+   "ko_freq": 10
+  },
+  "압": {
+   "sjis": "9049",
+   "glyph_index": 1872,
+   "original_kanji": "蝕",
+   "kanji_game_freq": 0,
+   "ko_freq": 10
+  },
+  "롱": {
+   "sjis": "904A",
+   "glyph_index": 1873,
+   "original_kanji": "辱",
+   "kanji_game_freq": 0,
+   "ko_freq": 10
+  },
+  "떡": {
+   "sjis": "904B",
+   "glyph_index": 1874,
+   "original_kanji": "尻",
+   "kanji_game_freq": 0,
+   "ko_freq": 10
+  },
+  "뿔": {
+   "sjis": "904C",
+   "glyph_index": 1875,
+   "original_kanji": "伸",
+   "kanji_game_freq": 0,
+   "ko_freq": 10
+  },
+  "샤": {
+   "sjis": "9050",
+   "glyph_index": 1879,
+   "original_kanji": "娠",
+   "kanji_game_freq": 0,
+   "ko_freq": 10
+  },
+  "팽": {
+   "sjis": "9057",
+   "glyph_index": 1886,
+   "original_kanji": "晋",
+   "kanji_game_freq": 0,
+   "ko_freq": 10
+  },
+  "젊": {
+   "sjis": "9059",
+   "glyph_index": 1888,
+   "original_kanji": "榛",
+   "kanji_game_freq": 0,
+   "ko_freq": 10
+  },
+  "렁": {
+   "sjis": "905A",
+   "glyph_index": 1889,
+   "original_kanji": "浸",
+   "kanji_game_freq": 0,
+   "ko_freq": 10
+  },
+  "규": {
+   "sjis": "905D",
+   "glyph_index": 1892,
+   "original_kanji": "疹",
+   "kanji_game_freq": 0,
+   "ko_freq": 10
+  },
+  "톡": {
+   "sjis": "9060",
+   "glyph_index": 1895,
+   "original_kanji": "秦",
+   "kanji_game_freq": 0,
+   "ko_freq": 10
+  },
+  "럭": {
+   "sjis": "9061",
+   "glyph_index": 1896,
+   "original_kanji": "紳",
+   "kanji_game_freq": 0,
+   "ko_freq": 10
+  },
+  "쁘": {
+   "sjis": "9062",
+   "glyph_index": 1897,
+   "original_kanji": "臣",
+   "kanji_game_freq": 0,
+   "ko_freq": 10
+  },
+  "찬": {
+   "sjis": "9063",
+   "glyph_index": 1898,
+   "original_kanji": "芯",
+   "kanji_game_freq": 0,
+   "ko_freq": 10
+  },
+  "꾀": {
+   "sjis": "9064",
+   "glyph_index": 1899,
+   "original_kanji": "薪",
+   "kanji_game_freq": 0,
+   "ko_freq": 10
+  },
+  "닮": {
+   "sjis": "9066",
+   "glyph_index": 1901,
+   "original_kanji": "診",
+   "kanji_game_freq": 0,
+   "ko_freq": 10
+  },
+  "밝": {
+   "sjis": "906A",
+   "glyph_index": 1905,
+   "original_kanji": "針",
+   "kanji_game_freq": 0,
+   "ko_freq": 10
+  },
+  "쩍": {
+   "sjis": "9070",
+   "glyph_index": 1911,
+   "original_kanji": "壬",
+   "kanji_game_freq": 0,
+   "ko_freq": 10
+  },
+  "밭": {
+   "sjis": "9072",
+   "glyph_index": 1913,
+   "original_kanji": "甚",
+   "kanji_game_freq": 0,
+   "ko_freq": 10
+  },
+  "뀌": {
+   "sjis": "9074",
+   "glyph_index": 1915,
+   "original_kanji": "腎",
+   "kanji_game_freq": 0,
+   "ko_freq": 10
+  },
+  "납": {
+   "sjis": "9076",
+   "glyph_index": 1917,
+   "original_kanji": "迅",
+   "kanji_game_freq": 0,
+   "ko_freq": 10
+  },
+  "뢰": {
+   "sjis": "9078",
+   "glyph_index": 1919,
+   "original_kanji": "靭",
+   "kanji_game_freq": 0,
+   "ko_freq": 10
+  },
+  "닿": {
+   "sjis": "9079",
+   "glyph_index": 1920,
+   "original_kanji": "笥",
+   "kanji_game_freq": 0,
+   "ko_freq": 10
+  },
+  "쌀": {
+   "sjis": "907A",
+   "glyph_index": 1921,
+   "original_kanji": "諏",
+   "kanji_game_freq": 0,
+   "ko_freq": 10
+  },
+  "찢": {
+   "sjis": "907B",
+   "glyph_index": 1922,
+   "original_kanji": "須",
+   "kanji_game_freq": 0,
+   "ko_freq": 10
+  },
+  "딴": {
+   "sjis": "907C",
+   "glyph_index": 1923,
+   "original_kanji": "酢",
+   "kanji_game_freq": 0,
+   "ko_freq": 10
+  },
+  "혈": {
+   "sjis": "907E",
+   "glyph_index": 1925,
+   "original_kanji": "厨",
+   "kanji_game_freq": 0,
+   "ko_freq": 10
+  },
+  "춤": {
+   "sjis": "9080",
+   "glyph_index": 1926,
+   "original_kanji": "逗",
+   "kanji_game_freq": 0,
+   "ko_freq": 10
+  },
+  "픔": {
+   "sjis": "9082",
+   "glyph_index": 1928,
+   "original_kanji": "垂",
+   "kanji_game_freq": 0,
+   "ko_freq": 10
+  },
+  "깜": {
+   "sjis": "9083",
+   "glyph_index": 1929,
+   "original_kanji": "帥",
+   "kanji_game_freq": 0,
+   "ko_freq": 10
+  },
+  "맑": {
+   "sjis": "9084",
+   "glyph_index": 1930,
+   "original_kanji": "推",
+   "kanji_game_freq": 0,
+   "ko_freq": 10
+  },
+  "뻔": {
+   "sjis": "9086",
+   "glyph_index": 1932,
+   "original_kanji": "炊",
+   "kanji_game_freq": 0,
+   "ko_freq": 10
+  },
+  "쥐": {
+   "sjis": "9088",
+   "glyph_index": 1934,
+   "original_kanji": "粋",
+   "kanji_game_freq": 0,
+   "ko_freq": 10
+  },
+  "혜": {
+   "sjis": "9089",
+   "glyph_index": 1935,
+   "original_kanji": "翠",
+   "kanji_game_freq": 0,
+   "ko_freq": 9
+  },
+  "좌": {
+   "sjis": "908A",
+   "glyph_index": 1936,
+   "original_kanji": "衰",
+   "kanji_game_freq": 0,
+   "ko_freq": 9
+  },
+  "균": {
+   "sjis": "908D",
+   "glyph_index": 1939,
+   "original_kanji": "錐",
+   "kanji_game_freq": 0,
+   "ko_freq": 9
+  },
+  "킨": {
+   "sjis": "908E",
+   "glyph_index": 1940,
+   "original_kanji": "錘",
+   "kanji_game_freq": 0,
+   "ko_freq": 9
+  },
+  "쇼": {
+   "sjis": "9090",
+   "glyph_index": 1942,
+   "original_kanji": "瑞",
+   "kanji_game_freq": 0,
+   "ko_freq": 9
+  },
+  "빈": {
+   "sjis": "9091",
+   "glyph_index": 1943,
+   "original_kanji": "髄",
+   "kanji_game_freq": 0,
+   "ko_freq": 9
+  },
+  "찰": {
+   "sjis": "9092",
+   "glyph_index": 1944,
+   "original_kanji": "崇",
+   "kanji_game_freq": 0,
+   "ko_freq": 9
+  },
+  "묻": {
+   "sjis": "9093",
+   "glyph_index": 1945,
+   "original_kanji": "嵩",
+   "kanji_game_freq": 0,
+   "ko_freq": 9
+  },
+  "싹": {
+   "sjis": "9095",
+   "glyph_index": 1947,
+   "original_kanji": "枢",
+   "kanji_game_freq": 0,
+   "ko_freq": 9
+  },
+  "랬": {
+   "sjis": "9096",
+   "glyph_index": 1948,
+   "original_kanji": "趨",
+   "kanji_game_freq": 0,
+   "ko_freq": 9
+  },
+  "션": {
+   "sjis": "9097",
+   "glyph_index": 1949,
+   "original_kanji": "雛",
+   "kanji_game_freq": 0,
+   "ko_freq": 9
+  },
+  "엽": {
+   "sjis": "9098",
+   "glyph_index": 1950,
+   "original_kanji": "据",
+   "kanji_game_freq": 0,
+   "ko_freq": 9
+  },
+  "졸": {
+   "sjis": "9099",
+   "glyph_index": 1951,
+   "original_kanji": "杉",
+   "kanji_game_freq": 0,
+   "ko_freq": 9
+  },
+  "캣": {
+   "sjis": "909A",
+   "glyph_index": 1952,
+   "original_kanji": "椙",
+   "kanji_game_freq": 0,
+   "ko_freq": 8
+  },
+  "벼": {
+   "sjis": "909B",
+   "glyph_index": 1953,
+   "original_kanji": "菅",
+   "kanji_game_freq": 0,
+   "ko_freq": 8
+  },
+  "둔": {
+   "sjis": "909C",
+   "glyph_index": 1954,
+   "original_kanji": "頗",
+   "kanji_game_freq": 0,
+   "ko_freq": 8
+  },
+  "렬": {
+   "sjis": "909D",
+   "glyph_index": 1955,
+   "original_kanji": "雀",
+   "kanji_game_freq": 0,
+   "ko_freq": 8
+  },
+  "혔": {
+   "sjis": "909E",
+   "glyph_index": 1956,
+   "original_kanji": "裾",
+   "kanji_game_freq": 0,
+   "ko_freq": 8
+  },
+  "욱": {
+   "sjis": "90A0",
+   "glyph_index": 1958,
+   "original_kanji": "摺",
+   "kanji_game_freq": 0,
+   "ko_freq": 8
+  },
+  "빼": {
+   "sjis": "90A3",
+   "glyph_index": 1961,
+   "original_kanji": "瀬",
+   "kanji_game_freq": 0,
+   "ko_freq": 8
+  },
+  "탐": {
+   "sjis": "90A4",
+   "glyph_index": 1962,
+   "original_kanji": "畝",
+   "kanji_game_freq": 0,
+   "ko_freq": 8
+  },
+  "삶": {
+   "sjis": "90A9",
+   "glyph_index": 1967,
+   "original_kanji": "姓",
+   "kanji_game_freq": 0,
+   "ko_freq": 8
+  },
+  "휴": {
+   "sjis": "90AD",
+   "glyph_index": 1971,
+   "original_kanji": "政",
+   "kanji_game_freq": 0,
+   "ko_freq": 8
+  },
+  "덜": {
+   "sjis": "90B2",
+   "glyph_index": 1976,
+   "original_kanji": "栖",
+   "kanji_game_freq": 0,
+   "ko_freq": 8
+  },
+  "깥": {
+   "sjis": "90BD",
+   "glyph_index": 1987,
+   "original_kanji": "誠",
+   "kanji_game_freq": 0,
+   "ko_freq": 8
+  },
+  "탱": {
+   "sjis": "90C0",
+   "glyph_index": 1990,
+   "original_kanji": "逝",
+   "kanji_game_freq": 0,
+   "ko_freq": 8
+  },
+  "쳇": {
+   "sjis": "90C1",
+   "glyph_index": 1991,
+   "original_kanji": "醒",
+   "kanji_game_freq": 0,
+   "ko_freq": 8
+  },
+  "솜": {
+   "sjis": "90C4",
+   "glyph_index": 1994,
+   "original_kanji": "斉",
+   "kanji_game_freq": 0,
+   "ko_freq": 8
+  },
+  "겉": {
+   "sjis": "90C5",
+   "glyph_index": 1995,
+   "original_kanji": "税",
+   "kanji_game_freq": 0,
+   "ko_freq": 8
+  },
+  "엉": {
+   "sjis": "90C6",
+   "glyph_index": 1996,
+   "original_kanji": "脆",
+   "kanji_game_freq": 0,
+   "ko_freq": 8
+  },
+  "춥": {
+   "sjis": "90CA",
+   "glyph_index": 2000,
+   "original_kanji": "戚",
+   "kanji_game_freq": 0,
+   "ko_freq": 8
+  },
+  "농": {
+   "sjis": "90CB",
+   "glyph_index": 2001,
+   "original_kanji": "斥",
+   "kanji_game_freq": 0,
+   "ko_freq": 8
+  },
+  "쏠": {
+   "sjis": "90CD",
+   "glyph_index": 2003,
+   "original_kanji": "析",
+   "kanji_game_freq": 0,
+   "ko_freq": 8
+  },
+  "윽": {
+   "sjis": "90D0",
+   "glyph_index": 2006,
+   "original_kanji": "籍",
+   "kanji_game_freq": 0,
+   "ko_freq": 8
+  },
+  "꿔": {
+   "sjis": "90D2",
+   "glyph_index": 2008,
+   "original_kanji": "脊",
+   "kanji_game_freq": 0,
+   "ko_freq": 8
+  },
+  "곧": {
+   "sjis": "90D6",
+   "glyph_index": 2012,
+   "original_kanji": "蹟",
+   "kanji_game_freq": 0,
+   "ko_freq": 8
+  },
+  "줍": {
+   "sjis": "90D7",
+   "glyph_index": 2013,
+   "original_kanji": "碩",
+   "kanji_game_freq": 0,
+   "ko_freq": 8
+  },
+  "팅": {
+   "sjis": "90D9",
+   "glyph_index": 2015,
+   "original_kanji": "拙",
+   "kanji_game_freq": 0,
+   "ko_freq": 8
+  },
+  "왓": {
+   "sjis": "90DB",
+   "glyph_index": 2017,
+   "original_kanji": "摂",
+   "kanji_game_freq": 0,
+   "ko_freq": 8
+  },
+  "눅": {
+   "sjis": "90DE",
+   "glyph_index": 2020,
+   "original_kanji": "窃",
+   "kanji_game_freq": 0,
+   "ko_freq": 8
+  },
+  "붕": {
+   "sjis": "90E4",
+   "glyph_index": 2026,
+   "original_kanji": "蝉",
+   "kanji_game_freq": 0,
+   "ko_freq": 8
+  },
+  "씻": {
+   "sjis": "90E7",
+   "glyph_index": 2029,
+   "original_kanji": "千",
+   "kanji_game_freq": 0,
+   "ko_freq": 8
+  },
+  "쿄": {
+   "sjis": "90EB",
+   "glyph_index": 2033,
+   "original_kanji": "尖",
+   "kanji_game_freq": 0,
+   "ko_freq": 8
+  },
+  "툰": {
+   "sjis": "90EE",
+   "glyph_index": 2036,
+   "original_kanji": "扇",
+   "kanji_game_freq": 0,
+   "ko_freq": 7
+  },
+  "첩": {
+   "sjis": "90EF",
+   "glyph_index": 2037,
+   "original_kanji": "撰",
+   "kanji_game_freq": 0,
+   "ko_freq": 7
+  },
+  "맹": {
+   "sjis": "90F0",
+   "glyph_index": 2038,
+   "original_kanji": "栓",
+   "kanji_game_freq": 0,
+   "ko_freq": 7
+  },
+  "꺼": {
+   "sjis": "90F1",
+   "glyph_index": 2039,
+   "original_kanji": "栴",
+   "kanji_game_freq": 0,
+   "ko_freq": 7
+  },
+  "롤": {
+   "sjis": "90F3",
+   "glyph_index": 2041,
+   "original_kanji": "浅",
+   "kanji_game_freq": 0,
+   "ko_freq": 7
+  },
+  "섰": {
+   "sjis": "90F7",
+   "glyph_index": 2045,
+   "original_kanji": "煎",
+   "kanji_game_freq": 0,
+   "ko_freq": 7
+  },
+  "칫": {
+   "sjis": "90F8",
+   "glyph_index": 2046,
+   "original_kanji": "煽",
+   "kanji_game_freq": 0,
+   "ko_freq": 7
+  },
+  "굉": {
+   "sjis": "90F9",
+   "glyph_index": 2047,
+   "original_kanji": "旋",
+   "kanji_game_freq": 0,
+   "ko_freq": 7
+  },
+  "톱": {
+   "sjis": "90FA",
+   "glyph_index": 2048,
+   "original_kanji": "穿",
+   "kanji_game_freq": 0,
+   "ko_freq": 6
+  },
+  "펨": {
+   "sjis": "90FB",
+   "glyph_index": 2049,
+   "original_kanji": "箭",
+   "kanji_game_freq": 0,
+   "ko_freq": 6
+  },
+  "글": {
+   "sjis": "9140",
+   "glyph_index": 2051,
+   "original_kanji": "繊",
+   "kanji_game_freq": 0,
+   "ko_freq": 6
+  },
+  "롯": {
+   "sjis": "9141",
+   "glyph_index": 2052,
+   "original_kanji": "羨",
+   "kanji_game_freq": 0,
+   "ko_freq": 6
+  },
+  "얌": {
+   "sjis": "9142",
+   "glyph_index": 2053,
+   "original_kanji": "腺",
+   "kanji_game_freq": 0,
+   "ko_freq": 6
+  },
+  "밥": {
+   "sjis": "9143",
+   "glyph_index": 2054,
+   "original_kanji": "舛",
+   "kanji_game_freq": 0,
+   "ko_freq": 6
+  },
+  "륙": {
+   "sjis": "9145",
+   "glyph_index": 2056,
+   "original_kanji": "薦",
+   "kanji_game_freq": 0,
+   "ko_freq": 6
+  },
+  "솟": {
+   "sjis": "9146",
+   "glyph_index": 2057,
+   "original_kanji": "詮",
+   "kanji_game_freq": 0,
+   "ko_freq": 6
+  },
+  "싼": {
+   "sjis": "9147",
+   "glyph_index": 2058,
+   "original_kanji": "賎",
+   "kanji_game_freq": 0,
+   "ko_freq": 6
+  },
+  "낑": {
+   "sjis": "9148",
+   "glyph_index": 2059,
+   "original_kanji": "践",
+   "kanji_game_freq": 0,
+   "ko_freq": 6
+  },
+  "딪": {
+   "sjis": "914A",
+   "glyph_index": 2061,
+   "original_kanji": "遷",
+   "kanji_game_freq": 0,
+   "ko_freq": 6
+  },
+  "꿀": {
+   "sjis": "914C",
+   "glyph_index": 2063,
+   "original_kanji": "銑",
+   "kanji_game_freq": 0,
+   "ko_freq": 6
+  },
+  "총": {
+   "sjis": "9151",
+   "glyph_index": 2068,
+   "original_kanji": "漸",
+   "kanji_game_freq": 0,
+   "ko_freq": 6
+  },
+  "짱": {
+   "sjis": "9154",
+   "glyph_index": 2071,
+   "original_kanji": "禅",
+   "kanji_game_freq": 0,
+   "ko_freq": 6
+  },
+  "칸": {
+   "sjis": "9155",
+   "glyph_index": 2072,
+   "original_kanji": "繕",
+   "kanji_game_freq": 0,
+   "ko_freq": 6
+  },
+  "툴": {
+   "sjis": "9156",
+   "glyph_index": 2073,
+   "original_kanji": "膳",
+   "kanji_game_freq": 0,
+   "ko_freq": 6
+  },
+  "멘": {
+   "sjis": "9157",
+   "glyph_index": 2074,
+   "original_kanji": "糎",
+   "kanji_game_freq": 0,
+   "ko_freq": 6
+  },
+  "값": {
+   "sjis": "9158",
+   "glyph_index": 2075,
+   "original_kanji": "噌",
+   "kanji_game_freq": 0,
+   "ko_freq": 6
+  },
+  "뻐": {
+   "sjis": "9159",
+   "glyph_index": 2076,
+   "original_kanji": "塑",
+   "kanji_game_freq": 0,
+   "ko_freq": 6
+  },
+  "잤": {
+   "sjis": "915A",
+   "glyph_index": 2077,
+   "original_kanji": "岨",
+   "kanji_game_freq": 0,
+   "ko_freq": 6
+  },
+  "줌": {
+   "sjis": "915B",
+   "glyph_index": 2078,
+   "original_kanji": "措",
+   "kanji_game_freq": 0,
+   "ko_freq": 6
+  },
+  "겹": {
+   "sjis": "915C",
+   "glyph_index": 2079,
+   "original_kanji": "曾",
+   "kanji_game_freq": 0,
+   "ko_freq": 6
+  },
+  "볍": {
+   "sjis": "915D",
+   "glyph_index": 2080,
+   "original_kanji": "曽",
+   "kanji_game_freq": 0,
+   "ko_freq": 6
+  },
+  "봬": {
+   "sjis": "915E",
+   "glyph_index": 2081,
+   "original_kanji": "楚",
+   "kanji_game_freq": 0,
+   "ko_freq": 6
+  },
+  "씩": {
+   "sjis": "9160",
+   "glyph_index": 2083,
+   "original_kanji": "疏",
+   "kanji_game_freq": 0,
+   "ko_freq": 6
+  },
+  "낚": {
+   "sjis": "9161",
+   "glyph_index": 2084,
+   "original_kanji": "疎",
+   "kanji_game_freq": 0,
+   "ko_freq": 6
+  },
+  "릅": {
+   "sjis": "9162",
+   "glyph_index": 2085,
+   "original_kanji": "礎",
+   "kanji_game_freq": 0,
+   "ko_freq": 6
+  },
+  "깔": {
+   "sjis": "9164",
+   "glyph_index": 2087,
+   "original_kanji": "租",
+   "kanji_game_freq": 0,
+   "ko_freq": 6
+  },
+  "엮": {
+   "sjis": "9165",
+   "glyph_index": 2088,
+   "original_kanji": "粗",
+   "kanji_game_freq": 0,
+   "ko_freq": 6
+  },
+  "튀": {
+   "sjis": "916B",
+   "glyph_index": 2094,
+   "original_kanji": "遡",
+   "kanji_game_freq": 0,
+   "ko_freq": 6
+  },
+  "녹": {
+   "sjis": "916C",
+   "glyph_index": 2095,
+   "original_kanji": "鼠",
+   "kanji_game_freq": 0,
+   "ko_freq": 6
+  },
+  "몫": {
+   "sjis": "9170",
+   "glyph_index": 2099,
+   "original_kanji": "叢",
+   "kanji_game_freq": 0,
+   "ko_freq": 6
+  },
+  "짊": {
+   "sjis": "9173",
+   "glyph_index": 2102,
+   "original_kanji": "壮",
+   "kanji_game_freq": 0,
+   "ko_freq": 6
+  },
+  "띤": {
+   "sjis": "9175",
+   "glyph_index": 2104,
+   "original_kanji": "爽",
+   "kanji_game_freq": 0,
+   "ko_freq": 6
+  },
+  "훈": {
+   "sjis": "9176",
+   "glyph_index": 2105,
+   "original_kanji": "宋",
+   "kanji_game_freq": 0,
+   "ko_freq": 6
+  },
+  "낫": {
+   "sjis": "9178",
+   "glyph_index": 2107,
+   "original_kanji": "匝",
+   "kanji_game_freq": 0,
+   "ko_freq": 6
+  },
+  "쉈": {
+   "sjis": "9179",
+   "glyph_index": 2108,
+   "original_kanji": "惣",
+   "kanji_game_freq": 0,
+   "ko_freq": 6
+  },
+  "맘": {
+   "sjis": "917C",
+   "glyph_index": 2111,
+   "original_kanji": "掃",
+   "kanji_game_freq": 0,
+   "ko_freq": 6
+  },
+  "뺐": {
+   "sjis": "917D",
+   "glyph_index": 2112,
+   "original_kanji": "挿",
+   "kanji_game_freq": 0,
+   "ko_freq": 6
+  },
+  "및": {
+   "sjis": "917E",
+   "glyph_index": 2113,
+   "original_kanji": "掻",
+   "kanji_game_freq": 0,
+   "ko_freq": 6
+  },
+  "쿼": {
+   "sjis": "9182",
+   "glyph_index": 2116,
+   "original_kanji": "曹",
+   "kanji_game_freq": 0,
+   "ko_freq": 5
+  },
+  "옮": {
+   "sjis": "9185",
+   "glyph_index": 2119,
+   "original_kanji": "槽",
+   "kanji_game_freq": 0,
+   "ko_freq": 5
+  },
+  "측": {
+   "sjis": "9186",
+   "glyph_index": 2120,
+   "original_kanji": "漕",
+   "kanji_game_freq": 0,
+   "ko_freq": 5
+  },
+  "략": {
+   "sjis": "9187",
+   "glyph_index": 2121,
+   "original_kanji": "燥",
+   "kanji_game_freq": 0,
+   "ko_freq": 5
+  },
+  "듭": {
+   "sjis": "9189",
+   "glyph_index": 2123,
+   "original_kanji": "痩",
+   "kanji_game_freq": 0,
+   "ko_freq": 5
+  },
+  "닙": {
+   "sjis": "918B",
+   "glyph_index": 2125,
+   "original_kanji": "窓",
+   "kanji_game_freq": 0,
+   "ko_freq": 5
+  },
+  "녔": {
+   "sjis": "918C",
+   "glyph_index": 2126,
+   "original_kanji": "糟",
+   "kanji_game_freq": 0,
+   "ko_freq": 5
+  },
+  "뒷": {
+   "sjis": "918D",
+   "glyph_index": 2127,
+   "original_kanji": "総",
+   "kanji_game_freq": 0,
+   "ko_freq": 5
+  },
+  "컬": {
+   "sjis": "918E",
+   "glyph_index": 2128,
+   "original_kanji": "綜",
+   "kanji_game_freq": 0,
+   "ko_freq": 5
+  },
+  "옵": {
+   "sjis": "9191",
+   "glyph_index": 2131,
+   "original_kanji": "荘",
+   "kanji_game_freq": 0,
+   "ko_freq": 4
+  },
+  "텍": {
+   "sjis": "9192",
+   "glyph_index": 2132,
+   "original_kanji": "葬",
+   "kanji_game_freq": 0,
+   "ko_freq": 4
+  },
+  "늑": {
+   "sjis": "9194",
+   "glyph_index": 2134,
+   "original_kanji": "藻",
+   "kanji_game_freq": 0,
+   "ko_freq": 4
+  },
+  "턴": {
+   "sjis": "9198",
+   "glyph_index": 2138,
+   "original_kanji": "遭",
+   "kanji_game_freq": 0,
+   "ko_freq": 4
+  },
+  "퀴": {
+   "sjis": "9199",
+   "glyph_index": 2139,
+   "original_kanji": "鎗",
+   "kanji_game_freq": 0,
+   "ko_freq": 4
+  },
+  "맵": {
+   "sjis": "919F",
+   "glyph_index": 2145,
+   "original_kanji": "臓",
+   "kanji_game_freq": 0,
+   "ko_freq": 4
+  },
+  "넨": {
+   "sjis": "91A0",
+   "glyph_index": 2146,
+   "original_kanji": "蔵",
+   "kanji_game_freq": 0,
+   "ko_freq": 4
+  },
+  "팬": {
+   "sjis": "91A1",
+   "glyph_index": 2147,
+   "original_kanji": "贈",
+   "kanji_game_freq": 0,
+   "ko_freq": 4
+  },
+  "논": {
+   "sjis": "91A5",
+   "glyph_index": 2151,
+   "original_kanji": "則",
+   "kanji_game_freq": 0,
+   "ko_freq": 4
+  },
+  "슝": {
+   "sjis": "91A8",
+   "glyph_index": 2154,
+   "original_kanji": "捉",
+   "kanji_game_freq": 0,
+   "ko_freq": 4
+  },
+  "섭": {
+   "sjis": "91AA",
+   "glyph_index": 2156,
+   "original_kanji": "測",
+   "kanji_game_freq": 0,
+   "ko_freq": 4
+  },
+  "떼": {
+   "sjis": "91B2",
+   "glyph_index": 2164,
+   "original_kanji": "卒",
+   "kanji_game_freq": 0,
+   "ko_freq": 4
+  },
+  "닫": {
+   "sjis": "91B3",
+   "glyph_index": 2165,
+   "original_kanji": "袖",
+   "kanji_game_freq": 0,
+   "ko_freq": 4
+  },
+  "뀐": {
+   "sjis": "91B4",
+   "glyph_index": 2166,
+   "original_kanji": "其",
+   "kanji_game_freq": 0,
+   "ko_freq": 4
+  },
+  "웜": {
+   "sjis": "91B8",
+   "glyph_index": 2170,
+   "original_kanji": "尊",
+   "kanji_game_freq": 0,
+   "ko_freq": 4
+  },
+  "링": {
+   "sjis": "91BB",
+   "glyph_index": 2173,
+   "original_kanji": "遜",
+   "kanji_game_freq": 0,
+   "ko_freq": 4
+  },
+  "퀸": {
+   "sjis": "91C0",
+   "glyph_index": 2178,
+   "original_kanji": "詑",
+   "kanji_game_freq": 0,
+   "ko_freq": 4
+  },
+  "눌": {
+   "sjis": "91C1",
+   "glyph_index": 2179,
+   "original_kanji": "唾",
+   "kanji_game_freq": 0,
+   "ko_freq": 4
+  },
+  "핑": {
+   "sjis": "91C3",
+   "glyph_index": 2181,
+   "original_kanji": "妥",
+   "kanji_game_freq": 0,
+   "ko_freq": 4
+  },
+  "쉴": {
+   "sjis": "91C4",
+   "glyph_index": 2182,
+   "original_kanji": "惰",
+   "kanji_game_freq": 0,
+   "ko_freq": 4
+  },
+  "쉿": {
+   "sjis": "91C6",
+   "glyph_index": 2184,
+   "original_kanji": "柁",
+   "kanji_game_freq": 0,
+   "ko_freq": 4
+  },
+  "펴": {
+   "sjis": "91C7",
+   "glyph_index": 2185,
+   "original_kanji": "舵",
+   "kanji_game_freq": 0,
+   "ko_freq": 4
+  },
+  "얏": {
+   "sjis": "91C8",
+   "glyph_index": 2186,
+   "original_kanji": "楕",
+   "kanji_game_freq": 0,
+   "ko_freq": 4
+  },
+  "좁": {
+   "sjis": "91C9",
+   "glyph_index": 2187,
+   "original_kanji": "陀",
+   "kanji_game_freq": 0,
+   "ko_freq": 4
+  },
+  "펌": {
+   "sjis": "91CB",
+   "glyph_index": 2189,
+   "original_kanji": "騨",
+   "kanji_game_freq": 0,
+   "ko_freq": 4
+  },
+  "갚": {
+   "sjis": "91CD",
+   "glyph_index": 2191,
+   "original_kanji": "堆",
+   "kanji_game_freq": 0,
+   "ko_freq": 4
+  },
+  "핏": {
+   "sjis": "91D0",
+   "glyph_index": 2194,
+   "original_kanji": "岱",
+   "kanji_game_freq": 0,
+   "ko_freq": 4
+  },
+  "쌓": {
+   "sjis": "91D3",
+   "glyph_index": 2197,
+   "original_kanji": "怠",
+   "kanji_game_freq": 0,
+   "ko_freq": 4
+  },
+  "릇": {
+   "sjis": "91D5",
+   "glyph_index": 2199,
+   "original_kanji": "戴",
+   "kanji_game_freq": 0,
+   "ko_freq": 4
+  },
+  "펼": {
+   "sjis": "91D9",
+   "glyph_index": 2203,
+   "original_kanji": "胎",
+   "kanji_game_freq": 0,
+   "ko_freq": 4
+  },
+  "뽐": {
+   "sjis": "91DB",
+   "glyph_index": 2205,
+   "original_kanji": "苔",
+   "kanji_game_freq": 0,
+   "ko_freq": 4
+  },
+  "갇": {
+   "sjis": "91DF",
+   "glyph_index": 2209,
+   "original_kanji": "逮",
+   "kanji_game_freq": 0,
+   "ko_freq": 4
+  },
+  "깎": {
+   "sjis": "91E1",
+   "glyph_index": 2211,
+   "original_kanji": "黛",
+   "kanji_game_freq": 0,
+   "ko_freq": 4
+  },
+  "둡": {
+   "sjis": "91E2",
+   "glyph_index": 2212,
+   "original_kanji": "鯛",
+   "kanji_game_freq": 0,
+   "ko_freq": 4
+  },
+  "헉": {
+   "sjis": "91E7",
+   "glyph_index": 2217,
+   "original_kanji": "醍",
+   "kanji_game_freq": 0,
+   "ko_freq": 4
+  },
+  "틱": {
+   "sjis": "91EA",
+   "glyph_index": 2220,
+   "original_kanji": "滝",
+   "kanji_game_freq": 0,
+   "ko_freq": 4
+  },
+  "곱": {
+   "sjis": "91EB",
+   "glyph_index": 2221,
+   "original_kanji": "瀧",
+   "kanji_game_freq": 0,
+   "ko_freq": 4
+  },
+  "춘": {
+   "sjis": "91EC",
+   "glyph_index": 2222,
+   "original_kanji": "卓",
+   "kanji_game_freq": 0,
+   "ko_freq": 4
+  },
+  "쩐": {
+   "sjis": "91ED",
+   "glyph_index": 2223,
+   "original_kanji": "啄",
+   "kanji_game_freq": 0,
+   "ko_freq": 4
+  },
+  "쵸": {
+   "sjis": "91EF",
+   "glyph_index": 2225,
+   "original_kanji": "托",
+   "kanji_game_freq": 0,
+   "ko_freq": 4
+  },
+  "뜩": {
+   "sjis": "91F1",
+   "glyph_index": 2227,
+   "original_kanji": "拓",
+   "kanji_game_freq": 0,
+   "ko_freq": 4
+  },
+  "늙": {
+   "sjis": "91F3",
+   "glyph_index": 2229,
+   "original_kanji": "濯",
+   "kanji_game_freq": 0,
+   "ko_freq": 4
+  },
+  "큐": {
+   "sjis": "91F4",
+   "glyph_index": 2230,
+   "original_kanji": "琢",
+   "kanji_game_freq": 0,
+   "ko_freq": 4
+  },
+  "굳": {
+   "sjis": "91F6",
+   "glyph_index": 2232,
+   "original_kanji": "鐸",
+   "kanji_game_freq": 0,
+   "ko_freq": 4
+  },
+  "뚫": {
+   "sjis": "91F7",
+   "glyph_index": 2233,
+   "original_kanji": "濁",
+   "kanji_game_freq": 0,
+   "ko_freq": 4
+  },
+  "덩": {
+   "sjis": "91F8",
+   "glyph_index": 2234,
+   "original_kanji": "諾",
+   "kanji_game_freq": 0,
+   "ko_freq": 4
+  },
+  "뚝": {
+   "sjis": "91F9",
+   "glyph_index": 2235,
+   "original_kanji": "茸",
+   "kanji_game_freq": 0,
+   "ko_freq": 4
+  },
+  "찻": {
+   "sjis": "91FA",
+   "glyph_index": 2236,
+   "original_kanji": "凧",
+   "kanji_game_freq": 0,
+   "ko_freq": 4
+  },
+  "헷": {
+   "sjis": "91FB",
+   "glyph_index": 2237,
+   "original_kanji": "蛸",
+   "kanji_game_freq": 0,
+   "ko_freq": 4
+  },
+  "풋": {
+   "sjis": "91FC",
+   "glyph_index": 2238,
+   "original_kanji": "只",
+   "kanji_game_freq": 0,
+   "ko_freq": 4
+  },
+  "뱀": {
+   "sjis": "9243",
+   "glyph_index": 2242,
+   "original_kanji": "辰",
+   "kanji_game_freq": 0,
+   "ko_freq": 4
+  },
+  "셰": {
+   "sjis": "9246",
+   "glyph_index": 2245,
+   "original_kanji": "巽",
+   "kanji_game_freq": 0,
+   "ko_freq": 4
+  },
+  "꺽": {
+   "sjis": "924B",
+   "glyph_index": 2250,
+   "original_kanji": "狸",
+   "kanji_game_freq": 0,
+   "ko_freq": 4
+  },
+  "챙": {
+   "sjis": "924C",
+   "glyph_index": 2251,
+   "original_kanji": "鱈",
+   "kanji_game_freq": 0,
+   "ko_freq": 4
+  },
+  "갬": {
+   "sjis": "924D",
+   "glyph_index": 2252,
+   "original_kanji": "樽",
+   "kanji_game_freq": 0,
+   "ko_freq": 4
+  },
+  "낄": {
+   "sjis": "9252",
+   "glyph_index": 2257,
+   "original_kanji": "坦",
+   "kanji_game_freq": 0,
+   "ko_freq": 4
+  },
+  "썩": {
+   "sjis": "9256",
+   "glyph_index": 2261,
+   "original_kanji": "歎",
+   "kanji_game_freq": 0,
+   "ko_freq": 4
+  },
+  "핀": {
+   "sjis": "9257",
+   "glyph_index": 2262,
+   "original_kanji": "淡",
+   "kanji_game_freq": 0,
+   "ko_freq": 4
+  },
+  "끊": {
+   "sjis": "9258",
+   "glyph_index": 2263,
+   "original_kanji": "湛",
+   "kanji_game_freq": 0,
+   "ko_freq": 4
+  },
+  "픈": {
+   "sjis": "9259",
+   "glyph_index": 2264,
+   "original_kanji": "炭",
+   "kanji_game_freq": 0,
+   "ko_freq": 4
+  },
+  "옆": {
+   "sjis": "925A",
+   "glyph_index": 2265,
+   "original_kanji": "短",
+   "kanji_game_freq": 0,
+   "ko_freq": 4
+  },
+  "눕": {
+   "sjis": "925C",
+   "glyph_index": 2267,
+   "original_kanji": "箪",
+   "kanji_game_freq": 0,
+   "ko_freq": 4
+  },
+  "융": {
+   "sjis": "925D",
+   "glyph_index": 2268,
+   "original_kanji": "綻",
+   "kanji_game_freq": 0,
+   "ko_freq": 4
+  },
+  "묶": {
+   "sjis": "925E",
+   "glyph_index": 2269,
+   "original_kanji": "耽",
+   "kanji_game_freq": 0,
+   "ko_freq": 4
+  },
+  "얽": {
+   "sjis": "9260",
+   "glyph_index": 2271,
+   "original_kanji": "蛋",
+   "kanji_game_freq": 0,
+   "ko_freq": 4
+  },
+  "홋": {
+   "sjis": "9268",
+   "glyph_index": 2279,
+   "original_kanji": "檀",
+   "kanji_game_freq": 0,
+   "ko_freq": 4
+  },
+  "챔": {
+   "sjis": "926F",
+   "glyph_index": 2286,
+   "original_kanji": "弛",
+   "kanji_game_freq": 0,
+   "ko_freq": 4
+  },
+  "퐁": {
+   "sjis": "9273",
+   "glyph_index": 2290,
+   "original_kanji": "痴",
+   "kanji_game_freq": 0,
+   "ko_freq": 4
+  },
+  "밌": {
+   "sjis": "9274",
+   "glyph_index": 2291,
+   "original_kanji": "稚",
+   "kanji_game_freq": 0,
+   "ko_freq": 4
+  },
+  "빗": {
+   "sjis": "9277",
+   "glyph_index": 2294,
+   "original_kanji": "蜘",
+   "kanji_game_freq": 0,
+   "ko_freq": 3
+  },
+  "왼": {
+   "sjis": "9279",
+   "glyph_index": 2296,
+   "original_kanji": "馳",
+   "kanji_game_freq": 0,
+   "ko_freq": 3
+  },
+  "띠": {
+   "sjis": "927C",
+   "glyph_index": 2299,
+   "original_kanji": "竹",
+   "kanji_game_freq": 0,
+   "ko_freq": 3
+  },
+  "홀": {
+   "sjis": "927D",
+   "glyph_index": 2300,
+   "original_kanji": "筑",
+   "kanji_game_freq": 0,
+   "ko_freq": 3
+  },
+  "꿉": {
+   "sjis": "927E",
+   "glyph_index": 2301,
+   "original_kanji": "蓄",
+   "kanji_game_freq": 0,
+   "ko_freq": 3
+  },
+  "셋": {
+   "sjis": "9280",
+   "glyph_index": 2302,
+   "original_kanji": "逐",
+   "kanji_game_freq": 0,
+   "ko_freq": 3
+  },
+  "빕": {
+   "sjis": "9282",
+   "glyph_index": 2304,
+   "original_kanji": "窒",
+   "kanji_game_freq": 0,
+   "ko_freq": 3
+  },
+  "뤄": {
+   "sjis": "9284",
+   "glyph_index": 2306,
+   "original_kanji": "嫡",
+   "kanji_game_freq": 0,
+   "ko_freq": 3
+  },
+  "룰": {
+   "sjis": "9288",
+   "glyph_index": 2310,
+   "original_kanji": "宙",
+   "kanji_game_freq": 0,
+   "ko_freq": 3
+  },
+  "넌": {
+   "sjis": "9289",
+   "glyph_index": 2311,
+   "original_kanji": "忠",
+   "kanji_game_freq": 0,
+   "ko_freq": 3
+  },
+  "슌": {
+   "sjis": "928A",
+   "glyph_index": 2312,
+   "original_kanji": "抽",
+   "kanji_game_freq": 0,
+   "ko_freq": 3
+  },
+  "퓰": {
+   "sjis": "928F",
+   "glyph_index": 2317,
+   "original_kanji": "衷",
+   "kanji_game_freq": 0,
+   "ko_freq": 3
+  },
+  "픽": {
+   "sjis": "9290",
+   "glyph_index": 2318,
+   "original_kanji": "註",
+   "kanji_game_freq": 0,
+   "ko_freq": 3
+  },
+  "촉": {
+   "sjis": "9291",
+   "glyph_index": 2319,
+   "original_kanji": "酎",
+   "kanji_game_freq": 0,
+   "ko_freq": 3
+  },
+  "랴": {
+   "sjis": "9292",
+   "glyph_index": 2320,
+   "original_kanji": "鋳",
+   "kanji_game_freq": 0,
+   "ko_freq": 3
+  },
+  "놨": {
+   "sjis": "9293",
+   "glyph_index": 2321,
+   "original_kanji": "駐",
+   "kanji_game_freq": 0,
+   "ko_freq": 3
+  },
+  "샬": {
+   "sjis": "9294",
+   "glyph_index": 2322,
+   "original_kanji": "樗",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "틸": {
+   "sjis": "9295",
+   "glyph_index": 2323,
+   "original_kanji": "瀦",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "뤼": {
+   "sjis": "9297",
+   "glyph_index": 2325,
+   "original_kanji": "苧",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "븃": {
+   "sjis": "9298",
+   "glyph_index": 2326,
+   "original_kanji": "著",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "딥": {
+   "sjis": "9299",
+   "glyph_index": 2327,
+   "original_kanji": "貯",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "싱": {
+   "sjis": "929A",
+   "glyph_index": 2328,
+   "original_kanji": "丁",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "폴": {
+   "sjis": "929C",
+   "glyph_index": 2330,
+   "original_kanji": "凋",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "댄": {
+   "sjis": "929E",
+   "glyph_index": 2332,
+   "original_kanji": "寵",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "넥": {
+   "sjis": "929F",
+   "glyph_index": 2333,
+   "original_kanji": "帖",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "팟": {
+   "sjis": "92A0",
+   "glyph_index": 2334,
+   "original_kanji": "帳",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "즌": {
+   "sjis": "92A1",
+   "glyph_index": 2335,
+   "original_kanji": "庁",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "폿": {
+   "sjis": "92A2",
+   "glyph_index": 2336,
+   "original_kanji": "弔",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "렐": {
+   "sjis": "92A6",
+   "glyph_index": 2340,
+   "original_kanji": "懲",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "뜯": {
+   "sjis": "92A8",
+   "glyph_index": 2342,
+   "original_kanji": "暢",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "컸": {
+   "sjis": "92AB",
+   "glyph_index": 2345,
+   "original_kanji": "牒",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "푼": {
+   "sjis": "92AE",
+   "glyph_index": 2348,
+   "original_kanji": "聴",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "짠": {
+   "sjis": "92AF",
+   "glyph_index": 2349,
+   "original_kanji": "脹",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "옹": {
+   "sjis": "92B0",
+   "glyph_index": 2350,
+   "original_kanji": "腸",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "젯": {
+   "sjis": "92B6",
+   "glyph_index": 2356,
+   "original_kanji": "銚",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "렵": {
+   "sjis": "92BA",
+   "glyph_index": 2360,
+   "original_kanji": "勅",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "듬": {
+   "sjis": "92BB",
+   "glyph_index": 2361,
+   "original_kanji": "捗",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "뿍": {
+   "sjis": "92BD",
+   "glyph_index": 2363,
+   "original_kanji": "朕",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "쬐": {
+   "sjis": "92C0",
+   "glyph_index": 2366,
+   "original_kanji": "賃",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "곽": {
+   "sjis": "92C1",
+   "glyph_index": 2367,
+   "original_kanji": "鎮",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "웬": {
+   "sjis": "92C2",
+   "glyph_index": 2368,
+   "original_kanji": "陳",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "슭": {
+   "sjis": "92C3",
+   "glyph_index": 2369,
+   "original_kanji": "津",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "닷": {
+   "sjis": "92C4",
+   "glyph_index": 2370,
+   "original_kanji": "墜",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "죗": {
+   "sjis": "92C5",
+   "glyph_index": 2371,
+   "original_kanji": "椎",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "눠": {
+   "sjis": "92C6",
+   "glyph_index": 2372,
+   "original_kanji": "槌",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "찔": {
+   "sjis": "92CC",
+   "glyph_index": 2378,
+   "original_kanji": "栂",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "퓨": {
+   "sjis": "92CD",
+   "glyph_index": 2379,
+   "original_kanji": "掴",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "탔": {
+   "sjis": "92CE",
+   "glyph_index": 2380,
+   "original_kanji": "槻",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "텅": {
+   "sjis": "92CF",
+   "glyph_index": 2381,
+   "original_kanji": "佃",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "튈": {
+   "sjis": "92D0",
+   "glyph_index": 2382,
+   "original_kanji": "漬",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "쏘": {
+   "sjis": "92D1",
+   "glyph_index": 2383,
+   "original_kanji": "柘",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "률": {
+   "sjis": "92D2",
+   "glyph_index": 2384,
+   "original_kanji": "辻",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "액": {
+   "sjis": "92D3",
+   "glyph_index": 2385,
+   "original_kanji": "蔦",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "밍": {
+   "sjis": "92D4",
+   "glyph_index": 2386,
+   "original_kanji": "綴",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "샛": {
+   "sjis": "92D5",
+   "glyph_index": 2387,
+   "original_kanji": "鍔",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "챌": {
+   "sjis": "92D6",
+   "glyph_index": 2388,
+   "original_kanji": "椿",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "쩡": {
+   "sjis": "92D7",
+   "glyph_index": 2389,
+   "original_kanji": "潰",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "껌": {
+   "sjis": "92D8",
+   "glyph_index": 2390,
+   "original_kanji": "坪",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "빵": {
+   "sjis": "92DA",
+   "glyph_index": 2392,
+   "original_kanji": "嬬",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "폰": {
+   "sjis": "92DB",
+   "glyph_index": 2393,
+   "original_kanji": "紬",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "헴": {
+   "sjis": "92DD",
+   "glyph_index": 2395,
+   "original_kanji": "吊",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "갓": {
+   "sjis": "92DF",
+   "glyph_index": 2397,
+   "original_kanji": "鶴",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "봄": {
+   "sjis": "92E3",
+   "glyph_index": 2401,
+   "original_kanji": "偵",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "갯": {
+   "sjis": "92E4",
+   "glyph_index": 2402,
+   "original_kanji": "剃",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "룩": {
+   "sjis": "92E5",
+   "glyph_index": 2403,
+   "original_kanji": "貞",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "숭": {
+   "sjis": "92E6",
+   "glyph_index": 2404,
+   "original_kanji": "呈",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "촙": {
+   "sjis": "92E7",
+   "glyph_index": 2405,
+   "original_kanji": "堤",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "뼈": {
+   "sjis": "92E9",
+   "glyph_index": 2407,
+   "original_kanji": "帝",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "얗": {
+   "sjis": "92EB",
+   "glyph_index": 2409,
+   "original_kanji": "庭",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "땐": {
+   "sjis": "92EE",
+   "glyph_index": 2412,
+   "original_kanji": "悌",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "땋": {
+   "sjis": "92F0",
+   "glyph_index": 2414,
+   "original_kanji": "挺",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "늄": {
+   "sjis": "92F2",
+   "glyph_index": 2416,
+   "original_kanji": "梯",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "김": {
+   "sjis": "92F3",
+   "glyph_index": 2417,
+   "original_kanji": "汀",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "쁨": {
+   "sjis": "92F4",
+   "glyph_index": 2418,
+   "original_kanji": "碇",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "귄": {
+   "sjis": "92F7",
+   "glyph_index": 2421,
+   "original_kanji": "締",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "낳": {
+   "sjis": "92F8",
+   "glyph_index": 2422,
+   "original_kanji": "艇",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "꼽": {
+   "sjis": "92F9",
+   "glyph_index": 2423,
+   "original_kanji": "訂",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "얕": {
+   "sjis": "92FC",
+   "glyph_index": 2426,
+   "original_kanji": "逓",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "곰": {
+   "sjis": "9340",
+   "glyph_index": 2427,
+   "original_kanji": "邸",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "갰": {
+   "sjis": "9341",
+   "glyph_index": 2428,
+   "original_kanji": "鄭",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "갠": {
+   "sjis": "9342",
+   "glyph_index": 2429,
+   "original_kanji": "釘",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "쇳": {
+   "sjis": "9343",
+   "glyph_index": 2430,
+   "original_kanji": "鼎",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "앨": {
+   "sjis": "9346",
+   "glyph_index": 2433,
+   "original_kanji": "擢",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "뜬": {
+   "sjis": "934C",
+   "glyph_index": 2439,
+   "original_kanji": "鏑",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "궤": {
+   "sjis": "934D",
+   "glyph_index": 2440,
+   "original_kanji": "溺",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "퓌": {
+   "sjis": "934E",
+   "glyph_index": 2441,
+   "original_kanji": "哲",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "껍": {
+   "sjis": "9350",
+   "glyph_index": 2443,
+   "original_kanji": "撤",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "덧": {
+   "sjis": "9351",
+   "glyph_index": 2444,
+   "original_kanji": "轍",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "앓": {
+   "sjis": "9352",
+   "glyph_index": 2445,
+   "original_kanji": "迭",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "섯": {
+   "sjis": "9355",
+   "glyph_index": 2448,
+   "original_kanji": "填",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "괄": {
+   "sjis": "935A",
+   "glyph_index": 2453,
+   "original_kanji": "纏",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "쏜": {
+   "sjis": "935B",
+   "glyph_index": 2454,
+   "original_kanji": "甜",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "렘": {
+   "sjis": "935C",
+   "glyph_index": 2455,
+   "original_kanji": "貼",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "밴": {
+   "sjis": "935E",
+   "glyph_index": 2457,
+   "original_kanji": "顛",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "캡": {
+   "sjis": "9362",
+   "glyph_index": 2461,
+   "original_kanji": "澱",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "톤": {
+   "sjis": "9365",
+   "glyph_index": 2464,
+   "original_kanji": "兎",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "쉐": {
+   "sjis": "9366",
+   "glyph_index": 2465,
+   "original_kanji": "吐",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "햇": {
+   "sjis": "9367",
+   "glyph_index": 2466,
+   "original_kanji": "堵",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "콜": {
+   "sjis": "9368",
+   "glyph_index": 2467,
+   "original_kanji": "塗",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "맣": {
+   "sjis": "9369",
+   "glyph_index": 2468,
+   "original_kanji": "妬",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "켁": {
+   "sjis": "936A",
+   "glyph_index": 2469,
+   "original_kanji": "屠",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "냇": {
+   "sjis": "936C",
+   "glyph_index": 2471,
+   "original_kanji": "斗",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "텝": {
+   "sjis": "936D",
+   "glyph_index": 2472,
+   "original_kanji": "杜",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "헌": {
+   "sjis": "9370",
+   "glyph_index": 2475,
+   "original_kanji": "菟",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "섞": {
+   "sjis": "9374",
+   "glyph_index": 2479,
+   "original_kanji": "鍍",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "텨": {
+   "sjis": "9375",
+   "glyph_index": 2480,
+   "original_kanji": "砥",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "흔": {
+   "sjis": "9376",
+   "glyph_index": 2481,
+   "original_kanji": "砺",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "엎": {
+   "sjis": "937D",
+   "glyph_index": 2488,
+   "original_kanji": "党",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "컴": {
+   "sjis": "937E",
+   "glyph_index": 2489,
+   "original_kanji": "冬",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "뽑": {
+   "sjis": "9382",
+   "glyph_index": 2492,
+   "original_kanji": "唐",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "뻗": {
+   "sjis": "9384",
+   "glyph_index": 2494,
+   "original_kanji": "塘",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "꿍": {
+   "sjis": "9385",
+   "glyph_index": 2495,
+   "original_kanji": "套",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "쁠": {
+   "sjis": "9386",
+   "glyph_index": 2496,
+   "original_kanji": "宕",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "꽂": {
+   "sjis": "9388",
+   "glyph_index": 2498,
+   "original_kanji": "嶋",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "뺏": {
+   "sjis": "9389",
+   "glyph_index": 2499,
+   "original_kanji": "悼",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "툼": {
+   "sjis": "938D",
+   "glyph_index": 2503,
+   "original_kanji": "桃",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "멤": {
+   "sjis": "938E",
+   "glyph_index": 2504,
+   "original_kanji": "梼",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "갉": {
+   "sjis": "938F",
+   "glyph_index": 2505,
+   "original_kanji": "棟",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "믹": {
+   "sjis": "9391",
+   "glyph_index": 2507,
+   "original_kanji": "淘",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "뭉": {
+   "sjis": "9392",
+   "glyph_index": 2508,
+   "original_kanji": "湯",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "뻘": {
+   "sjis": "9393",
+   "glyph_index": 2509,
+   "original_kanji": "涛",
+   "kanji_game_freq": 0,
+   "ko_freq": 2
+  },
+  "닝": {
+   "sjis": "9395",
+   "glyph_index": 2511,
+   "original_kanji": "燈",
+   "kanji_game_freq": 0,
+   "ko_freq": 1
+  },
+  "냉": {
+   "sjis": "9397",
+   "glyph_index": 2513,
+   "original_kanji": "痘",
+   "kanji_game_freq": 0,
+   "ko_freq": 1
+  },
+  "빤": {
+   "sjis": "9398",
+   "glyph_index": 2514,
+   "original_kanji": "祷",
+   "kanji_game_freq": 0,
+   "ko_freq": 1
+  },
+  "쭤": {
+   "sjis": "939B",
+   "glyph_index": 2517,
+   "original_kanji": "筒",
+   "kanji_game_freq": 0,
+   "ko_freq": 1
+  },
+  "몹": {
+   "sjis": "939F",
+   "glyph_index": 2521,
+   "original_kanji": "董",
+   "kanji_game_freq": 0,
+   "ko_freq": 1
+  },
+  "챠": {
+   "sjis": "93A3",
+   "glyph_index": 2525,
+   "original_kanji": "謄",
+   "kanji_game_freq": 0,
+   "ko_freq": 1
+  },
+  "뗄": {
+   "sjis": "93A4",
+   "glyph_index": 2526,
+   "original_kanji": "豆",
+   "kanji_game_freq": 0,
+   "ko_freq": 1
+  },
+  "쏟": {
+   "sjis": "93A8",
+   "glyph_index": 2530,
+   "original_kanji": "鐙",
+   "kanji_game_freq": 0,
+   "ko_freq": 1
+  },
+  "큽": {
+   "sjis": "93A9",
+   "glyph_index": 2531,
+   "original_kanji": "陶",
+   "kanji_game_freq": 0,
+   "ko_freq": 1
+  },
+  "챈": {
+   "sjis": "93AB",
+   "glyph_index": 2533,
+   "original_kanji": "騰",
+   "kanji_game_freq": 0,
+   "ko_freq": 1
+  },
+  "킴": {
+   "sjis": "93B2",
+   "glyph_index": 2540,
+   "original_kanji": "憧",
+   "kanji_game_freq": 0,
+   "ko_freq": 1
+  },
+  "뮤": {
+   "sjis": "93B3",
+   "glyph_index": 2541,
+   "original_kanji": "撞",
+   "kanji_game_freq": 0,
+   "ko_freq": 1
+  },
+  "얍": {
+   "sjis": "93B6",
+   "glyph_index": 2544,
+   "original_kanji": "童",
+   "kanji_game_freq": 0,
+   "ko_freq": 1
+  },
+  "씁": {
+   "sjis": "93B8",
+   "glyph_index": 2546,
+   "original_kanji": "萄",
+   "kanji_game_freq": 0,
+   "ko_freq": 1
+  },
+  "컷": {
+   "sjis": "93BB",
+   "glyph_index": 2549,
+   "original_kanji": "峠",
+   "kanji_game_freq": 0,
+   "ko_freq": 1
+  },
+  "냅": {
+   "sjis": "93BC",
+   "glyph_index": 2550,
+   "original_kanji": "鴇",
+   "kanji_game_freq": 0,
+   "ko_freq": 1
+  },
+  "켬": {
+   "sjis": "93BD",
+   "glyph_index": 2551,
+   "original_kanji": "匿",
+   "kanji_game_freq": 0,
+   "ko_freq": 1
+  },
+  "짭": {
+   "sjis": "93C0",
+   "glyph_index": 2554,
+   "original_kanji": "涜",
+   "kanji_game_freq": 0,
+   "ko_freq": 1
+  },
+  "뇨": {
+   "sjis": "93C2",
+   "glyph_index": 2556,
+   "original_kanji": "督",
+   "kanji_game_freq": 0,
+   "ko_freq": 1
+  },
+  "흰": {
+   "sjis": "93C3",
+   "glyph_index": 2557,
+   "original_kanji": "禿",
+   "kanji_game_freq": 0,
+   "ko_freq": 1
+  },
+  "넬": {
+   "sjis": "93C4",
+   "glyph_index": 2558,
+   "original_kanji": "篤",
+   "kanji_game_freq": 0,
+   "ko_freq": 1
+  },
+  "챘": {
+   "sjis": "93C8",
+   "glyph_index": 2562,
+   "original_kanji": "栃",
+   "kanji_game_freq": 0,
+   "ko_freq": 1
+  },
+  "꺅": {
+   "sjis": "93C9",
+   "glyph_index": 2563,
+   "original_kanji": "橡",
+   "kanji_game_freq": 0,
+   "ko_freq": 1
+  },
+  "놔": {
+   "sjis": "93CA",
+   "glyph_index": 2564,
+   "original_kanji": "凸",
+   "kanji_game_freq": 0,
+   "ko_freq": 1
+  },
+  "엾": {
+   "sjis": "93CC",
+   "glyph_index": 2566,
+   "original_kanji": "椴",
+   "kanji_game_freq": 0,
+   "ko_freq": 1
+  },
+  "겟": {
+   "sjis": "93CE",
+   "glyph_index": 2568,
+   "original_kanji": "鳶",
+   "kanji_game_freq": 0,
+   "ko_freq": 0,
+   "b2x_added": true
+  },
+  "렛": {
+   "sjis": "93CF",
+   "glyph_index": 2569,
+   "original_kanji": "苫",
+   "kanji_game_freq": 0,
+   "ko_freq": 0,
+   "b2x_added": true
+  },
+  "뷰": {
+   "sjis": "93D1",
+   "glyph_index": 2571,
+   "original_kanji": "酉",
+   "kanji_game_freq": 0,
+   "ko_freq": 0,
+   "b2x_added": true
+  },
+  "샥": {
+   "sjis": "93D2",
+   "glyph_index": 2572,
+   "original_kanji": "瀞",
+   "kanji_game_freq": 0,
+   "ko_freq": 0,
+   "b2x_added": true
+  },
+  "넷": {
+   "sjis": "93D3",
+   "glyph_index": 2573,
+   "original_kanji": "噸",
+   "kanji_game_freq": 0,
+   "ko_freq": 0,
+   "b2x_added": true
+  },
+  "륜": {
+   "sjis": "93D4",
+   "glyph_index": 2574,
+   "original_kanji": "屯",
+   "kanji_game_freq": 0,
+   "ko_freq": 0,
+   "b2x_added": true
+  },
+  "뷜": {
+   "sjis": "93D5",
+   "glyph_index": 2575,
+   "original_kanji": "惇",
+   "kanji_game_freq": 0,
+   "ko_freq": 0,
+   "b2x_added": true
+  },
+  "삽": {
+   "sjis": "93D6",
+   "glyph_index": 2576,
+   "original_kanji": "敦",
+   "kanji_game_freq": 0,
+   "ko_freq": 0,
+   "b2x_added": true
+  },
+  "썼": {
+   "sjis": "93D8",
+   "glyph_index": 2578,
+   "original_kanji": "豚",
+   "kanji_game_freq": 0,
+   "ko_freq": 0,
+   "b2x_added": true
+  },
+  "앵": {
+   "sjis": "93D9",
+   "glyph_index": 2579,
+   "original_kanji": "遁",
+   "kanji_game_freq": 0,
+   "ko_freq": 0,
+   "b2x_added": true
+  },
+  "첨": {
+   "sjis": "93DA",
+   "glyph_index": 2580,
+   "original_kanji": "頓",
+   "kanji_game_freq": 0,
+   "ko_freq": 0,
+   "b2x_added": true
+  },
+  "텔": {
+   "sjis": "93DB",
+   "glyph_index": 2581,
+   "original_kanji": "呑",
+   "kanji_game_freq": 0,
+   "ko_freq": 0,
+   "b2x_added": true
+  },
+  "닛": {
+   "sjis": "93DC",
+   "glyph_index": 2582,
+   "original_kanji": "曇",
+   "kanji_game_freq": 0,
+   "ko_freq": 0,
+   "b2x_added": true
+  },
+  "렙": {
+   "sjis": "93DE",
+   "glyph_index": 2584,
+   "original_kanji": "奈",
+   "kanji_game_freq": 0,
+   "ko_freq": 0,
+   "b2x_added": true
+  },
+  "룹": {
+   "sjis": "93E1",
+   "glyph_index": 2587,
+   "original_kanji": "乍",
+   "kanji_game_freq": 0,
+   "ko_freq": 0,
+   "b2x_added": true
+  },
+  "콥": {
+   "sjis": "93E2",
+   "glyph_index": 2588,
+   "original_kanji": "凪",
+   "kanji_game_freq": 0,
+   "ko_freq": 0,
+   "b2x_added": true
+  },
+  "휙": {
+   "sjis": "93E3",
+   "glyph_index": 2589,
+   "original_kanji": "薙",
+   "kanji_game_freq": 0,
+   "ko_freq": 0,
+   "b2x_added": true
+  },
+  "깼": {
+   "sjis": "93E5",
+   "glyph_index": 2591,
+   "original_kanji": "灘",
+   "kanji_game_freq": 0,
+   "ko_freq": 0,
+   "b2x_added": true
+  },
+  "궂": {
+   "sjis": "93E6",
+   "glyph_index": 2592,
+   "original_kanji": "捺",
+   "kanji_game_freq": 0,
+   "ko_freq": 0,
+   "b2x_added": true
+  },
+  "갱": {
+   "sjis": "93E8",
+   "glyph_index": 2594,
+   "original_kanji": "楢",
+   "kanji_game_freq": 0,
+   "ko_freq": 0,
+   "b2x_added": true
+  }
+ },
+ "b2x_history": [
+  {
+   "added": [
+    "겟",
+    "렛",
+    "뷰",
+    "샥"
+   ],
+   "card": "SystemCard3_btrack_full_v2.pce"
+  },
+  {
+   "added": [
+    "넷",
+    "륜",
+    "뷜",
+    "삽",
+    "썼",
+    "앵",
+    "첨",
+    "텔"
+   ],
+   "card": "SystemCard3_btrack_full_v2.pce"
+  },
+  {
+   "added": [
+    "닛",
+    "렙",
+    "룹"
+   ],
+   "card": "SystemCard3_btrack_full_v2.pce"
+  },
+  {
+   "added": [
+    "콥",
+    "휙"
+   ],
+   "card": "SystemCard3_btrack_full_v2.pce"
+  },
+  {
+   "added": [
+    "갱",
+    "궂",
+    "깼"
+   ],
+   "card": "SystemCard3_btrack_full_v3.pce"
+  }
+ ]
+}

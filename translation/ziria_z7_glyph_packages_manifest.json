@@ -1,0 +1,3050 @@
+{
+  "format": "ZIRIA-Z7-MODULE-GLYPH-PACKAGES",
+  "version": 1,
+  "task": "Z7",
+  "status": "PASS_WITH_TRANSLATION_REVIEW_BLOCKERS",
+  "scope": "analysis and generated package inputs only; no CUE/BIN mutation",
+  "inputs": {
+    "master_text": {
+      "path": "translation/full_extraction/master_text.csv",
+      "sha256": "36AAE2700FB26239A29BBCC3770EFC203BF494997A72DD0C85B8F6026E560AC0",
+      "rows": 18817
+    },
+    "font_policy": {
+      "path": "translation/font_build_policy.json",
+      "sha256": "8943281433C93E58EE4CDB77BF780BBC6B7C8533F807699006816C98152CA7EC"
+    },
+    "font": {
+      "path": "font/Galmuri8x8.ttf",
+      "sha256": "97BA3DCC2CD5E5B2927E4E6BA9558A48A2A194A852C420DF160654D66BBF2A05"
+    },
+    "slot_topology": {
+      "path": "translation/slot_topology.json",
+      "sha256": "2E364A8540BBDA629AABA497D80AA69A9A911457E3691E767801D09228459FF3",
+      "logical_entries": 55
+    },
+    "overlay_topology": {
+      "path": "translation/overlay_topology.json",
+      "sha256": "8AB8A8FA60EEE13032421F990525666928E41CAA9280C16D40526D7C0DDEEBFB",
+      "logical_entries": 55
+    }
+  },
+  "classification": {
+    "storage_axis": "master_text.region: slotNN -> scene.slotNN; other regions -> shared.<region>",
+    "renderer_axis": {
+      "dialogue": "dialogue_event",
+      "event": "dialogue_event",
+      "late_event": "dialogue_event",
+      "menu_data": "menu_memo_system",
+      "command": "menu_memo_system",
+      "system": "menu_memo_system",
+      "data_table": "menu_memo_system",
+      "unknown": "menu_memo_system",
+      "battle": "battle",
+      "visual_event": "visual_event_portrait",
+      "visual_scene": "visual_event_portrait",
+      "slot_graphics_window": "visual_event_portrait",
+      "card": "card",
+      "boot": "boot_opening"
+    },
+    "core_families": [
+      "dialogue_event",
+      "menu_memo_system",
+      "battle",
+      "visual_event_portrait"
+    ],
+    "strict_core_definition": "intersection of Hangul used by all four core renderer families",
+    "limitation": "Static CSV evidence does not prove runtime field/tower ownership for every row. Storage module and renderer family remain separate until Z8 relocation."
+  },
+  "font_profile": {
+    "loader_size_argument": 16,
+    "native_ink_expected": "8x8",
+    "target_cell": "12x12 inside a 16x16/32-byte output",
+    "placement": "centre native ink in the 12x12 cell; an 8x8 glyph starts at x=2,y=2",
+    "bit_order": "two bytes per row, MSB first",
+    "background": 0,
+    "packed18": "six 24-bit pairs encoding twelve 12-bit rows",
+    "advance": 12,
+    "missing_glyph": "build failure"
+  },
+  "code_map": {
+    "leads": [
+      "EB",
+      "EC",
+      "ED",
+      "EE",
+      "EF"
+    ],
+    "trail_rule": "40..7E or 80..FC",
+    "capacity_per_package": 940,
+    "mapping": "sorted Unicode order, package-local",
+    "fallback": "non-Hangul double-byte codes use BIOS EX_GETFNT"
+  },
+  "translation_audit": {
+    "needs_review_rows": 17,
+    "needs_review_ids": [
+      "iso:004A3FC",
+      "iso:013B3F7",
+      "iso:013B4C2",
+      "iso:016C1D4",
+      "iso:03ABA19",
+      "iso:043C356",
+      "iso:046B182",
+      "iso:046B19C",
+      "iso:04CAE39",
+      "iso:04CEE39",
+      "iso:04D0E39",
+      "iso:09DAC8E",
+      "iso:0C890D1",
+      "iso:0CA4F78",
+      "iso:10BA4F5",
+      "iso:10CD34A",
+      "iso:110A651"
+    ],
+    "control_mismatch_rows": 0,
+    "control_mismatch_ids": [],
+    "empty_translation_rows": 0
+  },
+  "inventory": {
+    "global_unique_hangul": 1053,
+    "hangul_occurrences": 370018,
+    "renderer_families": {
+      "battle": {
+        "rows": 28,
+        "unique_hangul": 8,
+        "strict_core": 2,
+        "family_specific": 6
+      },
+      "boot_opening": {
+        "rows": 18,
+        "unique_hangul": 8,
+        "strict_core": 0,
+        "family_specific": 8
+      },
+      "card": {
+        "rows": 52,
+        "unique_hangul": 130,
+        "strict_core": 2,
+        "family_specific": 128
+      },
+      "dialogue_event": {
+        "rows": 14517,
+        "unique_hangul": 1029,
+        "strict_core": 2,
+        "family_specific": 1027
+      },
+      "menu_memo_system": {
+        "rows": 3930,
+        "unique_hangul": 403,
+        "strict_core": 2,
+        "family_specific": 401
+      },
+      "visual_event_portrait": {
+        "rows": 272,
+        "unique_hangul": 97,
+        "strict_core": 2,
+        "family_specific": 95
+      }
+    },
+    "strict_core_glyphs": "부지",
+    "strict_core_count": 2,
+    "all_family_core_glyphs": "",
+    "all_family_core_count": 0
+  },
+  "duplication": {
+    "package_count": 99,
+    "unique_global_glyphs": 1053,
+    "total_package_glyph_instances": 32283,
+    "duplicated_glyph_instances": 31230,
+    "replication_bytes_expanded32": 999360,
+    "replication_bytes_packed18": 562140,
+    "policy": "ALLOW_DISK_REPLICATION; NO_GLOBAL_RESIDENT_GLYPH_POOL"
+  },
+  "size_summary": {
+    "largest_package_glyphs": 563,
+    "largest_packed_package_bytes_estimate": 13576,
+    "total_expanded_bytes": 1033056,
+    "total_packed_bytes": 581094,
+    "packages_over_code_capacity": 0
+  },
+  "outputs": {
+    "package_root": "module_relink/z7_glyph_packages/packages",
+    "package_summary": "translation/ziria_z7_module_glyph_packages.csv",
+    "glyph_membership": "translation/ziria_z7_glyph_membership.csv",
+    "report": "Z7_모듈별_글리프_패키지.md"
+  },
+  "packages": [
+    {
+      "package_id": "scene.slot00.visual_event_portrait",
+      "module_id": "scene.slot00",
+      "family": "visual_event_portrait",
+      "row_count": 3,
+      "glyph_count": 7,
+      "core_glyph_count": 0,
+      "family_specific_glyph_count": 7,
+      "expanded_bytes": 224,
+      "packed_bytes": 126,
+      "map_bytes_estimate": 28,
+      "metric_bytes_estimate": 14,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 232,
+      "code_capacity": 940,
+      "code_margin": 933,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/scene.slot00.visual_event_portrait/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/scene.slot00.visual_event_portrait/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/scene.slot00.visual_event_portrait/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/scene.slot00.visual_event_portrait/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "0E1DE6FE0CADC73B0E43A202BEEA820943A22ED9CFC41A5991E7B2146DC440B3",
+        "packed18": "7F39627D5C83B3BF7C9A2CB08A517DD199A3E2D8159D1FF6C6D8F9FACE9B23E7",
+        "glyph_map": "7530BD6CC2067E6C05767E4691B34CF5A5D37C7E91B39CC2A0ECCF9AB679E120",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "scene.slot01.dialogue_event",
+      "module_id": "scene.slot01",
+      "family": "dialogue_event",
+      "row_count": 146,
+      "glyph_count": 479,
+      "core_glyph_count": 2,
+      "family_specific_glyph_count": 477,
+      "expanded_bytes": 15328,
+      "packed_bytes": 8622,
+      "map_bytes_estimate": 1916,
+      "metric_bytes_estimate": 958,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 11560,
+      "code_capacity": 940,
+      "code_margin": 461,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/scene.slot01.dialogue_event/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/scene.slot01.dialogue_event/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/scene.slot01.dialogue_event/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/scene.slot01.dialogue_event/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "B40643D1ADF162F059D88BF103800ED849980672302E80567804D39C30CCC218",
+        "packed18": "2364004FBADE84510EF78670AE7FE587D0B7FD4F5E52CF6B0D4B6AD2F21D9A89",
+        "glyph_map": "9E24E20693984FB4A996A6E9133F4C3A81AD6DBEE9D18A338286F0895E736453",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "scene.slot01.menu_memo_system",
+      "module_id": "scene.slot01",
+      "family": "menu_memo_system",
+      "row_count": 317,
+      "glyph_count": 329,
+      "core_glyph_count": 2,
+      "family_specific_glyph_count": 327,
+      "expanded_bytes": 10528,
+      "packed_bytes": 5922,
+      "map_bytes_estimate": 1316,
+      "metric_bytes_estimate": 658,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 7960,
+      "code_capacity": 940,
+      "code_margin": 611,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/scene.slot01.menu_memo_system/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/scene.slot01.menu_memo_system/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/scene.slot01.menu_memo_system/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/scene.slot01.menu_memo_system/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "98344A9AF85A2F8FFF8EBBA41F5F155C9BDD1A748F29F0C3CA315049FE25BE94",
+        "packed18": "D3579C110AAE9E2240EE164DA04525ED251C54945A306F013CC0F5DC01AB4D25",
+        "glyph_map": "9CEE0063AE76C5ACB4C79ADDDC5DF5595EDA99B9D291CF57441E751940FEFF87",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "scene.slot02.dialogue_event",
+      "module_id": "scene.slot02",
+      "family": "dialogue_event",
+      "row_count": 78,
+      "glyph_count": 437,
+      "core_glyph_count": 2,
+      "family_specific_glyph_count": 435,
+      "expanded_bytes": 13984,
+      "packed_bytes": 7866,
+      "map_bytes_estimate": 1748,
+      "metric_bytes_estimate": 874,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 10552,
+      "code_capacity": 940,
+      "code_margin": 503,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/scene.slot02.dialogue_event/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/scene.slot02.dialogue_event/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/scene.slot02.dialogue_event/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/scene.slot02.dialogue_event/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "F586602220DC7812CC4AE9CD6875FAEB59812743CF93E283D0DB579FB075D6AC",
+        "packed18": "7903D26939133A0DFE45A230CD5560D93C9BB851E3A7037BA8A5E3EEB5D86040",
+        "glyph_map": "849A8810F9803C113E4FD7E730F6AFD43DC7E3780545CEC0CB98C9E462C557A6",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "scene.slot02.menu_memo_system",
+      "module_id": "scene.slot02",
+      "family": "menu_memo_system",
+      "row_count": 96,
+      "glyph_count": 157,
+      "core_glyph_count": 2,
+      "family_specific_glyph_count": 155,
+      "expanded_bytes": 5024,
+      "packed_bytes": 2826,
+      "map_bytes_estimate": 628,
+      "metric_bytes_estimate": 314,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 3832,
+      "code_capacity": 940,
+      "code_margin": 783,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/scene.slot02.menu_memo_system/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/scene.slot02.menu_memo_system/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/scene.slot02.menu_memo_system/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/scene.slot02.menu_memo_system/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "F4B97F77D6BBA229304A5D15EA4674AB6DF930A392593A15F850EA64B5D29137",
+        "packed18": "39F306174E6FBB7E734104CEDA46707A9FF7EA31943127B97E5F2DAAF5B54363",
+        "glyph_map": "06E3F0EC548E039D505B80D3230D8A6E264BBDD8CF2B77E88D882EC39F9E8C45",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "scene.slot03.dialogue_event",
+      "module_id": "scene.slot03",
+      "family": "dialogue_event",
+      "row_count": 173,
+      "glyph_count": 392,
+      "core_glyph_count": 2,
+      "family_specific_glyph_count": 390,
+      "expanded_bytes": 12544,
+      "packed_bytes": 7056,
+      "map_bytes_estimate": 1568,
+      "metric_bytes_estimate": 784,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 9472,
+      "code_capacity": 940,
+      "code_margin": 548,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/scene.slot03.dialogue_event/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/scene.slot03.dialogue_event/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/scene.slot03.dialogue_event/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/scene.slot03.dialogue_event/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "237C58BF92DFD640F90E72970DF15975042471C12883FEEF73D61DCCADA8124B",
+        "packed18": "26416EFC139E8EB73B54DC770DC4A92D76E80BE894FEDA743B69E4701EA6699C",
+        "glyph_map": "3C9AA50E5EA328BCE7C3F60CD6841AB2B2024C920CD7DEC20928361C70736416",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "scene.slot03.menu_memo_system",
+      "module_id": "scene.slot03",
+      "family": "menu_memo_system",
+      "row_count": 96,
+      "glyph_count": 157,
+      "core_glyph_count": 2,
+      "family_specific_glyph_count": 155,
+      "expanded_bytes": 5024,
+      "packed_bytes": 2826,
+      "map_bytes_estimate": 628,
+      "metric_bytes_estimate": 314,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 3832,
+      "code_capacity": 940,
+      "code_margin": 783,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/scene.slot03.menu_memo_system/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/scene.slot03.menu_memo_system/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/scene.slot03.menu_memo_system/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/scene.slot03.menu_memo_system/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "F4B97F77D6BBA229304A5D15EA4674AB6DF930A392593A15F850EA64B5D29137",
+        "packed18": "39F306174E6FBB7E734104CEDA46707A9FF7EA31943127B97E5F2DAAF5B54363",
+        "glyph_map": "06E3F0EC548E039D505B80D3230D8A6E264BBDD8CF2B77E88D882EC39F9E8C45",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "scene.slot04.dialogue_event",
+      "module_id": "scene.slot04",
+      "family": "dialogue_event",
+      "row_count": 274,
+      "glyph_count": 537,
+      "core_glyph_count": 2,
+      "family_specific_glyph_count": 535,
+      "expanded_bytes": 17184,
+      "packed_bytes": 9666,
+      "map_bytes_estimate": 2148,
+      "metric_bytes_estimate": 1074,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 12952,
+      "code_capacity": 940,
+      "code_margin": 403,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/scene.slot04.dialogue_event/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/scene.slot04.dialogue_event/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/scene.slot04.dialogue_event/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/scene.slot04.dialogue_event/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "4349A2C72E4015F0D2944C3B84AEB5182118604E4CB82F4CBCFEB8B855273D7E",
+        "packed18": "FA9B62F9F7D2A616FE7A9E17013733FB4529BDDB7EA8777F8CE9D4CF80481556",
+        "glyph_map": "B09E74850D2CE7B3F3DFFF720007D99369A6FECED6E25185597720419EEEA8DA",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "scene.slot04.menu_memo_system",
+      "module_id": "scene.slot04",
+      "family": "menu_memo_system",
+      "row_count": 96,
+      "glyph_count": 157,
+      "core_glyph_count": 2,
+      "family_specific_glyph_count": 155,
+      "expanded_bytes": 5024,
+      "packed_bytes": 2826,
+      "map_bytes_estimate": 628,
+      "metric_bytes_estimate": 314,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 3832,
+      "code_capacity": 940,
+      "code_margin": 783,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/scene.slot04.menu_memo_system/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/scene.slot04.menu_memo_system/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/scene.slot04.menu_memo_system/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/scene.slot04.menu_memo_system/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "F4B97F77D6BBA229304A5D15EA4674AB6DF930A392593A15F850EA64B5D29137",
+        "packed18": "39F306174E6FBB7E734104CEDA46707A9FF7EA31943127B97E5F2DAAF5B54363",
+        "glyph_map": "06E3F0EC548E039D505B80D3230D8A6E264BBDD8CF2B77E88D882EC39F9E8C45",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "scene.slot05.dialogue_event",
+      "module_id": "scene.slot05",
+      "family": "dialogue_event",
+      "row_count": 178,
+      "glyph_count": 422,
+      "core_glyph_count": 2,
+      "family_specific_glyph_count": 420,
+      "expanded_bytes": 13504,
+      "packed_bytes": 7596,
+      "map_bytes_estimate": 1688,
+      "metric_bytes_estimate": 844,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 10192,
+      "code_capacity": 940,
+      "code_margin": 518,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/scene.slot05.dialogue_event/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/scene.slot05.dialogue_event/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/scene.slot05.dialogue_event/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/scene.slot05.dialogue_event/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "8957DDD9246058FDDDD5E02EB5345B0B389875E7C4F923D080EDAE657B84A9BC",
+        "packed18": "431C358CBEEAAA2969E5517CE0FF0FDB81A091BB19EF89934FB48CF4F4131BD0",
+        "glyph_map": "F37A1D7D0CF8D5D8A5F041347A2E9A651BA439EB144EAC41106EF4C9B622F391",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "scene.slot05.menu_memo_system",
+      "module_id": "scene.slot05",
+      "family": "menu_memo_system",
+      "row_count": 96,
+      "glyph_count": 157,
+      "core_glyph_count": 2,
+      "family_specific_glyph_count": 155,
+      "expanded_bytes": 5024,
+      "packed_bytes": 2826,
+      "map_bytes_estimate": 628,
+      "metric_bytes_estimate": 314,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 3832,
+      "code_capacity": 940,
+      "code_margin": 783,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/scene.slot05.menu_memo_system/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/scene.slot05.menu_memo_system/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/scene.slot05.menu_memo_system/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/scene.slot05.menu_memo_system/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "F4B97F77D6BBA229304A5D15EA4674AB6DF930A392593A15F850EA64B5D29137",
+        "packed18": "39F306174E6FBB7E734104CEDA46707A9FF7EA31943127B97E5F2DAAF5B54363",
+        "glyph_map": "06E3F0EC548E039D505B80D3230D8A6E264BBDD8CF2B77E88D882EC39F9E8C45",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "scene.slot06.dialogue_event",
+      "module_id": "scene.slot06",
+      "family": "dialogue_event",
+      "row_count": 186,
+      "glyph_count": 535,
+      "core_glyph_count": 2,
+      "family_specific_glyph_count": 533,
+      "expanded_bytes": 17120,
+      "packed_bytes": 9630,
+      "map_bytes_estimate": 2140,
+      "metric_bytes_estimate": 1070,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 12904,
+      "code_capacity": 940,
+      "code_margin": 405,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/scene.slot06.dialogue_event/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/scene.slot06.dialogue_event/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/scene.slot06.dialogue_event/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/scene.slot06.dialogue_event/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "A293111FF09D0CA29A1F6AABA3E01F7B898BEB0EDDEB5F8563B0F73AEF64E1B6",
+        "packed18": "85CC1D5ADD24148A3A56C55D8E79D63E23D7DF1EC88FD49DDAB9594D0294FC7F",
+        "glyph_map": "D728B15FB8552306F942E9CE945204BD11DD02445EDEFDB670B107AC5D1B4833",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "scene.slot06.menu_memo_system",
+      "module_id": "scene.slot06",
+      "family": "menu_memo_system",
+      "row_count": 96,
+      "glyph_count": 157,
+      "core_glyph_count": 2,
+      "family_specific_glyph_count": 155,
+      "expanded_bytes": 5024,
+      "packed_bytes": 2826,
+      "map_bytes_estimate": 628,
+      "metric_bytes_estimate": 314,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 3832,
+      "code_capacity": 940,
+      "code_margin": 783,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/scene.slot06.menu_memo_system/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/scene.slot06.menu_memo_system/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/scene.slot06.menu_memo_system/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/scene.slot06.menu_memo_system/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "F4B97F77D6BBA229304A5D15EA4674AB6DF930A392593A15F850EA64B5D29137",
+        "packed18": "39F306174E6FBB7E734104CEDA46707A9FF7EA31943127B97E5F2DAAF5B54363",
+        "glyph_map": "06E3F0EC548E039D505B80D3230D8A6E264BBDD8CF2B77E88D882EC39F9E8C45",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "scene.slot07.dialogue_event",
+      "module_id": "scene.slot07",
+      "family": "dialogue_event",
+      "row_count": 232,
+      "glyph_count": 538,
+      "core_glyph_count": 2,
+      "family_specific_glyph_count": 536,
+      "expanded_bytes": 17216,
+      "packed_bytes": 9684,
+      "map_bytes_estimate": 2152,
+      "metric_bytes_estimate": 1076,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 12976,
+      "code_capacity": 940,
+      "code_margin": 402,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/scene.slot07.dialogue_event/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/scene.slot07.dialogue_event/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/scene.slot07.dialogue_event/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/scene.slot07.dialogue_event/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "2E17BD09448275728B4B0EB8D2367D1C5CB0FF6826276612F27BA47230842F24",
+        "packed18": "24F3046825FE52D74F1EE3B995F9DEAD84584162296A47347EF05AA866332602",
+        "glyph_map": "4B776BD405946B1973D94E23E224A34A3DC8384BE5560605D828AF188CE31C46",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "scene.slot07.menu_memo_system",
+      "module_id": "scene.slot07",
+      "family": "menu_memo_system",
+      "row_count": 96,
+      "glyph_count": 157,
+      "core_glyph_count": 2,
+      "family_specific_glyph_count": 155,
+      "expanded_bytes": 5024,
+      "packed_bytes": 2826,
+      "map_bytes_estimate": 628,
+      "metric_bytes_estimate": 314,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 3832,
+      "code_capacity": 940,
+      "code_margin": 783,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/scene.slot07.menu_memo_system/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/scene.slot07.menu_memo_system/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/scene.slot07.menu_memo_system/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/scene.slot07.menu_memo_system/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "F4B97F77D6BBA229304A5D15EA4674AB6DF930A392593A15F850EA64B5D29137",
+        "packed18": "39F306174E6FBB7E734104CEDA46707A9FF7EA31943127B97E5F2DAAF5B54363",
+        "glyph_map": "06E3F0EC548E039D505B80D3230D8A6E264BBDD8CF2B77E88D882EC39F9E8C45",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "scene.slot08.dialogue_event",
+      "module_id": "scene.slot08",
+      "family": "dialogue_event",
+      "row_count": 180,
+      "glyph_count": 561,
+      "core_glyph_count": 2,
+      "family_specific_glyph_count": 559,
+      "expanded_bytes": 17952,
+      "packed_bytes": 10098,
+      "map_bytes_estimate": 2244,
+      "metric_bytes_estimate": 1122,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 13528,
+      "code_capacity": 940,
+      "code_margin": 379,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/scene.slot08.dialogue_event/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/scene.slot08.dialogue_event/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/scene.slot08.dialogue_event/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/scene.slot08.dialogue_event/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "35BEC55D90088A732602A4942E0689080A452320DF3A125A4B1031753EEB642F",
+        "packed18": "2D26A849977CC2A32B2C0F36CAD9BDF56F6669147A8FB349831EDB76F0D050B5",
+        "glyph_map": "465B0713D67A8B9FE429B2BA3E7711900C37B3A08DEE5922488324F7410BD851",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "scene.slot08.menu_memo_system",
+      "module_id": "scene.slot08",
+      "family": "menu_memo_system",
+      "row_count": 96,
+      "glyph_count": 157,
+      "core_glyph_count": 2,
+      "family_specific_glyph_count": 155,
+      "expanded_bytes": 5024,
+      "packed_bytes": 2826,
+      "map_bytes_estimate": 628,
+      "metric_bytes_estimate": 314,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 3832,
+      "code_capacity": 940,
+      "code_margin": 783,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/scene.slot08.menu_memo_system/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/scene.slot08.menu_memo_system/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/scene.slot08.menu_memo_system/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/scene.slot08.menu_memo_system/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "F4B97F77D6BBA229304A5D15EA4674AB6DF930A392593A15F850EA64B5D29137",
+        "packed18": "39F306174E6FBB7E734104CEDA46707A9FF7EA31943127B97E5F2DAAF5B54363",
+        "glyph_map": "06E3F0EC548E039D505B80D3230D8A6E264BBDD8CF2B77E88D882EC39F9E8C45",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "scene.slot09.dialogue_event",
+      "module_id": "scene.slot09",
+      "family": "dialogue_event",
+      "row_count": 288,
+      "glyph_count": 558,
+      "core_glyph_count": 2,
+      "family_specific_glyph_count": 556,
+      "expanded_bytes": 17856,
+      "packed_bytes": 10044,
+      "map_bytes_estimate": 2232,
+      "metric_bytes_estimate": 1116,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 13456,
+      "code_capacity": 940,
+      "code_margin": 382,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/scene.slot09.dialogue_event/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/scene.slot09.dialogue_event/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/scene.slot09.dialogue_event/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/scene.slot09.dialogue_event/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "5FCF149B38B7E19B5ED5AAE5B38E1BF203971FA5FDC720CC31D9900B301B5D12",
+        "packed18": "BFE950EE55613A654C2AEA79D1FB48F729BE50D745896ED773B8E4FE5F6A12ED",
+        "glyph_map": "63BB9FFDAB7BB525E481D0D217539B163AF7BAF26791622C27D0B5D64552C966",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "scene.slot09.menu_memo_system",
+      "module_id": "scene.slot09",
+      "family": "menu_memo_system",
+      "row_count": 96,
+      "glyph_count": 157,
+      "core_glyph_count": 2,
+      "family_specific_glyph_count": 155,
+      "expanded_bytes": 5024,
+      "packed_bytes": 2826,
+      "map_bytes_estimate": 628,
+      "metric_bytes_estimate": 314,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 3832,
+      "code_capacity": 940,
+      "code_margin": 783,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/scene.slot09.menu_memo_system/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/scene.slot09.menu_memo_system/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/scene.slot09.menu_memo_system/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/scene.slot09.menu_memo_system/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "F4B97F77D6BBA229304A5D15EA4674AB6DF930A392593A15F850EA64B5D29137",
+        "packed18": "39F306174E6FBB7E734104CEDA46707A9FF7EA31943127B97E5F2DAAF5B54363",
+        "glyph_map": "06E3F0EC548E039D505B80D3230D8A6E264BBDD8CF2B77E88D882EC39F9E8C45",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "scene.slot10.dialogue_event",
+      "module_id": "scene.slot10",
+      "family": "dialogue_event",
+      "row_count": 120,
+      "glyph_count": 369,
+      "core_glyph_count": 2,
+      "family_specific_glyph_count": 367,
+      "expanded_bytes": 11808,
+      "packed_bytes": 6642,
+      "map_bytes_estimate": 1476,
+      "metric_bytes_estimate": 738,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 8920,
+      "code_capacity": 940,
+      "code_margin": 571,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/scene.slot10.dialogue_event/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/scene.slot10.dialogue_event/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/scene.slot10.dialogue_event/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/scene.slot10.dialogue_event/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "DBA95E46DC4D7EDD633874C465128BEB6488272BE505C5E230BFAEC1B2CEFAB7",
+        "packed18": "23987167DAEE9DBE87D48D682CA336A7286D4E2AC6705290AEC0F900B6E27910",
+        "glyph_map": "C158A89FDF7747F089440A7DFA18CAEE00CF922932A57E93A2407629E097B801",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "scene.slot10.menu_memo_system",
+      "module_id": "scene.slot10",
+      "family": "menu_memo_system",
+      "row_count": 96,
+      "glyph_count": 157,
+      "core_glyph_count": 2,
+      "family_specific_glyph_count": 155,
+      "expanded_bytes": 5024,
+      "packed_bytes": 2826,
+      "map_bytes_estimate": 628,
+      "metric_bytes_estimate": 314,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 3832,
+      "code_capacity": 940,
+      "code_margin": 783,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/scene.slot10.menu_memo_system/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/scene.slot10.menu_memo_system/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/scene.slot10.menu_memo_system/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/scene.slot10.menu_memo_system/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "F4B97F77D6BBA229304A5D15EA4674AB6DF930A392593A15F850EA64B5D29137",
+        "packed18": "39F306174E6FBB7E734104CEDA46707A9FF7EA31943127B97E5F2DAAF5B54363",
+        "glyph_map": "06E3F0EC548E039D505B80D3230D8A6E264BBDD8CF2B77E88D882EC39F9E8C45",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "scene.slot11.dialogue_event",
+      "module_id": "scene.slot11",
+      "family": "dialogue_event",
+      "row_count": 177,
+      "glyph_count": 525,
+      "core_glyph_count": 2,
+      "family_specific_glyph_count": 523,
+      "expanded_bytes": 16800,
+      "packed_bytes": 9450,
+      "map_bytes_estimate": 2100,
+      "metric_bytes_estimate": 1050,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 12664,
+      "code_capacity": 940,
+      "code_margin": 415,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/scene.slot11.dialogue_event/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/scene.slot11.dialogue_event/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/scene.slot11.dialogue_event/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/scene.slot11.dialogue_event/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "5D90744C5AB79EEF7D65BA76BBCF822B27362C44C73A72E11804C1E0EF3D0116",
+        "packed18": "5DA44D58E813F4EE82404AA43D115090000992C58ACEB06FE173A3B60264A293",
+        "glyph_map": "833308D06055B035DEDE1B5B02C360CD5CCB7A8C5CA4436FE756991BC1E63498",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "scene.slot11.menu_memo_system",
+      "module_id": "scene.slot11",
+      "family": "menu_memo_system",
+      "row_count": 96,
+      "glyph_count": 157,
+      "core_glyph_count": 2,
+      "family_specific_glyph_count": 155,
+      "expanded_bytes": 5024,
+      "packed_bytes": 2826,
+      "map_bytes_estimate": 628,
+      "metric_bytes_estimate": 314,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 3832,
+      "code_capacity": 940,
+      "code_margin": 783,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/scene.slot11.menu_memo_system/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/scene.slot11.menu_memo_system/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/scene.slot11.menu_memo_system/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/scene.slot11.menu_memo_system/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "F4B97F77D6BBA229304A5D15EA4674AB6DF930A392593A15F850EA64B5D29137",
+        "packed18": "39F306174E6FBB7E734104CEDA46707A9FF7EA31943127B97E5F2DAAF5B54363",
+        "glyph_map": "06E3F0EC548E039D505B80D3230D8A6E264BBDD8CF2B77E88D882EC39F9E8C45",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "scene.slot12.dialogue_event",
+      "module_id": "scene.slot12",
+      "family": "dialogue_event",
+      "row_count": 191,
+      "glyph_count": 532,
+      "core_glyph_count": 2,
+      "family_specific_glyph_count": 530,
+      "expanded_bytes": 17024,
+      "packed_bytes": 9576,
+      "map_bytes_estimate": 2128,
+      "metric_bytes_estimate": 1064,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 12832,
+      "code_capacity": 940,
+      "code_margin": 408,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/scene.slot12.dialogue_event/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/scene.slot12.dialogue_event/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/scene.slot12.dialogue_event/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/scene.slot12.dialogue_event/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "3F3FDC82BFFE5B5D777FC9CA0CEC0E694E145769797C9BB0DDEF446C9F1B698A",
+        "packed18": "AA47585E09590704E9FAD97453310787E1B7A187204729D2861C1B52DC2F0D04",
+        "glyph_map": "8DDA91CBE3573E340312B17A17A538BFC23D16C73DF5FFDB61EBCC6B5F534269",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "scene.slot12.menu_memo_system",
+      "module_id": "scene.slot12",
+      "family": "menu_memo_system",
+      "row_count": 96,
+      "glyph_count": 157,
+      "core_glyph_count": 2,
+      "family_specific_glyph_count": 155,
+      "expanded_bytes": 5024,
+      "packed_bytes": 2826,
+      "map_bytes_estimate": 628,
+      "metric_bytes_estimate": 314,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 3832,
+      "code_capacity": 940,
+      "code_margin": 783,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/scene.slot12.menu_memo_system/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/scene.slot12.menu_memo_system/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/scene.slot12.menu_memo_system/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/scene.slot12.menu_memo_system/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "F4B97F77D6BBA229304A5D15EA4674AB6DF930A392593A15F850EA64B5D29137",
+        "packed18": "39F306174E6FBB7E734104CEDA46707A9FF7EA31943127B97E5F2DAAF5B54363",
+        "glyph_map": "06E3F0EC548E039D505B80D3230D8A6E264BBDD8CF2B77E88D882EC39F9E8C45",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "scene.slot13.dialogue_event",
+      "module_id": "scene.slot13",
+      "family": "dialogue_event",
+      "row_count": 272,
+      "glyph_count": 542,
+      "core_glyph_count": 2,
+      "family_specific_glyph_count": 540,
+      "expanded_bytes": 17344,
+      "packed_bytes": 9756,
+      "map_bytes_estimate": 2168,
+      "metric_bytes_estimate": 1084,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 13072,
+      "code_capacity": 940,
+      "code_margin": 398,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/scene.slot13.dialogue_event/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/scene.slot13.dialogue_event/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/scene.slot13.dialogue_event/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/scene.slot13.dialogue_event/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "3CCBCFA1F2161820A9B40394404A20788D6DB58DB8C268EA526A7961F3EF6FCF",
+        "packed18": "D4A173EB764475AF0A2C16E64A35AD7B0BF235C5C7749266A6E487DC18676B18",
+        "glyph_map": "802C742127A2A4A79406F871891C9A67676F800DA563278D826D0F428BE4E413",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "scene.slot13.menu_memo_system",
+      "module_id": "scene.slot13",
+      "family": "menu_memo_system",
+      "row_count": 96,
+      "glyph_count": 157,
+      "core_glyph_count": 2,
+      "family_specific_glyph_count": 155,
+      "expanded_bytes": 5024,
+      "packed_bytes": 2826,
+      "map_bytes_estimate": 628,
+      "metric_bytes_estimate": 314,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 3832,
+      "code_capacity": 940,
+      "code_margin": 783,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/scene.slot13.menu_memo_system/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/scene.slot13.menu_memo_system/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/scene.slot13.menu_memo_system/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/scene.slot13.menu_memo_system/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "F4B97F77D6BBA229304A5D15EA4674AB6DF930A392593A15F850EA64B5D29137",
+        "packed18": "39F306174E6FBB7E734104CEDA46707A9FF7EA31943127B97E5F2DAAF5B54363",
+        "glyph_map": "06E3F0EC548E039D505B80D3230D8A6E264BBDD8CF2B77E88D882EC39F9E8C45",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "scene.slot14.dialogue_event",
+      "module_id": "scene.slot14",
+      "family": "dialogue_event",
+      "row_count": 284,
+      "glyph_count": 498,
+      "core_glyph_count": 2,
+      "family_specific_glyph_count": 496,
+      "expanded_bytes": 15936,
+      "packed_bytes": 8964,
+      "map_bytes_estimate": 1992,
+      "metric_bytes_estimate": 996,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 12016,
+      "code_capacity": 940,
+      "code_margin": 442,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/scene.slot14.dialogue_event/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/scene.slot14.dialogue_event/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/scene.slot14.dialogue_event/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/scene.slot14.dialogue_event/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "3F521F65F3EA6B08AE82C0BCB8E8FA7B6F7C5955DEF4B2958BB7335AC7209AB5",
+        "packed18": "63DE1A2018B16D1477D078B32EBCBD3F92DB1D1FE60FDEDE13221D30A085E7A8",
+        "glyph_map": "6330B186987ABC40DF45177C2208AE211B577D2CC730B319DD9E6AF4CB0F7AAB",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "scene.slot14.menu_memo_system",
+      "module_id": "scene.slot14",
+      "family": "menu_memo_system",
+      "row_count": 96,
+      "glyph_count": 157,
+      "core_glyph_count": 2,
+      "family_specific_glyph_count": 155,
+      "expanded_bytes": 5024,
+      "packed_bytes": 2826,
+      "map_bytes_estimate": 628,
+      "metric_bytes_estimate": 314,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 3832,
+      "code_capacity": 940,
+      "code_margin": 783,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/scene.slot14.menu_memo_system/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/scene.slot14.menu_memo_system/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/scene.slot14.menu_memo_system/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/scene.slot14.menu_memo_system/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "F4B97F77D6BBA229304A5D15EA4674AB6DF930A392593A15F850EA64B5D29137",
+        "packed18": "39F306174E6FBB7E734104CEDA46707A9FF7EA31943127B97E5F2DAAF5B54363",
+        "glyph_map": "06E3F0EC548E039D505B80D3230D8A6E264BBDD8CF2B77E88D882EC39F9E8C45",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "scene.slot15.dialogue_event",
+      "module_id": "scene.slot15",
+      "family": "dialogue_event",
+      "row_count": 305,
+      "glyph_count": 550,
+      "core_glyph_count": 2,
+      "family_specific_glyph_count": 548,
+      "expanded_bytes": 17600,
+      "packed_bytes": 9900,
+      "map_bytes_estimate": 2200,
+      "metric_bytes_estimate": 1100,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 13264,
+      "code_capacity": 940,
+      "code_margin": 390,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/scene.slot15.dialogue_event/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/scene.slot15.dialogue_event/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/scene.slot15.dialogue_event/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/scene.slot15.dialogue_event/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "076E8BB4D3C40C6B82205234DB7DA8FBB4984F06AFBE1EB3E797F6FA897822CB",
+        "packed18": "DE944E4B66070C6E66EEA8496A68974721DB99A6EF7EAD629ADFBDEB2EB5D938",
+        "glyph_map": "6124B610EA65BCD154B934F269C088765CDAD9B866CE1135FFCA2F41457C0F7B",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "scene.slot15.menu_memo_system",
+      "module_id": "scene.slot15",
+      "family": "menu_memo_system",
+      "row_count": 184,
+      "glyph_count": 157,
+      "core_glyph_count": 2,
+      "family_specific_glyph_count": 155,
+      "expanded_bytes": 5024,
+      "packed_bytes": 2826,
+      "map_bytes_estimate": 628,
+      "metric_bytes_estimate": 314,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 3832,
+      "code_capacity": 940,
+      "code_margin": 783,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/scene.slot15.menu_memo_system/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/scene.slot15.menu_memo_system/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/scene.slot15.menu_memo_system/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/scene.slot15.menu_memo_system/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "F4B97F77D6BBA229304A5D15EA4674AB6DF930A392593A15F850EA64B5D29137",
+        "packed18": "39F306174E6FBB7E734104CEDA46707A9FF7EA31943127B97E5F2DAAF5B54363",
+        "glyph_map": "06E3F0EC548E039D505B80D3230D8A6E264BBDD8CF2B77E88D882EC39F9E8C45",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "scene.slot16.dialogue_event",
+      "module_id": "scene.slot16",
+      "family": "dialogue_event",
+      "row_count": 275,
+      "glyph_count": 538,
+      "core_glyph_count": 2,
+      "family_specific_glyph_count": 536,
+      "expanded_bytes": 17216,
+      "packed_bytes": 9684,
+      "map_bytes_estimate": 2152,
+      "metric_bytes_estimate": 1076,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 12976,
+      "code_capacity": 940,
+      "code_margin": 402,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/scene.slot16.dialogue_event/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/scene.slot16.dialogue_event/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/scene.slot16.dialogue_event/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/scene.slot16.dialogue_event/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "5CB2E8C58BBE638C8612326E4D911A8CF9AA77A50855CCF2E219377D6A6DDBA3",
+        "packed18": "726EC9B0748A031F05B2E3BF5314226F30B7F9003BCE9B64214902FBD6581944",
+        "glyph_map": "5D8EA966593502B30C093038F135B9EABBE01FA526DE938D89573EEE5FABA3F9",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "scene.slot16.menu_memo_system",
+      "module_id": "scene.slot16",
+      "family": "menu_memo_system",
+      "row_count": 98,
+      "glyph_count": 162,
+      "core_glyph_count": 2,
+      "family_specific_glyph_count": 160,
+      "expanded_bytes": 5184,
+      "packed_bytes": 2916,
+      "map_bytes_estimate": 648,
+      "metric_bytes_estimate": 324,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 3952,
+      "code_capacity": 940,
+      "code_margin": 778,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/scene.slot16.menu_memo_system/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/scene.slot16.menu_memo_system/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/scene.slot16.menu_memo_system/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/scene.slot16.menu_memo_system/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "29125E47EF30B46EC75364EE5884345B0B8246A683DF263E0B024E002EA68791",
+        "packed18": "0B2A9C3D84F284A81AABC81FAF99F68D0AA7D813C6FB17C0D4077A0C790DC87A",
+        "glyph_map": "189FF02181ADF87FB905A5F9A8F0B7380E2F0FBDFAC319E8BC3C1AD162934BD6",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "scene.slot17.dialogue_event",
+      "module_id": "scene.slot17",
+      "family": "dialogue_event",
+      "row_count": 168,
+      "glyph_count": 426,
+      "core_glyph_count": 2,
+      "family_specific_glyph_count": 424,
+      "expanded_bytes": 13632,
+      "packed_bytes": 7668,
+      "map_bytes_estimate": 1704,
+      "metric_bytes_estimate": 852,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 10288,
+      "code_capacity": 940,
+      "code_margin": 514,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/scene.slot17.dialogue_event/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/scene.slot17.dialogue_event/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/scene.slot17.dialogue_event/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/scene.slot17.dialogue_event/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "D2E221DA693287B04CB354788368ED5FD4AC01324AF9E3800D624FA452923476",
+        "packed18": "89A65951303757FB55A6F4DE2262372B620984DE66C649A9E47BA9B2A5D40C39",
+        "glyph_map": "5307C5745206E45C09D2236922F0BF78A1E53D444EEF3740AC076A48814F6687",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "scene.slot17.menu_memo_system",
+      "module_id": "scene.slot17",
+      "family": "menu_memo_system",
+      "row_count": 96,
+      "glyph_count": 157,
+      "core_glyph_count": 2,
+      "family_specific_glyph_count": 155,
+      "expanded_bytes": 5024,
+      "packed_bytes": 2826,
+      "map_bytes_estimate": 628,
+      "metric_bytes_estimate": 314,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 3832,
+      "code_capacity": 940,
+      "code_margin": 783,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/scene.slot17.menu_memo_system/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/scene.slot17.menu_memo_system/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/scene.slot17.menu_memo_system/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/scene.slot17.menu_memo_system/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "F4B97F77D6BBA229304A5D15EA4674AB6DF930A392593A15F850EA64B5D29137",
+        "packed18": "39F306174E6FBB7E734104CEDA46707A9FF7EA31943127B97E5F2DAAF5B54363",
+        "glyph_map": "06E3F0EC548E039D505B80D3230D8A6E264BBDD8CF2B77E88D882EC39F9E8C45",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "scene.slot18.dialogue_event",
+      "module_id": "scene.slot18",
+      "family": "dialogue_event",
+      "row_count": 154,
+      "glyph_count": 497,
+      "core_glyph_count": 2,
+      "family_specific_glyph_count": 495,
+      "expanded_bytes": 15904,
+      "packed_bytes": 8946,
+      "map_bytes_estimate": 1988,
+      "metric_bytes_estimate": 994,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 11992,
+      "code_capacity": 940,
+      "code_margin": 443,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/scene.slot18.dialogue_event/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/scene.slot18.dialogue_event/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/scene.slot18.dialogue_event/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/scene.slot18.dialogue_event/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "7928CFA0659AD8AFF72AFCE1640C941D87C45C52D78076963CED1A04829872E9",
+        "packed18": "5AECB0899E43322C83227EA76C4898EE7D549CC35245BF48843E81F0396E48F4",
+        "glyph_map": "5D2E79359A404DC11534CD8DF10C3C0A77D9531F82DD9167C2230726A85D33F6",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "scene.slot18.menu_memo_system",
+      "module_id": "scene.slot18",
+      "family": "menu_memo_system",
+      "row_count": 96,
+      "glyph_count": 157,
+      "core_glyph_count": 2,
+      "family_specific_glyph_count": 155,
+      "expanded_bytes": 5024,
+      "packed_bytes": 2826,
+      "map_bytes_estimate": 628,
+      "metric_bytes_estimate": 314,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 3832,
+      "code_capacity": 940,
+      "code_margin": 783,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/scene.slot18.menu_memo_system/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/scene.slot18.menu_memo_system/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/scene.slot18.menu_memo_system/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/scene.slot18.menu_memo_system/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "F4B97F77D6BBA229304A5D15EA4674AB6DF930A392593A15F850EA64B5D29137",
+        "packed18": "39F306174E6FBB7E734104CEDA46707A9FF7EA31943127B97E5F2DAAF5B54363",
+        "glyph_map": "06E3F0EC548E039D505B80D3230D8A6E264BBDD8CF2B77E88D882EC39F9E8C45",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "scene.slot19.dialogue_event",
+      "module_id": "scene.slot19",
+      "family": "dialogue_event",
+      "row_count": 328,
+      "glyph_count": 522,
+      "core_glyph_count": 2,
+      "family_specific_glyph_count": 520,
+      "expanded_bytes": 16704,
+      "packed_bytes": 9396,
+      "map_bytes_estimate": 2088,
+      "metric_bytes_estimate": 1044,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 12592,
+      "code_capacity": 940,
+      "code_margin": 418,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/scene.slot19.dialogue_event/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/scene.slot19.dialogue_event/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/scene.slot19.dialogue_event/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/scene.slot19.dialogue_event/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "DEF47A673C54B4B105BEED90D2F74821213201BD7498124221918AD9D4EAAEC0",
+        "packed18": "87D25DB3307368CCA182B2C524E2216E6941ECDF1EEFB36F27263328C2D96FF9",
+        "glyph_map": "402ADC8510452EB7DC781FD7C7AC81A0329F3C914B2A9910595641C8CE614E0F",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "scene.slot19.menu_memo_system",
+      "module_id": "scene.slot19",
+      "family": "menu_memo_system",
+      "row_count": 96,
+      "glyph_count": 157,
+      "core_glyph_count": 2,
+      "family_specific_glyph_count": 155,
+      "expanded_bytes": 5024,
+      "packed_bytes": 2826,
+      "map_bytes_estimate": 628,
+      "metric_bytes_estimate": 314,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 3832,
+      "code_capacity": 940,
+      "code_margin": 783,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/scene.slot19.menu_memo_system/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/scene.slot19.menu_memo_system/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/scene.slot19.menu_memo_system/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/scene.slot19.menu_memo_system/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "F4B97F77D6BBA229304A5D15EA4674AB6DF930A392593A15F850EA64B5D29137",
+        "packed18": "39F306174E6FBB7E734104CEDA46707A9FF7EA31943127B97E5F2DAAF5B54363",
+        "glyph_map": "06E3F0EC548E039D505B80D3230D8A6E264BBDD8CF2B77E88D882EC39F9E8C45",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "scene.slot20.dialogue_event",
+      "module_id": "scene.slot20",
+      "family": "dialogue_event",
+      "row_count": 146,
+      "glyph_count": 513,
+      "core_glyph_count": 2,
+      "family_specific_glyph_count": 511,
+      "expanded_bytes": 16416,
+      "packed_bytes": 9234,
+      "map_bytes_estimate": 2052,
+      "metric_bytes_estimate": 1026,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 12376,
+      "code_capacity": 940,
+      "code_margin": 427,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/scene.slot20.dialogue_event/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/scene.slot20.dialogue_event/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/scene.slot20.dialogue_event/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/scene.slot20.dialogue_event/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "70E88E84DDD30C5784275337F530787EB8116E9B9794E22F1BDDC31BF25C1F90",
+        "packed18": "3B8DA90482D23192D4FD6989BDC56B81A596D93F7A4CD43009871EB434BFE2DA",
+        "glyph_map": "ED7EDE6BF2C571B7806B2A29B8DDA4FEA33C0C2C6EE3BDEB47BCE1C1C04A8F32",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "scene.slot20.menu_memo_system",
+      "module_id": "scene.slot20",
+      "family": "menu_memo_system",
+      "row_count": 96,
+      "glyph_count": 157,
+      "core_glyph_count": 2,
+      "family_specific_glyph_count": 155,
+      "expanded_bytes": 5024,
+      "packed_bytes": 2826,
+      "map_bytes_estimate": 628,
+      "metric_bytes_estimate": 314,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 3832,
+      "code_capacity": 940,
+      "code_margin": 783,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/scene.slot20.menu_memo_system/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/scene.slot20.menu_memo_system/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/scene.slot20.menu_memo_system/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/scene.slot20.menu_memo_system/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "F4B97F77D6BBA229304A5D15EA4674AB6DF930A392593A15F850EA64B5D29137",
+        "packed18": "39F306174E6FBB7E734104CEDA46707A9FF7EA31943127B97E5F2DAAF5B54363",
+        "glyph_map": "06E3F0EC548E039D505B80D3230D8A6E264BBDD8CF2B77E88D882EC39F9E8C45",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "scene.slot21.dialogue_event",
+      "module_id": "scene.slot21",
+      "family": "dialogue_event",
+      "row_count": 185,
+      "glyph_count": 504,
+      "core_glyph_count": 2,
+      "family_specific_glyph_count": 502,
+      "expanded_bytes": 16128,
+      "packed_bytes": 9072,
+      "map_bytes_estimate": 2016,
+      "metric_bytes_estimate": 1008,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 12160,
+      "code_capacity": 940,
+      "code_margin": 436,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/scene.slot21.dialogue_event/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/scene.slot21.dialogue_event/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/scene.slot21.dialogue_event/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/scene.slot21.dialogue_event/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "9F68C044E3C98B6D9DBDD71D8438FC674613979347C5D87EA101E927FB2126CD",
+        "packed18": "98FA3642D2095C2AB15B999E586515FD02BCEE4A35F15524E1FD95325376865D",
+        "glyph_map": "72FA0EDBF90A1C4B446A07BD0DB583F274EC49E018FFD1FABD808A968565B8A5",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "scene.slot21.menu_memo_system",
+      "module_id": "scene.slot21",
+      "family": "menu_memo_system",
+      "row_count": 96,
+      "glyph_count": 157,
+      "core_glyph_count": 2,
+      "family_specific_glyph_count": 155,
+      "expanded_bytes": 5024,
+      "packed_bytes": 2826,
+      "map_bytes_estimate": 628,
+      "metric_bytes_estimate": 314,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 3832,
+      "code_capacity": 940,
+      "code_margin": 783,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/scene.slot21.menu_memo_system/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/scene.slot21.menu_memo_system/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/scene.slot21.menu_memo_system/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/scene.slot21.menu_memo_system/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "F4B97F77D6BBA229304A5D15EA4674AB6DF930A392593A15F850EA64B5D29137",
+        "packed18": "39F306174E6FBB7E734104CEDA46707A9FF7EA31943127B97E5F2DAAF5B54363",
+        "glyph_map": "06E3F0EC548E039D505B80D3230D8A6E264BBDD8CF2B77E88D882EC39F9E8C45",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "scene.slot22.dialogue_event",
+      "module_id": "scene.slot22",
+      "family": "dialogue_event",
+      "row_count": 80,
+      "glyph_count": 432,
+      "core_glyph_count": 2,
+      "family_specific_glyph_count": 430,
+      "expanded_bytes": 13824,
+      "packed_bytes": 7776,
+      "map_bytes_estimate": 1728,
+      "metric_bytes_estimate": 864,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 10432,
+      "code_capacity": 940,
+      "code_margin": 508,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/scene.slot22.dialogue_event/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/scene.slot22.dialogue_event/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/scene.slot22.dialogue_event/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/scene.slot22.dialogue_event/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "D3C1EF99E6E882A39A9B10299B62D1E106A95CA95D141BED55E2BC35FD54F8E5",
+        "packed18": "0078937D37CF746826286E5658D7660D36388057160C6D7A2406A274037F2FE0",
+        "glyph_map": "7BBD5945F7A10390BB5D63222C989A1CD0E1A4D9BEACF5ECA84C3C2A7BE9289A",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "scene.slot22.menu_memo_system",
+      "module_id": "scene.slot22",
+      "family": "menu_memo_system",
+      "row_count": 96,
+      "glyph_count": 157,
+      "core_glyph_count": 2,
+      "family_specific_glyph_count": 155,
+      "expanded_bytes": 5024,
+      "packed_bytes": 2826,
+      "map_bytes_estimate": 628,
+      "metric_bytes_estimate": 314,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 3832,
+      "code_capacity": 940,
+      "code_margin": 783,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/scene.slot22.menu_memo_system/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/scene.slot22.menu_memo_system/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/scene.slot22.menu_memo_system/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/scene.slot22.menu_memo_system/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "F4B97F77D6BBA229304A5D15EA4674AB6DF930A392593A15F850EA64B5D29137",
+        "packed18": "39F306174E6FBB7E734104CEDA46707A9FF7EA31943127B97E5F2DAAF5B54363",
+        "glyph_map": "06E3F0EC548E039D505B80D3230D8A6E264BBDD8CF2B77E88D882EC39F9E8C45",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "scene.slot23.dialogue_event",
+      "module_id": "scene.slot23",
+      "family": "dialogue_event",
+      "row_count": 216,
+      "glyph_count": 465,
+      "core_glyph_count": 2,
+      "family_specific_glyph_count": 463,
+      "expanded_bytes": 14880,
+      "packed_bytes": 8370,
+      "map_bytes_estimate": 1860,
+      "metric_bytes_estimate": 930,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 11224,
+      "code_capacity": 940,
+      "code_margin": 475,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/scene.slot23.dialogue_event/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/scene.slot23.dialogue_event/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/scene.slot23.dialogue_event/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/scene.slot23.dialogue_event/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "B4C921798E9E0712E9EB15EF322936F4E2EC2A45BA59E466AE573E2BF9FF8DEB",
+        "packed18": "23561BED241C5946195289ABC47498BEADF99FA1E7C66CA6BA246E20F4C3535E",
+        "glyph_map": "355169FF07C4C7B809221FCF609D878DA45291358BCB70DF70B4C88FE34B1246",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "scene.slot23.menu_memo_system",
+      "module_id": "scene.slot23",
+      "family": "menu_memo_system",
+      "row_count": 96,
+      "glyph_count": 157,
+      "core_glyph_count": 2,
+      "family_specific_glyph_count": 155,
+      "expanded_bytes": 5024,
+      "packed_bytes": 2826,
+      "map_bytes_estimate": 628,
+      "metric_bytes_estimate": 314,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 3832,
+      "code_capacity": 940,
+      "code_margin": 783,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/scene.slot23.menu_memo_system/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/scene.slot23.menu_memo_system/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/scene.slot23.menu_memo_system/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/scene.slot23.menu_memo_system/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "F4B97F77D6BBA229304A5D15EA4674AB6DF930A392593A15F850EA64B5D29137",
+        "packed18": "39F306174E6FBB7E734104CEDA46707A9FF7EA31943127B97E5F2DAAF5B54363",
+        "glyph_map": "06E3F0EC548E039D505B80D3230D8A6E264BBDD8CF2B77E88D882EC39F9E8C45",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "scene.slot24.dialogue_event",
+      "module_id": "scene.slot24",
+      "family": "dialogue_event",
+      "row_count": 214,
+      "glyph_count": 529,
+      "core_glyph_count": 2,
+      "family_specific_glyph_count": 527,
+      "expanded_bytes": 16928,
+      "packed_bytes": 9522,
+      "map_bytes_estimate": 2116,
+      "metric_bytes_estimate": 1058,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 12760,
+      "code_capacity": 940,
+      "code_margin": 411,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/scene.slot24.dialogue_event/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/scene.slot24.dialogue_event/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/scene.slot24.dialogue_event/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/scene.slot24.dialogue_event/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "852F5343E5083053393D7190882A6B4569C82B3E0032900EF2D662128697E677",
+        "packed18": "7B5B389A480C16EC7D3EF0143579C50A782A120558394DF25E343FD0533BB0BF",
+        "glyph_map": "D53F3A8BEBFE72791A21E3E37FFE1210207D1E97AA1AD5C1C8C29A823170FCDD",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "scene.slot24.menu_memo_system",
+      "module_id": "scene.slot24",
+      "family": "menu_memo_system",
+      "row_count": 96,
+      "glyph_count": 157,
+      "core_glyph_count": 2,
+      "family_specific_glyph_count": 155,
+      "expanded_bytes": 5024,
+      "packed_bytes": 2826,
+      "map_bytes_estimate": 628,
+      "metric_bytes_estimate": 314,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 3832,
+      "code_capacity": 940,
+      "code_margin": 783,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/scene.slot24.menu_memo_system/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/scene.slot24.menu_memo_system/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/scene.slot24.menu_memo_system/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/scene.slot24.menu_memo_system/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "F4B97F77D6BBA229304A5D15EA4674AB6DF930A392593A15F850EA64B5D29137",
+        "packed18": "39F306174E6FBB7E734104CEDA46707A9FF7EA31943127B97E5F2DAAF5B54363",
+        "glyph_map": "06E3F0EC548E039D505B80D3230D8A6E264BBDD8CF2B77E88D882EC39F9E8C45",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "scene.slot25.dialogue_event",
+      "module_id": "scene.slot25",
+      "family": "dialogue_event",
+      "row_count": 122,
+      "glyph_count": 485,
+      "core_glyph_count": 2,
+      "family_specific_glyph_count": 483,
+      "expanded_bytes": 15520,
+      "packed_bytes": 8730,
+      "map_bytes_estimate": 1940,
+      "metric_bytes_estimate": 970,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 11704,
+      "code_capacity": 940,
+      "code_margin": 455,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/scene.slot25.dialogue_event/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/scene.slot25.dialogue_event/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/scene.slot25.dialogue_event/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/scene.slot25.dialogue_event/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "5896EFD6AB28064107A6945BD8898856E8356FF240598EABA4E63E7FD2D37312",
+        "packed18": "7EE1CE43A22179F3187BC5A53C7114DF57B2A6354CA6BE250E753D87DAE90E4E",
+        "glyph_map": "FF9877E6A2388D4931F5CCD60EF97ECBB3B2931978B0EA03EAEE0D6FB407CB3C",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "scene.slot25.menu_memo_system",
+      "module_id": "scene.slot25",
+      "family": "menu_memo_system",
+      "row_count": 96,
+      "glyph_count": 157,
+      "core_glyph_count": 2,
+      "family_specific_glyph_count": 155,
+      "expanded_bytes": 5024,
+      "packed_bytes": 2826,
+      "map_bytes_estimate": 628,
+      "metric_bytes_estimate": 314,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 3832,
+      "code_capacity": 940,
+      "code_margin": 783,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/scene.slot25.menu_memo_system/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/scene.slot25.menu_memo_system/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/scene.slot25.menu_memo_system/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/scene.slot25.menu_memo_system/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "F4B97F77D6BBA229304A5D15EA4674AB6DF930A392593A15F850EA64B5D29137",
+        "packed18": "39F306174E6FBB7E734104CEDA46707A9FF7EA31943127B97E5F2DAAF5B54363",
+        "glyph_map": "06E3F0EC548E039D505B80D3230D8A6E264BBDD8CF2B77E88D882EC39F9E8C45",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "scene.slot26.dialogue_event",
+      "module_id": "scene.slot26",
+      "family": "dialogue_event",
+      "row_count": 85,
+      "glyph_count": 344,
+      "core_glyph_count": 2,
+      "family_specific_glyph_count": 342,
+      "expanded_bytes": 11008,
+      "packed_bytes": 6192,
+      "map_bytes_estimate": 1376,
+      "metric_bytes_estimate": 688,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 8320,
+      "code_capacity": 940,
+      "code_margin": 596,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/scene.slot26.dialogue_event/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/scene.slot26.dialogue_event/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/scene.slot26.dialogue_event/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/scene.slot26.dialogue_event/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "114137B9A3810F648AB04CC4774764F842845819179BA7EDDB31F8B7DA1BD7E1",
+        "packed18": "2D42F704D8914074B3FA72C5CF80636E757899C470FCE4DEAA696A01FA93B21B",
+        "glyph_map": "850C55F33C09812716B797E5B8B7D1B581702C7A2233637A5E592134D8B0314D",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "scene.slot26.menu_memo_system",
+      "module_id": "scene.slot26",
+      "family": "menu_memo_system",
+      "row_count": 96,
+      "glyph_count": 157,
+      "core_glyph_count": 2,
+      "family_specific_glyph_count": 155,
+      "expanded_bytes": 5024,
+      "packed_bytes": 2826,
+      "map_bytes_estimate": 628,
+      "metric_bytes_estimate": 314,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 3832,
+      "code_capacity": 940,
+      "code_margin": 783,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/scene.slot26.menu_memo_system/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/scene.slot26.menu_memo_system/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/scene.slot26.menu_memo_system/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/scene.slot26.menu_memo_system/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "F4B97F77D6BBA229304A5D15EA4674AB6DF930A392593A15F850EA64B5D29137",
+        "packed18": "39F306174E6FBB7E734104CEDA46707A9FF7EA31943127B97E5F2DAAF5B54363",
+        "glyph_map": "06E3F0EC548E039D505B80D3230D8A6E264BBDD8CF2B77E88D882EC39F9E8C45",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "scene.slot27.dialogue_event",
+      "module_id": "scene.slot27",
+      "family": "dialogue_event",
+      "row_count": 174,
+      "glyph_count": 435,
+      "core_glyph_count": 2,
+      "family_specific_glyph_count": 433,
+      "expanded_bytes": 13920,
+      "packed_bytes": 7830,
+      "map_bytes_estimate": 1740,
+      "metric_bytes_estimate": 870,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 10504,
+      "code_capacity": 940,
+      "code_margin": 505,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/scene.slot27.dialogue_event/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/scene.slot27.dialogue_event/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/scene.slot27.dialogue_event/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/scene.slot27.dialogue_event/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "BF04DCFE36CA30894B0DF269B36F74FC9B37BF1E4B9DA38BEFAC3983F3B32BA8",
+        "packed18": "D68D246778960D40E718D5B5AB523F163B33DFB9599B51389D295BC70D4ED699",
+        "glyph_map": "87107E3D16125D4FBE79962099D8CB06F9EB090AE19869195428554F39AA624D",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "scene.slot27.menu_memo_system",
+      "module_id": "scene.slot27",
+      "family": "menu_memo_system",
+      "row_count": 96,
+      "glyph_count": 157,
+      "core_glyph_count": 2,
+      "family_specific_glyph_count": 155,
+      "expanded_bytes": 5024,
+      "packed_bytes": 2826,
+      "map_bytes_estimate": 628,
+      "metric_bytes_estimate": 314,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 3832,
+      "code_capacity": 940,
+      "code_margin": 783,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/scene.slot27.menu_memo_system/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/scene.slot27.menu_memo_system/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/scene.slot27.menu_memo_system/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/scene.slot27.menu_memo_system/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "F4B97F77D6BBA229304A5D15EA4674AB6DF930A392593A15F850EA64B5D29137",
+        "packed18": "39F306174E6FBB7E734104CEDA46707A9FF7EA31943127B97E5F2DAAF5B54363",
+        "glyph_map": "06E3F0EC548E039D505B80D3230D8A6E264BBDD8CF2B77E88D882EC39F9E8C45",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "scene.slot28.dialogue_event",
+      "module_id": "scene.slot28",
+      "family": "dialogue_event",
+      "row_count": 359,
+      "glyph_count": 514,
+      "core_glyph_count": 2,
+      "family_specific_glyph_count": 512,
+      "expanded_bytes": 16448,
+      "packed_bytes": 9252,
+      "map_bytes_estimate": 2056,
+      "metric_bytes_estimate": 1028,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 12400,
+      "code_capacity": 940,
+      "code_margin": 426,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/scene.slot28.dialogue_event/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/scene.slot28.dialogue_event/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/scene.slot28.dialogue_event/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/scene.slot28.dialogue_event/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "8855236E3FA79C0E4633117FE94A221AF6A8DF6FC5B64A776A5AA612D83EFDF9",
+        "packed18": "FC0BC357D624C3B1D2BEF006D8525244D0E43B03900A4CC06C1E1C6D567A0E63",
+        "glyph_map": "858B11D6C6787FE199CFE3E1B05BEB7487E5DDBA9F6D0880CEAED7E52A03473E",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "scene.slot29.dialogue_event",
+      "module_id": "scene.slot29",
+      "family": "dialogue_event",
+      "row_count": 336,
+      "glyph_count": 487,
+      "core_glyph_count": 2,
+      "family_specific_glyph_count": 485,
+      "expanded_bytes": 15584,
+      "packed_bytes": 8766,
+      "map_bytes_estimate": 1948,
+      "metric_bytes_estimate": 974,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 11752,
+      "code_capacity": 940,
+      "code_margin": 453,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/scene.slot29.dialogue_event/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/scene.slot29.dialogue_event/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/scene.slot29.dialogue_event/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/scene.slot29.dialogue_event/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "95E19A18950B49AACD83E103C4771DAA4D9AE15C7704A26C7FB0B8DB4B46E6BA",
+        "packed18": "D3316F6B7C70261C573555FDF5F251DD3EF4305AE414F6071276639189989760",
+        "glyph_map": "628EE7245E493DEC612C29F6D09492466692703A83E0830170A5F63740462252",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "scene.slot30.dialogue_event",
+      "module_id": "scene.slot30",
+      "family": "dialogue_event",
+      "row_count": 114,
+      "glyph_count": 352,
+      "core_glyph_count": 2,
+      "family_specific_glyph_count": 350,
+      "expanded_bytes": 11264,
+      "packed_bytes": 6336,
+      "map_bytes_estimate": 1408,
+      "metric_bytes_estimate": 704,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 8512,
+      "code_capacity": 940,
+      "code_margin": 588,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/scene.slot30.dialogue_event/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/scene.slot30.dialogue_event/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/scene.slot30.dialogue_event/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/scene.slot30.dialogue_event/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "F5C8CE9CA7263532FF7346ABE3A64879A305EA44D81D594615784A278997F4D7",
+        "packed18": "AF236B5A2DF7AA94952D9D31A0737423D0EE90653DA1223323224AB60235E8D8",
+        "glyph_map": "1C593E56D51F8A26449E576E987FF88D674F1C18490C1553F5A13ACD29B8BA2C",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "scene.slot30.menu_memo_system",
+      "module_id": "scene.slot30",
+      "family": "menu_memo_system",
+      "row_count": 96,
+      "glyph_count": 157,
+      "core_glyph_count": 2,
+      "family_specific_glyph_count": 155,
+      "expanded_bytes": 5024,
+      "packed_bytes": 2826,
+      "map_bytes_estimate": 628,
+      "metric_bytes_estimate": 314,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 3832,
+      "code_capacity": 940,
+      "code_margin": 783,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/scene.slot30.menu_memo_system/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/scene.slot30.menu_memo_system/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/scene.slot30.menu_memo_system/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/scene.slot30.menu_memo_system/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "F4B97F77D6BBA229304A5D15EA4674AB6DF930A392593A15F850EA64B5D29137",
+        "packed18": "39F306174E6FBB7E734104CEDA46707A9FF7EA31943127B97E5F2DAAF5B54363",
+        "glyph_map": "06E3F0EC548E039D505B80D3230D8A6E264BBDD8CF2B77E88D882EC39F9E8C45",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "scene.slot31.dialogue_event",
+      "module_id": "scene.slot31",
+      "family": "dialogue_event",
+      "row_count": 179,
+      "glyph_count": 430,
+      "core_glyph_count": 2,
+      "family_specific_glyph_count": 428,
+      "expanded_bytes": 13760,
+      "packed_bytes": 7740,
+      "map_bytes_estimate": 1720,
+      "metric_bytes_estimate": 860,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 10384,
+      "code_capacity": 940,
+      "code_margin": 510,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/scene.slot31.dialogue_event/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/scene.slot31.dialogue_event/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/scene.slot31.dialogue_event/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/scene.slot31.dialogue_event/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "D28DCB4B489C197D90C3204EF8846D83163CFD42F6899A38676BB48D2DC40E13",
+        "packed18": "2D7B09520A64EEBF6AF42C0223F26C230B3FBBB13B2C1C231F1EC8A52C4396B5",
+        "glyph_map": "8864EE1C0A55BD20D141888A0840D99F02078DB46EE45D9CF54713CDEA9861A6",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "scene.slot31.menu_memo_system",
+      "module_id": "scene.slot31",
+      "family": "menu_memo_system",
+      "row_count": 96,
+      "glyph_count": 157,
+      "core_glyph_count": 2,
+      "family_specific_glyph_count": 155,
+      "expanded_bytes": 5024,
+      "packed_bytes": 2826,
+      "map_bytes_estimate": 628,
+      "metric_bytes_estimate": 314,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 3832,
+      "code_capacity": 940,
+      "code_margin": 783,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/scene.slot31.menu_memo_system/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/scene.slot31.menu_memo_system/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/scene.slot31.menu_memo_system/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/scene.slot31.menu_memo_system/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "F4B97F77D6BBA229304A5D15EA4674AB6DF930A392593A15F850EA64B5D29137",
+        "packed18": "39F306174E6FBB7E734104CEDA46707A9FF7EA31943127B97E5F2DAAF5B54363",
+        "glyph_map": "06E3F0EC548E039D505B80D3230D8A6E264BBDD8CF2B77E88D882EC39F9E8C45",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "scene.slot32.dialogue_event",
+      "module_id": "scene.slot32",
+      "family": "dialogue_event",
+      "row_count": 437,
+      "glyph_count": 529,
+      "core_glyph_count": 2,
+      "family_specific_glyph_count": 527,
+      "expanded_bytes": 16928,
+      "packed_bytes": 9522,
+      "map_bytes_estimate": 2116,
+      "metric_bytes_estimate": 1058,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 12760,
+      "code_capacity": 940,
+      "code_margin": 411,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/scene.slot32.dialogue_event/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/scene.slot32.dialogue_event/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/scene.slot32.dialogue_event/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/scene.slot32.dialogue_event/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "3A3C836CE507ED37A77D3BD1631CB749B8FE63240989CEB5051B5F30BF98E7B9",
+        "packed18": "D36CC7FC9D705BC67EDB78503688C2410C6BFCF78A9328E4C200CD9D5D326A27",
+        "glyph_map": "C5A67466E1F346EB0892C5C93B89752E76AC3C20ABC323881D7FE175A4D764CD",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "scene.slot33.dialogue_event",
+      "module_id": "scene.slot33",
+      "family": "dialogue_event",
+      "row_count": 340,
+      "glyph_count": 397,
+      "core_glyph_count": 2,
+      "family_specific_glyph_count": 395,
+      "expanded_bytes": 12704,
+      "packed_bytes": 7146,
+      "map_bytes_estimate": 1588,
+      "metric_bytes_estimate": 794,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 9592,
+      "code_capacity": 940,
+      "code_margin": 543,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/scene.slot33.dialogue_event/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/scene.slot33.dialogue_event/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/scene.slot33.dialogue_event/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/scene.slot33.dialogue_event/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "57B5523F6EFC097C7BF02F598E0FC11C9CBEE5012D3CCFBB397F8E72CD2AB03E",
+        "packed18": "0722EE1BC6CDB43DC6FF251C1FBA5322B74DE3C91D8FA3C4ECEF982A571A99E9",
+        "glyph_map": "ECB76F8362789EEDD764CC0D5D17C320D302D8A5E2A71CF0196B5E23766A4D5B",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "scene.slot34.dialogue_event",
+      "module_id": "scene.slot34",
+      "family": "dialogue_event",
+      "row_count": 464,
+      "glyph_count": 484,
+      "core_glyph_count": 2,
+      "family_specific_glyph_count": 482,
+      "expanded_bytes": 15488,
+      "packed_bytes": 8712,
+      "map_bytes_estimate": 1936,
+      "metric_bytes_estimate": 968,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 11680,
+      "code_capacity": 940,
+      "code_margin": 456,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/scene.slot34.dialogue_event/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/scene.slot34.dialogue_event/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/scene.slot34.dialogue_event/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/scene.slot34.dialogue_event/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "723DA97365856CED2890875FBBCAD542976EBFFB5B20231E0F5E05DB6D641BC0",
+        "packed18": "8882D3DDCE3A58EE98A9939E99D3CAF519E82F3D5FA6263C262DB21D2BE79E2C",
+        "glyph_map": "74C8396CE8C7F44EC0C5918A388931DD1E121D51E4FC13A405069A72A3DC13A4",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "scene.slot35.dialogue_event",
+      "module_id": "scene.slot35",
+      "family": "dialogue_event",
+      "row_count": 352,
+      "glyph_count": 485,
+      "core_glyph_count": 2,
+      "family_specific_glyph_count": 483,
+      "expanded_bytes": 15520,
+      "packed_bytes": 8730,
+      "map_bytes_estimate": 1940,
+      "metric_bytes_estimate": 970,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 11704,
+      "code_capacity": 940,
+      "code_margin": 455,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/scene.slot35.dialogue_event/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/scene.slot35.dialogue_event/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/scene.slot35.dialogue_event/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/scene.slot35.dialogue_event/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "AFE8998032A3B55EE582A94D2851C28CC71A154953C70AA2427ED3712B913014",
+        "packed18": "AED0A98213ABA05FACC9EFCA61F5E3A49C75C4D2E178D860307834C75F249749",
+        "glyph_map": "474AF3FC902E8717F211ABB508F79FF67F26F66DF34A2EB7FAB1C8D96962A5A1",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "scene.slot36.dialogue_event",
+      "module_id": "scene.slot36",
+      "family": "dialogue_event",
+      "row_count": 204,
+      "glyph_count": 451,
+      "core_glyph_count": 2,
+      "family_specific_glyph_count": 449,
+      "expanded_bytes": 14432,
+      "packed_bytes": 8118,
+      "map_bytes_estimate": 1804,
+      "metric_bytes_estimate": 902,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 10888,
+      "code_capacity": 940,
+      "code_margin": 489,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/scene.slot36.dialogue_event/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/scene.slot36.dialogue_event/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/scene.slot36.dialogue_event/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/scene.slot36.dialogue_event/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "509C7948E42BF586CA7BA7F690AB02B56B4D33B693537D7C6A2D85067D152F06",
+        "packed18": "E5F2E76F5E6617E19F675E657CCAFB245D60E11385DA93E7742869E106129244",
+        "glyph_map": "342B0D9D417303AFFE89925767AE3A1D589807B531BF3D942A6479DB1708D937",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "scene.slot36.menu_memo_system",
+      "module_id": "scene.slot36",
+      "family": "menu_memo_system",
+      "row_count": 96,
+      "glyph_count": 157,
+      "core_glyph_count": 2,
+      "family_specific_glyph_count": 155,
+      "expanded_bytes": 5024,
+      "packed_bytes": 2826,
+      "map_bytes_estimate": 628,
+      "metric_bytes_estimate": 314,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 3832,
+      "code_capacity": 940,
+      "code_margin": 783,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/scene.slot36.menu_memo_system/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/scene.slot36.menu_memo_system/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/scene.slot36.menu_memo_system/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/scene.slot36.menu_memo_system/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "F4B97F77D6BBA229304A5D15EA4674AB6DF930A392593A15F850EA64B5D29137",
+        "packed18": "39F306174E6FBB7E734104CEDA46707A9FF7EA31943127B97E5F2DAAF5B54363",
+        "glyph_map": "06E3F0EC548E039D505B80D3230D8A6E264BBDD8CF2B77E88D882EC39F9E8C45",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "scene.slot37.dialogue_event",
+      "module_id": "scene.slot37",
+      "family": "dialogue_event",
+      "row_count": 400,
+      "glyph_count": 517,
+      "core_glyph_count": 2,
+      "family_specific_glyph_count": 515,
+      "expanded_bytes": 16544,
+      "packed_bytes": 9306,
+      "map_bytes_estimate": 2068,
+      "metric_bytes_estimate": 1034,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 12472,
+      "code_capacity": 940,
+      "code_margin": 423,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/scene.slot37.dialogue_event/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/scene.slot37.dialogue_event/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/scene.slot37.dialogue_event/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/scene.slot37.dialogue_event/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "DD4EBCF97BD327FE002B655A8C75409B027EBF66DFADA3AA3002D1CB218F08CD",
+        "packed18": "4505C4E1732A043120BFA291C8CCDBA404242CA684B50D380A119F17710A01D5",
+        "glyph_map": "BB2FB38EB1F5E0A72580DDA9F9BDAA3FB8FFFF2D34DD8B77BDE2BEAA66C7685C",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "scene.slot38.dialogue_event",
+      "module_id": "scene.slot38",
+      "family": "dialogue_event",
+      "row_count": 186,
+      "glyph_count": 197,
+      "core_glyph_count": 2,
+      "family_specific_glyph_count": 195,
+      "expanded_bytes": 6304,
+      "packed_bytes": 3546,
+      "map_bytes_estimate": 788,
+      "metric_bytes_estimate": 394,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 4792,
+      "code_capacity": 940,
+      "code_margin": 743,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/scene.slot38.dialogue_event/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/scene.slot38.dialogue_event/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/scene.slot38.dialogue_event/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/scene.slot38.dialogue_event/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "582D133A3845D366312C5BDB1B0C79A7D1572450FADC5B3760E43D7D10695089",
+        "packed18": "ED5D2015299591581259BA4F3FBD11ABF1D631334B069CF3002DB81E0A761435",
+        "glyph_map": "C4EC1B93103046C4EE22BEB1BFF0158BAABC170187BC22ADF8D6665F0F384E18",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "scene.slot38.menu_memo_system",
+      "module_id": "scene.slot38",
+      "family": "menu_memo_system",
+      "row_count": 96,
+      "glyph_count": 157,
+      "core_glyph_count": 2,
+      "family_specific_glyph_count": 155,
+      "expanded_bytes": 5024,
+      "packed_bytes": 2826,
+      "map_bytes_estimate": 628,
+      "metric_bytes_estimate": 314,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 3832,
+      "code_capacity": 940,
+      "code_margin": 783,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/scene.slot38.menu_memo_system/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/scene.slot38.menu_memo_system/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/scene.slot38.menu_memo_system/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/scene.slot38.menu_memo_system/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "F4B97F77D6BBA229304A5D15EA4674AB6DF930A392593A15F850EA64B5D29137",
+        "packed18": "39F306174E6FBB7E734104CEDA46707A9FF7EA31943127B97E5F2DAAF5B54363",
+        "glyph_map": "06E3F0EC548E039D505B80D3230D8A6E264BBDD8CF2B77E88D882EC39F9E8C45",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "scene.slot39.dialogue_event",
+      "module_id": "scene.slot39",
+      "family": "dialogue_event",
+      "row_count": 374,
+      "glyph_count": 483,
+      "core_glyph_count": 2,
+      "family_specific_glyph_count": 481,
+      "expanded_bytes": 15456,
+      "packed_bytes": 8694,
+      "map_bytes_estimate": 1932,
+      "metric_bytes_estimate": 966,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 11656,
+      "code_capacity": 940,
+      "code_margin": 457,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/scene.slot39.dialogue_event/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/scene.slot39.dialogue_event/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/scene.slot39.dialogue_event/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/scene.slot39.dialogue_event/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "CB8BDF3E4016882AF711840768E8D6FF232F4F850AA05829A645C9D4470EB73A",
+        "packed18": "C25EC4A5CD9136FB68F6BBA9B9817956AFFF79C8C898FF9A0B910522A325A6D4",
+        "glyph_map": "6A2E409492CD4E633E002805428F6D1FD961164750F98FEE70370AABA0CC3D2F",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "scene.slot40.dialogue_event",
+      "module_id": "scene.slot40",
+      "family": "dialogue_event",
+      "row_count": 427,
+      "glyph_count": 491,
+      "core_glyph_count": 2,
+      "family_specific_glyph_count": 489,
+      "expanded_bytes": 15712,
+      "packed_bytes": 8838,
+      "map_bytes_estimate": 1964,
+      "metric_bytes_estimate": 982,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 11848,
+      "code_capacity": 940,
+      "code_margin": 449,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/scene.slot40.dialogue_event/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/scene.slot40.dialogue_event/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/scene.slot40.dialogue_event/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/scene.slot40.dialogue_event/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "8D91820148B253A694B9C0B7AAB228801A383F4E04599E8513E447C011735A10",
+        "packed18": "66FCDA74ACDED6575A0CE8ECF4126BC98009253BDB1BE3CDC71DDEA375A7CE8A",
+        "glyph_map": "F98B288327C135D244879A9CFE93D30A5673C449D73AC83CD9B14DA558B49F0D",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "scene.slot41.dialogue_event",
+      "module_id": "scene.slot41",
+      "family": "dialogue_event",
+      "row_count": 222,
+      "glyph_count": 472,
+      "core_glyph_count": 2,
+      "family_specific_glyph_count": 470,
+      "expanded_bytes": 15104,
+      "packed_bytes": 8496,
+      "map_bytes_estimate": 1888,
+      "metric_bytes_estimate": 944,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 11392,
+      "code_capacity": 940,
+      "code_margin": 468,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/scene.slot41.dialogue_event/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/scene.slot41.dialogue_event/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/scene.slot41.dialogue_event/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/scene.slot41.dialogue_event/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "1C4CF98679BEED8A662A0AD55782AB421E1E32386532FBAB6281097D68B9EAC3",
+        "packed18": "64368161379433D3B9F2D1FEEC30AB1268EEA501A6D235E76C60EA7E4FE45CD5",
+        "glyph_map": "80424069BB5FF92AD6E0620F0417B46FF1E280450D82EC5A14530A251D20BDA3",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "scene.slot41.menu_memo_system",
+      "module_id": "scene.slot41",
+      "family": "menu_memo_system",
+      "row_count": 96,
+      "glyph_count": 157,
+      "core_glyph_count": 2,
+      "family_specific_glyph_count": 155,
+      "expanded_bytes": 5024,
+      "packed_bytes": 2826,
+      "map_bytes_estimate": 628,
+      "metric_bytes_estimate": 314,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 3832,
+      "code_capacity": 940,
+      "code_margin": 783,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/scene.slot41.menu_memo_system/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/scene.slot41.menu_memo_system/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/scene.slot41.menu_memo_system/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/scene.slot41.menu_memo_system/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "F4B97F77D6BBA229304A5D15EA4674AB6DF930A392593A15F850EA64B5D29137",
+        "packed18": "39F306174E6FBB7E734104CEDA46707A9FF7EA31943127B97E5F2DAAF5B54363",
+        "glyph_map": "06E3F0EC548E039D505B80D3230D8A6E264BBDD8CF2B77E88D882EC39F9E8C45",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "scene.slot42.dialogue_event",
+      "module_id": "scene.slot42",
+      "family": "dialogue_event",
+      "row_count": 365,
+      "glyph_count": 522,
+      "core_glyph_count": 2,
+      "family_specific_glyph_count": 520,
+      "expanded_bytes": 16704,
+      "packed_bytes": 9396,
+      "map_bytes_estimate": 2088,
+      "metric_bytes_estimate": 1044,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 12592,
+      "code_capacity": 940,
+      "code_margin": 418,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/scene.slot42.dialogue_event/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/scene.slot42.dialogue_event/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/scene.slot42.dialogue_event/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/scene.slot42.dialogue_event/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "D3F63A3A2D91EB8197FDAAE36B734CD6D29D632815FF5D353ADDEFF7419F233B",
+        "packed18": "A80A2653919C14EA90D0621F2C0C1935A500317C9EDA23A27862761093F75713",
+        "glyph_map": "426BE25E95DE0438F8019699D79BA2AF58CFE274C5F54DA461B98A0ACEBE3BB8",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "scene.slot43.dialogue_event",
+      "module_id": "scene.slot43",
+      "family": "dialogue_event",
+      "row_count": 321,
+      "glyph_count": 485,
+      "core_glyph_count": 2,
+      "family_specific_glyph_count": 483,
+      "expanded_bytes": 15520,
+      "packed_bytes": 8730,
+      "map_bytes_estimate": 1940,
+      "metric_bytes_estimate": 970,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 11704,
+      "code_capacity": 940,
+      "code_margin": 455,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/scene.slot43.dialogue_event/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/scene.slot43.dialogue_event/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/scene.slot43.dialogue_event/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/scene.slot43.dialogue_event/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "8D6754FB33048DEA0EDF2FE5E100EB6F5EAAB5A0B2939B3F47FE3D48C5A4F587",
+        "packed18": "F3C5EB0A5D8AC48090AA60A3BD2A3E95BA8CE4119215401CD8760A1BD1D4422A",
+        "glyph_map": "E686DDDE271476095F52FB57772216CE19E511C1C22384999D3503D8F7753E13",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "scene.slot44.dialogue_event",
+      "module_id": "scene.slot44",
+      "family": "dialogue_event",
+      "row_count": 329,
+      "glyph_count": 482,
+      "core_glyph_count": 2,
+      "family_specific_glyph_count": 480,
+      "expanded_bytes": 15424,
+      "packed_bytes": 8676,
+      "map_bytes_estimate": 1928,
+      "metric_bytes_estimate": 964,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 11632,
+      "code_capacity": 940,
+      "code_margin": 458,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/scene.slot44.dialogue_event/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/scene.slot44.dialogue_event/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/scene.slot44.dialogue_event/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/scene.slot44.dialogue_event/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "328CEC573AA943E48CBF9B80E4BC1519C7131CCD2DEDC9903A848F0018113677",
+        "packed18": "68622E7E343D832A85090074CB538E093A1BD1E7F1064DAC807514C952834411",
+        "glyph_map": "4772E0046BBC0010245A788D38B3DCA19F5B13C16FE373135A5E48D2EDFE81FB",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "scene.slot45.dialogue_event",
+      "module_id": "scene.slot45",
+      "family": "dialogue_event",
+      "row_count": 136,
+      "glyph_count": 440,
+      "core_glyph_count": 2,
+      "family_specific_glyph_count": 438,
+      "expanded_bytes": 14080,
+      "packed_bytes": 7920,
+      "map_bytes_estimate": 1760,
+      "metric_bytes_estimate": 880,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 10624,
+      "code_capacity": 940,
+      "code_margin": 500,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/scene.slot45.dialogue_event/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/scene.slot45.dialogue_event/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/scene.slot45.dialogue_event/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/scene.slot45.dialogue_event/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "51B46A128A1789ABF9F96300EE250CBD87176D1D86A5CE69E10FDA8F51522E8D",
+        "packed18": "4B7F700D33241458FBF2B2B1B0CFAE3F2966A047694EB39213513CFF443D1B0C",
+        "glyph_map": "F9F87C51F6BB12D26BADFB2340C293EF7E4DBB2CA4EF1BD1243BAAF4E259213F",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "scene.slot45.menu_memo_system",
+      "module_id": "scene.slot45",
+      "family": "menu_memo_system",
+      "row_count": 96,
+      "glyph_count": 157,
+      "core_glyph_count": 2,
+      "family_specific_glyph_count": 155,
+      "expanded_bytes": 5024,
+      "packed_bytes": 2826,
+      "map_bytes_estimate": 628,
+      "metric_bytes_estimate": 314,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 3832,
+      "code_capacity": 940,
+      "code_margin": 783,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/scene.slot45.menu_memo_system/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/scene.slot45.menu_memo_system/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/scene.slot45.menu_memo_system/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/scene.slot45.menu_memo_system/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "F4B97F77D6BBA229304A5D15EA4674AB6DF930A392593A15F850EA64B5D29137",
+        "packed18": "39F306174E6FBB7E734104CEDA46707A9FF7EA31943127B97E5F2DAAF5B54363",
+        "glyph_map": "06E3F0EC548E039D505B80D3230D8A6E264BBDD8CF2B77E88D882EC39F9E8C45",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "scene.slot46.dialogue_event",
+      "module_id": "scene.slot46",
+      "family": "dialogue_event",
+      "row_count": 315,
+      "glyph_count": 482,
+      "core_glyph_count": 2,
+      "family_specific_glyph_count": 480,
+      "expanded_bytes": 15424,
+      "packed_bytes": 8676,
+      "map_bytes_estimate": 1928,
+      "metric_bytes_estimate": 964,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 11632,
+      "code_capacity": 940,
+      "code_margin": 458,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/scene.slot46.dialogue_event/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/scene.slot46.dialogue_event/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/scene.slot46.dialogue_event/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/scene.slot46.dialogue_event/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "75DFE17281B0B7FABDA9BEFDF6408F26D72E2244453A96EACE4BCAB100F1B1FB",
+        "packed18": "C3EF89D5FD7ACDEA74479AD6A988EEB6092456497595201C568BB7715C355092",
+        "glyph_map": "8DEC232D5090B6CB1E11BEAE4F96DD58150F408437A58659D056DF8B317D9594",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "scene.slot47.dialogue_event",
+      "module_id": "scene.slot47",
+      "family": "dialogue_event",
+      "row_count": 550,
+      "glyph_count": 540,
+      "core_glyph_count": 2,
+      "family_specific_glyph_count": 538,
+      "expanded_bytes": 17280,
+      "packed_bytes": 9720,
+      "map_bytes_estimate": 2160,
+      "metric_bytes_estimate": 1080,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 13024,
+      "code_capacity": 940,
+      "code_margin": 400,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/scene.slot47.dialogue_event/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/scene.slot47.dialogue_event/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/scene.slot47.dialogue_event/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/scene.slot47.dialogue_event/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "0EF8E86910732E5AC476F5D7F29B1618D600D9E14A752294CC13C644F28ED0BC",
+        "packed18": "2619B9E6B03BD39AA540FC3686EE90344D46F4ABFF492DC242F30F7D71EC89F9",
+        "glyph_map": "8D979B78DA066CEA5CB8A2AE97BABF93A96C8B02BE519BF77290923DCB68E4B9",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "scene.slot48.dialogue_event",
+      "module_id": "scene.slot48",
+      "family": "dialogue_event",
+      "row_count": 333,
+      "glyph_count": 489,
+      "core_glyph_count": 2,
+      "family_specific_glyph_count": 487,
+      "expanded_bytes": 15648,
+      "packed_bytes": 8802,
+      "map_bytes_estimate": 1956,
+      "metric_bytes_estimate": 978,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 11800,
+      "code_capacity": 940,
+      "code_margin": 451,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/scene.slot48.dialogue_event/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/scene.slot48.dialogue_event/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/scene.slot48.dialogue_event/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/scene.slot48.dialogue_event/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "C6AAC6A05A31420E2AF231B198069FD18013B52BB6623ABFBBAFA6840AD4C225",
+        "packed18": "8F17FB33E82911AD6548080D563A8149866214804671886C9A5AFA59A72949A8",
+        "glyph_map": "8045930C587CD835D2B9349754A31C8E63A9BF6B0F759A5FF57848119A844F68",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "scene.slot49.dialogue_event",
+      "module_id": "scene.slot49",
+      "family": "dialogue_event",
+      "row_count": 336,
+      "glyph_count": 508,
+      "core_glyph_count": 2,
+      "family_specific_glyph_count": 506,
+      "expanded_bytes": 16256,
+      "packed_bytes": 9144,
+      "map_bytes_estimate": 2032,
+      "metric_bytes_estimate": 1016,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 12256,
+      "code_capacity": 940,
+      "code_margin": 432,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/scene.slot49.dialogue_event/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/scene.slot49.dialogue_event/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/scene.slot49.dialogue_event/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/scene.slot49.dialogue_event/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "D69FF5289D57142D725289556F1772713AD3B716EBA38B302F1205369D572EEE",
+        "packed18": "D318660A2E2D0B6CA06B3832B47BC87AF6D0462F44F85289A03CDBAF377895FF",
+        "glyph_map": "10F40FB45C4B8C2342E91BC110B0B6D4C76672A0CF25F7D7A0B11BAC68D8FB3D",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "scene.slot50.dialogue_event",
+      "module_id": "scene.slot50",
+      "family": "dialogue_event",
+      "row_count": 154,
+      "glyph_count": 475,
+      "core_glyph_count": 2,
+      "family_specific_glyph_count": 473,
+      "expanded_bytes": 15200,
+      "packed_bytes": 8550,
+      "map_bytes_estimate": 1900,
+      "metric_bytes_estimate": 950,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 11464,
+      "code_capacity": 940,
+      "code_margin": 465,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/scene.slot50.dialogue_event/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/scene.slot50.dialogue_event/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/scene.slot50.dialogue_event/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/scene.slot50.dialogue_event/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "A0CC94CA4C422B541C88F4583B9CFFDD691DD94569611CE5D9B9CF291933F61A",
+        "packed18": "482D6C38086CF915D129D144C2BA0C3B49BB4DA501CF63DAB340A6631335507C",
+        "glyph_map": "4CD90298AA25D9D0B0BE67C0E0DF1261AFD4430DED18E17F00979C088D4D66E2",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "scene.slot50.menu_memo_system",
+      "module_id": "scene.slot50",
+      "family": "menu_memo_system",
+      "row_count": 96,
+      "glyph_count": 157,
+      "core_glyph_count": 2,
+      "family_specific_glyph_count": 155,
+      "expanded_bytes": 5024,
+      "packed_bytes": 2826,
+      "map_bytes_estimate": 628,
+      "metric_bytes_estimate": 314,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 3832,
+      "code_capacity": 940,
+      "code_margin": 783,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/scene.slot50.menu_memo_system/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/scene.slot50.menu_memo_system/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/scene.slot50.menu_memo_system/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/scene.slot50.menu_memo_system/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "F4B97F77D6BBA229304A5D15EA4674AB6DF930A392593A15F850EA64B5D29137",
+        "packed18": "39F306174E6FBB7E734104CEDA46707A9FF7EA31943127B97E5F2DAAF5B54363",
+        "glyph_map": "06E3F0EC548E039D505B80D3230D8A6E264BBDD8CF2B77E88D882EC39F9E8C45",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "scene.slot51.dialogue_event",
+      "module_id": "scene.slot51",
+      "family": "dialogue_event",
+      "row_count": 590,
+      "glyph_count": 563,
+      "core_glyph_count": 2,
+      "family_specific_glyph_count": 561,
+      "expanded_bytes": 18016,
+      "packed_bytes": 10134,
+      "map_bytes_estimate": 2252,
+      "metric_bytes_estimate": 1126,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 13576,
+      "code_capacity": 940,
+      "code_margin": 377,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/scene.slot51.dialogue_event/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/scene.slot51.dialogue_event/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/scene.slot51.dialogue_event/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/scene.slot51.dialogue_event/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "DE31F83D2457D6F0CE35C17F8058287B6C67BA5B4AF3D2A9971A96C7CB606117",
+        "packed18": "7FB72A57D7653AB2278F30BAB1A47BAAE027B1BED0466F64853070EA882ACACE",
+        "glyph_map": "FDBA9008D3F581E6F3AD7A15E699BFE2E6DF4F9DC2FC8A497008BEB95B8E1F48",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "scene.slot52.dialogue_event",
+      "module_id": "scene.slot52",
+      "family": "dialogue_event",
+      "row_count": 373,
+      "glyph_count": 495,
+      "core_glyph_count": 2,
+      "family_specific_glyph_count": 493,
+      "expanded_bytes": 15840,
+      "packed_bytes": 8910,
+      "map_bytes_estimate": 1980,
+      "metric_bytes_estimate": 990,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 11944,
+      "code_capacity": 940,
+      "code_margin": 445,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/scene.slot52.dialogue_event/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/scene.slot52.dialogue_event/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/scene.slot52.dialogue_event/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/scene.slot52.dialogue_event/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "298E0C68FC255308D42BCC2FBCDC70759D83F4367CD9A3BD1C6B3B058CA39A7D",
+        "packed18": "B8A5920C1D33E64192A2F99022F91502C2F11E90063DFA81DCDDFC8BEE6C667B",
+        "glyph_map": "48B5F0C85F0AE15233241E02C3E2820B8A9AA4161D4DC8BF3E1CA180E4C147DB",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "scene.slot53.dialogue_event",
+      "module_id": "scene.slot53",
+      "family": "dialogue_event",
+      "row_count": 316,
+      "glyph_count": 493,
+      "core_glyph_count": 2,
+      "family_specific_glyph_count": 491,
+      "expanded_bytes": 15776,
+      "packed_bytes": 8874,
+      "map_bytes_estimate": 1972,
+      "metric_bytes_estimate": 986,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 11896,
+      "code_capacity": 940,
+      "code_margin": 447,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/scene.slot53.dialogue_event/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/scene.slot53.dialogue_event/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/scene.slot53.dialogue_event/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/scene.slot53.dialogue_event/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "9A8EED771A37A28B1C3A17F7B8AEFB79B57FC77D23A2336F2D29DEEF4951159D",
+        "packed18": "A46F6F05632998461A8FC861EB41E40AD3CC723E5C0C0FC3031DF1E1210443F7",
+        "glyph_map": "2917D444DDBA7B55BDD6257AB8A81B5BFDE143DDB322220E75B60B16BC08E49A",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "scene.slot54.dialogue_event",
+      "module_id": "scene.slot54",
+      "family": "dialogue_event",
+      "row_count": 323,
+      "glyph_count": 510,
+      "core_glyph_count": 2,
+      "family_specific_glyph_count": 508,
+      "expanded_bytes": 16320,
+      "packed_bytes": 9180,
+      "map_bytes_estimate": 2040,
+      "metric_bytes_estimate": 1020,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 12304,
+      "code_capacity": 940,
+      "code_margin": 430,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/scene.slot54.dialogue_event/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/scene.slot54.dialogue_event/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/scene.slot54.dialogue_event/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/scene.slot54.dialogue_event/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "8E666A7831B915C5F3BFCC418465A958285996F6FFB96A75CDAFAB6562A6352F",
+        "packed18": "E801802949AD5CC56176EF5FBB95F7DC9D71B6773FFAFB7F85DD80E81553E111",
+        "glyph_map": "642277CCAEC27A54639CD60065D5CB2D7F675BF5C68072C662ED2E618D3CB4E3",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "scene.slot54.menu_memo_system",
+      "module_id": "scene.slot54",
+      "family": "menu_memo_system",
+      "row_count": 7,
+      "glyph_count": 15,
+      "core_glyph_count": 1,
+      "family_specific_glyph_count": 14,
+      "expanded_bytes": 480,
+      "packed_bytes": 270,
+      "map_bytes_estimate": 60,
+      "metric_bytes_estimate": 30,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 424,
+      "code_capacity": 940,
+      "code_margin": 925,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/scene.slot54.menu_memo_system/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/scene.slot54.menu_memo_system/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/scene.slot54.menu_memo_system/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/scene.slot54.menu_memo_system/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "B00F4F377E4681218F8490AE1B05302F9FEF66F54C38427FB1023E01EF37FCEF",
+        "packed18": "FA8536E0000BCB60E90E2085654F683AB96C467E29DFF1A5B126FC5858BE7FBE",
+        "glyph_map": "A69C141D5509631214FF6D31D984F235080C0E9382282CDF987D34C8AC2CBAAC",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "shared.battle.battle",
+      "module_id": "shared.battle",
+      "family": "battle",
+      "row_count": 2,
+      "glyph_count": 8,
+      "core_glyph_count": 2,
+      "family_specific_glyph_count": 6,
+      "expanded_bytes": 256,
+      "packed_bytes": 144,
+      "map_bytes_estimate": 32,
+      "metric_bytes_estimate": 16,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 256,
+      "code_capacity": 940,
+      "code_margin": 932,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/shared.battle.battle/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/shared.battle.battle/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/shared.battle.battle/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/shared.battle.battle/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "48E22FDA6DB222E7BC67E06B31D69390591B1AFD0024F587D03B95677F63B962",
+        "packed18": "0A108BDB1281C16E4C2515458C8EC755B091CD28EB3500EDFDF27EFF55D594DB",
+        "glyph_map": "6C3DF858DDD5C3D44A8DE2E0D361F947E8864416F606D3124F4FE29EE4F4BB83",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "shared.battle.menu_memo_system",
+      "module_id": "shared.battle",
+      "family": "menu_memo_system",
+      "row_count": 1,
+      "glyph_count": 2,
+      "core_glyph_count": 0,
+      "family_specific_glyph_count": 2,
+      "expanded_bytes": 64,
+      "packed_bytes": 36,
+      "map_bytes_estimate": 8,
+      "metric_bytes_estimate": 4,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 112,
+      "code_capacity": 940,
+      "code_margin": 938,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/shared.battle.menu_memo_system/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/shared.battle.menu_memo_system/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/shared.battle.menu_memo_system/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/shared.battle.menu_memo_system/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "4453BBE8E07CA0B3D692FC18D86639746AD95ED9B00D1CF2F9C17E93706911A3",
+        "packed18": "66F6709918E476D0AFC7062F86C1C501E50FA0004C887893B3F37DD9DC8CD3C9",
+        "glyph_map": "A63EC34B55CF6F543993D240B1753ED13F8BE4CC35F5ABF31EB35C800C4EB172",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "shared.boot.boot_opening",
+      "module_id": "shared.boot",
+      "family": "boot_opening",
+      "row_count": 13,
+      "glyph_count": 8,
+      "core_glyph_count": 0,
+      "family_specific_glyph_count": 8,
+      "expanded_bytes": 256,
+      "packed_bytes": 144,
+      "map_bytes_estimate": 32,
+      "metric_bytes_estimate": 16,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 256,
+      "code_capacity": 940,
+      "code_margin": 932,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/shared.boot.boot_opening/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/shared.boot.boot_opening/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/shared.boot.boot_opening/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/shared.boot.boot_opening/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "E333622A1801785B5E3C2F57C23101378130C696981C0064334B17CA035277F7",
+        "packed18": "422895CDA667A173E9B4EE3DC8D8328F73B5FAC70DB683D4298BFA2D043AB141",
+        "glyph_map": "8F3A93978E5157630EA9E8F4A19674D5067E1E0DF035B36C34D1B303C66F2158",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "shared.card.card",
+      "module_id": "shared.card",
+      "family": "card",
+      "row_count": 18,
+      "glyph_count": 130,
+      "core_glyph_count": 2,
+      "family_specific_glyph_count": 128,
+      "expanded_bytes": 4160,
+      "packed_bytes": 2340,
+      "map_bytes_estimate": 520,
+      "metric_bytes_estimate": 260,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 3184,
+      "code_capacity": 940,
+      "code_margin": 810,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/shared.card.card/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/shared.card.card/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/shared.card.card/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/shared.card.card/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "01470924338FC67A5700CFD0FE4ED2CF01B0AC1A26295F03E2E092154F3AE6E5",
+        "packed18": "D52B27BEF23E67845F52AF0BB45E7294FC6E420598EB18F6795CF834C624893D",
+        "glyph_map": "EF919387C9E74E0B52F44D7CBC8D7D2B5BF62512EDA3D8628A730BF69C6F52AD",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "shared.system.dialogue_event",
+      "module_id": "shared.system",
+      "family": "dialogue_event",
+      "row_count": 3,
+      "glyph_count": 17,
+      "core_glyph_count": 0,
+      "family_specific_glyph_count": 17,
+      "expanded_bytes": 544,
+      "packed_bytes": 306,
+      "map_bytes_estimate": 68,
+      "metric_bytes_estimate": 34,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 472,
+      "code_capacity": 940,
+      "code_margin": 923,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/shared.system.dialogue_event/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/shared.system.dialogue_event/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/shared.system.dialogue_event/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/shared.system.dialogue_event/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "4B55A5FAFC9C91885BE4B19F3719D484280850CF99A0EE0D305C7AC523DED027",
+        "packed18": "5DF4D7E0524213EA63268E0E2EF87E7A0ADCAE96FA05EDDA7A8FD7D37ABECDA5",
+        "glyph_map": "42C10D791961C2A745D2367873E9E122A20BCD91A72DB7E0C23CB80E700986FD",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "shared.system.menu_memo_system",
+      "module_id": "shared.system",
+      "family": "menu_memo_system",
+      "row_count": 310,
+      "glyph_count": 355,
+      "core_glyph_count": 2,
+      "family_specific_glyph_count": 353,
+      "expanded_bytes": 11360,
+      "packed_bytes": 6390,
+      "map_bytes_estimate": 1420,
+      "metric_bytes_estimate": 710,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 8584,
+      "code_capacity": 940,
+      "code_margin": 585,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/shared.system.menu_memo_system/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/shared.system.menu_memo_system/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/shared.system.menu_memo_system/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/shared.system.menu_memo_system/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "F04045499C69BDDB37A31BAB2D2B50E5B4B812FCF2DFC1FB95B77B88C531498A",
+        "packed18": "D02FD3740E580991527B2F5046BC3D99BB16F6770D3415EB44D8C2D011377F76",
+        "glyph_map": "F110346F5E6A76805E2AC48C4EA4A4143F98E5DE4B9B201B921DB348C3130E97",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "shared.visual_event.dialogue_event",
+      "module_id": "shared.visual_event",
+      "family": "dialogue_event",
+      "row_count": 188,
+      "glyph_count": 178,
+      "core_glyph_count": 2,
+      "family_specific_glyph_count": 176,
+      "expanded_bytes": 5696,
+      "packed_bytes": 3204,
+      "map_bytes_estimate": 712,
+      "metric_bytes_estimate": 356,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 4336,
+      "code_capacity": 940,
+      "code_margin": 762,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/shared.visual_event.dialogue_event/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/shared.visual_event.dialogue_event/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/shared.visual_event.dialogue_event/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/shared.visual_event.dialogue_event/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "EEE0311CFC96D9B19A6AC42F73E5A758E0560E61FC0BCBA5FEACE59DADD92B51",
+        "packed18": "FC9CF4A521ABD5C13FCF180E0306453967FEDC9CE0B704BF42E4F0FA65F3F2B4",
+        "glyph_map": "DAAF2A1997967F7A1E20642B5E480874F1BF014C30C25F89D9FE0B73D22E43D4",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "shared.visual_event.menu_memo_system",
+      "module_id": "shared.visual_event",
+      "family": "menu_memo_system",
+      "row_count": 15,
+      "glyph_count": 17,
+      "core_glyph_count": 1,
+      "family_specific_glyph_count": 16,
+      "expanded_bytes": 544,
+      "packed_bytes": 306,
+      "map_bytes_estimate": 68,
+      "metric_bytes_estimate": 34,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 472,
+      "code_capacity": 940,
+      "code_margin": 923,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/shared.visual_event.menu_memo_system/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/shared.visual_event.menu_memo_system/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/shared.visual_event.menu_memo_system/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/shared.visual_event.menu_memo_system/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "F899A0F50835964273534BAE5102C88FBE29270A5ECA5AA2DFD6E5850287F621",
+        "packed18": "D95BFE6162FF56AAEFBE2F03A4D982C9EECD743A9A361340E53119FB8AE991E4",
+        "glyph_map": "8EA8C14BE259D80C5E503EFCC8439100C999A379E8311E618219C8613AFAB035",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    },
+    {
+      "package_id": "shared.visual_event.visual_event_portrait",
+      "module_id": "shared.visual_event",
+      "family": "visual_event_portrait",
+      "row_count": 96,
+      "glyph_count": 93,
+      "core_glyph_count": 2,
+      "family_specific_glyph_count": 91,
+      "expanded_bytes": 2976,
+      "packed_bytes": 1674,
+      "map_bytes_estimate": 372,
+      "metric_bytes_estimate": 186,
+      "header_bytes_estimate": 64,
+      "estimated_packed_package_bytes": 2296,
+      "code_capacity": 940,
+      "code_margin": 847,
+      "paths": {
+        "expanded32": "module_relink/z7_glyph_packages/packages/shared.visual_event.visual_event_portrait/glyphs_expanded32.bin",
+        "packed18": "module_relink/z7_glyph_packages/packages/shared.visual_event.visual_event_portrait/glyphs_packed18.bin",
+        "glyph_map": "module_relink/z7_glyph_packages/packages/shared.visual_event.visual_event_portrait/glyph_map.csv",
+        "fallback": "module_relink/z7_glyph_packages/packages/shared.visual_event.visual_event_portrait/fallback.json"
+      },
+      "sha256": {
+        "expanded32": "9967A03E38D2B12B9157FB2FBEAD369FCE2004F50B7445BDCA7E315B5266AE6D",
+        "packed18": "370E5E3D6D761C3CD8EB68B24645824963A9649DE6C7C44809C9CCB5D99FC0A9",
+        "glyph_map": "81A45504A33136DA611D7241DA6C5FF8E9B7C5C6AE1BDB708A40C6CA4BF04B1E",
+        "fallback": "AE52B60AD1F3730D37AA316E51161600436909EB9CF3B35BCD60EE2049DFDB4A"
+      }
+    }
+  ],
+  "next_gate": "Z8 must bind each generated package to a proven loader-owned extension and relocate text without relying on cross-family RAM."
+}

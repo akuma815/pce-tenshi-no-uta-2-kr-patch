@@ -1,0 +1,185 @@
+{
+  "format": "KAP1",
+  "version": 1,
+  "physical_grid": 33,
+  "lba": 3330,
+  "logical_entries": [
+    33
+  ],
+  "original_load_sectors": 83,
+  "package_area_offset": 169984,
+  "package_bytes": 1787,
+  "needed_sectors": 84,
+  "unique_strings": 16,
+  "source_redirects": {
+    "06a3e56": {
+      "package_relative_offset": 1744,
+      "area_relative_offset": 171728,
+      "length": 15
+    },
+    "06a3ec0": {
+      "package_relative_offset": 1773,
+      "area_relative_offset": 171757,
+      "length": 14
+    },
+    "06aa1a2": {
+      "package_relative_offset": 1311,
+      "area_relative_offset": 171295,
+      "length": 108
+    },
+    "06aa21d": {
+      "package_relative_offset": 1759,
+      "area_relative_offset": 171743,
+      "length": 14
+    },
+    "06aa22e": {
+      "package_relative_offset": 1621,
+      "area_relative_offset": 171605,
+      "length": 26
+    },
+    "06aa24a": {
+      "package_relative_offset": 1759,
+      "area_relative_offset": 171743,
+      "length": 14
+    },
+    "06aa25b": {
+      "package_relative_offset": 1621,
+      "area_relative_offset": 171605,
+      "length": 26
+    },
+    "06aa277": {
+      "package_relative_offset": 1759,
+      "area_relative_offset": 171743,
+      "length": 14
+    },
+    "06aa288": {
+      "package_relative_offset": 1621,
+      "area_relative_offset": 171605,
+      "length": 26
+    },
+    "06aa2a1": {
+      "package_relative_offset": 1568,
+      "area_relative_offset": 171552,
+      "length": 27
+    },
+    "06aa2c3": {
+      "package_relative_offset": 1595,
+      "area_relative_offset": 171579,
+      "length": 26
+    },
+    "06aa2dd": {
+      "package_relative_offset": 1721,
+      "area_relative_offset": 171705,
+      "length": 23
+    },
+    "06aa2f2": {
+      "package_relative_offset": 1568,
+      "area_relative_offset": 171552,
+      "length": 27
+    },
+    "06aa30a": {
+      "package_relative_offset": 1697,
+      "area_relative_offset": 171681,
+      "length": 24
+    },
+    "06aa329": {
+      "package_relative_offset": 1721,
+      "area_relative_offset": 171705,
+      "length": 23
+    },
+    "06aa33e": {
+      "package_relative_offset": 1568,
+      "area_relative_offset": 171552,
+      "length": 27
+    },
+    "06aa363": {
+      "package_relative_offset": 1499,
+      "area_relative_offset": 171483,
+      "length": 41
+    },
+    "06aa381": {
+      "package_relative_offset": 1419,
+      "area_relative_offset": 171403,
+      "length": 80
+    },
+    "06aa3c2": {
+      "package_relative_offset": 1721,
+      "area_relative_offset": 171705,
+      "length": 23
+    },
+    "06aa3d7": {
+      "package_relative_offset": 1568,
+      "area_relative_offset": 171552,
+      "length": 27
+    },
+    "06aa3f9": {
+      "package_relative_offset": 1672,
+      "area_relative_offset": 171656,
+      "length": 25
+    },
+    "06aa416": {
+      "package_relative_offset": 1721,
+      "area_relative_offset": 171705,
+      "length": 23
+    },
+    "06aa42b": {
+      "package_relative_offset": 1568,
+      "area_relative_offset": 171552,
+      "length": 27
+    },
+    "06aa44d": {
+      "package_relative_offset": 1595,
+      "area_relative_offset": 171579,
+      "length": 26
+    },
+    "06aa467": {
+      "package_relative_offset": 1721,
+      "area_relative_offset": 171705,
+      "length": 23
+    },
+    "06aa47c": {
+      "package_relative_offset": 1568,
+      "area_relative_offset": 171552,
+      "length": 27
+    },
+    "06aa494": {
+      "package_relative_offset": 1647,
+      "area_relative_offset": 171631,
+      "length": 25
+    },
+    "06aa4b5": {
+      "package_relative_offset": 1721,
+      "area_relative_offset": 171705,
+      "length": 23
+    },
+    "06aa4ca": {
+      "package_relative_offset": 1568,
+      "area_relative_offset": 171552,
+      "length": 27
+    },
+    "06aa4ec": {
+      "package_relative_offset": 1540,
+      "area_relative_offset": 171524,
+      "length": 28
+    },
+    "06aa508": {
+      "package_relative_offset": 1721,
+      "area_relative_offset": 171705,
+      "length": 23
+    },
+    "06aa54a": {
+      "package_relative_offset": 32,
+      "area_relative_offset": 170016,
+      "length": 774
+    },
+    "06aa78a": {
+      "package_relative_offset": 806,
+      "area_relative_offset": 170790,
+      "length": 505
+    }
+  },
+  "source_live_range": [
+    6819840,
+    6989824
+  ]
+}

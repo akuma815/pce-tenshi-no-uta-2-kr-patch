@@ -1,0 +1,84 @@
+{
+  "format": "TASK7-TOWER-WORKRAM-TRAMPOLINE-POC",
+  "version": 1,
+  "task": 7,
+  "status": "RUNTIME_PASS",
+  "common_verdict": {
+    "path": "translation/task7_work_ram_common_verdict.json",
+    "sha256": "BE80E4F9E181065B06C954143A7BB24C2EF12398A7F85D558667EA833B437534"
+  },
+  "control_flow": {
+    "first_call": "JSR 5230; install/enter 2B0F",
+    "later_calls": "JSR 2B0F; JMP F124",
+    "custom_text": false,
+    "custom_glyphs": false,
+    "mpr_changes": 0
+  },
+  "loader": {
+    "runtime_address": "0x5230",
+    "bytes": 28,
+    "hex": "A90F8D7F96A92B8D8096A94C8D0F2BA9248D102BA9F18D112B4C24F1"
+  },
+  "work_ram": {
+    "physical_bank": "F8",
+    "runtime_address": "0x2B0F",
+    "bytes": 3,
+    "hex": "4C24F1"
+  },
+  "expected_writes": [
+    {
+      "id": "field-getfnt-first-call-tower-loader",
+      "iso_offset": "0x8667E",
+      "physical_bin_offset": "0x812A6E",
+      "length": 3,
+      "expected_hex": "2060E0",
+      "replacement_hex": "203052",
+      "reason": "enter one-shot loader"
+    },
+    {
+      "id": "field-tower-common-workram-installer",
+      "iso_offset": "0x82230",
+      "physical_bin_offset": "0x80E620",
+      "length": 28,
+      "expected_hex": "00000000000000000000000000000000000000000000000000000000",
+      "replacement_hex": "A90F8D7F96A92B8D8096A94C8D0F2BA9248D102BA9F18D112B4C24F1",
+      "reason": "install JMP F124 at common-route Work RAM 2B0F and rewrite the live call"
+    }
+  ],
+  "diff_audit": {
+    "declared_span_count": 2,
+    "actual_changed_bytes": 30,
+    "actual_changed_ranges": [
+      {
+        "physical_start": "0x80E620",
+        "physical_end_exclusive": "0x80E63C",
+        "changed_bytes": 28
+      },
+      {
+        "physical_start": "0x812A6F",
+        "physical_end_exclusive": "0x812A71",
+        "changed_bytes": 2
+      }
+    ],
+    "undeclared_changes": 0,
+    "file_size_preserved": true
+  },
+  "output": {
+    "bin": "Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_task7_tower_workram_trampoline_poc.bin",
+    "bin_size": 523184384,
+    "bin_sha256": "620AA305F30DFB864F1D986BF48627311AF604AFEAFEA51E7A3B4DD7BC571DF3",
+    "cue": "Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_task7_tower_workram_trampoline_poc.cue",
+    "cue_sha256": "64FA81BD12AAA26F6586F1084EAB5C52875301F255928D506AA559C54C990E49"
+  },
+  "runtime": {
+    "status": "PASS",
+    "confirmed_by_user": "2026-07-18",
+    "observation": "Dialogue, Memo, battle Attack and tower progression past the former freeze point completed normally.",
+    "pass_criteria": [
+      "dialogue",
+      "Memo",
+      "battle Attack",
+      "tower entry and progression past the former freeze point"
+    ]
+  }
+}

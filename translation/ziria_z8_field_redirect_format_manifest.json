@@ -1,0 +1,89 @@
+{
+  "format": "ZIRIA-Z8-FIELD-REDIRECT-FORMAT-MANIFEST",
+  "version": 1,
+  "task": "Z8.7-field-redirect-wire-format",
+  "status": "WIRE_FORMAT_PASS_LOADER_ALLOCATION_AND_ABI_OPEN",
+  "mutation_scope": "analysis-only generated inputs; master_text.csv and CUE/BIN/ISO remain unmodified",
+  "inputs": {
+    "source_index": {
+      "path": "translation/ziria_z8_field_source_key_index.tsv",
+      "sha256": "A690E2E8F11E09032FD757C26916F828C5F03778FDE4A25A841F55D0C48D3869"
+    },
+    "boundary_manifest": {
+      "path": "translation/ziria_z8_field_boundary_repair_manifest.json",
+      "sha256": "24E0C26AE6FB13AB2C9EFCBA39BF72BB3FED94E79980C599FE49C5B9570CC47C"
+    },
+    "track02_iso": {
+      "path": "extracted_bin/Track02_data.iso",
+      "sha256": "7566073A2AA1F48E7B39ED2B34277D9935FADE8A3FAD7DCC72C21276E2632AF9"
+    },
+    "font": {
+      "path": "font/Galmuri8x8.ttf",
+      "sha256": "97BA3DCC2CD5E5B2927E4E6BA9558A48A2A194A852C420DF160654D66BBF2A05"
+    }
+  },
+  "population": {
+    "records": 235,
+    "unique_source_keys": 235,
+    "reference_kinds": {
+      "INLINE_OPCODE_02": 217,
+      "INLINE_OPCODE_03": 10,
+      "INLINE_OPCODE_14": 1,
+      "MEMO_POINTER_TABLE": 7
+    },
+    "boundary_status": {
+      "EXACT": 232,
+      "REPAIRED": 3
+    }
+  },
+  "wire": {
+    "header_bytes": 32,
+    "record_bytes": 12,
+    "index_bytes": 2852,
+    "text_bytes": 14640,
+    "text_padding_bytes": 43,
+    "unique_translated_strings": 191,
+    "glyph_count": 520,
+    "glyph_code_capacity": 940,
+    "glyph_code_margin": 420,
+    "packed_glyph_bytes": 9360,
+    "bank_crossings": 0
+  },
+  "outputs": {
+    "index": {
+      "path": "module_relink/z8_field_redirect_format/field_dialogue_index.bin",
+      "sha256": "897DBE42BE051400C7BEA870EDACBD4BD4693C5F0FD53BA8C553DC8DE56DFFEB",
+      "bytes": 2852
+    },
+    "text": {
+      "path": "module_relink/z8_field_redirect_format/field_dialogue_text.bin",
+      "sha256": "DBB199FA247AE9C967EC57436943EE81C0449B88CA3947D54D1BE4457A8E575F",
+      "bytes": 14640
+    },
+    "glyphs_packed18": {
+      "path": "module_relink/z8_field_redirect_format/field_dialogue_glyphs_packed18.bin",
+      "sha256": "7C0ECCBE0C8AAF94714536247618D4A4A35FA1E0C92DBB1837CEAF476FB00EB0",
+      "bytes": 9360
+    },
+    "glyph_map": {
+      "path": "module_relink/z8_field_redirect_format/field_dialogue_glyph_map.csv",
+      "sha256": "C4D81CDAA9FA1DF28F009ACA7A77606F40DCCBA704AB62507288ED36AADC0E6E",
+      "bytes": 13991
+    },
+    "records": {
+      "path": "module_relink/z8_field_redirect_format/field_dialogue_records.tsv",
+      "sha256": "C37E864CE2D0535186BE5DB66A140938CD6AE89DCDCD499FA78A0FFAEC62553F",
+      "bytes": 38037
+    },
+    "format_spec": {
+      "path": "module_relink/z8_field_redirect_format/field_dialogue_format.json",
+      "sha256": "EBB07CEEE44D2C0A74F3BD08E461BD3104EC54F11BCF5205DCC60DCEE85246B4",
+      "bytes": 2750
+    }
+  },
+  "blocked": {
+    "disc_build": true,
+    "reason": "wire format is closed, but loader-owned allocation and renderer ABI are not yet proven"
+  },
+  "next_gate": "prove a loader-owned allocation plus field renderer cursor/continuation ABI, then bind this unchanged wire format through explicit relocations"
+}

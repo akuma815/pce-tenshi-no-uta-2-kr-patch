@@ -1,0 +1,31 @@
+{
+  "format": "TASK5-5230-CODEBANK-MULTIGLYPH-POC-RUNTIME",
+  "version": 1,
+  "task": 5,
+  "date": "2026-07-17",
+  "status": "PASS",
+  "decision": "FIELD_EIGHT_GLYPH_AND_MEMO_GATE_PASS",
+  "baseline": {
+    "cue": "Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_task5_5230_codebank_multiglyph_poc.cue",
+    "bin_sha256": "090D2C19928EC8F1BA742D0943F4ADB468441ADB27493B6D864958530F64422D"
+  },
+  "evidence": {
+    "user_observation": "한글 및 메모 정상 진입 돼",
+    "screenshot": null,
+    "trace": null
+  },
+  "observations": {
+    "hangul": "PASS: the eight-glyph Korean probe displays normally",
+    "memo": "PASS: the field Memo menu opens normally",
+    "architecture": "hook code executes at MPR2:5230; glyph bytes at MPR6:C800 remain data-only"
+  },
+  "approved_scope": "renderer.field_main first-dialogue eight-glyph display, BIOS fallback continuity, and Memo entry in the observed session",
+  "not_proved": [
+    "all field scenes and field re-entry",
+    "twenty scene transitions",
+    "battle, menu, event and other renderers",
+    "full extracted-text reinsertion",
+    "long-session absence of EXEC BRK"
+  ],
+  "conclusion": "The revised split code/data architecture resolves the reproducible Memo hang while preserving Korean output. Task 5's observed functional gate passes; broader stability remains a later QA requirement."
+}

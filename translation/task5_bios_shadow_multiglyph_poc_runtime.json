@@ -1,0 +1,30 @@
+{
+  "format": "TASK5-BIOS-SHADOW-MULTIGLYPH-POC-RUNTIME",
+  "version": 1,
+  "task": 5,
+  "date": "2026-07-17",
+  "status": "FAIL",
+  "decision": "BIOS_SHADOW_SIDE_EFFECT_HYPOTHESIS_REJECTED",
+  "baseline": {
+    "cue": "Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_task5_bios_shadow_multiglyph_poc.cue",
+    "bin_sha256": "9F28EAF4E9C860712617199999D26AD7B5D41ACF24418634360C9CAE61666BF0"
+  },
+  "evidence": {
+    "screenshots": [
+      "C:/Users/akuma/AppData/Local/Temp/codex-clipboard-4fab6dbd-07e2-4213-861a-7c302bf718f9.png",
+      "C:/Users/akuma/AppData/Local/Temp/codex-clipboard-82417b53-cd85-4d45-a333-5d0018280a86.png"
+    ],
+    "trace": "H:/BizHawk/Tools/Tenshi_no_Uta_II-Datenshi_no_Sentaku_JAP_task5_c800_isolation_probe.log",
+    "trace_last_write": "2026-07-17T20:17:31+09:00",
+    "trace_lines": 10002
+  },
+  "observations": {
+    "memo_entry": "FAIL: EmuHawk becomes unresponsive",
+    "overlay": "MPR5=96, MPR6=7F",
+    "hook_pc_occurrences_in_memo_trace": 0,
+    "copy_loop_counts": "4E6C=242, 4EB9=242",
+    "first_bad_state": "4E0F returns length 00 once; JSR 4E6B receives X=00 and the copy loop underflows"
+  },
+  "conclusion": "Calling the original BIOS before custom overwrite is insufficient. BIOS side-effect omission is not the cause of the delayed Memo failure.",
+  "next": "Run a fallback-only hook build with original text and no glyph page to separate hook installation from custom branch execution"
+}
