@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
-"""천사의 시 II ~타천사의 선택~ 한글판 패처 (v1.0 정식판)
- 0) v0.3 패치 결과물(*_KR.bin/.cue, Redump (Track 02)_KR.bin, SystemCard3_KR.pce)을 지정하면 SHA-1 로 알아보고 그 자리에서 v1.0 으로 교체
+"""천사의 시 II ~타천사의 선택~ 한글판 패처 (v1.0.1)
+ 0) 이전 판(v1.0·v0.3) 패치 결과물(*_KR.bin/.cue, Redump (Track 02)_KR.bin, SystemCard3_KR.pce)을 지정하면 SHA-1 로 알아보고 그 자리에서 v1.0.1 로 교체
+    (v1.0.1 = v1.0 + 카드 미니게임 모듈 초기화 수정 9바이트. 시스템 카드는 v1.0 과 같고, v0.3 카드는 from_v0.3 패치로 올린다)
  1) 원본 디스크 이미지(.bin/.cue)에 xdelta 패치 → *_KR.bin + *_KR.cue
  2) 원본 시스템 카드(PCECD_3.0-(J).pce, 256KB)에 xdelta 패치 → SystemCard3_KR.pce (256KB, 원본과 같은 크기)
  3) BizHawk(EmuHawk.exe) 선택 → 한글 카드로 바로 실행되는 바로가기(.lnk) + 전용 config 생성 + gamedb 에 한글 카드 등록(PCEHawk 코어용)
@@ -13,7 +14,7 @@ import subprocess
 import sys
 import tempfile
 
-APP_TITLE = "천사의 시 II 한글판 패처 v1.0"
+APP_TITLE = "천사의 시 II 한글판 패처 v1.0.1"
 DISC_PATCH = "Tenshi_no_Uta_II_KR_disc.xdelta"
 CARD_PATCH = "SystemCard3_KR.xdelta"
 CUE_TEMPLATE = "cue_template.cue"
@@ -21,22 +22,22 @@ ORIG_BIN_SIZE = 523184384
 ORIG_BIN_SHA1 = "67ec659f387accd4544057a8bff4ab84bf5e153b"
 ORIG_CARD_SIZE = 262144
 ORIG_CARD_SHA1 = "79f5ff55dd10187c7fd7b8daab0b3ffbd1f56a2c"
-OUT_BIN_SHA1 = "46af005cd4fb5e912f505f12c5929fa5af1bf3e5"
+OUT_BIN_SHA1 = "78496ddcba76b6e519a2cb292c29d5909514b73a"
 OUT_CARD_SHA1 = "aeea911116af35f1bf7035487c0a6438b1a37877"
 T2_PATCH = "Tenshi_no_Uta_II_KR_track02_redump.xdelta"
 REDUMP_T2_SIZE = 22466304
 REDUMP_T2_SHA1 = "e0a7dbed4f3f4d57d4bb044cb1520aa26c0324d4"
-OUT_T2_SHA1 = "d80d35170802964f09831b17f35e4ff69d989581"
-# 이전 판(v0.3) 결과물 → 이번 판으로 올리는 패치. 이전 판 결과물을 지정하면 SHA-1 로 알아보고 그 자리에서 교체한다
+OUT_T2_SHA1 = "5b1c1f7168a08218269918bb9a932118c9e6cb85"
+# 이전 판(v1.0; 디스크·Track 02 는 v0.3 과 같은 내용) 결과물 → 이번 판으로 올리는 패치. 카드는 v1.0 = v1.0.1 이라 v0.3 카드만 올린다. 이전 판 결과물을 지정하면 SHA-1 로 알아보고 그 자리에서 교체한다
 # (파일 이름이 그대로라 BizHawk·RetroArch 의 세이브가 이어진다). 원본 덤프를 지정하면 지금처럼 새로 패치(같은 이름으로 덮어씀).
-PREV_LABEL = "v0.3"
+PREV_LABEL = "이전 판(v1.0/v0.3)"
 PREV_BIN_SIZE = 523184384
 PREV_BIN_SHA1 = "46af005cd4fb5e912f505f12c5929fa5af1bf3e5"
 PREV_T2_SIZE = 22466304
 PREV_T2_SHA1 = "d80d35170802964f09831b17f35e4ff69d989581"
 PREV_CARD_SHA1 = "c1d5c3f17615012fefda78ffb1752f35e0b121fe"
-UPG_DISC_PATCH = "Tenshi_no_Uta_II_KR_disc_from_v0.3.xdelta"
-UPG_T2_PATCH = "Tenshi_no_Uta_II_KR_track02_redump_from_v0.3.xdelta"
+UPG_DISC_PATCH = "Tenshi_no_Uta_II_KR_disc_from_v1.0.xdelta"
+UPG_T2_PATCH = "Tenshi_no_Uta_II_KR_track02_redump_from_v1.0.xdelta"
 UPG_CARD_PATCH = "SystemCard3_KR_from_v0.3.xdelta"
 CONFIG_NAME = "config_tenshi2kr.ini"
 SHORTCUT_NAME = "천사의 시 II 한글판.lnk"
@@ -431,8 +432,8 @@ def gui(selftest=False):
         if p:
             v_emu.set(p)
 
-    make_row(frm, 0, "1. 원본 디스크 이미지 .cue (단일 bin 또는 Redump 멀티 bin) — v0.3 으로 패치해 둔 *_KR.cue 를 지정하면 v1.0 으로 올립니다" + hint, v_cue, "선택", pick_disc, v_cue.set)
-    make_row(frm, 2, "2. 원본 시스템 카드 PCECD_3.0-(J).pce (256KB, 헤더 포함 262,656B 도 가능) — v0.3 의 SystemCard3_KR.pce 도 가능" + hint, v_card, "선택", pick_card, v_card.set, pady=10)
+    make_row(frm, 0, "1. 원본 디스크 이미지 .cue (단일 bin 또는 Redump 멀티 bin) — v1.0/v0.3 으로 패치해 둔 *_KR.cue 를 지정하면 v1.0.1 로 올립니다" + hint, v_cue, "선택", pick_disc, v_cue.set)
+    make_row(frm, 2, "2. 원본 시스템 카드 PCECD_3.0-(J).pce (256KB, 헤더 포함 262,656B 도 가능) — v1.0/v0.3 의 SystemCard3_KR.pce 도 가능" + hint, v_card, "선택", pick_card, v_card.set, pady=10)
     make_row(frm, 4, "3. BizHawk - EmuHawk.exe (선택 사항: 지정하면 한글판 바로가기를 바탕화면·게임 폴더에 만듭니다)" + hint, v_emu, "선택", pick_emu, v_emu.set, pady=10)
 
     def run_all():

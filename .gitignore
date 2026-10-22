@@ -44,3 +44,5 @@ __pycache__/
 /release/app/dist/
 
 /Tenshi_no_Uta_II-*.cue
+/release/dist/
+/save/

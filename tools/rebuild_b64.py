@@ -33,7 +33,10 @@ def main():
     ap.add_argument('--dotnet', default='dotnet')
     ap.add_argument('--redump-track02', type=Path)
     ap.add_argument('--output', type=Path)
+    ap.add_argument('--build', default='b64', help='빌드 태그: tools/build_btrack_<태그>_hook_build.py 실행 (기본 b64 = v1.0)')
+    ap.add_argument('--no-expect', action='store_true', help='v1.0 고정 출력 해시 검사 생략(새 빌드 태그용). 해시는 보고만 한다')
     args = ap.parse_args()
+    tag = args.build
     profile = json.loads((ROOT / 'config/rebuild_b64.json').read_text(encoding='utf-8'))
     if args.source_bin.stat().st_size != profile['source_bin']['bytes'] or sha(args.source_bin) != profile['source_bin']['sha256']:
         raise ValueError('Unsupported single-BIN source')
@@ -48,7 +51,7 @@ def main():
         raise ValueError('Galmuri14 source font mismatch')
     if args.redump_track02 and (args.redump_track02.stat().st_size != profile['redump_track02']['bytes'] or sha(args.redump_track02) != profile['redump_track02']['sha256']):
         raise ValueError('Unsupported Redump Track 02 source')
-    stage = (args.output or ROOT / 'build' / ('b64_' + datetime.now().strftime('%Y%m%d_%H%M%S_%f'))).resolve()
+    stage = (args.output or ROOT / 'build' / (f'{args.build}_' + datetime.now().strftime('%Y%m%d_%H%M%S_%f'))).resolve()
     stage.mkdir(parents=True, exist_ok=False)
 
     def ignored(folder, names):
@@ -71,15 +74,15 @@ def main():
     if sha(intermediate) != profile['bootstrap']['target_sha256']:
         raise ValueError('Restored intermediate card mismatch')
     run([args.dotnet, 'build', 'tools/huc6280_disasm_verifier/huc6280_disasm_verifier.csproj', '-c', 'Debug', '--nologo', '--verbosity', 'quiet'], stage, stage / 'disassembler_build.log')
-    run([sys.executable, '-X', 'utf8', 'tools/build_btrack_b64_hook_build.py'], stage, stage / 'b64_build.log')
-    disc = stage / (STEM + '_btrack_b64.bin')
+    run([sys.executable, '-X', 'utf8', f'tools/build_btrack_{tag}_hook_build.py'], stage, stage / f'{tag}_build.log')
+    disc = stage / (STEM + f'_btrack_{tag}.bin')
     cue = disc.with_suffix('.cue')
-    card = probes / 'SystemCard3_btrack_b64.pce'
-    if sha(disc) != profile['expected_b64']['disc_sha256'] or sha(card) != profile['expected_b64']['card_sha256']:
+    card = probes / f'SystemCard3_btrack_{tag}.pce'
+    if not args.no_expect and (sha(disc) != profile['expected_b64']['disc_sha256'] or sha(card) != profile['expected_b64']['card_sha256']):
         raise ValueError('Rebuilt disc/card differ from the published v1.0')
-    if sha(cue) != profile['expected_b64']['cue_sha256']:
+    if not args.no_expect and sha(cue) != profile['expected_b64']['cue_sha256']:
         raise ValueError('Rebuilt CUE differs from the known b64 layout')
-    report = {'status': 'PASS', 'evidence_class': 'Source rebuild with byte-identical disc/CUE/system-card outputs; no new runtime test', 'disc_bytes': disc.stat().st_size, 'disc_sha256': sha(disc), 'cue_sha256': sha(cue), 'card_bytes': card.stat().st_size, 'card_sha256': sha(card), 'bootstrap_restored_from_original_bios': True, 'redump_track02_verified': False}
+    report = {'status': 'PASS', 'build': tag, 'evidence_class': 'Source rebuild with byte-identical disc/CUE/system-card outputs; no new runtime test', 'disc_bytes': disc.stat().st_size, 'disc_sha256': sha(disc), 'cue_sha256': sha(cue), 'card_bytes': card.stat().st_size, 'card_sha256': sha(card), 'card_matches_v1_0': sha(card) == profile['expected_b64']['card_sha256'], 'bootstrap_restored_from_original_bios': True, 'redump_track02_verified': False}
     if args.redump_track02:
         sys.path.insert(0, str(stage / 'release/app'))
         from cdrom_mode1 import mode1_sector
@@ -91,9 +94,9 @@ def main():
             output += mode1_sector(data[start:start + 2048], 3590 + index)
         target = stage / 'Track02_KR.bin'
         target.write_bytes(output)
-        if sha(target) != profile['redump_track02']['expected_output_sha256']:
+        if not args.no_expect and sha(target) != profile['redump_track02']['expected_output_sha256']:
             raise ValueError('Reconstructed Redump Track 02 differs from public patch output')
-        report.update({'redump_track02_verified': True, 'redump_track02_sha256': sha(target), 'redump_track02_bytes': target.stat().st_size})
+        report.update({'redump_track02_verified': sha(target) == profile['redump_track02']['expected_output_sha256'], 'redump_track02_sha256': sha(target), 'redump_track02_bytes': target.stat().st_size})
     (stage / 'verification.json').write_text(json.dumps(report, indent=2) + '\n', encoding='utf-8')
     print(json.dumps({'output_directory': str(stage), **report}, indent=2))
 

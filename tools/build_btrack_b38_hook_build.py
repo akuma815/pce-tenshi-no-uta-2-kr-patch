@@ -147,7 +147,7 @@ def main() -> None:
     card[o:o + len(code)] = code
     b37.OUT_CARD.write_bytes(bytes(card))
     out = bytearray(b37.OUT_BIN.read_bytes())
-    so = b7.eng_off(0xC89F)
+    so = b7.eng_off(b36.b35.STUB)        # b35 가 쓴 스텁 위치(기본 $C89F; b65 부터 상수로 이동 가능)
     assert out[so + 3:so + 5] == bytes((0xA9, 0x3F)) and out[so + 7:so + 10] == bytes((0x20, 0x00, 0xAF)), "스텁 원본 불일치"
     out[so + 4] = REARM_BANK
     out[so + 8:so + 10] = bytes((REARM2 & 0xFF, REARM2 >> 8))

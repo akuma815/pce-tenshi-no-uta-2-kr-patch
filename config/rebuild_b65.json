@@ -1,0 +1,55 @@
+{
+  "based_on": "config/rebuild_b64.json (입력·부트스트랩·글꼴 동일)",
+  "build": "b65",
+  "release": "v1.0.1 (2026-10-22)",
+  "source_bin": {
+    "bytes": 523184384,
+    "sha256": "d16d29eb80b1b74a2ec929924349256b50b8f9f5c9a3fa37b6fcc08b059b22c5"
+  },
+  "source_cue_sha256": "c491342ea8cbf2b6e829316aaad0af3f790ec58288de9bf880927cdcc7c9cc6b",
+  "source_bios": {
+    "bytes": 262144,
+    "sha256": "e11527b3b96ce112a037138988ca72fd117a6b0779c2480d9e03eaebece3d9ce"
+  },
+  "bootstrap": {
+    "patch": "assets/bootstrap/SystemCard3_full_v6_from_original.xdelta",
+    "patch_bytes": 12323,
+    "patch_sha256": "7a8dabcd2a66f6efc486763d5a0ff91330d001adfc9f542bace21f662eaaf90f",
+    "target_sha256": "30a4a8bd7ed7ca517e7d8555c8afd8304ff02238a751f9c777bda36413ffc33b"
+  },
+  "font": {
+    "path": "assets/fonts/Galmuri14.ttf",
+    "sha256": "d3818c0f2898a3b2d79ccd04ec1e4de5e8940aa26abee261f73e315a44ce8df9"
+  },
+  "expected_b65": {
+    "disc_sha256": "52f2002829b83edcb32b5932513f3f857c15cc02771be54d4e750919760b9c3f",
+    "disc_sha1": "78496ddcba76b6e519a2cb292c29d5909514b73a",
+    "card_sha256": "5632f388ae2f0fce9e435134ee89b825172e9b2a08bae5f7b5856a9807f21274",
+    "cue_sha256": "7fb37b6ae939deee6cab4866e8b3af7e00efd70017822d0ce6d198c5d1a791c1",
+    "card_identical_to_v1_0": true,
+    "diff_vs_b64": "ISO 0xBD5FF0 7B (A9 08 85 F3 4C D9 8F) + 0xBD6033 2B (F0 4F)"
+  },
+  "redump_track02": {
+    "bytes": 22466304,
+    "sha256": "1e69de05aaf1171e4a3347a146d5967c796e312ca0c53cebb267c5ffe0684034",
+    "expected_output_sha1": "5b1c1f7168a08218269918bb9a932118c9e6cb85",
+    "expected_output_sha256": "61c99c4f8d216c25311af9f8c324d4756e4703faf6878dafab4212876e951e3c"
+  },
+  "published_release": {
+    "tag": "v1.0.1",
+    "asset": "Tenshi2_KR_v1.0.1_20261022.zip",
+    "sha256": "db44a24383e2881e8d7b164c3cc4a0fa2e5c862f0ca1516ae1d8f9bf2effb848",
+    "files": {
+      "cue_template.cue": "8e86232f6026e9d7e83125120339ab7639ed6f9439c867126e77ae950352a5a8",
+      "README.txt": "84ff52a43121e574d534385826c0f0b0280d6c973ba08100c1a76fb34b4cf768",
+      "SystemCard3_KR.xdelta": "89addf9867ba86edaea2652d45e0b8e3479f52ea3adfb11ddde0b51249edd992",
+      "SystemCard3_KR_from_v0.3.xdelta": "e40c7a3c36d33c9ddc17730c9156fd98bc49bfde7e97c56e1bb2bd731807f05d",
+      "Tenshi2KR_Patcher.exe": "097888e9008d0436f7e5157cce5105f1e92b90fca7ff9641c9c643c3cfb6dad0",
+      "Tenshi_no_Uta_II_KR_disc.xdelta": "924cd6f4a50d8ad19512020ddb2b9f440ee17d5c6a51a1fc115a732c61b4217f",
+      "Tenshi_no_Uta_II_KR_disc_from_v1.0.xdelta": "ca171ff31b651b6497dccfc4144c8709c2d1cc571d4001799e366487ef00ca2c",
+      "Tenshi_no_Uta_II_KR_track02_redump.xdelta": "139f9302bc26e78778194564a46d7a41d6f1bdca92cb5927245b3abc8bcf8f55",
+      "Tenshi_no_Uta_II_KR_track02_redump_from_v1.0.xdelta": "d88910764faf9ecbd0821dd6c7a93f0ff9d310dd63f891cc65dd262789a48da6"
+    }
+  },
+  "rebuild_command": "python -X utf8 tools/rebuild_b64.py --build b65 --no-expect --source-bin <단일 BIN> --source-cue <CUE> --source-bios <BIOS> --xdelta <xdelta3.exe> --redump-track02 <Track 02>"
+}
