@@ -7,8 +7,8 @@
 | 대상 | 天使の詩II 堕天使の選択 / PC Engine Super CD-ROM² / Hudson·NEC, 1993 |
 | 이전 프로젝트 루트 | `G:\Downloads\Korean Traslate Project\Games\Tenshi no Uta II - Datenshi no Sentaku (Japan)` — 2026-10-16 사용자 요청으로 전체 삭제 |
 | 활성 전략 | **in-place 트랙 — 수정 시스템카드(BIOS 폰트 교체) + 디스크 패치 (2026-10-09 사용자 결정으로 복귀)**. Z11 오버레이 트랙은 폐기(`docs/retired/`). 기준 빌드 = b10 v13 |
-| 현재 단계 | **v1.0 정식판 = b64** 배포 중. **2026-10-22 제보 수정 b65 = v1.0.1 패키지 완성(`release/dist/`, 게시는 사용자)** — 펨브로크 카지노 검은 화면 = 카드 모듈 초기화의 VBlank IRQ 경합(원본 잠재 결함, 한글판 타이밍에서 발현) → 모듈 제자리 9B 패치. 보스가 창을 덮는 건 원본 동일. [상세·남은 일](HANDOFF_2026-10-22.md) |
-| 마지막 갱신 | 2026-10-22 밤 (제보 2건 판정, b65, 단일 BIN 원본 확보·공식 재빌드 PASS, v1.0.1 ZIP·패처 완성; 게시·커밋 남음) |
+| 현재 단계 | **v1.0 정식판 = b64** 배포 중. **2026-10-22 제보 수정 b65 = v1.0.1 패키지 완성(GitHub Release v1.0.1 게시·커밋 `96d65f1`·사이트 카탈로그 v1.0.1 푸시 완료)** — 펨브로크 카지노 검은 화면 = 카드 모듈 초기화의 VBlank IRQ 경합(원본 잠재 결함, 한글판 타이밍에서 발현) → 모듈 제자리 9B 패치. 보스가 창을 덮는 건 원본 동일. [상세·남은 일](HANDOFF_2026-10-22.md) |
+| 마지막 갱신 | 2026-10-22 밤 (제보 2건 판정, b65, 단일 BIN 원본 확보·공식 재빌드 PASS, v1.0.1 Release 게시·레포 푸시·사이트 카탈로그 갱신 완료) |
 
 ---
 
@@ -16,7 +16,7 @@
 
 ### 2026-10-22 제보 2건 — 최신 상태
 
-[HANDOFF_2026-10-22.md](HANDOFF_2026-10-22.md) 를 먼저 읽는다. 요지: ① 보스가 마법 창을 덮는 것은 원본 동일(수정 안 함). ② 펨브로크 카지노 검은 화면은 카드 모듈 초기화 경합(핸들러가 `$F3=0` 상태로 CR 을 써서 VBlank IRQ 가 꺼짐) → **b65** = b64 + 모듈 제자리 9B(`$5032`→`$4FF0` 스텁 `LDA #$08/STA $F3`), 카드 동일. 입구 앞 스테이트 5/5 정상. 재현·검증 환경 = `Tools/RetroArch/`(Beetle PCE) + `tools/convert_ra_state_to_original.py` + `tools/rebuild_b64_from_redump.py`(Redump 세트에서 재빌드; 단일 BIN 원본 없음). **v1.0.1 ZIP·패처 완성(`release/dist/Tenshi2_KR_v1.0.1_20261022.zip`, 패처 3경로 해시 검증). 다음 = 사용자가 GitHub Release 게시·커밋 + QA(카드 게임 종료 후 대사·씬 770 회귀).**
+[HANDOFF_2026-10-22.md](HANDOFF_2026-10-22.md) 를 먼저 읽는다. 요지: ① 보스가 마법 창을 덮는 것은 원본 동일(수정 안 함). ② 펨브로크 카지노 검은 화면은 카드 모듈 초기화 경합(핸들러가 `$F3=0` 상태로 CR 을 써서 VBlank IRQ 가 꺼짐) → **b65** = b64 + 모듈 제자리 9B(`$5032`→`$4FF0` 스텁 `LDA #$08/STA $F3`), 카드 동일. 입구 앞 스테이트 5/5 정상. 재현·검증 환경 = `Tools/RetroArch/`(Beetle PCE) + `tools/convert_ra_state_to_original.py` + `tools/rebuild_b64_from_redump.py`(Redump 세트에서 재빌드; 단일 BIN 원본 없음). **v1.0.1 ZIP·패처 완성(`release/dist/Tenshi2_KR_v1.0.1_20261022.zip`, 패처 3경로 해시 검증). Release v1.0.1 게시·푸시·사이트 갱신 완료. 다음 = 사용자 QA(카드 게임 종료 후 대사·씬 770 회귀).**
 
 ### 2026-10-16 전체 폴더 삭제 완료
 
