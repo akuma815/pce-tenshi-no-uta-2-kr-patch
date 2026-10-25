@@ -5,10 +5,10 @@
 | 항목 | 값 |
 | --- | --- |
 | 대상 | 天使の詩II 堕天使の選択 / PC Engine Super CD-ROM² / Hudson·NEC, 1993 |
-| 이전 프로젝트 루트 | `G:\Downloads\Korean Traslate Project\Games\Tenshi no Uta II - Datenshi no Sentaku (Japan)` — 2026-10-16 사용자 요청으로 전체 삭제 |
+| 이전 프로젝트 루트 | `G:\Downloads\Korean Traslate Project\Games\Tenshi no Uta II - Datenshi no Sentaku (Japan)` — 2026-10-16 전체 삭제. 2026-10-22 작업은 레포 클론 `Games/pce-tenshi-no-uta-2-kr-patch` 에서 했고 **2026-10-25 v1.0.1 배포 뒤 다시 전체 삭제**([정리 기록](PCE_CLEANUP_2026-10-25.md)). 지금은 GitHub 레포가 유일한 소스 |
 | 활성 전략 | **in-place 트랙 — 수정 시스템카드(BIOS 폰트 교체) + 디스크 패치 (2026-10-09 사용자 결정으로 복귀)**. Z11 오버레이 트랙은 폐기(`docs/retired/`). 기준 빌드 = b10 v13 |
 | 현재 단계 | **v1.0 정식판 = b64** 배포 중. **2026-10-22 제보 수정 b65 = v1.0.1 패키지 완성(GitHub Release v1.0.1 게시·커밋 `96d65f1`·사이트 카탈로그 v1.0.1 푸시 완료)** — 펨브로크 카지노 검은 화면 = 카드 모듈 초기화의 VBlank IRQ 경합(원본 잠재 결함, 한글판 타이밍에서 발현) → 모듈 제자리 9B 패치. 보스가 창을 덮는 건 원본 동일. [상세·남은 일](HANDOFF_2026-10-22.md) |
-| 마지막 갱신 | 2026-10-22 밤 (제보 2건 판정, b65, 단일 BIN 원본 확보·공식 재빌드 PASS, v1.0.1 Release 게시·레포 푸시·사이트 카탈로그 갱신 완료) |
+| 마지막 갱신 | 2026-10-25 (v1.0.1 배포 뒤 로컬 전체 삭제, 복원 검증 PASS) / 2026-10-22 밤 (제보 2건 판정, b65, 단일 BIN 원본 확보·공식 재빌드 PASS, v1.0.1 Release 게시·레포 푸시·사이트 카탈로그 갱신 완료) |
 
 ---
 
